@@ -1,0 +1,537 @@
+<Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindow">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e408f0f28015c64503fb4f24fd3d1bb9d13526ce" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20574763" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindow" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindow" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ProtectedViewWindow" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244CD-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa una ventana Vista protegida.</summary>
+    <remarks>Ventana de <para>A la vista protegida se utiliza para mostrar un libro desde una ubicación potencialmente no segura. Ubicaciones no seguras se definen como los siguientes:</para><list type="number"><item><description>archivos abiertos desde Internet.</description></item><item><description>Datos adjuntos abiertos desde Microsoft Outlook 2010.</description></item><item><description>Archivos bloqueados por la directiva de bloqueo de archivo.</description></item><item><description>Los archivos que no pasan la validación de documento de Office.</description></item><item><description>Los archivos abiertos explícitamente en la vista protegida mediante el uso del comando Abrir en Vista protegida del botón Abrir en el cuadro de diálogo Abrir.</description></item></list><para>Los libros que se muestra en una ventana Vista protegida no se puede editar y tienen restricciones para ejecutar contenido activo como Visual Basic para aplicaciones macros y conexiones de datos.</para><para>Para devolver un solo <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto desde el <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> colección, utilice protectedviewwindows (index), donde Index es el número de índice de la ventana que desea abrir. También puede obtener acceso a la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object que representa la ventana activa de la vista protegida mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para><para>Después de acceder a una <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> de objetos, use la <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> (propiedad) para obtener acceso a la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object que representa el archivo del libro que está abierto en la ventana Vista protegida. Dado que una ventana Vista protegida está diseñada para proteger al usuario de código potencialmente peligroso, las operaciones pueden realizar mediante el uso de un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto devuelto por un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto estarán limitado. Devolver la mayoría de las operaciones que no se permite will "error en tiempo de ejecución 1004: este comando no está disponible cuando Excel está en un espacio aislado."</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>Devuelve <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sitúa la ventana Vista protegida en el primer plano del orden z.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece un valor que representa el nombre que aparece en la barra de título de la ventana de la vista protegida.</summary>
+        <value>El nombre que aparece en la barra de título de la ventana de la vista protegida.</value>
+        <remarks>
+          <para>Lectura y escritura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public bool Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Close() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Function Close () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Close();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(277)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cierra la ventana de vista protegida especificada.</summary>
+        <returns>Devuelve <see cref="T:System.Boolean" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Edit">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Workbook Edit (object WriteResPassword, object UpdateLinks);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Workbook Edit([in]object WriteResPassword, [in]object UpdateLinks) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Edit(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Edit (Optional WriteResPassword As Object, Optional UpdateLinks As Object) As Workbook" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(562)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Workbook</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="WriteResPassword" Type="System.Object" />
+        <Parameter Name="UpdateLinks" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="WriteResPassword">La contraseña requerida para escribir en un libro protegido contra escritura.</param>
+        <param name="UpdateLinks">Especifica las referencias de manera externas (vínculos) en el archivo, como la referencia a un rango en el libro presupuesto.xls en la siguiente fórmula = suma ([presupuesto.xls] ¡anual! C10: C25), se actualizan.</param>
+        <summary>Abre el libro que está abierto en la ventana Vista protegida especificada para su edición.</summary>
+        <returns>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto.</returns>
+        <remarks>
+          <para>Si el <paramref name="WriteResPassword" /> se omite el parámetro y el libro requiere una contraseña, el usuario se solicitará la contraseña.</para>
+          <para>Si el <paramref name="UpdateLinks" /> se omite el parámetro, se pide al usuario para especificar cómo se actualizan los vínculos. Si se abre un archivo en WKS, WK1 o WK3 formato y el <paramref name="UpdateLinks" /> argumento es 0, no se crean gráficos; en caso contrario, Excel genera gráficos a partir de los gráficos adjuntos al archivo.</para>
+          <para>Evitar utilizando contraseñas codificado de forma rígida en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicite al usuario la contraseña, almacenar en una variable y, a continuación, usar la variable en el código.</para>
+          <para>Puede especificar uno de los valores, enumerados en la tabla siguiente, en la <paramref name="UpdateLinks" /> parámetro para determinar si las referencias externas (vínculos) se actualizan cuando se abre el libro.</para>
+          <list type="table">
+            <item>
+              <term>0</term>
+              <description>las referencias externas (vínculos) no se actualizarán cuando se abre el libro.</description>
+            </item>
+            <item>
+              <term>3</term>
+              <description>las referencias externas (vínculos) se actualizarán cuando se abre el libro.</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableResize">
+      <MemberSignature Language="C#" Value="public bool EnableResize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableResize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.EnableResize" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableResize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableResize { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece si se puede cambiar el tamaño de la ventana Vista protegida.</summary>
+        <value>
+          <b>true</b> si se puede cambiar el tamaño de la ventana Vista protegida; en caso contrario, <b>false</b>.</value>
+        <remarks>
+          <para>Lectura y escritura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece un valor que representa el alto, en puntos, de la ventana de la vista protegida.</summary>
+        <value>El alto, en puntos, de la ventana de la vista protegida.</value>
+        <remarks>
+          <para>Lectura y escritura.</para>
+          <para>No se puede establecer esta propiedad si la ventana Vista protegida está maximizada o minimizada. Usar el <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> (propiedad) para determinar el estado de la ventana.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece un valor que representa la distancia, en puntos, desde el borde izquierdo del área de cliente hasta el borde izquierdo de la ventana de la vista protegida.</summary>
+        <value>La distancia, en puntos, desde el borde izquierdo del área de cliente hasta el borde izquierdo de la ventana de la vista protegida.</value>
+        <remarks>
+          <para>Lectura y escritura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(721)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene el nombre del archivo de origen que está abierto en la ventana de vista protegida especificada.</summary>
+        <value>El nombre del archivo de origen que está abierto en la ventana de vista protegida especificada.</value>
+        <remarks>
+          <para>Es de sólo lectura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourcePath">
+      <MemberSignature Language="C#" Value="public string SourcePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourcePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourcePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourcePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourcePath { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2993)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2993)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene la ruta de acceso del archivo de origen que está abierto en la ventana de vista protegida especificada.</summary>
+        <value>La ruta de acceso del archivo de origen que está abierto en la ventana de vista protegida especificada.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>La ruta de acceso no incluye un carácter final (por ejemplo, "C:\MSOffice"). Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> (propiedad) para agregar el carácter que separa carpetas y letras de unidad. Use la <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> de la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto para devolver el nombre de archivo de origen sin la ruta de acceso.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece un valor que representa la distancia, en puntos, desde el borde superior de la ventana de vista protegida especificada hasta el borde superior del área útil.</summary>
+        <value>La distancia, en puntos, desde el borde superior de la ventana de vista protegida especificada hasta el borde superior del área útil.</value>
+        <remarks>
+          <para>Lectura y escritura.</para>
+          <para>No se puede establecer esta propiedad para una ventana maximizada de la vista protegida. Usar el <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> (propiedad) para devolver o establecer el estado de la ventana.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece un valor que determina si la ventana de vista protegida especificada es visible.</summary>
+        <value>
+          <b>true</b> si la ventana de vista protegida especificada está visible; en caso contrario, <b>false</b>.</value>
+        <remarks>
+          <para>Lectura y escritura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece un valor que especifica el ancho, en puntos, de la ventana de vista protegida especificada.</summary>
+        <value>El ancho, en puntos, de la ventana de vista protegida especificada.</value>
+        <remarks>
+          <para>Lectura y escritura.</para>
+          <para>No se puede establecer esta propiedad si la ventana Vista protegida está maximizada o minimizada. Usar el <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> (propiedad) para determinar el estado de la ventana.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowState">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlProtectedViewWindowState WindowState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlProtectedViewWindowState WindowState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowState As XlProtectedViewWindowState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlProtectedViewWindowState WindowState { Microsoft::Office::Interop::Excel::XlProtectedViewWindowState get(); void set(Microsoft::Office::Interop::Excel::XlProtectedViewWindowState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlProtectedViewWindowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece el estado de la ventana de vista protegida especificada.</summary>
+        <value>El estado de la ventana de vista protegida especificada.</value>
+        <remarks>
+          <para>Lectura y escritura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Workbook">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Workbook Workbook { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Workbook Workbook" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Workbook As Workbook" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Workbook ^ Workbook { Microsoft::Office::Interop::Excel::Workbook ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(752)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(752)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Workbook</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene un objeto object que representa el libro que está abierto en la ventana de vista protegida especificada.</summary>
+        <value>El libro que está abierto en la ventana de vista protegida especificada.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>Debido a que una ventana Vista protegida está diseñada para proteger al usuario de código potencialmente peligroso, las operaciones puede realizar mediante el uso de un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto devuelto por la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> método estarán limitado. Cualquier operación que no está permitido devolverá "error en tiempo de ejecución 1004: este comando no está disponible cuando Excel está en un espacio aislado."</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

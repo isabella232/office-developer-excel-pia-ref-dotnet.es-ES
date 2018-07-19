@@ -1,0 +1,732 @@
+<Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="97d53069436a318096bbfbdc2ce01e7de3cf9166" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20574728" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PivotCell" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCell" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCell" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PivotCell" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PivotCell" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024458-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa una celda de un informe de tabla dinámica.</summary>
+    <remarks>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección para devolver un objeto <b>PivotCell</b> .</para>
+      <para>Cuando haya obtenido un objeto <b>PivotCell</b> , puede usar el <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> (propiedad) para determinar qué tipo de celda de un rango determinado Salomón</para>
+      <para>Se puede usar el <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> o <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> (propiedad) para determinar el <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección que corresponde a los elementos en el eje de columna o fila que representa el número seleccionado.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllocateChange">
+      <MemberSignature Language="C#" Value="public void AllocateChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AllocateChange() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AllocateChange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AllocateChange();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2928)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Realiza una operación de escritura diferida en la celda especificada en un informe de tabla dinámica basado en un origen de datos OLAP.</summary>
+        <remarks>
+          <para>Este método ejecuta una instrucción UPDATE CUBE para agregar sólo el cambio en esta celda concreta, pero también incluye los cambios anteriores aplicados. Una vez que se ejecuta la instrucción de actualización de cubo, se ejecuta una actualización de tabla dinámica y, a continuación, se ejecuta una instrucción ROLLBACK TRANSACTION.</para>
+          <para>Ejecuta el <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> (método) para una celda en un informe de tabla dinámica basado en un origen de datos no OLAP genera un error en tiempo de ejecución.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellChanged">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCellChangedState CellChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCellChangedState CellChanged" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellChanged As XlCellChangedState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCellChangedState CellChanged { Microsoft::Office::Interop::Excel::XlCellChangedState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2931)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2931)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCellChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene si una celda de valor de tabla dinámica se ha editado o actualizado desde que se creó el informe de tabla dinámica o se realizó la última operación de confirmación.</summary>
+        <value>A <see cref="T:Microsoft.Office.Interop.Excel.XlCellChangedState" /> objeto.</value>
+        <remarks>
+          <para>El valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propiedad es <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> de forma predeterminada.</para> Informes de 
+          <para>para la tabla dinámica con orígenes de datos no OLAP, el valor de esta propiedad puede ser sólo una <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> o <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />. Es <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para las celdas que no se han editado y es <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> para las celdas que se han modificado. Descartar los cambios, establece su valor en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />.</para><para>Aplicar y guardar los cambios, se aplica sólo a los informes de tabla dinámica con orígenes de datos OLAP. Las siguientes descripciones de los Estados posibles de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propiedad se aplica sólo a las tablas dinámicas con orígenes de datos OLAP.</para><list type="bullet"><item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> -no se ha editado o actualizado (si la celda contiene una fórmula) desde que se creó la tabla dinámica, o desde la última vez guardar o descartar cambios operación se llevó a cabo la celda.</description></item><item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> -la celda se ha editado o actualizado desde que se creó la tabla dinámica, o desde la última aplicar los cambios o guardar los cambios se realizó la operación, pero aún no se haya aplicado dicho cambio (no se ha ejecutado la instrucción UPDATE CUBE para él).</description></item><item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- la celda se ha editado o actualizado desde que se creó la tabla dinámica, o desde la última aplicar los cambios, guardar los cambios, o descartar cambios se realizó la operación y que se ha aplicado el cambio (se ha ejecutado la instrucción UPDATE CUBE para él).</description></item></list><para>En la siguiente tabla se describe cómo diferentes acciones por el usuario afectan la configuración de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> (propiedad) en una tabla dinámica con un origen de datos OLAP.</para><list type="table"><item><term>Escribe un valor o una fórmula en una o varias celdas.</term><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> para esas celdas.</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> para esas celdas.</description></item><item><term>Vuelve a calcular una o varias celdas con una fórmula, ya sea manualmente (F9) o automáticamente con Excel.</term><description>N/a</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> para esas celdas.</description></item><item><term>Guarda (confirma) los cambios.</term><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para todas las celdas sin una fórmula de editar.</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> para todas las celdas con una fórmula de editar.</description></item><item><term>Descarta todos los cambios.</term><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para todas las celdas sin una fórmula de editar.</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para todas las celdas con una fórmula de editar.</description></item><item><term>Descarta el cambio en una sola celda.</term><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para esa celda únicamente.</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para esa celda únicamente.</description></item><item><term>Borra varias celdas en una sola operación.</term><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para todas esas celdas.</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para todas esas celdas.</description></item><item><term>Borra una celda.</term><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para esa celda únicamente.</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> para esa celda únicamente.</description></item><item><term>Realiza una operación de deshacer que cambia el valor en un valor anteriormente modificado, antes de aplicar ese valor.</term><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> para todas las celdas sin una fórmula de editar.</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> para todas las celdas con una fórmula de editar.</description></item><item><term>Realiza una operación de deshacer que cambia el valor a un valor anteriormente modificado después de aplicar ese valor.</term><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> para todas las celdas sin una fórmula de editar.</description><description>Establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> para todas las celdas con una fórmula de editar.</description></item></list><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItemList ColumnItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItemList ColumnItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnItems As PivotItemList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItemList ^ ColumnItems { Microsoft::Office::Interop::Excel::PivotItemList ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2191)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2191)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> colección que corresponde a los elementos del eje de columna que representan el rango seleccionado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
+          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomSubtotalFunction">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConsolidationFunction CustomSubtotalFunction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConsolidationFunction CustomSubtotalFunction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.CustomSubtotalFunction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomSubtotalFunction As XlConsolidationFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConsolidationFunction CustomSubtotalFunction { Microsoft::Office::Interop::Excel::XlConsolidationFunction get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2193)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2193)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConsolidationFunction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el valor del campo de función de subtotal personalizado de un <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />puede ser una de las siguientes constantes de <b>XlConsolidationFunction</b> :</para>
+          <para>
+            <b>xlProduct</b>
+          </para>
+          <para>
+            <b>xlAverage</b>
+          </para>
+          <para>
+            <b>xlCount</b>
+          </para>
+          <para>
+            <b>xlCountNums</b>
+          </para>
+          <para>
+            <b>xlMax</b>
+          </para>
+          <para>
+            <b>xlMin</b>
+          </para>
+          <para>
+            <b>xlStDev</b>
+          </para>
+          <para>
+            <b>xlStDevP</b>
+          </para>
+          <para>
+            <b>xlSum </b>
+          </para>
+          <para>
+            <b>xlUnknown</b>
+          </para>
+          <para>
+            <b>xlVar</b>
+          </para>
+          <para>
+            <b>xlVarP</b>
+          </para>
+          <para>la propiedad <b>CustomSubtotalFunction</b> devolverá un error si el tipo de objeto <b>PivotCell</b> no es un subtotal personalizado. Esta propiedad se aplica únicamente a los datos de origen que no son OLAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField DataField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField DataField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ DataField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto que corresponde al campo de datos seleccionado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad devolverá un error si el objeto <b>PivotCell</b> no es uno de los tipos permitidos: <b>XlPivotCellTypeValue</b>, <b>XlPivotCellTypeDataField</b>, <b>XlPivotCellTypeSubtotal</b>o <b>XlPivotCellTypeGrandTotal</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceValue">
+      <MemberSignature Language="C#" Value="public object DataSourceValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataSourceValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSourceValue { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2930)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2930)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene el valor recuperado por última vez desde el origen de datos para las celdas editadas de un informe de tabla dinámica.</summary>
+        <value>El valor por última vez recuperado desde el origen de datos para las celdas editadas de un informe de tabla dinámica.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>Siempre que se modifique una celda en el área de valores de un informe de tabla dinámica, el <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> propiedad contendrá el valor que se recuperó por última vez desde el origen de datos antes de edición tuvo lugar. Para celdas del valor del informe de tabla dinámica que no se ha editado o para que el valor de origen de datos no se haya explícitamente recuperado, esta propiedad devolverá una referencia nula (Nothing en Visual Basic). Informes de tabla dinámica con orígenes de datos OLAP, el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> se recupera una propiedad de una conexión independiente para asegurarse de que no contiene el valor de las operaciones de escritura diferida que el usuario haya realizado.</para>
+          <para>Leer el <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> (propiedad) para las celdas que están fuera del área de valores de un informe de tabla dinámica genera un error en tiempo de ejecución.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscardChange">
+      <MemberSignature Language="C#" Value="public void DiscardChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DiscardChange() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DiscardChange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardChange();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2929)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Descarta los cambios realizados en la celda especificada en un informe de tabla dinámica.</summary>
+        <remarks>
+          <para>Para una celda en una tabla dinámica basado en un origen de datos OLAP, el <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> método quita el valor o la fórmula que ha escrito en la celda especificada y, a continuación, se ejecuta una actualización de tabla dinámica para recuperar el valor más reciente del origen de datos. El valor de origen de datos se establecerá en una referencia nula (Nothing en Visual Basic) por este método para la celda especificada. El método también quita todos los cambios realizados en esta celda desde la lista de cambios de Excel de modo que ya no se incluirá en la instrucción UPDATE CUBE para el origen de datos. Este método también vuelve a crear el estado de sesión para todos los demás cambios realizados en la transacción. Esto incluye la ejecución de una instrucción ROLLBACK TRANSACTION y, a continuación, ejecutar una instrucción UPDATE CUBE con todos los cambios, excepto la celda especificada. Para una celda en una tabla dinámica basada en un origen de datos no OLAP, este método simplemente borra la celda modificada.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dummy18">
+      <MemberSignature Language="C#" Value="public string Dummy18 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Dummy18" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Dummy18" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dummy18 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Dummy18 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2295)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2295)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reservado para uso interno.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MDX">
+      <MemberSignature Language="C#" Value="public string MDX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MDX" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MDX As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MDX { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene una tupla que proporciona las coordenadas MDX completas de la celda de valor especificado en la tabla dinámica con un origen de datos OLAP.</summary>
+        <value>Una tupla que proporciona las coordenadas MDX completas de la celda de valor especificado en la tabla dinámica con un origen de datos OLAP.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>Las dimensiones devuelven en la tupla por la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> propiedad incluye las coordenadas de fila y columna, así como las coordenadas de filtro de informe. Para las celdas fuera del área de valores de la tabla dinámica y fuera de una tabla dinámica, obtener acceso a esta propiedad generará un error en tiempo de ejecución. Las tablas dinámicas con la selección de varios elemento en un campo de filtro de informe, obtener acceso a esta propiedad también generará un error en tiempo de ejecución.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el objeto primario del objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotCellType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotCellType PivotCellType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotCellType PivotCellType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotCellType As XlPivotCellType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotCellType PivotCellType { Microsoft::Office::Interop::Excel::XlPivotCellType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2189)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2189)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotCellType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve una constante que identifica la entidad de tabla dinámica que corresponde la celda.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" />puede ser una de las siguientes constantes <b>XlPivotCellType</b> :</para>
+          <para>
+            <b>xlPivotCellBlankCell</b> celda vacía estructural de la tabla dinámica.</para>
+          <para>
+            <b>xlPivotCellCustomSubtotal</b> una celda en el área de fila o columna que es un subtotal personalizado.</para>
+          <para>
+            <b>xlPivotCellDataField</b> un rótulo de campo de datos (no el botón <b>datos</b> ).</para>
+          <para>
+            <b>xlPivotCellDataPivotField</b> el botón <b>datos</b> .</para>
+          <para>
+            <b>xlPivotCellGrandTotal</b> celda de un área de fila o columna que sea un total general.</para>
+          <para>
+            <b>xlPivotCellPageFieldItem</b> celda que muestra el elemento seleccionado de un campo de página.</para>
+          <para>
+            <b>xlPivotCellPivotField</b> botón de un campo (no el botón <b>datos</b> ).</para>
+          <para>
+            <b>xlPivotCellPivotItem</b> celda en el área de fila o columna que no es una subtotal, general, total personalizada subtotal, ni línea en blanco.</para>
+          <para>
+            <b>xlPivotCellSubtotal</b> una celda en el área de fila o columna que es un subtotal.</para>
+          <para>
+            <b>xlPivotCellValue</b> cualquier celda del área de datos (excepto filas en blanco).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotColumnLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotLine PivotColumnLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotLine PivotColumnLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotColumnLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotColumnLine As PivotLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotLine ^ PivotColumnLine { Microsoft::Office::Interop::Excel::PivotLine ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2674)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2674)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> en una columna para un objeto <b>PivotCell</b> específico. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />
+        </value>
+        <remarks>
+          <para>Si la <b>celda dinámica</b> está en filas, la propiedad <b>PivotColumnLine</b> devuelve un error en tiempo de ejecución.</para>
+          <para>Si la <b>celda dinámica</b> está en columnas, la propiedad <b>PivotColumnLine</b> devuelve el objeto <b>PivotLine</b> de la columna.</para>
+          <para>Si la <b>celda dinámica</b> está en el área de datos, la propiedad <b>PivotColumnLine</b> devuelve el objeto <b>PivotLine</b> de columna correspondiente.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField PivotField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField PivotField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ PivotField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object que representa el campo de tabla dinámica que contiene la esquina superior izquierda del rango especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItem PivotItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItem PivotItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotItem As PivotItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItem ^ PivotItem { Microsoft::Office::Interop::Excel::PivotItem ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> object que representa el elemento de tabla dinámica que contiene la esquina superior izquierda del rango especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotRowLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotLine PivotRowLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotLine PivotRowLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotRowLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotRowLine As PivotLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotLine ^ PivotRowLine { Microsoft::Office::Interop::Excel::PivotLine ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2673)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2673)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> en una fila para un objeto <b>PivotCell</b> específico. Read-only <b>PivotLine</b>.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />
+        </value>
+        <remarks>
+          <para>Si la <b>celda dinámica</b> está en filas, la <b>propiedad PivotRowLine</b> devuelve el objeto la fila <b>PivotLine</b> .</para>
+          <para>Si la <b>celda dinámica</b> está en columnas, la <b>propiedad PivotRowLine</b> devuelve un error en tiempo de ejecución.</para>
+          <para>Si la <b>celda dinámica</b> está en el área de datos, la <b>propiedad PivotRowLine</b> devuelve objeto <b>PivotLine</b> de la fila correspondiente.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotTable">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotTable PivotTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotTable PivotTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotTable As PivotTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotTable ^ PivotTable { Microsoft::Office::Interop::Excel::PivotTable ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(716)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(716)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object que representa el informe de tabla dinámica que contiene la esquina superior izquierda del rango especificado o el informe de tabla dinámica asociado con el informe de gráfico dinámico.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ Range { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el intervalo de la celda dinámica especificada se aplica a.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItemList RowItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItemList RowItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowItems As PivotItemList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItemList ^ RowItems { Microsoft::Office::Interop::Excel::PivotItemList ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2190)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2190)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> colección que corresponde a los elementos en el eje de categorías que representan la celda seleccionada.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerActions">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Actions ServerActions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Actions ServerActions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.ServerActions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerActions As Actions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Actions ^ ServerActions { Microsoft::Office::Interop::Excel::Actions ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2491)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2491)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Representa una colección de acciones que se compone de acciones definidas por el OLAP que se pueden ejecutar. Las acciones son específicas de las tablas dinámicas existentes en un nivel de hoja de cálculo. Solo lectura</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Una acción de servidor es una característica opcional que puede definir un administrador del cubo OLAP en un servidor que usa un miembro de cubo o medida como parámetro en una consulta para obtener detalles en el cubo.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
