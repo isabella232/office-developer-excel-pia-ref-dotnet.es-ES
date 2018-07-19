@@ -1,0 +1,264 @@
+<Type Name="ConditionValue" FullName="Microsoft.Office.Interop.Excel.ConditionValue">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a502761111afad4e3e8a449a28ce61efad23c0b4" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20587314" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ConditionValue" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ConditionValue" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ConditionValue" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ConditionValue" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ConditionValue" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024492-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa la manera de evaluar la barra más corta o la barra más larga cuando se aplica una regla de formato condicional de barra de datos.</summary>
+    <remarks>
+      <para>El <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objeto se devuelve utilizando la <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> o <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objeto.</para>
+      <para>Puede cambiar el tipo de evaluación predeterminado (valor más bajo para la barra más corta) y el valor más alto para la barra más larga mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" /> método.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ConditionValue.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
+        <value>
+          <b>Aplicación</b> (vea lo anterior)</value>
+        <remarks>
+          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ConditionValue.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve una constante en el <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> (enumeración) que indica la aplicación en la que se creó este objeto. <b>Integer</b> de sólo lectura.</summary>
+        <value>
+          <see cref="F:Microsoft.Office.Interop.Excel.XlCreator.xlCreatorCode" />
+        </value>
+        <remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  El <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modify">
+      <MemberSignature Language="C#" Value="public void Modify (Microsoft.Office.Interop.Excel.XlConditionValueTypes newtype, object newvalue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Modify([in]valuetype Microsoft.Office.Interop.Excel.XlConditionValueTypes newtype, [in]object newvalue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Modify (newtype As XlConditionValueTypes, Optional newvalue As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1581)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newtype" Type="Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
+        <Parameter Name="newvalue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="newtype">Especifica la manera de evaluar la barra más corta o la barra más larga. El valor predeterminado es <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" />para la barra más corta y <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" /> para la barra más larga.</param>
+        <param name="newvalue">El valor asignado a la barra de datos más corta o más larga. Dependiendo de la <paramref name="newtype" /> argumento, esto puede ser un número o una fórmula que da como resultado un número.</param>
+        <summary>Modifica la manera de evaluar la barra más larga o la barra más corta cuando se aplica una regla de formato condicional de barra de datos.</summary>
+        <remarks>
+          <para>En la siguiente tabla se describe los valores de umbral aceptables para cada tipo de evaluación.</para>
+          <list type="table">
+            <item>
+              <term>
+                <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" />
+              </term>se omite el argumento
+            </item>
+            <item>
+              <term>
+                <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" />
+              </term>se omite el argumento
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />
+              </term>cualquier número
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />
+              </term>cualquier número entre 0 y 100 
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />
+              </term>cualquier número entre 0 y 100
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />
+              </term>una fórmula que Devuelve un único número
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ConditionValue.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConditionValueTypes Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConditionValueTypes Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As XlConditionValueTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConditionValueTypes Type { Microsoft::Office::Interop::Excel::XlConditionValueTypes get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> se determinan la enumeración, que especifica cómo los valores de umbral para una barra de datos, la escala de color o el icono de formato condicional de conjunto. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la barra más corta o la barra de valor de umbral de un formato condicional de barra de datos más larga. Lectura/Escritura <b>Objeto</b>.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>
+          <para>Puede establecer la sólo si valor el <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> (propiedad) para el formato condicional está establecida en una de las siguientes constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, o <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
+          <para>Si el tipo de umbral es una fórmula, puede establecer la fórmula como una <b>cadena</b>. La fórmula debe devolver un solo número.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
