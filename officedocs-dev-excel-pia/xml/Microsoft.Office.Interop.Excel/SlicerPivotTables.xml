@@ -1,0 +1,326 @@
+<Type Name="SlicerPivotTables" FullName="Microsoft.Office.Interop.Excel.SlicerPivotTables">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b123a1bc4260dc8310b68183d37e0c58e2055b96" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580986" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerPivotTables implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SlicerPivotTables&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SlicerPivotTables : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244CB-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa información acerca de la colección de tablas dinámicas asociadas con los valores especificados <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
+    <remarks>
+      <para>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección contiene información acerca de las tablas dinámicas de la memoria caché de segmentación de datos se filtra en ese momento. Proporciona propiedades para determinar el número de tablas dinámicas está asociada con la segmentación de datos y para recuperar <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objetos que representan las tablas dinámicas que se filtran. También proporciona métodos para agregar y quitar las tablas dinámicas de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección. El <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección estará vacía si la segmentación de datos asociado al objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> no está conectada a ninguna.</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto para devolver la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección asociada con un <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />, que a su vez puede estar asociada con una o más segmentaciones de datos.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotTable this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotTable _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerPivotTables._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As PivotTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotTable ^ default[System::Object ^] { Microsoft::Office::Interop::Excel::PivotTable ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPivotTable">
+      <MemberSignature Language="C#" Value="public void AddPivotTable (Microsoft.Office.Interop.Excel.PivotTable PivotTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddPivotTable([in]class Microsoft.Office.Interop.Excel.PivotTable PivotTable) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SlicerPivotTables.AddPivotTable(Microsoft.Office.Interop.Excel.PivotTable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPivotTable(Microsoft::Office::Interop::Excel::PivotTable ^ PivotTable);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2990)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PivotTable" Type="Microsoft.Office.Interop.Excel.PivotTable" />
+      </Parameters>
+      <Docs>
+        <param name="PivotTable">A <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object que representa la tabla dinámica para agregar.</param>
+        <summary>Agrega una referencia a una tabla dinámica para el <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</summary>
+        <remarks>
+          <para>Cuando se agrega una tabla dinámica a la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección, se puede filtrar por su elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> y las segmentaciones de datos asociados con ella.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
+        <remarks>
+          <para>Es de sólo lectura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene el número de objetos de la colección.</summary>
+        <value>Número de objetos de la colección.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
+        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" />(propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SlicerPivotTables.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotTable Item[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotTable Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item(Index As Object) As PivotTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotTable ^ Item[System::Object ^] { Microsoft::Office::Interop::Excel::PivotTable ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Nombre o número de índice del objeto.</param>
+        <summary>Obtiene un valor single <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto de la colección.</summary>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que es el elemento principal del especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</summary>
+        <value>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que es el elemento principal del especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</value>
+        <remarks>
+          <para>Es de sólo lectura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePivotTable">
+      <MemberSignature Language="C#" Value="public void RemovePivotTable (object PivotTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemovePivotTable([in]object PivotTable) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.SlicerPivotTables.RemovePivotTable(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemovePivotTable (PivotTable As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePivotTable(System::Object ^ PivotTable);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2991)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PivotTable" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="PivotTable">A <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object que representa la tabla dinámica para quitar, o el nombre o índice de la tabla dinámica en la colección.</param>
+        <summary>Quita una referencia a una tabla dinámica de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</summary>
+        <remarks>
+          <para>Cuando se quita una tabla dinámica de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección, ya no se filtra por su elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> y las segmentaciones de datos asociados con ella.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

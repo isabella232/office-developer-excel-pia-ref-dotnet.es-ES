@@ -1,0 +1,752 @@
+<Type Name="Worksheets" FullName="Microsoft.Office.Interop.Excel.Worksheets">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="62181a586d545e1a026f86bd8ec84b25d6e092ad" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20581504" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Worksheets implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Worksheets" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Worksheets&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Worksheets : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208B1-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objetos del libro especificado o activo. Cada objeto <b>Worksheet</b> representa una hoja de cálculo.</summary>
+    <remarks>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> (propiedad) para devolver la colección de <b>hojas de cálculo</b> .</para>
+      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> (método) para crear una nueva hoja de cálculo y agregarla a la colección.</para>
+      <para>Usar <b>hojas de cálculo</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de la hoja de cálculo o el nombre, para devolver un único objeto de <b>hoja de cálculo</b> .</para> Objeto de la <b>hoja de cálculo</b><para>también es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección. La colección <b>Sheets</b> contiene todas las hojas del libro (hojas de gráficos y hojas de cálculo).</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public object this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object _Default(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets._Default(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default(Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_PrintOut">
+      <MemberSignature Language="C#" Value="public void _PrintOut (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _PrintOut([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets._PrintOut(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub _PrintOut (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(905)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">To be added.</param>
+        <param name="To">To be added.</param>
+        <param name="Copies">To be added.</param>
+        <param name="Preview">To be added.</param>
+        <param name="ActivePrinter">To be added.</param>
+        <param name="PrintToFile">To be added.</param>
+        <param name="Collate">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public object Add (object Before, object After, object Count, object Type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Add([in]object Before, [in]object After, [in]object Count, [in]object Type) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Before As Object, Optional After As Object, Optional Count As Object, Optional Type As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+        <Parameter Name="Count" Type="System.Object" />
+        <Parameter Name="Type" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">
+          <b>Objeto</b>de opcional. Objeto que especifica la hoja antes de la cual se agregará la nueva hoja.</param>
+        <param name="After">
+          <b>Objeto</b>de opcional. Objeto que especifica la hoja después de la cual se agregará la nueva hoja.</param>
+        <param name="Count">
+          <b>Objeto</b>de opcional. El número de hojas que se va a agregar. El valor predeterminado es uno.</param>
+        <param name="Type">
+          <b>Objeto</b>de opcional. Especifica el tipo de hoja. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> constantes: <b>xlWorksheet</b>, <b>xlChart</b>, <b>xlExcel4MacroSheet</b>o <b>xlExcel4IntlMacroSheet</b>. Si se va a insertar una hoja basada en una plantilla existente, especifique la ruta de acceso a la plantilla. El valor predeterminado es <b>xlWorksheet</b>.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Si <paramref name="Before" /> y <paramref name="After" /> son ambos se omite, la hoja nueva se inserta antes de la hoja activa.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add2">
+      <MemberSignature Language="C#" Value="public object Add2 (object Before, object After, object Count, object NewLayout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Add2([in]object Before, [in]object After, [in]object Count, [in]object NewLayout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.Add2(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add2 (Optional Before As Object, Optional After As Object, Optional Count As Object, Optional NewLayout As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3054)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+        <Parameter Name="Count" Type="System.Object" />
+        <Parameter Name="NewLayout" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">
+          <b>Objeto</b>de opcional. Objeto que especifica la hoja antes de la cual se agregará la nueva hoja.</param>
+        <param name="After">
+          <b>Objeto</b>de opcional. Objeto que especifica la hoja después de la cual se agregará la nueva hoja.</param>
+        <param name="Count">
+          <b>Objeto</b>de opcional. El número de hojas que se va a agregar. El valor predeterminado es uno</param>
+        <param name="NewLayout">
+          <b>Objeto</b>de opcional. Un objeto que especifica el diseño que se usará para la hoja de cálculo nueva.</param>
+        <summary>Este método sólo se implementa para el objeto de colección de <b>gráficos</b> y generará un error en tiempo de ejecución si se usa en los objetos de <b>hojas</b> y <b>hojas de cálculo</b> .</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Si <paramref name="Before" /> y <paramref name="After" /> son ambos se omite, la hoja nueva se inserta antes de la hoja activa.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Es de solo lectura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy (object Before, object After);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy([in]object Before, [in]object After) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.Copy(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy (Optional Before As Object, Optional After As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(551)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">
+          <b>Objeto</b>de opcional. La hoja antes de la cual se colocará la hoja copiada. No puede especificar <paramref name="Before" /> si especifica <paramref name="After" />.</param>
+        <param name="After">
+          <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja copiada. No puede especificar <paramref name="After" /> si especifica <paramref name="Before" />.</param>
+        <summary>Copia la hoja en otro lugar del libro.</summary>
+        <remarks>
+          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el número de objetos de la colección. <b>Integer</b> de sólo lectura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Elimina el objeto.</summary>
+        <remarks>
+          <para>Cuando se elimina un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> o <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />, este método muestra un cuadro de diálogo que solicita al usuario que confirme la eliminación. Este cuadro de diálogo se muestra de manera predeterminada. El método <b>Delete</b> devuelve un valor <b>Boolean</b> que es <b>False</b> si el usuario hizo clic en Cancelar en el cuadro de diálogo o <b>es True</b> si el usuario hizo clic en eliminar.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillAcrossSheets">
+      <MemberSignature Language="C#" Value="public void FillAcrossSheets (Microsoft.Office.Interop.Excel.Range Range, Microsoft.Office.Interop.Excel.XlFillWith Type = Microsoft.Office.Interop.Excel.XlFillWith.xlFillWithAll);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FillAcrossSheets([in]class Microsoft.Office.Interop.Excel.Range Range, [in]valuetype Microsoft.Office.Interop.Excel.XlFillWith Type) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets(Microsoft.Office.Interop.Excel.Range,Microsoft.Office.Interop.Excel.XlFillWith)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(469)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlFillWith" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto. El intervalo que se rellenan todas las hojas de cálculo en la colección. El intervalo debe ser de una hoja de cálculo dentro de la colección.</param>
+        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlFillWith" />. Especifica cómo se debe copiar el rango.</param>
+        <summary>Copia un rango en el mismo lugar en toda una serie de hojas de cálculo.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HPageBreaks">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.HPageBreaks HPageBreaks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.HPageBreaks HPageBreaks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets.HPageBreaks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HPageBreaks As HPageBreaks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::HPageBreaks ^ HPageBreaks { Microsoft::Office::Interop::Excel::HPageBreaks ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1418)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1418)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.HPageBreaks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> saltos de colección que representa la página horizontal en la hoja. Es de solo lectura</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Hay un límite de saltos de página horizontales 1.026 por hoja.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item(Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objeto</b>requerido. Nombre o número de índice del objeto.</param>
+        <summary>Devuelve un solo objeto de una colección.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="public void Move (object Before, object After);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Move([in]object Before, [in]object After) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.Move(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Move (Optional Before As Object, Optional After As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(637)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">
+          <b>Objeto</b>de opcional. La hoja antes de la cual se colocará la hoja que se ha movido. No puede especificar <paramref name="Before" /> si especifica <paramref name="After" />.</param>
+        <param name="After">
+          <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja que se ha movido. No puede especificar <paramref name="After" /> si se especifica <b>Before</b>.</param>
+        <summary>Desplaza la hoja a otro lugar del libro.</summary>
+        <remarks>
+          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut">
+      <MemberSignature Language="C#" Value="public void PrintOut (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate, object PrToFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate, [in]object PrToFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.PrintOut(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintOut (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object, Optional PrToFileName As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1772)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+        <Parameter Name="PrToFileName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">
+          <b>Objeto</b>de opcional. El número de la página en la que se va a iniciar la impresión. Si se omite este argumento, la impresión comienza al principio.</param>
+        <param name="To">
+          <b>Objeto</b>de opcional. El número de la última página a imprimir. Si se omite este argumento, la impresión finaliza con la última página.</param>
+        <param name="Copies">
+          <b>Objeto</b>de opcional. El número de copias que se va a imprimir. Si se omite este argumento, se imprime una copia.</param>
+        <param name="Preview">
+          <b>Objeto</b>de opcional. <b>True</b> para que Microsoft Excel invoque la vista preliminar antes de imprimir el objeto. <b>False</b> (o se omite) para imprimir el objeto inmediatamente.</param>
+        <param name="ActivePrinter">
+          <b>Objeto</b>de opcional. Establece el nombre de la impresora activa.</param>
+        <param name="PrintToFile">
+          <b>Objeto</b>de opcional. <b>True</b> para imprimir en un archivo. Si <paramref name="PrToFileName" /> no se especifica, Microsoft Excel solicita al usuario que escriba el nombre del archivo de salida.</param>
+        <param name="Collate">
+          <b>Objeto</b>de opcional. <b>True</b> para intercalar múltiples copias.</param>
+        <param name="PrToFileName">
+          <b>Objeto</b>de opcional. Si <paramref name="PrintToFile" /> está establecida en <b>True</b>, este argumento especifica el nombre del archivo que desea imprimir.</param>
+        <summary>Imprime el objeto.</summary>
+        <remarks>
+          <para>"Páginas" en las descripciones de <paramref name="From" /> y <paramref name="To" /> hace referencia a las páginas impresas, no total de páginas de la hoja o libro.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOutEx">
+      <MemberSignature Language="C#" Value="public void PrintOutEx (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate, object PrToFileName, object IgnorePrintAreas);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOutEx([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate, [in]object PrToFileName, [in]object IgnorePrintAreas) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.PrintOutEx(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintOutEx (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object, Optional PrToFileName As Object, Optional IgnorePrintAreas As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2361)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+        <Parameter Name="PrToFileName" Type="System.Object" />
+        <Parameter Name="IgnorePrintAreas" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">To be added.</param>
+        <param name="To">To be added.</param>
+        <param name="Copies">To be added.</param>
+        <param name="Preview">To be added.</param>
+        <param name="ActivePrinter">To be added.</param>
+        <param name="PrintToFile">To be added.</param>
+        <param name="Collate">To be added.</param>
+        <param name="PrToFileName">To be added.</param>
+        <param name="IgnorePrintAreas">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintPreview">
+      <MemberSignature Language="C#" Value="public void PrintPreview (object EnableChanges);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintPreview([in]object EnableChanges) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.PrintPreview(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintPreview (Optional EnableChanges As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(281)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EnableChanges" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="EnableChanges">Permite que los cambios realizados en el objeto.</param>
+        <summary>Muestra una vista preliminar del objeto tal como aparecería impreso.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select (object Replace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select([in]object Replace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Worksheets.Select(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (Optional Replace As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Replace" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Replace">Opcional <b>objeto</b> (que se usa solo con hojas). <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
+        <summary>Selecciona el objeto.</summary>
+        <remarks>
+          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> (método).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public object Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Visible { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina si el objeto es visible. Lectura/Escritura <b>Objeto</b>.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VPageBreaks">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.VPageBreaks VPageBreaks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.VPageBreaks VPageBreaks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Worksheets.VPageBreaks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VPageBreaks As VPageBreaks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::VPageBreaks ^ VPageBreaks { Microsoft::Office::Interop::Excel::VPageBreaks ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1419)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1419)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.VPageBreaks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> saltos de colección que representa la página vertical de la hoja. Es de solo lectura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
