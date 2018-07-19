@@ -1,0 +1,183 @@
+<Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="24fc2abe615803db23b08c339fdd812ffa384856" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580545" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriterion" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriterion" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ColorScaleCriterion" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024495-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa los criterios de umbrales mínimo, de punto medio o máximo para un formato condicional de formato de colores.</summary>
+    <remarks>
+      <para>Cada <b>ColorScaleCriterion</b> forma parte de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> colección. Use <b>ColorScaleCriteria</b>(<paramref name="index" />), para devolver un criterio individual.</para>
+      <para>Se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />, <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />, y <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> de cada umbral para la escala de colores.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>En el ejemplo de código siguiente se crea un intervalo de números y, a continuación, se aplica una regla de formato condicional de escala de dos colores a dicho intervalo. El color para el umbral mínimo, a continuación, se asigna a rojo y al umbral máximo en azul indizando en el <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />colección que se va a establecer los criterios individuales.</para>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="FormatColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.FormatColor FormatColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.FormatColor FormatColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormatColor As FormatColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::FormatColor ^ FormatColor { Microsoft::Office::Interop::Excel::FormatColor ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2717)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2717)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objeto, que especifica el color asignado al umbral de un formato condicional de escala de colores. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />
+        </value>
+        <remarks>
+          <para>Puede establecer el color del mínimo, punto medio o máximos umbrales en cualquier color personalizado mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> (propiedad); o use el <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> (propiedad).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un valor <b>entero</b> que indica qué umbral representa el criterio. Es de solo lectura</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Para una regla de formato condicional de escala de dos colores, esta propiedad devolverá un valor de "1" para el umbral mínimo y "2" para el umbral máximo. Cuando se usa una regla de escala de tres colores, los valores serán "1" para el mínimo, "2" para el punto medio y "3" para el umbral máximo.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConditionValueTypes Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConditionValueTypes Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As XlConditionValueTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConditionValueTypes Type { Microsoft::Office::Interop::Excel::XlConditionValueTypes get(); void set(Microsoft::Office::Interop::Excel::XlConditionValueTypes value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> (enumeración), que especifica el formato condicional de escala de los valores de umbral para una barra de datos o un color de cómo se determinan. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
+        </value>
+        <remarks>
+          <para>El tipo de valor de umbral de una barra de datos o el color de escala puede ser un número, por ciento, una fórmula o percentil. Si se establece el tipo en percentil usará la función de percentil en Excel para determinar el valor del umbral.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el mínimo, punto medio o valor de umbral máximo para un formato condicional de escala de colores. Lectura y escritura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>
+          <para>Puede establecer la sólo si valor el <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> (propiedad) para el formato condicional está establecida en una de las siguientes constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, o <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
+          <para>Si el tipo de umbral es una fórmula, puede establecer la fórmula como una <b>cadena</b>. La fórmula debe devolver un solo número.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

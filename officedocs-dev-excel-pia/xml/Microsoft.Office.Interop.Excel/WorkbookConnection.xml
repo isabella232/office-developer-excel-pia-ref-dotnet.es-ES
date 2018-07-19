@@ -1,0 +1,604 @@
+<Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0412302ec11fc558839570922b03112869bc8d74" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20581070" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
+  <TypeSignature Language="C++ CLI" Value="public interface class WorkbookConnection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024485-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Una conexión es un conjunto de información necesaria para obtener datos desde un origen de datos externo que no sea un libro de 1st_Excel12.</summary>
+    <remarks>Conexiones de <para>pueden almacenarse dentro de un libro de Excel.  Cuando se abre el libro, Excel crea una copia en memoria de la conexión que es la que se refiere como el objeto de conexión.  Un objeto de conexión contiene información como el nombre del servidor y el nombre del objeto que se va a abrir en ese servidor.  Opcionalmente, el objeto de conexión también puede incluir las credenciales de autenticación o un comando que se pasan al servidor y ejecuta (ejemplo: una instrucción SELECT que deba ejecutar SQL Server.)  </para><para><b>Nota</b>: la forma exacta de la conexión depende del mecanismo que se utiliza para recuperar los datos: las conexiones ODBC, las conexiones OLEDB, y las consultas Web contienen distinta información.</para> Conexión A 
+      <para>también puede almacenarse en un archivo de conexión independiente.  La mayoría de las conexiones en un libro de Excel incluyen un puntero a un archivo de conexión externo.  Archivos de conexión tienen extensiones que los identifican claramente como archivos de conexión (*. ODC, *. IQY, etcetera.) y es posible que se encuentra en el equipo local del usuario o en otras ubicaciones de confianza o conocidos como WSS (biblioteca de conexiones de datos), o a otros servidores corporativos.  Archivos de conexión permiten a varios usuarios dentro de la misma organización a volver a utilizar las conexiones.  Los administradores de red son capaces de cambiar la forma en que toda la organización se conecta a un origen de datos back-end mediante la modificación de un archivo de conexión.  Un archivo de conexión no siempre es necesario al conectarse a un origen de datos externo.</para><para>Los nombres de conexión son cadenas que identifican las conexiones en el libro en el que se usan.     Hay otras propiedades de una conexión que no son únicos.  Siempre que una fórmula de Excel toma un argumento que es una conexión, será suficiente para hacer referencia al nombre de la conexión, ya sea directamente (como una cadena) o indirectamente (haciendo referencia a una celda que contiene el nombre de la conexión como una cadena).</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. <b>Integer</b> de sólo lectura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFeedConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.DataFeedConnection DataFeedConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.DataFeedConnection DataFeedConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.DataFeedConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataFeedConnection As DataFeedConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::DataFeedConnection ^ DataFeedConnection { Microsoft::Office::Interop::Excel::DataFeedConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un objeto <b>DataFeedConnection</b> que contiene los datos y la funcionalidad necesaria para conectarse a fuentes de datos. Solo lectura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WorkbookConnection.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Elimina una conexión de libro.</summary>
+        <remarks>
+          <para>Use este método para eliminar una conexión de datos externos. Este método no se aplica a los vínculos a otros libros. </para>
+          <para>Al eliminar una conexión no eliminará ni quitar todos los objetos que estaban usando esa conexión.  Al eliminar una conexión no harán que cualquiera de los archivos de conexión que se eliminará del sistema de archivos.  Si edita cualquiera de esos objetos para usar otra conexión, todo lo que va a empezar a trabajar nuevamente.</para>
+          <para>Objetos que utilizan una conexión eliminada se comportan como si no se pudo establecer la conexión.  </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece una breve descripción de un <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. <b>String</b> de lectura y escritura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>En las propiedades de conexión del cuadro de diálogo, el usuario puede editar el nombre de la conexión y la descripción.  Cambiar el nombre y la descripción en este cuadro de diálogo cambia a esos campos sólo dentro del objeto de conexión de Excel.</para>
+          <para>El tamaño máximo de una descripción es de 255 caracteres.  Si el usuario especifica una descripción dentro de un archivo de conexión que tiene más de 255 caracteres, la descripción es trunca para ajustar el límite de 255 caracteres.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InModel">
+      <MemberSignature Language="C#" Value="public bool InModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InModel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.InModel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InModel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InModel { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Especifica si se ha agregado el objeto <b>WorkbookConnection</b> al modelo. <b>Boolean</b> (<b>bool</b> en C#) Es de sólo lectura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Debe ser false para las conexiones heredadas.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelConnection ModelConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelConnection ModelConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelConnection As ModelConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelConnection ^ ModelConnection { Microsoft::Office::Interop::Excel::ModelConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un objeto que contiene información para el nuevo tipo de conexión de modelo introducido en Excel 2013 para interactuar con el modelo de datos integrada. Solo lectura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelTables">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelTables ModelTables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelTables ModelTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelTables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelTables As ModelTables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelTables ^ ModelTables { Microsoft::Office::Interop::Excel::ModelTables ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> objeto asociado con la conexión en particular. Solo lectura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el nombre del objeto de conexión del libro. <b>String</b> de lectura y escritura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ODBCConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ODBCConnection ODBCConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ODBCConnection ODBCConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ODBCConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ODBCConnection As ODBCConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ODBCConnection ^ ODBCConnection { Microsoft::Office::Interop::Excel::ODBCConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2698)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2698)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ODBCConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve la conexión ODBC se detalla para especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. Read-only <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OLEDBConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.OLEDBConnection OLEDBConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.OLEDBConnection OLEDBConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.OLEDBConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLEDBConnection As OLEDBConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::OLEDBConnection ^ OLEDBConnection { Microsoft::Office::Interop::Excel::OLEDBConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2697)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2697)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.OLEDBConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve la conexión OLEDB detalles para especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. Read-only <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ranges">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Ranges Ranges { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Ranges Ranges" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Ranges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ranges As Ranges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Ranges ^ Ranges { Microsoft::Office::Interop::Excel::Ranges ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2699)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2699)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el rango del objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto. Read-only <see cref="T:Microsoft.Office.Interop.Excel.Ranges" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WorkbookConnection.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1417)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Actualiza una conexión de libro.</summary>
+        <remarks>
+          <para>Si el <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propiedad es <b>False</b>, no se muestran cuadros de diálogo y se produce un error en el método <b>Refresh</b> con la excepción información de conexión insuficiente.</para>
+          <para>Un error de conexión de una actualización no tendrá ningún impacto en las operaciones de actualización de otras conexiones.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshWithRefreshAll">
+      <MemberSignature Language="C#" Value="public bool RefreshWithRefreshAll { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RefreshWithRefreshAll" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.RefreshWithRefreshAll" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshWithRefreshAll As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RefreshWithRefreshAll { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina si se debe actualizar la conexión cuando se ejecuta la actualización de todos los. <b>Boolean</b> (<b>bool</b> en C#). Lectura y escritura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TextConnection TextConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TextConnection TextConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.TextConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextConnection As TextConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TextConnection ^ TextConnection { Microsoft::Office::Interop::Excel::TextConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> objeto que contiene la información de una consulta a un archivo de texto. Es de solo lectura</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConnectionType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConnectionType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As XlConnectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConnectionType Type { Microsoft::Office::Interop::Excel::XlConnectionType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConnectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el tipo de conexión de libro. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorksheetDataConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.WorksheetDataConnection WorksheetDataConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.WorksheetDataConnection WorksheetDataConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.WorksheetDataConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorksheetDataConnection As WorksheetDataConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::WorksheetDataConnection ^ WorksheetDataConnection { Microsoft::Office::Interop::Excel::WorksheetDataConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorksheetDataConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un objeto que contiene información para una conexión desde el modelo de PowerPivot en los datos en el libro como un rango, un rango con nombre o una tabla. Es de solo lectura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
