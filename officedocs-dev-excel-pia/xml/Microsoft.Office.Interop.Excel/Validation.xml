@@ -1,0 +1,1144 @@
+<Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="083a06403ed93601b1e670cd7b0f4d2f6291f627" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575806" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Validation" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Validation" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Validation" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Validation" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Validation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002442F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="70979-101">Representa la validación de datos para un rango de hoja de cálculo.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="70979-101">Represents data validation for a worksheet range.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="70979-102">
+        <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> propiedad para devolver el objeto <b>Validation</b> .</para>
+        <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para agregar validación de datos a un rango y crear un nuevo objeto <b>Validation</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="70979-102">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> property to return the <b>Validation</b> object.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to add data validation to a range and create a new <b>Validation</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.Office.Interop.Excel.XlDVType Type, object AlertStyle, object Operator, object Formula1, object Formula2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add([in]valuetype Microsoft.Office.Interop.Excel.XlDVType Type, [in]object AlertStyle, [in]object Operator, [in]object Formula1, [in]object Formula2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (Type As XlDVType, Optional AlertStyle As Object, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlDVType" />
+        <Parameter Name="AlertStyle" Type="System.Object" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="70979-103">Requiere <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-103">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
+          </span>
+          <span data-ttu-id="70979-104">Tipo de validación.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-104">The validation type.</span>
+          </span>
+        </param>
+        <param name="AlertStyle">
+          <span data-ttu-id="70979-105">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-105">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="70979-106">Estilo de alerta de validación.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-106">The validation alert style.</span>
+          </span>
+          <span data-ttu-id="70979-107">Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constantes: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>o <b>xlValidAlertWarning</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-107">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constants: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>, or <b>xlValidAlertWarning</b>.</span>
+          </span>
+        </param>
+        <param name="Operator">
+          <span data-ttu-id="70979-108">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-108">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="70979-109">Operador de validación de datos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-109">The data validation operator.</span>
+          </span>
+          <span data-ttu-id="70979-110">Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>o <b>xlNotEqual</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-110">Can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constants: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>, or <b>xlNotEqual</b>.</span>
+          </span>
+        </param>
+        <param name="Formula1">
+          <span data-ttu-id="70979-111">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-111">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="70979-112">Primera parte de la ecuación de validación de datos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-112">The first part of the data validation equation.</span>
+          </span>
+        </param>
+        <param name="Formula2">
+          <span data-ttu-id="70979-113">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-113">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="70979-114">La segunda parte de la validación de datos cuando <paramref name="Operator" /> es <b>xlBetween</b> o <b>xlNotBetween</b> (en caso contrario, se omite este argumento).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-114">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="70979-115">Agrega validación de datos al rango especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-115">Adds data validation to the specified range.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="70979-116">
+            <para>Agregar el método requiere diferentes argumentos, que dependen del tipo de validación, tal como se muestra en la siguiente tabla.</para>
+            <list type="table">
+              <item>
+                <term>
+                  <b>xlValidateCustom</b>
+                </term>
+                <description>
+                  <paramref name="Formula1" /> se requiere; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una expresión que se evalúa como <b>True</b> si la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
+              </item>
+              <item>
+                <term>
+                  <b>xlInputOnly</b>
+                </term>
+                <description>
+                  <paramref name="AlertStyle" />, <paramref name="Formula1" />, o <paramref name="Formula2" /> se usan.</description>
+              </item>
+              <item>
+                <term>
+                  <b>xlValidateList</b>
+                </term>
+                <description>
+                  <paramref name="Formula1" /> se requiere; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a esta lista.</description>
+              </item>
+              <item>
+                <term>
+                  <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>o <b>xlValidateTime</b></term>
+                <description>uno de uno de ellos <paramref name="Formula1" /> o <paramref name="Formula2" /> debe especificarse, o ambos se puede especificar.</description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-116">
+              <para>The Add method requires different arguments, depending on the validation type, as shown in the following table.</para>
+              <list type="table">
+                <item>
+                  <term>
+                    <b>xlValidateCustom</b>
+                  </term>
+                  <description>
+                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored. <paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</description>
+                </item>
+                <item>
+                  <term>
+                    <b>xlInputOnly</b>
+                  </term>
+                  <description>
+                    <paramref name="AlertStyle" />, <paramref name="Formula1" />, or <paramref name="Formula2" /> are used.</description>
+                </item>
+                <item>
+                  <term>
+                    <b>xlValidateList</b>
+                  </term>
+                  <description>
+                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored. <paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to this list.</description>
+                </item>
+                <item>
+                  <term>
+                    <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, or <b>xlValidateTime</b></term>
+                  <description>One of either <paramref name="Formula1" /> or <paramref name="Formula2" /> must be specified, or both may be specified.</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlertStyle">
+      <MemberSignature Language="C#" Value="public int AlertStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AlertStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.AlertStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlertStyle As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AlertStyle { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1605)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1605)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-117">Devuelve el estilo de alerta de validación.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-117">Returns the validation alert style.</span>
+          </span>
+          <span data-ttu-id="70979-118">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-118">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="70979-119">
+            <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> (método) para establecer el estilo de alerta de un rango. Si el rango ya tiene validación de datos, use la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para cambiar el estilo de alerta.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-119">
+              <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> method to set the alert style for a range. If the range already has data validation, use the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to change the alert style.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-120">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-120">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-121">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="70979-122">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-122">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+          </span>
+          <span data-ttu-id="70979-123">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-123">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="70979-124">
+            <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-124">
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-125">Elimina el objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-125">Deletes the object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorMessage">
+      <MemberSignature Language="C#" Value="public string ErrorMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p108">Devuelve o establece el mensaje de error de validación de datos. <b>String</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p108">Returns or sets the data validation error message. Read/write <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorTitle">
+      <MemberSignature Language="C#" Value="public string ErrorTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ErrorTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p109">Devuelve o establece el título del cuadro de error asociado a la validación de datos. <b>String</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p109">Returns or sets the title of the data-validation error dialog box. Read/write <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula1">
+      <MemberSignature Language="C#" Value="public string Formula1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Formula1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formula1 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula1 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1579)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1579)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p110">Devuelve el valor o la expresión correspondiente al formato condicional o a la validación de datos. Puede ser un valor constante, un valor de cadena, una referencia de celda o una fórmula. Valor <b>String</b> de sólo lectura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p110">Returns the value or expression associated with the conditional format or data validation. Can be a constant value, a string value, a cell reference, or a formula. Read-only <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula2">
+      <MemberSignature Language="C#" Value="public string Formula2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Formula2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formula2 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula2 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1580)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1580)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-133">Devuelve el valor o una expresión asociada con la segunda parte de una validación de datos o formato condicional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-133">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
+          </span>
+          <span data-ttu-id="70979-134">
+            <b>String</b> de solo lectura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-134">Read-only <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="70979-135">
+            <para>Esta propiedad se utiliza sólo al formato condicional de validación de datos <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> propiedad es <b>xlBetween</b> o <b>xlNotBetween</b>. Puede ser un valor constante, un valor de tipo string, una referencia de celda o una fórmula.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-135">
+              <para>This property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>. It can be a constant value, a string value, a cell reference, or a formula.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreBlank">
+      <MemberSignature Language="C#" Value="public bool IgnoreBlank { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreBlank" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.IgnoreBlank" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreBlank As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreBlank { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p112">
+            <b>True</b> si la validación de datos del rango permite valores en blanco. <b>Boolean</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p112">
+              <b>True</b> if blank values are permitted by the range data validation. Read/write <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="70979-138">
+            <para>Si la propiedad <b>IgnoreBlank</b> es <b>True</b>, los datos de celda se considerarán válidos si la celda está en blanco, o bien si una celda hace referencia, ya sea por la <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> o <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> propiedad está en blanco.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-138">
+              <para>If the <b>IgnoreBlank</b> property is <b>True</b>, cell data is considered valid if the cell is blank, or if a cell referenced by either the <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> or <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> property is blank.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IMEMode">
+      <MemberSignature Language="C#" Value="public int IMEMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IMEMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.IMEMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property IMEMode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IMEMode { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-139">Devuelve o establece la descripción de las reglas de entrada en japonés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-139">Returns or sets the description of the Japanese input rules.</span>
+          </span>
+          <span data-ttu-id="70979-140">Puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-140">Can be one of the <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constants.</span>
+          </span>
+          <span data-ttu-id="70979-141">
+            <b>Integer</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-141">Read/write <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="70979-142">
+            <para>Tenga en cuenta que esta propiedad puede establecerse sólo cuando se ha instalado y seleccionado la compatibilidad con el idioma japonés.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-142">
+              <para>Note that this property can be set only when Japanese language support has been installed and selected.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InCellDropdown">
+      <MemberSignature Language="C#" Value="public bool InCellDropdown { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InCellDropdown" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InCellDropdown" />
+      <MemberSignature Language="VB.NET" Value="Public Property InCellDropdown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InCellDropdown { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p114">
+            <b>True</b> si la validación de datos muestra una lista desplegable que contiene valores aceptables. Valor <b>Boolean</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p114">
+              <b>True</b> if data validation displays a drop-down list that contains acceptable values. Read/write <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="70979-145">
+            <para>Esta propiedad se omite si el tipo de validación no es <b>xlValidateList</b>.</para>
+            <para>Usar la <paramref name="Minimum" /> argumento de la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> objeto para especificar el rango que contiene datos válidos.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-145">
+              <para>This property is ignored if the validation type isn’t <b>xlValidateList</b>.</para>
+              <para>Use the <paramref name="Minimum" /> argument of the <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> object to specify the range that contains valid data.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputMessage">
+      <MemberSignature Language="C#" Value="public string InputMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InputMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p115">Devuelve o establece el mensaje de entrada de validación de datos. <b>String</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p115">Returns or sets the data validation input message. Read/write <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputTitle">
+      <MemberSignature Language="C#" Value="public string InputTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InputTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p116">Devuelve o establece el título del cuadro de entrada con validación de datos. <b>String</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p116">Returns or sets the title of the data-validation input dialog box. Read/write <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modify">
+      <MemberSignature Language="C#" Value="public void Modify (object Type, object AlertStyle, object Operator, object Formula1, object Formula2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Modify([in]object Type, [in]object AlertStyle, [in]object Operator, [in]object Formula1, [in]object Formula2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Modify (Optional Type As Object, Optional AlertStyle As Object, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1581)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Object" />
+        <Parameter Name="AlertStyle" Type="System.Object" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="70979-150">Requiere <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-150">Required <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
+          </span>
+          <span data-ttu-id="70979-151">Tipo de validación.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-151">The validation type.</span>
+          </span>
+        </param>
+        <param name="AlertStyle">
+          <span data-ttu-id="70979-152">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-152">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</span>
+          </span>
+          <span data-ttu-id="70979-153">Estilo de alerta de validación.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-153">The validation alert style.</span>
+          </span>
+        </param>
+        <param name="Operator">
+          <span data-ttu-id="70979-154">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-154">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
+          </span>
+          <span data-ttu-id="70979-155">Operador de validación de datos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-155">The data validation operator.</span>
+          </span>
+        </param>
+        <param name="Formula1">
+          <span data-ttu-id="70979-156">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-156">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="70979-157">Primera parte de la ecuación de validación de datos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-157">The first part of the data validation equation.</span>
+          </span>
+        </param>
+        <param name="Formula2">
+          <span data-ttu-id="70979-158">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-158">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="70979-159">La segunda parte de la validación de datos cuando <paramref name="Operator" /> es <b>xlBetween</b> o <b>xlNotBetween</b> (en caso contrario, se omite este argumento).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-159">The second part of the data validation when <paramref name="Operator" /> is <b>xlBetween</b> or <b>xlNotBetween</b> (otherwise, this argument is ignored).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="70979-160">Modifica la validación de datos para un rango.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-160">Modifies data validation for a range.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="70979-161">
+            <para>El método <b>Modify</b> requiere diferentes argumentos, que dependen del tipo de validación, como se muestra en la siguiente tabla.</para>
+            <list type="table">
+              <item>
+                <term>
+                  <b>xlInputOnly</b>
+                </term>
+                <description>
+                  <paramref name="AlertStyle" />, <paramref name="Formula1" />, y <paramref name="Formula2" /> no se usan.</description>
+              </item>
+              <item>
+                <term>
+                  <b>xlValidateCustom</b>
+                </term>
+                <description>
+                  <paramref name="Formula1" /> se requiere; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una expresión que se evalúa como <b>True</b> si la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
+              </item>
+              <item>
+                <term>
+                  <b>xlValidateList</b>
+                </term>
+                <description>
+                  <paramref name="Formula1" /> se requiere; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a la lista.</description>
+              </item>
+              <item>
+                <term>
+                  <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>o <b>xlValidateWholeNumber</b></term>
+                <description>
+                  <paramref name="Formula1" /> o <paramref name="Formula2" />, o ambos, debe especificarse.</description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-161">
+              <para>The <b>Modify</b> method requires different arguments, depending on the validation type, as shown in the following table.</para>
+              <list type="table">
+                <item>
+                  <term>
+                    <b>xlInputOnly</b>
+                  </term>
+                  <description>
+                    <paramref name="AlertStyle" />, <paramref name="Formula1" />, and <paramref name="Formula2" /> are not used.</description>
+                </item>
+                <item>
+                  <term>
+                    <b>xlValidateCustom</b>
+                  </term>
+                  <description>
+                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored. <paramref name="Formula1" /> must contain an expression that evaluates to <b>True</b> when data entry is valid and <b>False</b> when data entry is invalid.</description>
+                </item>
+                <item>
+                  <term>
+                    <b>xlValidateList</b>
+                  </term>
+                  <description>
+                    <paramref name="Formula1" /> is required; <paramref name="Formula2" /> is ignored. <paramref name="Formula1" /> must contain either a comma-delimited list of values or a worksheet reference to the list.</description>
+                </item>
+                <item>
+                  <term>
+                    <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>, or <b>xlValidateWholeNumber</b></term>
+                  <description>
+                    <paramref name="Formula1" /> or <paramref name="Formula2" />, or both, must be specified.</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operator">
+      <MemberSignature Language="C#" Value="public int Operator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Operator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Operator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Operator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(797)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(797)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-162">Devuelve el operador para la validación de datos o formato condicional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-162">Returns the operator for the conditional format or data validation.</span>
+          </span>
+          <span data-ttu-id="70979-163">
+            <b>Integer</b> de sólo lectura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-163">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p123">Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p123">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowError">
+      <MemberSignature Language="C#" Value="public bool ShowError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ShowError" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowError { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p124">
+            <b>True</b> si se muestra un mensaje de error de validación de datos siempre que el usuario escriba datos no válidos. Valot <b>Boolean</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p124">
+              <b>True</b> if the data validation error message will be displayed whenever the user enters invalid data. Read/write <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInput">
+      <MemberSignature Language="C#" Value="public bool ShowInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowInput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ShowInput" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowInput As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInput { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-p125">
+            <b>True</b> si se muestra el mensaje de entrada de validación de datos siempre que el usuario seleccione una celda del rango de validación de datos. <b>Boolean</b> de lectura y escritura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-p125">
+              <b>True</b> if the data validation input message will be displayed whenever the user selects a cell in the data validation range. Read/write <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-170">Devuelve la validación de tipo de datos para un rango.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-170">Returns data type validation for a range.</span>
+          </span>
+          <span data-ttu-id="70979-171">Sólo lectura <b>entero</b> que puede ser una de las constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-171">Read-only <b>Integer</b> that can be one of the constants of <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public bool Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="70979-172">
+            <b>True</b> si se cumplen todos los criterios de validación (es decir, si el rango contiene datos válidos).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-172">
+              <b>True</b> if all the validation criteria are met (that is, if the range contains valid data).</span>
+          </span>
+          <span data-ttu-id="70979-173">
+            <b>Boolean</b> de sólo lectura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="70979-173">Read-only <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
