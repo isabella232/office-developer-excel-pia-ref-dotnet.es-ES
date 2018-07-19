@@ -1,0 +1,123 @@
+<Type Name="IRTDUpdateEvent" FullName="Microsoft.Office.Interop.Excel.IRTDUpdateEvent">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1f85b1fa3e25fce2babaf3e1ea57dc694f4a45e5" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20583954" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRTDUpdateEvent" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRTDUpdateEvent" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRTDUpdateEvent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("A43788C1-D91B-11D3-8F39-00C04F3651B8")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa eventos de actualización de datos en tiempo real.</summary>
+    <remarks>
+      <para>Para crear una instancia o para devolver un objeto <b>IRTDUpdateEvent</b> , declare una variable como un objeto <b>IRTDUpdateEvent</b> y, a continuación, use esa variable como un objeto de devolución de llamada.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public void Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disconnect() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.Disconnect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Disconnect();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indica al servidor de datos en tiempo real (RTD) desconectar de especificado <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> objeto.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeartbeatInterval">
+      <MemberSignature Language="C#" Value="public int HeartbeatInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HeartbeatInterval" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeartbeatInterval As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HeartbeatInterval { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un <b>número entero</b> para el intervalo entre actualizaciones para los datos en tiempo real. Lectura y escritura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> propiedad en -1 dará como resultado la <see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" /> método que se llama no.</para>
+          <para>
+            <b>Nota</b> el intervalo heartbeat no puede establecerse por debajo de 15.000 milisegundos debido al tiempo de espera estándar de 15 segundos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateNotify">
+      <MemberSignature Language="C#" Value="public void UpdateNotify ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateNotify() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateNotify ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateNotify();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>El servidor de datos en tiempo real (RTD) utiliza este método para notificar a Microsoft Excel que se han recibido nuevos datos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

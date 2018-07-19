@@ -1,0 +1,847 @@
+<Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a6f0025a298b025acdc36577d72a1f6f03353008" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20586264" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface WorkbookEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class WorkbookEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Excel.WorkbookEvents), typeof(Microsoft.Office.Interop.Excel.WorkbookEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Interfaz de eventos para Excel<see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> eventos de objetos.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_ActivateEventHandler Activate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_ActivateEventHandler Activate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.Activate" />
+      <MemberSignature Language="VB.NET" Value="Event Activate As WorkbookEvents_ActivateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_ActivateEventHandler ^ Activate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_ActivateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando se activa un libro.</summary>
+        <remarks>
+          <para>Al cambiar entre dos ventanas que muestran el mismo libro, se produce el evento <b>WindowActivate</b> , pero no se produce el evento <b>Activate</b> del libro.</para>
+          <para>Este evento no se produce cuando se crea una nueva ventana.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddinInstall">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_AddinInstallEventHandler AddinInstall;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_AddinInstallEventHandler AddinInstall" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.AddinInstall" />
+      <MemberSignature Language="VB.NET" Value="Event AddinInstall As WorkbookEvents_AddinInstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_AddinInstallEventHandler ^ AddinInstall;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AddinInstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando el libro se instala como un complemento.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddinUninstall">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_AddinUninstallEventHandler AddinUninstall;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_AddinUninstallEventHandler AddinUninstall" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.AddinUninstall" />
+      <MemberSignature Language="VB.NET" Value="Event AddinUninstall As WorkbookEvents_AddinUninstallEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_AddinUninstallEventHandler ^ AddinUninstall;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AddinUninstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce al desinstalar el libro como complemento.</summary>
+        <remarks>
+          <para>El complemento no se cierra automáticamente cuando se desinstala.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterSave">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_AfterSaveEventHandler AfterSave;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_AfterSaveEventHandler AfterSave" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.AfterSave" />
+      <MemberSignature Language="VB.NET" Value="Event AfterSave As WorkbookEvents_AfterSaveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_AfterSaveEventHandler ^ AfterSave;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterSaveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de guardar el libro.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterXmlExport">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlExportEventHandler AfterXmlExport;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlExportEventHandler AfterXmlExport" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.AfterXmlExport" />
+      <MemberSignature Language="VB.NET" Value="Event AfterXmlExport As WorkbookEvents_AfterXmlExportEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_AfterXmlExportEventHandler ^ AfterXmlExport;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlExportEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de que Excel guarde o exporte datos del libro especificado a un archivo de datos XML.</summary>
+        <remarks>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterXmlImport">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlImportEventHandler AfterXmlImport;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlImportEventHandler AfterXmlImport" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.AfterXmlImport" />
+      <MemberSignature Language="VB.NET" Value="Event AfterXmlImport As WorkbookEvents_AfterXmlImportEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_AfterXmlImportEventHandler ^ AfterXmlImport;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlImportEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de actualiza una conexión de datos XML existente o después de importarán nuevos datos XML al libro de Excel especificado.</summary>
+        <remarks>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeClose">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeCloseEventHandler BeforeClose;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeCloseEventHandler BeforeClose" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeClose" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeClose As WorkbookEvents_BeforeCloseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_BeforeCloseEventHandler ^ BeforeClose;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeCloseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de que el libro se cierre. Si el libro ha sido modificado, este evento se produce antes de pedir al usuario que guarde las modificaciones.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforePrint">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_BeforePrintEventHandler BeforePrint;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_BeforePrintEventHandler BeforePrint" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforePrint" />
+      <MemberSignature Language="VB.NET" Value="Event BeforePrint As WorkbookEvents_BeforePrintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_BeforePrintEventHandler ^ BeforePrint;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforePrintEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de que se imprima el libro o cualquiera de sus partes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeSave">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeSaveEventHandler BeforeSave;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeSaveEventHandler BeforeSave" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeSave" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeSave As WorkbookEvents_BeforeSaveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_BeforeSaveEventHandler ^ BeforeSave;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeSaveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de que el libro se guarde.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeXmlExport">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlExportEventHandler BeforeXmlExport;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlExportEventHandler BeforeXmlExport" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlExport" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeXmlExport As WorkbookEvents_BeforeXmlExportEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_BeforeXmlExportEventHandler ^ BeforeXmlExport;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlExportEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de que Excel guarde o exporte datos del libro especificado a un archivo de datos XML.</summary>
+        <remarks>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeXmlImport">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler BeforeXmlImport;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler BeforeXmlImport" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeXmlImport As WorkbookEvents_BeforeXmlImportEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_BeforeXmlImportEventHandler ^ BeforeXmlImport;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de actualizar una conexión de datos XML existente o antes de nuevo XML se importan los datos a un libro de Excel.</summary>
+        <remarks>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_DeactivateEventHandler Deactivate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_DeactivateEventHandler Deactivate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.Deactivate" />
+      <MemberSignature Language="VB.NET" Value="Event Deactivate As WorkbookEvents_DeactivateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_DeactivateEventHandler ^ Deactivate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_DeactivateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando se desactiva el libro.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelChange">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_ModelChangeEventHandler ModelChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_ModelChangeEventHandler ModelChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" />
+      <MemberSignature Language="VB.NET" Value="Event ModelChange As WorkbookEvents_ModelChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_ModelChangeEventHandler ^ ModelChange;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_ModelChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de cambia el modelo de datos de Excel.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewChart">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_NewChartEventHandler NewChart;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_NewChartEventHandler NewChart" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" />
+      <MemberSignature Language="VB.NET" Value="Event NewChart As WorkbookEvents_NewChartEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_NewChartEventHandler ^ NewChart;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_NewChartEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce al crear un gráfico nuevo en el libro.</summary>
+        <remarks>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> evento se produce siempre que un gráfico nuevo se inserta o se pegan en una hoja de cálculo, una hoja de gráfico u otros tipos de hoja. Si se insertan varios gráficos o se pegan, se producirá el evento para cada gráfico en el orden en que se inserta o se pegan. Si un objeto chart o la hoja de gráfico se mueve de una ubicación a otra, no se producirá el evento. Sin embargo, si el gráfico se mueve entre un objeto de gráfico y una hoja de gráfico, se producirá el evento debido a que se debe crear un nuevo gráfico.</para>
+          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> no se producirá el evento en los siguientes escenarios: copiar o pegar una hoja de gráfico, cambiar un tipo de gráfico, cambiar un origen de datos del gráfico, deshacer o Rehacer Insertar o pegar un gráfico y carga de un libro que contiene un gráfico.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSheet">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_NewSheetEventHandler NewSheet;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_NewSheetEventHandler NewSheet" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewSheet" />
+      <MemberSignature Language="VB.NET" Value="Event NewSheet As WorkbookEvents_NewSheetEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_NewSheetEventHandler ^ NewSheet;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_NewSheetEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce al crear una hoja nueva en el libro.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_OpenEventHandler Open;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_OpenEventHandler Open" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.Open" />
+      <MemberSignature Language="VB.NET" Value="Event Open As WorkbookEvents_OpenEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_OpenEventHandler ^ Open;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_OpenEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce al abrir el libro.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotTableCloseConnection">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_PivotTableCloseConnectionEventHandler PivotTableCloseConnection;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_PivotTableCloseConnectionEventHandler PivotTableCloseConnection" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.PivotTableCloseConnection" />
+      <MemberSignature Language="VB.NET" Value="Event PivotTableCloseConnection As WorkbookEvents_PivotTableCloseConnectionEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_PivotTableCloseConnectionEventHandler ^ PivotTableCloseConnection;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_PivotTableCloseConnectionEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de que un informe de tabla dinámica cierra la conexión con su origen de datos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotTableOpenConnection">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_PivotTableOpenConnectionEventHandler PivotTableOpenConnection;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_PivotTableOpenConnectionEventHandler PivotTableOpenConnection" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.PivotTableOpenConnection" />
+      <MemberSignature Language="VB.NET" Value="Event PivotTableOpenConnection As WorkbookEvents_PivotTableOpenConnectionEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_PivotTableOpenConnectionEventHandler ^ PivotTableOpenConnection;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_PivotTableOpenConnectionEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de que un informe de tabla dinámica abre la conexión con su origen de datos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowsetComplete">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_RowsetCompleteEventHandler RowsetComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_RowsetCompleteEventHandler RowsetComplete" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.RowsetComplete" />
+      <MemberSignature Language="VB.NET" Value="Event RowsetComplete As WorkbookEvents_RowsetCompleteEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_RowsetCompleteEventHandler ^ RowsetComplete;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_RowsetCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>El evento se produce cuando el usuario recorre el conjunto de registros o invoca la acción de conjunto de filas en una tabla dinámica OLAP.</summary>
+        <remarks>
+          <para>Dado que el objeto recordset se crea de forma asincrónica, el evento permite la automatización determinar cuándo se ha completado la acción. Además, dado que se crea el objeto recordset en una hoja independiente, el evento debe estar en el nivel de libro.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetActivate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetActivateEventHandler SheetActivate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetActivateEventHandler SheetActivate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetActivate" />
+      <MemberSignature Language="VB.NET" Value="Event SheetActivate As WorkbookEvents_SheetActivateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetActivateEventHandler ^ SheetActivate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetActivateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando se activa una hoja.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetBeforeDelete">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeDeleteEventHandler SheetBeforeDelete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeDeleteEventHandler SheetBeforeDelete" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetBeforeDelete" />
+      <MemberSignature Language="VB.NET" Value="Event SheetBeforeDelete As WorkbookEvents_SheetBeforeDeleteEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetBeforeDeleteEventHandler ^ SheetBeforeDelete;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeDeleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de que se elimine la hoja de cálculo.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetBeforeDoubleClick">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeDoubleClickEventHandler SheetBeforeDoubleClick;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeDoubleClickEventHandler SheetBeforeDoubleClick" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetBeforeDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Event SheetBeforeDoubleClick As WorkbookEvents_SheetBeforeDoubleClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetBeforeDoubleClickEventHandler ^ SheetBeforeDoubleClick;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeDoubleClickEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce al hacer doble clic en una hoja de cálculo, antes de la acción de doble clic predeterminada.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetBeforeRightClick">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeRightClickEventHandler SheetBeforeRightClick;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeRightClickEventHandler SheetBeforeRightClick" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetBeforeRightClick" />
+      <MemberSignature Language="VB.NET" Value="Event SheetBeforeRightClick As WorkbookEvents_SheetBeforeRightClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetBeforeRightClickEventHandler ^ SheetBeforeRightClick;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetBeforeRightClickEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce al hacer clic con el botón secundario del mouse (ratón) en una hoja de cálculo, antes de la acción predeterminada.</summary>
+        <remarks>
+          <para>Este evento no se produce en hojas de gráficos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetCalculate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetCalculateEventHandler SheetCalculate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetCalculateEventHandler SheetCalculate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetCalculate" />
+      <MemberSignature Language="VB.NET" Value="Event SheetCalculate As WorkbookEvents_SheetCalculateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetCalculateEventHandler ^ SheetCalculate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetCalculateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de actualizar una hoja de cálculo o de trazar los datos modificados de un gráfico.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetChange">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetChangeEventHandler SheetChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetChangeEventHandler SheetChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" />
+      <MemberSignature Language="VB.NET" Value="Event SheetChange As WorkbookEvents_SheetChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetChangeEventHandler ^ SheetChange;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando una celda de cualquier hoja de cálculo es modificada por el usuario o por un vínculo externo.</summary>
+        <remarks>
+          <para>Este evento no se produce en hojas de gráficos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetDeactivate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetDeactivateEventHandler SheetDeactivate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetDeactivateEventHandler SheetDeactivate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetDeactivate" />
+      <MemberSignature Language="VB.NET" Value="Event SheetDeactivate As WorkbookEvents_SheetDeactivateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetDeactivateEventHandler ^ SheetDeactivate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetDeactivateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando se desactiva cualquier hoja.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetFollowHyperlink">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetFollowHyperlinkEventHandler SheetFollowHyperlink;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetFollowHyperlinkEventHandler SheetFollowHyperlink" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetFollowHyperlink" />
+      <MemberSignature Language="VB.NET" Value="Event SheetFollowHyperlink As WorkbookEvents_SheetFollowHyperlinkEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetFollowHyperlinkEventHandler ^ SheetFollowHyperlink;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetFollowHyperlinkEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce al hacer clic en cualquier hipervínculo en Microsoft Excel.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetLensGalleryRenderComplete">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler SheetLensGalleryRenderComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler SheetLensGalleryRenderComplete" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetLensGalleryRenderComplete" />
+      <MemberSignature Language="VB.NET" Value="Event SheetLensGalleryRenderComplete As WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler ^ SheetLensGalleryRenderComplete;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando los iconos de la Galería de llamada (estáticos y dinámicos) han completado la representación de una hoja de cálculo.</summary>
+        <remarks>
+          <para>Este evento puede utilizarse para indicar cuándo para mostrar adicional o volver a habilitar la actualización de la pantalla los cuadros de diálogo, por ejemplo.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetPivotTableAfterValueChange">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableAfterValueChangeEventHandler SheetPivotTableAfterValueChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableAfterValueChangeEventHandler SheetPivotTableAfterValueChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" />
+      <MemberSignature Language="VB.NET" Value="Event SheetPivotTableAfterValueChange As WorkbookEvents_SheetPivotTableAfterValueChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetPivotTableAfterValueChangeEventHandler ^ SheetPivotTableAfterValueChange;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableAfterValueChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de editar o calcular de nuevo una celda o un rango de celdas (para celdas que contienen fórmulas) dentro de una tabla dinámica.</summary>
+        <remarks>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetPivotTableBeforeAllocateChanges">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler SheetPivotTableBeforeAllocateChanges;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler SheetPivotTableBeforeAllocateChanges" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" />
+      <MemberSignature Language="VB.NET" Value="Event SheetPivotTableBeforeAllocateChanges As WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler ^ SheetPivotTableBeforeAllocateChanges;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de aplicar los cambios a una tabla dinámica.</summary>
+        <remarks>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetPivotTableBeforeCommitChanges">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeCommitChangesEventHandler SheetPivotTableBeforeCommitChanges;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeCommitChangesEventHandler SheetPivotTableBeforeCommitChanges" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" />
+      <MemberSignature Language="VB.NET" Value="Event SheetPivotTableBeforeCommitChanges As WorkbookEvents_SheetPivotTableBeforeCommitChangesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetPivotTableBeforeCommitChangesEventHandler ^ SheetPivotTableBeforeCommitChanges;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeCommitChangesEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de confirmar los cambios en el origen de datos OLAP de una tabla dinámica.</summary>
+        <remarks>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra el origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetPivotTableBeforeDiscardChanges">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler SheetPivotTableBeforeDiscardChanges;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler SheetPivotTableBeforeDiscardChanges" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeDiscardChanges" />
+      <MemberSignature Language="VB.NET" Value="Event SheetPivotTableBeforeDiscardChanges As WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler ^ SheetPivotTableBeforeDiscardChanges;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce antes de que se descarten los cambios realizados en una tabla dinámica.</summary>
+        <remarks>
+          <para>Se produce inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetPivotTableChangeSync">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableChangeSyncEventHandler SheetPivotTableChangeSync;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableChangeSyncEventHandler SheetPivotTableChangeSync" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />
+      <MemberSignature Language="VB.NET" Value="Event SheetPivotTableChangeSync As WorkbookEvents_SheetPivotTableChangeSyncEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetPivotTableChangeSyncEventHandler ^ SheetPivotTableChangeSync;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableChangeSyncEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de realizar cambios en una tabla dinámica.</summary>
+        <remarks>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />se produce durante la mayoría de los cambios a una tabla dinámica, por lo que puede escribir código para responder a acciones del usuario, como borrar, agrupar o actualizar elementos de la tabla dinámica.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetPivotTableUpdate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableUpdateEventHandler SheetPivotTableUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableUpdateEventHandler SheetPivotTableUpdate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableUpdate" />
+      <MemberSignature Language="VB.NET" Value="Event SheetPivotTableUpdate As WorkbookEvents_SheetPivotTableUpdateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetPivotTableUpdateEventHandler ^ SheetPivotTableUpdate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableUpdateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de actualizar la hoja del informe de tabla dinámica.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetSelectionChange">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetSelectionChangeEventHandler SheetSelectionChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetSelectionChangeEventHandler SheetSelectionChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetSelectionChange" />
+      <MemberSignature Language="VB.NET" Value="Event SheetSelectionChange As WorkbookEvents_SheetSelectionChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetSelectionChangeEventHandler ^ SheetSelectionChange;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetSelectionChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando la selección cambia en una hoja (no se produce si la selección está en una hoja de gráfico).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetTableUpdate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SheetTableUpdateEventHandler SheetTableUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SheetTableUpdateEventHandler SheetTableUpdate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetTableUpdate" />
+      <MemberSignature Language="VB.NET" Value="Event SheetTableUpdate As WorkbookEvents_SheetTableUpdateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SheetTableUpdateEventHandler ^ SheetTableUpdate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetTableUpdateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce después de que se ha actualizado la tabla de la hoja.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sync">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_SyncEventHandler Sync;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_SyncEventHandler Sync" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.Sync" />
+      <MemberSignature Language="VB.NET" Value="Event Sync As WorkbookEvents_SyncEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_SyncEventHandler ^ Sync;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SyncEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando se sincroniza la copia local de una hoja que forma parte de un área de documentos con la copia almacenada en el servidor.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowActivate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_WindowActivateEventHandler WindowActivate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_WindowActivateEventHandler WindowActivate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.WindowActivate" />
+      <MemberSignature Language="VB.NET" Value="Event WindowActivate As WorkbookEvents_WindowActivateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_WindowActivateEventHandler ^ WindowActivate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_WindowActivateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando se activa cualquier ventana del libro.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowDeactivate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_WindowDeactivateEventHandler WindowDeactivate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_WindowDeactivateEventHandler WindowDeactivate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.WindowDeactivate" />
+      <MemberSignature Language="VB.NET" Value="Event WindowDeactivate As WorkbookEvents_WindowDeactivateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_WindowDeactivateEventHandler ^ WindowDeactivate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_WindowDeactivateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando se desactiva cualquier ventana del libro.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowResize">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Excel.WorkbookEvents_WindowResizeEventHandler WindowResize;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Excel.WorkbookEvents_WindowResizeEventHandler WindowResize" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.WindowResize" />
+      <MemberSignature Language="VB.NET" Value="Event WindowResize As WorkbookEvents_WindowResizeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Excel::WorkbookEvents_WindowResizeEventHandler ^ WindowResize;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_WindowResizeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produce cuando se cambia el tamaño de cualquier ventana del libro.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

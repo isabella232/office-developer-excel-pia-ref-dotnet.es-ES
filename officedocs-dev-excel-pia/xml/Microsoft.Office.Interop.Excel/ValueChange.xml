@@ -1,0 +1,418 @@
+<Type Name="ValueChange" FullName="Microsoft.Office.Interop.Excel.ValueChange">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="cec9116dcd3809910e97f0f88001ea2b0c0525b8" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20586292" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ValueChange" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ValueChange" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ValueChange" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ValueChange" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ValueChange" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244C0-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa un valor que se ha cambiado en un informe de tabla dinámica basado en un origen de datos OLAP.</summary>
+    <remarks>
+      <para>El <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección contiene <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objetos que representan los cambios que ha realizado un usuario a las celdas de valor en un informe de tabla dinámica.</para>
+      <para>Las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto especificar detalles sobre el cambio que se realizó, como el valor del cambio, la tupla asociada a la celda que se cambió el orden en que se realizó el cambio con respecto a otros cambios, y si la celda está visible en la tabla dinámica. El <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto también proporciona el <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> propiedad que devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> object que representa la celda que ha cambiado y se proporciona información adicional acerca de la celda modificada.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllocationMethod">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlAllocationMethod AllocationMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlAllocationMethod AllocationMethod" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllocationMethod As XlAllocationMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlAllocationMethod AllocationMethod { Microsoft::Office::Interop::Excel::XlAllocationMethod get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2875)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2875)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationMethod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene qué método va a usar para asignar este valor al realizar análisis de hipótesis.</summary>
+        <value>El método a usar para asignar este valor al realizar análisis de hipótesis.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" /> propiedad corresponde a la configuración de método de asignación en el cuadro de diálogo Configuración de análisis de hipótesis para un informe de tabla dinámica basado en un origen de datos OLAP, tal y como se ha definido en el momento en que este cambio se aplicó originalmente. Si especificado <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto se ha creado mediante el <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección y el correspondiente <paramref name="AllocationMethod" /> no se ha proporcionado el parámetro, se devuelve el método de asignación predeterminada del servidor OLAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllocationValue">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlAllocationValue AllocationValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlAllocationValue AllocationValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllocationValue As XlAllocationValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlAllocationValue AllocationValue { Microsoft::Office::Interop::Excel::XlAllocationValue get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2874)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2874)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene el valor para asignar al realizar análisis de hipótesis.</summary>
+        <value>El valor para asignar al realizar análisis de hipótesis.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" /> propiedad corresponde al valor a configuración de la asignación en el cuadro de diálogo Configuración de análisis de hipótesis para un informe de tabla dinámica basado en un origen de datos OLAP, tal y como se ha definido en el momento en que este cambio se aplicó originalmente. Si especificado <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto se ha creado mediante el <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección y el correspondiente <paramref name="AllocationValue" /> no se ha proporcionado el parámetro, se devuelve el valor de asignación predeterminada del servidor OLAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllocationWeightExpression">
+      <MemberSignature Language="C#" Value="public string AllocationWeightExpression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AllocationWeightExpression" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllocationWeightExpression As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AllocationWeightExpression { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2876)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2876)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene la expresión de peso MDX que se usará para este valor al realizar análisis de hipótesis.</summary>
+        <value>La expresión de peso MDX que se usará para este valor al realizar análisis de hipótesis.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" /> propiedad corresponde a la configuración de la expresión de peso en el cuadro de diálogo Configuración de análisis de hipótesis para un informe de tabla dinámica basado en un origen de datos OLAP, tal y como se ha definido en el momento en que este cambio se aplicó originalmente. Si especificado <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto se ha creado mediante el <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección y el correspondiente <paramref name="AllocationWeightExpression" /> no se ha proporcionado el parámetro, se devuelve la expresión de peso predeterminado del servidor OLAP.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
+        <remarks>
+          <para>Es de sólo lectura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
+        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks>
+          <para>De sólo lectura <b>largo</b>.</para>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ValueChange.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Elimina el especificado <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto desde el <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección.</summary>
+        <remarks>
+          <para>También puede eliminar un <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Delete" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.Order" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Order As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(192)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene un valor que indica el orden en el que este cambio se llevó a cabo con respecto a otros cambios en el <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección.</summary>
+        <value>El orden en el que este cambio se llevó a cabo con respecto a otros cambios en el <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>El valor de la <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> (propiedad) se asigna automáticamente según el orden en que el usuario ha aplicado los cambios a las celdas de valor en el informe de tabla dinámica de Excel. Si se han aplicado varios cambios en una sola operación, Excel arbitrariamente asignará el orden dentro de ese conjunto de cambios.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene el objeto primario del objeto especificado.</summary>
+        <value>El objeto primario del objeto especificado.</value>
+        <remarks>
+          <para>Es de sólo lectura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotCell">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotCell PivotCell { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotCell PivotCell" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotCell As PivotCell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotCell ^ PivotCell { Microsoft::Office::Interop::Excel::PivotCell ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2013)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2013)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotCell</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> object que representa la celda (tupla) que se ha modificado.</summary>
+        <value>La celda (tupla) que se ha modificado.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>Cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> propiedad del especificado <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object es <b>true</b>, el <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> (propiedad) devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> objeto de la celda (tupla) que se ha modificado. Cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> propiedad del especificado <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto es <b>false</b>, el <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> (propiedad) devuelve una referencia nula (Nothing en Visual Basic).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tuple">
+      <MemberSignature Language="C#" Value="public string Tuple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tuple" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.Tuple" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tuple As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tuple { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2972)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2972)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene que la tupla MDX del valor se ha cambiado en el origen de datos OLAP.</summary>
+        <value>La tupla MDX del valor se ha cambiado en el origen de datos OLAP.</value>
+        <remarks>
+          <para>Es de sólo lectura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public double Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene el valor que el usuario especificado en la celda o que se evalúa la fórmula de la celda a cuando la instrucción UPDATE CUBE se ejecutó por última vez en el origen de datos OLAP.</summary>
+        <value>El valor.</value>
+        <remarks>
+          <para>Es de sólo lectura.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleInPivotTable">
+      <MemberSignature Language="C#" Value="public bool VisibleInPivotTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VisibleInPivotTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleInPivotTable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool VisibleInPivotTable { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2971)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2971)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene si la celda (tupla) está actualmente visible en el informe de tabla dinámica.</summary>
+        <value>
+          <b>true</b> si la celda (tupla) está actualmente visible en el informe de tabla dinámica; en caso contrario, <b>false</b>.</value>
+        <remarks>
+          <para>De sólo lectura.</para>
+          <para>Devuelve <b>true</b> si la celda (tupla) está actualmente visible en el informe de tabla dinámica; en caso contrario, <b>false</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
