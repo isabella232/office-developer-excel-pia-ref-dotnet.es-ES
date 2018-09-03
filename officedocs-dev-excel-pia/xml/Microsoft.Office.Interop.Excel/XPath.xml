@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20573601" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XPath" />
@@ -32,7 +32,7 @@
     <summary>Representa una expresión de XPath que se ha asignado a un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> o <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto.</summary>
     <remarks>
       <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para> Uso de 
-      <para>la <see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" /> método para asignar una expresión XPath a un rango o lista de una columna. El método <b>SetValue</b> también se usa para cambiar las propiedades de una expresión XPath existente.</para><para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" /> método para quitar una expresión XPath que se ha asignado a una columna de lista o intervalo.</para><para /></remarks>
+      <para>la <see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" /> método para asignar una expresión XPath a un rango o lista de una columna. El método <b>SetValue</b> también se usa para cambiar las propiedades de una expresión XPath existente.</para><para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" /> método para quitar una expresión XPath que se ha asignado a una columna de lista o intervalo.</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -89,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +119,7 @@
         <remarks>
           <para>Este método no borra los datos de las celdas asignadas al objeto XPath especificado. Usar el <see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que se va a borrar los datos de las celdas.</para>
           <para>Si el objeto XPath especificado está asignado en una lista XML, a continuación, se quita la asignación de esquema, pero no se elimina la lista de la hoja de cálculo.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -148,10 +148,7 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Map">
@@ -177,11 +174,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object que representa la asignación de esquema que contiene el texto especificado <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objeto. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object que representa la asignación de esquema que contiene el texto especificado <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objeto. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para />
+          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -239,8 +236,8 @@
         <summary>Devuelve <b>True</b> si el texto especificado <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objeto está asignado a una lista XML; Devuelve <b>False</b> si el objeto <b>XPath</b> está asignado a una sola celda. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para />
+          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -278,8 +275,8 @@
           <b>Boolean</b> opcional.  Especifica si el objeto <b>XPath</b> se debe enlazado a una columna de una lista XML o debe asignarse a una sola celda. Se establece en <b>True</b> para enlazar el objeto <b>XPath</b> a una columna de una lista XML.</param>
         <summary>Asigna especificado <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objeto a una <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Si el objeto <b>XPath</b> se ha asignado previamente para el objeto <b>ListColumn</b> o una colección <b>Range</b> , el método <b>SetValue</b> establece las propiedades del objeto <b>XPath</b> .</summary>
         <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para />
+          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

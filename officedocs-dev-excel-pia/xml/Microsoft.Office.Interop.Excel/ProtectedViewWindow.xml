@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574763" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
@@ -30,7 +30,7 @@
   </Attributes>
   <Docs>
     <summary>Representa una ventana Vista protegida.</summary>
-    <remarks>Ventana de <para>A la vista protegida se utiliza para mostrar un libro desde una ubicación potencialmente no segura. Ubicaciones no seguras se definen como los siguientes:</para><list type="number"><item><description>archivos abiertos desde Internet.</description></item><item><description>Datos adjuntos abiertos desde Microsoft Outlook 2010.</description></item><item><description>Archivos bloqueados por la directiva de bloqueo de archivo.</description></item><item><description>Los archivos que no pasan la validación de documento de Office.</description></item><item><description>Los archivos abiertos explícitamente en la vista protegida mediante el uso del comando Abrir en Vista protegida del botón Abrir en el cuadro de diálogo Abrir.</description></item></list><para>Los libros que se muestra en una ventana Vista protegida no se puede editar y tienen restricciones para ejecutar contenido activo como Visual Basic para aplicaciones macros y conexiones de datos.</para><para>Para devolver un solo <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto desde el <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> colección, utilice protectedviewwindows (index), donde Index es el número de índice de la ventana que desea abrir. También puede obtener acceso a la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object que representa la ventana activa de la vista protegida mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para><para>Después de acceder a una <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> de objetos, use la <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> (propiedad) para obtener acceso a la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object que representa el archivo del libro que está abierto en la ventana Vista protegida. Dado que una ventana Vista protegida está diseñada para proteger al usuario de código potencialmente peligroso, las operaciones pueden realizar mediante el uso de un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto devuelto por un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto estarán limitado. Devolver la mayoría de las operaciones que no se permite will "error en tiempo de ejecución 1004: este comando no está disponible cuando Excel está en un espacio aislado."</para><para /></remarks>
+    <remarks>Ventana de <para>A la vista protegida se utiliza para mostrar un libro desde una ubicación potencialmente no segura. Ubicaciones no seguras se definen como los siguientes:</para><list type="number"><item><description>archivos abiertos desde Internet.</description></item><item><description>Datos adjuntos abiertos desde Microsoft Outlook 2010.</description></item><item><description>Archivos bloqueados por la directiva de bloqueo de archivo.</description></item><item><description>Los archivos que no pasan la validación de documento de Office.</description></item><item><description>Los archivos abiertos explícitamente en la vista protegida mediante el uso del comando Abrir en Vista protegida del botón Abrir en el cuadro de diálogo Abrir.</description></item></list><para>Los libros que se muestra en una ventana Vista protegida no se puede editar y tienen restricciones para ejecutar contenido activo como Visual Basic para aplicaciones macros y conexiones de datos.</para><para>Para devolver un solo <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto desde el <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> colección, utilice protectedviewwindows (index), donde Index es el número de índice de la ventana que desea abrir. También puede obtener acceso a la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object que representa la ventana activa de la vista protegida mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para><para>Después de acceder a una <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> de objetos, use la <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> (propiedad) para obtener acceso a la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object que representa el archivo del libro que está abierto en la ventana Vista protegida. Dado que una ventana Vista protegida está diseñada para proteger al usuario de código potencialmente peligroso, las operaciones pueden realizar mediante el uso de un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto devuelto por un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto estarán limitado. Devolver la mayoría de las operaciones que no se permite will "error en tiempo de ejecución 1004: este comando no está disponible cuando Excel está en un espacio aislado."</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -119,7 +119,7 @@
         <value>El nombre que aparece en la barra de título de la ventana de la vista protegida.</value>
         <remarks>
           <para>Lectura y escritura.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -191,7 +191,7 @@
               <description>las referencias externas (vínculos) se actualizarán cuando se abre el libro.</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -226,7 +226,7 @@
           <b>true</b> si se puede cambiar el tamaño de la ventana Vista protegida; en caso contrario, <b>false</b>.</value>
         <remarks>
           <para>Lectura y escritura.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -261,7 +261,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>No se puede establecer esta propiedad si la ventana Vista protegida está maximizada o minimizada. Usar el <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> (propiedad) para determinar el estado de la ventana.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -295,7 +295,7 @@
         <value>La distancia, en puntos, desde el borde izquierdo del área de cliente hasta el borde izquierdo de la ventana de la vista protegida.</value>
         <remarks>
           <para>Lectura y escritura.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -325,8 +325,8 @@
         <summary>Obtiene el nombre del archivo de origen que está abierto en la ventana de vista protegida especificada.</summary>
         <value>El nombre del archivo de origen que está abierto en la ventana de vista protegida especificada.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -358,7 +358,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>La ruta de acceso no incluye un carácter final (por ejemplo, "C:\MSOffice"). Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> (propiedad) para agregar el carácter que separa carpetas y letras de unidad. Use la <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> de la <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto para devolver el nombre de archivo de origen sin la ruta de acceso.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -393,7 +393,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>No se puede establecer esta propiedad para una ventana maximizada de la vista protegida. Usar el <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> (propiedad) para devolver o establecer el estado de la ventana.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -428,7 +428,7 @@
           <b>true</b> si la ventana de vista protegida especificada está visible; en caso contrario, <b>false</b>.</value>
         <remarks>
           <para>Lectura y escritura.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -463,7 +463,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>No se puede establecer esta propiedad si la ventana Vista protegida está maximizada o minimizada. Usar el <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> (propiedad) para determinar el estado de la ventana.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -497,7 +497,7 @@
         <value>El estado de la ventana de vista protegida especificada.</value>
         <remarks>
           <para>Lectura y escritura.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -529,7 +529,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>Debido a que una ventana Vista protegida está diseñada para proteger al usuario de código potencialmente peligroso, las operaciones puede realizar mediante el uso de un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto devuelto por la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> método estarán limitado. Cualquier operación que no está permitido devolverá "error en tiempo de ejecución 1004: este comando no está disponible cuando Excel está en un espacio aislado."</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

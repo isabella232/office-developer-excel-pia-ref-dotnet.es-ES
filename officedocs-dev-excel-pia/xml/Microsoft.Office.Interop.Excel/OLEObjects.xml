@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20575638" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
@@ -39,7 +39,7 @@
       <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para crear un nuevo objeto OLE y agregarlo a la colección <b>OLEObjects</b> .</para>
       <para>Un control ActiveX en una hoja tiene dos nombres: el nombre de la forma que contiene el control, que se puede ver en el cuadro nombre al ver la hoja y el nombre de código para el control, que se puede ver en la celda a la derecha de (Name) en la ventana Propiedades. Al agregar un control a una hoja en primer lugar, coincide con el nombre de la forma y el nombre de código. Sin embargo, si cambia el nombre de la forma o el nombre de código, la otra no se cambia automáticamente para que coincidan con.</para>
       <para>Usar el nombre de código de un control en los nombres de sus procedimientos de evento. Sin embargo, al devolver un control desde el <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> o colección <b>OLEObjects</b> de una hoja, debe utilizar el nombre de la forma, no el de código para hacer referencia al control por su nombre. Por ejemplo, suponga que agrega una casilla de verificación a una hoja y que el nombre de forma predeterminada y el nombre predeterminado en código son CheckBox1. Si, a continuación, cambia el nombre de código de control escribiendo chkFinished junto a (Name) en la ventana Propiedades, debe usar chkFinished en los nombres de los procedimientos de eventos, pero aún tendrá que utilizar CheckBox1 para devolver el control de las <b>formas</b> o <b>OLEObjects</b> colección.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -554,7 +554,7 @@
         <remarks>
           <para>Esta propiedad se omite los controles ActiveX. Los controles ActiveX siempre se cargan cuando se abre un libro.</para>
           <para>Para la mayoría de los tipos de objeto OLE, esta propiedad no debe establecerse en <b>True</b>. De forma predeterminada, la propiedad <b>AutoLoad</b> se establece en <b>False</b> para objetos OLE nuevos. Esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar automáticamente OLE objects es que, para objetos que representan datos volátiles, vínculos a los datos de origen pueden restablecerse inmediatamente y los objetos se pueden representar de nuevo, si es necesario.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -723,7 +723,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para /></remarks>
+          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -752,7 +752,7 @@
         <remarks>
           <para>El rango cortado debe estar compuesto por celdas adyacentes.</para>
           <para>Gráficos incrustados sólo pueden cortarse.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1157,7 +1157,7 @@
           <para>
             <b>xlMoveAndSize</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1459,7 +1459,7 @@
         <value>To be added.</value>
         <remarks>
           <para>En cualquier colección de objetos, el objeto en la parte posterior del orden z es <paramref name="collection" />(1), y el objeto en la parte delantera del orden z es <paramref name="collection" />(<paramref name="collection" />.<b> Contar</b>).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
