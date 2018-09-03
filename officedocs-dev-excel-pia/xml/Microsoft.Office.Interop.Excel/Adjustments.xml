@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584143" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
@@ -35,7 +35,7 @@
       <para>Cada valor de ajuste representa una forma que se puede ajustar un controlador de ajuste. Debido a que algunos controladores de ajuste pueden ajustarse de dos maneras: por ejemplo, algunos controladores pueden ajustarse tanto horizontal como verticalmente, una forma puede tener más valores de ajuste que controladores de ajuste de. Una forma puede tener hasta ocho ajustes.</para> Uso de 
       <para>la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /> propiedad para devolver un objeto <b>Adjustments</b> . Utilice <b>Adjustments</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del valor de ajuste, para devolver un solo valor de ajuste.</para><para>Las formas diferentes tienen distintos números de valores de ajuste, diferentes tipos de ajustes cambian la geometría de una forma de diferentes maneras y diferentes tipos de ajuste tienen diferentes rangos de valores válidos.</para><para>En la siguiente tabla se resumen los intervalos de valores de ajuste válidos para distintos tipos de ajustes. En la mayoría de los casos, si se especifica un valor que está fuera del intervalo de valores válidos, el valor válido más cercano se asignará al ajuste.</para><list type="table"><item><term>Lineal (horizontal o vertical)</term><description>generalmente el valor 0,0 representa el borde izquierdo o superior de la forma y el valor 1,0 representa el borde derecho o inferior de la forma. Los valores válidos corresponden a ajustes válidos que puede realizar manualmente a la forma. Por ejemplo, si sólo puede arrastrar un controlador de ajuste hasta la mitad de la forma manualmente, el valor máximo del ajuste correspondiente será 0,5. Para las formas como conectores y llamadas, donde los valores 0,0 y 1,0 representan los límites del rectángulo definido por los puntos inicial y final del conector o de la línea de llamada, negativo números y números mayores que 1.0 son valores válidos.</description></item><item><term>Radial</term><description>un valor de ajuste de 1.0 corresponde al ancho de la forma. El valor máximo es 0,5, o la mitad de la forma.</description></item> Los valores de 
           <term>ángulo</term><description><item>se expresan en grados. Si especifica un valor fuera del intervalo -180 a 180, se normalizará para incluirlo en dicho intervalo. 
-        </item></description></list><para /></remarks>
+        </item></description></list><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -127,7 +127,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para /></remarks>
+          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -164,9 +164,9 @@
         <summary>Devuelve o establece el valor de ajuste especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para ajustes lineales, un valor de ajuste de 0,0 corresponde generalmente al borde izquierdo o superior de la forma y un valor de 1.0 generalmente se corresponde con el borde derecho o inferior de la forma. Sin embargo, los ajustes pueden pasar más allá de los límites de forma para algunas formas. Para ajustes radiales, un valor de ajuste de 1.0 corresponde al ancho de la forma. Para ajustes angulares, el valor de ajuste se especifica en grados. La propiedad <b>Item</b> se aplica únicamente a las formas que tienen ajustes.</para>
+          <para>Para ajustes lineales, un valor de ajuste de 0,0 corresponde generalmente al borde izquierdo o superior de la forma y un valor de 1.0 corresponde generalmente al borde derecho o inferior de la forma. Sin embargo, los ajustes pueden pasar más allá de los límites de forma para algunas formas. Para ajustes radiales, un valor de ajuste de 1.0 corresponde al ancho de la forma. Para ajustes angulares, el valor de ajuste se especifica en grados. La propiedad <b>Item</b> se aplica únicamente a las formas que tienen ajustes.</para>
           <para>Objetos autoformas, conectores y WordArt pueden tener hasta ocho ajustes.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

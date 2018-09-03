@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584416" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatCondition" />
@@ -36,7 +36,7 @@
       <para>el <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> (método) para crear un nuevo formato condicional. Si se intenta crear más de tres formatos condicionales de un rango, se produce un error en el método <b>Add</b> . Si un rango ya tiene tres formatos, puede utilizar el <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> método para cambiar uno de los formatos, o se puede usar el <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> (método) para eliminar un formato y, a continuación, use el método <b>Add</b> para crear un nuevo formato.</para> Uso de 
       <para>el <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, y <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> propiedades de <b>FormatCondition</b> controlar el aspecto de celdas con formato de objeto. Algunas propiedades de estos objetos no son compatibles con el modelo de objetos de formato condicional. Las propiedades que se pueden usar con el formato condicional se enumeran en la siguiente tabla.</para><list type="table"><item><term><b>Fuente</b></term><description>no se puede usar los estilos de subrayado de contabilidad
             <b>Bold</b><b>Color</b><b>ColorIndex</b><b>FontStyle</b><b>cursiva</b><b>tachado</b><b>subrayado</b>.</description></item> Se pueden usar estilos de borde de 
-        <item><term><b>borde</b></term><description><b>inferior</b><b>Color</b><b>izquierda</b><b>derecha</b><b>estilo</b>lo siguiente (todos los demás no son compatibles): <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>y <b>xlGray25</b>. <b>Parte superior</b><b>Peso</b> Se pueden usar los siguientes grosores de borde (todos los demás no son compatibles): <b>xlWeightHairline</b> y <b>xlWeightThin</b>.</description></item><item><term><b>Interior</b></term><description><b>Color</b><b>ColorIndex</b><b>patrón</b><b>PatternColorIndex</b></description></item></list><para /></remarks>
+        <item><term><b>borde</b></term><description><b>inferior</b><b>Color</b><b>izquierda</b><b>derecha</b><b>estilo</b>lo siguiente (todos los demás no son compatibles): <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>y <b>xlGray25</b>. <b>Parte superior</b><b>Peso</b> Se pueden usar los siguientes grosores de borde (todos los demás no son compatibles): <b>xlWeightHairline</b> y <b>xlWeightThin</b>.</description></item><item><term><b>Interior</b></term><description><b>Color</b><b>ColorIndex</b><b>patrón</b><b>PatternColorIndex</b></description></item></list><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -152,7 +152,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para /></remarks>
+          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateOperator">
@@ -268,7 +268,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>Formula1</b> puede ser un valor constante, un valor de tipo string, una referencia de celda o una fórmula.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -297,10 +297,7 @@
       <Docs>
         <summary>Devuelve el valor o una expresión asociada con la segunda parte de una validación de datos o formato condicional.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sólo se utiliza la propiedad <b>Formula2</b> al formato condicional de validación de datos <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> propiedad es <b>xlBetween</b> o <b>xlNotBetween</b>. Puede ser un valor constante, un valor de tipo string, una referencia de celda o una fórmula.</para>
-          <para />
-        </remarks>
+        <remarks>Sólo se utiliza la propiedad <para>el <b>Formula2</b> al formato condicional de validación de datos <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> propiedad es <b>xlBetween</b> o <b>xlNotBetween</b>. Puede ser un valor constante, un valor de tipo string, una referencia de celda o una fórmula.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -394,9 +391,9 @@
         <param name="Range">Rango al que se aplicará esta regla de formato.</param>
         <summary>Establece el rango de celdas al que se aplica esta regla de formato.</summary>
         <remarks>
-          <para>El intervalo debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
+          <para>El rango debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
           <para>También puede usar un nombre definido local en cualquier parte del rango, pero el nombre debe ser en el lenguaje de la macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -469,7 +466,7 @@
         </value>
         <remarks>
           <para>El formato de número se especifica con los mismos códigos de formato que se muestra en la ficha número del cuadro de diálogo Formato de celdas. Puede utilizar un formato de número integrado, por ejemplo "General", o crear un formato de número personalizado.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -561,7 +558,7 @@
         </value>
         <remarks>
           <para>Al establecer la prioridad, el valor debe ser un entero positivo comprendido entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas en la hoja de cálculo, por lo que cambiar la prioridad de la regla de formato condicional especificada puede provocar el valor de prioridad de las demás reglas en la hoja de cálculo que se va a desplazar.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -627,7 +624,7 @@
         </value>
         <remarks>
           <para>El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que establece el ámbito utilizando el <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />(propiedad).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -657,7 +654,7 @@
           <para>Cuando tiene varias reglas de formato condicionales en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
           <para>
             <b>Nota</b>: niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -687,7 +684,7 @@
           <para>El valor real de la prioridad será igual que el número total de reglas de formato condicional en la hoja de cálculo. Si tiene varias reglas de formato condicionales en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que esta regla aumente en uno.</para>
           <para>
             <b>Nota</b>: niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -722,8 +719,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Para admitir la compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
-          <para />
+          <para>Para compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -759,7 +756,7 @@
         </value>
         <remarks>
           <para>Esta propiedad se omite si la <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> propiedad no está establecida en <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -829,7 +826,7 @@
           <para>
             <b>xlExpression</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

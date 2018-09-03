@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584150" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -38,7 +38,7 @@
       <para>La <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> método agrega un complemento a la lista de complementos disponibles, pero no instala el complemento la <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> la propiedad del complemento en <b>True</b> para instalar el complemento. Para instalar un complemento que no aparece en la lista de complementos disponibles, debe utilizar primero el método <b>Add</b> y, a continuación, establezca la propiedad <b>Installed</b> . Esto puede realizarse en un solo paso</para>
       <para>usar <b>libros</b>(<paramref name="index" />) donde <paramref name="index" /> es el complemento de nombre de archivo (no su título) para devolver una referencia al libro correspondiente a un complemento cargado. Debe usar el nombre de archivo porque los complementos cargados no aparecen normalmente en la <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> colección.</para>
       <para>Si la propiedad <b>Installed</b> devuelve <b>True</b>, pero las llamadas a funciones en el complemento siguen produciendo errores, el complemento es posible que no se haya cargado realmente. Esto es debido a que el objeto <b>Addin</b> representa la existencia y estado del complemento instalado pero no representa el contenido real del libro en. Para garantizar que se carga un complemento instalado, debe abrir el libro del complemento.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -187,7 +187,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para /></remarks>
+          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -217,7 +217,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad es equivalente a la <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> propiedad, seguida por el separador actual del sistema de archivos, seguido por el <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> (propiedad).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -251,8 +251,8 @@
           <b>True</b> si el complemento está instalado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Al establecer esta propiedad en <b>True</b> instala el complemento y llama a las funciones Auto_Add. Al establecer esta propiedad en <b>False</b> quita el complemento y llama a las funciones Auto_Remove.</para>
-          <para />
+          <para>Al establecer esta propiedad en <b>True</b> se instala el complemento y llama a las funciones Auto_Add. Al establecer esta propiedad en <b>False</b> , quita el complemento y llama a las funciones Auto_Remove.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -284,8 +284,8 @@
           <b>true</b> si el complemento está actualmente abierto; en caso contrario, <b>false</b>.</value>
         <remarks>
           <para>
-            <b>Boolean</b> Es de sólo lectura.</para>
-          <para />
+            <b>boolean</b> de sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20582904" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Representa un rango de formas, que es un conjunto de formas en un documento.</summary>
     <remarks>
       <para>Un intervalo de formas puede contener tan sólo una única forma o como máximo todas las formas en el documento. Puede incluir las formas que desee, elegidas entre todas las formas del documento o todas las formas de la selección, para construir un intervalo de formas. Por ejemplo, puede construir un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> colección que contenga las tres primeras formas en un documento, todas las formas seleccionadas en un documento, o todas las formas libres de un documento.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -95,7 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> objeto que contiene valores de ajuste de todos los ajustes de la forma especificada. Se aplica a cualquier <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto que representa una autoforma, WordArt o conector. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> objeto que contiene valores de ajuste de todos los ajustes de la forma especificada. Se aplica a cualquier <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto que representa una autoforma, WordArt o conector. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,7 +160,7 @@
         <value>To be added.</value>
         <remarks>
           <para>El texto alternativo puede mostrarse en lugar de imagen de la forma en el explorador Web o directamente a través de la imagen cuando se sitúa el puntero del mouse sobre la imagen (en los exploradores que admiten estas características).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -187,7 +187,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,7 +248,7 @@
         <remarks>
           <para>Cuando se cambia el tipo de una forma, la forma mantiene su tamaño, color y otros atributos.</para>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto para establecer o devolver el tipo de conector.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -339,7 +339,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> objeto que contiene las propiedades de la forma especificada el formato de la llamada. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan llamadas de línea. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> objeto que contiene las propiedades de la forma especificada el formato de la llamada. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan llamadas de línea. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -522,7 +522,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto object que representa el gráfico contenido en el intervalo de formas. Es de solo lectura</summary>
+        <summary>Devuelve un objeto object que representa el gráfico contenido en el intervalo de formas. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel._Chart" />
         </value>
@@ -637,7 +637,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ConnectorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto que contiene propiedades de formato del conector. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan conectores. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto que contiene propiedades de formato del conector. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan conectores. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -695,10 +695,7 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -867,7 +864,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contiene las propiedades de la forma o el gráfico especificado del formato de relleno. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contiene las propiedades de la forma o el gráfico especificado del formato de relleno. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -955,13 +952,13 @@
         <ReturnType>Microsoft.Office.Core.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que contiene propiedades de formato con resplandor para el intervalo de formas. Es de solo lectura</summary>
+        <summary>Devuelve un objeto que contiene propiedades de formato con resplandor para el intervalo de formas. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Core.GlowFormat" />
         </value>
         <remarks>
-          <para>El efecto de resplandor agrega un borde coloreado vibrante a los gráficos.</para>
-          <para />
+          <para>El efecto de resplandor agrega un borde coloreado vibrante a los gráficos.  </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -989,8 +986,8 @@
         <summary>Agrupa las formas del intervalo especificado. Devuelve las formas agrupadas como un único <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Debido a que un grupo de formas se trata como una sola forma, al agrupar y desagrupar formas cambia el número de elementos de la colección <b>Shapes</b> y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
-          <para />
+          <para>Debido a que un grupo de formas se trata como una sola forma, agrupar y desagrupar formas cambia el número de elementos de la colección <b>Shapes</b> y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1017,11 +1014,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object que representa las formas individuales del grupo especificado. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan formas agrupadas. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object que representa las formas individuales del grupo especificado. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan formas agrupadas. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> método del objeto <b>GroupShapes</b> para devolver una sola forma desde el grupo.</para>
-          <para />
+          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> método del objeto <b>GroupShapes</b> para devolver una sola forma desde el grupo.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1048,7 +1045,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve información acerca de if un <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange" /> contiene un gráfico. Es de solo lectura</summary>
+        <summary>Devuelve información acerca de if un <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange" /> contiene un gráfico. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Core.MsoTriState" />
         </value>
@@ -1204,7 +1201,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Puede usar una etiqueta de identificador como referencia de hipervínculo en otros documentos HTML o en la misma página Web.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1264,8 +1261,8 @@
           <b>Single</b>requerido. Especifica cuánto se aleja la forma va a girar horizontalmente en grados. Un valor positivo gira la forma a la derecha; un valor negativo gira a la izquierda.</param>
         <summary>Cambia el giro de la forma alrededor del eje Z el número especificado de grados. Usar el <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Rotation" /> (propiedad) para establecer el giro absoluto de la forma.</summary>
         <remarks>
-          <para>Para girar una forma tridimensional alrededor del eje x o del eje y, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> (método) o el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> (método).</para>
-          <para />
+          <para>Para girar una forma tridimensional alrededor del eje x o del eje y, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> método.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1327,7 +1324,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>El nombre de texto del objeto es el valor de la <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.Name" /> y <see cref="P:Microsoft.Office.Interop.Excel.Range.Value(System.Object)" /> propiedades.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1385,11 +1382,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objeto que contiene las propiedades de la forma especificada el formato de línea. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objeto que contiene las propiedades de la forma especificada el formato de línea. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para una línea, el objeto <b>LineFormat</b> representa la línea en Sí; para una forma con borde, el objeto <b>LineFormat</b> representa el borde.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1480,7 +1477,7 @@
               <term><b>valor</b></term>de 
             <item><description>[Europe]. [ Francia]. [Paris] (solo lectura)</description><description>París</description></item></list>
           <para>Cuando se especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para> expresión de 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>expresión. PivotItems("Paris")</description></item></list><para>cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para><list type="table"><item><term>[Europe]. [ Francia]. [Paris]</term><description>París</description></item></list><para /></remarks>
+          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>expresión. PivotItems("Paris")</description></item></list><para>cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para><list type="table"><item><term>[Europe]. [ Francia]. [Paris]</term><description>París</description></item></list><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1615,7 +1612,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objeto que contiene las propiedades de la forma especificada el formato de imagen. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan imágenes u objetos OLE. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objeto que contiene las propiedades de la forma especificada el formato de imagen. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan imágenes u objetos OLE. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1643,7 +1640,7 @@
         <ReturnType>Microsoft.Office.Core.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.ReflectionFormat" /> objeto para un intervalo de formas especificado que contiene propiedades para el intervalo de formas de formato de reflejo. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.ReflectionFormat" /> objeto para un intervalo de formas especificado que contiene propiedades para el intervalo de formas de formato de reflejo. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Core.ReflectionFormat" />
         </value>
@@ -1676,7 +1673,7 @@
         <remarks>
           <para>El método <b>Regroup</b> sólo restaura el grupo para la primera forma se encuentre en el especificado anteriormente agrupada <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> colección. Por lo tanto, si el intervalo de formas especificado contiene formas que anteriormente pertenecían a grupos diferentes, sólo uno de los grupos se restaurarán.</para>
           <para>Tenga en cuenta que, debido a que un grupo de formas se trata como una sola forma, al agrupar y desagrupar las formas cambia el número de elementos de la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1703,9 +1700,9 @@
       <Docs>
         <summary>Redistribuye los conectores para que tomen la ruta más corta posible entre las formas que conectan.</summary>
         <remarks>
-          <para>A Redistribuir conectores, el método <b>RerouteConnections</b> puede separar los finales de un conector y volver a conectarlos a sitios de conexión diferentes en las formas conectadas. Este método redistribuye todos los conectores adjuntos a la forma especificada; Si la forma especificada es un conector, se redistribuirá.</para>
+          <para>Para volver a enrutar conectores, el método <b>RerouteConnections</b> puede separar los finales de un conector y volver a conectarlos a sitios de conexión diferentes en las formas conectadas. Este método redistribuye todos los conectores adjuntos a la forma especificada; Si la forma especificada es un conector, se redistribuirá.</para>
           <para>Si este método se aplica a un conector, sólo que se redistribuirá. Si este método se aplica a una forma conectada, se redistribuirá todos los conectores a dicha forma.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1770,8 +1767,8 @@
         <param name="Scale">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Especifica qué parte de la forma mantiene su posición cuando se ajusta el tamaño de la forma.</param>
         <summary>Aplica una escala al alto de la forma con el factor especificado.</summary>
         <remarks>
-          <para>Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al original o al tamaño actual. El tamaño de las formas que no son imágenes y objetos OLE siempre se cambia respecto a su alto actual.</para>
-          <para />
+          <para>Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al original o al tamaño actual. Formas que no son imágenes y objetos OLE siempre se escalan respecto a su alto actual.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1805,8 +1802,8 @@
         <param name="Scale">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Especifica qué parte de la forma mantiene su posición cuando se ajusta el tamaño de la forma.</param>
         <summary>Aplica una escala al ancho de la forma con el factor especificado.</summary>
         <remarks>
-          <para>Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al original o al tamaño actual. El tamaño de las formas que no son imágenes y objetos OLE siempre se cambia respecto a su ancho actual.</para>
-          <para />
+          <para>Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al original o al tamaño actual. Formas que no son imágenes y objetos OLE siempre se escalan respecto a su ancho actual.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1948,7 +1945,7 @@
         <ReturnType>Microsoft.Office.Core.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que contiene las propiedades de un intervalo de formas especificado de formato de borde suave. Es de solo lectura</summary>
+        <summary>Devuelve un objeto que contiene las propiedades de un intervalo de formas especificado de formato de borde suave. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" />
         </value>
@@ -1978,7 +1975,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objeto que contiene propiedades de formato de efecto de texto de la forma especificada. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan WordArt. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objeto que contiene propiedades de formato de efecto de texto de la forma especificada. Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objetos que representan WordArt. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2006,7 +2003,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objeto que contiene la alineación y delimitación de propiedades para el intervalo de formas especificado. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objeto que contiene la alineación y delimitación de propiedades para el intervalo de formas especificado. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" />
         </value>
@@ -2036,7 +2033,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que contiene el formato de texto para el intervalo de formas especificado. Es de solo lectura</summary>
+        <summary>Devuelve un objeto que contiene el formato de texto para el intervalo de formas especificado. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" />
         </value>
@@ -2066,7 +2063,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto que contiene las propiedades de la forma especificada el formato de efectos 3D. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto que contiene las propiedades de la forma especificada el formato de efectos 3D. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2102,7 +2099,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>Para establecer la cadena de texto descriptivo del texto alternativo para un intervalo de formas, use la <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.AlternativeText" /> (propiedad).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2190,7 +2187,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Debido a que un grupo de formas se trata como un único objeto, agrupar y desagrupar las formas cambia el número de elementos en el <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2277,7 +2274,7 @@
               <description>la distancia vertical desde el tercer vértice hasta la parte superior del documento</description>
             </item>
           </list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2370,7 +2367,7 @@
         <summary>Desplaza la forma especificada delante o detrás de otras formas del conjunto (es decir, cambia la posición de la forma en el orden z).</summary>
         <remarks>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ShapeRange.ZOrderPosition" /> (propiedad) para determinar la posición actual de una forma en el orden z.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2401,7 +2398,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Para establecer la posición de la forma en el orden z, use la <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> método.</para> Posición de 
-          <para>una forma en el orden z corresponde al número de índice de la forma en la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección. Por ejemplo, si hay cuatro formas en myDocument, la myDocument.Shapes (1) expresión devuelve la forma en la parte posterior del orden z y la myDocument.Shapes (4) expresión devuelve la forma en la parte delantera del orden z.</para><para>Siempre que agregue una forma nueva a una colección, se agrega a la parte delantera del orden z de forma predeterminada.</para><para /></remarks>
+          <para>una forma en el orden z corresponde al número de índice de la forma en la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección. Por ejemplo, si hay cuatro formas en myDocument, la myDocument.Shapes (1) expresión devuelve la forma en la parte posterior del orden z y la myDocument.Shapes (4) expresión devuelve la forma en la parte delantera del orden z.</para><para>Siempre que agregue una forma nueva a una colección, se agrega a la parte delantera del orden z de forma predeterminada.</para><para></para></remarks>
       </Docs>
     </Member>
   </Members>

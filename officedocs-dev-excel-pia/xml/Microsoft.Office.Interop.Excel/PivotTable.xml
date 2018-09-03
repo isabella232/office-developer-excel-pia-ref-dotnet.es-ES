@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587713" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTable" />
@@ -32,7 +32,7 @@
     <summary>Representa un informe de tabla dinámica de una hoja de cálculo. El objeto de <b>tabla dinámica</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> colección. La colección <b>PivotTables</b> contiene todos los objetos de <b>tabla dinámica</b> en una hoja de cálculo.</summary>
     <remarks>
       <para>Usar <b>tablas dinámicas</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de tabla dinámica o el nombre, para devolver un solo objeto <b>PivotTable</b> .</para> Programación de informes de tabla dinámica porque 
-      <para>puede ser complejo, normalmente es más fácil grabar las acciones de informes de tabla dinámica y después revisar el código grabado. Para grabar una macro, elija Macro en el menú Herramientas y, a continuación, haga clic en Grabar nueva Macro.</para><para /></remarks>
+      <para>puede ser complejo, normalmente es más fácil grabar las acciones de informes de tabla dinámica y después revisar el código grabado. Para grabar una macro, elija Macro en el menú Herramientas y, a continuación, haga clic en Grabar nueva Macro.</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -127,7 +127,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indica el filtro actualmente activo en especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Es de solo lectura</summary>
+        <summary>Indica el filtro actualmente activo en especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />
         </value>
@@ -208,7 +208,7 @@
           <para>Debe especificar uno de los argumentos de campo.</para>
           <para>Nombres de campo especifican el nombre único devuelto por la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</para>
           <para>Este método no está disponible para orígenes de datos OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -235,8 +235,8 @@
       <Docs>
         <summary>Realiza una operación de escritura diferida para todas las celdas editadas de un informe de tabla dinámica basado en un origen de datos OLAP.</summary>
         <remarks>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> método ejecutará una instrucción UPDATE CUBE para todos los cambios realizados en el área de valores de la tabla dinámica desde que la última operación para aplicar los cambios se confirman, o desde que se creó la tabla dinámica si decidirse por aplica cambios nunca se ha realizado. Este método genera un error en tiempo de ejecución si se ejecuta en un informe de tabla dinámica basado en un origen de datos que no son OLAP.</para>
-          <para />
+          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> método ejecutará una instrucción UPDATE CUBE para todos los cambios realizados en el área de valores de la tabla dinámica desde que la última operación para aplicar los cambios se confirman, o desde que se creó la tabla dinámica si decidirse por aplica cambios nunca se ha realizado. Este método genera un error en tiempo de ejecución si se ejecuta en un informe de tabla dinámica basado en un origen de datos que no son OLAP.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -271,7 +271,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" /> propiedad se corresponde con el método Calculate con los cambios de configuración en el cuadro de diálogo Configuración de análisis de hipótesis. El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" />, que corresponde a la manualmente (cuando selecciona calcular la tabla dinámica con los cambios) configuración.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -306,7 +306,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propiedad corresponde a la configuración de método de asignación en el cuadro de diálogo Configuración de análisis de hipótesis. El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" />, que corresponde a la configuración de asignación de igual. Si el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />, que corresponde a la configuración de asignación ponderado, opcionalmente, puede especificar la expresión de peso para usar mediante la configuración de la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> (propiedad). Si no se especifica una expresión de peso, una expresión de peso equivalente a &lt;valor de la celda de hoja&gt; / &lt;valor existente&gt; se usa.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -341,7 +341,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" /> propiedad corresponde al valor a configuración de la asignación en el cuadro de diálogo Configuración de análisis de hipótesis. El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" />, que corresponde a la el valor especificado dividido entre el número de asignaciones establecer.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -376,7 +376,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> propiedad corresponde a la configuración de la expresión de peso en el cuadro de diálogo Configuración de análisis de hipótesis. Antes de la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> se puede establecer la propiedad, debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -414,7 +414,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Valor predeterminado es <b>False</b>.</para>
           <para>Cuando esta propiedad se establece en <b>True</b>, se pueden aplicar varios filtros a un único <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Cuando se establece en <b>False</b>, aplicar un filtro a un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> que ya está filtrada realizarán quita el filtro existente y se aplica el nuevo.  Al establecer esta propiedad en <b>False</b> cuando el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> ha campos con realizarán de más de un filtro aplicado en modo silencioso quitar todos los filtros de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> sin mostrar ninguna alerta. Sin embargo, no hay una alerta cuando esto se realiza a través de la interfaz de usuario.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -449,7 +449,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Lectura y escritura.</para>
           <para>El valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" /> (propiedad) se corresponde con el valor en el cuadro Título de la ficha texto alternativo del cuadro de diálogo Opciones de tabla dinámica.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -476,7 +476,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -510,8 +510,8 @@ Lectura y escritura.</summary>
         <summary>Devuelve o establece el número de índice de la memoria caché de tabla dinámica. <b>Integer</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si establece la propiedad <b>CacheIndex</b> para que un informe de tabla dinámica usa la memoria caché para un segundo informe de tabla dinámica, los campos del primer informe deben ser un subconjunto válido de los campos en el segundo informe.</para>
-          <para />
+          <para>Si se establece la propiedad <b>CacheIndex</b> para que un informe de tabla dinámica usa la memoria caché para un segundo informe de tabla dinámica, los campos del primer informe deben ser un subconjunto válido de los campos en el segundo informe.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -536,7 +536,7 @@ Lectura y escritura.</summary>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CalculatedFields" /> colección que representa todos los campos calculados del informe de tabla dinámica especificado. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CalculatedFields" /> colección que representa todos los campos calculados del informe de tabla dinámica especificado. Solo lectura.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,8 +567,8 @@ Lectura y escritura.</summary>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> colección que representa todos los miembros calculados y medidas calculadas para una tabla dinámica OLAP.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se usa para los orígenes de procesamiento analítico en línea (OLAP); un origen que no son OLAP devolverá un error en tiempo de ejecución.</para>
-          <para />
+          <para>Esta propiedad se usa para los orígenes de procesamiento analítico en línea (OLAP); si un origen que no son OLAP devolverá un error en tiempo de ejecución.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -606,7 +606,7 @@ Lectura y escritura.</summary>
           <para>
             <b>true</b> si calcula miembros se evalúan en filtros; en caso contrario, <b>false</b>.</para>
           <para>El valor de esta propiedad corresponde a la configuración de los miembros de Evaluate calculada desde los servidores OLAP de casilla de verificación de filtros en los totales &amp; ficha filtros del cuadro de diálogo Opciones de tabla dinámica para un informe de tabla dinámica basado en un origen de datos OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -636,8 +636,8 @@ Lectura y escritura.</summary>
         <param name="conn">Requiere <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> object que representa la nueva conexión para la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</param>
         <summary>Cambia la conexión del especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</summary>
         <remarks>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> método sólo puede utilizarse con un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que está conectado a un origen de datos externo. Se producirá un error en tiempo de ejecución si el <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> método se utiliza con un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que utiliza los datos almacenados en una hoja de cálculo como su origen de datos.</para>
-          <para />
+          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> método sólo puede utilizarse con un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que está conectado a un origen de datos externo. Se producirá un error en tiempo de ejecución si el <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> método se utiliza con un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que utiliza los datos almacenados en una hoja de cálculo como su origen de datos.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -667,8 +667,8 @@ Lectura y escritura.</summary>
         <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección que representa la lista de los cambios realizados en la tabla dinámica especificada se basa en un origen de datos OLAP.</summary>
         <value>El <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección que representa la lista de los cambios realizados en la tabla dinámica especificada se basa en un origen de datos OLAP.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -699,8 +699,8 @@ Lectura y escritura.</summary>
           <b>String</b> requerido un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> o <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object que representa el nuevo <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</param>
         <summary>Cambios de la <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> del especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</summary>
         <remarks>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> método sólo puede utilizarse con un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que utiliza los datos almacenados en una hoja de cálculo como su origen de datos. Se producirá un error en tiempo de ejecución si el <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> método se utiliza con un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que está conectado a un origen de datos externo.</para>
-          <para />
+          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> método sólo puede utilizarse con un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que utiliza los datos almacenados en una hoja de cálculo como su origen de datos. Se producirá un error en tiempo de ejecución si el <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> método se utiliza con un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que está conectado a un origen de datos externo.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -728,7 +728,7 @@ Lectura y escritura.</summary>
         <summary>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" /> método elimina todos los filtros aplicados actualmente a la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Esto incluye la eliminación de todos los filtros de la <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> colección de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto, quitar cualquier filtro manual aplicado y configuración de todos los <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s en el área Filtro de informe para el elemento predeterminado.</summary>
         <remarks>
           <para>Después de llamar a la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" /> (método), el <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> colección estará vacía.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -755,8 +755,8 @@ Lectura y escritura.</summary>
       <Docs>
         <summary>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> método se usa para borrar un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Borrar <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s incluye quitar todos los campos y eliminar todos los filtros y criterios de ordenación aplicados a la <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />. Este método restablece el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> al estado que tenía cuando se creó, antes de que los campos se han agregado a ella.</summary>
         <remarks>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> función no toma ningún argumento y está disponible para ambos relacionales y OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s.</para>
-          <para />
+          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> función no toma ningún argumento y está disponible para ambos relacionales y OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -788,7 +788,7 @@ Lectura y escritura.</summary>
       <Docs>
         <param name="Index">
           <b>Objeto</b>de opcional. Nombre o número del campo (puede ser una matriz si desea especificar varios campos).</param>
-        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que se muestran actualmente como campos de columnas. Es de solo lectura</summary>
+        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que se muestran actualmente como campos de columnas. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -848,7 +848,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene el área de columna en el informe de tabla dinámica. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene el área de columna en el informe de tabla dinámica. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -876,8 +876,8 @@ Lectura y escritura.</summary>
       <Docs>
         <summary>Realiza una operación de confirmación en el origen de datos de un informe de tabla dinámica basado en un origen de datos OLAP.</summary>
         <remarks>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" /> método envía una instrucción COMMIT TRANSACTION en el servidor OLAP y borra todas las celdas que se han editado escribiendo un valor, pero no se borrarán las fórmulas de las celdas de valor. Este método genera un error en tiempo de ejecución si se ejecuta en un informe de tabla dinámica basado en un origen de datos que no son OLAP.</para>
-          <para />
+          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" /> método envía una instrucción COMMIT TRANSACTION en el servidor OLAP y borra todas las celdas que se han editado escribiendo un valor, pero no se borrarán las fórmulas de las celdas de valor. Este método genera un error en tiempo de ejecución si se ejecuta en un informe de tabla dinámica basado en un origen de datos que no son OLAP.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -911,7 +911,7 @@ Lectura y escritura.</summary>
         <value>String</value>
         <remarks>
           <para>Cuando el usuario personaliza estos títulos en la cuadrícula, se refleja también en estas propiedades.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -947,7 +947,7 @@ Lectura y escritura.</summary>
         </value>
         <remarks>
           <para>Cuando el usuario personaliza estos títulos en la cuadrícula, se refleja también en estas propiedades.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -981,10 +981,7 @@ Lectura y escritura.</summary>
         <value>
           <b>Integer</b>
         </value>
-        <remarks>
-          <para>El valor predeterminado es 1. Los valores válidos para esta configuración son 0 a la sangría máxima especificada en Microsoft Excel.</para>
-          <para />
-        </remarks>
+        <remarks>Valor <para>el valor predeterminado es 1. Los valores válidos para esta configuración son 0 a la sangría máxima especificada en Microsoft Excel.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToFormulas">
@@ -1014,7 +1011,7 @@ Lectura y escritura.</summary>
         <summary>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ConvertToFormulas(System.Boolean)" /> método es nuevo en 1st_Excel12 y se usa para convertir un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> en fórmulas de cubo.</summary>
         <remarks>
           <para>El argumento controla si se deben convertir el área ReportFilter de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1084,10 +1081,7 @@ Lectura y escritura.</summary>
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFields">
@@ -1113,7 +1107,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.CubeFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> colección. Cada <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto contiene las propiedades del elemento de campo de cubo. Es de solo lectura</summary>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> colección. Cada <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> objeto contiene las propiedades del elemento de campo de cubo. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1141,7 +1135,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene el área de datos de la lista entre la fila de encabezado y la fila de inserción. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene el área de datos de la lista entre la fila de encabezado y la fila de inserción. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1174,7 +1168,7 @@ Lectura y escritura.</summary>
       <Docs>
         <param name="Index">
           <b>Objeto</b>de opcional. Nombre o número del campo (puede ser una matriz si desea especificar varios campos).</param>
-        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que se muestran actualmente como campos de datos. Es de solo lectura</summary>
+        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que se muestran actualmente como campos de datos. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1202,7 +1196,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene los rótulos de los campos de datos en el informe de tabla dinámica. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene los rótulos de los campos de datos en el informe de tabla dinámica. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1230,7 +1224,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object que representa todos los campos de datos en una tabla dinámica. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object que representa todos los campos de datos en una tabla dinámica. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1257,7 +1251,7 @@ Lectura y escritura.</summary>
       <Parameters />
       <Docs>
         <summary>Descarta todos los cambios realizados en las celdas editadas de un informe de tabla dinámica basado en un origen de datos OLAP.</summary>
-        <remarks>Informe de <para>para una tabla dinámica basado en un origen de datos OLAP, el método quita todos los valores y las fórmulas escritas en las celdas de valor y, a continuación, ejecuta una operación de actualización de tabla dinámica para recuperar los valores más recientes del origen de datos. Establece el valor de origen de datos en una referencia nula (Nothing en Visual Basic) para todas las celdas de valor que se editan y también ejecuta una instrucción ROLLBACK TRANSACTION contra el servidor OLAP.</para><para>Si intenta ejecutar este método para un informe de tabla dinámica basado en un origen de datos no OLAP, este método genera un error en tiempo de ejecución.</para><para /></remarks>
+        <remarks>Informe de <para>para una tabla dinámica basado en un origen de datos OLAP, el método quita todos los valores y las fórmulas escritas en las celdas de valor y, a continuación, ejecuta una operación de actualización de tabla dinámica para recuperar los valores más recientes del origen de datos. Establece el valor de origen de datos en una referencia nula (Nothing en Visual Basic) para todas las celdas de valor que se editan y también ejecuta una instrucción ROLLBACK TRANSACTION contra el servidor OLAP.</para><para>Si intenta ejecutar este método para un informe de tabla dinámica basado en un origen de datos no OLAP, este método genera un error en tiempo de ejecución.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayContextTooltips">
@@ -1292,7 +1286,7 @@ Lectura y escritura.</summary>
         </value>
         <remarks>
           <para>Si <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayContextTooltips" /> se establece en <b>False</b>, información contextual sobre herramientas para <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> no se mostrarán las celdas. Si se establece en <b>True</b>, información sobre herramientas para <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> las celdas en las áreas de fila, columna y los datos que se mostrará.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1326,7 +1320,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>La tabla dinámica debe estar conectada a un origen de datos de procesamiento analítico en línea (OLAP) para evitar un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1360,7 +1354,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>La tabla dinámica debe estar conectada a un origen de datos de procesamiento analítico en línea (OLAP) para evitar un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1396,7 +1390,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ErrorString" /> (propiedad) para establecer la cadena de error personalizada.</para>
           <para>Esta propiedad es especialmente útil para suprimir los errores de división por cero al que se mueven los campos calculados.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1432,7 +1426,7 @@ Lectura y escritura.</summary>
         </value>
         <remarks>
           <para>El valor predeterminado es <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1499,7 +1493,7 @@ Lectura y escritura.</summary>
         </value>
         <remarks>
           <para>Si <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayMemberPropertyTooltips" /> se establece en <b>False</b>, ningún miembro propiedades se mostrará en la información sobre herramientas. Si se establece en <b>True</b>, las propiedades de miembro se mostrará en la información sobre herramientas.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1534,7 +1528,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.NullString" /> (propiedad) para establecer la cadena nula personalizada.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1783,7 +1777,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Todas las modificaciones realizadas en los valores de datos al actualizar se pierden.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1819,7 +1813,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Al establecer esta propiedad para un informe de tabla dinámica, establece para todos los campos de dicho informe.</para>
           <para>Para los orígenes de datos OLAP, el valor siempre es <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1854,7 +1848,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Al establecer esta propiedad para un informe de tabla dinámica, establece para todos los campos de dicho informe.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1921,7 +1915,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Cuando se establece esta propiedad, no se muestran cuadros de los campos en la hoja de cálculo.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1956,7 +1950,7 @@ Lectura y escritura.</summary>
           <b>true</b> si vuelve a escribir en el origen de datos está habilitado para la tabla dinámica especificada; en caso contrario, <b>false</b>. El valor predeterminado es <b>false</b>.</value>
         <remarks>
           <para>Lectura y escritura.</para> Orígenes de datos OLAP para 
-          <para>, si se establece en el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propiedad en <b>true</b> para permite la reescritura y deshabilita la alerta de sobrescritura de valores en el área de datos de la tabla dinámica. Para orígenes de datos no OLAP, establecer el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propiedad en <b>true</b> habilita la reescritura en código y también permite al usuario cambiar valores de datos que anteriormente no se podrían cambiar.</para><para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> y <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto no se puede establecer en <b>true</b> al mismo tiempo.</para><para>Si el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> (propiedad) se establece en <b>true</b> y, a continuación, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> (propiedad) se establece en <b>true</b>, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> (propiedad) se establece automáticamente en <b>false</b> , se actualiza la tabla dinámica y todas las modificaciones realizadas en los valores de datos es pierden.</para><para>Si el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> (propiedad) se establece en <b>true</b> y, a continuación, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> (propiedad) se establece en <b>true</b>, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />(propiedad) se establece automáticamente en <b>false</b> , no se actualiza la tabla dinámica y se restauran los valores de origen de datos.</para><para>Para los orígenes de datos no OLAP, al establecer esta propiedad genera un error en tiempo de ejecución.</para><para /></remarks>
+          <para>, si se establece en el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propiedad en <b>true</b> para permite la reescritura y deshabilita la alerta de sobrescritura de valores en el área de datos de la tabla dinámica. Para orígenes de datos no OLAP, establecer el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> propiedad en <b>true</b> habilita la reescritura en código y también permite al usuario cambiar valores de datos que anteriormente no se podrían cambiar.</para><para>La <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> y <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto no se puede establecer en <b>true</b> al mismo tiempo.</para><para>Si el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> (propiedad) se establece en <b>true</b> y, a continuación, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> (propiedad) se establece en <b>true</b>, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> (propiedad) se establece automáticamente en <b>false</b> , se actualiza la tabla dinámica y todas las modificaciones realizadas en los valores de datos es pierden.</para><para>Si el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> (propiedad) se establece en <b>true</b> y, a continuación, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> (propiedad) se establece en <b>true</b>, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />(propiedad) se establece automáticamente en <b>false</b> , no se actualiza la tabla dinámica y se restauran los valores de origen de datos.</para><para>Para los orígenes de datos no OLAP, al establecer esta propiedad genera un error en tiempo de ejecución.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -2023,7 +2017,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Cuando esta propiedad se establece en <b>True</b>, los campos se ordenan en orden ascendente. Cuando se establece en <b>False</b>, los campos se ordenan en orden del origen de datos. </para>
           <para>No se aplica a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> conectados a orígenes de datos OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2290,8 +2284,8 @@ Lectura y escritura.</summary>
         <summary>Comprueba si existe la tabla dinámica en el nivel de hoja de cálculo. <b>Boolean</b> (<b>bool</b> en C#). Solo lectura</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cuando se establece la propiedad <b>Hidden</b> en <b>True</b>, se oculta el objeto de <b>tabla dinámica</b> desde el nivel de hoja de cálculo. Cuando la propiedad se establece en <b>False</b>, existe la tabla dinámica en una hoja de cálculo.</para>
-          <para />
+          <para>Cuando se establece la propiedad <b>Hidden</b> en <b>True</b>, el objeto de <b>tabla dinámica</b> está oculto en el nivel de hoja de cálculo. Cuando la propiedad se establece en <b>False</b>, la tabla dinámica ya existe en una hoja de cálculo.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2323,11 +2317,11 @@ Lectura y escritura.</summary>
       <Docs>
         <param name="Index">
           <b>Objeto</b>de opcional. El nombre o el número del campo que se devolverá (puede ser una matriz si desea especificar varios campos).</param>
-        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que no se muestran actualmente como campos de fila, columna, página o datos. Es de solo lectura</summary>
+        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que no se muestran actualmente como campos de fila, columna, página o datos. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para los orígenes de datos OLAP, esta propiedad siempre devuelve una colección vacía.</para>
-          <para />
+          <para>Orígenes de datos de OLAP, esta propiedad siempre devuelve una colección vacía.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2363,7 +2357,7 @@ Lectura y escritura.</summary>
         </value>
         <remarks>
           <para>Cuando el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" />(propiedad) se establece en <b>True</b>, la representación en la cuadrícula de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> es la misma que en Excel 2003. Cuando la propiedad se establece en <b>False</b>, no hay ninguna zona de colocación en la cuadrícula. El <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> diseño cambia también con esta propiedad.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2397,7 +2391,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2433,8 +2427,8 @@ Lectura y escritura.</summary>
         </value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />puede ser xlCompactRow, xlTabularRow o xlOutlineRow.</para>
-          <para />
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /> puede ser xlCompactRow, xlTabularRow o xlOutlineRow.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2462,7 +2456,7 @@ Lectura y escritura.</summary>
         <summary>Crea una lista con los elementos calculados y los campos de una tabla dinámica en una hoja de cálculo distinta.</summary>
         <remarks>
           <para>Este método no está disponible para orígenes de datos OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2530,7 +2524,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad se establece en <b>False</b> , inmediatamente después de que finalice el programa.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2557,11 +2551,11 @@ Lectura y escritura.</summary>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <b>cadena</b> que indica la MDX (expresiones multidimensionales) que se enviará al proveedor para completar la vista actual de la tabla dinámica. Es de solo lectura</summary>
+        <summary>Devuelve una <b>cadena</b> que indica la MDX (expresiones multidimensionales) que se enviará al proveedor para completar la vista actual de la tabla dinámica. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Si consulta este valor para una tabla dinámica de la que no sean - OLAP Online Analytical Processing, o cuando no hay ninguna vista de tabla dinámica (no hay elementos de datos), se devolverá un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2718,12 +2712,12 @@ Lectura y escritura.</summary>
       <Docs>
         <param name="Index">
           <b>Objeto</b>de opcional. El nombre o el número del campo que se devolverá (puede ser una matriz si desea especificar varios campos).</param>
-        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que se muestran actualmente como campos de página. Es de solo lectura</summary>
+        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que se muestran actualmente como campos de página. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Una jerarquía puede contener sólo un campo de página.</para>
           <para>Para un informe de tabla dinámica basado en una memoria caché de tabla dinámica, la colección de campos de tabla dinámica que se devuelve refleja lo que está actualmente en la memoria caché.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2757,7 +2751,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Este estilo se utiliza como el estilo predeterminado para el área de fondo, y se aplica antes de cualquier formato de usuario. Las celdas vacías cuando un campo es dinamizado desde el área de campo de página a otra ubicación conservarán este estilo.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2815,7 +2809,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene el área de página en el informe de tabla dinámica. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene el área de página en el informe de tabla dinámica. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2897,7 +2891,7 @@ Lectura y escritura.</summary>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object que representa la memoria caché para el informe de tabla dinámica especificado. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> object que representa la memoria caché para el informe de tabla dinámica especificado. Solo lectura.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2925,7 +2919,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa el gráfico dinámico independiente para el informe de tabla dinámica oculto especificado. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa el gráfico dinámico independiente para el informe de tabla dinámica oculto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2953,7 +2947,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.PivotAxis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> objeto que representa el eje de la columna completa. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> objeto que representa el eje de la columna completa. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />
         </value>
@@ -2984,11 +2978,11 @@ Lectura y escritura.</summary>
       <Docs>
         <param name="Index">
           <b>Objeto</b>de opcional. Nombre o número del campo que se devolverá.</param>
-        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de los campos visibles y ocultos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) en el informe de tabla dinámica. Es de solo lectura</summary>
+        <summary>Devuelve un objeto object que representa un solo campo de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de los campos visibles y ocultos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) en el informe de tabla dinámica. Solo lectura.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para los orígenes de datos OLAP que hay no hay campos ocultos y el objeto o colección que se devuelve refleja lo que está actualmente visible.</para>
-          <para />
+          <para>Orígenes de datos OLAP para existe son no hay campos ocultos y el objeto o colección que se devuelve refleja lo que está actualmente visible.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3015,11 +3009,11 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.PivotFormulas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> objeto que representa la colección de fórmulas para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> informe. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> objeto que representa la colección de fórmulas para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> informe. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para los orígenes de datos OLAP, esta propiedad devuelve una colección vacía.</para>
-          <para />
+          <para>Orígenes de datos de OLAP, esta propiedad devuelve una colección vacía.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3046,7 +3040,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.PivotAxis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> objeto que representa el eje de toda la fila. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> objeto que representa el eje de toda la fila. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />
         </value>
@@ -3085,7 +3079,7 @@ Lectura y escritura.</summary>
         <summary>Selecciona parte de un informe de tabla dinámica.</summary>
         <remarks>
           <para>Puede usar el modo especificado sólo para seleccionar el elemento correspondiente en el informe de tabla dinámica. Por ejemplo, no puede seleccionar rótulos de datos utilizando el modo <b>xlButton</b> ; del mismo modo, no se pueden seleccionar botones utilizando el modo <b>xlDataOnly</b> .</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3119,7 +3113,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Al establecer esta propiedad es equivalente a llamar a la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" /> método con el <paramref name="Mode" /> argumento establecido en <b>xlDataAndLabel</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3152,8 +3146,8 @@ Lectura y escritura.</summary>
         <summary>Devuelve o establece una cadena <b>String</b> que indica la selección de tabla dinámica en el formato estándar de informe de tabla dinámica usando la configuración de inglés (Estados Unidos). Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>PivotSelectionStandard acepta las configuraciones</b> es "international descriptivo" mientras que el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" /> propiedad no es compatible.</para>
-          <para />
+          <para>La propiedad <b>PivotSelectionStandard acepta las configuraciones</b> es "international descriptivo" mientras que el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" /> (propiedad) no lo es.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3323,7 +3317,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Devuelve <b>True</b> si los indicadores de detalle se imprimen con la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> y devuelve <b>False</b> si no se imprimen los indicadores de detalle con la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
           <para>Cuando el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" /> (propiedad) se establece en <b>False</b>, el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" /> (propiedad) no tiene ningún efecto. Los indicadores de detalle no se imprimen cuando no se muestran en la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3357,7 +3351,7 @@ Lectura y escritura.</summary>
           <b>True</b> si la impresión de títulos de la hoja de cálculo se configura en función del informe de tabla dinámica. <b>False</b> si se imprimen los títulos de la hoja de cálculo. El valor predeterminado es <b>False</b>. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>Los títulos de impresión de <para>la fila se establecen en las filas que contienen los elementos de campo de columna del informe de tabla dinámica. La impresión de títulos de columna se establece en las columnas que contienen los elementos de la fila.</para> Informe de tabla dinámica 
-          <para>debe ser el único existente en el área de impresión. Para establecer un formato con sangría en un informe de tabla dinámica, use la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> método.</para><para /></remarks>
+          <para>debe ser el único existente en el área de impresión. Para establecer un formato con sangría en un informe de tabla dinámica, use la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> método.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDataSourceValues">
@@ -3386,7 +3380,7 @@ Lectura y escritura.</summary>
           <para>Para determinar si un informe de tabla dinámica está en modo de escritura diferida, compruebe el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> o <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto, cualquiera de los cuales devolverá True. Para los informes de tabla dinámica que no están en modo de escritura diferida, intenta ejecutar este método genera un error en tiempo de ejecución.</para>
           <para>Para informes de tabla dinámica con orígenes de datos OLAP, ejecutar el <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" /> método crea una conexión independiente con el servidor OLAP y ejecuta la consulta MDX completa (el valor de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> (propiedad)) que se utiliza para realizar una operación de actualización para rellenar el informe de tabla dinámica. Excel extrae los valores devueltos para todas las celdas que se han modificado en la vista Tabla dinámica y, a continuación, almacena en la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> (propiedad) para esas celdas.</para>
           <para>Este método sólo se aplica a los informes de tablas dinámicas con orígenes de datos OLAP. Intentando ejecutar este método o informes de tablas dinámicas con orígenes de datos OLAP no genera un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3417,7 +3411,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para los orígenes de datos OLAP, esta propiedad se actualiza después de cada consulta.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3448,7 +3442,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para los orígenes de datos OLAP, esta propiedad se actualiza después de cada consulta.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3506,7 +3500,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Uso de la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> método corresponde a los comandos repetir todas las etiquetas de elemento y realice Repetir etiquetas de elementos en la lista desplegable de diseño del informe de la ficha Diseño de herramientas de tabla dinámica</para>
           <para>Para especificar si se va a repetir etiquetas de elementos para un campo dinámico, use la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> (propiedad).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3542,7 +3536,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>El informe de tabla dinámica debe ser el único existente en el área de impresión. Para establecer un formato con sangría en un informe de tabla dinámica, use la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> método.</para>
           <para>Microsoft Excel imprime los rótulos de fila y columna en lugar de los títulos definidos para la hoja de cálculo. Usar el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PrintTitles" /> (propiedad) para determinar si los títulos de impresión definidos para el informe de tabla dinámica.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3573,7 +3567,7 @@ Lectura y escritura.</summary>
         <summary>Este método se utiliza para definir simultáneamente opciones de diseño para todos los existentes <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s.</summary>
         <remarks>
           <para>Este método es atómica, por lo que se asegura de que si las opciones de diseño no se puede establecer en cualquier <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />, cambiarán las opciones de diseño de ninguno de los campos y no se realiza ningún cambio en el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3605,7 +3599,7 @@ Lectura y escritura.</summary>
       <Docs>
         <param name="Index">
           <b>Objeto</b>de opcional. El nombre o el número del campo que se devolverá (puede ser una matriz si desea especificar varios campos).</param>
-        <summary>Devuelve un objeto object que representa un solo campo en un informe de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que se muestran actualmente como campos de fila. Es de solo lectura</summary>
+        <summary>Devuelve un objeto object que representa un solo campo en un informe de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto) que se muestran actualmente como campos de fila. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3665,7 +3659,7 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene el área de fila en el informe de tabla dinámica. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene el área de fila en el informe de tabla dinámica. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3699,8 +3693,8 @@ Lectura y escritura.</summary>
         <summary>Es <b>True</b> si los datos del informe de tabla dinámica se guardan con el libro. Es <b>False</b> si sólo se guarda la definición del informe. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para los orígenes de datos OLAP, esta propiedad siempre se establece en <b>False</b>.</para>
-          <para />
+          <para>Orígenes de datos de OLAP, esta propiedad siempre se establece en <b>False</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3734,7 +3728,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Si el campo de tabla dinámica no está en formato de diseño, especificar la suma de cualquiera de las constantes y <b>xlFirstRow</b> es equivalente a especificar la constante sola.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3774,8 +3768,8 @@ Lectura y escritura.</summary>
           <b>True</b> si la expresión multidimensional MDX (expresiones multidimensionales) que Microsoft Excel envía al servidor incluye la <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" /> (propiedad) para cada celda del área de datos que corresponde a una celda en el conjunto de datos de procesamiento analítico en línea (OLAP). El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el conjunto de datos OLAP devuelve un valor de la propiedad <b>BackColor</b> , el color de relleno de la celda se establece en el color más cercano en la paleta de Microsoft Excel para esa hoja de cálculo. Si el usuario aplica formato a la celda manualmente el patrón de celdas, que sobrescribirá cualquier formato desde el conjunto de datos OLAP.</para>
-          <para />
+          <para>Si el conjunto de datos OLAP devuelve un valor de la propiedad <b>BackColor</b> , a continuación, se establece el color de relleno de la celda en el color más cercano en la paleta de Microsoft Excel para esa hoja de cálculo. Si el usuario aplica formato a la celda manualmente el patrón de celdas, que sobrescribirá cualquier formato desde el conjunto de datos OLAP.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3811,7 +3805,7 @@ Lectura y escritura.</summary>
         </value>
         <remarks>
           <para>Devuelve <b>True</b> si se muestran los indicadores de detalle en el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> y devuelve <b>False</b> si no se muestran los indicadores de detalle en el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3874,7 +3868,7 @@ Lectura y escritura.</summary>
         <returns>To be added.</returns>
         <remarks>
           <para>Este método no está disponible para orígenes de datos OLAP.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3905,7 +3899,7 @@ Lectura y escritura.</summary>
       </ReturnValue>
       <Docs>
         <summary>El <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleColumnHeaders" />(propiedad) se establece en True si se deben mostrar los encabezados de la columna en la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Lectura y escritura.</summary>
-        <value>Boolean</value>
+        <value>Booleano</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3936,7 +3930,7 @@ Lectura y escritura.</summary>
       </ReturnValue>
       <Docs>
         <summary>La propiedad booleana muestra columnas con bandas que las columnas pares tienen un formato diferente de las columnas impares. Esto hace que <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />más fácil de leer. Lectura y escritura.</summary>
-        <value>Boolean</value>
+        <value>Booleano</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3998,7 +3992,7 @@ Lectura y escritura.</summary>
       </ReturnValue>
       <Docs>
         <summary>El <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowHeaders" /> (propiedad) se establece en True si deben mostrarse los encabezados de fila en la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Lectura y escritura.</summary>
-        <value>Boolean</value>
+        <value>Booleano</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4029,7 +4023,7 @@ Lectura y escritura.</summary>
       </ReturnValue>
       <Docs>
         <summary>El <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowStripes" /> propiedad muestra filas con bandas que las filas pares tienen un formato diferente de las filas impares. Esto hace que <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> más fácil de leer. Lectura y escritura.</summary>
-        <value>Boolean</value>
+        <value>Booleano</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4065,7 +4059,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Lectura y escritura.</para>
           <para>Esta propiedad corresponde a la configuración de la presentación con la casilla de verificación de la fila de valores en la ficha Mostrar del cuadro de diálogo Opciones de tabla dinámica.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4097,7 +4091,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>De sólo lectura.</para>
           <para>Segmentaciones de datos pueden usarse para filtrar datos en informes de tabla dinámica. El <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> colección contiene <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objetos que representan las segmentaciones de datos que están asociadas con la tabla dinámica especificada.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4132,7 +4126,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Debe usar el esquema de la Galería de símbolos. La cuadrícula se proporciona sólo porque habilita la compatibilidad con versiones anteriores de Excel.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4167,8 +4161,8 @@ Lectura y escritura.</summary>
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Al establecer esta propiedad en <b>False</b> puede optimizar el rendimiento de los campos con muchos elementos, y también permite a los usuarios que no desea evitar la ordenación personalizada basada en listas.</para>
-          <para />
+          <para>Al establecer esta propiedad en <b>False</b> puede optimizar el rendimiento de los campos con muchos elementos, y también permite a los usuarios que no desea evitar it. la ordenación personalizada basada en listas</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4219,7 +4213,7 @@ Lectura y escritura.</summary>
             </item>
           </list>
           <para>Esta propiedad no está disponible para orígenes de datos OLE DB.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4254,7 +4248,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Para los orígenes de datos OLAP, el valor siempre es <b>True</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4284,8 +4278,8 @@ Lectura y escritura.</summary>
         <param name="Location">Requiere <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" /> puede ser <b>xlAtTop</b> o <b>xlAtBottom</b>.</param>
         <summary>Este método cambia la ubicación del subtotal para todos los existentes <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />. Cambiar la ubicación del subtotal tiene un efecto visual inmediato sólo para los campos en formato de esquema, pero se establecerá para los campos en forma de tabla.</summary>
         <remarks>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" /> método establece la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" /> (propiedad) para todos los existentes <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s automáticamente.</para>
-          <para />
+          <para>La <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" /> método establece la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" /> (propiedad) para todos los existentes <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s automáticamente.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4320,7 +4314,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Lectura y escritura.</para>
           <para>El valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" /> (propiedad) se corresponde con el valor en el cuadro Descripción, en la ficha texto alternativo del cuadro de diálogo Opciones de tabla dinámica.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4347,11 +4341,11 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene todo el informe de tabla dinámica, pero no incluye los campos de página. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene todo el informe de tabla dinámica, pero no incluye los campos de página. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>El <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" /> (propiedad) incluye campos de página.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4378,11 +4372,11 @@ Lectura y escritura.</summary>
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene todo el informe de tabla dinámica, incluidos los campos de página. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene todo el informe de tabla dinámica, incluidos los campos de página. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>El <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" /> (propiedad) no incluye los campos de página.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4422,7 +4416,7 @@ Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Este estilo se utiliza como el estilo predeterminado para el área de fondo, y se aplica antes de cualquier formato de usuario.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4458,7 +4452,7 @@ Lectura y escritura.</summary>
         </value>
         <remarks>
           <para>Se llama a la propiedad <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" /> porque no hay una propiedad existente denominada <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4525,7 +4519,7 @@ Lectura y escritura.</summary>
         <remarks>
           <para>Cuando esta propiedad se establece en <b>True</b>, el asterisco indica que los elementos ocultos se incluirán en el total. Aparece el asterisco, independientemente de si se han ocultado los elementos en el informe.</para>
           <para>Para los orígenes de datos no OLAP, el valor de esta propiedad es siempre <b>False</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4703,11 +4697,11 @@ Lectura y escritura.</summary>
       <Docs>
         <param name="Index">
           <b>Objeto</b>de opcional. El nombre o el número del campo que se devolverá (puede ser una matriz si desea especificar varios campos).</param>
-        <summary>Devuelve un objeto object que representa un solo campo en un informe de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos visibles (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto). Campos visibles se muestran como fila, columna, página o campos de datos. Es de solo lectura</summary>
+        <summary>Devuelve un objeto object que representa un solo campo en un informe de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto) o una colección de todos los campos visibles (un <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> objeto). Campos visibles se muestran como fila, columna, página o campos de datos. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>OLAP de orígenes de datos existe son no hay campos ocultos y esta propiedad devuelve todos los campos en la memoria caché de tabla dinámica.</para>
-          <para />
+          <para>Orígenes de datos OLAP para existe son no hay campos ocultos y esta propiedad devuelve todos los campos en la memoria caché de tabla dinámica.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4744,7 +4738,7 @@ Lectura y escritura.</summary>
           <para>En las tablas dinámicas no OLAP, si se oculta un elemento el total se vuelve a calcular para reflejar sólo los elementos que permanecen visibles en la tabla dinámica. En una tabla dinámica OLAP, el total se calcula en el servidor y, por tanto, no se ve afectado por si todos los elementos están ocultos en la vista Tabla dinámica. Sin embargo, si la propiedad <b>VisualTotals</b> se establece en <b>False</b> para una tabla dinámica OLAP, a continuación, los resultados de la tabla dinámica OLAP coincidirán con los de la tabla dinámica no OLAP.</para>
           <para>Para las tablas dinámicas OLAP, una propiedad <b>VisualTotals</b> establecida en <b>True</b> (valor predeterminado) funciona de la misma manera tal como se describe para las tablas dinámicas no OLAP.</para>
           <para>La propiedad <b>VisualTotals</b> devuelve <b>True</b> para todas las tablas dinámicas nuevas. Sin embargo, si se abre un libro en la versión actual de Microsoft Excel y la tabla dinámica se ha creado en una versión anterior de Excel, la propiedad <b>VisualTotals</b> devolverá <b>False</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -4782,7 +4776,7 @@ Lectura y escritura.</summary>
           <para>
             <b>true</b> si se incluyen los elementos filtrados en los totales de conjuntos con nombre; en caso contrario, <b>false</b>. El valor predeterminado de esta propiedad es <b>false</b>.</para>
           <para>En una tabla dinámica basado en un origen de datos OLAP, puede configurar si los totales de conjuntos con nombre en la tabla dinámica incluyen los elementos que se han filtrado. La configuración de la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisualTotalsForSets" /> propiedad corresponde a los elementos filtrado de incluir en la casilla de verificación de los totales de conjunto en los totales &amp; ficha filtros del cuadro de diálogo Opciones de tabla dinámica.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

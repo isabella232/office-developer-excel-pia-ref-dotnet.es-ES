@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584136" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> objetos que representa todos los complementos disponibles en Microsoft Excel, independientemente de si están instalados. Esta lista corresponde a la lista de complementos que se muestra en el cuadro de diálogo Complementos (menú Herramientas).</summary>
     <remarks>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" /> (propiedad) para devolver la colección <b>AddIns</b> .</para> Uso de 
-      <para>la <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> método para agregar un complemento a la lista de complementos disponibles. El método <b>Add</b> agrega un complemento a la lista, pero no instala el complemento la <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> la propiedad del complemento en <b>True</b> para instalar el complemento. Para instalar un complemento que no aparece en la lista de complementos disponibles, debe utilizar primero el método <b>Add</b> y, a continuación, establezca la propiedad <b>Installed</b> . Esto puede realizarse en un solo paso.</para><para>Uso <b>AddIns</b>(<paramref name="index" />), donde <paramref name="index" /> es el título del complemento o el número de índice, para devolver un solo objeto <b>AddIn</b> .</para><para>No se debe confundir el título, que aparece en el cuadro de diálogo Complementos, con el nombre, que es el nombre de archivo del complemento. Debe escribir el título del complemento exactamente tal como está escrita en el cuadro de diálogo Complementos, pero no tiene el uso de mayúsculas para que coincida con.</para><para /></remarks>
+      <para>la <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> método para agregar un complemento a la lista de complementos disponibles. El método <b>Add</b> agrega un complemento a la lista, pero no instala el complemento la <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> la propiedad del complemento en <b>True</b> para instalar el complemento. Para instalar un complemento que no aparece en la lista de complementos disponibles, debe utilizar primero el método <b>Add</b> y, a continuación, establezca la propiedad <b>Installed</b> . Esto puede realizarse en un solo paso.</para><para>Uso <b>AddIns</b>(<paramref name="index" />), donde <paramref name="index" /> es el título del complemento o el número de índice, para devolver un solo objeto <b>AddIn</b> .</para><para>No se debe confundir el título, que aparece en el cuadro de diálogo Complementos, con el nombre, que es el nombre de archivo del complemento. Debe escribir el título del complemento exactamente tal como está escrita en el cuadro de diálogo Complementos, pero no tiene el uso de mayúsculas para que coincida con.</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -104,8 +104,8 @@
         <summary>Agrega un nuevo archivo de complemento a la lista de complementos devuelve una <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Este método no instala el nuevo complemento. Debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> (propiedad) para instalar el complemento.</para>
-          <para />
+          <para>Este método no instala el nuevo complemento. Debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> (propiedad) para instalar el complemento</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -192,7 +192,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para /></remarks>
+          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
