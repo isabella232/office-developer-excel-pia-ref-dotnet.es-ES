@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579978" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _OLEObject" />
@@ -119,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Es de solo lectura</summary>
+        <summary>Esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,7 +155,7 @@
         <remarks>
           <para>Esta propiedad se omite los controles ActiveX. Los controles ActiveX siempre se cargan cuando se abre un libro.</para>
           <para>Para la mayoría de los tipos de objeto OLE, esta propiedad no debe establecerse en <b>True</b>. De forma predeterminada, la propiedad <b>AutoLoad</b> se establece en <b>False</b> para objetos OLE nuevos. Esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar automáticamente OLE objects es que, para objetos que representan datos volátiles, los vínculos a los datos de origen pueden restablecerse inmediatamente y los objetos se pueden representar de nuevo si es necesario.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -242,7 +242,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina inferior derecha del objeto. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina inferior derecha del objeto. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,10 +354,7 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. De sólo lectura <b>xlCreatorCode</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -384,8 +381,8 @@
         <summary>Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Pueden cortarse los gráficos incrustados sólo.</para>
-          <para />
+          <para>Gráficos incrustados sólo pueden cortarse.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -589,7 +586,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si la ventana está maximizada, esta propiedad devuelve un número negativo que varía según el ancho del borde ventana. Al establecer esta propiedad en 0 (cero) hará que la ventana de un poco más pequeña de lo que sería si la ventana de la aplicación estuviera maximizada. En otras palabras, si la propiedad <b>Left</b> es 0 (cero), el borde izquierdo de la ventana principal de Microsoft Excel apenas estará visible en la pantalla.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -623,7 +620,7 @@
         <value>To be added.</value>
         <remarks>
           <para>No se puede utilizar esta propiedad con cuadros de lista de selección múltiple.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -658,7 +655,7 @@
         <remarks>
           <para>Microsoft Excel lee el contenido de cada celda del rango y se inserta los valores de celda en el cuadro de lista. La lista realiza un seguimiento de los cambios en las celdas del rango.</para>
           <para>Si se ha creado la lista en el cuadro de lista con el <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> (método), esta propiedad devuelve una cadena vacía ("").</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -816,8 +813,8 @@
         <summary>Devuelve o establece el nombre de una macro que se ejecuta al hacer clic en el objeto especificado. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Al establecer esta propiedad para un menú invalidaciones de elemento de la Ayuda personalizada información configurada para el elemento de menú con la información de configuración de la macro asignada.</para>
-          <para />
+          <para>Al establecer esta propiedad para un elemento de menú invalida cualquier ayuda personalizada configura información configurada para el elemento de menú con la información de la macro asignada.</para>
+          <para></para>
         </remarks>
         <example>
           <para>En este ejemplo se hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se hace clic en la forma uno.</para>
@@ -906,7 +903,7 @@
           <para>
             <b>xlMoveAndSize</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1079,7 +1076,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object que representa el objeto u objetos especificados. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object que representa el objeto u objetos especificados. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1169,7 +1166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina superior izquierda del objeto especificado. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina superior izquierda del objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1317,7 +1314,7 @@
         <value>To be added.</value>
         <remarks>
           <para>En cualquier colección de objetos, el objeto en la parte posterior del orden z es <paramref name="collection" />(1), y el objeto en la parte delantera del orden z es <paramref name="collection" />(<paramref name="collection" />.<b> Contar</b>).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

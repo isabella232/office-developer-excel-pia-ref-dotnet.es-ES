@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581175" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CellFormat" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> o <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> las propiedades de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Application" /> objeto para devolver un objeto <b>CellFormat</b> .</para>
       <para>Se puede usar el <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Borders" />, <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Font" />, o <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Interior" /> las propiedades del objeto <b>CellFormat</b> para definir los criterios de búsqueda del formato de celda.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -67,8 +67,8 @@
           <b>True</b> si se aplica sangría al texto automáticamente cuando la alineación del texto en una celda se establece en distribución equitativa, ya sea horizontal o verticalmente.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para establecer la alineación del texto como distribución igualada, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad <b>Orientation</b> es <b>xlHorizontal</b>.</para>
-          <para />
+          <para>Para establecer la alineación del texto para que sea igual de distribución, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad <b>Orientation</b> es <b>xlHorizontal</b>.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -183,7 +183,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para /></remarks>
+          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -247,8 +247,8 @@
           <b>True</b> si la fórmula se ocultará cuando la hoja de cálculo está protegida. Devuelve <b>Null</b> si el rango especificado contiene algunas celdas con <b>FormulaHidden</b> igual a <b>True</b> y algunas celdas con <b>FormulaHidden</b> igual a <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>No confunda esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad). La fórmula no estará oculta si el libro está protegido y la hoja de cálculo no; se ocultará sólo si la hoja de cálculo está protegida.</para>
-          <para />
+          <para>No se debe confundir esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad). La fórmula no estará oculta si el libro está protegido y la hoja de cálculo no; se ocultará sólo si la hoja de cálculo está protegida.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -298,7 +298,7 @@
             <b>xlRight</b>
           </para>
           <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -332,7 +332,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Uso de esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 causará un error.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -430,7 +430,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cuando se selecciona un rango que contiene celdas combinadas, la selección resultante puede ser diferente de la selección prevista. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> (propiedad) para comprobar la dirección del rango seleccionado.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -462,10 +462,7 @@
       <Docs>
         <summary>Devuelve o establece el código de formato para el objeto. Devuelve <b>Null</b> si todas las celdas del rango especificado no tienen el mismo formato de número.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El código de formato es la misma cadena que la opción códigos de formato en el cuadro de diálogo Formato de celdas. La función de Visual Basic <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propiedades.</para>
-          <para />
-        </remarks>
+        <remarks>Código de <para>el formato es la misma cadena que la opción códigos de formato en el cuadro de diálogo Formato de celdas. La función de Visual Basic <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propiedades.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -497,8 +494,8 @@
         <summary>Devuelve o establece el código de formato para el objeto como una cadena en el idioma del usuario.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La función de Visual Basic <b>Format</b> usa cadenas de código de formato diferentes que la <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> y propiedades <b>NumberFormatLocal</b> .</para>
-          <para />
+          <para>Función Visual Basic <b>Format</b> usa cadenas de código de formato diferentes que la <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> y propiedades <b>NumberFormatLocal</b> .</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -545,7 +542,7 @@
             <b>xlVertical</b>
           </para>
           <para>para orígenes de datos OLAP, al establecer esta propiedad para un campo en una jerarquía de conjuntos de la orientación para los demás campos en la misma jerarquía. Campos de dimensiones sólo pueden orientarse en la fila, columna y áreas de campo de página del informe de tabla dinámica. Los campos de medida sólo pueden orientarse en el área de datos. Si se establece un campo de jerarquía o datos en <b>xlHidden,</b> quita la jerarquía o el campo de informe de tabla dinámica.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -654,7 +651,7 @@
           <para>
             <b>xlTop</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -688,8 +685,8 @@
           <b>True</b> si Microsoft Excel ajusta el texto en el objeto. Devuelve <b>Null</b> si el rango especificado contiene algunas celdas cuyo texto se ajusta y otras celdas que no.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel cambiará el alto de fila del rango, si es necesario, para acomodar el texto del intervalo.</para>
-          <para />
+          <para>Microsoft Excel cambiará el alto de fila del rango, si es necesario, para acomodar el texto del rango.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

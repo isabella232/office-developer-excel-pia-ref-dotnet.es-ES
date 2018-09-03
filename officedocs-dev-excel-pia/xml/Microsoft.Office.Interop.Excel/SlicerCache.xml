@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579593" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCache" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SlicerCaches" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto para tener acceso a la colección de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objetos en un libro.</para>
       <para>Cada segmentación de datos tiene una base de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que representa los elementos mostrados en la segmentación de datos y el estado de la interfaz de usuario actual de los mosaicos se muestran con sus correspondientes títulos de los elementos. Cada control de segmentación de datos que el usuario ve en Excel está representada por un <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto que tiene un <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto asociado a él.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -63,8 +63,8 @@
         <summary>Cuando se usa sin un calificador de objeto, esta propiedad obtiene un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad obtiene un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
         <summary>Borra el filtrado de todas las segmentaciones de datos asociadas con la memoria caché de la segmentación de datos especificada.</summary>
         <remarks>
           <para>Si se desactiva el filtrado de una segmentación de datos mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" /> (método), pero una o más segmentaciones de datos son filtrado de datos en que la segmentación de datos, algunos de los elementos en la primera segmentación de datos permanecerá atenuadas cruzado. Por ejemplo, si ha filtrado una segmentación de datos del cliente y país cruzado y ejecutar ActiveWorkbook.SlicerCaches("Slicer_Customer"). ClearManualFilter, todos los elementos de la segmentación de datos del cliente no estará disponibles hasta que ejecute ActiveWorkbook.SlicerCaches("Slicer_Country"). ClearManualFilter. Para obtener más información sobre filtrado cruzado, consulte el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -174,7 +174,7 @@
         <remarks>
           <para>De sólo lectura <b>largo</b>.</para>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -210,7 +210,7 @@
           <para>Lectura y escritura.</para>
           <para>Si más de una segmentación de datos está asociado a la misma tabla dinámica, de forma predeterminada, si el elemento o elementos que filtrar por en una segmentación de datos no tienen correspondientes datos de segmentación de datos otro, esos elementos se resaltan en gris. Por ejemplo, si tiene una segmentación de datos de estado y de segmentación de datos país, y haga clic en un país en la segmentación de datos país, todos los Estados que no estén en ese país estará atenuada. Esta característica se conoce como "cruce filtrado".</para> Configuración de 
           <para>la interfaz de usuario que se corresponde con la configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad) son el indicar visualmente elementos sin datos y mostrar elementos sin casillas de verificación última de datos en el cuadro de diálogo de configuración de segmentación de datos. Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> corresponde a seleccionar ambos el indicar visualmente elementos sin datos y casillas de verificación de mostrar elementos sin datos por última vez. Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> corresponde a seleccionar sólo el indicar visualmente los elementos con ninguna casilla de verificación de datos. Borrar ambas casillas de verificación corresponde al valor de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para> Orígenes de datos OLAP de 
-          <para>(<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>) no son compatibles con el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto. Para los orígenes de datos OLAP, use la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> de objetos, en lugar de ello.</para><para /></remarks>
+          <para>(<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>) no son compatibles con el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto. Para los orígenes de datos OLAP, use la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> de objetos, en lugar de ello.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -237,7 +237,7 @@
         <summary>Elimina la memoria caché de la segmentación de datos especificada y las segmentaciones de datos asociadas.</summary>
         <remarks>
           <para>Para eliminar una segmentación de datos concreto independientemente de la memoria caché de segmentación de datos, use la <see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> de objetos en su lugar.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -383,8 +383,8 @@
         <summary>Obtiene o establece el nombre de la memoria caché de segmentación de datos.</summary>
         <value>El nombre de la memoria caché de segmentación de datos.</value>
         <remarks>
-          <para>Nombre de la memoria caché de segmentación de datos debe ser único en el espacio de nombres de libro. De forma predeterminada, el nombre asignado a una memoria caché de segmentación de datos es Slicer_ seguido por el nombre del campo de tabla dinámica la memoria caché de segmentación de datos está asociado. Por ejemplo, si la segmentación de datos está asociada con el campo de categoría de producto en la tabla dinámica, el nombre predeterminado será Slicer_Product_Category (espacios en el nombre del campo se reemplazan por caracteres de subrayado). Si hay más de una campo de categoría de producto en el mismo libro con una segmentación de datos asociadas con él, o alguna otra entidad con nombre en el libro con el nombre Slicer_Product_Category, Excel anexará un número después del nombre para generar un nombre único , como Slicer_Product_Category1.</para>
-          <para />
+          <para>El nombre de la memoria caché de segmentación de datos debe ser único en el espacio de nombres de libro. De forma predeterminada, el nombre asignado a una memoria caché de segmentación de datos es Slicer_ seguido por el nombre del campo de tabla dinámica la memoria caché de segmentación de datos está asociado. Por ejemplo, si la segmentación de datos está asociada con el campo de categoría de producto en la tabla dinámica, el nombre predeterminado será Slicer_Product_Category (espacios en el nombre del campo se reemplazan por caracteres de subrayado). Si hay más de una campo de categoría de producto en el mismo libro con una segmentación de datos asociadas con él, o alguna otra entidad con nombre en el libro con el nombre Slicer_Product_Category, Excel anexará un número después del nombre para generar un nombre único , por ejemplo, Slicer_Product_Category1.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -418,7 +418,7 @@
           <para>De sólo lectura.</para>
           <para>
             <b>es true</b>, si la segmentación de datos se basa en un origen de datos OLAP; en caso contrario, <b>false</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -448,8 +448,8 @@
         <summary>Obtiene el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
         <value>El elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -481,7 +481,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>La <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección devuelta por la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> propiedad estará vacía si la segmentación de datos asociado al objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> no está conectada a ninguna.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -549,7 +549,7 @@
           <para>Lectura y escritura.</para>
           <para>Cuando el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> (propiedad) se establece en <b>true</b> (valor predeterminado), se muestran los elementos que se han eliminado del origen de datos en las segmentaciones de datos conectados a la memoria caché de segmentación de datos especificada. El <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propiedad corresponde a la configuración de la presentación con los elementos eliminados de la casilla de verificación del origen de datos en el cuadro de diálogo de configuración de segmentación de datos.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propiedad se aplica únicamente a las segmentaciones de datos que se basan en rangos de los libros o las listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), o a segmentaciones de datos que se basan en orígenes de datos relacionales (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> y <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />. <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es false</b>). Si se intenta establecer el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" /> propiedad las segmentaciones de datos que están conectados a las tablas dinámicas en función de los orígenes de datos OLAP externos (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>) genera un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -581,7 +581,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> propiedad se aplica sólo a las segmentaciones de datos que filtran los orígenes de datos OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>). Si se intenta obtener acceso a esta propiedad desde las segmentaciones de datos no OLAP, se generará un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -641,7 +641,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>El <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto solo es aplicable para las segmentaciones de datos que se basan en las tablas dinámicas basadas en rangos de los libros o las listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), o en segmentaciones de datos que se basan en las tablas dinámicas basados en orígenes de datos relacionales (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> y <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />. <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es false</b>). Intentar acceso el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> propiedad las segmentaciones de datos que están conectados a un origen de datos OLAP externo (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>) genera un error en tiempo de ejecución. Para los orígenes de datos OLAP, use la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> de objetos en su lugar.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -671,8 +671,8 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> colección que contiene la colección de <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objetos asociados con los valores especificados <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> colección que contiene la colección de <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objetos asociados con los valores especificados <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -708,7 +708,7 @@
           <para>Lectura y escritura.</para>
           <para>El valor predeterminado de esta propiedad es <see cref="F:Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending" />.</para>
           <para>El <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto sólo se aplica a las segmentaciones de datos que se basan en las tablas dinámicas conectadas a los rangos de los libros o las listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Intentar acceso el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> propiedad las segmentaciones de datos que están conectados a los orígenes de datos OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>) genera un error en tiempo de ejecución. Para los orígenes de datos OLAP, use la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SortItems" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> de objetos en su lugar.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -745,7 +745,7 @@
           <para>Lectura y escritura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> propiedad corresponde a la configuración de las listas de uso personalizadas al ordenar la casilla de verificación del cuadro de diálogo Configuración de segmentación de datos. Para obtener acceso a las listas personalizadas asociadas con la instalación actual de Excel, haga clic en la pestaña Archivo, haga clic en Opciones, haga clic en Avanzadas y, a continuación, haga clic en Editar listas personalizadas en la categoría General.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" /> propiedad sólo se aplica a las segmentaciones de datos que se van a filtrar los orígenes de datos que no son OLAP. Si se intenta obtener acceso a esta propiedad desde una memoria caché de segmentación de datos que es el filtrado de un origen de datos OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>) genera un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -777,7 +777,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>Para segmentaciones de datos basadas en el libro (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />), o segmentaciones de datos basados en datos externos que no son OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> y <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />. <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es false</b>), devuelve el nombre de la columna correspondiente en el origen de datos.</para> Las segmentaciones de datos OLAP para 
-          <para>(<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>), devuelve el nombre único MDX de la jerarquía de la segmentación de datos se basa en.</para><para /></remarks>
+          <para>(<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>), devuelve el nombre único MDX de la jerarquía de la segmentación de datos se basa en.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -808,7 +808,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>Sólo el <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" /> y <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" /> se admiten tipos de origen de datos.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -868,7 +868,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> propiedad solo es aplicable para las segmentaciones de datos que se basan en las tablas dinámicas basadas en rangos de los libros o las listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />). Intentar acceso el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> propiedad las segmentaciones de datos que están conectados a un origen de datos OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>) genera un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -903,7 +903,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" /> propiedad solo es aplicable para las segmentaciones de datos que se basan en orígenes de datos OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>es true</b>).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -935,7 +935,7 @@
         <remarks>
           <para>De sólo lectura.</para>
           <para>La <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> propiedad sólo se aplica a las segmentaciones de datos que se basan en orígenes de datos externos (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />). Intentar acceso el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" /> propiedad las segmentaciones de datos que están conectados a las tablas dinámicas en función de los rangos de los libros o las listas (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />  =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />) genera un error en tiempo de ejecución.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

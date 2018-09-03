@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579453" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
@@ -38,7 +38,7 @@
       <para>Esto es una colección de referencias a los objetos de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Solo los objetos de esta colección se mostrarán en el servidor.  De forma predeterminada, se muestra todo el libro (incluidas todas las hojas de cálculo).  </para>
       <para>Una sola <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objeto puede existir por <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Esta colección no es indexar por nombre porque no hay ninguna garantía de que los nombres de objetos que están marcados como visibles en el servidor son únicos.</para>
       <para>Interfaz de usuario en Excel la, puede ver la colección de objetos que están marcados como visibles en el servidor en el cuadro de diálogo Opciones de Excel Services.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -107,8 +107,8 @@
           <b>Object</b>
         </returns>
         <remarks>
-          <para>Si intenta agregar una combinación de hojas y elementos con nombre para el <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección, se devuelve un error.  El <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección puede contener referencias a hojas, o referencias a elementos con nombre, pero no ambos en la misma llamada.</para>
-          <para />
+          <para>Si se intenta agregar una combinación de hojas y elementos con nombre para el <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección, se devuelve un error.  El <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección puede contener referencias a hojas, o referencias a elementos con nombre, pero no ambos en la misma llamada.  </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -135,13 +135,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
           <para>Cuando se usa sin un calificador de objeto, esta propiedad devuelve la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -198,13 +198,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto. Es de solo lectura</summary>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -236,7 +236,7 @@
         <summary>Elimina una referencia a un objeto en el <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección en el <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</summary>
         <remarks>
           <para>Si no desea que un objeto concreto esté visible en Excel Services, utilice este método para quitar dicho objeto.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -266,7 +266,7 @@
           <para>Si no desea que cualquiera de los objetos en el <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección que estén visibles en el servidor, use este método para quitarlos todos a la vez.</para>
           <para>
             <b>Nota</b>: si el <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección no contiene al menos un <b>objeto</b>, verá el mensaje "No se puede mostrar el rango o el elemento especificado con nombre" al ver el <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> en Excel Services.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -357,7 +357,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve al objeto primario del objeto especificado. Es de solo lectura</summary>
+        <summary>Devuelve al objeto primario del objeto especificado. Solo lectura.</summary>
         <value>
           <b>Object</b>
         </value>

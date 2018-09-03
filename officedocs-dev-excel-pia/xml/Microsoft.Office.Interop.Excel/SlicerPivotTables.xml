@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20580986" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
@@ -37,7 +37,7 @@
     <remarks>
       <para>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección contiene información acerca de las tablas dinámicas de la memoria caché de segmentación de datos se filtra en ese momento. Proporciona propiedades para determinar el número de tablas dinámicas está asociada con la segmentación de datos y para recuperar <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objetos que representan las tablas dinámicas que se filtran. También proporciona métodos para agregar y quitar las tablas dinámicas de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección. El <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección estará vacía si la segmentación de datos asociado al objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> no está conectada a ninguna.</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto para devolver la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección asociada con un <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />, que a su vez puede estar asociada con una o más segmentaciones de datos.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -101,8 +101,8 @@
         <param name="PivotTable">A <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object que representa la tabla dinámica para agregar.</param>
         <summary>Agrega una referencia a una tabla dinámica para el <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</summary>
         <remarks>
-          <para>Cuando se agrega una tabla dinámica a la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección, se puede filtrar por su elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> y las segmentaciones de datos asociados con ella.</para>
-          <para />
+          <para>Cuando una tabla dinámica se agrega a la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección, se puede filtrar por su elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> y las segmentaciones de datos asociados a él.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
         <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -192,7 +192,7 @@
         <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" />(propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -286,8 +286,8 @@
         <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que es el elemento principal del especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</summary>
         <value>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que es el elemento principal del especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -317,8 +317,8 @@
         <param name="PivotTable">A <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object que representa la tabla dinámica para quitar, o el nombre o índice de la tabla dinámica en la colección.</param>
         <summary>Quita una referencia a una tabla dinámica de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</summary>
         <remarks>
-          <para>Cuando se quita una tabla dinámica de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección, ya no se filtra por su elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> y las segmentaciones de datos asociados con ella.</para>
-          <para />
+          <para>Cuando una tabla dinámica se ha quitado de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección, ya no se filtra por su elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> y las segmentaciones de datos asociados a él.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

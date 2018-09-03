@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20580727" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSetCondition" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Todos los objetos de formato condicionales están contenidos en una <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de colección, que es un elemento secundario de un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Puede crear una regla de formato mediante cualquiera de conjunto de iconos el <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> método de la colección <b>FormatConditions</b> .</para>
       <para>Cada conjunto de iconos contiene tres, cuatro o cinco iconos. Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto para devolver un <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> objeto para especificar uno de los conjuntos de iconos integrados. Cada icono individual en el conjunto de iconos, a continuación, se asigna a un subconjunto de los valores del rango por los miembros de la <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> objeto. También se especifica el tipo de umbral por este objeto.</para>
-      <para />
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -65,7 +65,7 @@
           <b>Aplicación</b> (vea lo anterior)</value>
         <remarks>
           <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -122,13 +122,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits equivalente a un <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> valor que indica la aplicación en la que se creó este objeto. Es de solo lectura</summary>
+        <summary>Devuelve un entero de 32 bits equivalente a un <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> valor que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -189,7 +189,7 @@
         </value>
         <remarks>
           <para>Esta propiedad es útil para limitar el intervalo de valores que mostrará el formato condicional. Un escenario típico es cuando haya un intervalo de números que contiene valores positivos y negativos. Es posible que desee crear más de un formato condicional para este rango de números: uno para los valores positivos y otro para los valores negativos.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -222,7 +222,7 @@
         </value>
         <remarks>
           <para>Una vez que tenga el <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />colección, puede usar el <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> (propiedad) de la colección que se va a devolver un <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objeto. El <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objeto representa un único criterio de un conjunto de iconos.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -258,7 +258,7 @@
         </value>
         <remarks>
           <para>Puede asignar el icono establecer mediante el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -287,9 +287,9 @@
         <param name="Range">Rango al que se aplicará esta regla de formato.</param>
         <summary>Establece el rango de celdas al que se aplica esta regla de formato.</summary>
         <remarks>
-          <para>El intervalo debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
+          <para>El rango debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
           <para>También puede usar un nombre definido local en cualquier parte del rango, pero el nombre debe ser en el lenguaje de la macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -355,7 +355,7 @@
         </value>
         <remarks>
           <para>Esta propiedad devolverá <b>False</b> si no todos los umbrales están establecidos en percentiles. Al establecer esta propiedad en <b>True</b> se establecerán todos los tipos de umbral en percentiles.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -391,7 +391,7 @@
         </value>
         <remarks>
           <para>Al establecer la prioridad, el valor debe ser un entero positivo comprendido entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas en la hoja de cálculo, por lo que cambiar la prioridad de la regla de formato condicional especificada puede provocar el valor de prioridad de las demás reglas en la hoja de cálculo que se va a desplazar.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -457,7 +457,7 @@
         </value>
         <remarks>
           <para>De forma predeterminada, la mayoría de los conjuntos de iconos que se pueden usar asocia las imágenes positivas con los valores más altos. Por ejemplo, el conjunto de iconos "3 semáforos" aplica un círculo verde al umbral del valor superior y un círculo rojo a los valores más bajos del rango. Si los datos están tal que los valores más bajos son más convenientes, como resultados en tiempo de maratón, es posible que desee invertir el orden en que se aplican los iconos al rango que se va a asociar el círculo verde a los valores más bajos.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -493,7 +493,7 @@
         </value>
         <remarks>
           <para>El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que establece el ámbito utilizando el <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> (propiedad).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -520,8 +520,8 @@
       <Docs>
         <summary>Establece el valor de prioridad para esta regla de formato condicional en "1" para que se evalúe antes que todas las demás reglas en la hoja de cálculo.</summary>
         <remarks>
-          <para>Si tiene varias reglas de formato condicionales en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
-          <para />
+          <para>Cuando tiene varias reglas de formato condicionales en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -549,7 +549,7 @@
         <summary>Establece el orden de evaluación para esta regla de formato condicional de modo que se evalúe después que todas las demás reglas en la hoja de cálculo.</summary>
         <remarks>
           <para>El valor real de la prioridad será igual que el número total de reglas de formato condicional en la hoja de cálculo. Si tiene varias reglas de formato condicionales en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que esta regla aumente en uno.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -585,7 +585,7 @@
         </value>
         <remarks>
           <para>El valor predeterminado de esta propiedad es <b>False</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -617,8 +617,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Para admitir la compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
-          <para />
+          <para>Para compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -645,13 +645,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> (enumeración), que especifica el tipo de formato condicional. Es de solo lectura</summary>
+        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> (enumeración), que especifica el tipo de formato condicional. Solo lectura.</summary>
         <value>
           <b>Integer</b>
         </value>
         <remarks>
           <para>Esta propiedad siempre devolverá un valor de 6, que es equivalente a <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

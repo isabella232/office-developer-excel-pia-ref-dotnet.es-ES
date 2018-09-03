@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581504" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
@@ -37,7 +37,7 @@
     <remarks>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> (propiedad) para devolver la colección de <b>hojas de cálculo</b> .</para>
       <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> (método) para crear una nueva hoja de cálculo y agregarla a la colección.</para>
-      <para>Usar <b>hojas de cálculo</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de la hoja de cálculo o el nombre, para devolver un único objeto de <b>hoja de cálculo</b> .</para> Objeto de la <b>hoja de cálculo</b><para>también es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección. La colección <b>Sheets</b> contiene todas las hojas del libro (hojas de gráficos y hojas de cálculo).</para><para /></remarks>
+      <para>Usar <b>hojas de cálculo</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de la hoja de cálculo o el nombre, para devolver un único objeto de <b>hoja de cálculo</b> .</para> Objeto de la <b>hoja de cálculo</b><para>también es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección. La colección <b>Sheets</b> contiene todas las hojas del libro (hojas de gráficos y hojas de cálculo).</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -154,7 +154,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Si <paramref name="Before" /> y <paramref name="After" /> son ambos se omite, la hoja nueva se inserta antes de la hoja activa.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -195,7 +195,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Si <paramref name="Before" /> y <paramref name="After" /> son ambos se omite, la hoja nueva se inserta antes de la hoja activa.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -222,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,8 +256,8 @@
           <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja copiada. No puede especificar <paramref name="After" /> si especifica <paramref name="Before" />.</param>
         <summary>Copia la hoja en otro lugar del libro.</summary>
         <remarks>
-          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
-          <para />
+          <para>Si no especifique ningún valor <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -314,10 +314,7 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
-        </remarks>
+        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -344,7 +341,7 @@
         <summary>Elimina el objeto.</summary>
         <remarks>
           <para>Cuando se elimina un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> o <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />, este método muestra un cuadro de diálogo que solicita al usuario que confirme la eliminación. Este cuadro de diálogo se muestra de manera predeterminada. El método <b>Delete</b> devuelve un valor <b>Boolean</b> que es <b>False</b> si el usuario hizo clic en Cancelar en el cuadro de diálogo o <b>es True</b> si el usuario hizo clic en eliminar.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -431,11 +428,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> saltos de colección que representa la página horizontal en la hoja. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> saltos de colección que representa la página horizontal en la hoja. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
           <para>Hay un límite de saltos de página horizontales 1.026 por hoja.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -501,8 +498,8 @@
           <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja que se ha movido. No puede especificar <paramref name="After" /> si se especifica <b>Before</b>.</param>
         <summary>Desplaza la hoja a otro lugar del libro.</summary>
         <remarks>
-          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
-          <para />
+          <para>Si no especifique ningún valor <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -585,7 +582,7 @@
         <summary>Imprime el objeto.</summary>
         <remarks>
           <para>"Páginas" en las descripciones de <paramref name="From" /> y <paramref name="To" /> hace referencia a las páginas impresas, no total de páginas de la hoja o libro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -684,8 +681,8 @@
         <param name="Replace">Opcional <b>objeto</b> (que se usa solo con hojas). <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
         <summary>Selecciona el objeto.</summary>
         <remarks>
-          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> (método).</para>
-          <para />
+          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> método.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -743,7 +740,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.VPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> saltos de colección que representa la página vertical de la hoja. Es de solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> saltos de colección que representa la página vertical de la hoja. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

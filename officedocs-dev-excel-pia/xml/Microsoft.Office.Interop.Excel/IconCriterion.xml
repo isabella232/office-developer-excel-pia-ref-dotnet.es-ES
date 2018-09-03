@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579299" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconCriterion" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>Representa el criterio de un icono concreto de un conjunto de iconos. El criterio especifica el rango de valores y el tipo de umbral asociado con el icono en una regla de formato condicional de conjunto de iconos.</summary>
     <remarks>
-      <para>Todos los criterios de un formato condicional de conjunto de iconos están contenidos en un <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> colección. Puede tener acceso a cada objeto <b>IconCriterion</b> de la colección pasando un índice a la colección. Vea el ejemplo para obtener información detallada.</para>
-      <para />
+      <para>Todos los criterios de un formato condicional de conjunto de iconos están contenidos en un <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> colección. Puede tener acceso a cada objeto <b>IconCriterion</b> de la colección pasando un índice a la colección. Vea el ejemplo para obtener más información.</para>
+      <para></para>
     </remarks>
     <example>
       <para>En el ejemplo de código siguiente se crea un intervalo de números que representan puntuaciones de las pruebas y, a continuación, se aplica una regla de formato condicional de conjunto de iconos a ese rango. El tipo de conjunto de iconos se cambia después de los iconos predeterminados a un conjunto de iconos de cinco flechas. Por último, el tipo de umbral se modifica de percentil a un número codificado de forma rígida.</para>
@@ -70,7 +70,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Después de establecer la propiedad <b>Icon</b> para el criterio del icono de una icono conjunto regla de formato condicional, la <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> propiedad se cambia a <b>xlCustomSet</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -101,7 +101,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Para un conjunto de iconos, esta propiedad se devolverá un valor de "1" para el umbral mínimo, "2" para el siguiente umbral y así sucesivamente.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -135,7 +135,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Regla de formato condicional de conjunto de un icono, esta propiedad puede establecerse sólo a uno de las dos constantes siguientes: <b>xlGreater</b> o <b>xlGreaterEqual</b>.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -165,12 +165,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> (enumeración), que especifica cómo se determina el valor de umbral de un conjunto de iconos. Es de solo lectura</summary>
+        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> (enumeración), que especifica cómo se determina el valor de umbral de un conjunto de iconos. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El tipo de valor de umbral de un conjunto de iconos puede ser un número, por ciento, una fórmula o percentil. Si se establece el tipo en percentil usará la función de percentil en Excel para determinar el valor del umbral.</para>
-          <para />
-        </remarks>
+        <remarks>Conjunto de <para>el tipo de valor de umbral de un icono puede ser un número, por ciento, una fórmula o percentil. Si se establece el tipo en percentil usará la función de percentil en Excel para determinar el valor del umbral.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -204,7 +201,7 @@
         <remarks>
           <para>Puede establecer la sólo si valor el <see cref="P:Microsoft.Office.Interop.Excel.IconCriterion.Type" /> (propiedad) para el formato condicional está establecida en una de las constantes siguientes: <b>xlConditionValueNumber</b>, <b>xlConditionValuePercent</b>, <b>xlConditionValuePercentile</b>o <b> xlConditionValueFormula</b>.</para>
           <para>Si el tipo de umbral es una fórmula, puede establecer la fórmula como una <b>cadena</b>. La fórmula debe devolver un solo número.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
