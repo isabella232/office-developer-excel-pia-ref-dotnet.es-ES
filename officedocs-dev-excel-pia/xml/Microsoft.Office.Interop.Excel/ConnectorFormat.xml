@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586117" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConnectorFormat" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Un conector es una línea que une dos formas en puntos denominados sitios de conexión. Si se reorganizan formas conectadas, la geometría del conector se ajustará automáticamente para que las formas permanezcan conectadas.</para> Uso de 
       <para>el <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> (propiedad) para devolver un objeto <b>ConnectorFormat</b> . Usar el <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> y <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> métodos para unir el final del conector a otras formas del documento. Usar el <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> método para encontrar automáticamente la ruta más corta entre las dos formas conectadas por el conector. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> (propiedad) para ver si una forma es un conector.</para> Tenga en cuenta que se asigna un tamaño y una posición cuando se agrega un conector a 
-      <para>el <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección, pero el tamaño y posición se ajustan automáticamente al unir el principio y el final del conector a otras formas de la colección. Por lo tanto, si va a adjuntar un conector a otras formas, el tamaño inicial y la posición que se especifique son irrelevantes. Del mismo modo, especifica qué sitios de conexión en una forma para adjuntar el conector a cuando se une el conector, pero utiliza el método <b>RerouteConnections</b> después el conector se adjunta pueden cambiar los sitios de conexión se une el conector, para facilitar su elección original de los sitios de conexión sea irrelevante.</para><para>Los sitios de conexión suelen enumerarse según las reglas presentadas en la siguiente tabla.</para><list type="table"><item><term>Objetos autoformas, WordArt, imágenes y OLE</term><description>los sitios de conexión se numeran comenzando en la parte superior y a la izquierda para continuar.</description></item><item><term>Formas libres</term><description>los sitios de conexión son los vértices, y corresponden a los números de vértice.</description></item></list><para /></remarks>
+      <para>el <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección, pero el tamaño y posición se ajustan automáticamente al unir el principio y el final del conector a otras formas de la colección. Por lo tanto, si va a adjuntar un conector a otras formas, el tamaño inicial y la posición que se especifique son irrelevantes. Del mismo modo, especifica qué sitios de conexión en una forma para adjuntar el conector a cuando se une el conector, pero utiliza el método <b>RerouteConnections</b> después el conector se adjunta pueden cambiar los sitios de conexión se une el conector, para facilitar su elección original de los sitios de conexión sea irrelevante.</para><para>Los sitios de conexión suelen enumerarse según las reglas presentadas en la siguiente tabla.</para><list type="table"><item><term>Objetos autoformas, WordArt, imágenes y OLE</term><description>los sitios de conexión se numeran comenzando en la parte superior y a la izquierda para continuar.</description></item><item><term>Formas libres</term><description>los sitios de conexión son los vértices, y corresponden a los números de vértice.</description></item></list><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -93,9 +93,9 @@
           <b>Integer</b>requerido. Un sitio de conexión en la forma especificada por <paramref name="ConnectedShape" />. Debe ser un entero entre 1 y el entero devuelto por la <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> (propiedad) de la forma especificada. Si desea que el conector busque automáticamente la ruta más corta entre las dos formas que conecta, especifique cualquier entero válido para este argumento y, a continuación, use la <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> método después de que el conector esté unido a las formas en ambos extremos.</param>
         <summary>Une el principio del conector especificado a una forma especificada.</summary>
         <remarks>
-          <para>Si ya existe una conexión entre el principio del conector y otra forma, que la conexión se interrumpe. Si el principio del conector ya no está situado en el sitio de conexión especificado, este método mueve el principio del conector al sitio de conexión y ajusta el tamaño y la posición del conector. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> (método) para unir el final del conector a una forma.</para>
+          <para>Si ya hay una conexión entre el principio del conector y otra forma, dicha conexión se interrumpe. Si el principio del conector ya no está situado en el sitio de conexión especificado, este método mueve el principio del conector al sitio de conexión y ajusta el tamaño y la posición del conector. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> (método) para unir el final del conector a una forma.</para>
           <para>Cuando se une un conector a un objeto, el tamaño y la posición del conector se ajustan automáticamente si es necesario.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
           </para>
           <para>
             <b>msoTrue</b> el principio del conector especificado está conectado a una forma.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -173,7 +173,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el principio del conector especificado no está unido a una forma, esta propiedad genera un error.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -204,7 +204,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el final del conector especificado no está unido a una forma, esta propiedad genera un error.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -230,10 +230,7 @@
       <Parameters />
       <Docs>
         <summary>Separa el principio del conector especificado de la forma que está unido.</summary>
-        <remarks>
-          <para>El método <b>BeginDisconnect</b> no modifica el tamaño ni la posición del conector. El principio del conector sigue colocado en un sitio de conexión pero ya no está conectado. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> (método) para separar el final del conector de una forma.</para>
-          <para />
-        </remarks>
+        <remarks>Método de <para>la <b>BeginDisconnect</b> no modifica el tamaño ni la posición del conector. El principio del conector sigue colocado en un sitio de conexión pero ya no está conectado. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> (método) para separar el final del conector de una forma.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -263,7 +260,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para /></remarks>
+          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnect">
@@ -295,9 +292,9 @@
           <b>Integer</b>requerido. Un sitio de conexión en la forma especificada por <paramref name="ConnectedShape" />. Debe ser un entero entre 1 y el entero devuelto por la <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> (propiedad) de la forma especificada. Si desea que el conector busque automáticamente la ruta más corta entre las dos formas que conecta, especifique cualquier entero válido para este argumento y, a continuación, use la <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> método después de que el conector esté unido a las formas en ambos extremos.</param>
         <summary>Une el final del conector especificado a una forma especificada.</summary>
         <remarks>
-          <para>Si ya existe una conexión entre el final del conector y otra forma, que la conexión se interrumpe. Si el final del conector ya no está situado en el sitio de conexión especificado, este método mueve el final del conector al sitio de conexión y ajusta el tamaño y la posición del conector. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> (método) para unir el principio del conector a una forma.</para>
+          <para>Si ya hay una conexión entre el final del conector y otra forma, dicha conexión se interrumpe. Si el final del conector ya no está situado en el sitio de conexión especificado, este método mueve el final del conector al sitio de conexión y ajusta el tamaño y la posición del conector. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> (método) para unir el principio del conector a una forma.</para>
           <para>Cuando se une un conector a un objeto, el tamaño y la posición del conector se ajustan automáticamente si es necesario.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -334,7 +331,7 @@
             <b>msoFalse</b> el final del conector especificado no está conectado a una forma.</para>
           <para>
             <b>msoTrue</b> el final del conector especificado está conectado a una forma.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -365,7 +362,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el final del conector especificado no está unido a una forma, esta propiedad genera un error.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -396,7 +393,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si el final del conector especificado no está unido a una forma, esta propiedad genera un error.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -424,7 +421,7 @@
         <summary>Separa el final del conector especificado de la forma que está unido.</summary>
         <remarks>
           <para>Este método no modifica el tamaño ni la posición del conector; el final del conector sigue colocado en un sitio de conexión pero ya no está conectado. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> (método) para separar el principio del conector de una forma.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -499,7 +496,7 @@
           <para>
             <b>msoConnectorTypeMixed</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

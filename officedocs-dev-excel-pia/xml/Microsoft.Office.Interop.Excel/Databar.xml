@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20587419" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Databar" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>Todos los objetos de formato condicionales están contenidos en una <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de colección, que es un elemento secundario de un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Puede crear una regla de formato mediante cualquiera de barra de datos el <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección.</para>
       <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> y <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objeto para establecer los valores de la barra más corta y barra más larga de un rango de datos. Estas propiedades devuelven un <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objeto, en el que puede especificar cómo se evalúan los umbrales.</para>
-      <para />
+      <para></para>
     </remarks>
     <example>
       <para>En el ejemplo siguiente se crea un rango de datos y, a continuación, se aplica una barra de datos al rango. Observará que porque no hay un valor muy alta y bajo del rango, los valores intermedios tienen barras de datos que son de longitud similar. Para eliminar la ambigüedad de los valores intermedios, el código de ejemplo usa el <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objeto para cambiar cómo se evalúan los umbrales a percentiles.</para>
@@ -68,7 +68,7 @@
           <b>Aplicación</b> (vea lo anterior)</value>
         <remarks>
           <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -128,8 +128,8 @@
         <summary>Obtiene el color del eje para las celdas con formato condicional como barras de datos.</summary>
         <value>El color del eje para las celdas con formato condicional como barras de datos.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -164,7 +164,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>El eje de las barras de datos se muestra sólo cuando la <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propiedad está <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> o <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" />, y cuando hay valores negativos en el intervalo de valores especificados con una regla de formato condicional de barra de datos. El valor predeterminado para la <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> propiedad es <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -194,8 +194,8 @@
         <summary>Obtiene un objeto que especifica el borde de una barra de datos.</summary>
         <value>Un objeto que especifica el borde de una barra de datos.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -260,7 +260,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>El valor predeterminado de la <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" /> propiedad es <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -287,13 +287,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una constante en el <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> (enumeración) que indica la aplicación en la que se creó este objeto. Es de solo lectura</summary>
+        <summary>Devuelve una constante en el <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> (enumeración) que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.Databar.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -353,7 +353,7 @@
         <remarks>
           <para>Lectura y escritura.</para>
           <para>Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.Constants" />: <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlContext" />, <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlLTR" /> (de izquierda a derecha) o <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlRTL" /> (de derecha a izquierda).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -389,7 +389,7 @@
         </value>
         <remarks>
           <para>Esta propiedad es útil para limitar el intervalo de valores que mostrará el formato condicional. Un escenario típico es cuando haya un intervalo de números que contiene valores positivos y negativos. Es posible que desee crear más de un formato condicional para este rango de números: uno para los valores positivos y otro para los valores negativos.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -422,7 +422,7 @@
         </value>
         <remarks>
           <para>Puede especificar el tipo y el valor de la evaluación mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> y <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> propiedades.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -455,7 +455,7 @@
         </value>
         <remarks>
           <para>Puede especificar el tipo y el valor de la evaluación mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> y <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> propiedades.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -484,9 +484,9 @@
         <param name="Range">Rango al que se aplicará esta regla de formato.</param>
         <summary>Establece el rango de celdas al que se aplica esta regla de formato.</summary>
         <remarks>
-          <para>El intervalo debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
+          <para>El rango debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
           <para>También puede usar un nombre definido local en cualquier parte del rango, pero el nombre debe ser en el lenguaje de la macro.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -516,8 +516,8 @@
         <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> objeto asociado con una regla de formato condicional de barra de datos.</summary>
         <value>El <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> objeto asociado con una regla de formato condicional de barra de datos.</value>
         <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
+          <para>De sólo lectura.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -583,7 +583,7 @@
         </value>
         <remarks>
           <para>El valor debe ser un número entero entre 0 y 100.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -619,7 +619,7 @@
         </value>
         <remarks>
           <para>El valor debe ser un número entero entre 0 y 100.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -655,7 +655,7 @@
         </value>
         <remarks>
           <para>Al establecer la prioridad, el valor debe ser un entero positivo comprendido entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas en la hoja de cálculo, por lo que cambiar la prioridad de la regla de formato condicional especificada puede provocar el valor de prioridad de las demás reglas en la hoja de cálculo que se va a desplazar.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -721,7 +721,7 @@
         </value>
         <remarks>
           <para>El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que establece el ámbito utilizando el <see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" />(propiedad).</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -751,7 +751,7 @@
           <para>Cuando tiene varias reglas de formato condicionales en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
           <para>
             <b>Nota</b>: niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -781,7 +781,7 @@
           <para>El valor real de la prioridad será igual que el número total de reglas de formato condicional en la hoja de cálculo. Si tiene varias reglas de formato condicionales en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que esta regla aumente en uno.</para>
           <para>
             <b>Nota</b>: niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -846,8 +846,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Para admitir la compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>False</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
-          <para />
+          <para>Para compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>False</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -874,13 +874,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> (enumeración), que especifica el tipo de formato condicional. Es de solo lectura</summary>
+        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> (enumeración), que especifica el tipo de formato condicional. Solo lectura.</summary>
         <value>
           <b>Integer</b>
         </value>
         <remarks>
           <para>Esta propiedad siempre devolverá un valor <b>entero</b> de "4", que es equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlDatabar" />.</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
