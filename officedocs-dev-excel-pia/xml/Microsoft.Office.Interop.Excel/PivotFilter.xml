@@ -1,0 +1,1095 @@
+<Type Name="PivotFilter" FullName="Microsoft.Office.Interop.Excel.PivotFilter">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8ca490d3d62655bdb53770e1be334fbb762008fb" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="09/13/2018" />
+    <Meta Name="ms.locfileid" Value="20579495" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PivotFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFilter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PivotFilter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PivotFilter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024483-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> se aplica a un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</summary>
+    <remarks>
+      <para>Los desarrolladores tienen la opción de nomenclatura filtros para referencia debido a que el índice no es confiable. El <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" /> propiedad especifica la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> a basar un filtro de valores.</para>
+      <para></para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="public bool Active { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Active" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Active" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Active As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Active { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2312)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2312)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve si el especificado <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter" /> está activo. Solo lectura.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Esta propiedad devuelve <b>True</b> cuando el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> del filtro está en la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> y el filtro se evalúa cuando el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> se ha actualizado. Devuelve <b>False</b> cuando el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> del filtro no está en la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> y no tiene ningún efecto el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cálculo.</para>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve el Microsoft Office Excel <see cref="T:Microsoft.Office.Interop.Excel._Application" />. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve el creador del objeto especificado. Solo lectura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
+        </value>
+        <remarks>
+          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataCubeField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.CubeField DataCubeField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.CubeField DataCubeField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.DataCubeField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataCubeField As CubeField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::CubeField ^ DataCubeField { Microsoft::Office::Interop::Excel::CubeField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2687)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2687)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Esta propiedad sólo es aplicable a OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> y proporciona la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> campo (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> en el área de valores) que se filtra mediante un filtro de valores. Lectura y escritura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField DataField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField DataField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ DataField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Esta propiedad sólo es aplicable a que no son OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> y proporciona la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> campo (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> en el área de valores) que se filtra mediante un filtro de valores. Lectura y escritura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotFilter.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Elimina el filtro y lo quita de las colecciones de filtros de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> y el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Proporciona una descripción opcional para la <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> objeto. Solo lectura.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>
+          <para>La longitud máxima de la <b>cadena</b> de descripción es de 255 caracteres.</para>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotFilterType FilterType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotFilterType FilterType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.FilterType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterType As XlPivotFilterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotFilterType FilterType { Microsoft::Office::Interop::Excel::XlPivotFilterType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2686)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2686)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Especifica el tipo de filtro que se va a aplicar. Solo lectura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" />
+        </value>
+        <remarks>
+          <para>La siguiente tabla muestran los tipos de filtro que pueden agregarse a un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Los argumentos que se deben proporcionar a la <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> método para ese tipo de filtro se marcan "Required", y aquellos que no se pueden proporcionar están marcados "No disponible".</para>
+          <list type="table">
+            <item>
+              <term>
+                <paramref name="Data  Field" />
+                <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <paramref name="DataField" />(OLAP<see cref="T:Microsoft.Office.Interop.Excel.CubeField" /></term>
+            </item>
+            <item>
+              <term>
+                <paramref name="Value1" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <paramref name="Value2" />
+              </term>
+            </item>
+            <item>
+              <term>xlPivotFilterType</term>
+              <description>DataField</description>
+              <description>DataCubeField (OLAP)</description>
+              <description>Valor1</description>
+              <description>Value2</description>
+            </item>
+            <item>
+              <term>xlTopCount</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlBottomCount</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlTopPercent</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlBottomPercent</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlTopSum</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlBottomSum</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionEquals</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionDoesNotEqual</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionIsGreaterThan</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionIsGreaterThanOrEqualTo</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionIsLessThan</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionIsLessThanOrEqualTo</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionBeginsWith</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionDoesNotBeginWith</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionEndsWith</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionDoesNotEndWith</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionContains</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionDoesNotContain</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlCaptionIsBetween</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+            </item>
+            <item>
+              <term>xlCaptionIsNotBetween</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+            </item>
+            <item>
+              <term>xlValueEquals</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlValueDoesNotEqual</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlValueIsGreaterThan</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlValueIsGreaterThanOrEqualTo</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlValueIsLessThan</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlValueIsLessThanOrEqualTo</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlValueIsBetween</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+            </item>
+            <item>
+              <term>xlValueIsNotBetween</term>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+              <description>Obligatorio</description>
+            </item>
+            <item>
+              <term>xlSpecificDate</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlNotSpecificDate</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlBefore</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlBeforeOrEqualTo</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlAfter</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlAfterOrEqualTo</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlBetween</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlNotBetween</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>Obligatorio</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterToday</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterYesterday</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterTomorrow</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterThisWeek</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterLastWeek</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterNextWeek</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterThisMonth</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterLastMonth</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterNextMonth</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterThisQuarter</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterLastQuarter</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterNextQuarter</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterThisYear</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterLastYear</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterNextYear</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterYearToDate</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodQuarter1</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodQuarter2</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodQuarter3</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodQuarter4</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodJanuary</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodFebruary</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodMarch</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodApril</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodMay</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodJune</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodJuly</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodAugust</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodSeptember</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodOctober</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodNovember</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodDecember</term>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+              <description>No disponible</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMemberPropertyFilter">
+      <MemberSignature Language="C#" Value="public bool IsMemberPropertyFilter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMemberPropertyFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.IsMemberPropertyFilter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMemberPropertyFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMemberPropertyFilter { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2690)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2690)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Especifica si el filtro de rótulo se basa en el <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de una propiedad miembro del campo o en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> propio. Solo lectura.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>El valor predeterminado de esta propiedad es <b>False</b>.</para>
+          <para>Devuelve <b>True</b> si el filtro de rótulo se basa en <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de una propiedad de miembro de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />; o devuelve<b>False</b> si el filtro está basado en el <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de la c. Esta propiedad es válida únicamente para los filtros de rótulo y OLAP de <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> que tengan al menos una propiedad miembro.</para>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberPropertyField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField MemberPropertyField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField MemberPropertyField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.MemberPropertyField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberPropertyField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ MemberPropertyField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2689)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2689)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Esta propiedad especifica la propiedad de miembro <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> en el que se basa el filtro de rótulo. Lectura y escritura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+        </value>
+        <remarks>
+          <para>Esta propiedad es válida únicamente para los filtros de rótulo y para OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> que tengan al menos una propiedad miembro.</para>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Esta propiedad proporciona la opción de asignar nombres a los filtros para referencia. No se puede confiar en el valor del índice como referencia precisa porque este valor puede cambiar.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(192)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Especifica el orden de evaluación del filtro entre todos los filtros de valor aplicados a toda la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Es de lectura y escritura.</summary>
+        <value>
+          <b>Número entero</b>.</value>
+        <remarks>
+          <para>Esta propiedad sólo es válida para <b>Value</b> y <b>Top</b><paramref name="n" /> tipo <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />s. Si se realiza un intento para establecer u obtener esta propiedad para los filtros de <b>etiqueta</b> y <b>fecha</b> , se devuelve un error en tiempo de ejecución. 1 representa el primer filtro evaluado, 2 representa el siguiente filtro evaluado y así sucesivamente, hasta que el <paramref name="n" />se alcanza el valor de ésimo. -1 representa un filtro inactivo.</para>
+          <para>Si la <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> no se especifica la propiedad cuando se agrega un nuevo filtro, se establecerá en <paramref name="N+1" /> (donde <paramref name="N" /> es el más alto actual <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> número en la colección de filtros).</para>
+          <para>La propiedad se puede especificar en el <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> (método) o se puede establecer más adelante para un campo cambiando la propiedad.</para>
+          <para>Al aumentar el orden de evaluación de un campo se reducirá en uno el valor del orden de evaluación del campo que anteriormente tenía ese valor de orden de evaluación (y de todos los campos contenidos entre los dos campos). Estableciendo el orden de evaluación en el mismo valor anterior no se ejerce ningún efecto. Al reducir el orden de evaluación de un campo aumentará en uno el orden de evaluación del campo que anteriormente tenía ese valor de orden de evaluación (y de todos los campos existentes entre los dos campos).</para>
+          <para>El orden de <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> en la colección es el mismo que el orden en que se evalúan. Por lo que los desarrolladores pueden cambiar el orden en que un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> se evalúa. Cuando un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (que no son OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) o un <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> (OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) se ha quitado de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> colección, esta propiedad se establece en -1 para un valor o una parte superior <paramref name="n" /> filtro aplicado al campo. Vuelva a agregar el campo, se establecerá el <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> (propiedad) a <paramref name="N+1" /> para un valor o Top <paramref name="n" /> filtro aplicado si no se especifica explícitamente un valor.</para>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el objeto primario para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />. Solo lectura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField PivotField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField PivotField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ PivotField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Especifica la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> al que se aplica el filtro. Solo lectura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value1">
+      <MemberSignature Language="C#" Value="public object Value1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Value1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value1 As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value1 { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2688)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2688)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Esta propiedad es un parámetro proporcionado por el usuario para definir un filtro para una <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />. Lectura y escritura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value2">
+      <MemberSignature Language="C#" Value="public object Value2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Value2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value2 As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value2 { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1388)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1388)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Esta propiedad es un parámetro proporcionado por el usuario para definir un filtro para una <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />. Lectura y escritura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WholeDayFilter">
+      <MemberSignature Language="C#" Value="public bool WholeDayFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WholeDayFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.WholeDayFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property WholeDayFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WholeDayFilter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3099)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3099)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3099)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece la semántica de filtrado para filtros de fecha. <b>Boolean</b> (<b>bool</b> en C#). Lectura y escritura</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A continuación describen los resultados para la configuración de la propiedad anterior y la actual:</para>
+          <list type="bullet">
+            <item>
+              <description>False (el comportamiento de Office 2010): se puede especificar cualquier momento; las fechas se encuentran puntos precisos en tiempo (medianoche de la fecha especificada). Filtrado de intervalos de fechas de iniciar o finalizar en la medianoche.</description>
+            </item>
+            <item>
+              <description>True (el comportamiento de Office 2013): se exige este comportamiento para los controles de escala de tiempo. Se especifican sólo fechas completas; las fechas incluyen todas las horas del día hasta y no incluye el siguiente día a partir de la medianoche.</description>
+            </item>
+          </list>
+          <para>Para una escala de tiempo, siempre devuelve <b>True</b>; Devuelve un error en tiempo de ejecución cuando se establece a esto en <b>False</b>.</para>
+          <para>Para un filtro de fecha que no sean, cualquier acceso devuelve un error en tiempo de ejecución.</para>
+          <para></para>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
