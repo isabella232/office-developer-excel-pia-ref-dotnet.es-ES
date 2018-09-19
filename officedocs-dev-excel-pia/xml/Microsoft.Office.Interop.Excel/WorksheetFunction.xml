@@ -1,10 +1,10 @@
 <Type Name="WorksheetFunction" FullName="Microsoft.Office.Interop.Excel.WorksheetFunction">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c4f9fcb96caaeda1ab919426e45e33ce9a1e04aa" />
+    <Meta Name="ms.openlocfilehash" Value="0e8779a13b1ae831ceba99e1523c885328838f42" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/06/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/17/2018" />
     <Meta Name="ms.locfileid" Value="20574616" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorksheetFunction" />
@@ -165,20 +165,20 @@
           <para>En la siguiente tabla se describe los valores que se pueden usar para <paramref name="Arg5" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -228,20 +228,20 @@
           <para>En la siguiente tabla se describe los valores que se pueden usar para <paramref name="Arg5" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -251,25 +251,27 @@
           <para>En la lista siguiente contiene información que se debe tener en cuenta al trabajar con ACCRINTM:</para>
           <list type="bullet">
             <item>
-              <description>Microsoft Excel almacena las fechas como números de serie secuenciales para que se puedan utilizar en los cálculos. De forma predeterminada, el 1 de enero de 1900 es el número de serie 1 y el 1 de enero de 2008 es el número de serie 39448 porque es 39.448 días después del 1 de enero de 1900. </description>
+              <description>Microsoft Excel almacena las fechas como números de serie secuenciales para que puedan utilizarse en los cálculos. De forma predeterminada, el 1 de enero de 1900 es el número de serie 1 y el 1 de enero de 2008 es el número de serie 39448 porque viene 39.448 días después del 1 de enero de 1900.</description>
             </item>
             <item>
-              <description>Emisión, vencimiento y base se truncan a enteros.</description>
+              <description>Los argumentos de emisión, vencimiento y base se truncan a enteros.</description>
             </item>
             <item>
-              <description>Si emisión o vencimiento no es una fecha válida, ACCRINTM genera un error.</description>
+              <description>Si la fecha de emisión o de vencimiento no es una fecha válida, ACCRINTM genera un error.</description>
             </item>
             <item>
-              <description>Si tasa ≤ 0 o si v_nominal ≤ 0, ACCRINTM genera un error.</description>
+              <description>Si la tasa ≤ 0 o si el valor que se supone es ≤ 0, ACCRINTM genera un error.</description>
             </item>
             <item>
-              <description>Si base &lt; 0 o si base &gt; 4, ACCRINTM genera un error.</description>
+              <description>Si base &lt; 0 o si base &gt; 4, ACCRINTM genera un error. </description>
             </item>
             <item>
-              <description>Si problema mayor o igual que el de vencimiento, ACCRINTM genera un error.</description>
+              <description>Si la fecha de emisión es mayor o igual que la de vencimiento, ACCRINTM genera un error.</description>
             </item>
             <item>
-              <description>ACCRINTM se calcula de la siguiente manera:</description>
+              <description>ACCRINTM se calcula de la siguiente forma: 
+
+ </description>
             </item>
           </list>
           <para>donde:</para>
@@ -492,8 +494,8 @@
             </item>
             <item>
               <term>14-17</term>
-              <description>tipos válidos: cualquier referencia de celda definida por el de las intersecciones de uniones nombres estructurada referencias de matrices de datos real</description>
-              <description>tipos válidos: cualquier referencia de celda definida por el de las intersecciones de uniones nombres estructurada referencias de matrices de datos real</description>
+              <description>Tipos válidos: cualquier referencia de celda definida por el de las intersecciones de uniones nombres estructurada referencias de matrices de datos real</description>
+              <description>Tipos válidos: cualquier referencia de celda definida por el de las intersecciones de uniones nombres estructurada referencias de matrices de datos real</description>
               <description>No se permiten referencias</description>
             </item>
           </list>
@@ -544,20 +546,20 @@
           <para>Si un activo se adquiere en medio del período contable, se toma en cuenta la depreciación prorrateada. El método es similar a <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.AmorLinc(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />, excepto en que se aplica un coeficiente de depreciación en el cálculo dependiendo de la vida de los activos. En la siguiente tabla se describe los valores utilizados en <paramref name="Arg7" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
+              <term>0 u omitido</term>
               <description>360 días (método NASD)</description>
             </item>
             <item>
               <term>1</term>
-              <description>real</description>
+              <description>Real</description>
             </item>
             <item>
               <term>3</term>
-              <description>un año de 365 días</description>
+              <description>Año de 365 días</description>
             </item>
             <item>
               <term>4</term>
-              <description>360 días en un año (método europeo)</description>
+              <description>Año de 360 días (método europeo)</description>
             </item>
           </list>
           <para>Microsoft Excel almacena las fechas como números de serie secuenciales para que puedan usarse en los cálculos. De forma predeterminada, el 1 de enero de 1900 es el número de serie 1 y el 1 de enero de 2008 es el número de serie 39448 porque viene 39.448 días después del 1 de enero de 1900. Microsoft Excel para Macintosh usa un sistema de fechas predeterminado diferente.</para>
@@ -576,7 +578,7 @@
             </item>
             <item>
               <term>Más de 6 años</term>
-              <description>2.5</description>
+              <description>2,5</description>
             </item>
           </list>
           <para>La tasa de depreciación aumentará hasta el 50 por ciento para el período anterior al último período y ascenderá hasta el 100 por ciento durante el último período.</para>
@@ -626,20 +628,20 @@
           <para>Si un activo se adquiere en medio del período contable, la depreciación prorrateada se tiene en cuenta. En la siguiente tabla se describe los valores que se usan para <paramref name="Arg7" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
+              <term>0 u omitido</term>
               <description>360 días (método NASD)</description>
             </item>
             <item>
               <term>1</term>
-              <description>real</description>
+              <description>Real</description>
             </item>
             <item>
               <term>3</term>
-              <description>un año de 365 días</description>
+              <description>Año de 365 días</description>
             </item>
             <item>
               <term>4</term>
-              <description>360 días en un año (método europeo)</description>
+              <description>Año de 360 días (método europeo)</description>
             </item>
           </list>
           <para>
@@ -1150,10 +1152,10 @@
               <description>Promedio, que es la media aritmética y se calcula mediante la adición de un grupo de números y dividiendo a continuación por el recuento de dichos números. Por ejemplo, el promedio de 2, 3, 3, 5, 7 y 10 es 30 dividido por 6, que es 5. </description>
             </item>
             <item>
-              <description>Mediana, que es el número central de un grupo de números; que es, mitad de los números tiene valores que son mayores que la mediana y la mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4.</description>
+              <description>Mediana, que es el número central de un grupo de números; es decir, la mitad de los números tienen valores que son mayores que la mediana y mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4.</description>
             </item>
             <item>
-              <description>De modo que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
+              <description>Modo de que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
             </item>
           </list>
           <para>En el caso de una distribución simétrica de un grupo de números, estas tres mediciones de tendencia central son iguales. Si se usa una distribución sesgada de un grupo de números, las mediciones pueden ser distintas.</para>
@@ -1200,14 +1202,14 @@
           <para>Rango_promedio no tiene por qué tener el mismo tamaño y forma que el rango. Las celdas cuyo promedio se calcula en realidad se determinan utilizando la celda superior izquierda de rango_promedio como celda inicial y luego se incluyen las celdas que corresponden con el tamaño y la forma del rango. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
               <term>A1:B4</term>
@@ -1226,10 +1228,10 @@
               <description>Promedio, que es la media aritmética y se calcula mediante la adición de un grupo de números y dividiendo a continuación por el recuento de dichos números. Por ejemplo, el promedio de 2, 3, 3, 5, 7 y 10 es 30 dividido por 6, que es 5. </description>
             </item>
             <item>
-              <description>Mediana, que es el número central de un grupo de números; que es, mitad de los números tiene valores que son mayores que la mediana y la mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4.</description>
+              <description>Mediana, que es el número central de un grupo de números; es decir, la mitad de los números tienen valores que son mayores que la mediana y mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4.</description>
             </item>
             <item>
-              <description>De modo que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
+              <description>Modo de que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
             </item>
           </list>
           <para>En el caso de una distribución simétrica de un grupo de números, estas tres mediciones de tendencia central son iguales. Si se usa una distribución sesgada de un grupo de números, las mediciones pueden ser distintas.</para>
@@ -1329,14 +1331,14 @@
           <para>Los rangos de tipo rango_criterios no tienen por qué tener el mismo tamaño y forma que rango_promedio. Las celdas cuyo promedio se calcula en realidad se determinan utilizando la celda superior izquierda de rango_criterios como celda inicial y luego se incluyen las celdas que corresponden con el tamaño y la forma del rango. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
               <term>A1:B4</term>
@@ -1355,10 +1357,10 @@
               <description>Promedio, que es la media aritmética y se calcula mediante la adición de un grupo de números y dividiendo a continuación por el recuento de dichos números. Por ejemplo, el promedio de 2, 3, 3, 5, 7 y 10 es 30 dividido por 6, que es 5. </description>
             </item>
             <item>
-              <description>Mediana, que es el número central de un grupo de números; que es, mitad de los números tiene valores que son mayores que la mediana y la mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4.</description>
+              <description>Mediana, que es el número central de un grupo de números; es decir, la mitad de los números tienen valores que son mayores que la mediana y mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4.</description>
             </item>
             <item>
-              <description>De modo que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
+              <description>Modo de que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
             </item>
           </list>
           <para>En el caso de una distribución simétrica de un grupo de números, estas tres mediciones de tendencia central son iguales. Si se usa una distribución sesgada de un grupo de números, las mediciones pueden ser distintas.</para>
@@ -1807,10 +1809,10 @@
               <description>Si uno de los argumentos no es numérico, <b>BetaInv</b> genera un valor de error.</description>
             </item>
             <item>
-              <description>Si alfa ≤ 0 o beta ≤ 0, <b>BetaInv</b> genera un valor de error.</description>
+              <description>Si alfa ≤ 0 o beta ≤ 0, <b>BetaInv</b> genera un valor de error. </description>
             </item>
             <item>
-              <description>Si probabilidad ≤ 0 o probabilidad &gt; 1, <b>BetaInv</b> genera un valor de error.</description>
+              <description>Si probabilidad ≤ 0 o probabilidad &gt; 1, <b>BetaInv</b> genera un valor de error. </description>
             </item>
             <item>
               <description>Si omite valores para A y B, <b>BetaInv</b> utiliza la distribución beta acumulativa estándar, de manera que A = 0 y B = 1.</description>
@@ -1965,16 +1967,18 @@
           <para>Utilice el método <b>Binom_Dist</b> en problemas con un número fijo de pruebas o ensayos, cuando los resultados de cualquier versión de evaluación son sólo éxito o fracaso, cuando los ensayos son independientes y cuando la probabilidad de éxito es constante durante todo el experimento. Por ejemplo, el método <b>Binom_Dist</b> puede calcular la probabilidad de que dos de los próximos tres bebés nacidos masculino. </para>
           <list type="bullet">
             <item>
-              <description>Núm_éxitos y ensayos se truncan a enteros.</description>
+              <description>Los argumentos de número de éxitos y de ensayos se truncan a valores enteros.</description>
             </item>
             <item>
-              <description>Si núm_éxitos, ensayos o prob_éxito no es numérico, el método <b>Binom_Dist</b> genera un error.</description>
+              <description>Si núm_éxitos, ensayos o prob_éxito no es numérico, el método <b>Binom_Dist</b> genera un error. </description>
             </item>
             <item>
-              <description>Si núm_éxitos &lt; 0 o núm_éxitos &gt; ensayos, el método <b>Binom_Dist</b> genera un error.</description>
+              <description>Si núm_éxitos &lt; 0 o núm_éxitos &gt; ensayos, el método <b>Binom_Dist</b> genera un error. </description>
             </item>
             <item>
-              <description>Si prob_éxito &lt; 0 o prob_éxito &gt; 1, el método <b>Binom_Dist</b> genera un error. La función de masa de probabilidad es:</description>
+              <description>Si prob_éxito &lt; 0 o prob_éxito &gt; 1, el método <b>Binom_Dist</b> genera un error. La función de masa de probabilidad es: 
+
+ </description>
             </item>
           </list>
           <para>Donde:</para>
@@ -2383,13 +2387,16 @@
               <description>Redondea acercándose al cero.</description>
             </item>
             <item>
-              <term>+/+</term>Redondea alejándose del cero.
+              <term>+/+</term>
+              <description>Redondea alejándose del cero.</description>
             </item>
             <item>
-              <term>-/+</term>Redondea acercándose al cero.
+              <term>-/+</term>
+              <description>Redondea acercándose al cero.</description>
             </item>
             <item>
-              <term>+/-</term>Redondea alejándose del cero.
+              <term>+/-</term>
+              <description>Redondea alejándose del cero.</description>
             </item>
           </list>
           <para>Si alguno de los argumentos no es numérico, <b>Ceiling_Precise</b> genera un error.</para>
@@ -3171,12 +3178,12 @@
         <remarks>
           <list type="table">
             <item>
-              <term>Gram</term>
+              <term>Gramo</term>
               <description>"g"</description>
             </item>
             <item>
-              <term>Indicaciones</term>
-              <description>"administrativos"</description>
+              <term>Slug</term>
+              <description>"sg"</description>
             </item>
             <item>
               <term>Libra masa (avoirdupois)</term>
@@ -3187,7 +3194,7 @@
               <description>"u"</description>
             </item>
             <item>
-              <term>Onza masa (avoirdupois)</term>
+              <term>Onza (sistema avdp)</term>
               <description>"ozm"</description>
             </item>
           </list>
@@ -3197,7 +3204,7 @@
               <description>"m"</description>
             </item>
             <item>
-              <term>milla</term>
+              <term>Milla</term>
               <description>"mi"</description>
             </item>
             <item>
@@ -3205,15 +3212,15 @@
               <description>"Nmi"</description>
             </item>
             <item>
-              <term>pulgada</term>
-              <description>"pda"</description>
+              <term>Pulgada</term>
+              <description>"in"</description>
             </item>
             <item>
-              <term>pie</term>
+              <term>Pie</term>
               <description>"ft"</description>
             </item>
             <item>
-              <term>Patio</term>
+              <term>Yarda</term>
               <description>"yd"</description>
             </item>
             <item>
@@ -3221,30 +3228,30 @@
               <description>"ang"</description>
             </item>
             <item>
-              <term>Pica (1/72 pda.)</term>
-              <description>"Picas"</description>
+              <term>Pica (1/72 pda)</term>
+              <description>"Pica"</description>
             </item>
           </list>
           <list type="table">
             <item>
               <term>Año</term>
-              <description>"años"</description>
+              <description>"yr"</description>
             </item>
             <item>
-              <term>día</term>
-              <description>"día"</description>
+              <term>Día</term>
+              <description>"day"</description>
             </item>
             <item>
-              <term>hora</term>
-              <description>"recursos humanos"</description>
+              <term>Hora</term>
+              <description>"hr"</description>
             </item>
             <item>
-              <term>minuto</term>
+              <term>Minuto</term>
               <description>"mn"</description>
             </item>
             <item>
-              <term>segundo</term>
-              <description>"s"</description>
+              <term>Segundo</term>
+              <description>"sec"</description>
             </item>
           </list>
           <list type="table">
@@ -3253,7 +3260,7 @@
               <description>"Pa" (o "p")</description>
             </item>
             <item>
-              <term>atmósfera</term>
+              <term>Atmósfera</term>
               <description>"atm" (o "at")</description>
             </item>
             <item>
@@ -3267,11 +3274,11 @@
               <description>"N"</description>
             </item>
             <item>
-              <term>dinas</term>
-              <description>"DIN" (o "dy")</description>
+              <term>Dina</term>
+              <description>"dyn" (or "dy")</description>
             </item>
             <item>
-              <term>libra forzar</term>
+              <term>Libra fuerza</term>
               <description>"lbf"</description>
             </item>
           </list>
@@ -3289,7 +3296,7 @@
               <description>"c"</description>
             </item>
             <item>
-              <term>Caloría IT</term>
+              <term>Caloría (4,186795 J)</term>
               <description>"cal"</description>
             </item>
             <item>
@@ -3301,7 +3308,7 @@
               <description>"HPh" (o "hh")</description>
             </item>
             <item>
-              <term>Watt-Hour</term>
+              <term>Vatio-hora</term>
               <description>"Wh" (o "wh")</description>
             </item>
             <item>
@@ -3309,7 +3316,7 @@
               <description>"flb"</description>
             </item>
             <item>
-              <term>BTU</term>
+              <term>BTU (Unidad térmica inglesa)</term>
               <description>"BTU" (o "btu")</description>
             </item>
           </list>
@@ -3319,7 +3326,7 @@
               <description>"HP" (o "h")</description>
             </item>
             <item>
-              <term>w</term>
+              <term>Vatio</term>
               <description>"W" (o "w")</description>
             </item>
           </list>
@@ -3339,7 +3346,7 @@
               <description>"C" (o "cel")</description>
             </item>
             <item>
-              <term>grado Fahrenheit</term>
+              <term>Grado Fahrenheit</term>
               <description>"F" (o "fah")</description>
             </item>
             <item>
@@ -3347,77 +3354,93 @@
               <description>"K" (o "kel")</description>
             </item>
           </list>
-          <item>
-            <term>Cuchara de té</term>
-            <description>"tsp"</description>
-          </item>
-          <item>
-            <term>cuchara sopera</term>
-            <description>"TB"</description>
-          </item>
-          <item>
-            <term>onza líquida</term>
-            <description>"g"</description>
-          </item>
-          <item>
-            <term>vasos</term>
-            <description>"vasos"</description>
-          </item>
-          <item>
-            <term>
-              <list type="table"> Pinta estadounidense
-              <description>"pt" (o "us_pt")</description><item><term>pinta del Reino Unido</term><description>"uk_pt"</description></item><item><term>el argumento de cuartil</term><description>"qt"</description></item><item><term>galón</term><description>"lista global de direcciones"</description></item><item><term>litros </term><description>"l" (o "lt")</description></item></list>
-            </term>
-          </item>
+          <list type="table">
+            <item>
+              <term>Cuchara de té</term>
+              <description>"tsp"</description>
+            </item>
+            <item>
+              <term>Cuchara sopera</term>
+              <description>"tbs"</description>
+            </item>
+            <item>
+              <term>Onza líquida</term>
+              <description>"oz"</description>
+            </item>
+            <item>
+              <term>Taza</term>
+              <description>"cup"</description>
+            </item>
+            <item>
+              <term>Pinta de EE.UU.</term>
+              <description>"pt" (o "us_pt")</description>
+            </item>
+            <item>
+              <term>Pinta del Reino Unido</term>
+              <description>"uk_pt"</description>
+            </item>
+            <item>
+              <term>Cuarto</term>
+              <description>"qt"</description>
+            </item>
+            <item>
+              <term>Galón</term>
+              <description>"gal"</description>
+            </item>
+            <item>
+              <term>Litro</term>
+              <description>"l" (o "lt")</description>
+            </item>
+          </list>
           <para>Los siguientes prefijos de unidad abreviada se pueden agregar a cualquier argumento de unidad de origen o unidad de destino.</para>
           <list type="table">
             <item>
               <term>exa</term>
-              <description>1E + 18</description>
+              <description>1E+18</description>
               <description>"E"</description>
             </item>
             <item>
               <term>peta</term>
-              <description>1E + 15</description>
+              <description>1E+15</description>
               <description>"P"</description>
             </item>
             <item>
-              <term>TERa</term>
-              <description>1E + 12</description>
+              <term>tera</term>
+              <description>1E+12</description>
               <description>"T"</description>
             </item>
             <item>
-              <term>Giga</term>
-              <description>1E + 09</description>
+              <term>giga</term>
+              <description>1E+09</description>
               <description>"G"</description>
             </item>
             <item>
               <term>mega</term>
-              <description>1E + 06</description>
+              <description>1E+06</description>
               <description>"M"</description>
             </item>
             <item>
               <term>kilo</term>
-              <description>1E + 03</description>
+              <description>1E+03</description>
               <description>"k"</description>
             </item>
             <item>
               <term>hecto</term>
-              <description>1E + 02</description>
+              <description>1E+02</description>
               <description>"h"</description>
             </item>
             <item>
-              <term>dekao</term>
-              <description>1E + 01</description>
+              <term>deca</term>
+              <description>1E+01</description>
               <description>"e"</description>
             </item>
             <item>
-              <term>Deci</term>
+              <term>deci</term>
               <description>1E-01</description>
               <description>"d"</description>
             </item>
             <item>
-              <term>centisegundos</term>
+              <term>centi</term>
               <description>1E-02</description>
               <description>"c"</description>
             </item>
@@ -3427,7 +3450,7 @@
               <description>"m"</description>
             </item>
             <item>
-              <term>Micro</term>
+              <term>micro</term>
               <description>1E-06</description>
               <description>"u"</description>
             </item>
@@ -3976,20 +3999,20 @@
           <para>La tabla siguiente contiene la lista de valores para <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4044,20 +4067,20 @@
           <para>En la siguiente tabla contiene los valores utilizados en <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4112,20 +4135,20 @@
           <para>En la siguiente tabla contiene los valores utilizados en <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4180,20 +4203,20 @@
           <para>En la siguiente tabla contiene los valores utilizados en <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4248,20 +4271,20 @@
           <para>En la siguiente tabla contiene los valores utilizados en <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4316,20 +4339,20 @@
           <para>En la siguiente tabla contiene los valores utilizados en <paramref name="Arg4" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -4651,11 +4674,11 @@
           <list type="table">
             <item>
               <term>0 (cero)</term>
-              <description>Pago al final del período de</description>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al principio del período</description>
             </item>
           </list>
           <para>Asegúrese de que son coherentes sobre las unidades usadas para especificar la tasa y nper. Si realiza pagos mensuales de un préstamo de cuatro años con una tasa de interés anual del 12 por ciento, use 12% / 12 para tasa y 4 * 12 para <paramref name="Arg2" />. Si realiza pagos anuales del mismo préstamo, use 12% para tasa y 4 para <paramref name="Arg2" />. </para>
@@ -4709,11 +4732,11 @@
           <list type="table">
             <item>
               <term>0 (cero)</term>
-              <description>Pago al final del período de</description>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al principio del período</description>
             </item>
           </list>
           <para>Asegúrese de que son coherentes sobre las unidades usadas para especificar la tasa y nper. Si realiza pagos mensuales de un préstamo de cuatro años con una tasa de interés anual del 12 por ciento, use 12% / 12 para tasa y 4 * 12 para <paramref name="Arg2" />. Si realiza pagos anuales del mismo préstamo, use 12% para tasa y 4 para <paramref name="Arg2" />. </para>
@@ -4762,12 +4785,12 @@
           <para>Donde entryis el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -4842,14 +4865,14 @@
           <list type="table">
             <item>
               <term>
-                <b>false</b> o se omite</term>
-              <description>método US (NASD). Si la fecha inicial es el 31 de un mes, se convierte en igual al día 30 del mismo mes. Si la fecha final es el 31 de un mes y la fecha inicial es anterior al 30 de un mes, la fecha final se convierte en el 1 del mes siguiente; en caso contrario, la fecha final se convierte en igual al día 30 del mismo mes.</description>
+                <b>false</b> u omitido</term>
+              <description>Método US (NASD). Si la fecha inicial es el 31 del mes, se convierte en el 30 del mismo mes. Si la fecha final es el 31 del mes y la fecha inicial es anterior al 30, la fecha final se convierte en el 1 del mes siguiente; de lo contrario la fecha final se convierte en el 30 del mismo mes.</description>
             </item>
             <item>
               <term>
-                <b>true</b>
+                <b>True</b>
               </term>
-              <description>método europeo. Las fechas inicial y final de las fechas que se producen en el 31 de un mes se convierten en el 30 del mismo mes.</description>
+              <description>Método europeo. Las fechas iniciales o finales que corresponden al 31 del mes se convierten en el 30 del mismo mes.</description>
             </item>
           </list>
           <para>Microsoft Excel almacena las fechas como números de serie secuenciales para que puedan usarse en los cálculos. De forma predeterminada, el 1 de enero de 1900 es el número de serie 1 y el 1 de enero de 2008 es el número de serie 39448 porque viene 39.448 días después del 1 de enero de 1900. Microsoft Excel para Macintosh usa un sistema de fechas predeterminado diferente.</para>
@@ -4968,12 +4991,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -5017,12 +5040,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -5420,12 +5443,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -5524,12 +5547,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -5573,12 +5596,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -5727,12 +5750,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -5776,12 +5799,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -5825,12 +5848,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -5874,12 +5897,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -6050,20 +6073,20 @@
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -6118,12 +6141,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -6167,12 +6190,12 @@
           <para>Donde la entrada es el texto o el valor que desea buscar. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>= "= Davolio"</term>
-              <description>= Davolio</description>
+              <term>="=Davolio"</term>
+              <description>=Davolio</description>
             </item>
             <item>
-              <term>= "= 3000"</term>
-              <description>= 3000</description>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>Cuando el filtrado de datos de texto, Excel no distingue entre mayúsculas y minúsculas. Sin embargo, puede usar una fórmula para realizar una búsqueda distingue mayúsculas de minúsculas.</para>
@@ -7033,7 +7056,7 @@
           <list type="bullet">
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" /> siempre cuenta cada carácter, ya sea un solo byte o de doble byte, como 1, independientemente de qué la Salomón de configuración de idioma de predeterminada</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" />siempre cuenta cada carácter, ya sea de un byte o de doble byte, como 1, independientemente del idioma predeterminado.</description>
             </item>
             <item>
               <description>
@@ -7318,13 +7341,16 @@
               <description>Redondea alejándose del cero.</description>
             </item>
             <item>
-              <term>+/+</term>Redondea acercándose al cero.
+              <term>+/+</term>
+              <description>Redondea acercándose al cero.</description>
             </item>
             <item>
-              <term>-/+</term>Redondea alejándose del cero.
+              <term>-/+</term>
+              <description>Redondea alejándose del cero.</description>
             </item>
             <item>
-              <term>+/-</term>Redondea acercándose al cero.
+              <term>+/-</term>
+              <description>Redondea acercándose al cero.</description>
             </item>
           </list>
           <para>Si cualquiera de los argumentos no es numérico, el método <b>Floor_Precise</b> genera un error. </para>
@@ -7495,11 +7521,11 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>Al final del período de</description>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al inicio del período</description>
             </item>
           </list>
           <para>Asegúrese de mantener la uniformidad en las unidades usadas para especificar la tasa y el número de períodos. Si realiza pagos mensuales de un préstamo de cuatro años con un interés anual del 12 por ciento, use 12%/12 para la tasa y 4*12 para el número de períodos. Si realiza pagos anuales del mismo préstamo, use 12% para la tasa y 4 para el número de períodos.</para>
@@ -9732,7 +9758,7 @@
             </item>
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> devuelve un valor de 0. El <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> algoritmo está diseñado para devolver resultados razonables para los datos colineales y, en este caso se puede encontrar al menos una respuesta.</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />Devuelve un valor de 0. El <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> algoritmo está diseñado para devolver resultados razonables para los datos colineales y, en este caso se puede encontrar al menos una respuesta.</description>
             </item>
           </list>
           <para></para>
@@ -9775,20 +9801,20 @@
         <remarks>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -9853,14 +9879,14 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>Al final del período de</description>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al inicio del período</description>
             </item>
           </list>
-          <para>Asegúrese de mantener la uniformidad en las unidades usadas para especificar la tasa y el número de períodos. Si realiza pagos mensuales de un préstamo de cuatro años con un interés anual del 12 por ciento, use 12%/12 para la tasa y 4*12 para el número de períodos. Si realiza pagos anuales del mismo préstamo, use 12% para la tasa y 4 para el número de períodos.</para>
+          <para>Asegúrese de mantener la uniformidad en las unidades usadas para especificar la tasa y el número de períodos. Si realiza pagos mensuales de un préstamo de cuatro años con un interés anual del 12 por ciento, use 12%/12 para la tasa y 4*12 para el número de períodos. Si realiza pagos anuales del mismo préstamo, use 12% para la tasa y 4 para el número de períodos. </para>
           <para>En todos los argumentos, el efectivo que se paga, por ejemplo depósitos en cuentas de ahorros, se representa con números negativos; el efectivo que se recibe, por ejemplo cheques de dividendos, se representa con números positivos.</para>
           <para></para>
         </remarks>
@@ -10646,35 +10672,35 @@
           <list type="table">
             <item>
               <term>Se1, se2,..., sen</term>
-              <description>Valores de error típico para los coeficientes m1, m2,..., mn.</description>
+              <description>Valores de error típicos para los coeficientes m1,m2,...,mn.</description>
             </item>
             <item>
               <term>seb</term>
-              <description>el valor de error típico para la constante b (seb = #N/A cuando el argumento de constante es <b>false</b>).</description>
+              <description>El valor de error típico para la constante b (seb = #N/A cuando el argumento de constante es <b>false</b>).</description>
             </item>
             <item>
-              <term>r2</term>
-              <description>el coeficiente de determinación. Compara los valores estimados y reales y los rangos con valor comprendido entre 0 y 1. Si es 1, hay una correlación perfecta en la muestra: no hay ninguna diferencia entre el valor y estimado y el valor y real. En el otro extremo, si el coeficiente de determinación es 0, la ecuación de regresión no es útil para predecir un valor y. </description>
+              <term>R2</term>
+              <description>El coeficiente de determinación. Compara los valores estimados y reales y los rangos con valor comprendido entre 0 y 1. Si es 1, hay una correlación perfecta en la muestra: no hay ninguna diferencia entre el valor y estimado y el valor y real. En el otro extremo, si el coeficiente de determinación es 0, la ecuación de regresión no es útil para predecir un valor y. </description>
             </item>
             <item>
               <term>sey</term>
-              <description>el error estándar para la estimación y.</description>
+              <description>Error típico para el valor previsto de y.</description>
             </item>
             <item>
               <term>F</term>
-              <description>F la estadística, o el valor observado de F. Utilice la estadística F para determinar si la relación observada entre las variables dependientes e independientes se produce al azar.</description>
+              <description>Valor estadístico de F o valor observado de F. Utilice el valor estadístico de F para determinar si la relación observada entre las variables dependientes e independientes se produce al azar.</description>
             </item>
             <item>
               <term>df</term>
-              <description>los grados de libertad. Utilice los grados de libertad para ayudarle a encontrar valores F críticos en una tabla estadística. Compare los valores que se encuentre en la tabla con la estadística F devuelven por <b>LinEst</b> para determinar una confianza de niveles para el modelo. </description>
+              <description>Grados de libertad. Utilice los grados de libertad para ayudarle a encontrar valores F críticos en una tabla estadística. Compare los valores que se encuentre en la tabla con la estadística F devuelven por <b>LinEst</b> para determinar una confianza de niveles para el modelo. </description>
             </item>
             <item>
               <term>ssreg</term>
-              <description>la suma de regresión de cuadrados.</description>
+              <description>Suma de regresión de cuadrados.</description>
             </item>
             <item>
               <term>ssresid</term>
-              <description>la suma de los cuadrados residual.</description>
+              <description>La suma residual de los cuadrados.</description>
             </item>
           </list>
           <para>En la siguiente ilustración se muestra el orden en que se devuelven las estadísticas de regresión adicionales.</para>
@@ -11076,10 +11102,14 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <item>
               <term>Buscar en un rango de una fila o una columna (llamado también vector) un valor y devolver un valor desde la misma posición en un segundo rango de una fila o una columna</term>
               <description>Forma vectorial</description>
-              <description>Utilice la forma vectorial cuando tenga una lista grande de valores para buscar o cuando los valores puedan cambiar con el tiempo.</description>
-            </item> Formulario de 
-            <item><description>forma matricial</description>de 
-              <term>Buscar en la primera fila o columna de una matriz para especificado de valor y devolver un valor desde la misma posición en la última fila o columna de la matriz</term><description>usar la matriz cuando tenga una lista pequeña de valores y los valores permanezcan constantes a través del tiempo.</description></item></list>
+              <description>Utilice la forma vectorial cuando tenga una lista grande de valores en los que desea buscar o cuando los valores puedan cambiar con el tiempo.</description>
+            </item>
+            <item>
+              <term>Buscar en la primera fila o columna de una matriz el valor especificado y devolver un valor desde la misma posición en la última fila o columna de la matriz</term>
+              <description>Forma matricial</description>
+              <description>Utilice la forma matricial cuando tenga una lista pequeña de valores y los valores permanezcan constantes a lo largo del tiempo.</description>
+            </item>
+          </list>
           <para>
             <b>Nota</b>: también puede usar la función de <b>búsqueda</b> como alternativa a la función IF para pruebas complicadas o pruebas de más de siete condiciones. Vea los ejemplos de la forma matricial.</para>
           <para>Forma vectorial</para>
@@ -11439,10 +11469,10 @@ Index(LOGEST(known_y's,known_x's),2)</para>
               <description>Promedio, que es la media aritmética y se calcula mediante la adición de un grupo de números y dividiendo a continuación por el recuento de dichos números. Por ejemplo, el promedio de 2, 3, 3, 5, 7 y 10 es 30 dividido por 6, que es 5. </description>
             </item>
             <item>
-              <description>Mediana, que es el número central de un grupo de números; que es, mitad de los números tiene valores que son mayores que la mediana y la mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4.</description>
+              <description>Mediana, que es el número central de un grupo de números; es decir, la mitad de los números tienen valores que son mayores que la mediana y mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4.</description>
             </item>
             <item>
-              <description>De modo que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
+              <description>Modo de que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
             </item>
           </list>
           <para>En el caso de una distribución simétrica de un grupo de números, estas tres mediciones de tendencia central son iguales. Si se usa una distribución sesgada de un grupo de números, las mediciones pueden ser distintas.</para>
@@ -11590,7 +11620,7 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <item>
               <term>Fila 2</term>
               <description>c / (b*c-a*d.)</description>
-              <description>un / (una c*d-b*)</description>
+              <description>una / (una c*d-b*)</description>
             </item>
           </list>
           <para>
@@ -11787,10 +11817,10 @@ Index(LOGEST(known_y's,known_x's),2)</para>
               <description>Promedio, que es la media aritmética y se calcula mediante la adición de un grupo de números y dividiendo a continuación por el recuento de dichos números. Por ejemplo, el promedio de 2, 3, 3, 5, 7 y 10 es 30 dividido por 6, que es 5. </description>
             </item>
             <item>
-              <description>Mediana, que es el número central de un grupo de números; que es, mitad de los números tiene valores que son mayores que la mediana y la mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4. </description>
+              <description>Mediana, que es el número central de un grupo de números; es decir, la mitad de los números tienen valores que son mayores que la mediana y mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4. </description>
             </item>
             <item>
-              <description>De modo que con más frecuencia se está produciendo números en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
+              <description>Modo de que es el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
             </item>
           </list>
           <para>En el caso de una distribución simétrica de un grupo de números, estas tres mediciones de tendencia central son iguales. Si se usa una distribución sesgada de un grupo de números, las mediciones pueden ser distintas.</para>
@@ -11983,8 +12013,14 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="bullet">
             <item>
               <description>Promedio de la media aritmética y se calcula mediante la adición de un grupo de números y dividiendo a continuación por el recuento de dichos números. Por ejemplo, el promedio de 2, 3, 3, 5, 7 y 10 es 30 dividido por 6, que es 5. </description>
-            </item>Número 
-            <item><description>mediana la mitad de un grupo de números; es decir, mitad de los números tienen valores que son mayores que la mediana y mitad de los números tienen valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4. </description></item><item><description>Modo el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description></item></list>
+            </item>
+            <item>
+              <description>Mediana el número central de un grupo de números; es decir, la mitad de los números tienen valores que son mayores que la mediana y mitad de los números tiene valores que son menores que la mediana. Por ejemplo, la mediana de 2, 3, 3, 5, 7 y 10 es 4. </description>
+            </item>
+            <item>
+              <description>Modo el número que se repiten con más frecuencia en un grupo de números. Por ejemplo, el modo de 2, 3, 3, 5, 7 y 10 es 3.</description>
+            </item>
+          </list>
           <para>En el caso de una distribución simétrica de un grupo de números, estas tres mediciones de tendencia central son iguales. Si se usa una distribución sesgada de un grupo de números, las mediciones pueden ser distintas.</para>
           <para></para>
         </remarks>
@@ -12730,12 +12766,12 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>Al final del período de</description>
+              <term>0 u omitido</term>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al inicio del período</description>
             </item>
           </list>
           <para></para>
@@ -13065,20 +13101,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -13168,20 +13204,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -13245,20 +13281,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -13321,20 +13357,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -13992,12 +14028,12 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Para obtener una descripción más completa de los argumentos de <b>Pmt</b>, vea el <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Pv(System.Double,System.Double,System.Double,System.Object,System.Object)" /> (función).</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>Al final del período de</description>
+              <term>0 u omitido</term>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al inicio del período</description>
             </item>
           </list>
           <para>El pago devuelvo por <b>Pmt</b> incluye el capital y el interés, pero no los impuestos, los pagos de reserva o cuotas asociadas algunas veces a los préstamos. </para>
@@ -14176,12 +14212,12 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Para obtener una descripción más completa de los argumentos de <b>Ppmt</b>, vea <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Pv(System.Double,System.Double,System.Double,System.Object,System.Object)" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>Al final del período de</description>
+              <term>0 u omitido</term>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al inicio del período</description>
             </item>
           </list>
           <para>Asegúrese de mantener la uniformidad en las unidades usadas para especificar la tasa y el número de períodos. Si realiza pagos mensuales de un préstamo de cuatro años con un interés anual del 12 por ciento, use 12%/12 para la tasa y 4*12 para el número de períodos. Si realiza pagos anuales del mismo préstamo, use 12% para la tasa y 4 para el número de períodos.</para>
@@ -14231,20 +14267,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -14310,20 +14346,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -14389,20 +14425,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -14623,15 +14659,15 @@ Index(LOGEST(known_y's,known_x's),2)</para>
         <remarks>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>Al final del período de</description>
+              <term>0 u omitido</term>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al inicio del período</description>
             </item>
           </list>
-          <para>Asegúrese de mantener la uniformidad en las unidades usadas para especificar la tasa y el número de períodos. Si realiza pagos mensuales de un préstamo de cuatro años con un interés anual del 12 por ciento, use 12%/12 para la tasa y 4*12 para el número de períodos. Si realiza pagos anuales del mismo préstamo, use 12% para la tasa y 4 para el número de períodos.</para>
+          <para>Asegúrese de mantener la uniformidad en las unidades usadas para especificar la tasa y el número de períodos. Si realiza pagos mensuales de un préstamo de cuatro años con un interés anual del 12 por ciento, use 12%/12 para la tasa y 4*12 para el número de períodos. Si realiza pagos anuales del mismo préstamo, use 12% para la tasa y 4 para el número de períodos. </para>
           <para>Las funciones siguientes se aplican a anualidades: </para>
           <list type="table">
             <item>
@@ -14643,8 +14679,9 @@ Index(LOGEST(known_y's,known_x's),2)</para>
               <description>PV</description>
             </item>
             <item>
-              <description>Tasa</description> de 
-              <term>FV</term></item>
+              <term>FV</term>
+              <description>RATE</description>
+            </item>
             <item>
               <term>FVSCHEDULE</term>
               <description>XIRR</description>
@@ -14659,10 +14696,10 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             </item>
           </list>
           <para>Una anualidad es una serie de pagos constantes en efectivo realizados durante un período continuo. Por ejemplo, un préstamo de automóvil o una hipoteca es una anualidad. Para obtener más información, vea la descripción de cada función de anualidades. </para>
-          <para>En las funciones de anualidad, el efectivo que se paga, como un depósito en una cuenta de ahorros, se representa con números negativos; el efectivo que se recibe, como los cheques de dividendos, se representa con números positivos. Por ejemplo, un depósito de 1.000 $ en el banco se representaría mediante el argumento -1000 si es el depositante y mediante el argumento 1000 si es el banco.</para>
+          <para>En las funciones de anualidad, el efectivo que se paga, como un depósito en una cuenta de ahorros, se representa con números negativos; el efectivo que se recibe, como los cheques de dividendos, se representa con números positivos. Por ejemplo, un depósito de 1.000 $ en el banco se representaría mediante el argumento -1000 si es el depositante y mediante el argumento 1000 si es el banco. </para>
           <para>Microsoft Excel resuelve un argumento financiero en función de los otros. Si la tasa no es 0, entonces: 
 
-</para>
+ </para>
           <para>La figura 1: Ecuación cuando la tasa no es 0</para>
           <para></para>
           <para></para>
@@ -14706,23 +14743,23 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0</term>
-              <description>Valor mínimo</description>
+              <description>El valor mínimo</description>
             </item>
             <item>
               <term>1</term>
-              <description>primer cuartil (percentil 25)</description>
+              <description>El primer cuartil (percentil 25)</description>
             </item>
             <item>
               <term>2</term>
-              <description>valor de la mediana (percentil 50)</description>
+              <description>El valor de la mediana (percentil 50)</description>
             </item>
             <item>
               <term>3</term>
-              <description>tercer cuartil (percentil 75)</description>
+              <description>El tercer cuartil (percentil 75)</description>
             </item>
             <item>
               <term>4</term>
-              <description>valor máximo</description>
+              <description>El valor máximo</description>
             </item>
           </list>
           <para>Si la matriz esta vacío, <b>Quartile</b> devuelve el #NUM! valor de error. </para>
@@ -15058,12 +15095,12 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>Para obtener una descripción completa de los argumentos nper, pmt, va, vf y tipo, consulte <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Pv(System.Double,System.Double,System.Double,System.Object,System.Object)" />.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>Al final del período de</description>
+              <term>0 u omitido</term>
+              <description>Al final del período</description>
             </item>
             <item>
               <term>1</term>
-              <description>al principio del período</description>
+              <description>Al inicio del período</description>
             </item>
           </list>
           <para>Si se omite el argumento de estimación, se supone que es el 10 por ciento.</para>
@@ -15111,20 +15148,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -15300,31 +15337,31 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <term>1</term>
-              <description>más conciso.</description>
+              <description>Más conciso.</description>
             </item>
             <item>
               <term>2</term>
-              <description>más conciso.</description>
+              <description>Más conciso.</description>
             </item>
             <item>
               <term>3</term>
-              <description>más conciso.</description>
+              <description>Más conciso.</description>
             </item>
             <item>
               <term>4</term>
-              <description>simplificado.</description>
+              <description>Simplificado.</description>
             </item>
             <item>
               <term>
-                <b>true</b>
+                <b>True</b>
               </term>
-              <description>clásico.</description>
+              <description>Clásico.</description>
             </item>
             <item>
               <term>
-                <b>false</b>
+                <b>False</b>
               </term>
-              <description>simplificado.</description>
+              <description>Simplificado.</description>
             </item>
           </list>
           <para>Si el argumento de número es negativo, se devuelve el valor de error #¡VALOR!</para>
@@ -16177,7 +16214,7 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             </item>
             <item>
               <description>
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> devuelve un valor de 0. El <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> algoritmo está diseñado para devolver resultados razonables para los datos colineales y, en este caso se puede encontrar al menos una respuesta.</description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />Devuelve un valor de 0. El <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> algoritmo está diseñado para devolver resultados razonables para los datos colineales y, en este caso se puede encontrar al menos una respuesta.</description>
             </item>
           </list>
           <para></para>
@@ -16991,14 +17028,14 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>No es necesario que el rango especificado por el argumento de rango de suma tenga el mismo tamaño y la forma que el argumento de rango. Las celdas reales que se deben sumar se determinan utilizando la celda superior izquierda del rango de suma como la celda inicial e incluyendo las celdas que corresponden con el tamaño y la forma del rango. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
               <term>A1:B4</term>
@@ -17104,14 +17141,14 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <para>No es necesario que cada rango de criterios tenga el mismo tamaño y forma que el rango de suma. Las celdas reales que se deben sumar se determinan utilizando la celda superior izquierda del argumento de rango de criterios como la celda inicial e incluyendo las celdas que corresponden con el tamaño y la forma del rango de suma. Por ejemplo:</para>
           <list type="table">
             <item>
-              <term>A1: a5</term>
-              <description>B1: B5</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <term>A1: a5</term>
-              <description>B1: B3</description>
-              <description>B1: B5</description>
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
             <item>
               <term>A1:B4</term>
@@ -18414,15 +18451,15 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>Emparejada</description>
+              <description>En observaciones por pares</description>
             </item>
             <item>
               <term>2</term>
-              <description>dos muestras con varianzas iguales (homoscedástica)</description>
+              <description>En dos muestras con varianzas iguales (homoscedástica)</description>
             </item>
             <item>
               <term>3</term>
-              <description>dos muestras con varianzas (heteroscedástica)</description>
+              <description>En dos muestras con varianzas diferentes (heteroscedástica)</description>
             </item>
           </list>
           <para>Si los argumentos matriz1 y matriz2 tienen un número diferente de puntos de datos y el tipo = 1 devuelve <b>TTest</b> (emparejados), el valor de error # n/a. </para>
@@ -19083,43 +19120,43 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1 u omitido</term>
-              <description>Números del 1 (domingo) al 7 (sábado). Se comporta como las versiones anteriores de Microsoft Excel.</description>
+              <description>Números del 1 (domingo) al 7 (sábado). Igual que en versiones anteriores de Microsoft Excel.</description>
             </item>
             <item>
               <term>2</term>
-              <description>números del 1 (lunes) al 7 (domingo).</description>
+              <description>Números del 1 (lunes) al 7 (domingo).</description>
             </item>
             <item>
               <term>3</term>
-              <description>números del 0 (lunes) al 6 (domingo).</description>
+              <description>Números del 0 (lunes) al 6 (domingo).</description>
             </item>
             <item>
               <term>11</term>
-              <description>números del 1 (lunes) al 7 (domingo).</description>
+              <description>Números del 1 (lunes) al 7 (domingo).</description>
             </item>
             <item>
               <term>12</term>
-              <description>números del 1 (martes) al 7 (lunes)</description>
+              <description>Números del 1 (martes) al 7 (lunes)</description>
             </item>
             <item>
               <term>13</term>
-              <description>números del 1 (miércoles) al 7 (martes)</description>
+              <description>Números del 1 (miércoles) al 7 (martes)</description>
             </item>
             <item>
               <term>14</term>
-              <description>números del 1 (jueves) al 7 (miércoles)</description>
+              <description>Números del 1 (jueves) al 7 (miércoles)</description>
             </item>
             <item>
               <term>15</term>
-              <description>números del 1 (viernes) al 7 (jueves)</description>
+              <description>Números del 1 (viernes) al 7 (jueves)</description>
             </item>
             <item>
               <term>16</term>
-              <description>números del 1 (sábado) al 7 (viernes)</description>
+              <description>Números del 1 (sábado) al 7 (viernes)</description>
             </item>
             <item>
               <term>17</term>
-              <description>números del 1 (domingo) al 7 (sábado)</description>
+              <description>Números del 1 (domingo) al 7 (sábado)</description>
             </item>
           </list>
           <para>Microsoft Excel almacena las fechas como números de serie secuenciales para que puedan usarse en los cálculos. De forma predeterminada, el 1 de enero de 1900 es el número de serie 1 y el 1 de enero de 2008 es el número de serie 39448 porque viene 39.448 días después del 1 de enero de 1900. Microsoft Excel para Macintosh usa un sistema de fechas predeterminado diferente.</para>
@@ -19160,11 +19197,11 @@ Index(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>Semana comienza el domingo. Días de la semana se numeran del 1 al 7.</description>
+              <description>El domingo. Los días de la semana se numeran del 1 al 7.</description>
             </item>
             <item>
               <term>2</term>
-              <description>semana comienza el lunes. Días de la semana se numeran del 1 al 7.</description>
+              <description>El lunes. Los días de la semana se numeran del 1 al 7.</description>
             </item>
           </list>
           <para>Microsoft Excel almacena las fechas como números de serie secuenciales para que puedan usarse en los cálculos. De forma predeterminada, el 1 de enero de 1900 es el número de serie 1 y el 1 de enero de 2008 es el número de serie 39448 porque viene 39.448 días después del 1 de enero de 1900. Microsoft Excel para Macintosh usa un sistema de fechas predeterminado diferente.</para>
@@ -19576,20 +19613,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -19642,20 +19679,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
@@ -19713,20 +19750,20 @@ Index(LOGEST(known_y's,known_x's),2)</para>
             <b>Importante</b>: las fechas deben introducirse mediante la función fecha o como resultado de otras fórmulas o funciones. Por ejemplo, puede usar DATE(2008,5,23) para el día 23 de mayo de 2008. Pueden producirse problemas si las fechas se escriben como texto.</para>
           <list type="table">
             <item>
-              <term>0 u omitida</term>
-              <description>US (NASD) 30/360</description>
+              <term>0 u omitido</term>
+              <description>EE.UU. (NASD) 30/360</description>
             </item>
             <item>
-              <term></term>
-              <description>1/real</description>
+              <term>1</term>
+              <description>Real/real</description>
             </item>
             <item>
               <term>2</term>
-              <description>real/360</description>
+              <description>Real/360</description>
             </item>
             <item>
               <term>3</term>
-              <description>real/365</description>
+              <description>Real/365</description>
             </item>
             <item>
               <term>4</term>
