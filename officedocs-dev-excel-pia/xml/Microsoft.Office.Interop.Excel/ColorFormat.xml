@@ -1,10 +1,10 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="94eccbe19d3d32c07fd1936d4fcbe2799d83801e" />
+    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584479" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -31,136 +31,153 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="a08fb-101">Representa el color de un objeto de un solo color, el color de primer plano o de fondo de un objeto con relleno degradado o de trama, o el color del puntero.</span>
+      <span data-ttu-id="662cd-101">Representa el color de un objeto de un solo color, el color de primer plano o de fondo de un objeto con relleno degradado o de trama, o el color del puntero.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="a08fb-101">Represents the color of a one-color object, the foreground or background color of an object with a gradient or patterned fill, or the pointer color.</span>
+        <span data-stu-id="662cd-101">Represents the color of a one-color object, the foreground or background color of an object with a gradient or patterned fill, or the pointer color.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="a08fb-102">
-        <para>Pueden establecerse los colores en un valor rojo, verde y azul explícito (mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> (propiedad)) o en un color de la combinación de colores (mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> (propiedad)).</para>
-        <para>Uso de las propiedades que aparecen en la siguiente tabla para devolver un objeto <b>ColorFormat</b> .</para>
-        <list type="table">
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" />
-            </term>
-            <description>
-              <b>FillFormat</b>
-            </description>
-            <description>el color de relleno de fondo (utilizado en un relleno con sombra o entramado)</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" />
-            </term>
-            <description>
-              <b>FillFormat</b>
-            </description>
-            <description>el color de relleno de primer plano (o simplemente el color de relleno de un relleno sólido)</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" />
-            </term>
-            <description>
-              <b>LineFormat</b>
-            </description>
-            <description>el color de línea de fondo (utilizado en una línea de entramado)</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" />
-            </term>
-            <description>
-              <b>LineFormat</b>
-            </description>
-            <description>el color de línea de primer plano (o simplemente el color de línea de una línea sólida)</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
-            </term>
-            <description>
-              <b> ShadowFormat</b>
-            </description>
-            <description>el color de sombra</description>
-          </item>
-          <item>
-            <term>
-              <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" />
-            </term>
-            <description>
-              <b>ThreeDFormat</b>
-            </description>
-            <description>el color de los lados de un objeto extruido</description>
-          </item>
-        </list>
-        <para></para>
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a08fb-102">
-          <para>You can set colors to an explicit red-green-blue value (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> property) or to a color in the color scheme (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> property).</para>
-          <para>Use one of the properties listed in the following table to return a <b>ColorFormat</b> object.</para>
-          <list type="table">
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" />
-              </term>
-              <description>
-                <b>FillFormat</b>
-              </description>
-              <description>The background fill color (used in a shaded or patterned fill)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" />
-              </term>
-              <description>
-                <b>FillFormat</b>
-              </description>
-              <description>The foreground fill color (or simply the fill color for a solid fill)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" />
-              </term>
-              <description>
-                <b>LineFormat</b>
-              </description>
-              <description>The background line color (used in a patterned line)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" />
-              </term>
-              <description>
-                <b>LineFormat</b>
-              </description>
-              <description>The foreground line color (or just the line color for a solid line)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
-              </term>
-              <description>
-                <b>ShadowFormat</b>
-              </description>
-              <description>The shadow color</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" />
-              </term>
-              <description>
-                <b>ThreeDFormat</b>
-              </description>
-              <description>The color of the sides of an extruded object</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="662cd-102">Pueden establecerse los colores en un valor rojo, verde y azul explícito (mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> (propiedad)) o en un color de la combinación de colores (mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> (propiedad)).</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="662cd-102">You can set colors to an explicit red-green-blue value (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> property) or to a color in the color scheme (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> property).</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="662cd-103">Utilice una de las propiedades enumeradas en la siguiente tabla para devolver un objeto <b>ColorFormat</b>.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="662cd-103">Use one of the properties listed in the following table to return a <b>ColorFormat</b> object.</span>
+        </span>
+      </para>
+      <list type="table">
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" />
+          </term>
+          <description>
+            <span data-ttu-id="662cd-104">
+              <b>FillFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-104">
+                <b>FillFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="662cd-105">Color de relleno de fondo (empleado en un relleno con sombra o de trama)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-105">The background fill color (used in a shaded or patterned fill)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="662cd-106">
+              <b>FillFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-106">
+                <b>FillFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="662cd-107">Color de relleno de primer plano, o simplemente el color de un relleno opaco</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-107">The foreground fill color (or simply the fill color for a solid fill)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" />
+          </term>
+          <description>
+            <span data-ttu-id="662cd-108">
+              <b>LineFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-108">
+                <b>LineFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="662cd-109">Color de la línea de fondo (empleado en una línea de entramado)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-109">The background line color (used in a patterned line)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="662cd-110">
+              <b>LineFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-110">
+                <b>LineFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="662cd-111">Color de la línea de primer plano, o simplemente el color de una línea opaca</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-111">The foreground line color (or just the line color for a solid line)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="662cd-112">
+              <b>ShadowFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-112">
+                <b>ShadowFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="662cd-113">Color de la sombra</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-113">The shadow color</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" />
+          </term>
+          <description>
+            <span data-ttu-id="662cd-114">
+              <b>ThreeDFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-114">
+                <b>ThreeDFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="662cd-115">Color de los lados de un objeto extruido</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-115">The color of the sides of an extruded object</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -191,9 +208,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-103">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
+          <span data-ttu-id="662cd-116">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="662cd-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -227,30 +244,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-104">Obtiene o establece la luminosidad del objeto especificado.</span>
+          <span data-ttu-id="662cd-117">Obtiene o establece la luminosidad del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-104">Gets or sets the luminosity of the specified object.</span>
+            <span data-stu-id="662cd-117">Gets or sets the luminosity of the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="a08fb-105">La luminosidad del objeto especificado.</span>
+          <span data-ttu-id="662cd-118">La luminosidad del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-105">The luminosity of the specified object.</span>
+            <span data-stu-id="662cd-118">The luminosity of the specified object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="a08fb-106">
-            <para>Lectura y escritura.</para>
-            <para>El valor de esta propiedad debe ser un número de 0,0 (el más tenue) a 1,0 (el más brillante).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a08fb-106">
-              <para>Read/write.</para>
-              <para>The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="662cd-119">Lectura y escritura.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-119">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="662cd-120">El valor de esta propiedad debe ser un número de 0,0 (atenuación máxima) a 1,0 (brillo máximo).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-120">The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -281,34 +299,43 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-107">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
+          <span data-ttu-id="662cd-121">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="662cd-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="a08fb-108">
+          <span data-ttu-id="662cd-122">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-108">
+            <span data-stu-id="662cd-122">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="a08fb-109">
-            <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para>
-            <para>El <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. Consulte también <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a08fb-109">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL. See also <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="662cd-123">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="662cd-124">El <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-124">The <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="662cd-125">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-125">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+            <span data-ttu-id="662cd-126">Consulte también <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-126">See also <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -339,13 +366,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-110">Devuelve o establece un color que está asignado a la combinación de colores del tema.</span>
+          <span data-ttu-id="662cd-127">Devuelve o establece un color que está asignado a la combinación de colores del tema.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-110">Returns or sets a color that is mapped to the theme color scheme.</span>
+            <span data-stu-id="662cd-127">Returns or sets a color that is mapped to the theme color scheme.</span>
           </span>
-          <span data-ttu-id="a08fb-111">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</span>
+          <span data-ttu-id="662cd-128">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-111">Read/write <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</span>
+            <span data-stu-id="662cd-128">Read/write <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</span>
           </span>
         </summary>
         <value>
@@ -378,17 +405,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-112">Devuelve el objeto primario del objeto especificado.</span>
+          <span data-ttu-id="662cd-129">Devuelve el objeto primario del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-112">Returns the parent object for the specified object.</span>
+            <span data-stu-id="662cd-129">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="a08fb-113">
+          <span data-ttu-id="662cd-130">
             <b>Object</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-113">
+            <span data-stu-id="662cd-130">
               <b>Object</b>
             </span>
           </span>
@@ -426,9 +453,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-114">Devuelve o establece el valor rojo, verde y azul del color especificado.</span>
+          <span data-ttu-id="662cd-131">Devuelve o establece el valor rojo, verde y azul del color especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-114">Returns or sets the red-green-blue value of the specified color.</span>
+            <span data-stu-id="662cd-131">Returns or sets the red-green-blue value of the specified color.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -462,9 +489,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-115">Devuelve o establece el color de un objeto color como un índice en la combinación de colores actual.</span>
+          <span data-ttu-id="662cd-132">Devuelve o establece el color de un objeto color como un índice en la combinación de colores actual.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-115">Returns or sets the color of a color object as an index in the current color scheme.</span>
+            <span data-stu-id="662cd-132">Returns or sets the color of a color object as an index in the current color scheme.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -498,23 +525,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-116">Devuelve o establece un valor <b>Single</b> que aclara u oscurece el color de una forma especificada.</span>
+          <span data-ttu-id="662cd-133">Devuelve o establece un valor <b>Single</b> que aclara u oscurece el color de una forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-116">Returns or sets a <b>Single</b> that lightens or darkens the color of a specified shape.</span>
+            <span data-stu-id="662cd-133">Returns or sets a <b>Single</b> that lightens or darkens the color of a specified shape.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a08fb-117">
-            <para>Se puede especificar un número comprendido entre -1 (más oscuro) al 1 (más claro) para la propiedad <b>TintAndShade</b> , siendo 0 (cero) neutro.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a08fb-117">
-              <para>You can enter a number from -1 (darkest) to 1 (lightest) for the <b>TintAndShade</b> property, 0 (zero) being neutral.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="662cd-134">Puede escribir un número comprendido entre -1 (más oscuro) y 1 (más claro) para la propiedad <b>TintAndShade</b>, siendo 0 (cero) neutro.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-134">You can enter a number from -1 (darkest) to 1 (lightest) for the <b>TintAndShade</b> property, 0 (zero) being neutral.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -542,55 +566,72 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="a08fb-118">Devuelve o establece el tipo de formato de llamada.</span>
+          <span data-ttu-id="662cd-135">Devuelve o establece el tipo de formato de llamada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="a08fb-118">Returns or sets the callout format type.</span>
+            <span data-stu-id="662cd-135">Returns or sets the callout format type.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="a08fb-119">
-            <para>
-              <b>MsoCalloutType</b> puede ser una de estas constantes <b>MsoCalloutType</b> .</para>
-            <para>
-              <b>msoCalloutFour</b>
-            </para>
-            <para>
-              <b>msoCalloutMixed</b>
-            </para>
-            <para>
-              <b>msoCalloutOne</b>
-            </para>
-            <para>
-              <b>msoCalloutThree</b>
-            </para>
-            <para>
-              <b>msoCalloutTwo</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a08fb-119">
-              <para>
-                <b>MsoCalloutType</b> can be one of these <b>MsoCalloutType</b> constants.</para>
-              <para>
-                <b>msoCalloutFour</b>
-              </para>
-              <para>
-                <b>msoCalloutMixed</b>
-              </para>
-              <para>
-                <b>msoCalloutOne</b>
-              </para>
-              <para>
-                <b>msoCalloutThree</b>
-              </para>
-              <para>
-                <b>msoCalloutTwo</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="662cd-136">
+              <b>MsoCalloutType</b> puede ser una de estas constantes <b>MsoCalloutType</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-136">
+                <b>MsoCalloutType</b> can be one of these <b>MsoCalloutType</b> constants.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="662cd-137">
+              <b>msoCalloutFour</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-137">
+                <b>msoCalloutFour</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="662cd-138">
+              <b>msoCalloutMixed</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-138">
+                <b>msoCalloutMixed</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="662cd-139">
+              <b>msoCalloutOne</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-139">
+                <b>msoCalloutOne</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="662cd-140">
+              <b>msoCalloutThree</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-140">
+                <b>msoCalloutThree</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="662cd-141">
+              <b>msoCalloutTwo</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="662cd-141">
+                <b>msoCalloutTwo</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
