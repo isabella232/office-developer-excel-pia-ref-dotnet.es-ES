@@ -1,10 +1,10 @@
 <Type Name="ConditionValue" FullName="Microsoft.Office.Interop.Excel.ConditionValue">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a502761111afad4e3e8a449a28ce61efad23c0b4" />
+    <Meta Name="ms.openlocfilehash" Value="81c793a0733604f15df8956de448166bd0681dac" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587314" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConditionValue" />
@@ -32,7 +32,7 @@
     <summary>Representa la manera de evaluar la barra más corta o la barra más larga cuando se aplica una regla de formato condicional de barra de datos.</summary>
     <remarks>
       <para>El <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> objeto se devuelve utilizando la <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> o <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> objeto.</para>
-      <para>Puede cambiar el tipo de evaluación predeterminado (valor más bajo para la barra más corta) y el valor más alto para la barra más larga mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" /> método.</para>
+      <para>Puede cambiar el tipo de evaluación predeterminado (valor más bajo para la barra más corta) y el valor más alto para la barra más larga mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" /> (método).</para>
       <para></para>
     </remarks>
   </Docs>
@@ -129,37 +129,43 @@
         <param name="newvalue">El valor asignado a la barra de datos más corta o más larga. Dependiendo de la <paramref name="newtype" /> argumento, esto puede ser un número o una fórmula que da como resultado un número.</param>
         <summary>Modifica la manera de evaluar la barra más larga o la barra más corta cuando se aplica una regla de formato condicional de barra de datos.</summary>
         <remarks>
-          <para>En la siguiente tabla se describe los valores de umbral aceptables para cada tipo de evaluación.</para>
+          <para>La tabla siguiente explica los valores de umbral aceptables para cada tipo de evaluación.</para>
           <list type="table">
             <item>
               <term>
                 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" />
-              </term>se omite el argumento
+              </term>
+              <description>Se omite el argumento</description>
             </item>
             <item>
               <term>
                 <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" />
-              </term>se omite el argumento
+              </term>
+              <description>Se omite el argumento</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />
-              </term>cualquier número
+              </term>
+              <description>Cualquier número</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />
-              </term>cualquier número entre 0 y 100 
+              </term>
+              <description>Cualquier número comprendido entre 0 y 100 </description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />
-              </term>cualquier número entre 0 y 100
+              </term>
+              <description>Cualquier número comprendido entre 0 y 100</description>
             </item>
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />
-              </term>una fórmula que Devuelve un único número
+              </term>
+              <description>Una fórmula que devuelve un único número</description>
             </item>
           </list>
           <para></para>
@@ -255,7 +261,7 @@
         </value>
         <remarks>
           <para>Puede establecer la sólo si valor el <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> (propiedad) para el formato condicional está establecida en una de las siguientes constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />, <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />, o <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />.</para>
-          <para>Si el tipo de umbral es una fórmula, puede establecer la fórmula como una <b>cadena</b>. La fórmula debe devolver un solo número.</para>
+          <para>Si el tipo de umbral es una fórmula, puede establecer la fórmula como un valor de tipo <b>String</b>. La fórmula debe devolver un solo número.</para>
           <para></para>
         </remarks>
       </Docs>

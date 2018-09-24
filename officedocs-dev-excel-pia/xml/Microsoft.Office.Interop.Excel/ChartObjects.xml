@@ -1,10 +1,10 @@
 <Type Name="ChartObjects" FullName="Microsoft.Office.Interop.Excel.ChartObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3019bdb5ddacb9a6d190a2084952101edf58700e" />
+    <Meta Name="ms.openlocfilehash" Value="2c2b455b605d204bbd8ef7f4faf0116be7341efd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586096" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
@@ -35,8 +35,11 @@
   <Docs>
     <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objetos en la hoja de gráficos especificado, hoja de diálogo u hoja de cálculo.</summary>
     <remarks>
-      <para>Cada objeto <b>ChartObject</b> representa un gráfico incrustado. El objeto <b>ChartObject</b> actúa como un contenedor para una <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto. Propiedades y métodos del objeto <b>ChartObject</b> controlan el aspecto y el tamaño del gráfico incrustado en la hoja.</para> Uso de 
-      <para>la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> método para devolver la colección <b>ChartObjects</b> . Usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> (método) para crear un nuevo gráfico incrustado vacío y agregarlo a la colección. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para agregar datos y dar formato al nuevo gráfico.</para><para>Uso <b>ChartObjects</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del gráfico incrustado o el nombre, para devolver un solo objeto <b>ChartObject</b> .</para><para></para></remarks>
+      <para>Cada objeto <b>ChartObject</b> representa un gráfico incrustado. El objeto <b>ChartObject</b> actúa como un contenedor para una <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto. Propiedades y métodos del objeto <b>ChartObject</b> controlan el aspecto y el tamaño del gráfico incrustado en la hoja.</para>
+      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> método para devolver la colección <b>ChartObjects</b> . Usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> (método) para crear un nuevo gráfico incrustado vacío y agregarlo a la colección. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para agregar datos y dar formato al nuevo gráfico.</para>
+      <para>Utilice <b>ChartObjects</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un solo objeto <b>ChartObject</b> o número de índice del gráfico incrustado.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Copy">
@@ -533,7 +536,7 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -562,7 +565,7 @@
         <summary>Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Gráficos incrustados sólo pueden cortarse.</para>
+          <para>Sólo pueden cortarse los gráficos incrustados.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1036,7 +1039,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Al establecer esta propiedad en <b>True</b> no protegerá el marco de gráfico incrustado desde la que se modifica mediante el modelo de objetos.</para>
+          <para>Establecer esta propiedad en <b>True</b> no protegerá el marco de gráfico incrustado que se modifica mediante el modelo de objetos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1264,7 +1267,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
-          <para>Si se establece la propiedad <b>Visible</b> de un nombre en <b>False</b>, el nombre no aparecerá en el cuadro de diálogo Definir nombre.</para>
+          <para>Si se establece la propiedad <b>Visible</b> de un nombre como <b>False</b>, el nombre no se muestra en el cuadro de diálogo Definir nombre.</para>
           <para></para>
         </remarks>
       </Docs>

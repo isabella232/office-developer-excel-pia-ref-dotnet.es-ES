@@ -1,10 +1,10 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e14cf70b8bdf1df93bc526f14352da5bd8c8b680" />
+    <Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572726" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AutoCorrect" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Contiene los atributos de Autocorrección de Microsoft Excel (uso de mayúsculas en nombres de días, corrección de dos mayúsculas iniciales, lista de corrección automática, etc.).</summary>
     <remarks>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> propiedad para devolver el objeto <b>AutoCorrect</b> .</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> propiedad para devolver el objeto <b>AutoCorrect</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -126,7 +126,7 @@
         <summary>Un valor <b>booleano</b> que indica si está habilitada la expansión automática para las listas.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cuando escriba en una celda de una fila o columna vacía situada junto a una lista, la lista se expandirá para incluir dicha fila o columna si está habilitada la expansión automática.</para>
+          <para>Cuando se escribe en una celda de una fila o columna vacía situada junto a una lista, la lista se expandirá para incluir dicha fila o columna si está habilitada la expansión automática.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -162,7 +162,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>La propiedad no afecta a las columnas calculadas existentes o las columnas calculadas creadas donde no se ha producido automático relleno.</para>
+          <para>La propiedad no afecta a las columnas calculadas existentes ni a las columnas calculadas creadas cuando no funciona el autorrelleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -289,8 +289,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteReplacement">
@@ -352,7 +354,7 @@
         <summary>Permite al usuario mostrar u ocultar el botón Opciones de Autocorrección. El valor predeterminado es <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>DisplayAutoCorrectOptions</b> es una configuración general de Microsoft Office. Cambio de esta propiedad en Microsoft Excel afectará también a las otras aplicaciones de Office.</para>
+          <para>La propiedad <b>DisplayAutoCorrectOptions</b> es un valor que afecta a Microsoft Office en su conjunto. Si cambia esta propiedad en Microsoft Excel afectará también a las demás aplicaciones de Office.</para>
           <para>En Excel, el botón Opciones de Autocorrección sólo aparece cuando se crea un hipervínculo automáticamente.</para>
           <para></para>
         </remarks>
@@ -420,18 +422,18 @@
         <summary>Devuelve la matriz de reemplazos de Autocorrección.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si <paramref name="Index" /> no se especifica, este método devuelve una matriz bidimensional. Cada fila de la matriz contiene un solo reemplazo, tal como se muestra en la siguiente tabla.</para>
+          <para>Si <paramref name="Index" /> no se especifica, este método devuelve una matriz bidimensional. Cada fila de la matriz contiene un solo reemplazo, como se muestra en la siguiente tabla.</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>el texto se reemplazará</description>
+              <description>El texto que se reemplaza.</description>
             </item>
             <item>
               <term>2</term>
-              <description>el texto de reemplazo</description>
+              <description>El texto de reemplazo.</description>
             </item>
           </list>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> método para agregar una entrada a la lista de reemplazos.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> método para agregar una entrada a la lista de reemplazos.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bc68b806e9539de6f5350ba189ec017a58c6f1db" />
+    <Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580727" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSetCondition" />
@@ -127,7 +127,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -188,7 +188,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Esta propiedad es útil para limitar el intervalo de valores que mostrará el formato condicional. Un escenario típico es cuando haya un intervalo de números que contiene valores positivos y negativos. Es posible que desee crear más de un formato condicional para este rango de números: uno para los valores positivos y otro para los valores negativos.</para>
+          <para>Esta propiedad es útil para limitar el rango de valores que mostrará el formato condicional. Un escenario típico es cuando se tiene un rango de números que contiene valores positivos y negativos. Quizás desee crear más de un formato condicional para este rango de números: uno para los valores positivos y otro para los valores negativos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -257,7 +257,7 @@
           <b>Object</b>
         </value>
         <remarks>
-          <para>Puede asignar el icono establecer mediante el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto.</para>
+          <para>Puede asignar el icono establecer mediante el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> objeto. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -288,7 +288,7 @@
         <summary>Establece el rango de celdas al que se aplica esta regla de formato.</summary>
         <remarks>
           <para>El rango debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
-          <para>También puede usar un nombre definido local en cualquier parte del rango, pero el nombre debe ser en el lenguaje de la macro.</para>
+          <para>Asimismo, se puede utilizar un nombre definido local en cualquier parte del rango, pero debe estar en el lenguaje de la macro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -390,7 +390,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Al establecer la prioridad, el valor debe ser un entero positivo comprendido entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas en la hoja de cálculo, por lo que cambiar la prioridad de la regla de formato condicional especificada puede provocar el valor de prioridad de las demás reglas en la hoja de cálculo que se va a desplazar.</para>
+          <para>Cuando se establece la prioridad, el valor debe ser un número entero positivo entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas de la hoja, por lo que si se cambia la prioridad para la regla de formato condicional especificada, es posible que varíe el valor de prioridad de las demás reglas en la hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -456,7 +456,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>De forma predeterminada, la mayoría de los conjuntos de iconos que se pueden usar asocia las imágenes positivas con los valores más altos. Por ejemplo, el conjunto de iconos "3 semáforos" aplica un círculo verde al umbral del valor superior y un círculo rojo a los valores más bajos del rango. Si los datos están tal que los valores más bajos son más convenientes, como resultados en tiempo de maratón, es posible que desee invertir el orden en que se aplican los iconos al rango que se va a asociar el círculo verde a los valores más bajos.</para>
+          <para>De forma predeterminada, la mayoría de los conjuntos de iconos que se pueden usar asocian las imágenes positivas con los valores más altos. Por ejemplo, el conjunto de iconos "3 semáforos" aplica un círculo verde al umbral del valor superior y un círculo rojo a los valores más bajos del rango. Si los datos son de tal manera que es más deseable tener valores bajos, como por ejemplo los resultados en tiempos de carreras de maratón, puede que desee invertir el orden en el que se aplican los iconos al rango, de forma que se aplique el círculo verde a los valores más bajos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -520,7 +520,7 @@
       <Docs>
         <summary>Establece el valor de prioridad para esta regla de formato condicional en "1" para que se evalúe antes que todas las demás reglas en la hoja de cálculo.</summary>
         <remarks>
-          <para>Cuando tiene varias reglas de formato condicionales en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
+          <para>Si tiene varias reglas de formato condicionales en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -617,7 +617,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Para compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
+          <para>Para mantener la compatibilidad con versiones anteriores, el valor predeterminado para esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de una regla de formato creada en la interfaz del usuario.</para>
           <para></para>
         </remarks>
       </Docs>

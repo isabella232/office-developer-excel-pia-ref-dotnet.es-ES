@@ -1,10 +1,10 @@
 <Type Name="ListObjects" FullName="Microsoft.Office.Interop.Excel.ListObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c26d759231e55f2d7cd0214bee3fb3636fe79db1" />
+    <Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580944" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
@@ -115,7 +115,7 @@
         <summary>Crea un nuevo objeto de lista. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Cuando la lista tiene encabezados, la primera fila de celdas se convierten en <b>texto</b>, si aún no ha establecido en texto. La conversión se basará en el texto visible de la celda. Esto significa que si hay un valor de fecha con un formato de <b>fecha</b> que cambia con la configuración regional, la conversión a una lista puede generar resultados diferentes según la configuración regional actual del sistema. Además, si hay dos celdas en la fila de encabezado que tienen el mismo texto visible, se anexará un <b>número entero</b> de incremental para que cada encabezado de columna único.</para>
+          <para>Cuando la lista tiene encabezados, la primera fila de celdas se convierten en <b>texto</b>si aún no se ha establecido en texto. La conversión se basará en el texto visible de la celda. Esto significa que si hay un valor de fecha con un formato de <b>fecha</b> que cambia con la configuración regional, la conversión a una lista puede generar resultados diferentes según la configuración regional actual del sistema. Además, si hay dos celdas en la fila de encabezado que tienen el mismo texto visible, se anexará un <b>número entero</b> de incremental para que cada encabezado de columna único.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -239,7 +239,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

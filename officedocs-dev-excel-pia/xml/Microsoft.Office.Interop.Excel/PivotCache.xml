@@ -1,10 +1,10 @@
 <Type Name="PivotCache" FullName="Microsoft.Office.Interop.Excel.PivotCache">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="95fb67e4ccce659f9704901963b16bd33fec57c6" />
+    <Meta Name="ms.openlocfilehash" Value="7195435ce0a1b6444d578842bbbfb476577c6bb3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579502" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCache" />
@@ -32,8 +32,8 @@
     <summary>Representa la memoria caché de un informe de tabla dinámica.</summary>
     <remarks>
       <para>El objeto <b>PivotCache</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> colección.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> método para devolver un objeto <b>PivotCache asociado</b> a un informe de tabla dinámica (cada informe tiene una única memoria caché).</para>
-      <para>Uso <b>PivotCaches</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de memoria caché de tabla dinámica, para devolver un solo objeto <b>PivotCache</b> de la colección <b>PivotCaches</b> de un libro.</para>
+      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> método para devolver un objeto <b>PivotCache asociado</b> a un informe de tabla dinámica (cada informe tiene una única memoria caché).</para>
+      <para>Use <b>PivotCaches</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de memoria caché de tabla dinámica, para devolver un solo objeto <b>PivotCache</b> de la colección <b>PivotCaches</b> de un libro.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -65,8 +65,10 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>ADOConnection</b> expone la conexión de Microsoft Excel con el proveedor de datos, lo que permite al usuario escribir código en el contexto de la misma sesión que Excel está utilizando con ADO (origen relacional) o ADOMD (origen OLAP).</para>
-          <para>La propiedad <b>ADOConnection</b> está disponible únicamente para las sesiones donde el origen de datos es un origen de datos OLE DB. Cuando no hay ninguna sesión ADO la consulta causará un error en tiempo de ejecución.</para> Propiedad de 
-          <para>la <b>ADOConnection</b> se puede usar para cualquier caché basada en OLEDB con ADO. El objeto connection de ADO se puede usar con ADOMD para buscar información sobre los cubos OLAP en que se basa la memoria caché.</para><para></para></remarks>
+          <para>La propiedad <b>ADOConnection</b> está disponible únicamente para las sesiones donde el origen de datos es un origen de datos OLE DB. Cuando no hay ninguna sesión ADO la consulta causará un error en tiempo de ejecución.</para>
+          <para>La propiedad <b>ADOConnection</b> se puede usar para cualquier caché basada en OLEDB con ADO. El objeto connection de ADO se puede usar con ADOMD para buscar información sobre los cubos OLAP en que se basa la memoria caché.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -127,7 +129,7 @@
           <b>True</b> si las consultas de la tabla de consulta o informe de tabla dinámica se llevan a cabo de forma asíncrona (en segundo plano).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Orígenes de datos de OLAP, esta propiedad es de sólo lectura y siempre devuelve <b>False</b>.</para>
+          <para>Para los orígenes de datos OLAP, esta propiedad es de sólo lectura y siempre devuelve <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -198,13 +200,13 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />puede ser una de las siguientes constantes <b>XlCmdType</b> :</para>
           <para>
-            <b>xlCmdCube</b>. Contiene un nombre de cubo para un origen de datos OLAP.</para>
+            <b>xlCmdCube</b> Contiene un nombre de cubo para un origen de datos OLAP.</para>
           <para>
-            <b>xlCmdDefault</b>. Contiene el texto del comando que comprende el proveedor OLE DB.</para>
+            <b>xlCmdDefault</b> Contiene texto de comandos comprensible para el proveedor OLE DB.</para>
           <para>
             <b>xlCmdSql</b>. Contiene una instrucción SQL.</para>
           <para>
-            <b>xlCmdTable</b>. Contiene un nombre de tabla para obtener acceso a orígenes de datos OLE DB.</para>
+            <b>xlCmdTable</b> Contiene un nombre de tabla para obtener acceso a orígenes de datos OLE DB.</para>
           <para>Puede establecer la propiedad <b>CommandType</b> sólo si el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> (propiedad) para la tabla de consulta o caché de tabla dinámica es <b>xlOLEDBQuery</b>.</para>
           <para>Si el valor de la propiedad <b>CommandType</b> es <b>xlCmdCube</b>, no se puede cambiar este valor si hay un informe de tabla dinámica asociado a la tabla de consulta.</para>
           <para></para>
@@ -240,11 +242,11 @@
         <summary>Devuelve o establece la información de conexión para una caché de tabla dinámica.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>Connection</b> puede ser una de las siguientes opciones: configuración de OLE DB que permite a Microsoft Excel para conectarse a un origen de datos OLE DB, ODBC configuraciones que permiten a Microsoft Excel para conectarse a una de datos ODBC, una dirección URL de origen que permite a Microsoft Excel para conectarse a un Datos de Web de origen, la ruta de acceso y nombre de archivo de un archivo de texto o la ruta de acceso y nombre de archivo de un archivo que especifica una base de datos o una consulta de Web.</para>
+          <para>La propiedad <b>Connection</b> puede ser una de las siguientes opciones: configuración de OLE DB que permite a Microsoft Excel para conectarse a un origen de datos OLE DB, ODBC configuraciones que permiten a Microsoft Excel para conectarse a una de datos ODBC, una dirección URL de origen que permite a Microsoft Excel para conectarse a un Origen de datos de Web, la ruta de acceso y nombre de archivo de un archivo de texto, o la ruta de acceso y nombre de archivo de un archivo que especifica una base de datos o una consulta de Web.</para>
           <para>Establecer la propiedad <b>Connection</b> no inicia inmediatamente la conexión al origen de datos. Debe usar la <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> método para realizar la conexión y recuperar los datos.</para>
           <para>Cuando se utiliza un archivo de cubo sin conexión, Establece el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" /> propiedad <b>True</b> y use la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /> (propiedad) en lugar de la propiedad <b>Connection</b> .</para>
           <para>Para obtener más información acerca de la sintaxis de la cadena de conexión, vea el <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /> método de la colección <b>PivotCaches</b> .</para>
-          <para>Como alternativa, puede obtener acceso a un origen de datos directamente mediante la biblioteca Microsoft ActiveX Data Objects (ADO) en su lugar.</para>
+          <para>También puede optar por tener acceso a un origen de datos directamente mediante la biblioteca Microsoft ActiveX Data Objects (ADO).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -288,19 +290,19 @@
           <para>Si el objeto <b>PivotCache</b> que se llama al método desde no tiene ninguna tabla dinámica adjunto:</para>
           <list type="bullet">
             <item>
-              <description>se crea una tabla dinámica de nivel de libro desde la PivotCache existente.</description>
+              <description>Se crea una tabla dinámica de nivel de libro desde la PivotCache existente.</description>
             </item>
             <item>
-              <description>Un servidor independiente que se creará el gráfico dinámico con una referencia a la tabla dinámica recién creada.</description>
+              <description>Un servidor independiente, gráfico dinámico se crearán con una referencia a la tabla dinámica recién creada.</description>
             </item>
           </list>
           <para>Si el objeto PivotCache ya tiene una tabla dinámica asociada:</para>
           <list type="bullet">
             <item>
-              <description>Se clona la PivotCache</description>
+              <description>Se clona el objeto PivotCache</description>
             </item>
             <item>
-              <description>una tabla dinámica de nivel de libro nuevo se crea en función de la PivotCache clonada.</description>
+              <description>Una tabla dinámica de nivel de libro nuevo se crea en función de la PivotCache clonada.</description>
             </item>
             <item>
               <description>Un servidor independiente gráfico dinámico se crea con una referencia a la tabla dinámica de nivel de libro nuevo.</description>
@@ -346,7 +348,7 @@
         <summary>Crea un informe de tabla dinámica basado en un <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para que un procedimiento alternativo crear un informe de tabla dinámica basado en una memoria caché de tabla dinámica, vea el <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto.</para>
+          <para>Para que obtener un procedimiento alternativo crear un informe de tabla dinámica basado en una memoria caché de tabla dinámica, vea el <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -377,8 +379,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRefresh">
@@ -412,7 +416,7 @@
         <value>To be added.</value>
         <remarks>
           <para>El <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" /> propiedad se omite si la propiedad <b>EnableRefresh</b> está establecida en <b>False</b>.</para>
-          <para>Para los orígenes de datos OLAP, al establecer esta propiedad en <b>False</b> deshabilita las actualizaciones.</para>
+          <para>Para los orígenes de datos OLAP, si se establece esta propiedad como <b>False</b> se deshabilitan las actualizaciones.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -471,8 +475,9 @@
         <summary>Devuelve <b>True</b> si el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> propiedad es <b>True</b> y la caché de tabla dinámica está conectada actualmente a su origen. Devuelve <b>False</b> si no está conectado actualmente a su origen.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>IsConnected</b> no comprueba si la conexión está conectada. Incluso si esta propiedad devuelve <b>True</b>, el envío de comandos al proveedor puede provocar un error si la conexión ya no es válida.</para>
-          <para>Requiere que el tipo de origen de la memoria caché es externo y que es un origen de datos OLE DB.</para>
+          <para>La propiedad <b>IsConnected</b> no comprueba si la conexión está conectada. Aunque esta propiedad devuelve <b>True</b>, envío de comandos al proveedor puede provocar un error si la conexión ya no es válida.</para>
+          <para>Es imprescindible que el tipo de origen de la caché sea externo, y que se trate de un origen de datos OLE DB.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -545,7 +550,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Puede establecer la propiedad <b>MaintainConnection</b> únicamente si el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> (propiedad) de la tabla de consulta o caché de tabla dinámica se configura como <b>xlOLEDBQuery</b>.</para>
-          <para>Si prevé realizar frecuentes consultas a un servidor, al establecer esta propiedad en <b>True</b> puede mejorar el rendimiento al reducir el tiempo de reconexión. Si se establece la propiedad en <b>False</b> hace que una conexión abierta que se cierre.</para>
+          <para>Si prevé que va a realizar frecuentes consultas a un servidor, configurar esta propiedad como <b>True</b> puede mejorar el rendimiento al reducir el tiempo de reconexión. Al configurar la propiedad como <b>False</b> se provoca el cierre de una conexión abierta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -574,8 +579,8 @@
         <summary>Establece una conexión para la caché de tabla dinámica especificada.</summary>
         <remarks>
           <para>El método <b>MakeConnection</b> se puede usar después de la memoria caché interrumpe una conexión y el usuario desea volver a establecer la conexión.</para>
-          <para>Diversos objetos y métodos podrían devolver un error en tiempo de ejecución si la memoria caché no está conectada. Uso de este método garantiza una conexión antes de ejecutar otros objetos o métodos.</para>
-          <para>Este método se producirá un error en tiempo de ejecución si el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> (propiedad) de la memoria caché de tabla dinámica especificada se ha establecido en <b>False</b>, el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /> (propiedad) de la memoria caché de tabla dinámica especificada no se estableció en <b>xlExternal</b>, o si la conexión no es OLEDB.</para>
+          <para>Hay diversos objetos y métodos que pueden devolver un error en tiempo de ejecución si la caché no está conectada. Utilizar este método garantiza que siempre exista una conexión antes de ejecutar otros objetos o métodos.</para>
+          <para>Este método se producirá un error en tiempo de ejecución si el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" /> (propiedad) de la memoria caché de tabla dinámica especificada se ha establecido en <b>False</b>, el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /> (propiedad) de la memoria caché de tabla dinámica especificada no se estableció en <b>xlExternal</b>, o si la conexión no es OLEDB .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -644,13 +649,13 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableMissingItems" />puede ser una de las siguientes constantes <b>XlPivotTableMissingItems</b> :</para>
           <para>
-            <b>xlMissingItemsDefault</b> el número predeterminado de elementos únicos por campo de tabla dinámica permitido.</para>
-          <para>permitido de 
-            <b>xlMissingItemsMax</b> número máximo de elementos únicos por campo de tabla dinámica (32.500).</para>
+            <b>xlMissingItemsDefault</b> Número predeterminado permitido de elementos únicos por campo de tabla dinámica.</para>
           <para>
-            <b>xlMissingItemsNone</b> no permite de ningún elemento único por campo de tabla dinámica (cero).</para>
-          <para>Esta propiedad se puede establecer en un valor entre 0 y 32500. Si se especifica un entero menor que cero, esto es equivalente a especificar <b>xlMissingItemsDefault</b>. Enteros mayores que 32.500 puede especificarse, pero tendrá el mismo efecto que si se especifica <b>xlMissingItemsMax</b>.</para>
-          <para>La propiedad <b>MissingItemsLimit</b> sólo funciona para las tablas dinámicas no OLAP; en caso contrario, puede producirse un error en tiempo de ejecución.</para>
+            <b>xlMissingItemsMax</b> Número máximo permitido de elementos únicos por campo de tabla dinámica (32.500).</para>
+          <para>
+            <b>xlMissingItemsNone</b> No se permite ningún elemento único por campo de tabla dinámica (cero).</para>
+          <para>El valor de esta propiedad puede estar comprendido entre 0 y 32500. Si se especifica un número entero menor que cero, es equivalente a especificar <b>xlMissingItemsDefault</b>. Es posible especificar números enteros mayores que 32.500, pero el efecto será el mismo que si se especifica <b>xlMissingItemsMax</b>.</para>
+          <para>La propiedad <b>MissingItemsLimit</b> sólo funciona con las tablas dinámicas no OLAP; en caso contrario puede producirse un error en tiempo de ejecución.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -713,8 +718,8 @@
           <b>True</b> si la memoria caché de tabla dinámica se optimiza cuando se construye. El valor predeterminado es <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Optimización de la memoria caché de resultados de consultas adicionales y degrada el rendimiento inicial del informe de tabla dinámica.</para>
-          <para>Orígenes de datos para OLE DB, esta propiedad es de sólo lectura y siempre devuelve <b>False</b>.</para>
+          <para>La optimización de la caché produce consultas adicionales y degrada el rendimiento inicial del informe de tabla dinámica.</para>
+          <para>Para los orígenes de datos OLE DB, esta propiedad es de sólo lectura y siempre devuelve <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -776,15 +781,15 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" />puede ser una de las siguientes constantes <b>XlQueryType</b> :</para>
           <para>
-            <b>xlTextImport</b>. En función de un archivo de texto; para las tablas de consulta.</para>
+            <b>xlTextImport</b>. En función de un archivo de texto; para tablas de consulta.</para>
           <para>
-            <b>xlOLEDBQuery</b>. Basado en una consulta OLE DB, incluidos los orígenes de datos OLAP.</para>
+            <b>xlOLEDBQuery</b>. Basado en una consulta de OLE DB, incluidos los orígenes de datos OLAP.</para>
           <para>
-            <b>xlWebQuery</b>. En función de una página Web; para las tablas de consulta.</para>
+            <b>xlWebQuery</b>. En función de una página Web; para tablas de consulta.</para>
           <para>
             <b>xlADORecordset</b>. Basado en una consulta de conjunto de registros de ADO.</para>
           <para>
-            <b>xlDAORecordSet</b>. Basado en una consulta de conjunto de registros DAO; para las tablas de consulta.</para>
+            <b>xlDAORecordSet</b>. Basado en una consulta de conjunto de registros DAO; para tablas de consulta.</para>
           <para>
             <b>xlODBCQuery</b>. Basado en un origen de datos ODBC.</para>
           <para>Especificar el origen de datos en el prefijo de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> valor de la propiedad.</para>
@@ -818,7 +823,7 @@
         <summary>Devuelve el número de registros en la memoria caché de tabla dinámica o el número de registros de caché que contienen el elemento especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad refleja el estado transitorio de la memoria caché en el momento en que se consulta. La memoria caché puede cambiar entre las consultas.</para>
+          <para>Esta propiedad representa el estado transitorio de la caché en el momento en que se hace la consulta. La caché puede sufrir modificaciones entre consulta y consulta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -908,7 +913,7 @@
         <summary>Devuelve la fecha en la que se actualizó por última vez la memoria caché de tabla dinámica.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La memoria caché debe tener al menos un informe de tabla dinámica asociado a él.</para>
+          <para>La memoria caché debe tener al menos un informe de tabla dinámica asociado con él.</para>
           <para>Para los orígenes de datos OLAP, esta propiedad se actualiza después de cada consulta.</para>
           <para></para>
         </remarks>
@@ -1006,7 +1011,7 @@
         <summary>Devuelve o establece el número de minutos entre las actualizaciones.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Al establecer el período en 0 (cero) deshabilita automática ha superado el tiempo se actualiza y equivale a establecer esta propiedad en <b>Null</b>.</para>
+          <para>Al establecer el período en 0 (cero), se desactivan las actualizaciones temporizadas automáticas y equivale a establecer esta propiedad en <b>Null</b>.</para>
           <para>El valor de la propiedad <b>RefreshPeriod</b> puede ser un número entero entre 0 y 32.767.</para>
           <para></para>
         </remarks>
@@ -1069,11 +1074,11 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />puede ser una de las siguientes constantes <b>XlRobustConnect</b> :</para>
           <para>
-            <b>xlAlways</b> la caché siempre utiliza información del origen externo (como se define por la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" /> o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" /> (propiedad)) para volver a conectar.</para>
+            <b>xlAlways</b> La caché siempre utiliza información del origen externo (como se define por la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" /> o <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" /> (propiedad)) para volver a conectar.</para>
           <para>
-            <b>xlAsRequired</b> la caché utiliza información del origen externo para volver a conectar con el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> (propiedad).</para>
+            <b>xlAsRequired</b> La caché utiliza información del origen externo para volver a conectar con el <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> (propiedad).</para>
           <para>
-            <b>xlNever</b> la caché no usa nunca información del origen para volver a conectar.</para>
+            <b>xlNever</b> La caché no usa nunca información del origen para volver a conectar.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1210,18 +1215,20 @@
           <para>En la siguiente tabla muestra los valores devueltos por la propiedad <b>SourceDate</b> :</para>
           <list type="table">
             <item>
-              <term>lista de Microsoft Excel o base de datos</term>
-              <description>la referencia de celda como texto.</description>
+              <term>Lista o base de datos de Microsoft Excel</term>
+              <description>La referencia de celda como texto.</description>
             </item>
-            <item>De 
-              <term>origen de datos externo</term><description>una matriz. Cada fila consta de una cadena de conexión SQL con los elementos restantes como la cadena de consulta, desglosada en segmentos de 255 caracteres.</description></item>
+            <item>
+              <term>Origen de datos externo</term>
+              <description>Una matriz. Cada fila consta de una cadena de conexión SQL con los elementos restantes como cadena de consulta, desglosada en segmentos de 255 caracteres.</description>
+            </item>
             <item>
               <term>Varios rangos de consolidación</term>
-              <description>una matriz bidimensional. Cada fila consta de una referencia y sus elementos de campo de página asociado.</description>
+              <description>Una matriz de dos dimensiones. Cada fila consta de una referencia y sus elementos de campo de página asociados.</description>
             </item>
             <item>
-              <term>Informe de tabla dinámica de otro</term>
-              <description>uno de los tres tipos de información anteriores.</description>
+              <term>Otro informe de tabla dinámica</term>
+              <description>Uno de los tres tipos de información anteriores.</description>
             </item>
           </list>
           <para>Esta propiedad no está disponible para orígenes de datos OLE DB.</para>
@@ -1255,7 +1262,7 @@
         <summary>Devuelve una <b>cadena</b> que indica el archivo de datos de origen de la memoria caché de la tabla dinámica.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para orígenes de datos de archivo (por ejemplo, Microsoft Access) la propiedad <b>SourceDataFile</b> contiene una ruta de acceso completa al archivo de datos de origen. Es <b>Null</b> para los orígenes de datos basadas en servidor (por ejemplo, SQL Server). La propiedad <b>SourceDataFile</b> se establece en <b>Null</b> si la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> propiedad se cambia mediante programación.</para>
+          <para>Para los orígenes de datos de archivo (por ejemplo, Microsoft Access) la propiedad <b>SourceDataFile</b> contiene una ruta de acceso completa al archivo de datos de origen. Es <b>Null</b> para los orígenes de datos basadas en servidor (por ejemplo, SQL Server). La propiedad <b>SourceDataFile</b> se establece en <b>Null</b> si la <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> propiedad se cambia mediante programación.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1376,7 +1383,7 @@
         </value>
         <remarks>
           <para>El valor predeterminado es <b>False</b>. Si la propiedad se establece en <b>True</b> para un <b>objeto PivotCache</b>, actualizar cualquiera <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> adjunta a esa <b>PivotCache</b> se actualizarán la <b>PivotCache</b> y todos los el adjunto <b>tablas dinámicas</b> a la versión 2007 (PivotTable.Version = 3) como parte de la actualización.</para>
-          <para>Si la propiedad se establece en <b>False</b> para una <b>caché dinámica</b>, al actualizar cualquier <b>tabla dinámica</b> adjunta a que <b>PivotCache</b> no cambiará la versión de la <b>caché dinámica</b>ni la versión de cualquier adjunto <b>las tablas dinámicas </b>. Todos ellos mantengan la misma versión que antes de la actualización de la.</para>
+          <para>Si la propiedad se establece en <b>False</b> para una <b>caché dinámica</b>, al actualizar cualquier <b>tabla dinámica</b> adjunta a que <b>PivotCache</b> no cambiará la versión de la <b>caché dinámica</b>ni la versión de cualquier adjunto <b>las tablas dinámicas</b>. Todos ellos permanecen la misma versión que antes de la actualización.</para>
           <para>Guardar en un formato de archivo de short_Excel2007, cuando en compatibilidad de modo establece esta propiedad en <b>True</b> para todos los <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> en el libro.</para>
           <para></para>
         </remarks>
@@ -1473,7 +1480,7 @@
         <summary>Establece una conexión entre el libro actual y la <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El objeto <b>WorkbookConnection</b> representa una conexión a un origen de datos externo.</para>
+          <para>El objeto <b>WorkbookConnection</b> representa una conexión con un origen de datos externo.</para>
           <para></para>
         </remarks>
       </Docs>

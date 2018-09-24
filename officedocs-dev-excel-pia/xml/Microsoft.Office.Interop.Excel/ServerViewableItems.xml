@@ -1,10 +1,10 @@
 <Type Name="ServerViewableItems" FullName="Microsoft.Office.Interop.Excel.ServerViewableItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c2be0679f4fcc0da628343344a5b5b0cce8a4549" />
+    <Meta Name="ms.openlocfilehash" Value="6a49378a5a672e109bb0d1469a510a5d3faf8153" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579453" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
@@ -36,8 +36,8 @@
     <summary>Colección de objetos que se han marcado como visibles en el servidor.</summary>
     <remarks>
       <para>Esto es una colección de referencias a los objetos de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Solo los objetos de esta colección se mostrarán en el servidor.  De forma predeterminada, se muestra todo el libro (incluidas todas las hojas de cálculo).  </para>
-      <para>Una sola <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objeto puede existir por <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Esta colección no es indexar por nombre porque no hay ninguna garantía de que los nombres de objetos que están marcados como visibles en el servidor son únicos.</para>
-      <para>Interfaz de usuario en Excel la, puede ver la colección de objetos que están marcados como visibles en el servidor en el cuadro de diálogo Opciones de Excel Services.</para>
+      <para>Un solo <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> objeto puede existir por <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.  Esta colección no es indexar por nombre porque no hay ninguna garantía de que los nombres de objetos que están marcados como visibles en el servidor son únicos.</para>
+      <para>En la interfaz de usuario de Excel, puede ver la colección de objetos que están marcados como visibles en el servidor en el cuadro de diálogo Opciones de Excel Services.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -107,7 +107,7 @@
           <b>Object</b>
         </returns>
         <remarks>
-          <para>Si se intenta agregar una combinación de hojas y elementos con nombre para el <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección, se devuelve un error.  El <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección puede contener referencias a hojas, o referencias a elementos con nombre, pero no ambos en la misma llamada.  </para>
+          <para>Si intenta agregar una combinación de hojas y elementos con nombre para el <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección, se devuelve un error.  El <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" /> colección puede contener referencias a hojas, o referencias a elementos con nombre, pero no ambos en la misma llamada.  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -203,7 +203,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para></para>
         </remarks>
       </Docs>

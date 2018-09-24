@@ -1,10 +1,10 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Excel.LegendEntry">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7de5505ce151e50ee7cf3bb22663696d2b691245" />
+    <Meta Name="ms.openlocfilehash" Value="983427dff3c6cf28781fdc671025f8966ca21207" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576947" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendEntry" />
@@ -32,9 +32,14 @@
     <summary>Representa una entrada de leyenda de un gráfico.</summary>
     <remarks>
       <para>El objeto <b>LegendEntry</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> colección. La colección <b>LegendEntries</b> contiene todos los objetos <b>LegendEntry</b> de la leyenda.</para>
-      <para>Cada entrada de leyenda consta de dos partes: el texto de la entrada, que es el nombre de la serie asociada con la entrada de leyenda y un marcador de entrada, que conecta visualmente la entrada de leyenda con su serie o línea de tendencia en el gráfico. Propiedades de formato para el marcador de entrada y su serie o línea de tendencia están contenidas en el <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para> No se puede cambiar 
-      <para>el texto de un elemento de leyenda. Los objetos <b>LegendEntry</b> admiten formato de fuente y pueden eliminarse. Ningún formato de trama es compatible con las entradas de leyenda. La posición y el tamaño de las entradas es fija.</para><para>Use <b>LegendEntries</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de entrada de leyenda, para devolver un único objeto <b>LegendEntry</b> . No se puede devolver las entradas de leyenda por nombre.</para> Número de 
-      <para>el índice representa la posición de la entrada de leyenda de la leyenda. LegendEntries (1) está en la parte superior de la leyenda y LegendEntries (LegendEntries.Count) está en la parte inferior.</para><para>No hay ninguna forma directa de devolver la serie o línea de tendencia correspondiente a la entrada de leyenda.</para><para>Después de que se han eliminado las entradas de leyenda, el único modo de restaurarlas es quitar y volver a crear la leyenda que las contenía, estableciendo la <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> (propiedad) para el gráfico en <b>False</b> y, a continuación, volver a <b>True</b>.</para><para></para></remarks>
+      <para>Cada entrada de leyenda consta de dos partes: el texto de la entrada, que es el nombre de la serie asociada con la entrada de leyenda y un marcador de entrada, que conecta visualmente la entrada de leyenda con su serie o línea de tendencia en el gráfico. Propiedades de formato para el marcador de entrada y su serie o línea de tendencia están contenidas en el <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
+      <para>No se puede cambiar el texto de un elemento de leyenda. Los objetos <b>LegendEntry</b> admiten formato de fuente y pueden eliminarse. Ningún formato de trama se admite para las entradas de leyenda. La posición y el tamaño de las entradas es fija.</para>
+      <para>Use <b>LegendEntries</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de entrada de leyenda, para devolver un único objeto <b>LegendEntry</b> . No se puede devolver las entradas de leyenda por nombre.</para>
+      <para>El número de índice representa la posición de la entrada en la leyenda. LegendEntries (1) está en la parte superior de la leyenda y LegendEntries (LegendEntries.Count) está en la parte inferior.</para>
+      <para>No hay una forma directa de devolver la serie o la línea de tendencia correspondiente a la entrada de leyenda.</para>
+      <para>Después de eliminar las entradas de leyenda, el único modo de restaurarlas es quitar y volver a crear la leyenda que las contenía, estableciendo la <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> (propiedad) para el gráfico en <b>False</b> y, a continuación, volver a <b>True</b>.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -129,8 +134,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

@@ -1,10 +1,10 @@
 <Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fec2de78dcf640219cb44f66becd0a0dbc77878e" />
+    <Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578025" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
@@ -37,8 +37,10 @@
     <remarks>
       <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /> método para devolver la colección de <b>tablas dinámicas</b> .</para>
       <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para crear un nuevo informe de tabla dinámica y agregarlo a la colección.</para>
-      <para>Usar <b>tablas dinámicas</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de tabla dinámica o el nombre, para devolver un solo objeto <b>PivotTable</b> .</para> Programación de informes de tabla dinámica porque 
-      <para>puede ser complejo, normalmente es más fácil grabar las acciones de informes de tabla dinámica y después revisar el código grabado. Para grabar una macro, elija Macro en el menú Herramientas y haga clic en Grabar nueva Macro.</para><para></para></remarks>
+      <para>Usar <b>tablas dinámicas</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de tabla dinámica o el nombre, para devolver un único objeto de <b>tabla dinámica</b> .</para>
+      <para>Puesto que la programación de informes de tabla dinámica puede ser complicada, normalmente es más fácil grabar las acciones de informes de tabla dinámica y después revisar el código grabado. Para grabar una macro, elija Macro en el menú Herramientas y haga clic en Grabar nueva Macro.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -162,7 +164,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

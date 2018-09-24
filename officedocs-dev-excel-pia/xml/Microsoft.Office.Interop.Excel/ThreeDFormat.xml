@@ -1,10 +1,10 @@
 <Type Name="ThreeDFormat" FullName="Microsoft.Office.Interop.Excel.ThreeDFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4d21b65911fea75417444605a0fe5b47bd944918" />
+    <Meta Name="ms.openlocfilehash" Value="a7446cb76912959213bb4dcc1c28dae6c32fcad1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585949" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ThreeDFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>Representa el formato tridimensional de una forma.</summary>
     <remarks>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.ThreeD" /> propiedad para devolver un objeto <b>ThreeDFormat</b> .</para>
-      <para>No se puede aplicar formato tridimensional a algunos tipos de formas, como formas biseladas o discontinuas varias rutas de acceso. La mayoría de las propiedades y métodos de la <b>ThreeDFormat</b> de objetos para una forma de ese tipo se producirá un error.</para>
+      <para>No se puede aplicar formato tridimensional a algunos tipos de formas, como formas biseladas o separados de varias rutas de acceso. Se producirá un error de la mayoría de las propiedades y métodos del objeto <b>ThreeDFormat</b> para dicha forma.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -359,8 +359,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -574,7 +576,7 @@
         <remarks>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> (propiedad) para establecer el giro absoluto de la forma alrededor del eje x.</para>
           <para>No se puede ajustar el giro de la forma especificada alrededor del eje x más allá del límite superior o inferior de la propiedad <b>RotationX</b> (de 90 grados a – 90 grados). Por ejemplo, si la propiedad <b>RotationX</b> se establece inicialmente en 80 y especifica 40 para el <paramref name="Increment" /> argumento, el giro resultante será 90 (el límite superior de la propiedad <b>RotationX</b> ) en lugar de 120.</para>
-          <para>Para cambiar el giro de una forma alrededor del eje y, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> (método). Para cambiar el giro alrededor del eje z, use la <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> método.</para>
+          <para>Para cambiar el giro de una forma alrededor del eje y, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> (método). Para cambiar el giro alrededor del eje z, use la <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -607,7 +609,7 @@
         <summary>Cambia el giro de la forma alrededor del eje Y el número especificado de grados.</summary>
         <remarks>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> (propiedad) para establecer el giro absoluto de la forma alrededor del eje y.</para>
-          <para>Para cambiar el giro de una forma alrededor del eje x, use la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> (método). Para cambiar el giro alrededor del eje z, use la <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> método.</para>
+          <para>Para cambiar el giro de una forma alrededor del eje x, use la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> (método). Para cambiar el giro alrededor del eje z, use la <see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" /> (método).</para>
           <para>No se puede ajustar el giro de la forma especificada alrededor del eje y más allá del límite superior o inferior de la propiedad <b>RotationY</b> (de 90 grados a – 90 grados). Por ejemplo, si la propiedad <b>RotationY</b> se establece inicialmente en 80 y especifica 40 para el <paramref name="Increment" /> argumento, el giro resultante será 90 (el límite superior de la propiedad <b>RotationY</b> ) en lugar de 120.</para>
           <para></para>
         </remarks>
@@ -640,7 +642,7 @@
         <summary>Cambia el giro de la forma alrededor del eje Z el número especificado de grados.</summary>
         <remarks>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationZ" /> (propiedad) para establecer el giro absoluto de la forma alrededor del eje z.</para>
-          <para>Para cambiar el giro de una forma alrededor del eje z, use la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationZ(System.Single)" /> método.</para>
+          <para>Para cambiar el giro de una forma alrededor del eje z, use la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationZ(System.Single)" /> (método).</para>
           <para>No se puede ajustar el giro alrededor del eje z de la forma especificada más allá del límite superior o inferior de la propiedad <b>RotationZ</b> (de 90 grados a – 90 grados). Por ejemplo, si la propiedad <b>RotationZ</b> se establece inicialmente en 80 y especifica 40 para el <paramref name="Increment" /> argumento, el giro resultante será 90 (el límite superior de la propiedad <b>RotationZ</b> ) en lugar de 120.</para>
           <para></para>
         </remarks>
@@ -794,7 +796,7 @@
         <summary>Devuelve la dirección en la que se aleja la extrusión de la forma extrudida (cara frontal de la extrusión).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para establecer el valor de esta propiedad, utilice la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> método.</para>
+          <para>Para establecer el valor de esta propiedad, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -956,8 +958,8 @@
         <summary>Devuelve el formato de extrusión preestablecido.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cada formato de extrusión preestablecido contiene un conjunto de valores preestablecidos de las diversas propiedades de la extrusión. Si la extrusión tiene un formato personalizado en lugar de un formato preestablecido, esta propiedad devuelve <see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" />. Los valores de esta propiedad corresponden a las opciones (numeradas de izquierda a derecha y de arriba a abajo) que se muestran al hacer clic en el botón 3D de la barra de herramientas Dibujo.</para>
-          <para>Para establecer el formato de extrusión preestablecido, utilice el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" /> método.</para>
+          <para>Cada formato de extrusión preestablecido contiene un conjunto de valores preestablecidos de las diversas propiedades de la extrusión. Si la extrusión tiene un formato personalizado en lugar de un formato preestablecido, esta propiedad devuelve <see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" />. Los valores de esta propiedad corresponden a las opciones mostradas al hacer clic en el botón 3D de la barra de herramientas Dibujo, las opciones se numeran de izquierda a derecha y de arriba a abajo.</para>
+          <para>Para establecer el formato de extrusión preestablecido, utilice el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1019,7 +1021,7 @@
         <summary>Restablece a 0 (cero) el giro de la extrusión alrededor del eje X y del eje Y para que la parte frontal de la extrusión aparezca en primer plano.</summary>
         <remarks>
           <para>Este método no restablece el giro alrededor del eje z.</para>
-          <para>Para establecer el giro de la extrusión alrededor del eje x y del eje y a cualquier cosa distinto de 0 (cero), use la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> y <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para establecer el giro de la extrusión alrededor del eje z, use la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa la forma extruida.</para>
+          <para>Para establecer el giro de la extrusión alrededor del eje x y del eje y en un valor distinto de 0 (cero), use la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> y <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para establecer el giro de la extrusión alrededor del eje z, use la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object que representa la forma extruida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1054,7 +1056,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>RotationX</b> puede ser un valor comprendido entre – 90 a 90. Un valor positivo indica un giro hacia arriba; un valor negativo indica un giro hacia abajo.</para>
-          <para>Para establecer el giro de la forma extruida alrededor del eje y, use el <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para establecer el giro de la forma extruida alrededor del eje z, utilice la propiedad Rotation de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto. Para cambiar la dirección del barrido de extrusión sin girar la cara frontal de la extrusión, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> método.</para>
+          <para>Para establecer el giro de la forma extruida alrededor del eje y, use el <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para establecer el giro de la forma extruida alrededor del eje z, utilice la propiedad Rotation de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto. Para cambiar la dirección del barrido de extrusión sin girar la cara frontal de la extrusión, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1089,7 +1091,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>RotationY</b> puede ser un valor comprendido entre – 90 a 90. Un valor positivo indica un giro hacia la izquierda; un valor negativo indica un giro hacia la derecha.</para>
-          <para>Para establecer el giro de la forma extruida alrededor del eje x, use la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para establecer el giro de la forma extruida alrededor del eje z, utilice la propiedad Rotation de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto. Para cambiar la dirección del barrido de extrusión sin girar la cara frontal de la extrusión, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> método.</para>
+          <para>Para establecer el giro de la forma extruida alrededor del eje x, use la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para establecer el giro de la forma extruida alrededor del eje z, utilice la propiedad Rotation de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto. Para cambiar la dirección del barrido de extrusión sin girar la cara frontal de la extrusión, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1125,8 +1127,8 @@
           <b>Single</b>
         </value>
         <remarks>
-          <para>La propiedad <b>RotationZ</b> puede ser un valor entre – 90 y 90. Un valor positivo indica un giro hacia arriba; un valor negativo indica un giro hacia abajo.</para>
-          <para>Para establecer el giro de la forma extruida alrededor del eje y, use el <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para establecer el giro de la forma extruida alrededor del eje x, use la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> (propiedad) del objeto <b>ThreeDFormat</b> . Para cambiar la dirección de la ruta de acceso del barrido de extrusión sin girar la cara frontal de la extrusión, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> método.</para>
+          <para>La propiedad <b>RotationZ</b> puede ser un valor comprendido entre – 90 y 90. Un valor positivo indica un giro hacia arriba; un valor negativo indica un giro hacia abajo.</para>
+          <para>Para establecer el giro de la forma extruida alrededor del eje y, use el <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto. Para establecer el giro de la forma extruida alrededor del eje x, use la <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> (propiedad) del objeto <b>ThreeDFormat</b> . Para cambiar la dirección de la ruta de acceso del barrido de extrusión sin girar la cara frontal de la extrusión, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="SmartTagOptions" FullName="Microsoft.Office.Interop.Excel.SmartTagOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c56b52fc5575c4410dbfda5ac1c7f7b98b1d6b52" />
+    <Meta Name="ms.openlocfilehash" Value="08e6c64d1c42348903ffb92e85b1dbbff6eb03f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581798" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTagOptions" />
@@ -32,11 +32,16 @@
     <summary>Representa las opciones que se pueden realizar con las etiquetas inteligentes.</summary>
     <remarks>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.SmartTagOptions" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto para devolver un objeto <b>SmartTagOptions</b> .</para>
-      <para>Una vez que se devuelve un objeto <b>SmartTagOptions</b> , puede usar las siguientes propiedades para determinar las opciones de presentación de las etiquetas inteligentes y si desea o no hayan etiquetas inteligentes incrustadas en el libro activo.</para>
+      <para>Cuando haya obtenido un objeto <b>SmartTagOptions</b> , puede usar las siguientes propiedades para determinar las opciones de presentación de las etiquetas inteligentes y si desea o no tener las etiquetas inteligentes incrustadas en el libro activo.</para>
       <list type="bullet">
         <item>
           <description>
             <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.EmbedSmartTags" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.DisplaySmartTags" />
           </description>
         </item>
       </list>
@@ -98,8 +103,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplaySmartTags">
@@ -132,13 +139,13 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>XlSmartTagDisplayMode</b> puede ser una de las siguientes constantes:</para>
+            <b>XlSmartTagDisplayMode</b> puede ser una de las constantes siguientes:</para>
           <para>
-            <b>xlButtonOnly</b> muestra sólo el botón de etiquetas inteligentes.</para>
+            <b>xlButtonOnly</b> Muestra sólo el botón de etiquetas inteligentes.</para>
           <para>
-            <b>xlDisplayNone</b> no muestra nada para las etiquetas inteligentes.</para>
+            <b>xlDisplayNone</b> No se muestra nada para las etiquetas inteligentes.</para>
           <para>
-            <b>xlIndicatorAndButton</b> muestra el indicador y el botón de etiquetas inteligentes.</para>
+            <b>xlIndicatorAndButton</b> Mostrar el indicador y el botón de etiquetas inteligentes.</para>
           <para></para>
         </remarks>
       </Docs>

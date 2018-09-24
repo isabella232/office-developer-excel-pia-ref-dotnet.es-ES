@@ -1,10 +1,10 @@
 <Type Name="LegendKey" FullName="Microsoft.Office.Interop.Excel.LegendKey">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e97e2c6b2812c0c27e94200204837ef948711b2c" />
+    <Meta Name="ms.openlocfilehash" Value="5c0f463a642ccce4a5ea924e670fcd78c73fdfeb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580734" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendKey" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>Representa una clave de la leyenda de un gráfico.</summary>
     <remarks>
-      <para>Cada clave de leyenda es un gráfico que conecta visualmente una entrada de leyenda con su serie o línea de tendencia en el gráfico. La clave de leyenda está vinculada a su serie o línea de tendencia de tal manera que cambiar el formato de una simultáneamente cambia el formato de la otra.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.LegendEntry.LegendKey" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
+      <para>Cada clave de leyenda es un gráfico que conecta visualmente una entrada de leyenda con su serie o línea de tendencia asociada en el gráfico. La clave de leyenda está conectada con su serie o línea de tendencia asociada de tal modo que, al cambiar el formato de una, cambie automáticamente el formato de la otra.</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.LegendEntry.LegendKey" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -148,8 +148,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -176,7 +178,7 @@
         <summary>Elimina el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Eliminar un <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto elimina toda la serie.</para>
+          <para>Eliminación de un <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto elimina toda la serie.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -548,29 +550,29 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />puede ser una de estas constantes <b>XlMarkerStyle</b> :</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>. Marcadores automáticos</para>
+            <b>xlMarkerStyleAutomatic</b>. Automatic markers</para>
           <para>
-            <b>xlMarkerStyleCircle</b>. Marcadores circulares</para>
+            <b>xlMarkerStyleCircle</b>. Circular markers</para>
           <para>
-            <b>xlMarkerStyleDash</b>. Marcadores de barra larga</para>
+            <b>xlMarkerStyleDash</b>. Long bar markers</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>. Marcadores con forma de rombo</para>
+            <b>xlMarkerStyleDiamond</b>. Diamond-shaped markers</para>
           <para>
-            <b>xlMarkerStyleDot</b>. Marcadores de barra corta</para>
+            <b>xlMarkerStyleDot</b>. Short bar markers</para>
           <para>
-            <b>xlMarkerStyleNone</b>. Sin marcadores</para>
+            <b>xlMarkerStyleNone</b>. No markers</para>
           <para>
-            <b>xlMarkerStylePicture</b>. Marcadores de imagen</para>
+            <b>xlMarkerStylePicture</b>. Picture markers</para>
           <para>
-            <b>xlMarkerStylePlus</b>. Marcadores cuadrados con un signo más</para>
+            <b>xlMarkerStylePlus</b>. Square markers with a plus sign</para>
           <para>
-            <b>xlMarkerStyleSquare</b>. Marcadores cuadrados</para>
+            <b>xlMarkerStyleSquare</b>. Square markers</para>
           <para>
-            <b>xlMarkerStyleStar</b>. Marcadores cuadrados con un asterisco</para>
+            <b>xlMarkerStyleStar</b>. Square markers with an asterisk</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>. Marcadores triangulares</para>
+            <b>xlMarkerStyleTriangle</b>. Triangular markers</para>
           <para>
-            <b>xlMarkerStyleX</b>. Marcadores cuadrados con una X</para>
+            <b>xlMarkerStyleX</b>. Square markers with an X</para>
           <para></para>
         </remarks>
       </Docs>

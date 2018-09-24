@@ -1,10 +1,10 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4e22f5c32e648c50b21962a902607fb0d77f69c0" />
+    <Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574924" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
@@ -36,9 +36,9 @@
     <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objetos de Microsoft Excel.</summary>
     <remarks>
       <para>La colección <b>Windows</b> devuelta por la <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto contiene todas las ventanas de la aplicación, mientras que la colección <b>Windows</b> devuelto por la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto únicamente contiene las ventanas en el libro especificado.</para>
-      <para>Usar el método <b>NewWindow</b> de un objeto <b>Window</b> o <b>Workbook</b> para crear una ventana nueva y agregarla a la colección.</para>
-      <para>Usar <b>Windows</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la ventana o el número de índice, para devolver un único objeto <b>Window</b> .</para>
-      <para>Tenga en cuenta que la ventana activa siempre es Windows (1).</para>
+      <para>Use el método <b>NewWindow</b> de un objeto <b>Window</b> o <b>Workbook</b> para crear una ventana nueva y agregarla a la colección.</para>
+      <para>Use <b>Windows</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la ventana o el número de índice, para devolver un único objeto <b>Window</b> .</para>
+      <para>Tenga en cuenta que la ventana activa siempre es Windows(1).</para>
       <para></para>
     </remarks>
   </Docs>
@@ -255,8 +255,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -374,7 +376,10 @@
       <Parameters />
       <Docs>
         <summary>Restablece la posición de las ventanas de dos hojas que se están comparando una al lado de la otra.</summary>
-        <remarks>Método <para>Utilice el <b>ResetPositionsSideBySide</b> para restablecer la posición de dos hojas que se están comparando una al lado de. Por ejemplo, si un usuario minimiza o maximiza una de las dos ventanas de hoja de cálculo que se están comparadas, el método <b>ResetPositionsSideBySide</b> restablece la presentación para que las dos ventanas se muestran al lado de nuevo.</para><para></para></remarks>
+        <remarks>
+          <para>Utilice el método <b>ResetPositionsSideBySide</b> para restablecer la posición de dos hojas que se están comparando una al lado de. Por ejemplo, si un usuario minimiza o maximiza una de las dos ventanas de hoja de cálculo que se están comparadas, el método <b>ResetPositionsSideBySide</b> restablece la presentación para que las dos ventanas se muestran al lado de nuevo.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">

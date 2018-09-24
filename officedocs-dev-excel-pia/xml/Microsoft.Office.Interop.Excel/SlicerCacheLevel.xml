@@ -1,10 +1,10 @@
 <Type Name="SlicerCacheLevel" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43900a2e801ac6164f29d0632611e43dbce1a178" />
+    <Meta Name="ms.openlocfilehash" Value="3e50741c9a2b1462398bc2cd7a9e64c639d93725" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587272" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCacheLevel" />
@@ -62,7 +62,7 @@
         <summary>Cuando se usa sin un calificador de objeto, esta propiedad obtiene un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad obtiene un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -93,7 +93,7 @@
         <summary>Obtiene el número de <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> objetos en especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</summary>
         <value>El número de <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> objetos en especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -124,7 +124,7 @@
         <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
         <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
         <remarks>
-          <para>De sólo lectura <b>largo</b>.</para>
+          <para>Sólo lectura de <b>tipo long</b>.</para>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para></para>
         </remarks>
@@ -160,8 +160,11 @@
         <value>Especifica si una segmentación de datos está participando en el filtrado cruzado con otras segmentaciones de datos que comparten la misma memoria caché de segmentación de datos y cómo cruzan filtrado se muestra.</value>
         <remarks>
           <para>Lectura y escritura.</para>
-          <para>Si más de una segmentación de datos está asociada con la misma tabla dinámica, de forma predeterminada, si el elemento o elementos filtrar por en una segmentación de datos no tienen correspondientes datos de segmentación de datos otro, esos elementos aparecerá atenuados. Por ejemplo, si tiene una segmentación de datos de estado y de segmentación de datos país, y haga clic en un país en la segmentación de datos país, todos los Estados de la segmentación de datos de estado que no estén en ese país aparecerá atenuado. Esta característica se conoce como "cruce filtrado."</para> Configuración de 
-          <para>la interfaz de usuario que se corresponde con la configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) son el indicar visualmente elementos sin datos y mostrar elementos sin casillas de verificación última de datos en el cuadro de diálogo de configuración de segmentación de datos. Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> corresponde a seleccionar ambos el indicar visualmente elementos sin datos y casillas de verificación de mostrar elementos sin datos por última vez. Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> corresponde a seleccionar sólo el indicar visualmente los elementos con ninguna casilla de verificación de datos. Borrar ambas casillas de verificación corresponde al valor de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para><para>Segmentaciones de datos filtrado de orígenes de datos no OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  =  <b>false</b>) no son compatibles con el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto. Para segmentaciones de datos filtrado de las tablas dinámicas basadas en rangos, listas y orígenes de datos relacionales que no son OLAP, use la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> de objetos, en lugar de ello.</para><para></para></remarks>
+          <para>De forma predeterminada, si hay más de una segmentación de datos asociada con la misma tabla dinámica y si el elemento o los elementos que se usan como criterios de filtrado en una segmentación de datos no tienen datos correspondientes en otra segmentación de datos, dichos elementos estarán atenuados. Por ejemplo, si tiene una segmentación de datos País y una segmentación de datos Estado, y hace clic en un país en la segmentación de datos País, todos los estados de la segmentación de datos Estado que no son de ese país estarán atenuados. Esta característica se llama "filtrado cruzado".</para>
+          <para>La configuración de la interfaz de usuario que se corresponde con la configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) son el indicar visualmente elementos sin datos y mostrar elementos sin casillas de verificación última de datos en el cuadro de diálogo de configuración de segmentación de datos. Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" /> corresponde a seleccionar ambos el indicar visualmente elementos sin datos y casillas de verificación de mostrar elementos sin datos por última vez. Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" /> corresponde a seleccionar sólo el indicar visualmente los elementos con ninguna casilla de verificación de datos. Borrar ambas casillas de verificación corresponde al valor de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />.</para>
+          <para>Las segmentaciones de datos filtrado de orígenes de datos no OLAP (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>) no son compatibles con el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto. Para segmentaciones de datos filtrado de las tablas dinámicas basadas en rangos, listas y orígenes de datos relacionales que no son OLAP, use la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> de objetos, en su lugar.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -218,7 +221,7 @@
         <summary>Obtiene el valor ordinal basado en uno del nivel de jerarquía representado por el objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</summary>
         <value>El valor ordinal basado en uno del nivel de jerarquía representado por el objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -249,7 +252,7 @@
         <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</summary>
         <value>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -280,7 +283,7 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> colección que contiene la colección de todos los elementos de segmentación de datos para el nivel especificado.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> colección que contiene la colección de todos los elementos de segmentación de datos para el nivel especificado.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -346,8 +349,8 @@
         <summary>Obtiene la lista de segmentación de datos de los elementos que se incluyen actualmente en el filtro de segmentación de datos.</summary>
         <value>La lista de elementos de segmentación de datos que se incluyen actualmente en el filtro de segmentación de datos.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>La lista de elementos de la segmentación de datos se devuelven como cadenas de nombre único MDX. Si esta lista está vacía, no es el filtrado de la segmentación de datos del origen de datos y selecciona la segmentación de datos todos los mosaicos se muestran como.</para>
+          <para>Solo lectura.</para>
+          <para>La lista de elementos de segmentación de datos se devuelve como cadenas de nombre único de MDX. Si esta lista está vacía, la segmentación de datos no está filtrando el origen de datos y todos los mosaicos de la segmentación de datos se muestran como seleccionados.</para>
           <para></para>
         </remarks>
       </Docs>

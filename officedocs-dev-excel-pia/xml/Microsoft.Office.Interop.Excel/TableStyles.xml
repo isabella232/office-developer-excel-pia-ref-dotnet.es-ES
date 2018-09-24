@@ -1,10 +1,10 @@
 <Type Name="TableStyles" FullName="Microsoft.Office.Interop.Excel.TableStyles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="03e47761cb02c3ab6b4ff2d4f2536bdbb8cc8a76" />
+    <Meta Name="ms.openlocfilehash" Value="70d5a69d0e4e826dda6e82f38beab66614060a9a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579600" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TableStyles : System.Collections.IEnumerable" />
@@ -34,8 +34,32 @@
   </Attributes>
   <Docs>
     <summary>Representa los estilos que se pueden aplicar a una tabla.</summary>
-    <remarks>Estilos de tabla de <para>proporcionan una forma de formato de toda la tabla o tabla dinámica. Estilos de tabla reemplazan la característica de formato automático existente para dar formato a una tabla completa.</para><para>Los estilos de tabla difieren de formato automático de las siguientes maneras:</para><para></para><list type="bullet"><item><description>Se pueden crear y volver a usar sus propios estilos de tabla personalizados.</description></item><item><description>Los estilos de tabla trabajan con los temas.  </description></item><item><description>Cambiar la combinación de colores o la combinación de fuentes del tema del documento se cambia la apariencia de los estilos de tabla integrados.</description></item> Estilos de tabla de 
-        <item><description>pueden volver a aplicar estilos a objetos como tablas dinámicas y tablas y los cambios en el objeto.  Las tablas recordará el estilo aplicado a ellos y volver a mostrar correctamente cuando las celdas se agrega, quita, ocultas y se muestra.</description></item><item><description>Los estilos de tabla tienen una interfaz de usuario visual en la cinta de opciones.</description></item></list><para></para><para></para></remarks>
+    <remarks>
+      <para>Los estilos de tabla proporcionan una manera de aplicar formato a una tabla o tabla dinámica completa. Los estilos de tabla reemplazan la característica de autoformato existente para aplicar formato a toda una tabla.</para>
+      <para>Los estilos de tabla se diferencian de las características de autoformato en estos aspectos:</para>
+      <para></para>
+      <list type="bullet">
+        <item>
+          <description>Puede crear y volver a usar sus propios estilos de tabla personalizados.
+</description>
+        </item>
+        <item>
+          <description>Los estilos de tabla trabajan con los temas.  </description>
+        </item>
+        <item>
+          <description>Cambiar la combinación de colores o la combinación de fuentes del tema del documento, se cambiará el aspecto de los estilos de tabla integrados. </description>
+        </item>
+        <item>
+          <description>Los estilos de tabla pueden volver a aplicar estilos a objetos como tablas dinámicas y tablas a medida que va cambiando el objeto. Las tablas conservarán el estilo que se les ha aplicado y se representarán correctamente cuando se agreguen, quiten, oculten o muestren celdas.</description>
+        </item>
+        <item>
+          <description>Estilos de tabla tienen una interfaz de usuario visual en la cinta de opciones.
+</description>
+        </item>
+      </list>
+      <para></para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -193,7 +217,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para></para>
         </remarks>
       </Docs>

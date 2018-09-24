@@ -1,10 +1,10 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="482ee10d764810f337717c2623a0421ee3669708" />
+    <Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578284" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ControlFormat" />
@@ -103,7 +103,7 @@
           <b>Objeto</b>de opcional. La posición de la nueva entrada. Si la lista tiene menos elementos que el índice especificado, se agregan elementos en blanco desde el final de la lista a la posición especificada. Si se omite este argumento, el elemento se anexa a la lista existente.</param>
         <summary>Agrega un elemento a un cuadro de lista o a un cuadro combinado.</summary>
         <remarks>
-          <para>Utilizar este método borra cualquier rango especificado por el <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> (propiedad).</para>
+          <para>Con este método borra cualquier rango especificado por el <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> (propiedad).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -162,8 +162,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownLines">
@@ -290,7 +292,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si se coloca un valor en la celda, el control toma este valor. Del mismo modo, si se cambia el valor del control, ese valor también se coloca en la celda.</para>
-          <para>No se puede utilizar esta propiedad con cuadros de lista de selección múltiple.</para>
+          <para>No es posible utilizar esta propiedad con cuadros de lista de selección múltiple.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -391,8 +393,8 @@
         <summary>Devuelve o establece el rango de hoja de cálculo que se utiliza para rellenar el cuadro de lista especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Establecer esta propiedad, destruye cualquier lista existente en el cuadro de lista.</para>
-          <para>Microsoft Excel lee el contenido de cada celda del rango y se inserta los valores de celda en el cuadro de lista. La lista realiza un seguimiento de los cambios en las celdas del rango.</para>
+          <para>Al establecer esta propiedad, destruye cualquier lista existente en el cuadro de lista.</para>
+          <para>Microsoft Excel lee el contenido de cada celda del rango y lo coloca en el cuadro de lista. Esta lista controla los cambios producidos en las celdas del rango.</para>
           <para>Si se ha creado la lista en el cuadro de lista con el <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> (método), esta propiedad devuelve una cadena vacía ("").</para>
           <para></para>
         </remarks>
@@ -558,9 +560,13 @@
         <summary>Devuelve o establece el modo de selección del cuadro de lista especificado. Puede ser una de las siguientes constantes: <b>xlNone</b>, <b>xlSimple</b>o <b>xlExtended</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Simple (<b>xlNone</b>) permite seleccionar un solo elemento a la vez que se seleccionen. Al hacer clic en el mouse o presionando la barra espaciadora se cancela la selección y se selecciona el elemento ha hecho clic en.</para> Multiselect 
-          <para>simple (<b>xlSimple</b>) cambia la selección en un elemento en la lista haga clic en él con el mouse o presione la barra espaciadora cuando el enfoque está en el elemento. Este modo es apropiado para listas en suelen ser cuales hay varios elementos seleccionados.</para> Multiselect 
-          <para>extendida (<b>xlExtended</b>) suele ser actúa como un cuadro de lista de selección única. Al hacer clic en un elemento, cancelar todas las demás selecciones. Cuando se mantiene presionada la tecla MAYÚS mientras hace clic con el mouse o al presionar una tecla de flecha, los elementos se seleccionan consecutivamente a partir del elemento seleccionado. Cuando mantenga presionada la tecla CTRL mientras hace clic en el mouse, se agregan elementos individuales a la lista. Este modo es adecuado cuando varios elementos están permitidos pero no suele utilizarse.</para><para>Se puede usar el <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> o <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> propiedad para devolver y establecer el elemento seleccionado en un cuadro de lista de selección simple.</para><para>No se puede vincular cuadros de lista de selección múltiple mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> (propiedad).</para><para></para></remarks>
+          <para>La selección simple (xlNone) sólo permite seleccionar un elemento a la vez. Al hacer clic con el mouse (ratón) o presionar la barra espaciadora se cancela la selección y se selecciona el elemento en el que se ha hecho clic.</para>
+          <para>Multiselección simple (<b>xlSimple</b>) cambia la selección en un elemento en la lista haga clic en él con el mouse o presione la barra espaciadora cuando el enfoque está en el elemento. Este modo es apropiado para listas en suelen ser cuales hay varios elementos seleccionados.</para>
+          <para>Extendido multiselect (<b>xlExtended</b>) suele ser actúa como un cuadro de lista de selección única. Al hacer clic en un elemento, cancelar todas las demás selecciones. Cuando se mantiene presionada la tecla MAYÚS mientras hace clic con el mouse o al presionar una tecla de flecha, los elementos se seleccionan consecutivamente a partir del elemento seleccionado. Cuando mantenga presionada la tecla CTRL mientras hace clic en el mouse, se agregan elementos individuales a la lista. Este modo es adecuado cuando se permite pero no suelen usar varios elementos.</para>
+          <para>Puede usar el <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> o <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> propiedad para devolver y establecer el elemento seleccionado en un cuadro de lista de selección simple.</para>
+          <para>No se puede vincular cuadros de lista de selección múltiple mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> (propiedad).</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -677,8 +683,8 @@
           <b>Objeto</b>de opcional. El número de elementos que se va a quitar, empezando por el elemento <paramref name="Index" />. Si se omite este argumento, se quita un elemento. Si <paramref name="Index" />  +  <paramref name="Count" /> excede el número de elementos de la lista, todos los elementos de <paramref name="Index" /> hasta el final de la lista se quitan sin un error.</param>
         <summary>Elimina uno o más elementos de un cuadro de lista o de un cuadro combinado.</summary>
         <remarks>
-          <para>Si el objeto especificado tiene definido un rango de datos, se produce un error en este método.</para>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> método para quitar todas las entradas de un cuadro de lista de Microsoft Excel o un cuadro combinado.</para>
+          <para>Si el objeto especificado tiene definido un rango de datos, este método devolverá un error.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> método para quitar todas las entradas de un cuadro de lista de Microsoft Excel o un cuadro combinado.</para>
           <para></para>
         </remarks>
       </Docs>

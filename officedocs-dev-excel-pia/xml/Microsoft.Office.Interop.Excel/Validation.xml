@@ -1,10 +1,10 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="083a06403ed93601b1e670cd7b0f4d2f6291f627" />
+    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575806" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Validation" />
@@ -31,8 +31,8 @@
   <Docs>
     <summary>Representa la validación de datos para un rango de hoja de cálculo.</summary>
     <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> propiedad para devolver el objeto <b>Validation</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para agregar validación de datos a un rango y crear un nuevo objeto <b>Validation</b> .</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> (propiedad) para devolver el objeto de <b>validación</b> .</para>
+      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para agregar validación de datos a un rango y crear un nuevo objeto <b>Validation</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -74,14 +74,14 @@
           <b>Objeto</b>de opcional. La segunda parte de la validación de datos cuando <paramref name="Operator" /> es <b>xlBetween</b> o <b>xlNotBetween</b> (en caso contrario, se omite este argumento).</param>
         <summary>Agrega validación de datos al rango especificado.</summary>
         <remarks>
-          <para>Agregar el método requiere diferentes argumentos, que dependen del tipo de validación, tal como se muestra en la siguiente tabla.</para>
+          <para>El método Add requiere diferentes argumentos, que dependen del tipo de validación, como se muestra en la siguiente tabla.</para>
           <list type="table">
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" /> se requiere; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una expresión que se evalúa como <b>True</b> si la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
+                <paramref name="Formula1" />es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" />debe contener una expresión que se evalúa como <b>True</b> si la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
             </item>
             <item>
               <term>
@@ -95,12 +95,12 @@
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" /> se requiere; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a esta lista.</description>
+                <paramref name="Formula1" />es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" />debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a esta lista.</description>
             </item>
             <item>
               <term>
-                <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>o <b>xlValidateTime</b></term>
-              <description>uno de uno de ellos <paramref name="Formula1" /> o <paramref name="Formula2" /> debe especificarse, o ambos se puede especificar.</description>
+                <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b> o <b>xlValidateTime</b></term>
+              <description>Una de estas <paramref name="Formula1" /> o <paramref name="Formula2" /> deben especificarse, o ambos puede especificarse.</description>
             </item>
           </list>
           <para></para>
@@ -132,7 +132,10 @@
       <Docs>
         <summary>Devuelve el estilo de alerta de validación. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</summary>
         <value>To be added.</value>
-        <remarks>Uso de <para>el <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> (método) para establecer el estilo de alerta de un rango. Si el rango ya tiene validación de datos, use la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para cambiar el estilo de alerta.</para><para></para></remarks>
+        <remarks>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> (método) para establecer el estilo de alerta de un rango. Si el rango ya tiene validación de datos, use la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para cambiar el estilo de alerta.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -188,7 +191,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -331,7 +337,10 @@
       <Docs>
         <summary>Devuelve el valor o una expresión asociada con la segunda parte de una validación de datos o formato condicional. <b>String</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>Esta propiedad es de <para>utiliza sólo al formato condicional de validación de datos <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> propiedad es <b>xlBetween</b> o <b>xlNotBetween</b>. Puede ser un valor constante, un valor de tipo string, una referencia de celda o una fórmula.</para><para></para></remarks>
+        <remarks>
+          <para>Esta propiedad se utiliza sólo al formato condicional de validación de datos <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> propiedad es <b>xlBetween</b> o <b>xlNotBetween</b>. Puede ser un valor constante, un valor de tipo string, una referencia de celda o una fórmula.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreBlank">
@@ -398,7 +407,7 @@
         <summary>Devuelve o establece la descripción de las reglas de entrada en japonés. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constantes. <b>Integer</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Tenga en cuenta que esta propiedad puede establecerse sólo cuando se ha instalado y seleccionado la compatibilidad con el idioma japonés.</para>
+          <para>Tenga en cuenta que esta propiedad sólo se puede establecer si se ha instalado y seleccionado una versión de idioma japonés.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -433,8 +442,8 @@
           <b>True</b> si la validación de datos muestra una lista desplegable que contiene valores aceptables. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se omite si el tipo de validación no es <b>xlValidateList</b>.</para>
-          <para>Usar la <paramref name="Minimum" /> argumento de la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> objeto para especificar el rango que contiene datos válidos.</para>
+          <para>Esta propiedad se pasa por alto si el tipo de validación no es <b>xlValidateList</b>.</para>
+          <para>Usar el <paramref name="Minimum" /> argumento de la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> objeto para especificar el rango que contiene datos válidos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -536,7 +545,7 @@
           <b>Objeto</b>de opcional. La segunda parte de la validación de datos cuando <paramref name="Operator" /> es <b>xlBetween</b> o <b>xlNotBetween</b> (en caso contrario, se omite este argumento).</param>
         <summary>Modifica la validación de datos para un rango.</summary>
         <remarks>
-          <para>El método <b>Modify</b> requiere diferentes argumentos, que dependen del tipo de validación, como se muestra en la siguiente tabla.</para>
+          <para>El método <b>Modify</b> requiere diferentes argumentos, que dependen del tipo de validación, como se muestra en la siguiente tabla:</para>
           <list type="table">
             <item>
               <term>
@@ -550,20 +559,20 @@
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" /> se requiere; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una expresión que se evalúa como <b>True</b> si la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
+                <paramref name="Formula1" />es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" />debe contener una expresión que se evalúa como <b>True</b> si la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" /> se requiere; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a la lista.</description>
+                <paramref name="Formula1" />es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" />debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a la lista.</description>
             </item>
             <item>
               <term>
-                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b>o <b>xlValidateWholeNumber</b></term>
+                <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b> o <b>xlValidateWholeNumber</b></term>
               <description>
-                <paramref name="Formula1" /> o <paramref name="Formula2" />, o ambos, debe especificarse.</description>
+                <paramref name="Formula1" />o <paramref name="Formula2" />, o ambos, debe especificarse.</description>
             </item>
           </list>
           <para></para>

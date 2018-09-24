@@ -1,10 +1,10 @@
 <Type Name="LinearGradient" FullName="Microsoft.Office.Interop.Excel.LinearGradient">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="250babde04104bda95819ab5ffb2aca0cc58b39e" />
+    <Meta Name="ms.openlocfilehash" Value="82c4b43f65abfbbe4c1e37be6fcbcaa9b08edec1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573818" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LinearGradient" />
@@ -35,7 +35,7 @@
         <b>Nota</b>: algunas cosas que debe considerar cuando se trabaja con <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objetos</para>
       <list type="bullet">
         <item>
-          <description>Si se intenta obtener acceso a un <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> (propiedad) de un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que no tiene un relleno degradado existente, se producirá un error en tiempo de ejecución.  Debe tener en cuenta el <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> (propiedad) antes de obtener acceso a la propiedad Gradient.</description>
+          <description>Intentar acceso una <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> (propiedad) de un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que no tiene un relleno degradado existente, se producirá un error en tiempo de ejecución.  Debe tener en cuenta el <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> (propiedad) antes de obtener acceso a la propiedad Gradient.</description>
         </item>
         <item>
           <description>Si <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> se cambia de un tipo de degradado a un tipo sin degradado, el <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto Gradient recibirá los valores predeterminados.</description>
@@ -132,7 +132,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. La propiedad Creator está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. </para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad Creator está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -168,7 +168,7 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>Utiliza valores comprendidos entre 0 - 360.</para>
+          <para>Utiliza valores comprendidos entre 0 y 360.</para>
           <para></para>
         </remarks>
       </Docs>

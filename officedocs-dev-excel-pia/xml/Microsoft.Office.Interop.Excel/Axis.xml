@@ -1,10 +1,10 @@
 <Type Name="Axis" FullName="Microsoft.Office.Interop.Excel.Axis">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ddfafcdfbef138ea093cab8dfc3008aaafe95251" />
+    <Meta Name="ms.openlocfilehash" Value="d10d4e8e1ee2a7c304ba94c879df8f19e1748061" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572936" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Axis" />
@@ -32,7 +32,7 @@
     <summary>Representa un solo eje de un gráfico.</summary>
     <remarks>
       <para>El objeto <b>Axis</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> colección.</para>
-      <para>Utilice <b>Axes</b>(<paramref name="type, group" />) donde tipo es el tipo de eje y group es el grupo de ejes para devolver un único objeto <b>Axis</b> . <paramref name="Type" /> puede ser uno de los siguientes <see cref="ff" /> constantes: <b>xlCategory</b>, <b>xlSeries</b>o <b>xlValue</b>. <paramref name="Group" /> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes: <b>xlPrimary</b> o <b>xlSecondary</b>. Para obtener más información, vea el <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> método.</para>
+      <para>Utilice <b>Axes</b>(<paramref name="type, group" />) donde tipo es el tipo de eje y group es el grupo de ejes para devolver un único objeto <b>Axis</b> . <paramref name="Type" />puede ser uno de los siguientes <see cref="ff" /> constantes: <b>xlCategory</b>, <b>xlSeries</b>o <b>xlValue</b>. <paramref name="Group" />puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> constantes: <b>xlPrimary</b> o <b>xlSecondary</b>. Para obtener más información, vea el <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> (método).</para>
       <para></para>
     </remarks>
   </Docs>
@@ -95,7 +95,7 @@
           <b>True</b> si el eje de valores cruza al eje de categorías entre categorías.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica únicamente a los ejes de categorías y no se aplica a gráficos 3D.</para>
+          <para>Esta propiedad se aplica solamente a los ejes de categorías; no se aplica a los gráficos 3D.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -126,7 +126,7 @@
         <summary>Devuelve el grupo del eje especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para gráficos 3D, es válido solo <b>xlPrimary</b> .</para>
+          <para>Para gráficos 3D, sólo es válido <b>xlPrimary</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -189,7 +189,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Al establecer esta propiedad no tiene ningún efecto visible si la <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> propiedad para el eje especificado está establecida en el <b>valor xlCategoryScale</b>. El valor establecido se conserva, sin embargo y surte efecto cuando la propiedad <b>CategoryType</b> está establecida en <b>xlTimeScale</b>.</para>
-          <para>No se puede establecer esta propiedad para un eje de valores.</para>
+          <para>Esta propiedad no se puede establecer para un eje de valores.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -224,7 +224,7 @@
           <b>True</b> si Microsoft Excel elige las unidades de base apropiadas para el eje de categorías especificado. El valor predeterminado es <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>No se puede establecer esta propiedad para un eje de valores.</para>
+          <para>Esta propiedad no se puede establecer para un eje de valores.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -287,7 +287,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Cuando se establece esta propiedad, se puede establecer a cualquiera una matriz o un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que contiene los nombres de categoría.</para>
-          <para>Esta propiedad se aplica únicamente a los ejes de categorías.</para>
+          <para>Esta propiedad se aplica solamente a los ejes de categorías.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -321,7 +321,7 @@
         <summary>Devuelve o establece el tipo del eje de categorías.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>No se puede establecer esta propiedad para un eje de valores.</para>
+          <para>Esta propiedad no se puede establecer para un eje de valores.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -352,8 +352,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Crosses">
@@ -385,36 +387,36 @@
         <summary>Devuelve o establece el punto en el eje especificado donde se cruza el otro eje.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>Crosses</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlAxisCrosses" /> constantes enumeran en la siguiente tabla.</para>
+          <para>La propiedad <b>Crosses</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlAxisCrosses" /> constantes enumeran en la tabla siguiente.</para>
           <list type="table">
             <item>
               <term>
                 <b>xlAxisCrossesAutomatic</b>
               </term>
-              <description>Microsoft Excel establece el punto de intersección.</description>
+              <description>Microsoft Excel establece el punto de cruce con el eje.</description>
             </item>
             <item>
               <term>
                 <b>xlMinimum</b>
               </term>
-              <description>el eje se cruza en el valor mínimo.</description>
+              <description>El eje se cruza en el valor mínimo.</description>
             </item>
             <item>
               <term>
                 <b>xlMaximum</b>
               </term>
-              <description>el eje se cruza en el valor máximo.</description>
+              <description>El eje se cruza en el valor máximo.</description>
             </item>
             <item>
               <term>
                 <b>xlAxisCrossesCustom</b>
               </term>
-              <description>el <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> propiedad especifica el punto de intersección.</description>
+              <description>El <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> propiedad especifica el punto de intersección del eje.</description>
             </item>
           </list>
-          <para>Esta propiedad no está disponible para gráficos radiales. Para gráficos 3D, esta propiedad sólo se puede aplicar al eje de valores y se indica que el plano definido por el eje de categorías cruza el eje de valores.</para>
-          <para>Esta propiedad se puede usar para los ejes de categorías y valores. <b>En el eje de categorías, xlMinimum hace que el eje de valores cruce en la primera categoría</b> , y <b>xlMaximum hace que el eje de valores cruce en la última categoría</b> .</para>
-          <para>Tenga en cuenta que <b>xlMinimum</b> y <b>xlMaximum</b> pueden tener diferentes significados, dependiendo del eje.</para>
+          <para>Esta propiedad no está disponible para los gráficos radiales. Para gráficos 3D, esta propiedad sólo se puede aplicar al eje de valores e indica el lugar en el que el plano definido por el eje de categorías cruza el eje de valores.</para>
+          <para>Esta propiedad puede emplearse para los ejes de categorías y para los de valores. En el eje de categorías, <b>xlMinimum</b> hace que el eje de valores se cruce en la primera categoría y <b>xlMaximum</b> hace que el eje de valores se cruce en la última categoría.</para>
+          <para>Tenga en cuenta que <b>xlMinimum</b> y <b>xlMaximum</b> pueden tener diferentes significados, dependiendo del eje al que se refieran.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -449,7 +451,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si se establece esta propiedad, el <see cref="P:Microsoft.Office.Interop.Excel.Axis.Crosses" /> (propiedad) cambiará a <b>xlAxisCrossesCustom</b>.</para>
-          <para>No se puede usar esta propiedad para gráficos radiales. Para gráficos 3D, esta propiedad indica que el plano definido por el eje de categorías cruza el eje de valores.</para>
+          <para>Esta propiedad no está disponible para gráficos radiales. Para gráficos 3D, esta propiedad indica el lugar en el que el plano definido por el eje de categorías cruza el eje de valores.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -509,9 +511,9 @@
         <summary>Devuelve o establece el rótulo de unidades del eje de valores.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso de etiquetas de unidad cuando para representar valores grandes facilita las graduación rótulos de marcas de más fácil de leer. Por ejemplo, si etiqueta el eje de valores en unidades de cientos, miles o millones, puede usar valores numéricos más pequeños en las marcas de graduación en el eje.</para>
+          <para>La utilización de rótulos de unidades cuando se representan valores grandes facilita la lectura de las marcas de graduación. Por ejemplo, si se especifican unidades de centenas, millares o millones para el eje de valores, se pueden utilizar valores numéricos más pequeños en las marcas de graduación del eje.</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" /> puede ser una de estas constantes <b>XlDisplayUnit</b> :</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" />puede ser una de estas constantes <b>XlDisplayUnit</b> :</para>
           <para>
             <b>xlHundredMillions</b>
           </para>
@@ -539,7 +541,7 @@
           <para>
             <b>xlThousandMillions</b>
           </para>
-          <para>El rótulo de unidades también puede ser una de las siguientes constantes:</para>
+          <para>El rótulo de unidades también puede ser una de las constantes siguientes:</para>
           <para>
             <b>xlCustom</b>
           </para>
@@ -578,7 +580,10 @@
       <Docs>
         <summary>Si el valor de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> propiedad es <b>xlCustom</b>, la propiedad <b>DisplayUnitCustom</b> Devuelve o establece el valor de las unidades mostradas. El valor debe ser entre 0 y 10E307.</summary>
         <value>To be added.</value>
-        <remarks>Etiquetas de unidades de uso <para>cuando para representar valores grandes facilita su graduación rótulos de marcas de más fácil de leer. Por ejemplo, si etiqueta el eje de valores en unidades de cientos, miles o millones, puede usar valores numéricos más pequeños en las marcas de graduación en el eje.</para><para></para></remarks>
+        <remarks>
+          <para>La utilización de rótulos de unidades cuando se representan valores grandes facilita la lectura de las marcas de graduación. Por ejemplo, si se especifican unidades de centenas, millares o millones para el eje de valores, se pueden utilizar valores numéricos más pequeños en las marcas de graduación del eje.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayUnitLabel">
@@ -858,7 +863,7 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>Intentando establecer esta propiedad en un valor menor o igual que cero (0), producirá un error. El valor predeterminado es 10.</para>
+          <para>Al intentar establecer esta propiedad en un valor menor o igual que cero (0), se produce un error. El valor predeterminado es 10.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1003,7 +1008,7 @@
           <b>True</b> si Microsoft Excel calcula las unidades principales del eje de valores.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Establecer el <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
+          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1116,7 +1121,7 @@
           <b>True</b> si Microsoft Excel calcula el valor máximo para el eje de valores.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Establecer el <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
+          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1185,7 +1190,7 @@
           <b>True</b> si Microsoft Excel calcula el valor mínimo para el eje de valores.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Establecer el <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
+          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1330,7 +1335,7 @@
           <b>True</b> si Microsoft Excel calcula las unidades secundarias del eje de valores.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Establecer el <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
+          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1437,7 +1442,7 @@
           <b>True</b> si Microsoft Excel traza los datos puntos desde el último al primero.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>No se puede usar esta propiedad para gráficos radiales.</para>
+          <para>Esta propiedad no está disponible para gráficos radiales.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1507,7 +1512,7 @@
         <summary>Selecciona el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> método.</para>
+          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1555,7 +1560,7 @@
           <para>
             <b>xlTickLabelPositionNextToAxis</b>
           </para>
-          <para>no se puede usar el <b> xlTickLabelPositionHigh</b> constante en los gráficos 3D.</para>
+          <para>La constante <b>xlTickLabelPositionHigh</b> no se puede utilizar en gráficos 3D.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1653,7 +1658,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>El <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> (propiedad) devuelve el espaciado de rótulos de graduación actual, si la configuración es automática o no.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> (propiedad) devuelve el espaciado de rótulos de graduación actual, si puede o no la configuración automática.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1687,7 +1692,7 @@
         <summary>Devuelve o establece el número de categorías o series entre las marcas de graduación. Se aplica sólo a los ejes de categorías y series.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> y <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> para establecer las propiedades de marcas de graduación en el eje de valores.</para>
+          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> y <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> para establecer las propiedades de marcas de graduación en el eje de valores.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1760,7 +1765,7 @@
           <para>
             <b>xlValue</b>
           </para>
-          <para>cuando se usa esta propiedad para el eje horizontal de gráficos de dispersión, se devuelve <b>xlCategory</b> como tipo de eje.</para>
+          <para>Cuando se usa esta propiedad para el eje horizontal de gráficos de dispersión, se devuelve <b>xlCategory</b> como tipo de eje.</para>
           <para></para>
         </remarks>
       </Docs>

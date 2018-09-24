@@ -1,10 +1,10 @@
 <Type Name="Areas" FullName="Microsoft.Office.Interop.Excel.Areas">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7cdbce4233c98945faa9b4ad7a5d8d53b5756c20" />
+    <Meta Name="ms.openlocfilehash" Value="3d66092e7ce8a02412645f2fcf1c40d1d7d63d9e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584360" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
@@ -36,8 +36,11 @@
     <summary>Colección de áreas, o bloques de celdas contiguas, de una selección.</summary>
     <remarks>
       <para>No hay ningún objeto <b>Area</b> singular; los miembros individuales de la colección de <b>áreas</b> son <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objetos. La colección <b>Areas</b> contiene un objeto <b>Range</b> por cada rango discreto y contiguo de celdas dentro de la selección. Si la selección contiene sólo un área, la colección <b>Areas</b> contiene un único objeto <b>Range</b> que corresponderá a esa selección.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> propiedad para devolver la colección <b>Areas</b> .</para> Usar <b>áreas</b>de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del área, para devolver un único objeto <b>Range</b> de la colección. Los números de índice se corresponden con el orden en que se han seleccionado las áreas.</para><para>Algunas operaciones no pueden realizarse en más de un área de una selección al mismo tiempo; debe ejecutar un bucle en las áreas individuales de la selección y realizar las operaciones en cada área por separado.</para><para></para></remarks>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> (propiedad) para devolver la colección de <b>áreas</b> .</para>
+      <para>Usar <b>áreas</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del área, para devolver un único objeto <b>Range</b> de la colección. Los números de índice se corresponden con el orden en que se han seleccionado las áreas.</para>
+      <para>Algunas operaciones no pueden realizarse en más de un área de una selección al mismo tiempo; debe ejecutar un bucle en las áreas individuales de la selección y realizar las operaciones en cada área por separado.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -157,8 +160,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

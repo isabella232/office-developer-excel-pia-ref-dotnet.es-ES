@@ -1,10 +1,10 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Excel.Series">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3bf5d873dc8f258078c4b08af2de06bdc1a91315" />
+    <Meta Name="ms.openlocfilehash" Value="3a8cc36d1324ac7595cb7a40f82c526876f56ea7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574833" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Series" />
@@ -309,7 +309,7 @@
         <summary>Devuelve el grupo de la serie o grupo de gráficos especificado. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para gráficos 3D, es válido solo <b>xlPrimary</b> .</para>
+          <para>Para gráficos 3D, sólo es válido <b>xlPrimary</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -439,7 +439,7 @@
         <summary>Devuelve o establece el tipo de gráfico. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Algunos tipos de gráficos no están disponibles para informes de gráfico dinámico.</para>
+          <para>Algunos tipos de gráficos no se pueden utilizar en informes de gráfico dinámico.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -521,7 +521,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabels">
@@ -551,8 +554,8 @@
         <summary>Devuelve un objeto object que representa un único rótulo de datos (un <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objeto) o una colección de todos los rótulos de datos para la serie (un <see cref="T:Microsoft.Office.Interop.Excel.DataLabels" /> colección).</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si la serie tiene la opción de <b>Mostrar valor</b> activada para los rótulos de datos, la colección devuelta puede contener hasta un rótulo por cada punto. Las etiquetas de datos pueden ser activadas o desactivado para puntos individuales de la serie.</para>
-          <para>Si la serie está en un gráfico de áreas y tiene activada la opción <b>Mostrar rótulo</b> para los rótulos de datos, la colección devuelta contiene sólo un rótulo, que es la etiqueta de la serie de área.</para>
+          <para>Si la serie tiene activada la opción <b>Mostrar valor</b> para las etiquetas de datos, la colección que se devuelve puede contener hasta una etiqueta por cada punto. Las etiquetas de datos pueden activarse o desactivarse para puntos individuales de la serie.</para>
+          <para>Si la serie está en un gráfico de áreas y tiene activada la opción <b>Mostrar etiqueta</b> para las etiquetas de datos, la colección que devuelve contiene solo una etiqueta, que corresponde a la serie de área.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -581,7 +584,7 @@
         <summary>Elimina el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Al eliminar un objeto <b>Point</b> o <b>LegendKey</b> elimina toda la serie.</para>
+          <para>Si elimina un objeto <b>Point</b> o <b>LegendKey</b> eliminará toda la serie.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -774,10 +777,10 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para>Si la celda contiene una constante, esta propiedad devuelve la constante. Si la celda está vacía, esta propiedad <b>Formula</b> devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devuelve la fórmula como una cadena en el mismo formato que se mostrará en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, Microsoft Excel cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de Visual Basic de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz de Visual Basic.</para>
-          <para>Establecer la fórmula para un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad <b>Formula</b> la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corta predeterminado.</para>
+          <para>Si el rango tiene una o dos dimensiones, se puede definir la fórmula conforme a una matriz de Visual Basic de las mismas dimensiones. Asimismo, es posible escribir la fórmula en una matriz de Visual Basic.</para>
+          <para>Si se define la fórmula para un rango de varias celdas, se rellenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -811,10 +814,10 @@
         <summary>Devuelve o establece la fórmula del objeto mediante referencias de estilo A1 en el idioma del usuario. <b>Cadena</b> de lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la celda contiene una constante, esta propiedad devuelve esa constante. Si la celda está vacía, la propiedad devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad devuelve la fórmula como una cadena, en el mismo formato en el que se mostraría en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, se cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de Visual Basic de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz de Visual Basic.</para>
-          <para>Si define la fórmula de un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corto predeterminado.</para>
+          <para>Si el rango tiene una o dos dimensiones, se puede definir la fórmula conforme a una matriz de Visual Basic de las mismas dimensiones. Asimismo, es posible escribir la fórmula en una matriz de Visual Basic.</para>
+          <para>Si se define la fórmula de un rango de varias celdas, se llenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -848,10 +851,10 @@
         <summary>Devuelve o establece la fórmula para el objeto mediante la notación de estilo F1C1. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la celda contiene una constante, esta propiedad devuelve la constante. Si la celda está vacía, la propiedad devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad devuelve la fórmula como una cadena, en el mismo formato en el que se mostraría en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, se cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de Visual Basic de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz de Visual Basic.</para>
-          <para>Si define la fórmula de un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corto predeterminado.</para>
+          <para>Si el rango tiene una o dos dimensiones, se puede definir la fórmula conforme a una matriz de Visual Basic de las mismas dimensiones. Asimismo, es posible escribir la fórmula en una matriz de Visual Basic.</para>
+          <para>Si se define la fórmula de un rango de varias celdas, se llenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -885,10 +888,10 @@
         <summary>Devuelve o establece la fórmula para el objeto, mediante la notación de estilo F1C1 en el idioma del usuario. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la celda contiene una constante, esta propiedad devuelve esa constante. Si la celda está vacía, la propiedad devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad devuelve la fórmula como una cadena, en el mismo formato en el que se mostraría en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, se cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de Visual Basic de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz de Visual Basic.</para>
-          <para>Si define la fórmula de un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corto predeterminado.</para>
+          <para>Si el rango tiene una o dos dimensiones, se puede definir la fórmula conforme a una matriz de Visual Basic de las mismas dimensiones. Asimismo, es posible escribir la fórmula en una matriz de Visual Basic.</para>
+          <para>Si se define la fórmula de un rango de varias celdas, se llenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1184,7 +1187,7 @@
         <summary>Esta configuración controla si la serie se ha filtrado del gráfico. El valor predeterminado es <b>False</b>. <b>Boolean</b> (<b>bool</b> en C#) Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cuando un usuario filtra una serie, la serie de modificadores de la propiedad <b>IsFiltered</b> en <b>True</b>y la serie se transfiere fuera de su elemento primario <b>SeriesCollection</b>. Sin embargo, esa serie sigue aún en su elemento primario <b>FullSeriesCollection</b>. Al realizar una copia de la serie en un filtros del usuario, se inserta en su lugar original en el <b>SeriesCollection</b>.</para>
+          <para>Cuando un usuario se filtra una serie, pasa a la serie propiedad <b>IsFiltered</b> en <b>True</b>y la serie se transfiere fuera de su elemento primario <b>SeriesCollection</b>. Sin embargo, esa serie sigue aún en su elemento primario <b>FullSeriesCollection</b>. Al realizar una copia de la serie en un filtros del usuario, se inserta en su lugar original en el <b>SeriesCollection</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1432,33 +1435,53 @@
         <summary>Devuelve o establece el nombre del objeto. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La siguiente tabla muestran valores de ejemplo de la propiedad <b>Name</b> y las propiedades relacionadas dados un origen de datos OLAP con el nombre único "[Europe]. [France]. [Paris] "y el nombre de un origen de datos no OLAP con el elemento"Paris".</para>
+          <para>En la siguiente tabla se muestran valores de ejemplo de la propiedad <b>Name</b> y otras propiedades relacionadas partiendo de un origen de datos OLAP con el nombre exclusivo "[Europe].[France].[Paris]" y un origen de datos no OLAP con el nombre de elemento "Paris".</para>
           <list type="table">
             <item>
               <term>
                 <b>Título</b>
               </term>
-              <description>París</description>
-              <description>París</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>nombre</b>
+                <b>Nombre</b>
               </term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>París</description>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>(Igual que el valor de la propiedad SQL, sólo lectura)</description>
-            </item> El 
-              <term><b>valor</b></term>de 
-            <item><description>[Europe]. [ Francia]. [Paris] (solo lectura)</description><description>París</description></item></list>
-          <para>Cuando se especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para> expresión de 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>expresión. PivotItems("Paris")</description></item></list><para>cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para><list type="table"><item><term>[Europe]. [ Francia]. [Paris]</term><description>París</description></item></list><para></para></remarks>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>(igual que el valor de la propiedad SQL, sólo lectura)</description>
+            </item>
+            <item>
+              <term>
+                <b>Valor</b>
+              </term>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para>Cuando especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>expresión. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term>
+              <description>expresión. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1642,8 +1665,8 @@
         <summary>Obtiene un valor de índice que se usa internamente para asociar el formato de una serie con los elementos del gráfico.</summary>
         <value>Un valor de índice que se usa internamente para asociar el formato de una serie con los elementos del gráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>Esta propiedad se usa internamente en Excel y no está pensada para ser llamada desde el código.</para>
+          <para>Solo lectura.</para>
+          <para>Esta propiedad la usa internamente Excel y no está pensada para ser llamada desde el código.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1677,8 +1700,8 @@
         <summary>Devuelve o establece el orden de trazado de la serie seleccionada en el grupo de gráficos. <b>Integer</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se puede establecer el orden de trazado sólo dentro de un grupo de gráficos (no se puede establecer el orden de trazado para todo el gráfico si tiene más de un tipo de gráfico). Un grupo de gráficos es una colección de series con el mismo tipo de gráfico.</para>
-          <para>Cambiar el orden de trazado de una serie de hará que el orden de trazado de las demás series del grupo de gráficos que se puede ajustar según sea necesario.</para>
+          <para>El orden de trazado solo puede establecerse dentro de un grupo de gráficos (no es posible establecerlo para todo el gráfico si hay varios tipos de gráficos). Un grupo de gráficos es una colección de series que tienen el mismo tipo de gráfico.</para>
+          <para>Cambiar el orden de trazado de una serie, hará que el orden de trazado de las demás series en el grupo de gráficos se ajustan según sea necesario.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1736,7 +1759,7 @@
         <summary>Selecciona el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> método.</para>
+          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1893,7 +1916,7 @@
         <summary>Devuelve o establece una colección de todos los valores de la serie. Esto puede ser un rango de una hoja de cálculo o una matriz de valores de constante, pero no una combinación de ambos. Lectura/Escritura <b>Objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Informes para gráfico dinámico, esta propiedad es de sólo lectura.</para>
+          <para>Para los informes de gráfico dinámico, esta propiedad es de solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1927,7 +1950,7 @@
         <summary>Devuelve o establece una matriz de valores para una serie de gráficos de x. Se puede establecer la propiedad <b>XValues</b> en un rango de una hoja de cálculo o en una matriz de valores, pero no puede ser una combinación de ambos. Lectura/Escritura <b>Objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Informes de gráfico dinámico de para esta propiedad es de sólo lectura.</para>
+          <para>Informes de gráfico dinámico esta propiedad es de sólo lectura.</para>
           <para></para>
         </remarks>
       </Docs>

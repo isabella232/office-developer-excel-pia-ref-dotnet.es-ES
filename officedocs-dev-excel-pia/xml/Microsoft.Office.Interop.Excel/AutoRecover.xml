@@ -1,10 +1,10 @@
 <Type Name="AutoRecover" FullName="Microsoft.Office.Interop.Excel.AutoRecover">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b126d37a57a924ef96cf203d46d8043619a844cf" />
+    <Meta Name="ms.openlocfilehash" Value="cd09f7ea28f0544739412fc8f1a64ac1370cadc1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576751" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AutoRecover" />
@@ -31,11 +31,11 @@
   <Docs>
     <summary>Representa las funciones de recuperación automática de un libro.</summary>
     <remarks>
-      <para>Las propiedades del objeto AutoRecover determinan el intervalo de ruta de acceso y la hora para la copia de seguridad de todos los archivos.</para>
+      <para>Las propiedades del objeto AutoRecover determinan la ruta y el intervalo de tiempo para la realización de una copia de seguridad de todos los archivos.</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto para devolver un objeto <b>AutoRecover</b> .</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" /> (propiedad) del objeto <b>AutoRecover</b> para establecer la ruta de acceso donde se guardará el archivo AutoRecover.</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" /> (propiedad) del objeto <b>AutoRecover</b> para establecer el intervalo de tiempo para la copia de seguridad de todos los archivos.</para>
-      <para>Unidades de nota de la propiedad <b>Time</b> están en minutos.</para>
+      <para>Tenga en cuenta las unidades de la propiedad <b>Time</b> están en minutos.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -94,8 +94,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -219,7 +221,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Los valores permitidos están comprendidos entre 1 y 120 minutos. El valor predeterminado es 10 minutos.</para>
-          <para>Al introducir un valor decimal se redondeará hasta el número entero más próximo. Por ejemplo, al escribir un valor de 5.5 es el equivalente de 6.</para>
+          <para>Si escribe un valor decimal se redondeará hasta el número entero más próximo. Por ejemplo, si escribe 5,5 equivale a 6.</para>
           <para>Si se escriben valores fuera del intervalo válido, Microsoft Excel recuperará el valor de tiempo utilizado.</para>
           <para></para>
         </remarks>

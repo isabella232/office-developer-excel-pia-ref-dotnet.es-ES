@@ -1,10 +1,10 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8c49a6753e6ec53845aee64eafc52c6fc09004d7" />
+    <Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577773" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Window" />
@@ -32,9 +32,9 @@
     <summary>Representa una ventana. Muchas de las características de hoja de cálculo, como las barras de desplazamiento y las líneas de división, en realidad son propiedades de la ventana.</summary>
     <remarks>
       <para>El objeto <b>Window</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> colección. La colección <b>Windows</b> devuelta por la <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto contiene todas las ventanas de la aplicación, mientras que la colección <b>Windows</b> devuelto por la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto únicamente contiene las ventanas en el libro especificado.</para>
-      <para>Usar <b>Windows</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la ventana o el número de índice, para devolver un único objeto <b>Window</b> .</para>
-      <para>Tenga en cuenta que la ventana activa siempre es Windows (1).</para>
-      <para>El título de la ventana es el texto que se muestra en la barra de título en la parte superior de la ventana cuando la ventana no está maximizada. El título también se muestra en la lista de archivos abiertos en la parte inferior del menú Ventana. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> (propiedad) para establecer o devolver el título de la ventana. Cambiar el título de la ventana no cambia el nombre del libro.</para>
+      <para>Use <b>Windows</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la ventana o el número de índice, para devolver un único objeto <b>Window</b> .</para>
+      <para>Tenga en cuenta que la ventana activa siempre es Windows(1).</para>
+      <para>El título de la ventana es el texto que se muestra en la barra de título en la parte superior de la ventana cuando la ventana no está maximizada. El título también se muestra en la lista de archivos abiertos en la parte inferior del menú ventana. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> (propiedad) para establecer o devolver el título de la ventana. Cambiar el título de la ventana no cambia el nombre del libro.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -144,7 +144,10 @@
       <Docs>
         <summary>Sitúa la ventana en el primer plano del orden z.</summary>
         <returns>To be added.</returns>
-        <remarks>Método <para>la <b>Activar</b> no ejecuta ninguna macro Auto_activar o Auto_desactivar que esté adjunta al libro. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> (método) para ejecutar macros.</para><para></para></remarks>
+        <remarks>
+          <para>El método <b>Activate</b> no ejecuta ninguna macro Auto_activar o Auto_desactivar que esté adjunta al libro. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> (método) para ejecutar macros.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivateNext">
@@ -225,8 +228,8 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda activa en la ventana activa (la ventana superior) o en la ventana especificada. Si la ventana no contiene una hoja de cálculo, esta propiedad genera un error.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si no se especifica un calificador de objeto, esta propiedad devuelve la celda activa en la ventana activa.</para>
-          <para>Tener cuidado distinguir entre la celda activa y la selección. La celda activa es una sola celda dentro de la selección actual. La selección puede contener más de una celda, pero sólo una es la celda activa.</para>
+          <para>Si no se especifica un calificador de objeto, esta propiedad devuelve la celda activa de la ventana activa.</para>
+          <para>Celda activa no es lo mismo que selección. La celda activa es una sola celda de la selección actual. La selección puede contener más de una celda, pero sólo una es la celda activa.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -257,7 +260,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object que representa el gráfico activo (un gráfico incrustado o una hoja de gráfico). Un gráfico incrustado se considera activo cuando está seleccionado o activado. Cuando no hay ningún gráfico está activo, esta propiedad devuelve <b>Nothing</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si no se especifica un calificador de objeto, esta propiedad devuelve el gráfico activo del libro activo.</para>
+          <para>Si no se especifica un calificador de objeto, la propiedad devuelve el gráfico activo del libro activo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -288,7 +291,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> object que representa el panel activo en la ventana.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se puede usar únicamente en hojas de cálculo y hojas de macros.</para>
+          <para>Esta propiedad sólo puede usarse en hojas de cálculo y de macros.</para>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> (propiedad) para obtener el índice de la sección activa.</para>
           <para></para>
         </remarks>
@@ -322,8 +325,8 @@
           <b>Object</b>
         </value>
         <remarks>
-          <para>Si no se especifica un calificador de objeto, esta propiedad devuelve la hoja activa del libro activo.</para>
-          <para>Si un libro aparece en más de una ventana, la propiedad <b>ActiveSheet</b> puede ser diferente en ventanas diferentes.</para>
+          <para>Si no se especifica un calificador de objeto, la propiedad devuelve la hoja activa del libro activo.</para>
+          <para>Si un libro aparece en más de una ventana, es posible que la propiedad <b>ActiveSheet</b> tenga un valor diferente en cada ventana.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -481,7 +484,10 @@
           <b>Objeto</b>de opcional. Si el libro no necesita redirigirse al siguiente destinatario (si no tiene ninguna lista de distribución o ya se ha distribuido), se omite este argumento. De lo contrario, Microsoft Excel distribuye el libro como se muestra en la siguiente tabla. ValueMeaning<b>True</b>envía el libro al siguiente destinatario. <b>False</b> No envía el libro. OmittedDisplays un cuadro de diálogo que pregunta al usuario si se debe enviar el libro.</param>
         <summary>Cierra el objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>Método <para><b>Close</b> no ejecuta ninguna macro Auto_Close en el libro. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> (método) para ejecutar las automático cerrar macros.</para><para></para></remarks>
+        <remarks>
+          <para>El método <b>Close</b> no ejecuta ninguna macro Auto_Close en el libro. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> (método) para ejecutar las automático cerrar las macros.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -510,8 +516,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -544,7 +552,7 @@
           <b>True</b> si la ventana es mostrar fórmulas; <b>False</b> si la ventana muestra los valores.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica solamente a hojas de cálculo y hojas de macros.</para>
+          <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -579,8 +587,8 @@
           <b>True</b> si se muestran las líneas de cuadrícula.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica solamente a hojas de cálculo y hojas de macros.</para>
-          <para>Esta propiedad afecta sólo muestra las líneas de cuadrícula. Usar el <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> (propiedad) para controlar la impresión de líneas de división.</para>
+          <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
+          <para>Esta propiedad afecta sólo muestra las líneas de cuadrícula. Usar el <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> (propiedad) para controlar la impresión de líneas de cuadrícula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -615,7 +623,7 @@
           <b>True</b> si se muestran los encabezados de fila y columna; <b>False</b> si no se mostrará ningún encabezado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica solamente a hojas de cálculo y hojas de macros.</para>
+          <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
           <para>Esta propiedad afecta únicamente a los encabezados visibles. Usar el <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> (propiedad) para controlar la impresión de los encabezados.</para>
           <para></para>
         </remarks>
@@ -683,7 +691,7 @@
           <b>True</b> si se muestran los símbolos de esquema.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica solamente a hojas de cálculo y hojas de macros.</para>
+          <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -882,7 +890,7 @@
           <b>True</b> si se muestran los valores cero.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica solamente a hojas de cálculo y hojas de macros.</para>
+          <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -950,7 +958,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Es posible que <b>FreezePanes </b>sea <b>True</b> y <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> sea <b>False</b>, o viceversa.</para>
-          <para>Esta propiedad se aplica solamente a hojas de cálculo y hojas de macros.</para>
+          <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1015,7 +1023,7 @@
         <summary>Devuelve o establece el color de las líneas de división como un índice para la paleta de colores actual o como un <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constante.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Establecer esta propiedad como <b>xlColorIndexAutomatic</b> para especificar el color automático.</para>
+          <para>Establezca esta propiedad como <b>xlColorIndexAutomatic</b> para especificar el color automático.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1048,7 +1056,10 @@
       <Docs>
         <summary>El alto de la ventana, en puntos.</summary>
         <value>To be added.</value>
-        <remarks>Uso de <para>el <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> (propiedad) para determinar el tamaño máximo de la ventana. No se puede establecer esta propiedad si la ventana está maximizada o minimizada. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> (propiedad) para determinar el estado de la ventana.</para><para></para></remarks>
+        <remarks>
+          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> (propiedad) para determinar el tamaño máximo de la ventana. No puede establecer esta propiedad si la ventana está maximizada o minimizada. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> (propiedad) para determinar el estado de la ventana.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hwnd">
@@ -1236,8 +1247,8 @@
         <summary>Devuelve o establece el nombre del procedimiento que se ejecuta cuando se activa una ventana.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El procedimiento especificado por esta propiedad no se ejecuta cuando otros procedimientos cambian a la ventana o cuando se recibe un comando para cambiar a una ventana a través de un canal DDE. En su lugar, el procedimiento responde a las acciones del usuario, como hacer clic en una ventana con el mouse, hacer clic en Ir a en el menú Editar y así sucesivamente.</para>
-          <para>Si una hoja de cálculo u hoja de macro tiene definida una macro Auto_activar o Auto_desactivar, las macros se ejecutarán después del procedimiento especificado por la propiedad <b>OnWindow</b> .</para>
+          <para>El procedimiento especificado por esta propiedad no se ejecuta cuando otros procedimientos cambian a la ventana o cuando se recibe un comando para cambiar a una ventana a través de un canal DDE. En su lugar, el procedimiento responde a las acciones del usuario, como hacer clic en una ventana con el mouse, hacer clic en Ir a en el menú Edición y así sucesivamente.</para>
+          <para>Si una hoja de cálculo o una hoja de macros tiene definida una macro Auto_activar o Auto_desactivar, éstas se ejecutarán después del procedimiento especificado por la propiedad <b>OnWindow</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1501,9 +1512,9 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa las celdas seleccionadas en la hoja de cálculo en la ventana especificada aunque un objeto gráfico esté activo o seleccionado en la hoja de cálculo.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cuando se selecciona un objeto gráfico en una hoja de cálculo, el <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> propiedad devuelve el objeto gráfico en lugar de un objeto <b>Range</b> ; la propiedad <b>RangeSelection</b> devuelve el rango de celdas que se ha seleccionado antes de que se ha seleccionado el objeto graphic.</para>
+          <para>Cuando se selecciona un objeto gráfico en una hoja de cálculo, el <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> propiedad devuelve el objeto gráfico en lugar de un objeto <b>Range</b> ; la propiedad <b>RangeSelection</b> devuelve el rango de celdas que se ha seleccionado antes de que se ha seleccionado el objeto gráfico.</para>
           <para>Esta propiedad y la propiedad <b>Selection</b> devuelven valores idénticos cuando se selecciona un rango (no un objeto gráfico) en la hoja de cálculo.</para>
-          <para>Si la hoja activa en la ventana especificada no es una hoja de cálculo, esta propiedad se produce un error.</para>
+          <para>Si la hoja activa de la ventana especificada no es una hoja de cálculo, esta propiedad devolverá un error.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1580,7 +1591,7 @@
           <b>Integer</b> opcional. <b>True</b> para que la esquina superior izquierda del rectángulo aparecen en la esquina superior izquierda de la ventana de documento o el panel. <b>False</b> para que la esquina inferior derecha del rectángulo aparezca en la esquina inferior derecha de la ventana de documento o el panel. El valor predeterminado es <b>True</b>.</param>
         <summary>Desplaza la ventana del documento para que se muestra el contenido de un área rectangular especificada en la esquina superior izquierda o inferior derecha de la ventana de documento o el panel.</summary>
         <remarks>
-          <para>La <paramref name="Start" /> argumento es útil para orientar la presentación de la pantalla cuando el rectángulo es más grande que la ventana de documento o panel.</para>
+          <para>El <paramref name="Start" /> argumento es útil para orientar la presentación de la pantalla cuando el rectángulo es más grande que la ventana de documento o panel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1818,7 +1829,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Es posible que <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> como <b>True</b> y <b>Split</b> sea <b>False</b>, o viceversa.</para>
-          <para>Esta propiedad se aplica solamente a hojas de cálculo y hojas de macros.</para>
+          <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2217,7 +2228,10 @@
       <Docs>
         <summary>El ancho en puntos de la ventana.</summary>
         <value>To be added.</value>
-        <remarks>Uso de <para>el <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> (propiedad) para determinar el tamaño máximo de la ventana. No se puede establecer esta propiedad si la ventana está maximizada o minimizada. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> (propiedad) para determinar el estado de la ventana.</para><para></para></remarks>
+        <remarks>
+          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> (propiedad) para determinar el tamaño máximo de la ventana. No puede establecer esta propiedad si la ventana está maximizada o minimizada. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> (propiedad) para determinar el estado de la ventana.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowNumber">
@@ -2311,8 +2325,8 @@
         <summary>Devuelve o establece el tamaño de pantalla de la ventana como un porcentaje (100 equivale al tamaño normal, 200 equivale al doble etc.).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>También puede establecer esta propiedad en <b>True</b> para ajustar el tamaño de la ventana de la selección actual.</para>
-          <para>Esta función afecta sólo la hoja que está actualmente activa en la ventana. Para usar esta propiedad en otras hojas, se debe activar primero.</para>
+          <para>También se puede configurar la propiedad como <b>True</b> para ajustar el tamaño de la ventana al tamaño de la selección actual.</para>
+          <para>Esta función sólo afecta a la hoja que esté activa en la ventana. Para usar esta propiedad en otras hojas, primero debe activarlas.</para>
           <para></para>
         </remarks>
       </Docs>

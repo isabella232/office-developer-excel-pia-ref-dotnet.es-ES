@@ -1,10 +1,10 @@
 <Type Name="OLEDBConnection" FullName="Microsoft.Office.Interop.Excel.OLEDBConnection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d431cc838470af4561eda6bfd83aba4ed9d2b249" />
+    <Meta Name="ms.openlocfilehash" Value="907e0e2b7ef356c71a4d22a04803c5aeb256084d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576212" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEDBConnection" />
@@ -32,7 +32,7 @@
     <summary>Representa la conexión OLE DB.</summary>
     <remarks>
       <para>Una conexión OLE DB puede almacenarse en un libro de Excel.  Cuando Microsoft Excel abre el libro, Excel crea una copia en memoria de la conexión OLE DB conocida como el <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objeto.</para>
-      <para>Una <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objeto contiene información relacionada con la conexión, como el nombre del servidor para conectarse a y el nombre de los objetos que se abrirá en ese servidor.  De forma opcional, el <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objeto también puede incluir información de credenciales de autenticación o un comando que se pasan al servidor y ejecutarlo (por ejemplo, una instrucción SELECT que deba ejecutar SQL Server).</para>
+      <para>Un <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objeto contiene información relacionada con la conexión, como el nombre del servidor para conectarse a y el nombre de los objetos que se abrirá en ese servidor.  De forma opcional, el <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objeto también puede incluir información de credenciales de autenticación o un comando que se pasan al servidor y ejecutarlo (por ejemplo, una instrucción SELECT que deba ejecutar SQL Server).</para>
       <para></para>
     </remarks>
   </Docs>
@@ -68,7 +68,9 @@
         </value>
         <remarks>
           <para>El <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> propiedad expone la conexión de Microsoft Excel con el proveedor de datos, lo que permite al usuario escribir código en el contexto de la misma sesión que Excel está utilizando. </para>
-          <para>El <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> propiedad está disponible únicamente para las sesiones donde el origen de datos es un origen de datos OLE DB. Cuando no hay ninguna sesión ADO, la consulta se producirá un error en tiempo de ejecución.  El <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> propiedad se puede usar para cualquier caché basada en OLE DB con ADO. El objeto connection de ADO se puede usar con ADO MD para buscar información sobre los cubos OLAP en que se basa la memoria caché.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> propiedad está disponible únicamente para las sesiones donde el origen de datos es un origen de datos OLE DB. Cuando no hay ninguna sesión ADO, la consulta se producirá un error en tiempo de ejecución.
+
+El <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> propiedad se puede usar para cualquier caché basada en OLE DB con ADO. El objeto connection de ADO se puede usar con ADO MD para buscar información sobre los cubos OLAP en que se basa la memoria caché.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -104,7 +106,10 @@
         <value>
           <b>Boolean</b>
         </value>
-        <remarks>Cuando esta propiedad es <b>True</b> el archivo de conexión de <para>siempre se usará para establecer la conexión al origen de datos.  Si la conexión incrustada en el libro es distinta del archivo de conexión externo, se omitirá la conexión incrustada y el archivo de conexión externo será la única versión considerada.</para><para></para></remarks>
+        <remarks>
+          <para>Cuando esta propiedad es <b>True</b> siempre se usará el archivo de conexión para establecer la conexión al origen de datos.  Si la conexión incrustada en el libro es distinta del archivo de conexión externo, se omitirá la conexión incrustada y el archivo de conexión externo será la única versión considerada.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -171,7 +176,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Orígenes de datos de OLAP, esta propiedad es de sólo lectura y siempre devuelve <b>False</b>.</para>
+          <para>Para los orígenes de datos OLAP, esta propiedad es de sólo lectura y siempre devuelve <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -202,8 +207,8 @@
         <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> colección para la conexión especificada.</summary>
         <value>El <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> colección para la conexión especificada.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>Utilizar el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> colección que se va a compartir miembros calculados entre varias tablas dinámicas y funciones de cubo que usan la misma conexión.</para>
+          <para>Solo lectura.</para>
+          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> colección que se va a compartir miembros calculados entre varias tablas dinámicas y funciones de cubo que usan la misma conexión.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -231,7 +236,7 @@
       <Docs>
         <summary>Cancela todas las operaciones de actualización que estén en curso para la conexión OLE DB especificada.</summary>
         <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" /> (propiedad) para determinar si una operación de actualización está actualmente en curso.</para>
+          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" /> (propiedad) para determinar si está en curso una operación de actualización.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -340,7 +345,9 @@
           <b>Object</b>
         </value>
         <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> (propiedad) no inicia inmediatamente la conexión al origen de datos. Debe usar la <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> método para realizar la conexión y recuperar los datos.  Cuando se utiliza un archivo de cubo sin conexión, Establece el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> propiedad <b>True</b> y use el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> (propiedad) en lugar de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> (propiedad).</para>
+          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> (propiedad) no inicia inmediatamente la conexión al origen de datos. Debe usar la <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> método para realizar la conexión y recuperar los datos.
+
+Cuando se utiliza un archivo de cubo sin conexión, Establece el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> propiedad <b>True</b> y use el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> (propiedad) en lugar de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> (propiedad).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -409,7 +416,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> propiedad se omite si la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> propiedad está establecida en <b>False</b>.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> propiedad se omite si la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> propiedad está establecida en <b>False</b>. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -442,7 +449,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>El <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" /> (propiedad) no se comprueba para ver si la conexión está conectada. Incluso si esta propiedad devuelve<b>True</b>, el envío de comandos al proveedor puede provocar un error si la conexión ya no es válida.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" /> (propiedad) no se comprueba para ver si la conexión está conectada. Aunque esta propiedad devuelve<b>True</b>, envío de comandos al proveedor puede provocar un error si la conexión ya no es válida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -515,7 +522,7 @@
         <value>El identificador de configuración regional para la conexión especificada.</value>
         <remarks>
           <para>Lectura y escritura.</para>
-          <para>Antes de establecer el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" /> (propiedad) a una nueva configuración regional, debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objeto en <b>false</b>. Para obtener información acerca de los valores de identificador de configuración regional (LCID) válido, busque el sitio Web de MSDN "Locale IDs Assigned by Microsoft".</para>
+          <para>Antes de establecer el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" /> (propiedad) a una nueva configuración regional, debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> objeto en <b>false</b>. Para obtener información acerca de los valores de identificador de configuración regional (LCID) válido, busque "Locale IDs Assigned by Microsoft" en el sitio Web de MSDN.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -552,7 +559,12 @@
         <value>
           <b>Boolean</b>
         </value>
-        <remarks>Valor <para>el valor predeterminado es <b>True</b>. Si prevé realizar frecuentes consultas a un servidor, al establecer esta propiedad en <b>True</b> puede mejorar el rendimiento al reducir el tiempo de reconexión. Al establecer esta propiedad en <b>False</b> hace que una conexión abierta que se cierre.</para><para></para></remarks>
+        <remarks>
+          <para>El valor predeterminado es <b>True</b>. Si prevé que va a realizar frecuentes consultas en un servidor, configurar esta propiedad como <b>True</b> puede mejorar el rendimiento al reducir el tiempo de reconexión. Estableciendo la propiedad en <b>False</b> se provoca el cierre de una conexión abierta.
+
+</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeConnection">
@@ -579,7 +591,7 @@
         <summary>Establece una conexión para la conexión OLE DB especificada.</summary>
         <remarks>
           <para>El <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" /> método se puede usar cuando se interrumpe una conexión y el usuario desea volver a establecer la conexión. </para>
-          <para>Diversos objetos y métodos podrían devolver un error en tiempo de ejecución si se interrumpe la conexión. Uso de este método garantiza una conexión antes de ejecutar otros objetos o métodos.</para>
+          <para>Hay diversos objetos y métodos que pueden devolver un error en tiempo de ejecución si se interrumpe la conexión. Utilizar este método garantiza que siempre exista una conexión antes de ejecutar otros objetos o métodos.</para>
           <para>Este método se producirá un error en tiempo de ejecución si el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> (propiedad) de la conexión OLE DB especificada se ha establecido en <b>False</b>.</para>
           <para></para>
         </remarks>
@@ -727,9 +739,9 @@
         <summary>Actualiza una conexión OLE DB.</summary>
         <remarks>
           <para>Al realizar la conexión con el origen de datos OLE DB, Microsoft Excel utiliza la cadena de conexión especificada por el <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> (propiedad). Si la cadena de conexión especificada no tiene los valores necesarios, se mostrará cuadros de diálogo para preguntar al usuario la información necesaria. Si el <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propiedad es <b>False</b>, no se muestran cuadros de diálogo y el <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> se produce un error en el método con la excepción información de conexión insuficiente.</para>
-          <para>Después de Microsoft Excel establece una conexión correctamente, almacena la cadena de conexión completa para que no se muestren mensajes para las llamadas subsiguientes a la <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> método durante la misma sesión de edición. Puede obtener la cadena de conexión completa examinando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> (propiedad).</para>
-          <para>Después de que se realiza la conexión de base de datos, se valida la consulta SQL. Si la consulta no es válida, el <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> se produce un error en el método con la excepción de Error de sintaxis SQL.</para>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> método devuelve <b>True</b> si la consulta se completó correctamente o se ha iniciado; devuelve <b>False</b> si el usuario cancela una conexión.</para>
+          <para>Cuando Microsoft Excel establece una conexión correctamente, almacena la cadena de conexión completa para que no se muestren mensajes para las llamadas subsiguientes a la <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> método durante la misma sesión de edición. Puede obtener la cadena de conexión completa examinando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> (propiedad).</para>
+          <para>Una vez que se realiza la conexión de base de datos, se valida la consulta SQL. Si la consulta no es válida, el <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> se produce un error en el método con la excepción de Error de sintaxis SQL.</para>
+          <para>El <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> método devuelve <b>True</b> si la consulta se haya completado correctamente o se inició; Devuelve <b>False</b> si el usuario cancela una conexión.</para>
           <para>Para saber si el número de filas encontradas excede el número de filas disponibles en la hoja de cálculo, examine la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> (propiedad). Esta propiedad se inicializa cada vez el <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> se llama al método.</para>
           <para></para>
         </remarks>
@@ -797,7 +809,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" /> método para cancelar las consultas en segundo plano.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" /> método para cancelar las consultas en segundo plano.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -869,7 +881,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Al establecer el período en 0 (cero) deshabilita las actualizaciones temporizadas automáticas y equivale a establecer esta propiedad en <b>Null</b>. El valor de la propiedad <b>RefreshPeriod</b> puede ser un número entero entre 0 y 32767.</para>
+          <para>Al establecer el período en 0 (cero), se desactivan las actualizaciones temporizadas automáticas y equivale a establecer esta propiedad en <b>Null</b>. El valor de la propiedad <b>RefreshPeriod</b> puede ser un entero entre 0 y 32767.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -905,7 +917,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Si esta propiedad se establece en <b>False</b>, el valor de LCID de la cadena de conexión se usa en su lugar. Si no se especifica un LCID, se utiliza el valor predeterminado LCID desde el servidor.</para>
+          <para>Si se establece esta propiedad en <b>False</b>, se usa en su lugar el valor de LCID de la cadena de conexión. Si no se especifica ningún LCID, se utiliza el valor de LCID predeterminado del servidor.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -942,7 +954,7 @@
         </value>
         <remarks>
           <para>Si utiliza la conectividad robusta, cuando Microsoft Excel no puede establecer una conexión con la información de conexión del libro, Excel comprobará si la conexión de libro tiene una ruta de acceso a un archivo de conexión externo.  Si es así, Excel abra el archivo de conexión externo e intenta conectarse utilizando la información contenida en el archivo de conexión externo.  Si no se puede establecer una conexión después de utilizar el archivo de conexión externo, Excel, a continuación, actualizará objeto de conexión del libro.  </para>
-          <para>Esto proporciona conectividad robusta en escenarios donde un departamento de tecnología de la información mantiene y actualiza las conexiones en un lugar central, lo que permite que el libro de un usuario para recuperar automáticamente las actualizaciones cada vez que la versión anterior de la se produce un error en la conexión (caché dentro del libro). </para>
+          <para>De esta forma se consigue una conectividad robusta en escenarios en los que un departamento de tecnologías de la información mantiene y actualiza las conexiones en un lugar centralizado, permitiendo que los libros de los usuarios descarguen automáticamente esas actualizaciones cuando no funcione la versión anterior de la conexión (almacenada en memoria caché dentro del libro). </para>
           <para></para>
         </remarks>
       </Docs>
@@ -1009,7 +1021,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Esta propiedad se usa en las consultas ODBC y OLE DB y en las tablas dinámicas y tablas de consulta.</para>
+          <para>Esta propiedad se usa en las consultas ODBC y OLE DB, y en las tablas dinámicas y tablas de consulta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1313,7 +1325,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>En este ejemplo se establece la cadena de conexión de la caché de la primera tabla dinámica para hacer referencia a un archivo de cubo sin conexión a.</para>
+          <para>Este ejemplo establece la cadena de conexión de la caché de la primera tabla dinámica para hacer referencia a un archivo de cubo sin conexión.</para>
           <para></para>
         </remarks>
       </Docs>

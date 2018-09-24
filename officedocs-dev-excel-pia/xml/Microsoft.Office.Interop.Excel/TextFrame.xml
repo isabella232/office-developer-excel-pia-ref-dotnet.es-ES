@@ -1,10 +1,10 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Excel.TextFrame">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5f65a001e332b0d729e68b7d8047a3dbe72260fc" />
+    <Meta Name="ms.openlocfilehash" Value="2d1bfd568b124e87a7cc39c702d6b945df65ab68" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577066" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TextFrame" />
@@ -91,7 +91,7 @@
           <b>True</b> si Microsoft Excel calcula automáticamente los márgenes del marco de texto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cuando esta propiedad es <b>True</b>, el <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" />, <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" />, y <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" /> propiedades se omiten.</para>
+          <para>Cuando esta propiedad es <b>True</b>, el <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" />, <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" />, y <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" /> se pasan por alto las propiedades.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -190,8 +190,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -224,7 +226,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>HorizontalAlignment</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> constantes.</para>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -480,7 +482,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>ReadingOrder</b> puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>.</para>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -515,7 +517,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>VerticalAlignment</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" /> constantes.</para>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>

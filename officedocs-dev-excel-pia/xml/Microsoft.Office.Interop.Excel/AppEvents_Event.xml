@@ -1,10 +1,10 @@
 <Type Name="AppEvents_Event" FullName="Microsoft.Office.Interop.Excel.AppEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a27629fb8f2b82071d18bfdd4a110964f2911154" />
+    <Meta Name="ms.openlocfilehash" Value="9bf90f2833e35c96400ee1d99e1cdd02fe945d69" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580244" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AppEvents_Event" />
@@ -50,8 +50,10 @@
       <Docs>
         <summary>El <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> evento se produce cuando todas las actividades de actualización pendientes (sincrónico y asincrónico) y se hayan completado todas las actividades de cálculo resultantes.</summary>
         <remarks>
-          <para>Este evento se produce siempre que se haya completado el cálculo y no quedan consultas pendientes.  Es obligatorio para ambas condiciones que deben cumplirse antes de que se produce el evento.  Puede se ha generado el evento incluso cuando no hay ningún dato de la hoja en el libro, como cuando finalizan los cálculos para todo el libro y no quedan consultas en ejecución.  </para>
-          <para>Usan programadores de complementos el <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> evento saber cuando todos los datos en el libro se ha actualizado totalmente mediante consultas o cálculos que podrían haberse en curso.</para>
+          <para>Este evento se produce cuando finaliza un cálculo y no quedan consultas pendientes de realizar. Para que se produzca el evento es obligatorio que se cumplan ambas condiciones. El evento se puede producir incluso cuando no hay datos de hojas en el libro, así como cuando finalizan los cálculos para todo el libro y no quedan consultas en ejecución.
+
+</para>
+          <para>Complemento de los programadores usan el <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> evento saber cuando todos los datos en el libro se ha actualizado totalmente mediante consultas o cálculos que podrían haberse en curso.</para>
           <para>Este evento se produce después de todo <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, y <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> eventos.  Es el último evento que se produzca después de han completado todo el proceso de actualización y todo el procesamiento de cálculo, y se produce después de<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> está establecida en <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</para>
           <para></para>
         </remarks>
@@ -349,7 +351,7 @@
       <Docs>
         <summary>Se produce al hacer clic en cualquier hipervínculo en Microsoft Excel.</summary>
         <remarks>
-          <para>Para eventos de nivel de hoja de cálculo, vea la <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> evento.</para>
+          <para>Para eventos de nivel de hoja de cálculo, vea el <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> (evento).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -390,7 +392,7 @@
       <Docs>
         <summary>Se produce después de editar o calcular de nuevo una celda o un rango de celdas (para celdas que contienen fórmulas) dentro de una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -412,7 +414,7 @@
       <Docs>
         <summary>Se produce antes de aplicar los cambios a una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -434,7 +436,7 @@
       <Docs>
         <summary>Se produce antes de confirmar los cambios en el origen de datos OLAP de una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra el origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra el origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -456,7 +458,7 @@
       <Docs>
         <summary>Se produce antes de que se descarten los cambios realizados en una tabla dinámica.</summary>
         <remarks>
-          <para>Tiene lugar inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
+          <para>Se produce inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -668,8 +670,8 @@
       <Docs>
         <summary>Se produce después de que Microsoft Excel guarde o exporte datos de cualquier libro abierto a un archivo de datos XML.</summary>
         <remarks>
-          <para>Utilice el evento <b>AfterXmlExport</b> si desea realizar una operación después de haber exportado los datos XML desde un libro determinado.</para>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Use el evento <b>AfterXmlExport</b> si desea realizar una operación después de haber exportado los datos XML desde un libro determinado.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -691,8 +693,8 @@
       <Docs>
         <summary>Se produce después de actualizar una conexión de datos XML existente o importarán nuevos datos XML a cualquier libro abierto de Microsoft Excel.</summary>
         <remarks>
-          <para>Utilice el evento <b>AfterXmlImport</b> si desea realizar una operación después de haber importado los datos XML a un libro determinado.</para>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Use el evento <b>AfterXmlImport</b> si desea realizar una operación después de haber importado los datos XML a un libro determinado.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -772,7 +774,7 @@
         <summary>Se produce antes de que Microsoft Excel guarde o exporte datos de cualquier libro abierto a un archivo de datos XML.</summary>
         <remarks>
           <para>Use el evento <b>BeforeXmlExport</b> si desea capturar datos XML que se están guardando o exportando desde un libro determinado.</para>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -794,8 +796,8 @@
       <Docs>
         <summary>Se produce antes de actualizar una conexión de datos XML existente o importarán nuevos datos XML a cualquier libro abierto de Microsoft Excel.</summary>
         <remarks>
-          <para>Use el evento <b>BeforeXmlImport</b> si desea capturar datos XML que se va a importar o importando a un libro determinado.</para>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Use el evento <b>BeforeXmlImport</b> si desea capturar datos XML que se están actualizando o importando a un libro determinado.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -954,7 +956,7 @@
       <Docs>
         <summary>El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />evento se produce cuando el usuario recorre el conjunto de registros o invoca la acción de conjunto de filas en una tabla dinámica OLAP.</summary>
         <remarks>
-          <para>Dado que el objeto recordset se crea de forma asincrónica, el evento permite la automatización determinar cuándo se ha completado la acción. Además, dado que se crea el objeto recordset en una hoja independiente, el evento debe estar en el nivel de libro.</para>
+          <para>Dado que el conjunto de registros se crea asincrónicamente, el evento permite que la automatización determine cuándo ha finalizado la acción. Además, ya que el conjunto de registros se crea en una hoja independiente, es necesario que el evento esté en el nivel de libro.</para>
           <para></para>
         </remarks>
       </Docs>

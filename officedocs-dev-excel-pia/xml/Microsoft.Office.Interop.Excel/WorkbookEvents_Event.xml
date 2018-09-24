@@ -1,10 +1,10 @@
 <Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6f0025a298b025acdc36577d72a1f6f03353008" />
+    <Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586264" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
@@ -51,7 +51,7 @@
         <summary>Se produce cuando se activa un libro.</summary>
         <remarks>
           <para>Al cambiar entre dos ventanas que muestran el mismo libro, se produce el evento <b>WindowActivate</b> , pero no se produce el evento <b>Activate</b> del libro.</para>
-          <para>Este evento no se produce cuando se crea una nueva ventana.</para>
+          <para>Este evento no ocurre cuando se crea una ventana nueva.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -92,7 +92,7 @@
       <Docs>
         <summary>Se produce al desinstalar el libro como complemento.</summary>
         <remarks>
-          <para>El complemento no se cierra automáticamente cuando se desinstala.</para>
+          <para>El complemento no se cierra automáticamente al ser desinstalado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -133,7 +133,7 @@
       <Docs>
         <summary>Se produce después de que Excel guarde o exporte datos del libro especificado a un archivo de datos XML.</summary>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -155,7 +155,7 @@
       <Docs>
         <summary>Se produce después de actualiza una conexión de datos XML existente o después de importarán nuevos datos XML al libro de Excel especificado.</summary>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -234,7 +234,7 @@
       <Docs>
         <summary>Se produce antes de que Excel guarde o exporte datos del libro especificado a un archivo de datos XML.</summary>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +256,7 @@
       <Docs>
         <summary>Se produce antes de actualizar una conexión de datos XML existente o antes de nuevo XML se importan los datos a un libro de Excel.</summary>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -415,7 +415,7 @@
       <Docs>
         <summary>El evento se produce cuando el usuario recorre el conjunto de registros o invoca la acción de conjunto de filas en una tabla dinámica OLAP.</summary>
         <remarks>
-          <para>Dado que el objeto recordset se crea de forma asincrónica, el evento permite la automatización determinar cuándo se ha completado la acción. Además, dado que se crea el objeto recordset en una hoja independiente, el evento debe estar en el nivel de libro.</para>
+          <para>Dado que el conjunto de registros se crea asincrónicamente, el evento permite que la automatización determine cuándo ha finalizado la acción. Además, ya que el conjunto de registros se crea en una hoja independiente, es necesario que el evento esté en el nivel de libro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -617,7 +617,7 @@
       <Docs>
         <summary>Se produce después de editar o calcular de nuevo una celda o un rango de celdas (para celdas que contienen fórmulas) dentro de una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -639,7 +639,7 @@
       <Docs>
         <summary>Se produce antes de aplicar los cambios a una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -661,7 +661,7 @@
       <Docs>
         <summary>Se produce antes de confirmar los cambios en el origen de datos OLAP de una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra el origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra el origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -683,7 +683,7 @@
       <Docs>
         <summary>Se produce antes de que se descarten los cambios realizados en una tabla dinámica.</summary>
         <remarks>
-          <para>Tiene lugar inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
+          <para>Se produce inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -705,7 +705,7 @@
       <Docs>
         <summary>Se produce después de realizar cambios en una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />se produce durante la mayoría de los cambios a una tabla dinámica, por lo que puede escribir código para responder a acciones del usuario, como borrar, agrupar o actualizar elementos de la tabla dinámica.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />se produce durante la mayoría de los cambios a una tabla dinámica, por lo que puede escribir código para responder a acciones del usuario, como borrar, agrupar o actualizar elementos de la tabla dinámica.</para>
           <para></para>
         </remarks>
       </Docs>

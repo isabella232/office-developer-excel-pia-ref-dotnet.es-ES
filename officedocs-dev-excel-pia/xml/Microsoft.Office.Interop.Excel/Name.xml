@@ -1,10 +1,10 @@
 <Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dc0260c6b148041f273cfeb372c53b2a97c08418" />
+    <Meta Name="ms.openlocfilehash" Value="03c7a9b67e0c5237abc6e68749010ea9f9840fdb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575897" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Name" />
@@ -31,13 +31,13 @@
   <Docs>
     <summary>Representa un nombre definido para un rango de celdas.</summary>
     <remarks>
-      <para>Nombres pueden ser integrados, como la base de datos, Área_de_impresión y Auto_abrir, o nombres personalizados.</para>
-      <para>Aplicación, libro y objetos de la hoja de cálculo</para>
-      <para>El <b>nombre de</b> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Names" /> colección para el <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, y <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objetos. Usar <b>nombres</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del nombre o el nombre definido, para devolver un único objeto <b>Name</b> .</para>
+      <para>Los nombres pueden ser integrados, como la base de datos, Área_de_impresión y Auto_abrir — o nombres personalizados.</para>
+      <para>Objetos Application, Workbook y Worksheet</para>
+      <para>El objeto <b>Name</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Names" /> colección para el <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, y <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objetos. Usar <b>nombres</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del nombre o el nombre definido, para devolver un único objeto <b>Name</b> .</para>
       <para>El número de índice indica la posición del nombre dentro de la colección. Nombres de sitúan en orden alfabético, de una a la z y distinguen no distingue mayúsculas de minúsculas (es el mismo orden tal como se muestra en los cuadros de diálogo Definir nombre y aplicar nombres devueltos haciendo clic en el comando nombre en el menú Insertar).</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> (propiedad) para devolver o establecer el texto del propio nombre.</para>
       <para>Objetos Range</para>
-      <para>Aunque un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto puede tener más de un nombre, no hay ninguna colección de <b>nombres</b> para el objeto <b>Range</b> . Utilice el <b>nombre</b> con un objeto <b>Range</b> para devolver el nombre de la lista de nombres (ordenados alfabéticamente) asignado al intervalo.</para>
+      <para>Aunque un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto puede tener más de un nombre, no hay ninguna colección de <b>nombres</b> para el objeto <b>Range</b> . Uso de <b>nombre</b> con un objeto <b>Range</b> para devolver el nombre de la lista de nombres (ordenados alfabéticamente) asignado al intervalo.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -197,7 +197,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>El texto del comentario no puede superar los 255 caracteres.</para>
+          <para>El comentario no puede exceder de 255 caracteres. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -228,8 +228,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto especificado se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -375,7 +377,7 @@
         <summary>Devuelve o establece el nombre del objeto en el idioma del usuario.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el estilo es un estilo integrado, esta propiedad devuelve el nombre del estilo en el idioma de la configuración regional actual.</para>
+          <para>Si se usa un estilo integrado, esta propiedad devuelve el nombre del estilo en el idioma de la configuración regional actual.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -468,7 +470,7 @@
         <summary>Devuelve o establece la fórmula que hace referencia el nombre.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La fórmula es en el idioma del usuario, y es en notación de estilo A1, comenzando con un signo de igual.</para>
+          <para>La fórmula estará en el idioma del usuario, y es en notación de estilo A1, comenzando con un signo igual.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -502,7 +504,7 @@
         <summary>Devuelve o establece la fórmula que hace referencia el nombre.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La fórmula es en el lenguaje de la macro, y es en notación de estilo F1C1, comenzando con un signo de igual.</para>
+          <para>La fórmula es en el lenguaje de la macro, y es en notación de estilo F1C1, comenzando con un signo igual.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -536,7 +538,7 @@
         <summary>Devuelve o establece la fórmula que hace referencia el nombre.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta fórmula está en el idioma del usuario y se encuentra en notación de estilo F1C1, comenzando con un signo de igual.</para>
+          <para>Esta fórmula está en el idioma del usuario, y se encuentra en notación de estilo F1C1, comenzando con un signo igual.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -567,7 +569,7 @@
         <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto hace referencia a un <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto <b>Name</b> no hace referencia a un rango (por ejemplo, si hace referencia a una constante o una fórmula), esta propiedad se produce un error.</para>
+          <para>Si el objeto <b>Name</b> no hace referencia a un rango (por ejemplo, si hace referencia a una constante o una fórmula), esta propiedad devolverá un error.</para>
           <para>Para cambiar el intervalo que hace referencia un nombre, use la <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> (propiedad).</para>
           <para></para>
         </remarks>
@@ -698,7 +700,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
-          <para>Si se establece la propiedad <b>Visible</b> de un nombre en <b>False</b>, el nombre no aparecerá en el cuadro de diálogo <b>Definir nombre</b> .</para>
+          <para>Si se establece la propiedad <b>Visible</b> de un nombre como <b>False</b>, el nombre no se muestra en el cuadro de diálogo <b>Definir nombre</b>.</para>
           <para></para>
         </remarks>
       </Docs>

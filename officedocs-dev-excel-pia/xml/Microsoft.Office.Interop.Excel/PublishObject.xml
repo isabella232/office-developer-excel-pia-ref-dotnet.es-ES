@@ -1,10 +1,10 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b96f660c297a7de8cbf9fee33cb4e9de84d52863" />
+    <Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574749" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PublishObject" />
@@ -29,7 +29,7 @@
     <summary>Representa un elemento de un libro que se ha guardado en una página Web y que puede actualizarse según los valores especificados por las propiedades y métodos del objeto <b>PublishObject</b>.</summary>
     <remarks>
       <para>El objeto <b>PublishObject</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> colección.</para>
-      <para>Uso <b>PublishObjects</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del elemento especificado del libro, para devolver un único objeto <b>PublishObject</b> .</para>
+      <para>Utilice <b>PublishObjects</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del elemento especificado del libro, para devolver un único objeto <b>PublishObject</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -119,8 +119,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -242,7 +244,7 @@
         <summary>Devuelve o establece el tipo de HTML generado por Microsoft Excel al guardar el elemento especificado en una página Web.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <b>HtmlType</b> (propiedad) puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes que especifican si el elemento es estático o interactivo en la página Web. El valor predeterminado es <b>xlHtmlStatic</b>.</para>
+          <para>La propiedad <b>HtmlType</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> constantes que especifican si el elemento es estático o interactivo en la página Web. El valor predeterminado es <b>xlHtmlStatic</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -301,7 +303,7 @@
           <b>Objeto</b>de opcional. Si existe el archivo HTML, establecer este argumento en <b>True</b> reemplaza el archivo y, si se establece este argumento en <b>False</b> inserta el elemento o elementos al final del archivo. Si el archivo no existe, se crea el archivo independientemente del valor de la <paramref name="Create" /> argumento.</param>
         <summary>Guarda en una página Web un elemento o una colección de elementos de un documento.</summary>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propiedad devuelve o establece la ubicación y el nombre del archivo HTML.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> propiedad devuelve o establece la ubicación y el nombre del archivo HTML.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -360,7 +362,7 @@
         <summary>Devuelve el nombre único que identifica los elementos que tienen un <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> valor de la propiedad de <b>xlSourceRange</b>, <b>xlSourceChart</b>, <b>xlSourcePrintArea</b>, <b>xlSourceAutoFilter</b>, <b>xlSourcePivotTable</b>o <b>xlSourceQuery</b> .</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la propiedad <b>SourceType</b> se establece en <b>xlSourceRange</b>, esta propiedad devuelve un rango, que puede ser un nombre definido. Si la propiedad <b>SourceType</b> se establece en <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>o <b>xlSourceQuery</b>, esta propiedad devuelve el nombre del objeto, como un nombre de gráfico, un nombre de informe de tabla dinámica o un nombre de tabla de consulta.</para>
+          <para>Si la propiedad <b>SourceType</b> se establece en <b>xlSourceRange</b>, esta propiedad devuelve un rango, que puede ser un nombre definido. Si la propiedad <b>SourceType</b> se establece en <b>xlSourceChart</b>, <b>xlSourcePivotTable</b> o <b>xlSourceQuery</b>, esta propiedad devuelve el nombre del objeto, por ejemplo un nombre de gráfico, informe de tabla dinámica o tabla de consulta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -422,7 +424,7 @@
         <summary>Devuelve o establece el título de la página Web cuando el documento se guarda como una página Web.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El título suele mostrarse en el título de la ventana de la barra cuando el documento se ve en el explorador Web.</para>
+          <para>El título suele mostrarse en la barra de título de la ventana al ver el documento en el explorador Web.</para>
           <para></para>
         </remarks>
       </Docs>

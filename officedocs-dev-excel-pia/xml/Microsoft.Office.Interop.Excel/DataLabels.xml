@@ -1,10 +1,10 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Excel.DataLabels">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="434368df27639f11f635a2389a37b5e4bd558ba2" />
+    <Meta Name="ms.openlocfilehash" Value="59a0db665b8a81c22e071c0c60a0f23b4492e55a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584556" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
@@ -36,7 +36,7 @@
     <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objetos de la serie especificada. Cada objeto <b>DataLabel</b> representa un rótulo de datos para una línea de tendencia o un punto. Para una serie sin puntos definibles (como una serie de área), el conjunto <b>DataLabels</b> contiene un único rótulo de datos.</summary>
     <remarks>
       <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> método para devolver la colección <b>DataLabels</b> .</para>
-      <para>Uso <b>DataLabels</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del rótulo de datos, para devolver un único objeto <b>DataLabel</b> .</para>
+      <para>Use <b>DataLabels</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del rótulo de datos, para devolver un único objeto <b>DataLabel</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -399,7 +399,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -585,7 +588,7 @@
         <summary>Devuelve o establece la alineación horizontal del objeto especificado. Lectura/Escritura <b>Objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se pueden usar las siguientes constantes:</para>
+          <para>Pueden usarse las siguientes constantes:</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -600,7 +603,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -726,7 +729,10 @@
       <Docs>
         <summary>Devuelve o establece el código de formato para el objeto. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>Código de <para>el formato es la misma cadena que la opción códigos de formato en el cuadro de diálogo Formato de celdas. La función <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propiedades.</para><para></para></remarks>
+        <remarks>
+          <para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas. La función <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propiedades.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -824,7 +830,7 @@
         <summary>La orientación del texto. Puede ser un valor entero entre – 90 y 90 grados.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se pueden usar las siguientes constantes:</para>
+          <para>Pueden usarse las siguientes constantes:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -926,7 +932,7 @@
         <param name="Index">El número de índice de la etiqueta de datos para propagar.</param>
         <summary>Le permite tomar el contenido y el formato de un único rótulo de datos y se aplican a todos los demás rótulo de datos en la serie.</summary>
         <remarks>
-          <para>Si el rótulo de datos de origen es compatible con los campos que no son compatibles con la etiqueta de datos de destino, se insertará como su [nombre de campo] esos campos. Por ejemplo, si un rótulo de datos en una serie del gráfico circular con un campo de porcentaje se propaga a un rótulo de datos en un gráfico de columnas, ese campo porcentaje se convertirá en un campo sin resolver que muestra [porcentaje].</para>
+          <para>Si la etiqueta de datos de origen es compatible con los campos que no son compatibles con la etiqueta de datos de destino, dichos campos se insertará como su [nombre de campo]. Por ejemplo, si un rótulo de datos en una serie del gráfico circular con un campo de porcentaje se propaga a un rótulo de datos en un gráfico de columnas, ese campo porcentaje se convertirá en un campo sin resolver que muestra [porcentaje].</para>
           <para>
             <b>Nota</b>: pasar un argumento de cero (0), restablece los rótulos de datos a su prototipo actual.</para>
           <para></para>
@@ -962,7 +968,7 @@
         <summary>Devuelve o establece el orden de lectura para el objeto especificado. Puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>. <b>Integer</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1088,7 +1094,7 @@
         <summary>Si es <b>True</b> se muestra el tamaño de la burbuja de los rótulos de datos de un gráfico. Si es <b>False</b> se oculta. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El gráfico debe estar activo antes de que puede tener acceso a los rótulos de datos mediante programación o se producirá un error en tiempo de ejecución.</para>
+          <para>El gráfico debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1122,7 +1128,7 @@
         <summary>Si es <b>True</b> se muestra el nombre de categoría de los rótulos de datos de un gráfico. Si es <b>False</b> se oculta. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El gráfico debe estar activo antes de que puede tener acceso a los rótulos de datos mediante programación o se producirá un error en tiempo de ejecución.</para>
+          <para>El gráfico debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1188,7 +1194,7 @@
         <summary>Si es <b>True</b> se muestra el valor de porcentaje de los rótulos de datos de un gráfico. Si es <b>False</b> se oculta. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El gráfico debe estar activo antes de que puede tener acceso a los rótulos de datos mediante programación o se producirá un error en tiempo de ejecución.</para>
+          <para>El gráfico debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1256,7 +1262,7 @@
         <summary>Devuelve o establece un valor de tipo <b>Boolean</b> para indicar el comportamiento de presentación de nombres de series correspondientes a los rótulos de datos de un gráfico. Si es <b>True</b> se muestra el nombre de serie. Si es <b>False</b> se oculta. Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El gráfico debe estar activo antes de que puede tener acceso a los rótulos de datos mediante programación o se producirá un error en tiempo de ejecución.</para>
+          <para>El gráfico debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1290,7 +1296,7 @@
         <summary>Devuelve o establece un valor de tipo <b>Boolean</b> correspondiente al comportamiento de presentación de valores de rótulos de los datos de un gráfico. Si es <b>True</b> se muestran los valores. Si es <b>False</b> se ocultan. Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El gráfico especificado debe estar activo antes de que puede tener acceso a los rótulos de datos mediante programación o se producirá un error en tiempo de ejecución.</para>
+          <para>El gráfico especificado debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1363,7 +1369,7 @@
         <summary>Devuelve o establece la alineación vertical del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se pueden usar las siguientes constantes:</para>
+          <para>Pueden usarse las siguientes constantes:</para>
           <para>
             <b>xlBottom</b>
           </para>

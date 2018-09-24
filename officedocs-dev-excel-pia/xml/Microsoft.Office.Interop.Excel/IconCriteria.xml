@@ -1,10 +1,10 @@
 <Type Name="IconCriteria" FullName="Microsoft.Office.Interop.Excel.IconCriteria">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ef3b184a713db5375fa9501f07c78266ac2688e2" />
+    <Meta Name="ms.openlocfilehash" Value="dee775d3bd8923235b1ef96a3cdebab5cd05c778" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572922" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconCriteria : System.Collections.IEnumerable" />
@@ -34,9 +34,12 @@
   </Attributes>
   <Docs>
     <summary>Representa la colección de <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objetos. Cada <b>IconCriterion</b> representa los valores y el tipo de umbral de cada icono contenido en una regla de formato condicional de conjunto.</summary>
-    <remarks>Colección de <para>la <b>IconCriteria</b> se devuelve desde el <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objeto. Puede tener acceso a cada objeto <b>IconCriterion</b> de la colección pasando un índice a la colección. Vea el ejemplo para obtener más información.</para><para></para></remarks>
+    <remarks>
+      <para>La colección <b>IconCriteria</b> se devuelve desde el <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objeto. Puede tener acceso a cada objeto <b>IconCriterion</b> de la colección pasando un índice a la colección. Vea el ejemplo para obtener información detallada.</para>
+      <para></para>
+    </remarks>
     <example>
-      <para>En el ejemplo de código siguiente se crea un intervalo de números que representan puntuaciones de las pruebas y, a continuación, se aplica una regla de formato condicional de conjunto de iconos a ese rango. El tipo de conjunto de iconos se cambia después de los iconos predeterminados a un conjunto de iconos de cinco flechas. Por último, el tipo de umbral se modifica de percentil a un número codificado de forma rígida.</para>
+      <para>El ejemplo de código siguiente crea un rango de números que representan puntuaciones de pruebas y después aplica una regla de formato condicional de conjunto de iconos a ese rango. El tipo de conjunto de iconos se cambia después de los iconos predeterminados a un conjunto de iconos de cinco flechas. Por último, el tipo de umbral se modifica de percentil a número especificado manualmente.</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF() 
 
 

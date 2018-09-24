@@ -1,10 +1,10 @@
 <Type Name="Worksheets" FullName="Microsoft.Office.Interop.Excel.Worksheets">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="62181a586d545e1a026f86bd8ec84b25d6e092ad" />
+    <Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581504" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
@@ -37,7 +37,10 @@
     <remarks>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> (propiedad) para devolver la colección de <b>hojas de cálculo</b> .</para>
       <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> (método) para crear una nueva hoja de cálculo y agregarla a la colección.</para>
-      <para>Usar <b>hojas de cálculo</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de la hoja de cálculo o el nombre, para devolver un único objeto de <b>hoja de cálculo</b> .</para> Objeto de la <b>hoja de cálculo</b><para>también es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección. La colección <b>Sheets</b> contiene todas las hojas del libro (hojas de gráficos y hojas de cálculo).</para><para></para></remarks>
+      <para>Use <b>las hojas de cálculo</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de la hoja de cálculo o el nombre, para devolver un único objeto de <b>hoja de cálculo</b> .</para>
+      <para>El objeto de <b>hoja de cálculo</b> también es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección. La colección <b>Sheets</b> contiene todas las hojas del libro (hojas de gráficos y hojas de cálculo).</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -256,7 +259,7 @@
           <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja copiada. No puede especificar <paramref name="After" /> si especifica <paramref name="Before" />.</param>
         <summary>Copia la hoja en otro lugar del libro.</summary>
         <remarks>
-          <para>Si no especifique ningún valor <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
+          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -314,7 +317,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -498,7 +504,7 @@
           <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja que se ha movido. No puede especificar <paramref name="After" /> si se especifica <b>Before</b>.</param>
         <summary>Desplaza la hoja a otro lugar del libro.</summary>
         <remarks>
-          <para>Si no especifique ningún valor <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
+          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -681,7 +687,7 @@
         <param name="Replace">Opcional <b>objeto</b> (que se usa solo con hojas). <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
         <summary>Selecciona el objeto.</summary>
         <remarks>
-          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> método.</para>
+          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>

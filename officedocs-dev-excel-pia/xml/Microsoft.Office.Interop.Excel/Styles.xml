@@ -1,10 +1,10 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Excel.Styles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d5b16d0cbfdec51d146c93cd55fc38ef3293d37f" />
+    <Meta Name="ms.openlocfilehash" Value="e553a7598a3f9ae8e05db8f343f51fd6b194d460" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587251" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
@@ -36,9 +36,9 @@
     <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objetos del libro especificado o activo.</summary>
     <remarks>
       <para>Cada objeto <b>Style</b> representa la descripción de un estilo para un intervalo. El objeto <b>Style</b> contiene todos los atributos de estilo (fuente, formato numérico, alineación etc.) como propiedades. Existen varios estilos integrados, como Normal, moneda y porcentaje, que aparecen en el cuadro Nombre del estilo en el cuadro de diálogo Estilo (menú Formato).</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> propiedad para devolver la colección <b>Styles</b> .</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Styles" /> propiedad para devolver la colección <b>Styles</b> .</para>
       <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Styles.Add(System.String,System.Object)" /> (método) para crear un nuevo estilo y agregarlo a la colección.</para>
-      <para>Usar <b>estilos</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un único objeto de <b>estilo</b> de la colección <b>Styles</b> del libro o número de índice del estilo.</para>
+      <para>Usar <b>estilos de</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un único objeto de <b>estilo</b> de la colección <b>Styles</b> del libro o número de índice del estilo.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -195,8 +195,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

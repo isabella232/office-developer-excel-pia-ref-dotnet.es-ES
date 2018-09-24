@@ -1,10 +1,10 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Excel.Style">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d16dc7a8953f4adcd743c663cce1a8e9c3cd90e3" />
+    <Meta Name="ms.openlocfilehash" Value="c4f738901e25e0863ca50d9f0bc3e164a839d737" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574049" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Style" />
@@ -31,12 +31,15 @@
   <Docs>
     <summary>Representa la descripción de un estilo para un rango.</summary>
     <remarks>
-      <para>El objeto <b>Style</b> contiene todos los atributos de estilo (fuente, formato numérico, alineación etc.) como propiedades. Existen varios estilos integrados, como Normal, moneda y porcentaje. Uso del objeto <b>Style</b> es una forma rápida y eficaz para cambiar las propiedades de formato de celda en varias celdas al mismo tiempo.</para>
+      <para>El objeto <b>Style</b> contiene todos los atributos de estilo (fuente, formato numérico, alineación, etc.) en forma de propiedades. Existen varios estilos integrados, como Normal, Moneda y Porcentaje. El uso del objeto <b>Style</b> es el modo más rápido y eficaz para cambiar las propiedades de formato de varias celdas a la vez.</para>
       <para>Para el <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> de objetos, el objeto <b>Style</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> colección. La colección <b>Styles</b> contiene todos los estilos definidos para el libro.</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Style" /> (propiedad) para devolver el objeto de <b>estilo</b> que se utiliza con un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</para>
-      <para>Puede cambiar la apariencia de una celda cambiando las propiedades del estilo aplicado a dicha celda. Tenga en cuenta, sin embargo, que al cambiar una propiedad de estilo afectará a todas las celdas que ya ha dado formateada con dicho estilo.</para>
-      <para>Usar <b>estilos</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un único objeto de <b>estilo</b> de la colección <b>Styles</b> del libro o número de índice del estilo.</para> Estilos de 
-      <para>se ordenan alfabéticamente por nombre de estilo. El número de índice del estilo representa la posición del estilo especificado en la lista ordenada de nombres de estilo. Styles (1) es el primer estilo en la lista alfabética y Styles (Styles.Count) es el último en la lista.</para><para>Para obtener más información sobre la creación y modificación de un estilo, vea el <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> objeto.</para><para></para></remarks>
+      <para>Puede cambiar el aspecto de una celda si cambia las propiedades del estilo aplicado a dicha celda. Sin embargo, recuerde que al cambiar una propiedad de estilo se verán afectadas las celdas que ya tengan el formato de ese estilo.</para>
+      <para>Usar <b>estilos de</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un único objeto de <b>estilo</b> de la colección <b>Styles</b> del libro o número de índice del estilo.</para>
+      <para>Los estilos se ordenan alfabéticamente por nombre. El número de índice del estilo representa la posición del estilo especificado en la lista ordenada de nombres de estilo. Styles(1) es el primer estilo de la lista alfabética y Styles(Styles.Count) es el último.</para>
+      <para>Para obtener más información sobre la creación y modificación de un estilo, vea el <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> objeto.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,7 +103,7 @@
           <b>True</b> si se aplica sangría al texto automáticamente cuando la alineación del texto en una celda se establece en distribución equitativa, ya sea horizontal o verticalmente.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para establecer la alineación del texto para que sea igual de distribución, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad <b>Orientation</b> es <b>xlHorizontal</b>.</para>
+          <para>Para establecer la alineación del texto como distribución igualada, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad <b>Orientation</b> es <b>xlHorizontal</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -216,8 +219,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -304,7 +309,7 @@
           <b>True</b> si la fórmula se ocultará cuando la hoja de cálculo está protegida.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>No se debe confundir esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad). La fórmula no se ocultará si el libro está protegido y la hoja de cálculo no lo es, pero solo si la hoja de cálculo está protegida.</para>
+          <para>No confunda esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad). La fórmula no se ocultará si el libro está protegido y la hoja de cálculo no lo es, pero solo si la hoja de cálculo está protegida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -359,12 +364,12 @@
             <b>xlHAlignJustify</b>
           </para>
           <para>
-            <b> xlHAlignLeft</b>
+            <b>xlHAlignLeft</b>
           </para>
           <para>
             <b>xlHAlignRight</b>
           </para>
-          <para>algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -589,7 +594,7 @@
         <summary>Devuelve o establece el nivel de sangría del estilo.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Uso de esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 causará un error.</para>
+          <para>Usar esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 produce un error.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -721,27 +726,47 @@
               <term>
                 <b>Título</b>
               </term>
-              <description>París</description>
-              <description>París</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>nombre</b>
+                <b>Nombre</b>
               </term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>París</description>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>(Igual que el valor de la propiedad SQL, sólo lectura)</description>
-            </item> El 
-              <term><b>valor</b></term>de 
-            <item><description>[Europe]. [ Francia]. [Paris] (solo lectura)</description><description>París</description></item></list>
-          <para>Cuando se especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para> expresión de 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>expresión. PivotItems("Paris")</description></item></list><para>cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para><list type="table"><item><term>[Europe]. [ Francia]. [Paris]</term><description>París</description></item></list><para></para></remarks>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>(igual que el valor de la propiedad SQL, sólo lectura)</description>
+            </item>
+            <item>
+              <term>
+                <b>Valor</b>
+              </term>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para>Cuando especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>expresión. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term>
+              <description>expresión. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NameLocal">
@@ -770,7 +795,7 @@
         <summary>Devuelve el nombre del objeto en el idioma del usuario.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el estilo es un estilo integrado, esta propiedad devuelve el nombre del estilo en el idioma de la configuración regional actual.</para>
+          <para>Si se usa un estilo integrado, esta propiedad devuelve el nombre del estilo en el idioma de la configuración regional actual.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -803,7 +828,10 @@
       <Docs>
         <summary>Devuelve o establece el código de formato para el objeto.</summary>
         <value>To be added.</value>
-        <remarks>Código de <para>el formato es la misma cadena que la opción códigos de formato en el cuadro de diálogo Formato de celdas. La función <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" /> propiedades.</para><para></para></remarks>
+        <remarks>
+          <para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas. La función <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" /> propiedades.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -870,7 +898,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>XlOrientation</b> puede ser una de las siguientes constantes:</para>
+            <b>XlOrientation</b> puede ser una de las constantes siguientes:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -945,7 +973,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>ReadingOrder</b> puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>.</para>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1056,7 +1084,7 @@
           <para>
             <b>xlVAlignTop</b>
           </para>
-          <para>algunas de estas constantes no estén disponibles, Dependiendo de la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>

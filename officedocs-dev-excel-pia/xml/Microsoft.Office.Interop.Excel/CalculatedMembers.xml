@@ -1,10 +1,10 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="953e871a40c21fce56f87ab1a7241017eaeb4ca0" />
+    <Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572838" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
@@ -116,7 +116,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>El <paramref name="Formula" /> argumento debe tener una instrucción con sintaxis MDX (expresiones multidimensionales) válida. El <paramref name="Name" /> argumento debe ser aceptable para el proveedor de procesamiento analítico en línea (OLAP) y la <paramref name="Type" /> argumento debe estar definido.</para>
-          <para>Si se establece el <paramref name="Type" /> argumento de este método para <paramref name="xlCalculatedSet" />, a continuación, se debe llamar a la <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> (método) para que el nuevo campo sea visible en la tabla dinámica.</para>
+          <para>Si establece la <paramref name="Type" /> argumento de este método para <paramref name="xlCalculatedSet" />, a continuación, se debe llamar a la <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> (método) para que el nuevo campo sea visible en la tabla dinámica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -207,7 +207,7 @@
           <list type="bullet">
             <item>
               <description>
-                <b>DisplayFolder</b>: carpetas para mostrar solo son válidas para las medidas calculadas. No son válidos para los miembros calculados. La cadena puede tener punto y coma; en ella. Punto y coma designa varias carpetas para mostrar. Por ejemplo, si utiliza la cadena de Mi carpeta1; miCarpeta2, a continuación, la medida calculada mostrará en dos para mostrar las carpetas uno con nombre miCarpeta1 otros con nombre 'miCarpeta2'. La cadena puede tener barras diagonales inversas \. esto designa una ruta de acceso jerárquica para la carpeta de visualización. Por ejemplo, si usa el welcome\to\seattle de cadena que se va a haber una carpeta para mostrar denominada bienvenida que contiene una carpeta de visualización llamado para que contiene una carpeta para mostrar denominada a seattle. Para mostrar carpetas son carpetas virtuales.  No existen realmente en el mismo sentido que pensamos que de las carpetas del sistema. Existen únicamente con fines de presentación de las medidas calculadas.</description>
+                <b>DisplayFolder</b>: las carpetas para mostrar solo son válidas para las medidas calculadas. No son válidos para los miembros calculados. La cadena puede tener punto y coma; en ella. Punto y coma designa varias carpetas para mostrar. Por ejemplo, si utiliza la cadena de Mi carpeta1; miCarpeta2, a continuación, la medida calculada mostrará en dos para mostrar las carpetas uno con nombre miCarpeta1 otros con nombre 'miCarpeta2'. La cadena puede tener barras diagonales inversas \. Esto designa una ruta de acceso jerárquica para la carpeta de visualización. Por ejemplo, si usa el welcome\to\seattle de cadena que se va a haber una carpeta para mostrar denominada bienvenida que contiene una carpeta de visualización llamado para que contiene una carpeta para mostrar denominada a seattle. Para mostrar carpetas son carpetas virtuales.  No existen realmente en el mismo sentido que pensamos que de las carpetas del sistema. Sólo existen para fines de mostrar las medidas calculadas.</description>
             </item>
             <item>
               <description>
@@ -215,7 +215,7 @@
             </item>
             <item>
               <description>
-                <b>ParentHierarchy</b>: la jerarquía primaria puede ser cualquier jerarquía MDX válido. Jerarquías de primario solo son válidas para los miembros calculados. No son válidos para las medidas calculadas. Si se selecciona un miembro primario que se encuentra en una jerarquía principal diferente, la jerarquía primaria se cambiarán automáticamente para que coincida con la jerarquía del primario del miembro primario.</description>
+                <b>ParentHierarchy</b>: la jerarquía primaria puede ser cualquier jerarquía MDX válido. Jerarquías de primario solo son válidas para los miembros calculados. No son válidos para las medidas calculadas. Si se selecciona un miembro primario que se encuentra en una jerarquía principal diferente, la jerarquía primaria se cambiará automáticamente para que coincida con la jerarquía del primario del miembro primario.</description>
             </item>
           </list>
           <para></para>
@@ -304,8 +304,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

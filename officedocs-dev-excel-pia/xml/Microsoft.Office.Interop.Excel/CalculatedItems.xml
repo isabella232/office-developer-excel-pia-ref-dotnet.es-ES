@@ -1,10 +1,10 @@
 <Type Name="CalculatedItems" FullName="Microsoft.Office.Interop.Excel.CalculatedItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="236c2e7a52552d9fa2fe650a19294ed8aa767e12" />
+    <Meta Name="ms.openlocfilehash" Value="803d3690114439928c366959ebf02ca6bbb754d4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578739" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedItems : System.Collections.IEnumerable" />
@@ -35,9 +35,9 @@
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objetos que representan todos los elementos calculados del informe de tabla dinámica especificado.</summary>
     <remarks>
-      <para>Por ejemplo, un informe de tabla dinámica que contiene los elementos enero, febrero y marzo, podría tener un campo calculado denominado "FirstQuarter" que se define como la suma de los importes de enero, febrero y March.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.PivotField.CalculatedItems" /> método para devolver la colección <b>CalculatedItems</b> .</para>
-      <para>Uso <b>CalculatedItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre o número de índice del campo, para devolver un solo objeto <b>PivotItem</b> de la colección <b>CalculatedItems</b> .</para>
+      <para>Por ejemplo, un informe de tabla dinámica que contiene los elementos enero, febrero y marzo podría tener un elemento calculado "FirstQuarter" que se define como la suma de los importes en enero, febrero y marzo.</para>
+      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.PivotField.CalculatedItems" /> método para devolver la colección <b>CalculatedItems</b> .</para>
+      <para>Usar <b>CalculatedItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre o número de índice del campo, para devolver un solo objeto <b>PivotItem</b> de la colección <b>CalculatedItems</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -228,8 +228,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

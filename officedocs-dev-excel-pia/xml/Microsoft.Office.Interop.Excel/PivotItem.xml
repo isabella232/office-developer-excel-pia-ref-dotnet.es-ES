@@ -1,10 +1,10 @@
 <Type Name="PivotItem" FullName="Microsoft.Office.Interop.Excel.PivotItem">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e442965f9ffbd148054a2f84e29e9a51ecca6941" />
+    <Meta Name="ms.openlocfilehash" Value="fb2cfd5e547820789be4ff24b8428ca8e43d853e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578984" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotItem" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Representa un elemento de un campo de tabla dinámica. Los elementos son las entradas de datos individuales de una categoría de campo. El objeto <b>PivotItem</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección. La colección <b>PivotItems</b> contiene todos los elementos en una <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</summary>
     <remarks>
-      <para>Use <b>PivotItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del elemento o el nombre, para devolver un solo objeto <b>PivotItem</b> .</para>
+      <para>Use <b>PivotItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un solo objeto <b>PivotItem</b> o número de índice del elemento.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -193,7 +193,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataRange">
@@ -225,11 +228,18 @@
           <para>La propiedad <b>DataRange</b> devuelve los siguientes valores, dependiendo del objeto:</para>
           <list type="table">
             <item>
-              <term>campo de datos de</term>
-              <description>datos contenidos en el campo</description>
-            </item>de
-            <item><term>fila, columna o campo de página</term>de
-              <description>elementos en el campo</description></item><item><term>elemento</term><description>Datos calificados por el elemento</description></item></list>
+              <term>Campo de datos</term>
+              <description>Datos incluidos en el campo</description>
+            </item>
+            <item>
+              <term>Campo de filas, columnas o páginas</term>
+              <description>Elementos del campo</description>
+            </item>
+            <item>
+              <term>Elemento</term>
+              <description>Datos calificados por el elemento</description>
+            </item>
+          </list>
           <para></para>
         </remarks>
       </Docs>
@@ -291,8 +301,8 @@
         <summary>Es <b>True</b> si se establece la marca del campo o el elemento de tabla dinámica especificados como "drilled" (expandida o visible). Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Puede utilizar esta propiedad sólo para orígenes de datos OLAP.</para>
-          <para>No se puede establecer esta propiedad si está oculto el campo o elemento.</para>
+          <para>Esta propiedad únicamente puede usarse para orígenes de datos OLAP.</para>
+          <para>No puede configurarse si está oculto el campo o el elemento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -323,7 +333,7 @@
         <param name="Field">To be added.</param>
         <summary>El<see cref="M:Microsoft.Office.Interop.Excel.PivotItem.DrillTo(System.String)" /> método permite profundizar hasta un especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> desde una <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />.</summary>
         <remarks>
-          <para>OLAP para orígenes de datos, el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> que se está haciendo a tiene que estar en la misma jerarquía que la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> que se profundice o, si varias jerarquías de atributos se colocan uno junto a otro en filas o columnas, la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> va a profundizar en detalle debe ser uno del atributo jerarquías que están junto a los otros; no se pueden colocar ningún jerarquías de usuario entre el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> que se está haciendo y el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> va a profundizar en detalle.  Si no se cumplen estas condiciones, se devuelve un error en tiempo de ejecución.</para>
+          <para>Para los orígenes de datos OLAP, el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> que se está haciendo a tiene que estar en la misma jerarquía que la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> que se profundice o, si varias jerarquías de atributos se colocan uno junto a otro en filas o columnas, la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> va a profundizar en detalle debe ser uno del atributo jerarquías que están junto a los otros; no se pueden colocar ningún jerarquías de usuario entre el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> que se está haciendo y el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> va a profundizar en detalle.  Si no se cumplen estas condiciones, se devuelve un error en tiempo de ejecución.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -358,10 +368,10 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para>Si la celda contiene una constante, esta propiedad devuelve la constante. Si la celda está vacía, esta propiedad <b>Formula</b> devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devuelve la fórmula como una cadena en el mismo formato que se mostrará en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, Microsoft Excel cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de Visual Basic de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz de Visual Basic.</para>
-          <para>Establecer la fórmula para un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad <b>Formula</b> la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corta predeterminado.</para>
+          <para>Si el rango tiene una o dos dimensiones, se puede definir la fórmula conforme a una matriz de Visual Basic de las mismas dimensiones. Asimismo, es posible escribir la fórmula en una matriz de Visual Basic.</para>
+          <para>Si se define la fórmula para un rango de varias celdas, se rellenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -393,7 +403,7 @@
           <b>True</b> si el campo de tabla dinámica o el elemento de tabla dinámica es un campo calculado o elemento. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Orígenes de datos de OLAP, esta propiedad siempre devuelve <b>False</b>.</para>
+          <para>Para los orígenes de datos OLAP, esta propiedad siempre devuelve <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -576,7 +586,7 @@
         <summary>Posición del elemento en su campo si se está mostrando actualmente. <b>Integer</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para un <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> colección, esta propiedad devuelve la posición del campo de jerarquía en el informe de tabla dinámica cuando se arrastra desde el campo.</para>
+          <para>Para una <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> colección, esta propiedad devuelve la posición del campo de jerarquía en el informe de tabla dinámica cuando se arrastra desde el campo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -607,7 +617,7 @@
         <summary>Devuelve el número de registros en la memoria caché de tabla dinámica o el número de registros de caché que contienen el elemento especificado. <b>Integer</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad refleja el estado transitorio de la memoria caché en el momento en que se consulta. La memoria caché puede cambiar entre las consultas.</para>
+          <para>Esta propiedad representa el estado transitorio de la caché en el momento en que se hace la consulta. La caché puede sufrir modificaciones entre consulta y consulta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -644,22 +654,22 @@
         <remarks>
           <para>El rango especificado debe ser una sola columna de resumen o una fila en un esquema. Esta propiedad se establece en <b>True</b> si el elemento muestra el detalle.</para>
           <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para>Si el rango especificado no está en un informe de tabla dinámica, las instrucciones siguientes son verdaderas:</para>
+          <para>Si el rango especificado no está en un informe de tabla dinámica, serán ciertas las siguientes afirmaciones:</para>
           <list type="bullet">
             <item>
-              <description>El rango debe estar en una sola fila de resumen o una columna.</description>
+              <description>El rango debe encontrarse en una sola columna o fila de resumen.</description>
             </item>
             <item>
-              <description>Esta propiedad devuelve <b>False</b> si cualquiera de los elementos secundarios de la fila o columna están ocultos.</description>
+              <description>Esta propiedad devuelve <b>False</b> si cualquiera de los secundarios de la fila o la columna están ocultos.</description>
             </item>
             <item>
-              <description>Al establecer esta propiedad en <b>True</b> equivale a mostrar todos los elementos secundarios de la fila de resumen o una columna.</description>
+              <description>Establecer el valor <b>True</b> para esta propiedad equivale a mostrar todos los secundarios de la fila o la columna de resumen.</description>
             </item>
             <item>
-              <description>Al establecer esta propiedad en <b>False</b> equivale a ocultar todos los elementos secundarios de la fila de resumen o una columna.</description>
+              <description>Establecer el valor <b>False</b> para esta propiedad equivale a ocultar todos los secundarios de la fila o la columna de resumen.</description>
             </item>
           </list>
-          <para>Si el intervalo especificado está en un informe de tabla dinámica, es posible establecer esta propiedad para más de una celda a la vez si el rango es contiguo. Esta propiedad puede devolver sólo si el rango es una sola celda.</para>
+          <para>Si el rango especificado está en un informe de tabla dinámica, es posible establecer esta propiedad para más de una celda a la vez si el rango es contiguo. Esta propiedad sólo se devolverá si el rango es una sola celda.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -752,8 +762,8 @@
         <summary>Devuelve o establece un valor <b>String</b> que especifica fórmulas con formato Inglés (Estados Unidos) estándar. Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>StandardFormula</b> afecta principalmente a los nombres de elementos con la fecha o el formato de número. Proporciona una forma de especificar o consultar una fórmula para un elemento calculado determinado.</para>
-          <para>La propiedad <b>StandardFormula</b> es "international descriptivo" mientras que el <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" /> (propiedad) no lo es.</para>
+          <para>La propiedad <b>StandardFormula</b> afecta principalmente a los nombres de elementos con formato de fecha o número. Proporciona una forma de especificar o consultar una fórmula para un elemento calculado determinado.</para>
+          <para>La propiedad <b>StandardFormula</b> es "international descriptivo" mientras que el <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" /> propiedad no es compatible.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -819,7 +829,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
-          <para>Si se establece la propiedad <b>Visible</b> de un nombre en <b>False</b>, el nombre no aparecerá en el cuadro de diálogo Definir nombre.</para>
+          <para>Si se establece la propiedad <b>Visible</b> de un nombre como <b>False</b>, el nombre no se muestra en el cuadro de diálogo Definir nombre.</para>
           <para></para>
         </remarks>
       </Docs>

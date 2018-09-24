@@ -1,10 +1,10 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Excel.FillFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08f56ae45c74cc43f24d342198fea9563bb00d90" />
+    <Meta Name="ms.openlocfilehash" Value="d51378ea225e992f908efc9e6730e1e261e2887c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577276" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FillFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,9 +32,9 @@
   <Docs>
     <summary>Representa el formato de relleno de una forma.</summary>
     <remarks>
-      <para>Una forma puede tener un sólido, degradado, textura, trama, imagen o relleno semitransparente.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto.</para>
-      <para>Muchas de las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto son de sólo lectura. Para establecer una de estas propiedades, se debe aplicar el método correspondiente.</para>
+      <para>Una forma puede tener un relleno sólido, degradado, de textura, de entramado, de imagen o semitransparente.</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto.</para>
+      <para>Muchas de las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto son de sólo lectura. Para establecer una de estas propiedades, deberá aplicar el método correspondiente.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -158,8 +158,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -222,8 +224,10 @@
         <summary>Obtiene o establece el ángulo del relleno de degradado para el formato de relleno especificado.</summary>
         <value>Ángulo del relleno de degradado para el formato de relleno especificado.</value>
         <remarks>
-          <para>Lectura y escritura.</para> Relleno de degradado A 
-          <para>pueden especificarse en el formato para los distintos elementos (formas) en un gráfico. Por ejemplo, puede usar el cuadro de diálogo Formato de serie de datos para dar formato a las columnas en un gráfico de columnas en un relleno de degradado. En este caso, el <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> propiedad corresponde a la configuración de la casilla ángulo en la categoría de relleno del cuadro de diálogo Formato de serie de datos. El intervalo válido de valores para el <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> (propiedad) es de 0 a 359.9.</para><para></para></remarks>
+          <para>Lectura y escritura.</para>
+          <para>Un relleno de degradado pueden especificarse en el formato para los distintos elementos (formas) en un gráfico. Por ejemplo, puede usar el cuadro de diálogo Formato de serie de datos para dar formato a las columnas de un gráfico de columnas en un relleno de degradado. En este caso, el <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> propiedad corresponde a la configuración de la casilla ángulo en la categoría de relleno del cuadro de diálogo Formato de serie de datos. El intervalo válido de valores para el <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> (propiedad) es de 0 a 359.9.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientColorType">
@@ -267,7 +271,7 @@
             <b>msoGradientTwoColors</b>
           </para>
           <para>
-            <b>MsoGradientColorMixed</b> es un valor devuelto solamente que indica una combinación de los demás Estados del intervalo especificado. Usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para establecer el tipo de degradado para el relleno.</para>
+            <b>MsoGradientColorMixed</b> es un valor devuelto solamente que indica una combinación de los demás Estados del intervalo especificado. Usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para establecer el tipo de degradado del relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -298,7 +302,7 @@
         <summary>Devuelve el grado de degradado del relleno sombreado de un color especificado como un valor de punto flotante de 0,0 (oscuro) a 1.0 (claro).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <b>GradiantDegree</b> de la propiedad es de sólo lectura. Usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> (método) para establecer el grado de degradado del relleno.</para>
+          <para>La propiedad <b>GradiantDegree</b> es de sólo lectura. Usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> (método) para establecer el grado de degradado del relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -377,7 +381,7 @@
             <b>msoGradientFromTitle</b>
           </para>
           <para>
-            <b> msoGradientHorizontal</b>
+            <b>msoGradientHorizontal</b>
           </para>
           <para>
             <b>msoGradientMixed</b>
@@ -415,8 +419,8 @@
         <summary>Devuelve la variante de sombreado para el relleno especificado como un valor entero comprendido entre 1 y 4.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Los valores de esta propiedad corresponden a las variantes de degradado (numeradas de izquierda a derecha y de arriba a abajo) en la ficha Degradado en el cuadro de diálogo efectos de relleno.</para>
-          <para>Esta propiedad es de sólo lectura. Usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> (método) para establecer la variante de degradado para el relleno.</para>
+          <para>Los valores de esta propiedad corresponden a las variantes de degradado (numeradas de izquierda a derecha y de arriba a abajo) en la ficha degradado en el cuadro de diálogo Efectos de relleno.</para>
+          <para>Esta propiedad es de sólo lectura. Usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> (método) para establecer la variante de degradado del relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -569,8 +573,8 @@
         <summary>Obtiene un objeto que representa la imagen o relleno de textura para el formato de relleno especificado.</summary>
         <value>Representa la imagen o relleno de textura para el formato de relleno especificado.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>Una imagen o relleno de textura puede especificarse en el formato para los distintos elementos (formas) en un gráfico. Por ejemplo, puede usar el cuadro de diálogo Formato de serie de datos para dar formato a las columnas en un gráfico de columnas en un relleno de imagen o textura. En este caso, el <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> (propiedad) devuelve un <see cref="T:Microsoft.Office.Core.PictureEffects" /> colección que corresponde a la configuración asociada con la opción de relleno de imagen o textura en la categoría de relleno del cuadro de diálogo Formato de serie de datos.</para>
+          <para>Solo lectura.</para>
+          <para>Un imagen o relleno de textura puede especificarse en el formato para los distintos elementos (formas) en un gráfico. Por ejemplo, puede usar el cuadro de diálogo Formato de serie de datos para dar formato a las columnas de un gráfico de columnas en un relleno de imagen o textura. En este caso, el <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> (propiedad) devuelve un <see cref="T:Microsoft.Office.Core.PictureEffects" /> colección que corresponde a la configuración asociada con la opción de relleno de imagen o textura en la categoría de relleno del cuadro de diálogo Formato de serie de datos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -731,7 +735,7 @@
         <remarks>
           <list type="table">
             <item>
-              <term>MsoTriState puede ser una de estas constantes <b>MsoTriState</b> .</term>
+              <term>MsoTriState puede ser una de estas constantes <b>MsoTriState</b>.</term>
             </item>
             <item>
               <term>
@@ -751,6 +755,11 @@
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Core.MsoTriState.msoTriStateToggle" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoTriState.msoTrue" />
               </term>
             </item>
           </list>
@@ -781,7 +790,7 @@
       <Docs>
         <summary>Establece un color uniforme para el relleno especificado.</summary>
         <remarks>
-          <para>Utilizar este método para convertir un relleno degradado, con textura, de entramado o de fondo en un relleno sólido.</para>
+          <para>Utilice este método para convertir de nuevo en un relleno sólido un relleno degradado, de textura, de trama o de fondo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -878,7 +887,7 @@
         <summary>Devuelve el nombre de archivo de la textura personalizada para el relleno especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> método para establecer el archivo de textura para el relleno.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> método para establecer el archivo de textura para el relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -980,7 +989,7 @@
         <remarks>
           <list type="table">
             <item>
-              <term>MsoTriState puede ser una de estas constantes <b>MsoTriState</b> .</term>
+              <term>MsoTriState puede ser una de estas constantes <b>MsoTriState</b>.</term>
             </item>
             <item>
               <term>
@@ -1000,6 +1009,11 @@
             <item>
               <term>
                 <see cref="F:Microsoft.Office.Core.MsoTriState.msoTriStateToggle" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoTriState.msoTrue" />
               </term>
             </item>
           </list>
@@ -1046,7 +1060,7 @@
           <para>
             <see cref="F:Microsoft.Office.Core.MsoTextureType.msoTextureUserDefined" />
           </para>
-          <para>usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> (método) para establecer el tipo de textura para el relleno.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> (método) para establecer el tipo de textura para el relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1113,7 +1127,7 @@
         <summary>Devuelve o establece el grado de transparencia del relleno especificado como un valor comprendido entre 0,0 (opaco) y 1.0 (transparente).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El valor de esta propiedad afecta a la apariencia de los rellenos de color sólido y líneas sólo; no tiene ningún efecto en la apariencia de las líneas de entramado o entramado, degradado, imagen o rellenos con textura.</para>
+          <para>El valor de esta propiedad sólo afecta a la apariencia de los rellenos de colores sólidos y de las líneas pero no a los rellenos de las líneas de entramado o entramados, de los degradados, de las imágenes o de los rellenos con textura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1176,7 +1190,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoFillType" /> puede ser una de las siguientes constantes:</para>
+            <see cref="T:Microsoft.Office.Core.MsoFillType" />puede ser una de las constantes siguientes:</para>
           <para>
             <b>msoFillGradient</b>
           </para>
@@ -1261,7 +1275,7 @@
           <b>String</b> requerida. Nombre del archivo de imagen.</param>
         <summary>Rellena la forma especificada con mosaicos pequeños de una imagen.</summary>
         <remarks>
-          <para>Si desea rellenar la forma con una imagen grande, utilice el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> método.</para>
+          <para>Si desea rellenar la forma con una imagen grande, utilice el <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1307,12 +1321,12 @@
             <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> el objeto está visible.</para>
+            <b>msoTrue</b> El objeto es visible.</para>
           <para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
-          <para>Si se establece la propiedad <b>Visible</b> de un nombre en <b>False</b>, el nombre no aparecerá en el cuadro de diálogo Definir nombre.</para>
+          <para>Si se establece la propiedad <b>Visible</b> de un nombre como <b>False</b>, el nombre no se muestra en el cuadro de diálogo Definir nombre.</para>
           <para></para>
         </remarks>
       </Docs>

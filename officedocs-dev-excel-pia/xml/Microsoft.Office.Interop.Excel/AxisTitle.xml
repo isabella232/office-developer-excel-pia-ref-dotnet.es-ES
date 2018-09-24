@@ -1,10 +1,10 @@
 <Type Name="AxisTitle" FullName="Microsoft.Office.Interop.Excel.AxisTitle">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9ac598409b33e578c8408b206c866b6c7a47a68" />
+    <Meta Name="ms.openlocfilehash" Value="a15f79446668c559f53e688a0b4742e909d6504f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578746" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AxisTitle" />
@@ -231,8 +231,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -515,7 +517,7 @@
         <summary>Obtiene el alto, en puntos, del objeto.</summary>
         <value>Alto del objeto, en puntos.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -549,7 +551,7 @@
         <summary>Devuelve o establece la alineación horizontal del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se pueden usar las siguientes constantes:</para>
+          <para>Pueden usarse las siguientes constantes:</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -565,7 +567,7 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -602,7 +604,8 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Esta propiedad no afecta a si un gráfico está en modo de Autodiseño o no.  Si el usuario agrega un título usando el comando encima de gráfico, el gráfico se cambia de tamaño más pequeño, como se muestra en Microsoft Office Excel 2003.  Si el usuario, a continuación, quita el título o selecciona una de las opciones de título de la superposición, el gráfico cambiará de tamaño más grande, como si el título no estuviera sobre el gráfico.</para>
+          <para>Esta propiedad no afecta a que un gráfico esté o no en modo de autodiseño. Si el usuario agrega un título usando el comando Encima del gráfico, se cambiará el tamaño del gráfico para hacerlo menor, como ocurre en Microsoft Office Excel 2003. Si el usuario quita después el título o selecciona una de las opciones de superposición del título, el tamaño del gráfico se volverá mayor, como si el título no estuviera sobre el gráfico.
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -726,7 +729,7 @@
         <summary>La orientación del texto. Puede ser un valor entero entre – 90 y 90 grados.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>Orientation</b> puede ser una de las siguientes constantes:</para>
+          <para>La propiedad <b>Orientation</b> puede ser una de las constantes siguientes:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -739,7 +742,7 @@
           <para>
             <b>xlVertical</b>
           </para>
-          <para>para orígenes de datos OLAP, al establecer esta propiedad para un campo en una jerarquía de conjuntos de la orientación para los demás campos en la misma jerarquía. Campos de dimensiones sólo pueden orientarse en la fila, columna y áreas de campo de página del informe de tabla dinámica. Los campos de medida sólo pueden orientarse en el área de datos. Si se establece un campo de jerarquía o datos en <b>xlHidden,</b> quita la jerarquía o el campo de informe de tabla dinámica.</para>
+          <para>Para los orígenes de datos OLAP, si se establece esta propiedad para un campo de una jerarquía, se establece la orientación del resto de los campos de la misma jerarquía. Los campos de dimensiones sólo pueden orientarse en las áreas de campos de fila, columna y página del informe de tabla dinámica. Los campos de medida sólo pueden orientarse en el área de datos. Al establecer una jerarquía o un campo de datos en <b>xlHidden</b>, se quita la jerarquía o el campo del informe de tabla dinámica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -835,7 +838,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>ReadingOrder</b> puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>.</para>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -989,7 +992,7 @@
         <summary>Devuelve o establece la alineación vertical del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>VerticalAlignment</b> puede ser una de las siguientes constantes:</para>
+          <para>La propiedad <b>VerticalAlignment</b> puede ser una de las constantes siguientes:</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -1035,7 +1038,7 @@
         <summary>Obtiene el ancho, en puntos, del objeto.</summary>
         <value>El ancho del objeto en puntos.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>

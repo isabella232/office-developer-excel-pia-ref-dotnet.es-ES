@@ -1,10 +1,10 @@
 <Type Name="Range" FullName="Microsoft.Office.Interop.Excel.Range">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e87541caefc40cd684f69da1a8301eb9348e7fbc" />
+    <Meta Name="ms.openlocfilehash" Value="b8435c17b649304d5fae3920a40103ffa541f441" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584969" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Range : System.Collections.IEnumerable" />
@@ -184,7 +184,7 @@
         <summary>Activa una sola celda, que debe estar dentro de la selección actual.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para seleccionar un rango de celdas, use el <see cref="M:Microsoft.Office.Interop.Excel.Range.Select" /> método.</para>
+          <para>Para seleccionar un rango de celdas, use el <see cref="M:Microsoft.Office.Interop.Excel.Range.Select" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -248,7 +248,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad devuelve <b>True</b> si se aplica sangría al texto automáticamente cuando la alineación del texto en una celda se establece en distribución equitativa, ya sea horizontal o verticalmente.</para>
-          <para>Para establecer la alineación del texto para que sea igual de distribución, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Range.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.Range.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Range.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad Orientation es <b>xlHorizontal</b>.</para>
+          <para>Para establecer la alineación del texto como distribución igualada, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Range.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.Range.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Range.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad Orientation es <b>xlHorizontal</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -410,7 +410,7 @@
       <Docs>
         <summary>Realiza una operación de escritura diferida en todas las celdas editadas en un rango basado en un origen de datos OLAP.</summary>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.Range.AllocateChanges" /> método ejecutará una instrucción UPDATE CUBE para todos los cambios realizados en el intervalo desde la última operación para aplicar los cambios se confirman. Este método genera un error en tiempo de ejecución si se ejecuta en un rango basado en un origen de datos que no son OLAP.</para>
+          <para>El <see cref="M:Microsoft.Office.Interop.Excel.Range.AllocateChanges" /> método ejecutará una instrucción UPDATE CUBE para todos los cambios realizados en el intervalo desde la última operación para aplicar los cambios se confirman. Este método genera un error en tiempo de ejecución si se ejecuta en un rango basado en un origen de datos que no son OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -519,8 +519,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Puede usar la función <b>Array</b> para crear la lista de nombres para el <paramref name="Names" /> argumento.</para>
-          <para>Si desea aplicar nombres a toda la hoja, use Cells.ApplyNames.</para>
-          <para>No puede "no aplicar" nombres; para eliminar nombres, use la <see cref="M:Microsoft.Office.Interop.Excel.Name.Delete" /> método.</para>
+          <para>Si desea aplicar nombres a la totalidad de la hoja, use Cells.ApplyNames.</para>
+          <para>No se puede "deshacer" nombres; Para eliminar nombres, use el <see cref="M:Microsoft.Office.Interop.Excel.Name.Delete" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -684,7 +684,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Aplicar el <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> (propiedad) a un <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objeto para devolver un <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> objeto.</para>
-          <para>Si omite todos los argumentos, este método alterna la presentación de las flechas de lista desplegable Autofiltro en el rango especificado.</para>
+          <para>Si omite todos los argumentos, este método simplemente alterna la visualización de la flecha desplegable Autofiltro en el rango especificado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -714,7 +714,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>La expresión debe ser una fila o un rango de filas, o una columna o un rango de columnas. De lo contrario, este método genera un error.</para>
-          <para>Una unidad de ancho de columna es igual al ancho de un carácter en el estilo Normal.</para>
+          <para>Una unidad de anchura de columna es igual a la anchura de un carácter en el estilo Normal.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -766,7 +766,7 @@
         <summary>Da formato automáticamente el intervalo especificado, con un formato predefinido.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si el rango es una sola celda, este método también da formato a la región activa que rodea la celda.</para>
+          <para>Si el rango es una sola celda, este método también da formato a la región activa que rodea la celda. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -836,8 +836,11 @@
         <summary>Agrega un borde a un rango y establece el <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" />, y <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> las propiedades del nuevo borde.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Debe especificar uno <paramref name="ColorIndex" /> o <paramref name="Color" />, pero no ambas.</para> Puede especificar cualquiera de 
-          <para><paramref name="LineStyle" /> o <paramref name="Weight" />, pero no ambos. Si no especifica uno de los argumentos, Microsoft Excel utiliza el estilo de línea predeterminado y el peso.</para><para>Este método describe el intervalo completo sin rellenarlo. Para establecer los bordes de todas las celdas, debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.Borders.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Borders.LineStyle" />, y <see cref="P:Microsoft.Office.Interop.Excel.Borders.Weight" /> las propiedades de la colección Borders. Para borrar el borde, debe establecer la propiedad <b>LineStyle</b> en <b>xlLineStyleNone</b> en todas las celdas del rango.</para><para></para></remarks>
+          <para>Debe especificar uno <paramref name="ColorIndex" /> o <paramref name="Color" />, pero no ambos.</para>
+          <para>Puede especificar uno <paramref name="LineStyle" /> o <paramref name="Weight" />, pero no ambos. Si no especifica uno de los argumentos, Microsoft Excel utiliza el estilo de línea predeterminado y el peso.</para>
+          <para>Este método describe el intervalo completo sin rellenarlo. Para establecer los bordes de todas las celdas, debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.Borders.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Borders.LineStyle" />, y <see cref="P:Microsoft.Office.Interop.Excel.Borders.Weight" /> las propiedades de la colección Borders. Para borrar el borde, debe establecer la propiedad <b>LineStyle</b> en <b>xlLineStyleNone</b> para todas las celdas del rango.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderAround2">
@@ -956,7 +959,7 @@
           <b>Object</b>
         </returns>
         <remarks>
-          <para>La <see cref="M:Microsoft.Office.Interop.Excel.Range.CalculateRowMajorOrder" /> método calcula el rango especificado celda-por-celda, desde su esquina superior izquierda hasta su a la esquina inferior derecha en orden de importancia de filas. Esto es el mismo proceso que se usa en Excel 2000 y versiones anteriores para calcular un intervalo.</para>
+          <para>El <see cref="M:Microsoft.Office.Interop.Excel.Range.CalculateRowMajorOrder" /> método calcula el rango especificado celda-por-celda, desde su esquina superior izquierda hasta su a la esquina inferior derecha en orden de importancia de filas. Esto es el mismo proceso que se usa en Excel 2000 y versiones anteriores para calcular un intervalo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1066,7 +1069,7 @@
         <summary>Comprueba la ortografía de un objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Este método no tiene ningún valor devuelto; Microsoft Excel muestra el cuadro de diálogo Ortografía.</para>
+          <para>Este método no devuelve un valor, pero Microsoft Excel muestra el cuadro de diálogo Ortografía.</para>
           <para>Para comprobar los encabezados, pies de página y objetos en una hoja de cálculo, use este método en un <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objeto.</para>
           <para>Para comprobar únicamente celdas y notas, use este método con el objeto devuelto por la <see cref="P:Microsoft.Office.Interop.Excel.Range.Cells" /> (propiedad).</para>
           <para></para>
@@ -1202,7 +1205,7 @@
       <Docs>
         <summary>Quita todos los hipervínculos del rango especificado.</summary>
         <remarks>
-          <para>Al llamar a la <see cref="M:Microsoft.Office.Interop.Excel.Range.ClearHyperlinks" /> (método) en el rango especificado es equivalente a usar el comando Borrar hipervínculos desde el Clear lista desplegable en la sección de edición de la ficha Inicio. Sólo los hipervínculos se quitarán; todas las celdas alternas de contenido, como texto y el formato no se verán afectadas.</para>
+          <para>Llamar a la <see cref="M:Microsoft.Office.Interop.Excel.Range.ClearHyperlinks" /> (método) en el rango especificado es equivalente a usar el comando Borrar hipervínculos desde el Clear lista desplegable en la sección de edición de la ficha Inicio. Sólo los hipervínculos se quitarán; todos los demás contenido de la celda, como texto y el formato no se verán afectado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1285,7 +1288,7 @@
         <summary>Devuelve el número de la primera columna de la primera área del rango especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Column A devuelve 1, column B devuelve 2 y así sucesivamente.</para>
+          <para>Column A devuelve 1, column B devuelve 2, y así sucesivamente.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1349,7 +1352,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa las columnas del rango especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cuando se aplica a un objeto <b>Range</b> que es una selección de varias áreas, esta propiedad devuelve las columnas de sólo la primera área del rango. Por ejemplo, si el objeto <b>Range</b> tiene dos áreas, a1: B2 y C3: D4: el <see cref="P:Microsoft.Office.Interop.Excel.Range.Count" /> (propiedad) devuelve 2, no 4. Si desea para utilizar esta propiedad en un rango que puede contener una selección de varias áreas, compruebe el <see cref="P:Microsoft.Office.Interop.Excel.Areas.Count" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> objeto para determinar si el rango contiene más de un área. Si lo, ejecute un bucle sobre cada área del rango.</para>
+          <para>Cuando se aplica a un objeto <b>Range</b> que es una selección de varias áreas, esta propiedad devuelve las columnas de sólo la primera área del rango. Por ejemplo, si el objeto <b>Range</b> tiene dos áreas, a1: B2 y C3: D4: el <see cref="P:Microsoft.Office.Interop.Excel.Range.Count" /> (propiedad) devuelve 2, no 4. Si desea para utilizar esta propiedad en un rango que puede contener una selección de varias áreas, compruebe el <see cref="P:Microsoft.Office.Interop.Excel.Areas.Count" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> objeto para determinar si el rango contiene más de un área. Si es así, ejecute un bucle sobre cada área del rango.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1383,8 +1386,8 @@
         <summary>Devuelve o establece el ancho de todas las columnas del rango especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Una unidad del ancho de columna equivale al ancho de un carácter en el estilo Normal. Para fuentes proporcionales, se utiliza el ancho del carácter 0 (cero).</para>
-          <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.Range.Width" /> propiedad para devolver el ancho de una columna en puntos.</para>
+          <para>Una unidad de ancho de columna equivale al ancho de un carácter con el estilo Normal. En las fuentes proporcionales se utiliza el ancho del carácter 0 (cero).</para>
+          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Width" /> (propiedad) para devolver el ancho de una columna en puntos.</para>
           <para>Si todas las columnas del rango tienen el mismo ancho, la propiedad <b>ColumnWidth</b> devuelve el ancho. Si las columnas del rango tienen anchos diferentes, esta propiedad devuelve <b>Null</b>.</para>
           <para></para>
         </remarks>
@@ -1521,7 +1524,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Si el objeto <b>Recordset</b> contiene campos con objetos OLE, se produce un error en este método.</para>
-          <para>Copiar comienza en la fila actual del objeto <b>Recordset</b> . Una vez finalizada la copia, la propiedad <b>EOF</b> del objeto <b>Recordset</b> es <b>True</b>.</para>
+          <para>La copia comienza en la fila actual del objeto <b>Recordset</b> . Una vez finalizada la copia, la propiedad <b>EOF</b> del objeto <b>Recordset</b> es <b>True</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1722,8 +1725,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto especificado se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentArray">
@@ -1781,8 +1786,8 @@
         <value>To be added.</value>
         <remarks>
           <para>La región actual es un rango limitado por cualquier combinación de filas en blanco y columnas en blanco.</para>
-          <para>Esta propiedad es útil para muchas operaciones que amplían automáticamente la selección para incluir toda la región actual, como el <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFormat(Microsoft.Office.Interop.Excel.XlRangeAutoFormat,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método.</para>
-          <para>No se puede usar esta propiedad en una hoja de cálculo protegida.</para>
+          <para>Esta propiedad es útil para muchas operaciones que amplían automáticamente la selección para incluir toda la región actual, como el <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFormat(Microsoft.Office.Interop.Excel.XlRangeAutoFormat,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método).</para>
+          <para>Esta propiedad no se puede usar en las hojas de cálculo protegidas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1815,7 +1820,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>El rango cortado debe estar compuesto por celdas adyacentes.</para>
-          <para>Gráficos incrustados sólo pueden cortarse.</para>
+          <para>Sólo pueden cortarse los gráficos incrustados.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1918,7 +1923,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esto puede ser una selección múltiple (unión de objetos <b>Range</b> ) si hay más de un dependiente.</para>
-          <para>La propiedad <b>Dependents</b> sólo funciona en la activa hoja y no puede rastrear referencias remotas.</para>
+          <para>La propiedad <b>Dependents</b> sólo funciona en la hoja activa y no puede rastrear referencias remotas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1980,7 +1985,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esto puede ser una selección múltiple (unión de objetos <b>Range</b> ) si hay más de un dependiente.</para>
-          <para>La propiedad <b>Direct Dependents</b> sólo funciona en la activa hoja y no puede rastrear referencias remotas.</para>
+          <para>La propiedad <b>Direct Dependents</b> sólo funciona en la hoja activa y no puede rastrear referencias remotas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2011,7 +2016,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango que contiene todas las celdas precedentes directas de una celda.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>DirectPrecedents</b> sólo funciona en la activa hoja y no puede rastrear referencias remotas.</para>
+          <para>La propiedad <b>DirectPrecedents</b> sólo funciona en la hoja activa y no puede rastrear referencias remotas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2068,7 +2073,7 @@
       <Docs>
         <summary>Descarta todos los cambios realizados en las celdas editadas del rango.</summary>
         <remarks>
-          <para>Para un rango basado en un origen de datos OLAP, este método quita todos los valores y las fórmulas escritas en las celdas y, a continuación, se ejecuta una operación de actualización para recuperar los valores más recientes del origen de datos. Establece el valor de origen de datos en una referencia nula (Nothing en Visual Basic) para todas las celdas de valor que se editan y también ejecuta una instrucción ROLLBACK TRANSACTION contra el servidor OLAP. Para los intervalos basados en orígenes de datos no OLAP, este método simplemente borra todas las celdas revisadas.</para>
+          <para>Para un rango basado en un origen de datos OLAP, este método quita todos los valores y las fórmulas escritas en las celdas y, a continuación, ejecuta una operación de actualización para recuperar los valores más recientes del origen de datos. Establece el valor de origen de datos en una referencia nula (Nothing en Visual Basic) para todas las celdas de valor que se editan y también ejecuta una instrucción ROLLBACK TRANSACTION contra el servidor OLAP. Para los intervalos basados en orígenes de datos no OLAP, este método simplemente borra todas las celdas revisadas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2099,7 +2104,7 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> object que representa la configuración de presentación para el rango especificado.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> object que representa la configuración de presentación para el rango especificado.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2174,7 +2179,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda situada al final de la región que contiene el rango de origen.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Equivalente a presionar END + flecha arriba, END + flecha abajo, END + flecha izquierda o END MAYÚS+CTRL+FLECHA derecha.</para>
+          <para>Equivale a presionar END + flecha arriba, END + flecha abajo, END + flecha izquierda o END MAYÚS+CTRL+FLECHA derecha. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -2267,7 +2272,7 @@
         <summary>Permite al usuario tener acceso a las opciones de comprobación de errores.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Referencia el <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objeto para ver una lista de valores de índice asociados con las opciones de comprobación de errores.</para>
+          <para>Referencia de la <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objeto para ver una lista de valores de índice asociados con las opciones de comprobación de errores.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2313,7 +2318,7 @@
         <param name="FixedFormatExtClassPtr">Puntero de <b>objeto</b> opcional a la clase <b>FixedFormatExt</b> .</param>
         <summary>Exporta a un archivo con el formato especificado.</summary>
         <remarks>
-          <para>Este método también admite la inicialización de un complemento para exportar un archivo a un archivo de formato fijo. Por ejemplo, Excel realizará la conversión de formato de archivo si están presentes los convertidores. La conversión generalmente es iniciada por el usuario.</para>
+          <para>Este método también admite la inicialización de un complemento para exportar un archivo a un formato de archivo fijo. Por ejemplo, Excel realizará la conversión del formato de archivo si están instalados los convertidores necesarios. Normalmente, el usuario es quien inicia la conversión.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2487,9 +2492,9 @@
           <para>Este método devuelve <b>Nothing</b> si no se encuentra ninguna coincidencia.</para>
           <para>Este método no afecta a la selección o la celda activa.</para>
           <para>La configuración de <paramref name="LookIn" />, <paramref name="LookAt" />, <paramref name="SearchOrder" />, y <paramref name="MatchByte" /> se guardan cada vez que utilice este método. Si no especifica valores para estos argumentos la próxima vez que se llame al método, se usan los valores guardados. Si establece estos argumentos cambia la configuración en el cuadro de diálogo Buscar y cambiar la configuración en el cuadro de diálogo Buscar cambia los valores guardados que se emplean si se omiten los argumentos. Para evitar problemas, establezca explícitamente estos argumentos cada vez que utilice este método.</para>
-          <para>Se puede usar el <see cref="M:Microsoft.Office.Interop.Excel.Range.FindNext(System.Object)" /> y <see cref="M:Microsoft.Office.Interop.Excel.Range.FindPrevious(System.Object)" /> métodos para repetir la búsqueda.</para>
-          <para>Cuando la búsqueda llega al final del rango de búsqueda especificado, vuelve al principio del rango. Para detener una búsqueda cuando se produzca esta situación, guarde la dirección de la primera celda que se encuentra y, a continuación, pruebe cada dirección de celda encontrada sucesiva con esta guardada dirección.</para>
-          <para>Para buscar celdas que coincidan con diseños más complicados, use una <b>para cada uno de ellos... Próximo</b> instrucción con el operador <b>Like</b> .</para>
+          <para>Puede usar el <see cref="M:Microsoft.Office.Interop.Excel.Range.FindNext(System.Object)" /> y <see cref="M:Microsoft.Office.Interop.Excel.Range.FindPrevious(System.Object)" /> métodos para repetir la búsqueda.</para>
+          <para>Cuando la búsqueda alcanza el final del rango especificado, regresa al principio del rango. Para detener la búsqueda cuando se produzca esta situación, guarde la dirección de la primera celda encontrada y después compare cada dirección de celda encontrada sucesiva con la dirección guardada.</para>
+          <para>Para buscar las celdas que coincidan con diseños más complicados, use una <b>para cada uno de ellos … Próximo</b> instrucción con el operador <b>Like</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2523,7 +2528,7 @@
         <remarks>
           <para>Busca la siguiente celda que cumple las mismas condiciones y devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa esa celda.</para>
           <para>Este método no afecta a la selección o la celda activa.</para>
-          <para>Cuando la búsqueda llega al final del rango de búsqueda especificado, vuelve al principio del rango. Para detener una búsqueda cuando se produzca esta situación, guarde la dirección de la primera celda que se encuentra y, a continuación, pruebe cada dirección de celda encontrada sucesiva con esta guardada dirección.</para>
+          <para>Cuando la búsqueda alcanza el final del rango especificado, regresa al principio del rango. Para detener la búsqueda cuando se produzca esta situación, guarde la dirección de la primera celda encontrada y después compare cada dirección de celda encontrada sucesiva con la dirección guardada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2557,7 +2562,7 @@
         <remarks>
           <para>Busca la celda anterior que coincide con las mismas condiciones y devuelven un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa esa celda.</para>
           <para>Este método no afecta a la selección o la celda activa.</para>
-          <para>Cuando la búsqueda llega el principio del intervalo de búsqueda especificado, regresará al final del rango. Para detener una búsqueda cuando se produzca esta situación, guarde la dirección de la primera celda que se encuentra y, a continuación, pruebe cada dirección de celda encontrada sucesiva con esta guardada dirección.</para>
+          <para>Cuando la búsqueda alcance el principio del rango de búsqueda especificado, regresará al final del rango. Para detener la búsqueda cuando se produzca esta situación, guarde la dirección de la primera celda encontrada y después compare cada dirección de celda encontrada sucesiva con la dirección guardada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2673,10 +2678,10 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para>Si la celda contiene una constante, esta propiedad devuelve la constante. Si la celda está vacía, esta propiedad <b>Formula</b> devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devuelve la fórmula como una cadena en el mismo formato que se mostrará en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, Microsoft Excel cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz básica.</para>
-          <para>Establecer la fórmula para un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad <b>Formula</b> la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corta predeterminado.</para>
+          <para>Si el intervalo es un rango de uno o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz básica.</para>
+          <para>Si se define la fórmula para un rango de varias celdas, se rellenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2710,9 +2715,9 @@
         <summary>Devuelve o establece la fórmula de matriz de un rango.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad devuelve (o se puede establecer en) una sola fórmula o matriz.</para>
+          <para>Esta propiedad devuelve (o se puede establecer en) una sola fórmula o una matriz.</para>
           <para>Si el rango especificado no contiene una fórmula de matriz, esta propiedad devuelve <b>Null</b>.</para>
-          <para>Si utiliza esta propiedad para escribir una fórmula de matriz, la fórmula debe utilizar el estilo de referencia F1C1, no la referencia A1 (vea el segundo ejemplo) de estilo.</para>
+          <para>Si usa esta propiedad para escribir una fórmula de matriz, la fórmula deberá estar en el estilo F1C1, no en el estilo de referencia A1 (vea el segundo ejemplo).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2747,7 +2752,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad devuelve <b>True</b> si la fórmula se ocultará cuando la hoja de cálculo está protegida. Devuelve <b>Null</b> si el rango especificado contiene algunas celdas con <b>FormulaHidden</b> igual a <b>True</b> y algunas celdas con <b>FormulaHidden</b> igual a <b>False</b>.</para>
-          <para>No se debe confundir esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad). La fórmula no se ocultará si el libro está protegido y la hoja de cálculo no lo es, pero solo si la hoja de cálculo está protegida.</para>
+          <para>No confunda esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad). La fórmula no se ocultará si el libro está protegido y la hoja de cálculo no lo es, pero solo si la hoja de cálculo está protegida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2843,10 +2848,10 @@
         <summary>Devuelve o establece la fórmula del objeto, usando referencias de estilo A1 en el idioma del usuario.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la celda contiene una constante, esta propiedad devuelve esa constante. Si la celda está vacía, la propiedad devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad devuelve la fórmula como una cadena, en el mismo formato en el que se mostraría en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, se cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
-          <para>Si define la fórmula de un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corto predeterminado.</para>
+          <para>Si el intervalo es un rango de uno o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
+          <para>Si se define la fórmula de un rango de varias celdas, se llenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2880,10 +2885,10 @@
         <summary>Devuelve o establece la fórmula para el objeto, mediante la notación de estilo F1C1 en el idioma de la macro.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la celda contiene una constante, esta propiedad devuelve la constante. Si la celda está vacía, la propiedad devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad devuelve la fórmula como una cadena, en el mismo formato en el que se mostraría en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, se cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
-          <para>Si define la fórmula de un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corto predeterminado.</para>
+          <para>Si el intervalo es un rango de uno o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
+          <para>Si se define la fórmula de un rango de varias celdas, se llenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2917,10 +2922,10 @@
         <summary>Devuelve o establece la fórmula para el objeto, mediante la notación de estilo F1C1 en el idioma del usuario.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la celda contiene una constante, esta propiedad devuelve esa constante. Si la celda está vacía, la propiedad devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad devuelve la fórmula como una cadena, en el mismo formato en el que se mostraría en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, se cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
-          <para>Si define la fórmula de un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corto predeterminado.</para>
+          <para>Si el intervalo es un rango de uno o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
+          <para>Si se define la fórmula de un rango de varias celdas, se llenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3017,7 +3022,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Si el objetivo es una cantidad devuelta por una fórmula, se calcula un valor que, cuando se aplique a la fórmula, hace que la fórmula devolver el número que desee.</para>
-          <para>Este método devuelve <b>True</b> si el objetivo es satisfactoria.</para>
+          <para>Este método devuelve <b>True</b> si el objetivo es correcto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3057,7 +3062,10 @@
           <b>Objeto</b>de opcional. Una matriz de valores booleanos que especifican el período para el grupo, tal como se muestra en la siguiente tabla. Si un elemento de la matriz es <b>True</b>, se crea un grupo para la hora correspondiente; Si el elemento es <b>False</b>, se crea ningún grupo. Si el campo no es un campo de fecha, se omite este argumento.</param>
         <summary>Cuando el <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto representa una sola celda del rango de datos de un campo de tabla dinámica, el método <b>Group</b> realiza un agrupamiento numérico o basado en la fecha en dicho campo.</summary>
         <returns>To be added.</returns>
-        <remarks>Objeto <para>el <b>intervalo</b> debe ser una sola celda del rango de datos del campo de tabla dinámica. Si se intenta aplicar este método a más de una celda, se producirá un error pero no se mostrará un mensaje de error.</para><para></para></remarks>
+        <remarks>
+          <para>El objeto <b>Range</b> debe ser una sola celda del rango de datos del campo de tabla dinámica. Si se intenta aplicar este método a más de una celda, se producirá un error pero no se mostrará un mensaje de error.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasArray">
@@ -3117,7 +3125,7 @@
         <summary>Determina si todas las celdas del rango contienen fórmulas.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si todas las celdas del rango contienen fórmulas, <b>False</b> si ninguna de las celdas del rango contiene una fórmula y <b>Null</b> en caso contrario,.</para>
+          <para>Esta propiedad devuelve <b>True</b> si todas las celdas del rango contienen fórmulas, <b>False</b> si ninguna de las celdas del rango contiene una fórmula y <b>Null</b> en caso contrario.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3180,7 +3188,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad devuelve <b>True</b> si las filas o columnas están ocultas. El rango especificado debe abarcar una columna completa o una fila.</para>
-          <para>No se debe confundir esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> (propiedad).</para>
+          <para>No confunda esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> (propiedad).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3273,7 +3281,7 @@
         <summary>Devuelve o establece la etiqueta de identificación de la celda especificada cuando la página se guarda como una página Web.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Puede usar una etiqueta de identificador como referencia de hipervínculo en otros documentos HTML o en la misma página Web.</para>
+          <para>Se puede usar un rótulo de Id. como referencia de hipervínculo en otros documentos HTML o en la misma página Web.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3308,7 +3316,7 @@
         <value>To be added.</value>
         <remarks>
           <para>El nivel de sangría puede ser un entero entre 0 y 15.</para>
-          <para>Uso de esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 causará un error.</para>
+          <para>Usar esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 produce un error.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3372,8 +3380,8 @@
           <b>Integer</b>requerido. La cantidad que se agrega a la sangría actual.</param>
         <summary>Agrega una sangría al rango especificado.</summary>
         <remarks>
-          <para>Utilizar este método para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 causará un error.</para>
-          <para>Usar la<b /><see cref="P:Microsoft.Office.Interop.Excel.Range.IndentLevel" /> propiedad para devolver el nivel de sangría de un rango.</para>
+          <para>La utilización de este método para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 causará un error.</para>
+          <para>Use la<b /><see cref="P:Microsoft.Office.Interop.Excel.Range.IndentLevel" /> propiedad para devolver el nivel de sangría de un rango.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3443,7 +3451,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa un rango desplazado al intervalo especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <paramref name="RowIndex" /> y <paramref name="ColumnIndex" /> argumentos son desplazamientos relativos. En otras palabras, que especifica un <paramref name="RowIndex" /> de 1 devuelve las celdas de la primera fila del rango, no de la primera fila de la hoja de cálculo.</para>
+          <para>El <paramref name="RowIndex" /> y <paramref name="ColumnIndex" /> argumentos son desplazamientos relativos. En otras palabras, que especifica un <paramref name="RowIndex" /> de 1 devuelve las celdas de la primera fila del rango, no de la primera fila de la hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3472,7 +3480,7 @@
         <summary>Reorganiza el texto de un rango para rellenarlo uniformemente.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si el intervalo no es suficientemente grande, Microsoft Excel muestra un mensaje que indica que el texto se extenderá por debajo del rango. Si hace clic en el botón Aceptar, texto justificado reemplazará el contenido en las celdas que se extienden más allá del intervalo seleccionado. Para impedir que aparezca este mensaje, establezca la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propiedad en <b>False</b>. Después de establecer esta propiedad, el texto siempre reemplazará el contenido en las celdas situadas debajo del rango.</para>
+          <para>Si el rango no es suficientemente grande, Microsoft Excel muestra un mensaje que indica que el texto se extenderá por debajo del rango. Si hace clic en el botón Aceptar, texto justificado reemplazará el contenido en las celdas que se extienden más allá del intervalo seleccionado. Para impedir que aparezca este mensaje, establezca la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propiedad en <b>False</b>. Después de establecer esta propiedad, el texto siempre reemplazará el contenido en las celdas situadas debajo del rango.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3503,7 +3511,7 @@
         <summary>La distancia desde el borde izquierdo de la columna A hasta el borde izquierdo del rango.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el rango no es continuo, se usa la primera área. Si el rango tiene más de una columna de ancho, se utiliza la columna más a la izquierda del rango.</para>
+          <para>Si el rango no es continuo, se usa la primera área. Si el rango tiene más de una columna de ancho, se usa la columna del extremo izquierdo del rango.</para>
           <para>Si la ventana está maximizada, esta propiedad devuelve un número negativo que varía según el ancho del borde ventana. Al establecer esta propiedad en 0 (cero) hará que la ventana de un poco más pequeña de lo que sería si la ventana de la aplicación estuviera maximizada. En otras palabras, si esta propiedad es 0 (cero), el borde izquierdo de la ventana principal de Microsoft Excel apenas estará visible en la pantalla.</para>
           <para></para>
         </remarks>
@@ -3658,7 +3666,7 @@
             </item>
             <item>
               <description>
-                <b>xlPageItem </b>
+                <b>xlPageItem</b>
               </description>
             </item>
             <item>
@@ -3796,7 +3804,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si la celda especificada no está en un rango combinado, esta propiedad devuelve la celda especificada.</para>
-          <para>La propiedad <b>MergeArea</b> sólo funciona en un rango de celdas de un solo.</para>
+          <para>La propiedad <b>MergeArea</b> sólo funciona en rangos de una sola celda.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3866,27 +3874,45 @@
         <value>To be added.</value>
         <remarks>
           <para>El nombre de un objeto <b>Range</b> es un <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto. Para cualquier otro tipo de objeto, el nombre es una <b>cadena</b>.</para>
-          <para>La tabla siguiente muestran valores de ejemplo de la propiedad <b>Name</b> y las propiedades relacionadas dados un origen de datos OLAP con el nombre único "[Europe]. [France]. [Paris] "y el nombre de un origen de datos no OLAP con el elemento"Paris".</para>
+          <para>En la siguiente tabla se muestran valores de ejemplo de la propiedad <b>Name</b> y otras propiedades relacionadas partiendo de un origen de datos OLAP con el nombre exclusivo "[Europe].[France].[Paris]" y un origen de datos no OLAP con el nombre de elemento "Paris".</para>
           <list type="table">
             <item>
-              <term>Título</term>
-              <description>París</description>
-              <description>París</description>
+              <term>Caption</term>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
-              <term>nombre</term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>París</description>
+              <term>Nombre</term>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>SourceName</term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>(Igual que el valor de la propiedad SQL, sólo lectura)</description>
-            </item> El 
-              <term>valor</term>de 
-            <item><description>[Europe]. [ Francia]. [Paris] (solo lectura)</description><description>París</description></item></list>
-          <para>Cuando se especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para> expresión de 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>expresión. PivotItems("Paris")</description></item></list><para>cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para><list type="table"><item><term>[Europe]. [ Francia]. [Paris]</term><description>París</description></item></list><para></para></remarks>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>(igual que el valor de la propiedad SQL, sólo lectura)</description>
+            </item>
+            <item>
+              <term>Valor</term>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para>Cuando especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>expresión. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term>
+              <description>expresión. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigateArrow">
@@ -3922,7 +3948,7 @@
         <summary>Se desplaza una flecha de rastreo para el rango especificado en la celda precedente, dependiente o causantes de error o celdas.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Selecciona el precedentes, dependientes o error de celdas y devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la nueva selección. Este método, producirá un error si se aplica a una celda sin flechas de rastreo visibles.</para>
+          <para>Selecciona la celda precedente, dependiente o de error y devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la nueva selección. Este método produce un error si se aplica a una celda sin flechas de rastreo visibles.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3953,8 +3979,8 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda siguiente.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad emula la tecla TAB, aunque la propiedad devuelve la celda siguiente sin seleccionar it.</para>
-          <para>En una hoja protegida, esta propiedad devuelve la siguiente celda desbloqueada. En una hoja desprotegida, esta propiedad siempre devuelve la celda inmediatamente a la derecha de la celda especificada.</para>
+          <para>Esta propiedad emula la tecla TAB, aunque la propiedad devuelve la celda siguiente sin seleccionarla.</para>
+          <para>En una hoja protegida, esta propiedad devuelve la siguiente celda desbloqueada. En una hoja desprotegida, siempre devuelve la celda situada inmediatamente a la derecha de la celda especificada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3993,7 +4019,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Las notas de celda han sido reemplazadas por comentarios de rango. Para obtener más información, vea el <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> objeto.</para>
-          <para>Para agregar una nota que contenga más de 255 caracteres, utilice este método una vez para especificar los primeros 255 caracteres y, a continuación, usarla de nuevo para anexar el resto de la nota (no más de 255 caracteres a la vez).</para>
+          <para>Para agregar una nota de más de 255 caracteres, utilice este método para especificar los primeros 255 caracteres y repita el proceso para adjuntar los caracteres restantes en grupos de 255 caracteres.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4027,8 +4053,10 @@
         <summary>Devuelve o establece el código de formato para el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad devuelve <b>Null</b> si todas las celdas del rango especificado no tienen el mismo formato de número.</para> Código de 
-          <para>el formato es la misma cadena que la opción códigos de formato en el cuadro de diálogo Formato de celdas. La función <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propiedades.</para><para></para></remarks>
+          <para>Esta propiedad devuelve <b>Null</b> si no todas las celdas del rango especificado tienen el mismo formato de número.</para>
+          <para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas. La función <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propiedades.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -4130,8 +4158,10 @@
         <summary>Devuelve la orientación del texto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esto devuelve el valor de orientación puede ser un valor entero entre 90 y 90 grados.</para> Orígenes de datos OLAP para 
-          <para>, al establecer esta propiedad para un campo en una jerarquía establece la orientación para el resto de los campos en la misma jerarquía. Campos de dimensiones sólo pueden orientarse en la fila, columna y áreas de campo de página del informe de tabla dinámica. Los campos de medida sólo pueden orientarse en el área de datos. Si se establece un campo de jerarquía o datos en <b>xlHidden,</b> quita la jerarquía o el campo de informe de tabla dinámica.</para><para></para></remarks>
+          <para>Este valor de orientación devuelto puede ser un valor entero entre 90 y 90 grados.</para>
+          <para>Para los orígenes de datos OLAP, si se establece esta propiedad para un campo de una jerarquía, se establece la orientación del resto de los campos de la misma jerarquía. Los campos de dimensiones sólo pueden orientarse en las áreas de campos de fila, columna y página del informe de tabla dinámica. Los campos de medida sólo pueden orientarse en el área de datos. Al establecer una jerarquía o un campo de datos en <b>xlHidden</b>, se quita la jerarquía o el campo del informe de tabla dinámica.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineLevel">
@@ -4215,8 +4245,8 @@
               </description>
             </item>
           </list>
-          <para>esta propiedad puede devolver la ubicación de página manual o automática saltos, pero solo puede establecer la ubicación de los saltos manuales (sólo puede establecerse como <b>xlPageBreakManual</b> o como <b>xlPageBreakNone</b>).</para>
-          <para>Para quitar todos los saltos de página manuales de una hoja de cálculo, defina Cells.PageBreak en <b>xlPageBreakNone</b>.</para>
+          <para>Esta propiedad puede devolver la ubicación de un salto de página manual o automático, pero sólo puede asignar la ubicación de los saltos de página manuales (sólo puede establecerse como <b>xlPageBreakManual</b> o como <b>xlPageBreakNone</b>).</para>
+          <para>Para eliminar todos los saltos de página manuales de una hoja de cálculo, defina Cells.PageBreak en <b>xlPageBreakNone</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4579,8 +4609,8 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda anterior.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto es un rango, esta propiedad emula la acción de presionar la tecla MAYÚS + TAB; sin embargo, a diferencia de la combinación de teclas, la propiedad devuelve la celda anterior sin seleccionar it.</para>
-          <para>En una hoja protegida, esta propiedad devuelve la celda desbloqueada anterior. En una hoja desprotegida, esta propiedad siempre devuelve la celda inmediatamente a la izquierda de la celda especificada.</para>
+          <para>Si el objeto es un rango, esta propiedad emula la acción de presionar las teclas MAYÚS+TAB; no obstante, a diferencia de la combinación de teclas, la propiedad devuelve la celda anterior sin seleccionarla.</para>
+          <para>En una hoja protegida, esta propiedad devuelve la celda anterior no bloqueada. En una hoja desprotegida, la propiedad siempre devuelve la celda situada inmediatamente a la izquierda de la celda especificada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4808,7 +4838,7 @@
         <value>To be added.</value>
         <remarks>
           <para>El valor devuelto puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>.</para>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5210,8 +5240,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>El rango debe estar en una hoja de macros.</para>
-          <para>No se puede utilizar argumentos con nombre con este método. Argumentos se deben pasar por posición.</para>
-          <para>El método <b>Run</b> devuelve el resultado de la macro llamada.</para>
+          <para>No pueden usarse argumentos con nombre en este método. Los argumentos deben pasarse por posición.</para>
+          <para>El método <b>Run</b> devuelve el resultado de la macro a la que se haya llamado. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -5240,7 +5270,7 @@
         <summary>Selecciona el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para seleccionar una celda o un rango de celdas, use el método Select. Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel.Range.Activate" /> método.</para>
+          <para>Para seleccionar una celda o un rango de celdas, use el método Select. Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel.Range.Activate" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5298,7 +5328,7 @@
       <Docs>
         <summary>Crea <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> objetos para todas las celdas del rango especificado.</summary>
         <remarks>
-          <para>Se sobrescriben automáticamente los objetos <b>Phonetic</b> existentes del rango especificado (eliminado) por los objetos nuevos que se agregan con este método.</para>
+          <para>Los objetos nuevos que se agregan al utilizar este método sobrescriben (eliminan) automáticamente los objetos <b>Phonetic</b> existentes del rango especificado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5390,24 +5420,24 @@
         <summary>Devuelve <b>True</b> si el esquema se expande para el rango especificado (para que el detalle de la columna o fila esté visible).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El intervalo especificado debe ser una sola columna de resumen o una fila en un esquema.</para>
-          <para>Si el intervalo está en un informe de tabla dinámica, esta propiedad se establece en <b>True</b> si el elemento muestra el detalle.</para>
-          <para>Si el rango especificado no está en un informe de tabla dinámica, las instrucciones siguientes son verdaderas:</para>
+          <para>El rango especificado debe ser una sola columna de resumen o una fila en un esquema.</para>
+          <para>Si el rango es un informe de tabla dinámica, esta propiedad se establece en <b>True</b> si el elemento muestra el detalle.</para>
+          <para>Si el rango especificado no está en un informe de tabla dinámica, serán ciertas las siguientes afirmaciones:</para>
           <list type="bullet">
             <item>
-              <description>El rango debe estar en una sola fila de resumen o una columna.</description>
+              <description>El rango debe encontrarse en una sola columna o fila de resumen.</description>
             </item>
             <item>
-              <description>Esta propiedad devuelve <b>False</b> si cualquiera de los elementos secundarios de la fila o columna están ocultos.</description>
+              <description>Esta propiedad devuelve <b>False</b> si cualquiera de los secundarios de la fila o la columna están ocultos.</description>
             </item>
             <item>
-              <description>Al establecer esta propiedad en <b>True</b> equivale a mostrar todos los elementos secundarios de la fila de resumen o una columna.</description>
+              <description>Al establecer esta propiedad en <b>True</b> equivale a mostrar a todos los elementos secundarios de la fila de resumen o una columna.</description>
             </item>
             <item>
-              <description>Al establecer esta propiedad en <b>False</b> equivale a ocultar todos los elementos secundarios de la fila de resumen o una columna.</description>
+              <description>Establecer el valor <b>False</b> para esta propiedad equivale a ocultar todos los secundarios de la fila o la columna de resumen.</description>
             </item>
             <item>
-              <description>Si el intervalo especificado está en un informe de tabla dinámica, es posible establecer esta propiedad para más de una celda a la vez si el rango es contiguo. Esta propiedad puede devolver sólo si el rango es una sola celda.</description>
+              <description>Si el rango especificado está en un informe de tabla dinámica, es posible establecer esta propiedad para más de una celda a la vez si el rango es contiguo. Esta propiedad sólo se devolverá si el rango es una sola celda.</description>
             </item>
           </list>
           <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
@@ -5597,7 +5627,7 @@
         <remarks>
           <para>La configuración de <paramref name="Header" />, <paramref name="Order1" />, <paramref name="Order2" />, <paramref name="Order3" />, <paramref name="OrderCustom" />, y <paramref name="Orientation" /> , para la hoja de cálculo determinada, se guardan cada vez que utilice este método. Si no especifica valores para estos argumentos la próxima vez que se llame al método, se usan los valores guardados. Establezca explícitamente estos argumentos cada vez que utilice el método <b>Sort</b> si decide no utilizar los valores guardados.</para>
           <para>Las cadenas de texto que no son convertibles en datos numéricos se ordenarán normalmente.</para>
-          <para>Si no se definen argumentos con el método <b>Sort</b> , Microsoft Excel ordenará la selección elegida se ordenan en orden ascendente.</para>
+          <para>Si no se definen argumentos con el método <b>Sort</b>, Microsoft Excel ordenará la selección elegida en orden ascendente.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5721,7 +5751,7 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> objeto que representa un grupo existente de minigráficos del rango especificado.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> objeto que representa un grupo existente de minigráficos del rango especificado.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5953,7 +5983,7 @@
         <summary>Crea una tabla de datos basada en valores de entrada y fórmulas que se definen en una hoja de cálculo.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Usar tablas de datos para realizar un análisis de hipótesis cambiando algunos valores constantes en la hoja de cálculo para ver cómo se ven afectados los valores de otras celdas.</para>
+          <para>Utilice tablas de datos para realizar análisis "que pasaría si" cambiando algunas constantes en la hoja de cálculo, para ver el efecto en los valores de otras celdas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6052,27 +6082,49 @@
         <summary>Redistribuye una columna de celdas que contiene texto en varias columnas.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>En la siguiente tabla se muestran los resultados de importar texto a Excel con diferentes opciones de importación. Los resultados numéricos se muestran en la columna más a la derecha.</para>
-          <item>
-            <term>Período de</term>
-            <description>coma</description>
-            <description>comas</description>
-            <description>período</description>
-            <description>123.123,45</description>
-            <description>123,123.45 (numérico)</description>
-          </item>
-          <item>
-            <term>período</term>
-            <description>comas</description>
-            <description>comas</description>
-            <description>comas</description>
-            <description>123.123,45</description>
-            <description>123.123,45 
-          <list type="table">) texto)
-            <item><term>comas</term><description>período</description><description>comas</description><description>período</description><description>123,123.45</description><description>123,123.45 (numérico)</description></item><item><term>período</term><description>comas</description><description>período</description><description>comas</description><description>123 123,45</description><description>123 123,45 (texto)</description></item><item>de
-              <description>período</description>de
-              <term>período</term><description>comas</description><description>espacio</description><description>123 123,45</description><description>123,123.45 (numérico)</description></item></list></description>
-          </item>
+          <para>En la siguiente tabla se muestran los resultados obtenidos al importar texto a Excel con diferentes opciones de importación. Los resultados numéricos se muestran en la columna de la derecha.</para>
+          <list type="table">
+            <item>
+              <term>Punto</term>
+              <description>Coma</description>
+              <description>Coma</description>
+              <description>Punto</description>
+              <description>123.123,45</description>
+              <description>123,123.45 (numérico)</description>
+            </item>
+            <item>
+              <term>Punto</term>
+              <description>Coma</description>
+              <description>Coma</description>
+              <description>Coma</description>
+              <description>123.123,45</description>
+              <description>123.123,45 (texto)</description>
+            </item>
+            <item>
+              <term>Coma</term>
+              <description>Punto</description>
+              <description>Coma</description>
+              <description>Punto</description>
+              <description>123.123,45</description>
+              <description>123,123.45 (numérico)</description>
+            </item>
+            <item>
+              <term>Punto</term>
+              <description>Coma</description>
+              <description>Punto</description>
+              <description>Coma</description>
+              <description>123 123.45</description>
+              <description>123 123.45 (texto)</description>
+            </item>
+            <item>
+              <term>Punto</term>
+              <description>Coma</description>
+              <description>Punto</description>
+              <description>Espacio</description>
+              <description>123 123.45</description>
+              <description>123,123.45 (numérico)</description>
+            </item>
+          </list>
           <para></para>
         </remarks>
       </Docs>
@@ -6132,8 +6184,10 @@
         <summary>Promueve un rango en un esquema (es decir, reduce su nivel de esquema).</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Del intervalo especificado debe ser una fila o columna o un rango de filas o columnas. Si el rango es un informe de tabla dinámica, este método desagrupa los elementos incluidos en el intervalo.</para> Todos los grupos de ese campo de 
-          <para>Si la celda activa se encuentra en un encabezado de campo de un campo primario, se desagrupan y se quita el campo de informe de tabla dinámica. Cuando se desagrupa el último grupo de un campo primario, se elimina todo el campo del informe.</para><para></para></remarks>
+          <para>El rango especificado debe ser una fila o columna o un rango de filas o columnas. Si el rango es un informe de tabla dinámica, este método desagrupa los elementos incluidos en el intervalo.</para>
+          <para>Si la celda activa está en un encabezado de campo de un campo primario, se desagrupan todos los grupos de dicho campo y se elimina el campo del informe de tabla dinámica. Cuando se desagrupa el último grupo de un campo primario, se elimina todo el campo del informe.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnMerge">
@@ -6190,7 +6244,7 @@
         <summary>Determina si el alto de fila de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto es igual al alto estándar de la hoja.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si el alto de fila del objeto <b>Range</b> es igual al alto estándar de la hoja y <b>Null</b> si el rango contiene más de una fila y no las filas tienen el mismo alto.</para>
+          <para>Esta propiedad devuelve <b>True</b> si el alto de fila del objeto <b>Range</b> es igual al alto estándar de la hoja y no <b>Null</b> si el rango contiene más de una fila y las filas tienen el mismo alto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6290,7 +6344,10 @@
           <b>Objeto</b>de opcional. El tipo de datos del valor de rango. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlRangeValueDataType" /> constantes:<b>xlRangeValueDefault</b><paramref name="default" /> si especificado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto está vacío, devuelve el valor <b>Empty</b> (Utilice la función <b>IsEmpty</b> para comprobar si en este caso). Si el objeto <b>Range</b> contiene más de una celda, devuelve una matriz de valores (Utilice la función <b>IsArray</b> para comprobar si este es el caso). <b>xlRangeValueMSPersistXML</b>    Devuelve la representación del conjunto de registros del objeto <b>Range</b> especificado en formato XML. <b>xlRangeValueXMLSpreadsheet</b>    Devuelve los valores, formatos, fórmulas y nombres del objeto <b>Range</b> especificado en el formato de hoja de cálculo XML.</param>
         <summary>Devuelve o establece el valor del rango especificado.</summary>
         <value>To be added.</value>
-        <remarks>Se utilizan <para>al establecer un rango de celdas con el contenido de un archivo de hoja de cálculo XML, sólo los valores de la primera hoja del libro. No puede establecer ni obtener un rango no contiguo de celdas en el formato de hoja de cálculo XML.</para><para></para></remarks>
+        <remarks>
+          <para>Al establecer un rango de celdas con el contenido de un archivo de hoja de cálculo XML, se usan sólo los valores de la primera hoja del libro. No se puede establecer u obtener un rango no contiguo de celdas en el formato de hoja de cálculo XML.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value2">
@@ -6322,7 +6379,7 @@
         <summary>Devuelve o establece el valor de celda.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La única diferencia entre esta propiedad y el <b>valor de</b> propiedad es que la propiedad <b>Value2</b> no utiliza los tipos de datos <b>Currency</b> y <b>Date</b> . Puede devolver valores formato con los datos de estos tipos como números de punto flotante con el tipo de datos <b>Double</b> .</para>
+          <para>La única diferencia entre esta propiedad y la propiedad <b>Value</b> es que la propiedad <b>Value2</b> no utiliza los tipos de datos <b>Currency</b> y <b>Date</b> . Puede devolver los valores de formato con estos tipos de datos como números de punto flotante usando el tipo de datos <b>Double</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6473,8 +6530,8 @@
         <summary>Determina si Microsoft Excel ajusta el texto en el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si Microsoft Excel ajusta el texto en el objeto y <b>Null</b> si el rango especificado contiene algunas celdas cuyo texto se ajusta y otras que no.</para>
-          <para>Microsoft Excel cambiará el alto de fila del rango, si es necesario, para acomodar el texto del rango.</para>
+          <para>Esta propiedad devuelve <b>True</b> si Microsoft Excel ajusta el texto en el objeto y <b>Null</b> si el rango especificado contiene algunas celdas cuyo texto se ajusta y otras celdas que no.</para>
+          <para>Si es necesario, Microsoft Excel cambia el alto de las filas del rango para mostrar el texto del rango en pantalla.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6505,7 +6562,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> object que representa la expresión Xpath del elemento asignado al especificado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="XmlNamespaces" FullName="Microsoft.Office.Interop.Excel.XmlNamespaces">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6b18d825ce842de4499b72d3d765f6051669fd7b" />
+    <Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574091" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
@@ -35,7 +35,7 @@
   <Docs>
     <summary>Representa la colección de <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> objetos en un libro.</summary>
     <remarks>
-      <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+      <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> (propiedad) para tener acceso a un objeto <b>XmlNamespace</b> determinado.</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" /> (propiedad) para devolver una <b>cadena</b> que se enumera los espacios de nombres que se han agregado a un libro.</para>
       <para></para>
@@ -158,7 +158,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -222,8 +225,8 @@
           <b>Boolean</b> opcional.  <b>Es true</b> , se instala el paquete de expansión XML y se pone a disposición de todos los usuarios en un equipo. <b>False</b> hace que el paquete de expansión XML disponibles para el usuario actual únicamente. Valor predeterminado es <b>False</b>.</param>
         <summary>Instala el paquete de expansión XML en el equipo del usuario, poniendo una solución de documento inteligente XML a disposición de uno o varios usuarios.</summary>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para>Por motivos de seguridad, no se puede instalar un manifiesto sin firmar. Para obtener más información sobre los manifiestos, vea el Kit de desarrollo de Software (SDK) en el sitio Web de Microsoft Developer Network (MSDN).</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Por motivos de seguridad, no se puede instalar un manifiesto sin firmar. Para obtener más información sobre los manifiestos, vea el Kit de desarrollo de software para documentos inteligentes (Smart Document Software Development Kit) en el sitio web de Microsoft Developer Network (MSDN).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -315,7 +318,7 @@
         <summary>Devuelve una <b>cadena</b> que representa los espacios de nombres XML que se han agregado al libro.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el libro contiene más de un espacio de nombres, a continuación, los espacios de nombres están separados por un espacio en blanco en la cadena devuelta por la propiedad <b>Value</b> .</para>
+          <para>Si el libro contiene más de un espacio de nombres, los espacios de nombres están separados por un espacio en blanco en la cadena devuelta por la propiedad <b>Value</b> .</para>
           <para></para>
         </remarks>
       </Docs>

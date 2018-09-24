@@ -1,10 +1,10 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Excel.Comment">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7623036514119839c00f2d3d08991f073ef618c8" />
+    <Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585851" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Comment" />
@@ -32,9 +32,9 @@
     <summary>Representa un comentario de celda.</summary>
     <remarks>
       <para>El objeto <b>Comment</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> colección.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> propiedad para devolver un objeto <b>Comment</b> .</para>
-      <para>Usar <b>comentarios</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de comentario, para devolver un único comentario de la colección <b>Comments</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> método para agregar un comentario a un rango.</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> propiedad para devolver un objeto <b>Comment</b> .</para>
+      <para>Utilizar los <b>comentarios</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de comentario, para devolver un único comentario de la colección <b>Comments</b> .</para>
+      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> método para agregar un comentario a un rango.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -121,8 +121,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -174,7 +176,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> object que representa el siguiente comentario.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Este método sólo funciona en una hoja. Este método se usa en el último comentario de una hoja de devuelve <b>Null</b> (no el primer comentario de la siguiente hoja).</para>
+          <para>Este método sólo afecta a una hoja. Si se aplica este método al último comentario de una hoja, devuelve <b>Null</b>Null y no el primer comentario de la siguiente hoja.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -231,7 +233,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> object que representa el anterior comentario.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Este método sólo funciona en una hoja. Este método al primer comentario de una hoja, devuelve <b>Null</b> (no el último comentario de la hoja anterior).</para>
+          <para>Este método sólo afecta a una hoja. Si se aplica este método al primer comentario de una hoja, devuelve <b>Null</b>Null y no el último comentario de la hoja anterior.</para>
           <para></para>
         </remarks>
       </Docs>

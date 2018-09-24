@@ -1,10 +1,10 @@
 <Type Name="DocEvents_Event" FullName="Microsoft.Office.Interop.Excel.DocEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ee27ea41d9d946ae192294a8704a962ba30f4707" />
+    <Meta Name="ms.openlocfilehash" Value="5e626628e90f279c5e3d34630e7bc5d563d84aae" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572614" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DocEvents_Event" />
@@ -111,7 +111,7 @@
       <Docs>
         <summary>Se produce al hacer clic con el botón secundario del mouse (ratón) en una hoja de cálculo, antes de la acción predeterminada.</summary>
         <remarks>
-          <para>Al igual que otros eventos de hoja de cálculo, este evento no se produce si secundario mientras el puntero se encuentra en una forma o una barra de comandos (una barra de herramientas o menú barra).</para>
+          <para>Al igual que otros eventos de hoja de cálculo, este evento no se produce si, al hacer clic, el puntero del mouse se encuentra sobre una forma o una barra de comandos (una barra de herramientas o una barra de menús).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -234,7 +234,7 @@
       <Docs>
         <summary>Se produce después de editar o calcular de nuevo una celda o un rango de celdas (para celdas que contienen fórmulas) dentro de una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +256,7 @@
       <Docs>
         <summary>Se produce antes de aplicar los cambios a una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -278,7 +278,7 @@
       <Docs>
         <summary>Se produce antes de confirmar los cambios en el origen de datos OLAP de una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -300,7 +300,7 @@
       <Docs>
         <summary>Se produce antes de que se descarten los cambios realizados en una tabla dinámica.</summary>
         <remarks>
-          <para>Tiene lugar inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
+          <para>Se produce inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -322,7 +322,7 @@
       <Docs>
         <summary>Se produce después de realizar cambios en una tabla dinámica.</summary>
         <remarks>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableChangeSync" /> evento se produce durante la mayoría de los cambios a una tabla dinámica, por lo que puede escribir código para responder a acciones del usuario, como borrar, agrupar o actualizar elementos de la tabla dinámica.</para>
+          <para>El <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableChangeSync" /> evento se produce durante la mayoría de los cambios a una tabla dinámica, por lo que puede escribir código para responder a acciones del usuario, como borrar, agrupar o actualizar elementos de la tabla dinámica.</para>
           <para></para>
         </remarks>
       </Docs>

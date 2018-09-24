@@ -1,10 +1,10 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Excel.PageSetup">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5a93c78e6a5ae623101eeeccd4a1a36c91884483" />
+    <Meta Name="ms.openlocfilehash" Value="50c5531a9636ff8479dc8d559960466d2a73af0f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578956" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PageSetup" />
@@ -157,7 +157,10 @@
       <Docs>
         <summary>Devuelve o establece el tamaño del margen inferior en puntos.</summary>
         <value>To be added.</value>
-        <remarks>Márgenes de <para>se establece o devuelve en puntos. Usar cualquiera el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para realizar la conversión.</para><para></para></remarks>
+        <remarks>
+          <para>Los márgenes se establece o devuelve en puntos. Usar cualquiera el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para realizar la conversión.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CenterFooter">
@@ -408,8 +411,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DifferentFirstPageHeaderFooter">
@@ -475,7 +480,7 @@
           <b>True</b> si la hoja se imprime sin gráficos.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Configuración de impresión más rápida (ya no se imprimen los gráficos) hace que esta propiedad en <b>True</b> .</para>
+          <para>Establezca esta propiedad como <b>True</b> para acelerar la impresión (ya que no se imprimen los gráficos).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -700,7 +705,10 @@
       <Docs>
         <summary>Devuelve o establece la distancia desde la parte superior de la página en el encabezado, en puntos.</summary>
         <value>To be added.</value>
-        <remarks>Márgenes de <para>se establece o devuelve en puntos. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para convertir las medidas en pulgadas o centímetros.</para><para></para></remarks>
+        <remarks>
+          <para>Los márgenes se establece o devuelve en puntos. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para convertir las medidas en pulgadas o centímetros.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftFooter">
@@ -849,7 +857,10 @@
       <Docs>
         <summary>Devuelve o establece el tamaño del margen izquierdo en puntos.</summary>
         <value>To be added.</value>
-        <remarks>Márgenes de <para>se establece o devuelve en puntos. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para convertir las medidas en pulgadas o centímetros.</para><para></para></remarks>
+        <remarks>
+          <para>Los márgenes se establece o devuelve en puntos. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para convertir las medidas en pulgadas o centímetros.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OddAndEvenPagesHeaderFooter">
@@ -945,7 +956,10 @@
       <Docs>
         <summary>Modo de impresión horizontal o vertical.</summary>
         <value>To be added.</value>
-        <remarks>Orígenes de datos OLAP para <para>, al establecer esta propiedad para un campo en una jerarquía establece la orientación para el resto de los campos en la misma jerarquía. Campos de dimensiones sólo pueden orientarse en la fila, columna y áreas de campo de página del informe de tabla dinámica. Los campos de medida sólo pueden orientarse en el área de datos. Si se establece un campo de jerarquía o datos en <b>xlHidden,</b> quita la jerarquía o el campo de informe de tabla dinámica.</para><para></para></remarks>
+        <remarks>
+          <para>Para los orígenes de datos OLAP, si se establece esta propiedad para un campo de una jerarquía, se establece la orientación del resto de los campos de la misma jerarquía. Los campos de dimensiones sólo pueden orientarse en las áreas de campos de fila, columna y página del informe de tabla dinámica. Los campos de medida sólo pueden orientarse en el área de datos. Al establecer una jerarquía o un campo de datos en <b>xlHidden</b>, se quita la jerarquía o el campo del informe de tabla dinámica.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pages">
@@ -1067,7 +1081,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Establezca esta propiedad en <b>False</b> o en una cadena vacía ("") para establecer el área de impresión sea toda la hoja.</para>
-          <para>Esta propiedad se aplica sólo a las páginas de la hoja de cálculo.</para>
+          <para>Esta propiedad se aplica solamente a páginas de hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1196,7 +1210,7 @@
           <b>True</b> si se imprimen encabezados de fila y columna en esta página. Sólo se aplica a hojas de cálculo.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" /> propiedad controla la presentación en pantalla de los encabezados.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" /> propiedad controla la presentación en pantalla de los encabezados.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1231,7 +1245,7 @@
           <b>Es true</b> si las notas de celda se imprimen como notas finales de la hoja. Sólo se aplica a hojas de cálculo.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintComments" /> propiedad para imprimir los comentarios como cuadros de texto o notas finales.</para>
+          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintComments" /> (propiedad) para imprimir los comentarios como cuadros de texto o notas finales.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1301,9 +1315,9 @@
         <summary>Devuelve o establece las columnas que contienen las celdas que se repite en el lado izquierdo de cada página como una cadena en notación de estilo A1 en el lenguaje de la macro.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si especifica sólo parte de una columna o columnas, Microsoft Excel expandirá el rango a columnas completas.</para>
-          <para>Establezca esta propiedad en <b>False</b> o en una cadena vacía ("") para desactivar las columnas de título.</para>
-          <para>Esta propiedad se aplica sólo a las páginas de la hoja de cálculo.</para>
+          <para>Si especifica sólo parte de una o varias columnas, Microsoft Excel expandirá el rango a columnas completas.</para>
+          <para>Establezca esta propiedad en <b>False</b> o en el valor cadena vacía ("") para desactivar las columnas de título.</para>
+          <para>Esta propiedad se aplica solamente a páginas de hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1337,9 +1351,9 @@
         <summary>Devuelve o establece las filas que contienen las celdas que se repite en la parte superior de cada página como una cadena en notación de estilo A1 en el lenguaje de la macro.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si especifica sólo parte de una o más filas, Microsoft Excel expandirá el rango a filas completas.</para>
-          <para>Establezca esta propiedad en <b>False</b> o en una cadena vacía ("") para desactivar las filas de título.</para>
-          <para>Esta propiedad se aplica sólo a las páginas de la hoja de cálculo.</para>
+          <para>Si especifica sólo parte de una o más filas, Microsoft Excel expandirá el rango hasta cubrir filas completas.</para>
+          <para>Establezca esta propiedad en <b>False</b> o como cadena vacía ("") para desactivar las filas de título.</para>
+          <para>Esta propiedad se aplica solamente a páginas de hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1490,7 +1504,10 @@
       <Docs>
         <summary>Devuelve o establece el tamaño del margen derecho en puntos.</summary>
         <value>To be added.</value>
-        <remarks>Márgenes de <para>se establece o devuelve en puntos. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para convertir las medidas en pulgadas o centímetros.</para><para></para></remarks>
+        <remarks>
+          <para>Los márgenes se establece o devuelve en puntos. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para convertir las medidas en pulgadas o centímetros.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWithDocHeaderFooter">
@@ -1554,7 +1571,10 @@
       <Docs>
         <summary>Devuelve o establece el tamaño del margen superior, en puntos.</summary>
         <value>To be added.</value>
-        <remarks>Márgenes de <para>se establece o devuelve en puntos. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para convertir las medidas en pulgadas o centímetros.</para><para></para></remarks>
+        <remarks>
+          <para>Los márgenes se establece o devuelve en puntos. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> método para convertir las medidas en pulgadas o centímetros.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -1587,7 +1607,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Si esta propiedad es <b>False</b>, el <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> y <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> propiedades controlan cómo se aplica una escala de la hoja de cálculo.</para>
-          <para>Los ajustes de tamaño la relación de aspecto del documento original.</para>
+          <para>Los ajustes de tamaño conservan la proporción del aspecto del documento original.</para>
           <para></para>
         </remarks>
       </Docs>

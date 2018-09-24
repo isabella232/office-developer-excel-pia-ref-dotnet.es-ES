@@ -1,10 +1,10 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Excel.SmartTag">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6e770a774af316a7c55bc775f871290ac7daece9" />
+    <Meta Name="ms.openlocfilehash" Value="c097490d40a579edaf6a024de2d42f5d5c8fb233" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575239" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTag" />
@@ -123,8 +123,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -177,7 +179,10 @@
       <Docs>
         <summary>Devuelve una <b>cadena</b> que representa el localizador uniforme de recursos (URL) de una etiqueta inteligente.</summary>
         <value>To be added.</value>
-        <remarks>Dirección de <para>la dirección URL se especifica en el archivo de reconocedor de etiquetas inteligentes relacionadas. Cuando un fragmento de texto se reconocen y marcado, la dirección URL se convierte en parte de la información contenida en la etiqueta inteligente. La propiedad <b>DownloadURL</b> es útil si se envía un documento a una persona que no tiene instalados en su equipo los archivos de reconocedor y de acción necesarios. El usuario puede seguir la dirección URL para descargar los archivos de etiqueta inteligente necesarios.</para><para></para></remarks>
+        <remarks>
+          <para>La dirección URL se especifica en el archivo de reconocedor de etiquetas inteligentes relacionadas. Cuando un fragmento de texto se reconocen y marcado, la dirección URL se convierte en parte de la información contenida en la etiqueta inteligente. La propiedad <b>DownloadURL</b> es útil si se envía un documento a una persona que no tiene instalados en su equipo los archivos de reconocedor y de acción necesarios. El usuario puede seguir la dirección URL para descargar los archivos de etiqueta inteligente necesarios.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -206,33 +211,53 @@
         <summary>Devuelve el nombre del objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La siguiente tabla muestran valores de ejemplo de la propiedad <b>Name</b> y las propiedades relacionadas dados un origen de datos OLAP con el nombre único "[Europe]. [France]. [Paris] "y el nombre de un origen de datos no OLAP con el elemento"Paris".</para>
+          <para>En la siguiente tabla se muestran valores de ejemplo de la propiedad <b>Name</b> y otras propiedades relacionadas partiendo de un origen de datos OLAP con el nombre exclusivo "[Europe].[France].[Paris]" y un origen de datos no OLAP con el nombre de elemento "Paris".</para>
           <list type="table">
             <item>
               <term>
                 <b>Título</b>
               </term>
-              <description>París</description>
-              <description>París</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>nombre</b>
+                <b>Nombre</b>
               </term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>París</description>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>(Igual que el valor de la propiedad SQL, sólo lectura)</description>
-            </item> El 
-              <term><b>valor</b></term>de 
-            <item><description>[Europe]. [ Francia]. [Paris] (solo lectura)</description><description>París</description></item></list>
-          <para>Cuando se especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para> expresión de 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>expresión. PivotItems("Paris")</description></item></list><para>cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para><list type="table"><item><term>[Europe]. [ Francia]. [Paris]</term><description>París</description></item></list><para></para></remarks>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>(igual que el valor de la propiedad SQL, sólo lectura)</description>
+            </item>
+            <item>
+              <term>
+                <b>Valor</b>
+              </term>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para>Cuando especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>expresión. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term>
+              <description>expresión. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>Cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>[Europe]. [France]. [Paris]</term>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -289,7 +314,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> objeto que representa las propiedades de una etiqueta inteligente.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> método con el <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> (propiedad) para almacenar metadatos adicionales para una etiqueta inteligente.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> método con el <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> (propiedad) para almacenar metadatos adicionales para una etiqueta inteligente.</para>
           <para></para>
         </remarks>
       </Docs>

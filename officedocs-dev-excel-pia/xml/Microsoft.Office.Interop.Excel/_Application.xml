@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587790" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Application" />
@@ -404,7 +404,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda activa en la ventana activa (la ventana superior) o en la ventana especificada. Si la ventana no contiene una hoja de cálculo, esta propiedad genera un error.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Tener cuidado distinguir entre la celda activa y la selección. La celda activa es una sola celda dentro de la selección actual. La selección puede contener más de una celda, pero sólo una es la celda activa.</para>
+          <para>Celda activa no es lo mismo que selección. La celda activa es una sola celda de la selección actual. La selección puede contener más de una celda, pero sólo una es la celda activa.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -592,7 +592,7 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object que representa la ventana de vista protegida activa (la ventana superior).</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> object que representa la ventana de vista protegida activa (la ventana superior).</value>
         <remarks>
-          <para>Devuelve una referencia nula (Nothing en Visual Basic) si no hay ninguna ventana Vista protegida abierta. Read-only.</para>
+          <para>Devuelve una referencia nula (Nothing en Visual Basic) si no hay ninguna ventana Vista protegida abierta. Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -756,7 +756,7 @@
           <b>Objeto</b>de opcional. Sólo se utiliza si <paramref name="ListArray" /> es un objeto <b>Range</b> . <b>True</b> para crear una lista personalizada de cada fila en el intervalo. <b>False</b> para crear una lista personalizada de cada columna del rango. Si se omite este argumento y hay más filas que columnas (o el mismo número de filas y columnas) en el intervalo, Microsoft Excel crea una lista personalizada de cada columna del rango. Si se omite este argumento y hay más columnas que filas en el intervalo, Microsoft Excel crea una lista personalizada de cada fila en el intervalo.</param>
         <summary>Agrega una lista personalizada para Autorrelleno y para ordenación personalizados.</summary>
         <remarks>
-          <para>Si la lista que intenta agregar ya existe, este método no tiene ningún efecto.</para>
+          <para>Si la lista que se intenta agregar ya existe, este método no surtirá ningún efecto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -818,7 +818,7 @@
         <summary>Obtiene una colección de <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> objetos que representan todos los complementos que están actualmente disponibles o abiertos en Excel, independientemente de si están instalados.</summary>
         <value>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> objetos que representan todos los complementos que están actualmente disponibles o abiertos en Excel.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -929,7 +929,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Incluso si la configuración de Microsoft Windows para ClearType está desactivada, al establecer esta propiedad en <b>True</b> invalida la configuración de Windows y se utiliza ClearType en todas las aplicaciones de Microsoft Office.</para>
+          <para>Aun cuando la opción ClearType de Microsoft Windows esté deshabilitada, si esta propiedad se establece en <b>True</b>, se invalidará el valor de Windows y se usará ClearType en todas las aplicaciones de Microsoft Office.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1019,7 +1019,7 @@
         <summary>Devuelve un valor <b>booleano</b> que indica si están disponibles las características XML en Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1215,24 +1215,24 @@
         <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoAutomationSecurity" /> constante que representa el modo de seguridad de Microsoft Excel que utiliza al abrir archivos mediante programación.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se establece automáticamente en <b>msoAutomationSecurityLow</b> cuando se inicia la aplicación. Por lo tanto, para evitar la interrupción de las soluciones que se basan en la configuración predeterminada, debe tener cuidado al restablecer esta propiedad en <b>msoAutomationSecurityLow</b> después de abrir un archivo mediante programación. Además, esta propiedad debe establecerse inmediatamente antes y después de abrir un archivo mediante programación para evitar daños malintencionados.</para>
+          <para>Esta propiedad se establece automáticamente en <b>msoAutomationSecurityLow</b> al iniciarse la aplicación. Por tanto, para evitar la interrupción de las soluciones que utilizan la configuración predeterminada, debe asegurarse de restablecer esta propiedad como <b>msoAutomationSecurityLow</b> después de abrir un archivo mediante programación. Asimismo, esta propiedad debe establecerse inmediatamente antes y después de abrir un archivo mediante programación para evitar que se realicen modificaciones malintencionadas.</para>
           <para>
-            <b>MsoAutomationSecurity</b> puede ser una de estas constantes <b>MsoAutomationSecurity</b> :</para>
+            <b>MsoAutomationSecurity</b> puede ser una de estas constantes <b>MsoAutomationSecurity</b>:</para>
           <list type="bullet">
             <item>
               <description>
-                <b>msoAutomationSecurityByUI</b> utiliza la configuración de seguridad especificada en el cuadro de diálogo de <b>seguridad</b> .</description>
+                <b>msoAutomationSecurityByUI</b>  Usa la configuración de seguridad especificada en el cuadro de diálogo de <b>seguridad</b> .</description>
             </item>
             <item>
               <description>
-                <b>msoAutomationSecurityForceDisable</b> deshabilita todas las macros en todos los archivos abiertos mediante programación sin mostrar ninguna alerta de seguridad.</description>
+                <b>msoAutomationSecurityForceDisable</b>  Deshabilita todas las macros en todos los archivos abiertos mediante programación sin mostrar ninguna alerta de seguridad.</description>
             </item>
             <item>
               <description>
-                <b>msoAutomationSecurityLow</b> habilita todas las macros. Esto es el valor predeterminado cuando se inicia la aplicación.</description>
+                <b>msoAutomationSecurityLow</b>  Habilita todas las macros. Éste es el valor predeterminado cuando se inicia la aplicación.</description>
             </item>
           </list>
-          <para>Configuración de <see cref="P:Microsoft.Office.Interop.Excel._Application.ScreenUpdating" /> en <b>False</b> no afecta a las alertas y avisos de seguridad. El <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> configuración no se aplicará a las advertencias de seguridad. Por ejemplo, si el usuario establece <b>DisplayAlerts</b> en <b>False</b> y <b>AutomationSecurity</b> en <b>msoAutomationSecurityByUI</b>, mientras el usuario está en el nivel de seguridad medio, habrá advertencias de seguridad mientras se encuentra la macro está ejecutando. Esto permite que la macro interceptar los errores de archivo abierto mientras sigue mostrándose el aviso de seguridad si el archivo se abre correctamente.</para>
+          <para>Configuración de <see cref="P:Microsoft.Office.Interop.Excel._Application.ScreenUpdating" /> en <b>False</b> no afecta a las alertas y avisos de seguridad. El <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> configuración no se aplicará a las advertencias de seguridad. Por ejemplo, si el usuario establece <b>DisplayAlerts</b> en <b>False</b> y <b>AutomationSecurity</b> en <b>msoAutomationSecurityByUI</b>, mientras el usuario está en el nivel de seguridad medio, habrá advertencias de seguridad mientras se ejecuta la macro. Esto permite que la macro interceptar los errores de archivo abierto mientras sigue mostrándose el aviso de seguridad si el archivo se abre correctamente.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1295,7 +1295,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" /> objeto, que realiza la copia de seguridad de todos los formatos de archivo en un intervalo de tiempo determinado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Intervalos de tiempo válidos son números enteros entre 1 y 120.</para>
+          <para>Los intervalos de tiempo válidos son los números enteros entre 1 y 120.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1448,7 +1448,7 @@
       <Docs>
         <summary>Para todos los libros abiertos, fuerza un cálculo completo de los datos y vuelve a establecer las dependencias.</summary>
         <remarks>
-          <para>Las dependencias son las fórmulas que dependen de otras celdas. Por ejemplo, la fórmula "= A1" depende de la celda A1. El método <b>CalculateFullRebuild</b> es similar a volver a escribir todas las fórmulas.</para>
+          <para>Dependencias son las fórmulas que dependen de otras celdas. Por ejemplo, la fórmula "=A1" depende de la celda A1. El método <b>CalculateFullRebuild</b> se parecido a volver a insertar todas las fórmulas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1513,7 +1513,7 @@
         <summary>Devuelve o establece el modo de cálculo. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Excel.XlCalculation" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para los orígenes de datos OLAP, esta propiedad sólo puede devolver o establecerse en <b>xlNormal</b>.</para>
+          <para>Para los orígenes de datos OLAP, esta propiedad sólo puede devolver o establecerse en el <b>valor xlNormal</b>.</para>
           <para>
             <b>XlCalculation</b> puede ser una de estas constantes <b>XlCalculation</b> :</para>
           <para>
@@ -1679,25 +1679,27 @@
         <summary>Devuelve información sobre cómo se llamó a Visual Basic (para obtener más información, vea la sección Comentarios).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad devuelve información sobre cómo se llamó a Visual Basic, tal como se muestra en la siguiente tabla.</para>
+          <para>Esta propiedad devuelve información sobre el modo en que se ha llamado a Visual Basic, como se muestra en la tabla siguiente.</para>
           <list type="table">
             <item>
               <term>Una función personalizada especificada en una sola celda</term>
               <description>A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que especifica la celda</description>
             </item>
             <item>
-              <term>una función personalizada que forma parte de una fórmula de matriz en un rango de celdas</term>de
-              <description>un objeto <b>Range</b> que especifica el rango de celdas</description></item>
-            <item>
-              <description>El nombre del documento como texto</description>de 
-              <term>macro an Auto_Open, Auto_Close, Auto_Activate o Auto_desactivar</term></item>
-            <item>
-              <term>una macro establecida, ya sea por la <see cref="P:Microsoft.Office.Interop.Excel._Application.OnDoubleClick" /> o <see cref="P:Microsoft.Office.Interop.Excel._Application.OnEntry" /> (propiedad)</term>
-              <description>el nombre del objeto de gráfico identificador o celda de referencia (si procede) al que se aplica la macro</description>
+              <term>Una función personalizada que es parte de una fórmula de matriz en un rango de celdas</term>
+              <description>Un objeto <b>Range</b> que especifica dicho rango de celdas</description>
             </item>
             <item>
-              <term>cuadro de diálogo de la Macro (menú Herramientas), o cualquier llamador no descrito más arriba</term>
-              <description>el #REF! valor de error</description>
+              <term>Una macro Auto_Open, Auto_Close, Auto_Activate o Auto_Deactivate</term>
+              <description>El nombre del documento como texto</description>
+            </item>
+            <item>
+              <term>Una macro establecida, ya sea por la <see cref="P:Microsoft.Office.Interop.Excel._Application.OnDoubleClick" /> o <see cref="P:Microsoft.Office.Interop.Excel._Application.OnEntry" /> (propiedad)</term>
+              <description>El nombre del identificador del objeto de gráfica o de la referencia de celda (si corresponde) al que se aplica la macro</description>
+            </item>
+            <item>
+              <term>El cuadro de diálogo Macro (menú Herramientas) o cualquier autor de la llamada no descrito anteriormente</term>
+              <description>El valor de error #REF!</description>
             </item>
           </list>
           <para></para>
@@ -2070,7 +2072,7 @@
             <b>xlClipboardFormatBIFF3</b>
           </para>
           <para>
-            <b> xlClipboardFormatBIFF4</b>
+            <b>xlClipboardFormatBIFF4</b>
           </para>
           <para>
             <b>xlClipboardFormatBinary</b>
@@ -2195,8 +2197,8 @@
           <para>Lectura y escritura.</para>
           <para>La configuración de la <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> propiedad se corresponde con el tipo lista desplegable cuadro clúster en fórmulas en la categoría Avanzadas del cuadro de diálogo Opciones de Excel.</para>
           <para>
-            <b>Nota</b>: para especificar el <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> (propiedad) debe instalar un conector de clúster de informática de alto rendimiento (HPC). Un conector de clúster le permite ejecutar funciones XLL seguras para el clúster de forma remota en un clúster HPC para aumentar el rendimiento.</para>
-          <para>Antes de que se puede especificar el <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> (propiedad), debe usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> (propiedad) para permitir que Microsoft Excel 2010 ejecutar funciones definidas por el usuario en los complementos XLL</para>
+            <b>Nota</b>: para especificar el <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> (propiedad) debe instalar un conector de clúster de informática de alto rendimiento (HPC). Un conector de clúster permite ejecutar funciones XLL seguras para el clúster de forma remota en un clúster HPC para aumentar el rendimiento.</para>
+          <para>Antes de que se puede especificar el <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> (propiedad), debe usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> (propiedad) para permitir que Microsoft Excel 2010 ejecutar funciones definidas por el usuario en los complementos XLL.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2374,7 +2376,7 @@
           <para>
             <b>xlCommandUnderlinesAutomatic</b>
           </para>
-          <para>en Microsoft Excel para Windows, la lectura de esta propiedad siempre devuelve <b> xlCommandUnderlinesOn</b>, y establecer esta propiedad en cualquier valor distinto de <b>xlCommandUnderlinesOn</b> es un error.</para>
+          <para>En Microsoft Excel para Windows, la lectura de esta propiedad siempre devuelve <b>xlCommandUnderlinesOn</b> y, cuando se establece como un valor distinto de <b>xlCommandUnderlinesOn</b>, devuelve un error.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2415,7 +2417,7 @@
           <b>True</b> si el reconocimiento de escritura a mano está limitado a números y signos de puntuación.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad sólo está disponible si está utilizando Microsoft Windows para Pen Computing. Si se intenta establecer esta propiedad en cualquier otro sistema operativo, se produce un error.</para>
+          <para>Esta propiedad sólo está disponible cuando se usa Microsoft Windows para Pen Computing. Si intenta establecerla bajo cualquier otro sistema operativo, se producirá un error.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2456,7 +2458,7 @@
           <b>True</b> si Microsoft Excel muestra caracteres de control para idiomas de derecha a izquierda.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se puede establecer esta propiedad sólo cuando de derecha a izquierda idioma se ha instalado y seleccionado soporte.</para>
+          <para>Esta propiedad sólo se puede establecer si se ha instalado y seleccionado una versión de idioma con configuración de derecha a izquierda.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2565,7 +2567,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -2606,14 +2611,16 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlMousePointer" />puede ser una de estas constantes <b>XlMousePointer</b> :</para>
           <para>
-            <b>xlDefault</b> puntero predeterminado.</para>
-          <para>puntero en la i 
-            <b>xlIBeam</b> .</para>
+            <b>xlDefault</b> El puntero predeterminado.</para>
           <para>
-            <b>xlNorthwestArrow</b> el puntero flecha noroeste.</para>
+            <b>xlIBeam</b> El cursor en i.</para>
           <para>
-            <b>xlWait</b> el puntero de reloj de arena.</para> Propiedad 
-          <para>el <b>Cursor</b> no se restablecerá automáticamente cuando la macro deja de ejecutarse. Deberá restablecer el puntero <b>xlDefault</b> antes de que la macro deja de ejecutarse.</para><para></para></remarks>
+            <b>xlNorthwestArrow</b> El puntero de flecha noroeste.</para>
+          <para>
+            <b>xlWait</b> El puntero de reloj de arena.</para>
+          <para>La propiedad Cursor no se restablecerá automáticamente cuando la macro termine de ejecutarse. Deberá restablecer el puntero del xlDefaultmouse como xlDefault antes de que termine la ejecución de la macro.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CursorMovement">
@@ -2651,7 +2658,7 @@
         <summary>Devuelve o establece un valor que indica si se utiliza un cursor visual o un cursor lógico. Puede ser una de las siguientes constantes: <b>xlVisualCursor</b> o <b>xlLogicalCursor</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Estas constantes pueden no estar disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>Estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2729,19 +2736,19 @@
               <term>
                 <b>False</b>
               </term>
-              <description>no en modo Cortar o copiar</description>
+              <description>No en modo Cortar o copiar</description>
             </item>
             <item>
               <term>
                 <b>xlCopy</b>
               </term>
-              <description>copia en modo</description>
+              <description>En el modo Copiar</description>
             </item>
             <item>
               <term>
                 <b>xlCut</b>
               </term>
-              <description>modo en Cortar</description>
+              <description>En el modo Cortar</description>
             </item>
           </list>
           <list type="table">
@@ -2749,13 +2756,13 @@
               <term>
                 <b>False</b>
               </term>
-              <description>cancela cortar o modo copiar y quita el traslado de borde.</description>
+              <description>Cancela el modo Cortar o Copiar y elimina el borde móvil.</description>
             </item>
             <item>
               <term>
-                <b>True</b>
+                <b>Es true</b>
               </term>
-              <description>cancela cortar o modo copiar y quita el traslado de borde.</description>
+              <description>Cancela el modo Cortar o Copiar y elimina el borde móvil.</description>
             </item>
           </list>
           <para></para>
@@ -2802,19 +2809,19 @@
               <term>
                 <b>xlOn</b>
               </term>
-              <description>está activado el modo de entrada de datos.</description>
+              <description>El modo de entrada de datos está activado.</description>
             </item>
             <item>
               <term>
                 <b>xlOff</b>
               </term>
-              <description>es el modo de entrada de datos desactivados.</description>
+              <description>El modo de entrada de datos está desactivado.</description>
             </item>
             <item>
               <term>
                 <b>xlStrict</b>
               </term>
-              <description>el modo de entrada de datos está activado y presionar ESC no activarla off.</description>
+              <description>Modo de entrada de datos está activado y presionar ESC no desactiva.</description>
             </item>
           </list>
           <para></para>
@@ -2885,43 +2892,43 @@
         <summary>Ejecuta un comando o realiza otra acción o acciones en otra aplicación por medio del canal de DDE especificado.</summary>
         <remarks>
           <para>El método <b>DDEExecute</b> está diseñado para enviar comandos a otra aplicación. También puede utilizarlo para enviar pulsaciones de teclas a otra aplicación, aunque la <see cref="M:Microsoft.Office.Interop.Excel._Application.SendKeys(System.Object,System.Object)" /> método es el método preferido para enviar pulsaciones de teclas. El <paramref name="String" /> argumento puede especificar cualquier tecla única combinada con ALT, CTRL o MAYÚS o cualquier combinación de dichas teclas. Cada tecla está representada por uno o más caracteres, como "a" para el carácter a, o "{ENTER}" para la tecla ENTRAR.</para>
-          <para>Para especificar caracteres que no se muestran cuando se presiona la tecla correspondiente (por ejemplo, ENTRAR o TAB), utilice los códigos que aparecen en la siguiente tabla. Cada código de la tabla representa una tecla del teclado.</para>
+          <para>Para especificar caracteres que no se muestran al pulsar la tecla correspondiente (por ejemplo, ENTRAR o TAB), use los códigos que se muestran en la tabla siguiente. Cada código de la tabla representa una tecla del teclado.</para>
           <list type="table">
             <item>
               <term>RETROCESO</term>
               <description>{BACKSPACE} o {BS}</description>
             </item>
             <item>
-              <term>interrumpir</term>
-              <description>{interrumpir}</description>
+              <term>INTER</term>
+              <description>SALTO DE {}</description>
             </item>
             <item>
               <term>BLOQ MAYÚS</term>
               <description>{CAPSLOCK}</description>
             </item>
             <item>
-              <term>Borrar</term>
-              <description>{Borrar}</description>
+              <term>BORRAR</term>
+              <description>{BORRAR}</description>
             </item>
             <item>
-              <term>Suprimir o SUPR</term>
+              <term>SUPRIMIR o SUPR</term>
               <description>{DELETE} o {DEL}</description>
             </item>
             <item>
-              <term>Flecha abajo</term>
-              <description>{abajo}</description>
+              <term>FLECHA ABAJO</term>
+              <description>{ABAJO}</description>
             </item>
             <item>
-              <term>END</term>
+              <term>FIN</term>
               <description>{END}</description>
             </item>
             <item>
               <term>ENTRAR</term>
-              <description>~ (tilde)</description>
+              <description>~ (tilde de la ñ)</description>
             </item>
             <item>
               <term>ENTRAR (teclado numérico)</term>
-              <description>{ENTRAR}</description>
+              <description>{ENTER}</description>
             </item>
             <item>
               <term>ESC</term>
@@ -2932,38 +2939,39 @@
               <description>{F1} a {F15}</description>
             </item>
             <item>
-              <term>Ayuda de</term>
-              <description>{Ayuda}</description>
+              <term>AYUDA</term>
+              <description>AYUDA DE {}</description>
             </item>
             <item>
-              <term>Página principal</term>de
-              <description>{HOME}</description></item>
+              <term>INICIO</term>
+              <description>PÁGINA PRINCIPAL DE {}</description>
+            </item>
             <item>
               <term>INS</term>
-              <description>{Insertar}</description>
+              <description>{INSERTAR}</description>
             </item>
             <item>
-              <term>Flecha izquierda</term>
+              <term>FLECHA IZQUIERDA</term>
               <description>{LEFT}</description>
             </item>
             <item>
-              <term>Tecla BLOQ NUM</term>
+              <term>BLOQ NUM</term>
               <description>{NUMLOCK}</description>
             </item>
             <item>
-              <term>Av Pág</term>
+              <term>AV PÁG</term>
               <description>{AV PÁG}</description>
             </item>
             <item>
-              <term>Re Pág</term>
+              <term>RE PÁG</term>
               <description>{RE PÁG}</description>
             </item>
             <item>
-              <term>Devolver</term>
+              <term>RETORNO</term>
               <description>{RETURN}</description>
             </item>
             <item>
-              <term>Flecha derecha</term>
+              <term>FLECHA DERECHA</term>
               <description>{RIGHT}</description>
             </item>
             <item>
@@ -2971,15 +2979,15 @@
               <description>{SCROLLLOCK}</description>
             </item>
             <item>
-              <term>Ficha</term>
-              <description>{ficha}</description>
+              <term>TAB</term>
+              <description>FICHA {}</description>
             </item>
             <item>
-              <term>Flecha arriba</term>
-              <description>{seguridad}</description>
+              <term>FLECHA ARRIBA</term>
+              <description>{SEGURIDAD}</description>
             </item>
           </list>
-          <para>También puede especificar teclas combinadas con MAYÚS o CTRL o ALT. Para especificar una tecla combinada con una o varias de las teclas mencionadas, use la siguiente tabla.</para>
+          <para>También puede especificar teclas combinadas con MAYÚS o CTRL o ALT. Para especificar una combinación de teclas con alguna o varias de las teclas mencionadas, use la siguiente tabla:</para>
           <list type="table">
             <item>
               <term>MAYÚS</term>
@@ -2991,7 +2999,7 @@
             </item>
             <item>
               <term>ALT</term>
-              <description>% (signo de porcentaje)</description>
+              <description>% (signo porcentual)</description>
             </item>
           </list>
           <para></para>
@@ -3032,7 +3040,7 @@
         <summary>Abre un canal de DDE a una aplicación.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Si se realiza correctamente, el método <b>DDEInitiate</b> devuelve el número del canal abierto. Todas las funciones DDE subsiguientes utilizan este número para especificar el canal.</para>
+          <para>Si tiene éxito, el método <b>DDEInitiate</b> devolverá el número del canal abierto. Todas las funciones de DDE posteriores usarán este número para especificar el canal.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3073,7 +3081,7 @@
           <b>Objeto</b>requerido. Datos que se enviarán a la aplicación.</param>
         <summary>Envía datos a una aplicación.</summary>
         <remarks>
-          <para>Se produce un error si no se realiza correctamente la llamada al método.</para>
+          <para>Si la llamada al método no se realiza correctamente, se producirá un error.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3280,7 +3288,7 @@
         <summary>Devuelve o establece la dirección predeterminada en la que Microsoft Excel muestra nuevas ventanas y hojas de cálculo. Puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda) o <b>xlLTR</b> (de izquierda a derecha).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para>Algunas de estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3414,7 +3422,7 @@
           <b>Integer</b>requerido. El número de lista personalizada. Este número debe ser mayor o igual que 5 (Microsoft Excel tiene cuatro listas personalizadas integradas que no se puede eliminar).</param>
         <summary>Elimina una lista personalizada.</summary>
         <remarks>
-          <para>Este método genera un error si el número de la lista es menor que 5 o si no hay ninguna lista personalizada inexistente.</para>
+          <para>Este método produce un error si el número de la lista es menor que 5 o si hace referencia a una lista personalizada inexistente.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3514,8 +3522,8 @@
           <b>True</b> si Microsoft Excel muestra ciertos mensajes y avisos mientras se ejecuta una macro.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El valor predeterminado es <b>True</b>. Establezca esta propiedad en <b>False</b> si no desea que se moleste con mensajes de voz y mensajes de alerta mientras se está ejecutando un programa; cualquier momento un mensaje requiere una respuesta, Microsoft Excel elige la respuesta predeterminada.</para>
-          <para>Si se establece esta propiedad en <b>False</b>, Microsoft Excel la establece en <b>True</b> cuando termina el código, a menos que esté ejecutando cruzado procesar código.</para>
+          <para>El valor predeterminado es <b>True</b>. Establezca esta propiedad en <b>False</b> si no desea que se moleste con mensajes de voz y mensajes de alerta mientras se está ejecutando un programa; cualquier momento que un mensaje requiere una respuesta, Microsoft Excel elige la respuesta predeterminada.</para>
+          <para>Si establece esta propiedad en <b>False</b>, Microsoft Excel la establece en <b>True</b> cuando termina el código, a menos que esté ejecutando cruzado del proceso de código.</para>
           <para>Cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para los libros para sobrescribir un archivo existente, la alerta 'Sobrescribir' tiene un valor predeterminado de 'No', mientras está seleccionada la respuesta 'Sí' por Excel cuando se establece la propiedad <b>DisplayAlerts</b> en <b>False</b>.</para>
           <para></para>
         </remarks>
@@ -3618,7 +3626,7 @@
         <summary>Establecer en <b>True</b> para mostrar el panel de tareas Acciones de documentos; se establece en <b>False</b> para ocultar el panel de tareas Acciones de documentos.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Al establecer esta propiedad en <b>True</b> se producirá un error en tiempo de ejecución si el libro activo no es un documento inteligente.</para>
+          <para>Si establece esta propiedad en <b>True</b>, se generará un error en tiempo de ejecución si el libro activo no es un documento inteligente.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3800,7 +3808,10 @@
         <summary>
           <b>True</b> si Microsoft Excel está en modo de pantalla completa.</summary>
         <value>To be added.</value>
-        <remarks>Modo de pantalla completa <para>maximiza la ventana de la aplicación para que ocupe toda la pantalla y se oculta la barra de título de la aplicación. Configuración de presentación independiente de modo de pantalla completa y el modo normal de mantenimiento de las barras de herramientas, la barra de estado y la barra de fórmulas.</para><para></para></remarks>
+        <remarks>
+          <para>El modo de pantalla completa maximiza la ventana de la aplicación, para que ocupe toda la pantalla y oculte la barra de título de la aplicación. Las barras de herramientas, la barra de estado y la barra de fórmulas mantienen configuraciones de presentación independientes en los modos de pantalla completa y normal.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFunctionToolTips">
@@ -4103,7 +4114,7 @@
         <param name="XmlMap">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto. Asignación XML que se va a mostrar en el panel de tareas.</param>
         <summary>Se abre el panel de tareas Origen XML y muestra la asignación XML especificada por el <paramref name="XmlMap" /> argumento.</summary>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4980,19 +4991,19 @@
           <list type="bullet">
             <item>
               <description>
-                <b>xlDisabled</b> Cancelar interceptación de la tecla está totalmente deshabilitada.</description>
+                <b>xlDisabled</b>  Interceptación de la tecla Cancelar está totalmente deshabilitada.</description>
             </item>
             <item>
               <description>
-                <b>xlErrorHandler</b> la interrupción se envía al procedimiento en ejecución como un error, puede interceptar mediante un controlador de errores configurado con una instrucción On Error GoTo. El código de error capturable es 18.</description>
+                <b>xlErrorHandler</b>  La interrupción se envía al procedimiento en ejecución como un error, puede interceptar mediante un controlador de errores configurado con una instrucción On Error GoTo. El código de error capturable es 18.</description>
             </item>
             <item>
               <description>
-                <b>xlInterrupt</b> el procedimiento actual se interrumpe y el usuario puede depurarlo o finalizarlo el procedimiento.</description>
+                <b>xlInterrupt</b>  El procedimiento actual se interrumpe y el usuario puede depurarlo o finalizarlo el procedimiento.</description>
             </item>
           </list>
-          <para>Usar esta propiedad con mucho cuidado. Si utiliza <b>xlDisabled</b>, no hay ninguna forma para interrumpir un bucle infinito u otro código que no es de terminación automática. Del mismo modo, si utiliza <b>xlErrorHandler</b> pero el controlador de errores devuelve siempre mediante la instrucción <b>Resume</b> , no hay ninguna forma de detener un código ininterrumpido.</para>
-          <para>La <b>EnableCancelKey</b> (propiedad) siempre se restablece en <b>xlInterrupt</b> cuando Microsoft Excel vuelve al estado inactivo y no hay ningún código que se ejecuta. Para interceptar o deshabilitar la cancelación de un procedimiento, debe cambiar explícitamente la propiedad <b>EnableCancelKey</b> cada vez que se llama al procedimiento.</para>
+          <para>Utilice esta propiedad con sumo cuidado. Si utiliza <b>xlDisabled</b>, no hay ninguna forma para interrumpir un bucle infinito u otro código que no es de terminación automática. Del mismo modo, si utiliza <b>xlErrorHandler</b> pero el controlador de errores devuelve siempre mediante la instrucción <b>Resume</b> , no hay ninguna forma de detener un código ininterrumpido.</para>
+          <para>La propiedad <b>EnableCancelKey</b> siempre se restablece en <b>xlInterrupt</b> cuando Microsoft Excel vuelve al estado inactivo y no se está ejecutando ningún código. Para interceptar o deshabilitar la cancelación de un procedimiento, se debe cambiar explícitamente la propiedad <b>EnableCancelKey</b> cada vez que se llame al procedimiento.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5127,7 +5138,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Esta propiedad corresponde a la casilla de verificación Habilitar vistas previas activas en el cuadro de diálogo Opciones de Excel.</para>
+          <para>Esta propiedad corresponde a la casilla de verificación Habilitar vistas previas activas del cuadro de diálogo Opciones de Excel.
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5297,13 +5310,21 @@
         <summary>Convierte un nombre de Microsoft Excel en un objeto o un valor.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Los siguientes tipos de nombres en Microsoft Excel se pueden usar con este método:</para>
+          <para>Los siguientes tipos de nombres de Microsoft Excel se pueden usar con este método:</para>
           <list type="bullet">
             <item>
-              <description>Referencias de estilo A1. Puede usar cualquier referencia a una sola celda en notación de estilo A1. Todas las referencias se consideran referencias absolutas.</description>
-            </item> Intervalos de 
-            <item><description>. Puede usar el intervalo, intersección y los operadores de unión (dos puntos, espacio y coma, respectivamente) con referencias.</description></item> Nombres de 
-            <item><description>definidas. Puede especificar cualquier nombre en el lenguaje de la macro.</description></item><item><description>Las referencias externas. Puede usar la! Para hacer referencia a una celda o un nombre definido en otro libro, por ejemplo, Evaluate ("[Libro1. ¡XLS] Sheet1! A1 ").</description></item></list>
+              <description>Referencias estilo A1. Puede usar cualquier referencia a una sola celda en la notación de estilo A1. Todas las referencias se consideran absolutas.</description>
+            </item>
+            <item>
+              <description>Rangos. Con las referencias puede usar los operadores de rango, intersección y unión (dos puntos, espacio y punto y coma, respectivamente).</description>
+            </item>
+            <item>
+              <description>Nombres definidos. Puede especificar cualquier nombre en el lenguaje de la macro.</description>
+            </item>
+            <item>
+              <description>Referencias externas. Puede usar la! Para hacer referencia a una celda o un nombre definido en otro libro, por ejemplo, Evaluate ("[Libro1. ¡XLS] Sheet1! A1 ").</description>
+            </item>
+          </list>
           <para>
             <b>Nota</b>: uso de corchetes (por ejemplo, "[a1: C5]") es idéntico al llamar al método <b>Evaluate</b> con un argumento de cadena. La ventaja de utilizar corchetes es que el código es más corto. La ventaja de usar <b>Evaluate</b> es que el argumento es una cadena, de modo que puede construir la cadena en el código o usar una variable.</para>
           <para></para>
@@ -5396,7 +5417,7 @@
         <summary>Se ejecuta una función de macro de Microsoft Excel 4.0 y, a continuación, devuelve el resultado de la función. El tipo de valor devuelto depende de la función.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>The Microsoft Excel 4.0 macro no se evalúa en el contexto de la hoja o libro actual. Esto significa que todas las referencias deben externas y deben especificar un nombre de libro explícitas. Por ejemplo, para ejecutar la macro de Microsoft Excel 4.0 "Mi_macro que está" en el Libro1, se debe usar "¡Libro1! My_Macro() ". Si no se especifica el nombre del libro, este método se produce un error.</para>
+          <para>La macro de Microsoft Excel 4.0 no se evalúa en el contexto de la hoja o libro actual. Esto significa que todas las referencias deben externas y deben especificar un nombre de libro explícitas. Por ejemplo, para ejecutar la macro de Microsoft Excel 4.0 "Mi_macro que está" en el Libro1, se debe usar "¡Libro1! My_Macro() ". Si no se especifica el nombre del libro, este método devolverá un error.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5431,7 +5452,7 @@
           <b>True</b> si Microsoft Excel amplía automáticamente el formato y las fórmulas a los datos nuevos se agregan a una lista.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para ser extendidos, los formatos y las fórmulas deben aparecer en al menos tres de las cinco filas de lista o columnas anterior a la nueva fila o columna y debe agregar los datos en la parte inferior o en el lado derecho de la lista.</para>
+          <para>Para ampliarlos, los formatos y las fórmulas deben aparecer al menos en tres de las cinco filas o columnas de lista anteriores a la nueva fila o columna, y los datos deben agregarse al final o al lado derecho de la lista.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5470,18 +5491,18 @@
           <list type="bullet">
             <item>
               <description>
-                <b>msoFeatureInstallNone</b> genera un error de automatización genérico en tiempo de ejecución cuando se llaman a funciones no instaladas. Ésta es la constante predeterminada.</description>
+                <b>msoFeatureInstallNone</b>  Genera un error de automatización genérico en tiempo de ejecución cuando se llaman a funciones no instaladas. Se trata de la constante predeterminada.</description>
             </item>
             <item>
               <description>
-                <b>msoFeatureInstallOnDemand</b> solicita al usuario que instale nuevas funciones.</description>
+                <b>msoFeatureInstallOnDemand</b>  Solicita al usuario instalar nuevas funciones.</description>
             </item>
             <item>
               <description>
-                <b>msoFeatureInstallOnDemandWithUI</b> muestra un indicador de progreso durante la instalación; no solicita al usuario instalar nuevas características.</description>
+                <b>msoFeatureInstallOnDemandWithUI</b>  Muestra un indicador de progreso durante la instalación; No preguntar al usuario instalar nuevas características.</description>
             </item>
           </list>
-          <para>Puede utilizar la constante <b>msoFeatureInstallOnDemandWithUI</b> para evitar que los usuarios pensando que la aplicación no responde mientras se está instalando una característica. Utilice la constante <b>msoFeatureInstallNone</b> si desea que el programador sea la única persona que puede instalar características.</para>
+          <para>Puede utilizar la constante <b>msoFeatureInstallOnDemandWithUI</b> para evitar que los usuarios piensen que la aplicación no responde mientras se instala una característica. Utilice la constante <b>msoFeatureInstallNone</b> si desea que el programador sea el único que pueda instalar las características.</para>
           <para>Si tiene la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propiedad establecida en <b>False</b>, no se pedirá a los usuarios que instalen nuevas características aunque la propiedad <b>FeatureInstall</b> está establecida en <b>msoFeatureInstallOnDemand</b>. Si el <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> (propiedad) se establece en <b>True</b>, aparecerá un indicador de progreso si la propiedad <b>FeatureInstall</b> está establecida en <b>msoFeatureInstallOnDemand</b>.</para>
           <para></para>
         </remarks>
@@ -5524,19 +5545,19 @@
         <summary>Devuelve información sobre los convertidores de archivos instalados. Devuelve <b>Null</b> si no hay convertidores instalados.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si no se especifica argumentos, esta propiedad devuelve una matriz que contiene información acerca de todos los convertidores de archivos instalados. Cada fila de la matriz contiene información acerca de un convertidor de un solo archivo, como se muestra en la siguiente tabla.</para>
+          <para>Si no se especifica argumentos, esta propiedad devuelve una matriz que contiene información acerca de todos los convertidores de archivos instalados. Cada fila de la matriz contiene información acerca de un solo convertidor, como se muestra en la siguiente tabla.</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>el nombre largo del convertidor</description>
+              <description>Nombre largo del convertidor.</description>
             </item>
             <item>
               <term>2</term>
-              <description>la ruta de acceso de la DLL del convertidor o del recurso de código</description>
+              <description>Ruta de acceso de la biblioteca DLL del convertidor o del recurso de código.</description>
             </item>
             <item>
               <term>3</term>
-              <description>la cadena de búsqueda de la extensión de archivo.</description>
+              <description>Cadena de búsqueda de la extensión de archivo.</description>
             </item>
           </list>
           <para></para>
@@ -5694,8 +5715,10 @@
         <summary>Obtiene o establece cómo Microsoft Excel validará los archivos antes de abrirlos.</summary>
         <value>A <see cref="T:Microsoft.Office.Core.MsoFileValidationMode" /> objeto.</value>
         <remarks>
-          <para>Lectura y escritura.</para> Archivos de 
-          <para>que no pasan la validación se abrirá en una ventana Vista protegida. Si establece el <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidation" /> (propiedad), que configuración permanecerá en vigor para toda la sesión de la aplicación está abierta.</para><para></para></remarks>
+          <para>Lectura y escritura.</para>
+          <para>Archivos que no pasan la validación se abrirá en una ventana Vista protegida. Si establece el <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidation" /> (propiedad), que configuración permanecerá en vigor para toda la sesión de la aplicación está abierta.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FileValidationPivot">
@@ -5727,8 +5750,10 @@
         <summary>Obtiene o establece cómo Microsoft Excel se valida el contenido de las memorias caché de datos para informes de tabla dinámica.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" /> objeto.</value>
         <remarks>
-          <para>Lectura y escritura.</para> Archivos de 
-          <para>que contienen las memorias caché de datos que no se validan se abrirá en una ventana Vista protegida. Si establece el <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> (propiedad), que configuración permanecerá en vigor para toda la sesión de la aplicación está abierta.</para><para></para></remarks>
+          <para>Lectura y escritura.</para>
+          <para>Los archivos que contienen las memorias caché de datos que no se validan se abrirá en una ventana Vista protegida. Si establece el <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> (propiedad), que configuración permanecerá en vigor para toda la sesión de la aplicación está abierta.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindFile">
@@ -5758,7 +5783,7 @@
         <summary>Muestra el cuadro de diálogo Abrir.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Este método muestra el cuadro de diálogo Abrir y permite al usuario que abra un archivo. Si se abre un archivo nuevo correctamente, este método devuelve <b>True</b>. Si el usuario cancela el cuadro de diálogo, este método devuelve <b>False</b>.</para>
+          <para>Este método muestra el cuadro de diálogo Abrir y permite al usuario abrir un archivo. Si se abre un archivo nuevo correctamente, este método devolverá <b>True</b>. Si el usuario cancela el cuadro de diálogo, el método devolverá <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5898,7 +5923,7 @@
           <b>TRUE</b> indica que la característica de Excel Flash de relleno se ha habilitado y activo. <b>Boolean</b> (<b>bool</b> en C#) Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Flash de relleno detecta cuando se va a modificar los datos que se ajuste a un patrón que se puede rellenar hacia abajo y aplicado a los datos adicionales en el libro y, a continuación, se rellena automáticamente hacia abajo de la columna con los resultados.</para>
+          <para>Relleno de Flash detecta cuando se va a modificar los datos que se ajuste a un patrón que se puede rellenar hacia abajo y aplicado a los datos adicionales en el libro y, a continuación, se rellena automáticamente hacia abajo de la columna con los resultados.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6105,7 +6130,7 @@
         <summary>Devuelve el número de la lista personalizada correspondiente a una matriz de cadenas. Puede usar este método para buscar listas integradas y listas definidas por el usuario.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Este método genera un error si no hay ninguna lista correspondiente.</para>
+          <para>Este método produce un error si no existe una lista correspondiente.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6153,7 +6178,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>Este método devuelve el nombre de archivo seleccionado o el nombre que ha escrito el usuario. El nombre devuelto puede incluir una especificación de ruta de acceso. Si <paramref name="MultiSelect" /> es <b>True</b>, el valor devuelto es una matriz de los nombres de archivo seleccionados (aunque sólo esté seleccionado uno). Devuelve <b>False</b> si el usuario cancela el cuadro de diálogo.</para>
-          <para>Este método puede cambiar la unidad actual o la carpeta.</para>
+          <para>Este método puede cambiar la unidad o la carpeta actual.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6229,8 +6254,8 @@
         <summary>Presenta el cuadro de diálogo estándar Guardar como y obtiene el nombre de archivo seleccionado por el usuario sin guardar realmente ningún archivo.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Este método devuelve el nombre de archivo seleccionado o el nombre que ha escrito el usuario. El nombre devuelto puede incluir una especificación de ruta de acceso. Devuelve <b>False</b> si el usuario cancela el cuadro de diálogo.</para>
-          <para>Este método puede cambiar la unidad actual o la carpeta.</para>
+          <para>Este método devuelve el nombre de archivo seleccionado o el nombre especificado por el usuario. El nombre devuelto podría incluir una especificación de ruta. Devuelve <b>False</b> si el usuario cancela el cuadro de diálogo.</para>
+          <para>Este método puede cambiar la unidad o la carpeta actual.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6270,16 +6295,16 @@
           <para>Este método difiere de la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Select(System.Object)" /> método de las siguientes maneras:</para>
           <list type="bullet">
             <item>
-              <description>Si especifica un rango de una hoja que no está en la parte superior, Microsoft Excel cambiará a dicha hoja antes de seleccionar. (Si usa <b>Seleccione</b> con un rango de una hoja que no está en la parte superior, se seleccionará el rango pero no se activa la hoja).</description>
+              <description>Si se especifica un rango en una hoja que no esté en la parte superior, Microsoft Excel cambiará a dicha hoja antes de seleccionar. (Si usa <b>Select</b> con un rango en una hoja que no esté en la parte superior, el rango se seleccionará, pero la hoja no se activará).</description>
             </item>
             <item>
               <description>Este método tiene un <paramref name="Scroll" /> argumento que le permite desplazarse por la ventana de destino.</description>
             </item>
             <item>
-              <description>Cuando se utiliza el método <b>Goto</b> , la selección anterior (antes de que se ejecuta el método <b>Goto</b> ) se agrega a la matriz de selecciones previas (para obtener más información, vea el <see cref="P:Microsoft.Office.Interop.Excel._Application.PreviousSelections(System.Object)" /> (propiedad)). Puede usar esta característica para saltar rápidamente entre un máximo de cuatro selecciones.</description>
+              <description>Cuando se usa el método <b>Goto</b> , la selección anterior (antes de que se ejecuta el método <b>Goto</b> ) se agrega a la matriz de selecciones previas (para obtener más información, vea el <see cref="P:Microsoft.Office.Interop.Excel._Application.PreviousSelections(System.Object)" /> (propiedad)). Puede usar esta característica para saltar rápidamente entre un máximo de cuatro selecciones.</description>
             </item>
             <item>
-              <description>El método <b>Select</b> tiene un <paramref name="Replace" /> argumento; el <b>Goto</b> no método.</description>
+              <description>El método <b>Select</b> tiene un <paramref name="Replace" /> argumento; el método <b>Goto</b> no.</description>
             </item>
           </list>
           <para></para>
@@ -6388,7 +6413,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Esta propiedad corresponde a la configuración del modo de alta calidad para gráficos de casilla de verificación en la sección Imprimir de la categoría Avanzadas del cuadro de diálogo Opciones de Excel.</para>
+          <para>Esta propiedad se corresponde con el valor de la casilla de verificación Modo de alta calidad para gráficos en la sección Imprimir de la categoría Avanzadas del cuadro de diálogo Opciones de Excel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6447,9 +6472,15 @@
         <summary>Obtiene un identificador para la instancia de Microsoft Excel 2010 representada por el objeto <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto.</summary>
         <value>Un identificador de la instancia de Microsoft Excel 2010 representada por el objeto <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto.</value>
         <remarks>
-          <para>Read-only <b>Variant</b>.</para>
-          <para>Esta propiedad devuelve un identificador correcto en las versiones de 32 bits y de 64 bits de Excel. Amplía la funcionalidad de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto, que sólo funciona correctamente en la versión de 32 bits de Excel.</para> Tipo de 
-          <para>los datos ideales para usar con esta propiedad es el tipo de datos <b>LongPtr</b> . Asignar el valor devuelto por esta propiedad a una variable <b>LongPtr</b> funcionará como se espera en ambas versiones de 32 bits y de 64 bits de Excel. La propiedad se define como <b>Variant</b> por motivos de la implementación interna. Sin embargo, siempre devuelve un valor de 32 bits en sistemas de 32 bits y un valor de 64 bits en sistemas de 64 bits.</para><para>Esta propiedad sólo funciona comenzando con Excel 2010 y sólo es necesario con la versión de 64 bits de Excel. Si se debe escribir código que también funciona con versiones anteriores de Excel, con el fin de evitar errores de compilación, lea esta propiedad en una directiva de compilación condicional #if Win64 y utilice el <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> (propiedad) en el #else (directiva).</para><para><b>Nota</b>: esta propiedad funciona correctamente en ambos entornos de 32 y 64 bits comenzando con Excel 2010. Por lo tanto, si su código está destinado a ser utilizado únicamente con Excel 2010 o posterior, puede ser 32 o 64 bits, se puede leer esta propiedad sin la compilación condicional.</para><para></para></remarks>
+          <para>
+            <b>Variant</b> de sólo lectura.</para>
+          <para>Esta propiedad devuelve un identificador correcto en las versiones de 32 bits y de 64 bits de Excel. Amplía la funcionalidad de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto, que sólo funciona correctamente en la versión de 32 bits de Excel.</para>
+          <para>El tipo ideal de datos para usar con esta propiedad es el tipo de datos <b>LongPtr</b>. Asignar el valor devuelto por esta propiedad a una variable <b>LongPtr</b> funcionará según lo esperado en versiones de Excel de 32 y 64 bits. La propiedad se define como <b>Variant</b> por motivos de implementación interna. Sin embargo, siempre devuelve un valor de 32 bits en sistemas de 32 bits y un valor de 64 bits en sistemas de 64 bits.</para>
+          <para>Esta propiedad sólo funciona comenzando con Excel 2010 y sólo es necesario con la versión de 64 bits de Excel. Si se debe escribir código que también funciona con versiones anteriores de Excel, con el fin de evitar errores de compilación, lea esta propiedad en una directiva de compilación condicional #if Win64 y utilice el <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> (propiedad) en el #else (directiva).</para>
+          <para>
+            <b>Nota</b>: esta propiedad funciona correctamente en ambos entornos de 32 y 64 bits comenzando con Excel 2010. Por lo tanto, si su código está destinado a ser utilizado únicamente con Excel 2010 o posterior, puede ser 32 o 64 bits, se puede leer esta propiedad sin la compilación condicional.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hwnd">
@@ -6602,11 +6633,11 @@
         <summary>Muestra un cuadro de diálogo para que el usuario escriba información. Devuelve la información escrita en el cuadro de diálogo.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Use <b>InputBox</b> para mostrar un cuadro de diálogo simple para que pueda escribir información para usarla en una macro. El cuadro de diálogo tiene un botón Aceptar y un botón Cancelar. Si elige el botón Aceptar, <b>InputBox</b> devolverá el valor especificado en el cuadro de diálogo. Si hace clic en el botón Cancelar, <b>InputBox</b> devolverá <b>False</b>.</para>
-          <para>Si <paramref name="Type" /> es 0, <b>InputBox</b> devolverá la fórmula en forma de texto, por ejemplo, "= 2 * PI () / 360". Si hay alguna referencia en la fórmula, se devolverán como referencias de estilo A1. (Utilice <see cref="M:Microsoft.Office.Interop.Excel._Application.ConvertFormula(System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object,System.Object)" /> para convertir entre estilos de referencia.)</para>
+          <para>Use <b>InputBox</b> para mostrar un cuadro de diálogo sencillo que permite escribir información para usarla en una macro. El cuadro de diálogo tiene un botón Aceptar y un botón Cancelar. Si elige el botón Aceptar, <b>InputBox</b> devolverá el valor especificado en el cuadro de diálogo. Si hace clic en el botón Cancelar, <b>InputBox</b> devolverá <b>False</b>.</para>
+          <para>Si <paramref name="Type" /> es 0, <b>InputBox</b> devolverá la fórmula en forma de texto, por ejemplo, "= 2 * PI () / 360". Si existen referencias en la fórmula, estas se devuelven como referencias de estilo A1. (Utilice <see cref="M:Microsoft.Office.Interop.Excel._Application.ConvertFormula(System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object,System.Object)" /> para convertir entre estilos de referencia.)</para>
           <para>Si <paramref name="Type" /> es 8, <b>InputBox</b> devolverá un objeto <b>Range</b> .</para>
-          <para>Si se utiliza el método <b>InputBox</b> para solicitar al usuario una fórmula, debe usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaLocal" /> (propiedad) para asignar la fórmula a un objeto <b>Range</b> . La fórmula deberá estar en el idioma del usuario.</para>
-          <para>La <b>InputBox</b> método difiere de la función <b>InputBox</b> en que permite la validación selectiva de la entrada del usuario y que puede usarse con objetos, valores de error y fórmulas de Microsoft Excel. InputBox sin calificador de objeto llama a la función <b>InputBox</b> .</para>
+          <para>Si usa el método <b>InputBox</b> para solicitar al usuario una fórmula, debe usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaLocal" /> (propiedad) para asignar la fórmula a un objeto <b>Range</b> . La fórmula de entrada estará en el idioma del usuario.</para>
+          <para>El método <b>InputBox</b> difiere de la función <b>InputBox</b> en que permite la validación selectiva de la entrada del usuario y que puede usarse con objetos, valores de error y fórmulas de Microsoft Excel. InputBox sin calificador de objeto llama a la función <b>InputBox</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6648,7 +6679,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad es útil si está escribiendo código para comunicarse con Microsoft Excel desde otra aplicación.</para>
-          <para>Si se establece esta propiedad en <b>False</b>, no olvide establecer en <b>True</b>. Microsoft Excel no establecer automáticamente esta propiedad en <b>True</b> cuando su código deja de ejecutarse.</para>
+          <para>Si establece esta propiedad en <b>False</b>, no olvide establecer en <b>True</b>. Microsoft Excel no establecer automáticamente esta propiedad en <b>True</b> cuando su código deja de ejecutarse.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -6694,72 +6725,72 @@
                 <b>xlLeftBrace</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>carácter que se emplea en lugar de la llave izquierda ({}) en los literales de matriz.</description>
+              <description>Carácter que se emplea en lugar de la llave izquierda ({) en los literales de matriz.</description>
             </item>
             <item>
               <term>
                 <b>xlLeftBracket</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>carácter que se emplea en lugar del corchete izquierdo ([]) en las referencias relativas de estilo F1C1.</description>
+              <description>Carácter empleado en lugar del corchete izquierdo ([) en las referencias relativas de estilo F1C1.</description>
             </item>
             <item>
               <term>
                 <b>xlLowerCaseColumnLetter</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>letra de columna en minúsculas.</description>
+              <description>Letra de columna en minúsculas.</description>
             </item>
             <item>
               <term>
                 <b>xlLowerCaseRowLetter</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>letra de fila en minúsculas.</description>
+              <description>Letra de fila en minúsculas.</description>
             </item>
             <item>
               <term>
                 <b>xlRightBrace</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>carácter que se emplea en lugar de la llave derecha (}) en los literales de matriz.</description>
+              <description>Carácter que se emplea en lugar de la llave derecha (}) en los literales de matriz.</description>
             </item>
             <item>
               <term>
                 <b>xlRightBracket</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>carácter que se emplea en lugar del corchete derecho (]) en las referencias de estilo F1C1.</description>
+              <description>Carácter empleado en lugar del corchete derecho (]) en las referencias de estilo F1C1.</description>
             </item>
             <item>
               <term>
                 <b>xlUpperCaseColumnLetter</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>letra de columna en mayúsculas.</description>
+              <description>Letra de columna en mayúsculas.</description>
             </item>
             <item>
               <term>
                 <b>xlUpperCaseRowLetter</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>letra de fila en mayúsculas (para las referencias de estilo F1C1).</description>
+              <description>Letra de fila en mayúsculas (para las referencias de estilo F1C1).</description>
             </item>
           </list>
           <para>Configuración de país o región</para>
@@ -6769,27 +6800,27 @@
                 <b>xlCountryCode</b>
               </term>
               <description>
-                <b>entero</b>
+                <b>Número entero</b>
               </description>
-              <description>versión de país o región de Microsoft Excel.</description>
+              <description>Versión de país o región de Microsoft Excel.</description>
             </item>
             <item>
               <term>
                 <b>xlCountrySetting</b>
               </term>
               <description>
-                <b>entero</b>
+                <b>Número entero</b>
               </description>
-              <description>configuración actual de país o región en el Panel de Control de Windows.</description>
+              <description>Configuración actual de país o región en el Panel de control de Windows.</description>
             </item>
             <item>
               <term>
                 <b>xlGeneralFormatName</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>nombre de formato de número General.</description>
+              <description>Nombre del formato numérico General.</description>
             </item>
           </list>
           <para>Moneda</para>
@@ -6799,86 +6830,86 @@
                 <b>xlCurrencyBefore</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si el símbolo de moneda precede a los valores monetarios; <b>False</b> si les sigue.</description>
+                <b>True</b> si el símbolo de moneda precede a los valores monetarios; <b>False</b> si los sitúa a continuación.</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyCode</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>símbolo de moneda.</description>
+              <description>Símbolo de moneda.</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyDigits</b>
               </term>
               <description>
-                <b>entero</b>
+                <b>Número entero</b>
               </description>
-              <description>número de decimales que se va a utilizarse en los formatos de moneda.</description>
+              <description>Número de decimales que van a utilizarse en los formatos de moneda.</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyLeadingZeros</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si los ceros iniciales se muestran los valores monetarios cero.</description>
+                <b>True</b> si se muestran los ceros a la izquierda en los valores monetarios cero.</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyMinusSign</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si se usa un signo menos para los números negativos; <b>False</b> si se utilizan paréntesis.</description>
+                <b>True</b> si se usa un signo menos para los números negativos; <b>False</b> si se utilizan paréntesis.</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyNegative</b>
               </term>
               <description>
-                <b>entero</b>
+                <b>Número entero</b>
               </description>
-              <description>formato de moneda para los valores de moneda negativos: 0 = (symbolx) o (xsymbol) 1 = - symbolx o - xsymbol2 = symbol-x o x-symbol3 = symbolx - o xsymbol-donde symbol es el símbolo de moneda de la país o región. Tenga en cuenta que la posición del símbolo de moneda está determinada por <b>xlCurrencyBefore</b>.</description>
+              <description>Formato de moneda para los valores de moneda negativos: 0 = (symbolx) o (xsymbol) 1 = - symbolx o - xsymbol2 = symbol-x o x-symbol3 = symbolx - o xsymbol-donde symbol es el símbolo de moneda del país o la región. Tenga en cuenta que la posición del símbolo de moneda está determinada por <b>xlCurrencyBefore</b>.</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencySpaceBefore</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si se agrega un espacio antes del símbolo de moneda.</description>
+                <b>True</b> si se agrega un espacio antes del símbolo de moneda.</description>
             </item>
             <item>
               <term>
                 <b>xlCurrencyTrailingZeros</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si los ceros finales se muestran los valores monetarios cero.</description>
+                <b>True</b> si se muestran los ceros a la derecha en los valores monetarios cero.</description>
             </item>
             <item>
               <term>
                 <b>xlNoncurrencyDigits</b>
               </term>
               <description>
-                <b>entero</b>
+                <b>Número entero</b>
               </description>
-              <description>número de decimales que se va a utilizarse en los formatos de moneda que no sean.</description>
+              <description>Número de decimales que se va a utilizarse en los formatos de moneda que no sean.</description>
             </item>
           </list>
           <para>Fecha y hora</para>
@@ -6888,158 +6919,158 @@
                 <b>xl24HourClock</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si se usa el reloj de 24 horas; <b>False</b> si se está usando el tiempo de 12 horas.</description>
+                <b>True</b> si el formato de hora que se utiliza es de 24 horas y <b>False</b> si es de 12 horas.</description>
             </item>
             <item>
               <term>
                 <b>xl4DigitYears</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si se usa años de cuatro dígitos; <b>False</b> si se usa con años de dos dígitos.</description>
+                <b>True</b> si los años se expresan con cuatro dígitos, <b>False</b> si tienen dos.</description>
             </item>
             <item>
               <term>
                 <b>xlDateOrder</b>
               </term>
               <description>
-                <b>entero</b>
+                <b>Número entero</b>
               </description>
-              <description>orden de los elementos de fecha: 0 = mes-día-año1 mes = día día-mes-año2 = año-mes-día</description>
+              <description>Orden de los elementos de la fecha: 0 = mes-día-año 1 = día-mes-año 2 = año-mes-día</description>
             </item>
             <item>
               <term>
                 <b>xlDateSeparator</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>separador de fecha (/).</description>
+              <description>Separador de fecha (/).</description>
             </item>
             <item>
               <term>
                 <b>xlDayCode</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>símbolo de día (d).</description>
+              <description>Símbolo de día (d).</description>
             </item>
             <item>
               <term>
                 <b>xlDayLeadingZero</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
-              <description>True si se muestra un cero a la izquierda en días.</description>
+              <description>True si se muestra un cero a la izquierda de los días.</description>
             </item>
             <item>
               <term>
                 <b>xlHourCode</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>símbolo de hora (h).</description>
+              <description>Símbolo de hora (h).</description>
             </item>
             <item>
               <term>
                 <b>xlMDY</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si el orden es día-mes-año las fechas que se muestra en el formulario largo; <b>False</b> si el orden es día-mes-año.</description>
+                <b>True</b> si el orden de las fechas que tienen formato largo es mes-día-año, <b>False</b> si el orden es día-mes-año.</description>
             </item>
             <item>
               <term>
                 <b>xlMinuteCode</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>símbolo de minuto (m).</description>
+              <description>Símbolo de minuto (m).</description>
             </item>
             <item>
               <term>
                 <b>xlMonthCode</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>símbolo de mes (m).</description>
+              <description>Símbolo de mes (m).</description>
             </item>
             <item>
               <term>
                 <b>xlMonthLeadingZero</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si se muestra un cero a la izquierda en los meses (cuando éstos se muestran como números).</description>
+                <b>True</b> si se muestra un cero a la izquierda de los meses (cuando éstos se muestran como números).</description>
             </item>
             <item>
               <term>
                 <b>xlMonthNameChars</b>
               </term>
               <description>
-                <b>entero</b>
+                <b>Número entero</b>
               </description>
-              <description>siempre devuelve tres caracteres por compatibilidad con versiones anteriores. Los nombres de meses se leen desde Microsoft Windows y puede tener cualquier longitud.</description>
+              <description>Siempre devuelve tres caracteres por compatibilidad con versiones anteriores. Los nombres de meses se leen desde Microsoft Windows y pueden tener cualquier longitud.</description>
             </item>
             <item>
               <term>
                 <b>xlSecondCode</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>símbolo de segundo (s).</description>
+              <description>Símbolo de segundo (s).</description>
             </item>
             <item>
               <term>
                 <b>xlTimeSeparator</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>separador de hora (:).</description>
+              <description>Separador de hora (:).</description>
             </item>
             <item>
               <term>
                 <b>xlTimeLeadingZero</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si se muestra un cero a la izquierda de las horas.</description>
+                <b>True</b> si se muestra un cero a la izquierda de las horas.</description>
             </item>
             <item>
               <term>
                 <b>xlWeekdayNameChars</b>
               </term>
               <description>
-                <b>entero</b>
+                <b>Número entero</b>
               </description>
-              <description>siempre devuelve tres caracteres por compatibilidad con versiones anteriores. Los nombres de día de la semana abreviado se leen desde Microsoft Windows y puede tener cualquier longitud.</description>
+              <description>Siempre devuelve tres caracteres por compatibilidad con versiones anteriores. Los nombres de días de la semana se leen desde Microsoft Windows y pueden tener cualquier longitud.</description>
             </item>
             <item>
               <term>
                 <b>xlYearCode</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>símbolo de año en formatos numéricos (y).</description>
+              <description>Símbolo de año en formatos numéricos (y).</description>
             </item>
           </list>
           <para>Sistemas de medida</para>
@@ -7049,20 +7080,20 @@
                 <b>xlMetric</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si se usa el sistema métrico; <b>False</b> si se usa el sistema de medidas inglés.</description>
+                <b>True</b> si se usa el sistema métrico y <b>False</b> si se usa el sistema de medidas inglés.</description>
             </item>
             <item>
               <term>
                 <b>xlNonEnglishFunctions</b>
               </term>
               <description>
-                <b>booleano</b>
+                <b>Valor booleano</b>
               </description>
               <description>
-                <b>es True</b> si las funciones no se van a mostrar en inglés.</description>
+                <b>True</b> si las funciones no se van a mostrar en inglés.</description>
             </item>
           </list>
           <para>Separadores</para>
@@ -7072,57 +7103,57 @@
                 <b>xlAlternateArraySeparator</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>separador de elementos de matriz alternativo que se utilizará si el separador de matriz actual es el mismo que el separador decimal.</description>
+              <description>Separador de elementos de matriz alternativo que va a utilizarse si el separador actual es el mismo que el separador decimal.</description>
             </item>
             <item>
               <term>
                 <b>xlColumnSeparator</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>carácter usado para separar las columnas en los literales de matriz.</description>
+              <description>Carácter que se emplea para separar las columnas en los literales de matriz.</description>
             </item>
             <item>
               <term>
                 <b>xlDecimalSeparator</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>separador Decimal.</description>
+              <description>Separador decimal.</description>
             </item>
             <item>
               <term>
                 <b>xlListSeparator</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>separador de lista.</description>
+              <description>Separador de lista.</description>
             </item>
             <item>
               <term>
                 <b>xlRowSeparator</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>carácter usado para separar las filas en los literales de matriz.</description>
+              <description>Carácter que se emplea para separar las filas en los literales de matriz.</description>
             </item>
             <item>
               <term>
                 <b>xlThousandsSeparator</b>
               </term>
               <description>
-                <b>cadena</b>
+                <b>Cadena</b>
               </description>
-              <description>separador de miles o cero.</description>
+              <description>Separador de miles o cero.</description>
             </item>
           </list>
-          <para>Símbolos, separadores y formatos de moneda que se muestra en la tabla anterior, es posible que difieren de los utilizados en su idioma o ubicación geográfica y podrían no estar disponibles, según la compatibilidad con el idioma que ha seleccionado (por ejemplo, inglés, Estados Unidos) o instalado.</para>
+          <para>Los símbolos, separadores y formatos de moneda mostrados en la tabla anterior pueden ser distintos de los utilizados en su idioma o ubicación geográfica y su disponibilidad depende del idioma que haya seleccionado o instalado (por ejemplo, inglés de Estados Unidos).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7273,7 +7304,7 @@
         <value>
           <b>true</b> si el libro especificado está abierto en una ventana Vista protegida; en caso contrario, <b>false</b>.</value>
         <remarks>
-          <para>Sólo lectura</para>
+          <para>Solo lectura</para>
           <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.IsSandboxed" /> (propiedad) para determinar si un libro está abierto en una ventana Vista protegida.</para>
           <para></para>
         </remarks>
@@ -7548,15 +7579,15 @@
           <para>En la siguiente tabla se enumera los enteros asignados a las categorías integradas que se pueden utilizar en el parámetro Category.</para>
           <list type="table">
             <item>
+              <term>1</term>
               <description>
                 <b>Financieros</b>
               </description>
-              <term>1</term>
             </item>
             <item>
               <term>2</term>
               <description>
-                <b>fecha &amp; tiempo</b>
+                <b>Fecha &amp; tiempo</b>
               </description>
             </item>
             <item>
@@ -7568,86 +7599,88 @@
             <item>
               <term>4</term>
               <description>
-                <b>estadísticos</b>
+                <b>Estadística</b>
               </description>
             </item>
             <item>
               <term>5</term>
               <description>
-                <b>búsqueda &amp; Referencia</b>
+                <b>Búsqueda &amp; referencia</b>
               </description>
             </item>
             <item>
               <term>6</term>
               <description>
-                <b>base de datos de</b>
+                <b>Base de datos</b>
               </description>
             </item>
             <item>
+              <term>7</term>
               <description>
-                <b>texto</b>
-              </description>de
-              <term>7</term></item>
-            <term>8</term>
-            <description>
-              <b>lógica</b>
-            </description>
-            <item></item>
+                <b>Texto</b>
+              </description>
+            </item>
+            <item>
+              <term>8</term>
+              <description>
+                <b>Lógica</b>
+              </description>
+            </item>
             <item>
               <term>9</term>
               <description>
-                <b>información</b>
+                <b>Información</b>
               </description>
             </item>
             <item>
               <term>10</term>
               <description>
-                <b>comandos</b>
+                <b>Comandos</b>
               </description>
             </item>
             <item>
               <term>11</term>
               <description>
-                <b>personalización</b>
+                <b>Personalización de</b>
               </description>
             </item>
             <item>
               <term>12</term>
               <description>
-                <b>Macro Control</b>
+                <b>Control de macros</b>
               </description>
             </item>
             <item>
               <term>13</term>
               <description>
-                <b>DDE o externo</b>
+                <b>DDE y externas</b>
               </description>
             </item>
             <item>
               <term>14</term>
               <description>
-                <b>definidas por el usuario</b>
+                <b>Definidas por el usuario</b>
               </description>
             </item>
             <item>
               <term>15</term>
-              <description>primera categoría personalizada</description>
+              <description>Primera categoría personalizada</description>
             </item>
             <item>
               <term>16</term>
-              <description>segunda categoría personalizada</description>
+              <description>Segunda categoría personalizada</description>
             </item>
             <item>
               <term>17</term>
-              <description>tercera categoría personalizada</description>
+              <description>Tercera categoría personalizada</description>
             </item>
             <item>
               <term>18</term>
-              <description>cuarta categoría personalizada</description>
+              <description>Cuarta categoría personalizada</description>
             </item>
             <item>
               <term>19</term>
-              <description>quinto personalizada categoría</description>
+              <description>Quinta categoría personalizada</description>
             </item>
             <item>
               <term>20</term>
@@ -7655,7 +7688,7 @@
             </item>
             <item>
               <term>21</term>
-              <description>séptima categoría personalizada</description>
+              <description>Séptima categoría personalizada</description>
             </item>
             <item>
               <term>22</term>
@@ -7663,7 +7696,7 @@
             </item>
             <item>
               <term>23</term>
-              <description>noveno personalizada categoría</description>
+              <description>Novena categoría personalizada</description>
             </item>
             <item>
               <term>24</term>
@@ -7671,7 +7704,7 @@
             </item>
             <item>
               <term>25</term>
-              <description>undécima categoría personalizada</description>
+              <description>Undécima categoría personalizada</description>
             </item>
             <item>
               <term>26</term>
@@ -7679,11 +7712,11 @@
             </item>
             <item>
               <term>27</term>
-              <description>Décimotercer categoría personalizada</description>
+              <description>Decimotercera categoría personalizada</description>
             </item>
             <item>
               <term>28</term>
-              <description>decimocuarta categoría personalizada</description>
+              <description>Decimocuarta categoría personalizada</description>
             </item>
             <item>
               <term>29</term>
@@ -7691,7 +7724,7 @@
             </item>
             <item>
               <term>30</term>
-              <description>decimosexta categoría personalizada</description>
+              <description>Decimosexta categoría personalizada</description>
             </item>
             <item>
               <term>31</term>
@@ -7699,7 +7732,7 @@
             </item>
             <item>
               <term>32</term>
-              <description>Decimoctavo categoría personalizada</description>
+              <description>Decimoctava categoría personalizada</description>
             </item>
           </list>
           <para></para>
@@ -7820,7 +7853,7 @@
         <summary>Inicia MAPI Mail o Microsoft Exchange y establece una sesión de correo. Si todavía no se está ejecutando Microsoft Mail, deberá emplear este método para establecer una sesión de correo que le permita usar las funciones de correo o de distribución de documentos.</summary>
         <remarks>
           <para>Microsoft Excel abandonará las sesiones de correo que previamente estableció antes de intentar establecer la nueva sesión.</para>
-          <para>Para entrar en la sesión de correo predeterminada del sistema, omitir los parámetros el nombre y la contraseña.</para>
+          <para>Para entrar en la sesión de correo predeterminada del sistema, omita los parámetros de nombre y contraseña.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -7854,7 +7887,7 @@
         <summary>Devuelve el número de sesión de correo MAPI como una cadena hexadecimal (si hay una sesión activa), o devuelve <b>Null</b> si no hay ninguna sesión.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica únicamente a las sesiones de correo creadas por Microsoft Excel (no devuelve un número de sesión de correo para Microsoft Mail).</para>
+          <para>Esta propiedad sólo se aplica a sesiones de correo creadas por Microsoft Excel (no devuelve un número de sesión para Microsoft Mail).</para>
           <para>Esta propiedad no se usa en sistemas de correo PowerTalk.</para>
           <para></para>
         </remarks>
@@ -8344,7 +8377,7 @@
           <b>True</b> si la celda activa se moverán tan pronto como se ha presionado la tecla ENTRAR (retorno).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturnDirection" /> (propiedad) para especificar la dirección en la que la celda activa se va a mover.</para>
+          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturnDirection" /> (propiedad) para especificar la dirección en la que va a mover la celda activa.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -8398,7 +8431,7 @@
           <para>
             <b>xlUp</b>
           </para>
-          <para>Si la <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturn" /> propiedad es <b>False</b>, la selección no se desplazará, independientemente de cómo se establece la propiedad <b>MoveAfterReturnDirection</b> .</para>
+          <para>Si el <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturn" /> propiedad es <b>False</b>, la selección no se desplazará, independientemente de cómo se establece la propiedad <b>MoveAfterReturnDirection</b> .</para>
           <para></para>
         </remarks>
       </Docs>
@@ -8875,43 +8908,43 @@
         <summary>Ejecuta un procedimiento especificado cuando se presiona una tecla o una combinación de teclas determinada.</summary>
         <remarks>
           <para>El <paramref name="Key" /> argumento puede especificar cualquier tecla única combinada con ALT, CTRL o MAYÚS o cualquier combinación de estas claves. Cada tecla está representada por uno o más caracteres, como "a" para el carácter a, o "{ENTER}" para la tecla ENTRAR.</para>
-          <para>Para especificar caracteres que no se muestran cuando se presiona la tecla correspondiente (ENTRAR o TAB, por ejemplo), utilice los códigos que aparecen en la siguiente tabla. Cada código de la tabla representa una tecla del teclado.</para>
+          <para>Para especificar caracteres que no se muestran al presionar la tecla correspondiente (por ejemplo ENTRAR o TAB), use los códigos que se indican en la tabla siguiente. Cada código de la tabla representa una tecla del teclado.</para>
           <list type="table">
             <item>
               <term>RETROCESO</term>
               <description>{BACKSPACE} o {BS}</description>
             </item>
             <item>
-              <term>interrumpir</term>
-              <description>{interrumpir}</description>
+              <term>INTER</term>
+              <description>SALTO DE {}</description>
             </item>
             <item>
               <term>BLOQ MAYÚS</term>
               <description>{CAPSLOCK}</description>
             </item>
             <item>
-              <term>Borrar</term>
-              <description>{Borrar}</description>
+              <term>BORRAR</term>
+              <description>{BORRAR}</description>
             </item>
             <item>
-              <term>Suprimir o SUPR</term>
-              <description>{ DELETE} o {DEL}</description>
+              <term>SUPRIMIR o SUPR</term>
+              <description>{DELETE} o {DEL}</description>
             </item>
             <item>
-              <term>Flecha abajo</term>
-              <description>{abajo}</description>
+              <term>FLECHA ABAJO</term>
+              <description>{ABAJO}</description>
             </item>
             <item>
-              <term>END</term>
+              <term>FIN</term>
               <description>{END}</description>
             </item>
             <item>
               <term>ENTRAR</term>
-              <description>~ (tilde)</description>
+              <description>~ (tilde de la ñ)</description>
             </item>
             <item>
               <term>ENTRAR (teclado numérico)</term>
-              <description>{ENTRAR}</description>
+              <description>{ENTER}</description>
             </item>
             <item>
               <term>ESC</term>
@@ -8922,38 +8955,39 @@
               <description>{F1} a {F15}</description>
             </item>
             <item>
-              <term>Ayuda de</term>
-              <description>{Ayuda}</description>
+              <term>AYUDA</term>
+              <description>AYUDA DE {}</description>
             </item>
             <item>
-              <term>Página principal</term>de
-              <description>{HOME}</description></item>
+              <term>INICIO</term>
+              <description>PÁGINA PRINCIPAL DE {}</description>
+            </item>
             <item>
               <term>INS</term>
-              <description>{Insertar}</description>
+              <description>{INSERTAR}</description>
             </item>
             <item>
-              <term>Flecha izquierda</term>
+              <term>FLECHA IZQUIERDA</term>
               <description>{LEFT}</description>
             </item>
             <item>
-              <term>Tecla BLOQ NUM</term>
+              <term>BLOQ NUM</term>
               <description>{NUMLOCK}</description>
             </item>
             <item>
-              <term>Av Pág</term>
+              <term>AV PÁG</term>
               <description>{AV PÁG}</description>
             </item>
             <item>
-              <term>Re Pág</term>
+              <term>RE PÁG</term>
               <description>{RE PÁG}</description>
             </item>
             <item>
-              <term>Devolver</term>
+              <term>RETORNO</term>
               <description>{RETURN}</description>
             </item>
             <item>
-              <term>Flecha derecha</term>
+              <term>FLECHA DERECHA</term>
               <description>{RIGHT}</description>
             </item>
             <item>
@@ -8961,15 +8995,15 @@
               <description>{SCROLLLOCK}</description>
             </item>
             <item>
-              <term>Ficha</term>
-              <description>{ficha}</description>
+              <term>TAB</term>
+              <description>FICHA {}</description>
             </item>
             <item>
-              <term>Flecha arriba</term>
-              <description>{seguridad}</description>
+              <term>FLECHA ARRIBA</term>
+              <description>{SEGURIDAD}</description>
             </item>
           </list>
-          <para>También puede especificar teclas combinadas con MAYÚS o CTRL o ALT. Para especificar una tecla combinada con otra u otras teclas, use la siguiente tabla.</para>
+          <para>También puede especificar teclas combinadas con MAYÚS y/o CTRL y/o ALT. Para especificar una tecla combinada con otra u otras teclas, use la tabla siguiente.</para>
           <list type="table">
             <item>
               <term>MAYÚS</term>
@@ -8981,7 +9015,7 @@
             </item>
             <item>
               <term>ALT</term>
-              <description>% (signo de porcentaje)</description>
+              <description>% (signo porcentual)</description>
             </item>
           </list>
           <para>Para asignar un procedimiento a uno de los caracteres especiales (+, ^, % y así sucesivamente), incluya el carácter entre llaves.</para>
@@ -9152,7 +9186,7 @@
           <b>Objeto</b>de opcional. <b>True</b> para programar un nuevo procedimiento <b>OnTime</b> . <b>False</b> para borrar establecido previamente un procedimiento. El valor predeterminado es <b>True</b>.</param>
         <summary>Programa la ejecución de un procedimiento a una hora especificada, ya sea a una hora específica o después del transcurso de un período de tiempo específico.</summary>
         <remarks>
-          <para>Now+TimeValue(time) de uso para programar algo que se ejecuta cuando haya transcurrido un período específico de tiempo (contando desde ahora). Utilice TimeValue para programar algo para ejecutarse una hora específica.</para>
+          <para>Usar Now+TimeValue(time) para programar algo que se ejecuta cuando haya transcurrido un período específico de tiempo (contando desde ahora). Utilice TimeValue para programar algo para ejecutarse una hora específica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9190,7 +9224,7 @@
           <b>String</b> requerida. Nombre del procedimiento que se ejecutará cuando se elija Deshacer en el menú Edición.</param>
         <summary>Establece el texto del elemento de menú Deshacer y el nombre del procedimiento que se ejecutará si se elige Deshacer en el menú Edición después de ejecutar el procedimiento que establece esta propiedad.</summary>
         <remarks>
-          <para>Si un procedimiento no utiliza el método <b>OnUndo</b> , se deshabilita el comando Undo.</para>
+          <para>Si un procedimiento no utiliza el método <b>OnUndo</b>, el comando Deshacer estará deshabilitado.</para>
           <para>El procedimiento debe utilizar el <see cref="M:Microsoft.Office.Interop.Excel._Application.OnRepeat(System.String,System.String)" /> y métodos <b>OnUndo</b> último, para evitar repetir y deshacer procedimientos reemplazados por acciones posteriores del procedimiento.</para>
           <para></para>
         </remarks>
@@ -9231,8 +9265,8 @@
         <summary>Devuelve o establece el nombre del procedimiento que se ejecuta cuando se activa una ventana.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El procedimiento especificado por esta propiedad no se ejecuta cuando otros procedimientos cambian a la ventana o cuando se recibe un comando para cambiar a una ventana a través de un canal DDE. En su lugar, el procedimiento responde a las acciones del usuario, como hacer clic en una ventana con el mouse, hacer clic en Ir a en el menú Editar y así sucesivamente.</para>
-          <para>Si una hoja de cálculo u hoja de macro tiene definida una macro Auto_activar o Auto_desactivar, las macros se ejecutarán después del procedimiento especificado por la propiedad <b>OnWindow</b> .</para>
+          <para>El procedimiento especificado por esta propiedad no se ejecuta cuando otros procedimientos cambian a la ventana o cuando se recibe un comando para cambiar a una ventana a través de un canal DDE. En su lugar, el procedimiento responde a las acciones del usuario, como hacer clic en una ventana con el mouse, hacer clic en Ir a en el menú Edición y así sucesivamente.</para>
+          <para>Si una hoja de cálculo o una hoja de macros tiene definida una macro Auto_activar o Auto_desactivar, éstas se ejecutarán después del procedimiento especificado por la propiedad <b>OnWindow</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9490,8 +9524,10 @@
           <b>true</b> si la comunicación con la impresora está activada; en caso contrario, <b>false</b>.</value>
         <remarks>
           <para>
-            <b>Boolean</b> Lectura y escritura.</para> Conjunto de 
-          <para>el <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> propiedad en <b>false</b> para acelerar la ejecución de código que establece las propiedades PageSetup. Establecer el <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> propiedad en <b>true</b> después de establecer las propiedades para confirmar todos en caché comandos PageSetup.</para><para></para></remarks>
+            <b>Boolean</b> Lectura y escritura.</para>
+          <para>Establecer el <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> propiedad en <b>false</b> para acelerar la ejecución de código que establece las propiedades PageSetup. Establecer el <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> propiedad en <b>true</b> después de establecer las propiedades para confirmar todos los comandos PageSetup de caché.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductCode">
@@ -9586,7 +9622,7 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> colección que representa todas las ventanas de vista protegida que están abiertas en la aplicación.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> colección que representa todas las ventanas de vista protegida que están abiertas en la aplicación.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9643,7 +9679,7 @@
         <summary>Sale de Microsoft Excel.</summary>
         <remarks>
           <para>Si los libros no guardados abiertos cuando se utiliza este método, Microsoft Excel muestra un cuadro de diálogo que le pregunta si desea guardar los cambios. Esto puede evitarse guardando todos los libros antes de usar el método <b>Quit</b> o estableciendo el <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propiedad en <b>False</b>. Cuando esta propiedad es <b>False</b>, Microsoft Excel no muestra el cuadro de diálogo al salir de los libros no guardados; salir de la aplicación sin guardarlos.</para>
-          <para>Si se establece el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> (propiedad) de un libro como <b>True</b> sin guardar el libro en el disco, Microsoft Excel saldrá sin preguntar si desea guardar el libro.</para>
+          <para>Si establece el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> (propiedad) de un libro como <b>True</b> sin guardar el libro en el disco, Microsoft Excel saldrá sin preguntar si desea guardar el libro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9806,8 +9842,8 @@
           <b>Objeto</b>de opcional. Este argumento se omite.</param>
         <summary>Graba código si está activada la grabadora de macros.</summary>
         <remarks>
-          <para>El método <b>RecordMacro</b> no puede grabar en el módulo activo (el módulo en el que existe el método <b>RecordMacro</b> ).</para>
-          <para>Para impedir la grabación (por ejemplo, si el usuario cancela el cuadro de diálogo), llamar a esta función con dos cadenas vacías.</para>
+          <para>El método <b>RecordMacro</b> no puede grabar en el módulo activo (el módulo en el que reside el método <b>RecordMacro</b>).</para>
+          <para>Para impedir la grabación (por ejemplo, si el usuario cancela el cuadro de diálogo), use dos cadenas vacías cuando llame a esta función.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -9928,19 +9964,19 @@
         <summary>Devuelve información acerca de las funciones de ambos bibliotecas de vínculos dinámicos (DLL) o los recursos que se han registrado con las funciones de macro REGISTER o ID de código.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si no se especifica estos argumentos, esta propiedad devuelve una matriz que contiene una lista de todas las funciones registradas. Cada fila de la matriz contiene información acerca de una sola función, tal como se muestra en la siguiente tabla.</para>
+          <para>Si no especifica estos argumentos, esta propiedad devuelve una matriz que contiene una lista de todas las funciones registradas. Cada fila de la matriz contiene información acerca de una sola función, tal como se muestra en la siguiente tabla.</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>el nombre de la DLL o recurso de código</description>
+              <description>El nombre de la DLL o del recurso de código.</description>
             </item>
             <item>
               <term>2</term>
-              <description>el nombre del procedimiento en el archivo DLL o recurso de código</description>
+              <description>El nombre del procedimiento de la DLL o el recurso de código.</description>
             </item>
             <item>
               <term>3</term>
-              <description>cadenas que especifican los tipos de datos de los tipos de valores y el número y los datos devueltos de los argumentos</description>
+              <description>Especificación de los tipos de datos de los valores devueltos y el número y tipos de datos de los argumentos de cadenas</description>
             </item>
           </list>
           <para>Si no hay ninguna función registrada, esta propiedad devuelve <b>Null</b>.</para>
@@ -9979,7 +10015,7 @@
         <summary>Carga un recurso de código XLL y registra automáticamente las funciones y comandos que contiene.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Este método devuelve <b>True</b> si el recurso de código se carga correctamente; en caso contrario, el método devuelve <b>False</b>.</para>
+          <para>Este método devuelve <b>True</b> si el recurso de código se carga correctamente; de lo contrario, devuelve <b>False</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -10076,19 +10112,19 @@
         <summary>Restablece la lista de distribución para que se pueda iniciar una nueva distribución con la misma lista (usando la misma lista de destinatarios e información de entrega). Para poder utilizar este método debe haberse completado la distribución. El uso de este método en otras ocasiones causa un error.</summary>
         <remarks>To be added.</remarks>
         <example>
-          <para>En este ejemplo se restablece la lista de distribución para Book1.xls si la distribución ha finalizado.</para>
+          <para>Este ejemplo restablece la lista de distribución del Book1.xls si la distribución ha finalizado.</para>
           <code>&lt;span class="label"&gt;With Workbooks("BOOK1.XLS").RoutingSlip     If .Status = xlRoutingComplete Then         .&lt;/span&gt;
 &lt;i&gt;Reset&lt;/i&gt;
 &lt;span class="label"&gt;Else         MsgBox "Cannot reset routing; not yet complete"     End If End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>En este ejemplo se restablece la lista de distribución para Book1.xls si la distribución ha finalizado.</para>
+          <para>Este ejemplo restablece la lista de distribución del Book1.xls si la distribución ha finalizado.</para>
           <code>&lt;span class="label"&gt;With Workbooks("BOOK1.XLS").RoutingSlip     If .Status = xlRoutingComplete Then         .&lt;/span&gt;
 &lt;i&gt;Reset&lt;/i&gt;
 &lt;span class="label"&gt;Else         MsgBox "Cannot reset routing; not yet complete"     End If End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>En este ejemplo se restablece la lista de distribución para Book1.xls si la distribución ha finalizado.</para>
+          <para>Este ejemplo restablece la lista de distribución del Book1.xls si la distribución ha finalizado.</para>
           <code>&lt;span class="label"&gt;With Workbooks("BOOK1.XLS").RoutingSlip     If .Status = xlRoutingComplete Then         .&lt;/span&gt;
 &lt;i&gt;Reset&lt;/i&gt;
 &lt;span class="label"&gt;Else         MsgBox "Cannot reset routing; not yet complete"     End If End With&lt;/span&gt;</code>
@@ -10306,8 +10342,10 @@
         <summary>Se ejecuta una macro o llama a una función.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>No se puede utilizar argumentos con nombre con este método. Argumentos se deben pasar por posición.</para> Método 
-          <para><b>Ejecutar</b> devuelve el resultado de la macro llamada. Objetos que se pasan a la macro como argumentos se convierten en valores (aplicando la <see cref="P:Microsoft.Office.Interop.Excel._Application.Value" /> (propiedad) para el objeto). Esto significa que no se pueden pasar objetos a macros mediante el método <b>Run</b> .</para><para></para></remarks>
+          <para>No pueden usarse argumentos con nombre en este método. Los argumentos deben pasarse por posición.</para>
+          <para>El método <b>Run</b> devuelve el resultado de la macro a la que se haya llamado.  Objetos que se pasan a la macro como argumentos se convierten en valores (aplicando la <see cref="P:Microsoft.Office.Interop.Excel._Application.Value" /> (propiedad) para el objeto). Esto significa que no se pueden pasar objetos a macros mediante el método <b>Run</b> .</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -10341,7 +10379,7 @@
         <param name="Filename">To be added.</param>
         <summary>Guarda los cambios del libro especificado.</summary>
         <remarks>
-          <para>Para abrir un archivo de libro, use la <see cref="&quot;M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String" /> método.</para>
+          <para>Para abrir un archivo de libro, use el <see cref="&quot;M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String" /> (método).</para>
           <para></para>
           <para>Para marcar un libro como guardado sin escribirlo en un disco, defina su <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.SaveData" /> propiedad en <b>True</b>.</para>
           <para></para>
@@ -10352,7 +10390,7 @@
           <para>En este ejemplo se guarda el libro activo.</para>
           <code>&lt;span class="label"&gt;ActiveWorkbook.&lt;/span&gt;
 &lt;i&gt;Save&lt;/i&gt;</code>
-          <para>En este ejemplo se guarda todos los libros abiertos y, a continuación, se cierra Microsoft Excel.</para>
+          <para>En este ejemplo se guardan todos los libros abiertos y, a continuación, se cierra Microsoft Excel.</para>
           <code>&lt;span class="label"&gt;For Each w In Application.Workbooks     w.&lt;/span&gt;
 &lt;i&gt;Save&lt;/i&gt;
 &lt;span class="label"&gt;Next w Application.Quit&lt;/span&gt;</code>
@@ -10361,7 +10399,7 @@
           <para>En este ejemplo se guarda el libro activo.</para>
           <code>&lt;span class="label"&gt;ActiveWorkbook.&lt;/span&gt;
 &lt;i&gt;Save&lt;/i&gt;</code>
-          <para>En este ejemplo se guarda todos los libros abiertos y, a continuación, se cierra Microsoft Excel.</para>
+          <para>En este ejemplo se guardan todos los libros abiertos y, a continuación, se cierra Microsoft Excel.</para>
           <code>&lt;span class="label"&gt;For Each w In Application.Workbooks     w.&lt;/span&gt;
 &lt;i&gt;Save&lt;/i&gt;
 &lt;span class="label"&gt;Next w Application.Quit&lt;/span&gt;</code>
@@ -10370,7 +10408,7 @@
           <para>En este ejemplo se guarda el libro activo.</para>
           <code>&lt;span class="label"&gt;ActiveWorkbook.&lt;/span&gt;
 &lt;i&gt;Save&lt;/i&gt;</code>
-          <para>En este ejemplo se guarda todos los libros abiertos y, a continuación, se cierra Microsoft Excel.</para>
+          <para>En este ejemplo se guardan todos los libros abiertos y, a continuación, se cierra Microsoft Excel.</para>
           <code>&lt;span class="label"&gt;For Each w In Application.Workbooks     w.&lt;/span&gt;
 &lt;i&gt;Save&lt;/i&gt;
 &lt;span class="label"&gt;Next w Application.Quit&lt;/span&gt;</code>
@@ -10482,7 +10520,11 @@
         <summary>
           <b>True</b> si la actualización de pantallas está activada.</summary>
         <value>To be added.</value>
-        <remarks>Actualización desactivado para acelerar el código de la pantalla <para>Activar. No podrá ver lo que está haciendo el código, pero se ejecutará con mayor rapidez.</para><para>Recuerde que debe establecer la propiedad <b>ScreenUpdating</b> en <b>True</b> cuando termina el código.</para><para></para></remarks>
+        <remarks>
+          <para>Activar la actualización de la pantalla para acelerar su código. No podrá ver lo que está haciendo el código, pero se ejecutará con mayor rapidez.</para>
+          <para>Recuerde que debe establecer la propiedad <b>ScreenUpdating</b> en <b>True</b> cuando termina el código.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -10513,7 +10555,10 @@
       <Docs>
         <summary>Devuelve el objeto seleccionado en la ventana activa.</summary>
         <value>To be added.</value>
-        <remarks>Tipo de objeto <para>el valor devuelto depende de la selección actual (por ejemplo, si se selecciona una celda, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto). La propiedad <b>Selection</b> devuelve <b>Nothing</b> si no se selecciona nada.</para><para></para></remarks>
+        <remarks>
+          <para>El tipo de objeto devuelto depende de la selección actual (por ejemplo, si se selecciona una celda, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto). La propiedad <b>Selection</b> devuelve <b>Nothing</b> si no se selecciona nada.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendKeys">
@@ -10548,45 +10593,45 @@
           <b>Objeto</b>de opcional. <b>True</b> para que Microsoft Excel espere a que las teclas se procesen antes de devolver el control a la macro. <b>False</b> (o se omite) para continuar la ejecución de la macro sin tener que esperar para que las claves que va a procesar.</param>
         <summary>Envía pulsaciones de tecla a la aplicación activa.</summary>
         <remarks>
-          <para>Este método coloca pulsaciones de teclas en un búfer de teclas. En algunos casos, debe llamar a este método antes de llamar al método que se va a usar las pulsaciones de teclas. Por ejemplo, para enviar una contraseña a un cuadro de diálogo, debe llamar al método <b>SendKeys</b> antes de mostrar el cuadro de diálogo.</para>
-          <para>La <paramref name="Keys" /> argumento puede especificar cualquier tecla única o cualquier tecla combinada con ALT, CTRL o MAYÚS (o cualquier combinación de dichas teclas). Cada tecla está representada por uno o más caracteres, como "a" para el carácter a, o "{ENTER}" para la tecla ENTRAR.</para>
-          <para>Para especificar caracteres que no se muestran cuando se presiona la tecla correspondiente (por ejemplo, ENTRAR o TAB), utilice los códigos que aparecen en la siguiente tabla. Cada código de la tabla representa una tecla del teclado.</para>
+          <para>Este método coloca pulsaciones de teclas en un búfer de teclas. En ciertos casos, deberá llamar a este método antes de llamar al método que vaya a usar las pulsaciones de teclas. Por ejemplo, para enviar una contraseña a un cuadro de diálogo, deberá llamar al método <b>SendKeys</b> antes de mostrar el cuadro de diálogo.</para>
+          <para>El <paramref name="Keys" /> argumento puede especificar cualquier tecla única o cualquier tecla combinada con ALT, CTRL o MAYÚS (o cualquier combinación de dichas teclas). Cada tecla está representada por uno o más caracteres, como "a" para el carácter a, o "{ENTER}" para la tecla ENTRAR.</para>
+          <para>Para especificar caracteres que no se muestran al pulsar la tecla correspondiente (por ejemplo, ENTRAR o TAB), use los códigos que se muestran en la tabla siguiente. Cada código de la tabla representa una tecla del teclado.</para>
           <list type="table">
             <item>
               <term>RETROCESO</term>
               <description>{BACKSPACE} o {BS}</description>
             </item>
             <item>
-              <term>interrumpir</term>
-              <description>{interrumpir}</description>
+              <term>INTER</term>
+              <description>SALTO DE {}</description>
             </item>
             <item>
               <term>BLOQ MAYÚS</term>
               <description>{CAPSLOCK}</description>
             </item>
             <item>
-              <term>Borrar</term>
-              <description>{Borrar}</description>
+              <term>BORRAR</term>
+              <description>{BORRAR}</description>
             </item>
             <item>
-              <term>Suprimir o SUPR</term>
+              <term>SUPRIMIR o SUPR</term>
               <description>{DELETE} o {DEL}</description>
             </item>
             <item>
-              <term>Flecha abajo</term>
-              <description>{abajo}</description>
+              <term>FLECHA ABAJO</term>
+              <description>{ABAJO}</description>
             </item>
             <item>
-              <term>END</term>
+              <term>FIN</term>
               <description>{END}</description>
             </item>
             <item>
               <term>ENTRAR</term>
-              <description>~ (tilde)</description>
+              <description>~ (tilde de la ñ)</description>
             </item>
             <item>
               <term>ENTRAR (teclado numérico)</term>
-              <description>{ENTRAR}</description>
+              <description>{ENTER}</description>
             </item>
             <item>
               <term>ESC</term>
@@ -10597,38 +10642,39 @@
               <description>{F1} a {F15}</description>
             </item>
             <item>
-              <term>Ayuda de</term>
-              <description>{Ayuda}</description>
+              <term>AYUDA</term>
+              <description>AYUDA DE {}</description>
             </item>
             <item>
-              <term>Página principal</term>de
-              <description>{HOME}</description></item>
+              <term>INICIO</term>
+              <description>PÁGINA PRINCIPAL DE {}</description>
+            </item>
             <item>
               <term>INS</term>
-              <description>{Insertar}</description>
+              <description>{INSERTAR}</description>
             </item>
             <item>
-              <term>Flecha izquierda</term>
+              <term>FLECHA IZQUIERDA</term>
               <description>{LEFT}</description>
             </item>
             <item>
-              <term>Tecla BLOQ NUM</term>
+              <term>BLOQ NUM</term>
               <description>{NUMLOCK}</description>
             </item>
             <item>
-              <term>Av Pág</term>
+              <term>AV PÁG</term>
               <description>{AV PÁG}</description>
             </item>
             <item>
-              <term>Re Pág</term>
+              <term>RE PÁG</term>
               <description>{RE PÁG}</description>
             </item>
             <item>
-              <term>Devolver</term>
+              <term>RETORNO</term>
               <description>{RETURN}</description>
             </item>
             <item>
-              <term>Flecha derecha</term>
+              <term>FLECHA DERECHA</term>
               <description>{RIGHT}</description>
             </item>
             <item>
@@ -10636,15 +10682,15 @@
               <description>{SCROLLLOCK}</description>
             </item>
             <item>
-              <term>Ficha</term>
-              <description>{ficha}</description>
+              <term>TAB</term>
+              <description>FICHA {}</description>
             </item>
             <item>
-              <term>Flecha arriba</term>
-              <description>{seguridad}</description>
+              <term>FLECHA ARRIBA</term>
+              <description>{SEGURIDAD}</description>
             </item>
           </list>
-          <para>También puede especificar teclas combinadas con MAYÚS o CTRL o ALT. Para especificar una tecla combinada con otra u otras teclas, use la siguiente tabla.</para>
+          <para>También puede especificar teclas combinadas con MAYÚS y/o CTRL y/o ALT. Para especificar una tecla combinada con otra u otras teclas, use la tabla siguiente.</para>
           <list type="table">
             <item>
               <term>MAYÚS</term>
@@ -10656,7 +10702,7 @@
             </item>
             <item>
               <term>ALT</term>
-              <description>% (signo de porcentaje)</description>
+              <description>% (signo porcentual)</description>
             </item>
           </list>
           <para></para>
@@ -10922,7 +10968,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Esta propiedad corresponde a la Mostrar ficha Programador en la casilla de verificación de la cinta de opciones en el cuadro de diálogo Opciones de Excel.</para>
+          <para>Esta propiedad corresponde a la casilla de verificación Mostrar ficha Programador en la cinta de opciones del cuadro de diálogo Opciones de Excel.
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11022,7 +11070,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Corresponde a la Mostrar minibarra de herramientas en la casilla de verificación de selección en el cuadro de diálogo Opciones de Excel.</para>
+          <para>Corresponde a la casilla de verificación Mostrar minibarra de herramientas al seleccionar del cuadro de diálogo Opciones de Excel.
+
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11153,7 +11203,7 @@
         <summary>Obtiene el conjunto de estilos de color que están cargados actualmente en la aplicación.</summary>
         <value>El conjunto de estilos de color que están cargados actualmente en la aplicación.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11184,7 +11234,7 @@
         <summary>Obtiene el conjunto de diseños de SmartArt que están cargados actualmente en la aplicación.</summary>
         <value>El conjunto de diseños de SmartArt que están cargados actualmente en la aplicación.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11215,7 +11265,7 @@
         <summary>Obtiene el conjunto de estilos rápidos de SmartArt que están cargados actualmente en la aplicación.</summary>
         <value>El conjunto de estilos rápidos de SmartArt que están cargados actualmente en la aplicación.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11342,7 +11392,7 @@
         <summary>Devuelve o establece el nombre de la fuente estándar.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si cambia la fuente estándar mediante esta propiedad, el cambio no será efectivo hasta que se reinicie Microsoft Excel.</para>
+          <para>Si cambia la fuente estándar mediante esta propiedad, el cambio no será efectivo hasta que vuelva a abrir Microsoft Excel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11382,7 +11432,7 @@
         <summary>Devuelve o establece el tamaño de fuente estándar, en puntos.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si cambia el tamaño de fuente estándar mediante esta propiedad, el cambio no será efectivo hasta que se reinicie Microsoft Excel.</para>
+          <para>Si cambia el tamaño de la fuente estándar mediante esta propiedad, el cambio no será efectivo hasta que vuelva a abrir Microsoft Excel.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11453,7 +11503,7 @@
         <summary>Devuelve o establece el texto de la barra de estado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad devuelve <b>False</b> si Microsoft Excel tiene el control de la barra de estado. Para restaurar el texto predeterminado de la barra de estado, establezca la propiedad en <b>False</b>; Esto funciona incluso si está oculta la barra de estado.</para>
+          <para>Esta propiedad devuelve <b>False</b> si Microsoft Excel tiene el control de la barra de estado. Para restaurar el texto predeterminado de la barra de estado, configure la propiedad en <b>False</b>; esto funciona aunque la barra de estado esté oculta.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11549,7 +11599,7 @@
         <summary>Devuelve la celda de la función definida por el usuario se llama como un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Los usuarios deben no tener acceso a propiedades o métodos en el objeto <b>Range</b> cuando están dentro de la función definida por el usuario. Los usuarios pueden almacenar en caché el objeto <b>Range</b> para su uso posterior y realizar acciones adicionales cuando se termine la actualización.</para>
+          <para>Los usuarios no deben tener acceso a las propiedades o métodos del objeto <b>Range</b> cuando están dentro de la función definida por el usuario. Los usuarios pueden almacenar en memoria caché el objeto <b>Range</b> para su uso posterior y llevar a cabo acciones adicionales cuando se termine la actualización.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -11583,8 +11633,8 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object que representa el libro donde se ejecuta el código de macro actual.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Utilice esta propiedad para hacer referencia al libro que contiene el código de macro. <b>ThisWorkbook</b> es la única forma de hacer referencia a un libro de complemento desde el propio complemento. La propiedad <b>ActiveWorkbook</b> no devuelve el libro del complemento; Devuelve el libro al que llama el complemento. El <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> (propiedad) puede producir un error, porque el nombre del libro probablemente cambió cuando creó el complemento. <b>ThisWorkbook</b> siempre devuelve el libro en el que se ejecuta el código.</para>
-          <para>Esta propiedad puede usarse solo desde dentro de Excel. No puede usar para tener acceso a un libro desde cualquier otra aplicación.</para>
+          <para>Utilice esta propiedad para hacer referencia al libro que contiene el código de macro. <b>ThisWorkbook</b> es la única forma de hacer referencia a un libro de complemento desde el propio complemento. La propiedad <b>ActiveWorkbook</b> no devuelve el libro del complemento; Devuelve el libro al que llama el complemento. El <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> puede producir un error (propiedad), porque el nombre del libro probablemente cambió cuando creó el complemento. <b>ThisWorkbook</b> siempre devuelve el libro en el que se ejecuta el código.</para>
+          <para>Esta propiedad puede usarse solo desde dentro de Excel. No puede utilizarlo para obtener acceso a un libro desde cualquier otra aplicación.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -12089,7 +12139,7 @@
           <para>
             <b>true</b> si Excel permite funciones definidas por el usuario en complementos XLL para ejecutarse en un clúster de cálculo; en caso contrario, <b>false</b>. La configuración de la <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> propiedad corresponde a las funciones XLL definidas por el usuario en permitir para que se ejecute en una casilla de verificación de clúster compute en fórmulas en la categoría Avanzadas del cuadro de diálogo Opciones de Excel.</para>
           <para>
-            <b>Nota</b>: para habilitar el <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> (propiedad) debe instalar un conector de clúster de informática de alto rendimiento (HPC). Un conector de clúster le permite ejecutar funciones XLL seguras para el clúster de forma remota en un clúster HPC para aumentar el rendimiento.</para>
+            <b>Nota</b>: para habilitar el <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> (propiedad) debe instalar un conector de clúster de informática de alto rendimiento (HPC). Un conector de clúster permite ejecutar funciones XLL seguras para el clúster de forma remota en un clúster HPC para aumentar el rendimiento.</para>
           <para>Después de la configuración de la <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> propiedad, utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> (propiedad) para especificar el conector de clúster HPC para usar.</para>
           <para></para>
         </remarks>
@@ -12153,7 +12203,7 @@
           <b>True</b> si la aplicación está visible o si fue creada o iniciada por el usuario. <b>False</b> si creó o inició la aplicación mediante programación mediante las funciones <b>CreateObject</b> o <b>GetObject</b> y la aplicación está oculta.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cuando la propiedad <b>UserControl</b> es <b>False</b> para un objeto, dicho objeto se liberará cuando se libere la última referencia mediante programación al objeto. Si esta propiedad es <b>False</b>, Microsoft Excel se cierra cuando se libera el último objeto de la sesión.</para>
+          <para>Cuando la propiedad <b>UserControl</b> de un objeto es <b>False</b>, dicho objeto se liberará cuando se libere la última referencia al objeto realizada mediante programación. Si esta propiedad es <b>False</b>, Microsoft Excel se cierra cuando se libera el último objeto de la sesión.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -12649,7 +12699,7 @@
             <b>xlMaximized</b>
           </para>
           <para>
-            <b>xlNormal</b>
+            <b>valor xlNormal</b>
           </para>
           <para>
             <b>xlMinimized</b>
@@ -12743,7 +12793,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección que representa todas las hojas de cálculo del libro activo.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad no devuelve hojas de macro; use la <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4MacroSheets" /> (propiedad) o el <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4IntlMacroSheets" /> (propiedad) para obtener dichas hojas.</para>
+          <para>Esta propiedad no devuelve hojas de macro; usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4MacroSheets" /> (propiedad) o el <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4IntlMacroSheets" /> (propiedad) para obtener dichas hojas.</para>
           <para></para>
         </remarks>
       </Docs>

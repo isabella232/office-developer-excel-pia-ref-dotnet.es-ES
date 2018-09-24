@@ -1,10 +1,10 @@
 <Type Name="Tab" FullName="Microsoft.Office.Interop.Excel.Tab">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f556887ccfbbf416d3399219f2df31285e1376b3" />
+    <Meta Name="ms.openlocfilehash" Value="71eb536a457812dc4d61b8e60fbc32743a3a5406" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585823" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Tab" />
@@ -156,8 +156,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -219,7 +221,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" />
         </value>
         <remarks>
-          <para>Si se intenta obtener acceso a un color del tema para un objeto cuyo color no está actualmente con temas, se producirá un error de tiempo de ejecución de solicitud no es válida.</para>
+          <para>Al intentar tener acceso a un color de tema de un objeto cuyo color no se encuentre incluido en el tema en ese momento, se producirá un error en tiempo de ejecución por solicitud no válida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +258,7 @@
         </value>
         <remarks>
           <para>Puede escribir un número comprendido entre -1 (más oscuro) y 1 (más claro) para la <see cref="P:Microsoft.Office.Interop.Excel.Tab.TintAndShade" /> (propiedad). Cero (0) es neutro.</para>
-          <para>Si se intenta establecer esta propiedad en un valor menor que -1 o mayor que 1 no provoca un error en tiempo de ejecución: "el valor especificado está fuera del intervalo".  Esta propiedad funciona para los colores del tema y los colores no incluidos en temas.</para>
+          <para>Al intentar establecer esta propiedad en un valor inferior a -1 o mayor que 1 se produce un error en tiempo de ejecución: "El valor especificado se encuentra fuera de los límites". Esta propiedad funciona tanto para los colores de temas como para los no incluidos en temas.</para>
           <para></para>
         </remarks>
       </Docs>
