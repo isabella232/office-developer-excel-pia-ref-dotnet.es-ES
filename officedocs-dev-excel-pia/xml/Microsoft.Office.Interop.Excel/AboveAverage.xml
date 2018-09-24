@@ -1,10 +1,10 @@
 <Type Name="AboveAverage" FullName="Microsoft.Office.Interop.Excel.AboveAverage">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a3e1b574402fb07f8875c4152e315a9324bd5e4b" />
+    <Meta Name="ms.openlocfilehash" Value="1a21e926b51408a1d10155a1a8f623c34f2f9726" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584101" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AboveAverage" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Representa una indicación visual de superior a la media de una regla de formato condicional. Aplicar un color o un relleno a un rango o una selección ayuda a ver el valor de unas celdas en relación con otras celdas.</summary>
     <remarks>
-      <para>Todos los objetos de formato condicional contenidos en un <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de colección, que es un elemento secundario de un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Puede crear una regla de formato mediante cualquiera el <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />colección.</para>
+      <para>Todos los objetos de formato condicionales están contenidos en una <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de colección, que es un elemento secundario de un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Puede crear una regla de formato mediante cualquiera el <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />colección.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -159,7 +159,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Borders" />
         </value>
         <remarks>
-          <para>Para un objeto de formato condicional, sólo se pueden establecer las propiedades de la parte superior, inferior y bordes laterales de la celda.</para>
+          <para>Para los objetos de formato condicional, sólo se pueden definir las propiedades de los bordes superior, inferior y lateral de la celda.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -195,8 +195,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" />
         </value>
         <remarks>
-          <para>Esta propiedad sólo es aplicable cuando se aplica el formato condicional a los datos de un informe de tabla dinámica.</para>
-          <para>Se puede establecer esta propiedad en <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" />, <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" />, o <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" />sólo si el <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.ScopeType" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" />.</para>
+          <para>Esta propiedad sólo se utiliza cuando se aplica el formato condicional a los datos de un informe de tabla dinámica.</para>
+          <para>Esta propiedad se puede establecer en <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" />, <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" />, o <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" />sólo si el <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.ScopeType" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" />. </para>
           <para></para>
         </remarks>
       </Docs>
@@ -229,11 +229,13 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para></para>
         </remarks>
         <example>
-          <para>En este ejemplo se muestra un mensaje acerca del creador de un libro de Excel.</para>
+          <para>En este ejemplo se muestra un mensaje sobre el creador de un libro de Excel.
+
+</para>
         </example>
       </Docs>
     </Member>
@@ -290,7 +292,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Font" />
         </value>
         <remarks>
-          <para>No se admiten todas las propiedades del objeto <b>Font</b> para un objeto de formato condicional. Puede establecer la fuente de los atributos de estilo, subrayado, color y tachado.</para>
+          <para>No se admiten todas las propiedades del objeto <b>Font</b> para los objetos de formato condicional. Puede definir los atributos de estilo de fuente, subrayado, color y tachado.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -351,7 +353,7 @@
         <summary>Establece el rango de celdas al que se aplica esta regla de formato.</summary>
         <remarks>
           <para>El rango debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
-          <para>También puede usar un nombre definido local en cualquier parte del rango, pero el nombre debe ser en el lenguaje de la macro.</para>
+          <para>Asimismo, se puede utilizar un nombre definido local en cualquier parte del rango, pero debe estar en el lenguaje de la macro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -486,7 +488,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Al establecer la prioridad, el valor debe ser un entero positivo comprendido entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas en la hoja de cálculo, por lo que cambiar la prioridad de la regla de formato condicional especificada puede provocar el valor de prioridad de las demás reglas en la hoja de cálculo que se va a desplazar.</para>
+          <para>Cuando se establece la prioridad, el valor debe ser un número entero positivo entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas de la hoja, por lo que si se cambia la prioridad para la regla de formato condicional especificada, es posible que varíe el valor de prioridad de las demás reglas en la hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -580,9 +582,9 @@
       <Docs>
         <summary>Establece el valor de prioridad para esta regla de formato condicional en "1" para que se evalúe antes que todas las demás reglas en la hoja de cálculo.</summary>
         <remarks>
-          <para>Cuando tiene varias reglas de formato condicionales en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
+          <para>Cuando se tienen varias reglas de formato condicional en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
           <para>
-            <b>Nota</b>: niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
+            <b>Nota</b>: los niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -610,9 +612,9 @@
       <Docs>
         <summary>Establece el orden de evaluación para esta regla de formato condicional de modo que se evalúe después que todas las demás reglas en la hoja de cálculo.</summary>
         <remarks>
-          <para>El valor real de la prioridad será igual que el número total de reglas de formato condicional en la hoja de cálculo. Si tiene varias reglas de formato condicionales en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que esta regla aumente en uno.</para>
+          <para>El valor real de la prioridad será igual al número total de reglas de formato condicional en la hoja de cálculo. Cuando se tengan varias reglas de formato condicional en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que el de esta regla aumente en uno.</para>
           <para>
-            <b>Nota</b>: niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
+            <b>Nota</b>: los niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -648,7 +650,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Para compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
+          <para>Para mantener la compatibilidad con versiones anteriores, el valor predeterminado para esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de una regla de formato creada en la interfaz del usuario.</para>
           <para></para>
         </remarks>
       </Docs>
