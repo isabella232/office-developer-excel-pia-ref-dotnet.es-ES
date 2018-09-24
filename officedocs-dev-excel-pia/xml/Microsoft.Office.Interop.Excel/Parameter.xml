@@ -1,10 +1,10 @@
 <Type Name="Parameter" FullName="Microsoft.Office.Interop.Excel.Parameter">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="95a1514921d1b94e70c3a6054d10d4aeb557513f" />
+    <Meta Name="ms.openlocfilehash" Value="4cb6832911d3c4a327d4bf9eea8ec30d60695a98" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581707" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Parameter" />
@@ -86,7 +86,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataType">
@@ -237,7 +240,7 @@
           <b>True</b> si la tabla de consulta especificada se actualiza cada vez que se cambia el valor del parámetro de una consulta de parámetros. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Puede establecer esta propiedad en <b>True</b> sólo si utiliza parámetros de tipo <b>xlRange</b> y si el valor del parámetro que se hace referencia se encuentra en una sola celda. La actualización se produce cuando cambia el valor de la celda.</para>
+          <para>Esta propiedad se puede establecer en <b>True</b> sólo si utiliza parámetros de tipo <b>xlRange</b> y si el valor del parámetro al que se hace referencia se encuentra en una sola celda. La actualización se produce al cambiar el valor de la celda.</para>
           <para></para>
         </remarks>
       </Docs>

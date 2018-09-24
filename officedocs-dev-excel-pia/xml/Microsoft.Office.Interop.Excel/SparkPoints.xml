@@ -1,10 +1,10 @@
 <Type Name="SparkPoints" FullName="Microsoft.Office.Interop.Excel.SparkPoints">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="244ea4c7d176a75a006d65791e464a2e30c56131" />
+    <Meta Name="ms.openlocfilehash" Value="e5a9199cd752c599cbd9222cae79f2248af65580" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585130" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SparkPoints" />
@@ -30,7 +30,10 @@
   </Attributes>
   <Docs>
     <summary>Representa la configuración de los marcadores para puntos de datos de un minigráfico.</summary>
-    <remarks>Uso de <para>la <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> objeto para establecer el color y la visibilidad de los marcadores de puntos de datos de un minigráfico. Usar el <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para devolver un <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> objeto. Las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> objeto se corresponde con la configuración del punto de alta, baja punto, punto negativo, primer punto, último punto y casillas de verificación de marcadores en la sección Mostrar y de los elementos en la lista desplegable de Color del marcador en la sección estilo del minigráfico Ficha Diseño de herramientas de la cinta de opciones.</para><para></para></remarks>
+    <remarks>
+      <para>Usar el <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> objeto para establecer el color y la visibilidad de los marcadores de puntos de datos de un minigráfico. Usar el <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para devolver un <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> objeto. Las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> objeto se corresponde con la configuración del punto de alta, baja punto, punto negativo, primer punto, último punto y casillas de verificación de marcadores en la sección Mostrar y de los elementos en la lista desplegable de Color del marcador en la sección estilo del minigráfico Ficha Diseño de herramientas de la cinta de opciones.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +62,7 @@
         <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -90,7 +93,7 @@
         <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
         <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
         <remarks>
-          <para>De sólo lectura <b>largo</b>.</para>
+          <para>Sólo lectura de <b>tipo long</b>.</para>
           <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" />(propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para></para>
         </remarks>
@@ -122,8 +125,8 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad del marcador para el primer punto de datos de un minigráfico.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad del marcador para el primer punto de datos de un minigráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" /> propiedad corresponde a la opción de configuración de la casilla de verificación del primer punto en la sección Mostrar y del primer elemento de punto en la lista desplegable de Color del marcador en la sección de estilo de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
+          <para>Solo lectura.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" /> propiedad corresponde a la opción de configuración de la casilla de verificación del primer punto en la sección Mostrar y del primer elemento de punto en la lista desplegable de Color del marcador en la sección de estilo de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -154,8 +157,8 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad del marcador para el punto más alto de los datos de un minigráfico.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad del marcador para el punto más alto de los datos de un minigráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" /> propiedad corresponde a la opción de configuración de la casilla de verificación punto más alto en la sección Mostrar y del elemento en la lista desplegable de Color del marcador en la sección estilo punto más alto de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
+          <para>Solo lectura.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" /> propiedad corresponde a la opción de configuración de la casilla de verificación punto más alto en la sección Mostrar y del elemento en la lista desplegable de Color del marcador en la sección estilo punto más alto de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -186,8 +189,8 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad del marcador para el último punto de datos de un minigráfico.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad del marcador para el último punto de datos de un minigráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" />propiedad corresponde a la opción de configuración del último punto, la casilla de verificación en la sección Mostrar y del último elemento de punto en la lista desplegable de Color del marcador en la sección de estilo de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
+          <para>Solo lectura.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" />propiedad corresponde a la opción de configuración del último punto, la casilla de verificación en la sección Mostrar y del último elemento de punto en la lista desplegable de Color del marcador en la sección de estilo de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -218,8 +221,8 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad del marcador para el punto más bajo de datos de un minigráfico.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad del marcador para el punto más bajo de datos de un minigráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" /> propiedad corresponde a la opción de configuración de la casilla de verificación bajo punto en la sección Mostrar y del elemento en la lista desplegable de Color del marcador en la sección estilo bajo punto de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
+          <para>Solo lectura.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" /> propiedad corresponde a la opción de configuración de la casilla de verificación bajo punto en la sección Mostrar y del elemento en la lista desplegable de Color del marcador en la sección estilo bajo punto de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -250,8 +253,8 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad de marcadores de positivos puntos de datos de un minigráfico.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad de marcadores de positivos puntos de datos de un minigráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" />propiedad corresponde a la opción de configuración de la casilla de verificación marcadores en la sección Mostrar y del elemento de marcadores en la lista desplegable de Color del marcador en la sección de estilo de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
+          <para>Solo lectura.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" />propiedad corresponde a la opción de configuración de la casilla de verificación marcadores en la sección Mostrar y del elemento de marcadores en la lista desplegable de Color del marcador en la sección de estilo de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -282,8 +285,8 @@
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad de marcadores para puntos negativos de datos de un minigráfico.</summary>
         <value>A <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> object que representa el color y la visibilidad de marcadores para puntos negativos de datos de un minigráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" />propiedad corresponde a la opción de configuración de la casilla de verificación de punto negativo en la sección Mostrar y del elemento puntos negativos en la lista desplegable de Color del marcador en la sección de estilo de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
+          <para>Solo lectura.</para>
+          <para>El <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" />propiedad corresponde a la opción de configuración de la casilla de verificación de punto negativo en la sección Mostrar y del elemento puntos negativos en la lista desplegable de Color del marcador en la sección de estilo de la ficha Diseño de herramientas de minigráfico de la cinta de opciones.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -314,7 +317,7 @@
         <summary>Obtiene el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para el objeto especificado.</summary>
         <value>El elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para el objeto especificado.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>

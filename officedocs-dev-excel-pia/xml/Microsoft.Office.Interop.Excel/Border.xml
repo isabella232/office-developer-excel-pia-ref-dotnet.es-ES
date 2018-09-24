@@ -1,10 +1,10 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="30183a3a980c964f6c89cba76995fed1732880ce" />
+    <Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576786" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Border" />
@@ -32,11 +32,11 @@
     <summary>Representa el borde de un objeto.</summary>
     <remarks>
       <para>Más los objetos con borde (todos excepto para la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> y <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objetos) tienen un borde que se trata como una sola entidad, independientemente de los lados tiene. El borde completo debe devolverse como una unidad. Use la propiedad <b>Border</b> para devolver el objeto <b>Border</b> de este tipo de objeto.</para>
-      <para>Los objetos 
-        <b>range</b> y <b>Style</b> tienen cuatro bordes discretos: izquierda, derecha, superior e inferior, que se pueden devolver individualmente o como un grupo. Utilice la propiedad <b>bordes</b> de un <b>rango</b> o el objeto <b>Style</b> para devolver la colección <b>Borders</b> , que contiene todos los cuatro bordes y los trata como una unidad.</para>
-      <para>Usar <b>bordes</b>(<paramref name="index" />), donde <paramref name="index" /> identifica el borde, para devolver un solo objeto <b>Border</b> .</para>
+      <para>Objetos 
+        <b>Range</b> y <b>Style</b> tienen cuatro bordes discretos: izquierda, derecha, superior e inferior, que se pueden devolver individualmente o como un grupo. Utilice la propiedad <b>bordes</b> de un objeto <b>Range</b> o <b>Style</b> para devolver la colección <b>Borders</b> , que contiene los cuatro bordes y los trata como una unidad.</para>
+      <para>Utilice <b>bordes</b>(<paramref name="index" />), donde <paramref name="index" /> identifica el borde, para devolver un solo objeto <b>Border</b> .</para>
       <para>
-        <paramref name="Index" /> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, xlInsideHorizontal <b></b>, o <b>xlInsideVertical</b>.</para>
+        <paramref name="Index" />puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>o <b>xlInsideVertical</b>.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -98,7 +98,7 @@
         <summary>Devuelve o establece el color principal del borde.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Utilizar la función <b>RGB</b> para crear un valor de color.</para>
+          <para>Use la función <b>RGB</b> para crear un valor de color.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -169,8 +169,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStyle">
@@ -220,7 +222,7 @@
             <b>xlDot</b>
           </para>
           <para>
-            <b>xlDouble</b>
+            <b>constantes xlDouble</b>
           </para>
           <para>
             <b>xlSlantDashDot</b>
@@ -291,7 +293,7 @@
           <b>Object</b>
         </value>
         <remarks>
-          <para>Si se intenta obtener acceso a un color del tema para un objeto cuyo color no está actualmente con temas, se producirá un error de tiempo de ejecución de solicitud no es válida.</para>
+          <para>Al intentar tener acceso a un color de tema de un objeto cuyo color no se encuentre incluido en el tema en ese momento, se producirá un error en tiempo de ejecución por solicitud no válida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -328,7 +330,7 @@
         </value>
         <remarks>
           <para>Puede escribir un número comprendido entre -1 (más oscuro) y 1 (más claro) para la <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> (propiedad). Cero (0) es neutro.</para>
-          <para>Si se intenta establecer esta propiedad en un valor menor que -1 o mayor que 1 no provoca un error en tiempo de ejecución: "el valor especificado está fuera del intervalo".  Esta propiedad funciona para los colores del tema y los colores no incluidos en temas.</para>
+          <para>Al intentar establecer esta propiedad en un valor inferior a -1 o mayor que 1 se produce un error en tiempo de ejecución: "El valor especificado se encuentra fuera de los límites". Esta propiedad funciona tanto para los colores de temas como para los no incluidos en temas.</para>
           <para></para>
         </remarks>
       </Docs>

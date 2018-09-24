@@ -1,10 +1,10 @@
 <Type Name="PivotFormula" FullName="Microsoft.Office.Interop.Excel.PivotFormula">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7a0555508b1378be940d3dc42a9131282186bb8" />
+    <Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585151" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFormula" />
@@ -128,8 +128,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -187,10 +189,10 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para>Si la celda contiene una constante, esta propiedad devuelve la constante. Si la celda está vacía, esta propiedad <b>Formula</b> devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devuelve la fórmula como una cadena en el mismo formato que se mostrará en la barra de fórmulas (incluido el signo igual).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, Microsoft Excel cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si el rango tiene una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
-          <para>Establecer la fórmula para un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
+          <para>Si la celda contiene una constante, esta propiedad <b>Formula</b> la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corta predeterminado.</para>
+          <para>Si el intervalo es un rango de uno o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
+          <para>Si se define la fórmula para un rango de varias celdas, se rellenan todas las celdas del rango con la fórmula.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -283,8 +285,8 @@
         <summary>Devuelve o establece una <b>cadena</b> que especifica fórmulas con formato estándar de inglés (Estados Unidos).</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>StandardFormula</b> afecta principalmente a los nombres de elementos con la fecha o el formato de número. Proporciona una forma de especificar o consultar una fórmula para un elemento calculado determinado.</para>
-          <para>La propiedad <b>StandardFormula</b> es "international descriptivo" mientras que el <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> (propiedad) no lo es.</para>
+          <para>La propiedad <b>StandardFormula</b> afecta principalmente a los nombres de elementos con formato de fecha o número. Proporciona una forma de especificar o consultar una fórmula para un elemento calculado determinado.</para>
+          <para>La propiedad <b>StandardFormula</b> es "international descriptivo" mientras que el <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> propiedad no es compatible.</para>
           <para></para>
         </remarks>
       </Docs>

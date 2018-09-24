@@ -1,10 +1,10 @@
 <Type Name="Font" FullName="Microsoft.Office.Interop.Excel.Font">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="04a0bbf6cf70448fc91575d6e89513f6621293f7" />
+    <Meta Name="ms.openlocfilehash" Value="a8ba6992514b1438faa9fc74351cb46d6d8e0551" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585697" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Font" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Contiene los atributos de fuente (nombre, tamaño, color, etc.) de un objeto.</summary>
     <remarks>
-      <para>Utilice la propiedad <b>Font</b> para devolver el objeto <b>Font</b> .</para>
+      <para>Utilice la propiedad <b>Font</b> para devolver el objeto <b>Font</b>.</para>
       <para>Si no desea dar formato a todo el texto en una celda o un gráfico de la misma manera, use la <see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" /> propiedad para devolver un subconjunto del texto.</para>
       <para></para>
     </remarks>
@@ -99,19 +99,19 @@
               <term>
                 <b>xlBackgroundAutomatic</b>
               </term>
-              <description>el fondo de fuente cambiará automáticamente del área que rodea el texto a un color que mejor muestra el texto del gráfico sobre el color aplicado a los elementos situados bajo el texto</description>
+              <description>El fondo de fuente cambiará automáticamente del área que rodea el texto a un color que muestre mejor el texto del gráfico sobre el color aplicado a los elementos situados bajo el texto</description>
             </item>
             <item>
               <term>
                 <b>xlBackgroundOpaque</b>
               </term>
-              <description>El fondo de fuente establece el fondo de la fuente en negro si el color del texto y el color de relleno debajo del texto son muy similares o el mismo color, de manera que el texto no se verían</description>
+              <description>El fondo de fuente establecerá el fondo de la fuente en negro si el color del texto y el color de relleno debajo del texto son muy similares o el mismo color, tal que el texto no se verían</description>
             </item>
             <item>
               <term>
                 <b>xlBackgroundTransparent</b>
               </term>
-              <description>el fondo de fuente se establece en transparente de modo que no cambia el fondo del texto si el color de texto es similar del color de debajo del texto</description>
+              <description>El fondo de fuente se establece en transparente de modo que no cambia el fondo del texto si el color del texto es similar al del color de debajo del texto</description>
             </item>
           </list>
           <para></para>
@@ -212,7 +212,7 @@
         <remarks>
           <para>El color se especifica como un valor de índice para la paleta de colores actual o como uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes:</para>
           <para>
-            <b>xlColorIndexAutomatic</b>. Usar para especificar el color automático.</para>
+            <b>xlColorIndexAutomatic</b>. Use esta opción para especificar el color automático.</para>
           <para>
             <b>xlColorIndexNone</b>.</para>
           <para></para>
@@ -245,8 +245,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -348,29 +350,42 @@
           <list type="table">
             <item>
               <term>
-                <b>título</b>
+                <b>Título</b>
               </term>
-              <description>París</description>
-              <description>París</description>
+              <description>Paris</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
-                <b>nombre</b>
+                <b>Nombre</b>
               </term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>París</description>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
             </item>
             <item>
               <term>
                 <b>SourceName</b>
               </term>
-              <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-              <description>(Igual que el valor de la propiedad SQL, sólo lectura)</description>
-            </item> El 
-              <term><b>valor</b></term>de 
-            <item><description>[Europe]. [ Francia]. [Paris] (solo lectura)</description><description>París</description></item></list>
-          <para>Cuando se especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para> expresión de 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>expresión. PivotItems("Paris")</description></item></list><para></para></remarks>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>(igual que el valor de la propiedad SQL, sólo lectura)</description>
+            </item>
+            <item>
+              <term>
+                <b>Valor</b>
+              </term>
+              <description>[Europe].[France].[Paris] (sólo lectura)</description>
+              <description>Paris</description>
+            </item>
+          </list>
+          <para>Cuando especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <term>expresión. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term>
+              <description>expresión. PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineFont">
@@ -408,7 +423,7 @@
         <summary>Es True si la fuente es una fuente de contorno.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad no tiene efecto en Windows, pero su valor se mantiene (puede establecerse y devolverse).</para>
+          <para>Esta propiedad no tiene efecto en Windows, pero se conserva su valor (puede establecerse y devolverse).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -640,7 +655,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Si se intenta obtener acceso a un color del tema para un objeto cuyo color no está actualmente con temas, se producirá un error de tiempo de ejecución de solicitud no es válida.</para>
+          <para>Al intentar tener acceso a un color de tema de un objeto cuyo color no se encuentre incluido en el tema en ese momento, se producirá un error en tiempo de ejecución por solicitud no válida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -710,7 +725,7 @@
         </value>
         <remarks>
           <para>Puede escribir un número comprendido entre -1 (más oscuro) y 1 (más claro) para la <see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" /> (propiedad). Cero (0) es neutro.</para>
-          <para>Si se intenta establecer esta propiedad en un valor menor que -1 o mayor que 1 no provoca un error en tiempo de ejecución: "el valor especificado está fuera del intervalo".  Esta propiedad funciona para los colores del tema y los colores no incluidos en temas.</para>
+          <para>Al intentar establecer esta propiedad en un valor inferior a -1 o mayor que 1 se produce un error en tiempo de ejecución: "El valor especificado se encuentra fuera de los límites". Esta propiedad funciona tanto para los colores de temas como para los no incluidos en temas.</para>
           <para></para>
         </remarks>
       </Docs>

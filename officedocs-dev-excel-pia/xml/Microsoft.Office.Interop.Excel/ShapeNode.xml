@@ -1,10 +1,10 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Excel.ShapeNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4fdacdabf56342fb3f89aa5ab8888abf01f9989b" />
+    <Meta Name="ms.openlocfilehash" Value="fa83a8cb318b1dacf1a4becb1cd2c657c30e27e3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580916" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -30,10 +30,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa la geometría y las propiedades de modificación de la geometría de los nodos de una forma libre definida por el usuario.</summary>
+    <summary>Representa la geometría y la geometría propiedades de modificación de los nodos definidos por el usuario libre.</summary>
     <remarks>
-      <para>Los nodos incluyen los vértices entre los segmentos de la forma libre y los puntos de control para segmentos curvados. El objeto <b>ShapeNode</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> colección. La colección <b>ShapeNodes</b> contiene todos los nodos de una forma libre.</para>
-      <para>Uso <b>nodos</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del nodo, para devolver un solo objeto <b>ShapeNode</b> .</para>
+      <para>Los nodos incluyen los vértices entre los segmentos de la forma libre y los puntos de control de segmentos curvos. El objeto <b>ShapeNode</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> colección. La colección <b>ShapeNodes</b> contiene todos los nodos de una forma libre.</para>
+      <para>Utilice <b>Nodes</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del nodo, para devolver un solo objeto <b>ShapeNode</b> .</para>
       <para></para>
     </remarks>
   </Docs>
@@ -97,7 +97,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingType">

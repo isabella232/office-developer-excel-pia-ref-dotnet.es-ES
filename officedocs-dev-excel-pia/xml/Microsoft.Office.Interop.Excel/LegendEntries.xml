@@ -1,10 +1,10 @@
 <Type Name="LegendEntries" FullName="Microsoft.Office.Interop.Excel.LegendEntries">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f439456cc13f822ef976d853af582329ce32bfe" />
+    <Meta Name="ms.openlocfilehash" Value="8e175f39321b99a7e8cc5297856cd4932c8371cc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579341" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
@@ -36,9 +36,11 @@
     <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objetos en la leyenda del gráfico especificado.</summary>
     <remarks>
       <para>Cada entrada de leyenda consta de dos partes: el texto de la entrada, que es el nombre de la serie o línea de tendencia asociada con la entrada de leyenda; y el marcador de entrada, que conecta visualmente la entrada de leyenda con su serie o línea de tendencia en el gráfico. Las propiedades de formato para el marcador de entrada y su serie o línea de tendencia están contenidas en el <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> objeto.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> método para devolver la colección <b>LegendEntries</b> .</para>
-      <para>Use <b>LegendEntries</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de entrada de leyenda, para devolver un único objeto <b>LegendEntry</b> . No se puede devolver las entradas de leyenda por nombre.</para> Número de 
-      <para>el índice representa la posición de la entrada de leyenda de la leyenda. LegendEntries (1) está en la parte superior de la leyenda; LegendEntries (LegendEntries.Count) está en la parte inferior.</para><para></para></remarks>
+      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> método para devolver la colección <b>LegendEntries</b> .</para>
+      <para>Use <b>LegendEntries</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de entrada de leyenda, para devolver un único objeto <b>LegendEntry</b> . No se puede devolver las entradas de leyenda por nombre.</para>
+      <para>El número de índice representa la posición de la entrada en la leyenda. LegendEntries (1) está en la parte superior de la leyenda; LegendEntries (LegendEntries.Count) está en la parte inferior.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -155,8 +157,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

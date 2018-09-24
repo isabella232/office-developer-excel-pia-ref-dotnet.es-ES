@@ -1,10 +1,10 @@
 <Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a76d5115c800138621098c928ea18e19669180e4" />
+    <Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584731" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
@@ -35,8 +35,11 @@
   <Docs>
     <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objetos de la aplicación o el libro. Cada objeto <b>Name</b> representa un nombre definido para un rango de celdas. Los nombres pueden ser integrados, como la base de datos, Área_de_impresión y Auto_abrir — o nombres personalizados.</summary>
     <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> propiedad para devolver la colección <b>Names</b> .</para> Uso de 
-      <para>el <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para crear un nombre y agregarlo a la colección. El método <b>Add</b><paramref name="RefersTo" /> argumento debe especificarse en notación de estilo A1, incluidos signos de dólar ($) donde corresponda. Por ejemplo, si se selecciona la celda A10 de Sheet1 y se define un nombre mediante el uso de la <paramref name="RefersTo" /> argumento "¡= sheet1! A1: B1 ", el nuevo nombre en realidad hace referencia a las celdas a10: B10 (debido a que se ha especificado una referencia relativa). Para especificar una referencia absoluta, use "¡= sheet1! $A$ 1: $B$ 1".</para><para>Utilizar <b>nombres</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del nombre o el nombre definido, para devolver un único objeto <b>Name</b> .</para><para></para></remarks>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> (propiedad) para devolver la colección de <b>nombres</b> .</para>
+      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para crear un nombre y agregarlo a la colección. El método <b>Add</b><paramref name="RefersTo" /> argumento debe especificarse en notación de estilo A1, incluidos signos de dólar ($) donde corresponda. Por ejemplo, si se selecciona la celda A10 de Sheet1 y se define un nombre mediante el uso de la <paramref name="RefersTo" /> argumento "¡= sheet1! A1: B1 ", el nuevo nombre en realidad hace referencia a las celdas a10: B10 (debido a que se ha especificado una referencia relativa). Para especificar una referencia absoluta, use "¡= sheet1! $A$ 1: $B$ 1".</para>
+      <para>Usar <b>nombres</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del nombre o el nombre definido, para devolver un único objeto <b>Name</b> .</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -213,7 +216,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -281,7 +287,7 @@
         <summary>Devuelve un valor single <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto desde una <see cref="T:Microsoft.Office.Interop.Excel.Names" /> colección.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Debe especificar uno y sólo uno de estos tres argumentos.</para>
+          <para>Debe especificar uno, y sólo uno, de los tres argumentos.</para>
           <para></para>
         </remarks>
       </Docs>

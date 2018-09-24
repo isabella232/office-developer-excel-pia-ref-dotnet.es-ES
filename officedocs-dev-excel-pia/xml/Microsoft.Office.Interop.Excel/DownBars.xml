@@ -1,10 +1,10 @@
 <Type Name="DownBars" FullName="Microsoft.Office.Interop.Excel.DownBars">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="86b025151902b86185c6a47185ca8e79c9861e63" />
+    <Meta Name="ms.openlocfilehash" Value="8a11ccac0189762102efaa1f69baea1cafc3ed8e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587538" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DownBars" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Representa las barras descendentes de un grupo de gráficos.</summary>
     <remarks>
-      <para>De barras descendentes conectan los puntos de la primera serie del grupo de gráficos con los valores más bajos de la última serie (las líneas bajan desde la primera serie). Sólo los grupos de líneas 2D que contienen al menos dos series pueden tener barras descendentes. Este objeto no es una colección. No hay ningún objeto que representa un único abajo de la barra; barras ascendentes y descendentes activadas para todos los puntos de un grupo de gráficos de barras o bien tenerlos desactivados.</para>
+      <para>Las barras descendentes conectan puntos de la primera serie con valores más bajos de la última serie (las líneas bajan desde la primera serie). Sólo los grupos de líneas 2D que contengan al menos dos series pueden tener barras descendentes. Este objeto no es una colección. Ningún objeto representa una barra descendente individual; las barras ascendentes y descendentes se activan para todos los puntos de un grupo de gráficos o bien se desactivan.</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.DownBars" /> (propiedad) para devolver el objeto <b>DownBars</b> .</para>
       <para>Si el <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" /> propiedad es <b>False</b>, la mayoría de las propiedades del objeto <b>DownBars</b> estarán desactivada.</para>
       <para></para>
@@ -123,8 +123,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -325,7 +327,7 @@
         <summary>Selecciona el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> método.</para>
+          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>

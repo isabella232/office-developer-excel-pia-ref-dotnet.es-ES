@@ -1,10 +1,10 @@
 <Type Name="Protection" FullName="Microsoft.Office.Interop.Excel.Protection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eb4842f02045899e4df285db2b98dfe149fa3820" />
+    <Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585193" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Protection" />
@@ -84,6 +84,11 @@
             <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowSorting" />
           </description>
         </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowUsingPivotTables" />
+          </description>
+        </item>
       </list>
       <para></para>
     </remarks>
@@ -116,7 +121,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>AllowDeletingColumns</b> se puede establecer mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos del método.</para>
-          <para>Las columnas que contienen las celdas que se va a eliminar se deben desbloqueadas cuando la hoja está protegida.</para>
+          <para>Las columnas que contienen las celdas que se van a eliminar se deben desbloquear cuando la hoja está protegida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -148,7 +153,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>AllowDeletingRows</b> se puede establecer mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos del método.</para>
-          <para>Las filas que contienen las celdas que se va a eliminar se deben desbloqueadas cuando la hoja está protegida.</para>
+          <para>Las filas que contienen las celdas que se van a eliminar se deben desbloquear cuando la hoja está protegida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -208,8 +213,8 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>AllowFiltering</b> se puede establecer mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos del método.</para>
-          <para>La <b>AllowFiltering</b> (propiedad) permite al usuario cambiar los criterios de filtro de un Autofiltro existente. El usuario no puede crear o quitar un Autofiltro en una hoja de cálculo protegida.</para>
-          <para>Las celdas que se deben filtrar se deben desbloqueadas cuando la hoja está protegida.</para>
+          <para>La propiedad <b>AllowFiltering</b> permite al usuario cambiar los criterios de filtro de un Autofiltro existente. El usuario no puede crear ni quitar un Autofiltro en una hoja de cálculo protegida.</para>
+          <para>Las celdas que se deben filtrar deberán estar desbloqueadas cuando la hoja está protegida.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -241,7 +246,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>AllowFormattingCells</b> se puede establecer mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos del método.</para>
-          <para>Uso de esta propiedad deshabilita la ficha protección, lo que permite al usuario cambiar todos los formatos, pero no desbloquear ni mostrar los rangos.</para>
+          <para>Uso de esta propiedad deshabilita la ficha de protección, lo que permite al usuario cambiar todos los formatos, pero no desbloquear ni mostrar los rangos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -334,7 +339,7 @@
         <summary>Devuelve <b>True</b> si está permitida la inserción de columnas en una hoja de cálculo protegida.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Una columna insertada hereda su formato (de forma predeterminada) de la columna a su izquierda, lo que significa que es posible que haya bloqueado las celdas. En otras palabras, los usuarios no podrán eliminar las columnas que se han insertado.</para>
+          <para>Una columna insertada toma (de forma predeterminada) el formato de la columna situada a su izquierda, lo que significa que puede contener celdas bloqueadas. En otras palabras, es posible que los usuarios no puedan eliminar las columnas que han insertado.</para>
           <para>La propiedad <b>AllowInsertingColumns</b> se puede establecer mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos del método.</para>
           <para></para>
         </remarks>
@@ -429,7 +434,7 @@
         <summary>Devuelve <b>True</b> si está permitida la opción de ordenación en una hoja de cálculo protegida.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>En una hoja de cálculo protegida, la ordenación sólo se puede realizar en celdas desbloqueadas o desprotegidas.</para>
+          <para>En una hoja de cálculo protegida, la ordenación sólo puede realizarse en celdas desbloqueadas o desprotegidas.</para>
           <para>La propiedad <b>AllowSorting</b> se puede establecer mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos del método.</para>
           <para></para>
         </remarks>
@@ -461,7 +466,7 @@
         <summary>Devuelve <b>True</b> si el usuario está autorizado para manipular tablas dinámicas en una hoja de cálculo protegida.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La propiedad <b>AllowUsingPivotTables</b> se aplica a los datos de origen que no son OLAP.</para>
+          <para>La propiedad <b>AllowUsingPivotTables</b> se aplica a los datos de orígenes no OLAP.</para>
           <para>La propiedad <b>AllowUsingPivotTables</b> se puede establecer mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> argumentos del método.</para>
           <para></para>
         </remarks>

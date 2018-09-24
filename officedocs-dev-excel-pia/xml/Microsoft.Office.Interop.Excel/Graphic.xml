@@ -1,10 +1,10 @@
 <Type Name="Graphic" FullName="Microsoft.Office.Interop.Excel.Graphic">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f71cc399b82a45b3ea700b16adc69b6140e7585c" />
+    <Meta Name="ms.openlocfilehash" Value="557d2313e5eee89f3ea3d42e9d0eca09addf2bb5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585655" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Graphic" />
@@ -209,8 +209,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -242,7 +244,7 @@
         <summary>Devuelve o establece el número de puntos que se recortan de la parte inferior de la imagen o del objeto OLE especificados.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un alto de 100 puntos, cambia la escala de modo que sea de 200 y, a continuación, establezca la propiedad <b>CropBottom</b> en 50, 100 puntos (no 50) se va a recortar la parte inferior de la imagen.</para>
+          <para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un alto de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de alto y, a continuación, establece la propiedad <b>CropBottom</b> en 50, se recortarán 100 puntos (no 50) de la parte inferior de la imagen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -276,7 +278,7 @@
         <summary>Devuelve o establece el número de puntos que se recortará el lado izquierdo de la imagen especificada o un objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente es de 100 puntos, cambia la escala de modo que sea de 200 y, a continuación, se va a recortar establecer la propiedad <b>CropLeft</b> en 50, 100 puntos (no 50) del lado izquierdo de la foto.</para>
+          <para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un ancho de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de ancho y, a continuación, establece la propiedad <b>CropLeft</b> en 50, se recortarán 100 puntos (no 50) del lado izquierdo de la imagen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -310,7 +312,7 @@
         <summary>Devuelve o establece el número de puntos que se recortará el lado derecho de la imagen especificada o un objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente es de 100 puntos, cambia la escala de modo que sea de 200 y, a continuación, establecer la propiedad <b>CropRight</b> en 50, 100 puntos (no 50) se va a recortar el lado derecho de la foto.</para>
+          <para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un ancho de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de ancho y, a continuación, establece la propiedad <b>CropRight</b> en 50, se recortarán 100 puntos (no 50) del lado derecho de la imagen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -344,7 +346,7 @@
         <summary>Devuelve o establece el número de puntos que se recortará la parte superior de la imagen especificada o un objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un alto de 100 puntos, cambia la escala de modo que sea de 200 y, a continuación, establezca la propiedad <b>CropTop</b> en 50, 100 puntos (no 50) se va a recortar la parte superior de la imagen.</para>
+          <para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un alto de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de alto y, a continuación, establece la propiedad <b>CropTop</b> en 50, se recortarán 100 puntos (no 50) de la parte superior de la imagen.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -450,7 +452,7 @@
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> puede cambiar el alto y el ancho de la forma independientemente de otra al cambiar el tamaño de it.</para>
+            <b>msoFalse</b> Puede cambiar el alto y el ancho de la forma independientemente de otra cuando se cambia el tamaño.</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -458,7 +460,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> la forma especificada mantiene sus proporciones originales al cambiar el tamaño de it.</para>
+            <b>msoTrue</b> La forma especificada mantiene sus proporciones originales cuando se cambia el tamaño.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Excel.CalloutFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8003e3551e2fbe9bce8dc71b12944f8a23c902fd" />
+    <Meta Name="ms.openlocfilehash" Value="144c12a51fd945c3e61defd5702f0c40849afc21" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582078" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -81,7 +81,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> una barra de énfasis vertical que separa el texto de llamada desde la línea de llamada.</para>
+            <b>msoTrue</b> Una barra de énfasis vertical que separa el texto de llamada de la línea de llamada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -217,9 +217,9 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> el lugar donde la línea de llamada se une a la llamada cuadro de texto cambia según si el origen de la línea de llamada (donde apunta la llamada) está a la izquierda o derecha del cuadro de texto de la llamada.</para>
-          <para>Cuando el valor de esta propiedad es <b>True</b>, el valor de colocación (distancia vertical desde el borde del cuadro de texto de la llamada hasta el lugar donde se adjunta la línea de llamada) se mide desde la parte superior del cuadro de texto cuando el cuadro de texto está a la derecha del origen , y se mide desde la parte inferior del cuadro de texto cuando el cuadro de texto está a la izquierda del origen. Cuando el valor de esta propiedad es <b>False</b>, el valor de colocación siempre se mide desde la parte superior del cuadro de texto, independientemente de las posiciones relativas del cuadro de texto y el origen. Usar el <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> (método) para establecer el valor de drop y usar el <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> propiedad para devolver el valor de drop.</para>
-          <para>Al establecer esta propiedad afecta a una llamada sólo si se ha establecido explícitamente un valor de drop, es decir, si el valor de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /><b>propiedad</b>. De forma predeterminada, llamadas tienen explícitamente colocar valores establecidos cuando se crean.</para>
+            <b>msoTrue</b> El lugar donde la línea de llamada se une a los cambios de cuadro de texto de llamada dependiendo de si el origen de la línea de llamada (donde apunta la llamada) está a la izquierda o derecha del cuadro de texto de la llamada.</para>
+          <para>Cuando el valor de esta propiedad es <b>True</b>, el valor de colocación (distancia vertical desde el borde del cuadro de texto de la llamada hasta el lugar donde se adjunta la línea de llamada) se mide desde la parte superior del cuadro de texto cuando el cuadro de texto está a la derecha del origen , y se mide desde la parte inferior del cuadro de texto cuando el cuadro de texto está a la izquierda del origen. Cuando el valor de esta propiedad es <b>False</b>, el valor de colocación siempre se mide desde la parte superior del cuadro de texto, independientemente de las posiciones relativas del cuadro de texto y el origen. Usar el <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> (método) para establecer el valor de drop y usar el <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> propiedad para devolver el valor de colocación.</para>
+          <para>Al establecer esta propiedad afecta a una llamada sólo si se ha establecido explícitamente un valor de drop, es decir, si el valor de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /><b>propiedad</b>. De forma predeterminada, cuando se crean las llamadas establecen explícitamente sus valores descendentes.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,7 +256,7 @@
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> el primer segmento de la llamada conserva la longitud fija especificada por el <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> (propiedad) siempre que se mueva la llamada.</para>
+            <b>msoFalse</b> El primer segmento de la llamada conserva la longitud fija especificada por el <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> (propiedad) siempre que se mueva la llamada.</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -264,8 +264,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> el primer segmento de la línea de llamada (el segmento unido al cuadro de llamada de texto) se escala automáticamente siempre que se mueva la llamada.</para>
-          <para>Utilizar el <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> (método) para establecer esta propiedad en <b>msoTrue</b>y utilice el <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> (método) para establecer esta propiedad en <b>msoFalse</b>.</para>
+            <b>msoTrue</b> El primer segmento de la línea de llamada (el segmento unido al cuadro de llamada de texto) se escala automáticamente siempre que se mueva la llamada.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> (método) para establecer esta propiedad en <b>msoTrue</b>y utilice el <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> (método) para establecer esta propiedad en <b>msoFalse</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -332,15 +332,15 @@
           <para>
             <b>MsoTriState</b> puede ser una de estas constantes <b>MsoTriState</b> :</para>
           <para>
-            <b>msoCTrue</b> no se aplica a este objeto.</para>
+            <b>msoCTrue</b> No se aplica a este objeto.</para>
           <para>
-            <b>msoFalse</b> establece que el borde sea invisible.</para>
+            <b>msoFalse</b> Establece el borde sea invisible.</para>
           <para>
-            <b>msoTriStateMixed</b> no se aplica a este objeto.</para>
+            <b>msoTriStateMixed</b> No se aplica a este objeto.</para>
           <para>
-            <b>msoTriStateToggle</b> permite al usuario cambiar el borde de visible a invisible y viceversa.</para>
+            <b>msoTriStateToggle</b> Permite al usuario cambiar el borde de visible a invisible y viceversa.</para>
           <para>
-            <b>msoTrue</b> predeterminado. Establece el borde visible.</para>
+            <b>msoTrue</b> De forma predeterminada. Establece el borde visible.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -374,8 +374,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDrop">
@@ -405,7 +407,7 @@
           <b>Single</b>requerido. Distancia de colocación en puntos.</param>
         <summary>Establece la distancia vertical (en puntos) desde el borde del texto del cuadro de límite hasta el lugar donde la línea de llamada se une al cuadro de texto.</summary>
         <remarks>
-          <para>Esta distancia se mide desde la parte superior del cuadro de texto a menos que el <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> (propiedad) se establece en <b>True</b> y el cuadro de texto está a la izquierda del origen de la línea de llamada (el lugar al que señala la llamada), en cuyo caso la distancia de colocación se mide desde el robot Tom del cuadro de texto.</para>
+          <para>Esta distancia se mide desde la parte superior del cuadro de texto a menos que el <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> (propiedad) se establece en <b>True</b> y el cuadro de texto está a la izquierda del origen de la línea de llamada (el lugar al que señala la llamada), en cuyo caso la distancia de colocación se mide desde la parte inferior del cuadro de texto.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -470,7 +472,7 @@
         <summary>Para llamadas con establecido explícitamente un valor, devuelve la distancia vertical (en puntos) desde el borde del delimitador de texto cuadro hasta el lugar donde la línea de llamada se une al cuadro de texto de colocación.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>La distancia se mide desde la parte superior del cuadro de texto a menos que el <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> (propiedad) se establece en <b>True</b> y el cuadro de texto está a la izquierda del origen de la línea de llamada (el lugar al que señala la llamada), en cuyo caso la distancia de colocación se mide desde la parte inferior o el cuadro de texto f.</para>
+          <para>La distancia se mide desde la parte superior del cuadro de texto a menos que el <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> (propiedad) se establece en <b>True</b> y el cuadro de texto está a la izquierda del origen de la línea de llamada (el lugar al que señala la llamada), en cuyo caso la distancia de colocación se mide desde la parte inferior o f el cuadro de texto.</para>
           <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> (método) para establecer el valor de esta propiedad.</para>
           <para>El valor de esta propiedad refleja con exactitud la posición de los datos adjuntos de línea de llamada al cuadro de texto sólo si la llamada ha establecido explícitamente un valor de drop, es decir, si el valor de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /><b>propiedad</b>.</para>
           <para></para>
@@ -518,9 +520,9 @@
             <b>msoCalloutDropCustom</b>
           </para>
           <para>
-            <b>msoCalloutDropTop </b>
+            <b>msoCalloutDropTop</b>
           </para>
-          <para>Si el tipo de entrega de la llamada es <b>msoCalloutDropCustom</b>, los valores de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> y <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> se utilizan para las propiedades y las posiciones relativas del cuadro de texto de llamada y el origen de la línea de llamada (el lugar al que señala la llamada) determinar dónde se adjunta la línea de llamada al cuadro de texto.</para>
+          <para>Si el tipo de colocación de la llamada es <b>msoCalloutDropCustom</b>, los valores de la <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> y <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> las propiedades y las posiciones relativas del cuadro de texto de llamada y el origen de la línea de llamada (el lugar al que señala la llamada) se utilizan para determinar dónde la llamada línea se une al cuadro de texto.</para>
           <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> (método) para establecer el valor de esta propiedad.</para>
           <para></para>
         </remarks>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583135" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Worksheet" />
@@ -596,15 +596,15 @@
         <remarks>
           <list type="table">
             <item>
-              <term>Todos los abiertos libros</term>
+              <term>Todos los libros abiertos</term>
               <description>Application.Calculate</description>
             </item>
             <item>
-              <term>una hoja de cálculo específica</term>
+              <term>Una hoja de cálculo determinada</term>
               <description>Worksheets (1). Calcular</description>
             </item>
             <item>
-              <term>un intervalo especificado</term>
+              <term>Un rango específico</term>
               <description>Worksheets (1). Rows(2). Calcular</description>
             </item>
           </list>
@@ -639,7 +639,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Debido a que el <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" /> (propiedad) es la propiedad predeterminada del objeto <b>Range</b> , puede especificar el índice de fila y columna inmediatamente después de la palabra clave <b>Cells</b> . Para obtener más información, vea la propiedad <b>Item</b> .</para>
-          <para>Uso de esta propiedad sin un calificador de objeto devuelve un objeto <b>Range</b> que representa todas las celdas de la hoja de cálculo activa.</para>
+          <para>Uso de esta propiedad sin un calificador de objeto, devuelve un objeto <b>Range</b> que representa todas las celdas de la hoja de cálculo activa.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -750,7 +750,7 @@
           <b>Objeto</b>de opcional. El idioma del diccionario utilizado. Puede ser uno de los valores <b>MsoLanguageID</b> utilizados por el <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> (propiedad).</param>
         <summary>Comprueba la ortografía de un objeto. Este formulario no tiene ningún valor devuelto; Microsoft Excel muestra el cuadro de diálogo Ortografía.</summary>
         <remarks>
-          <para>Utilizar este método para comprobar los encabezados, pies de página y objetos en una hoja de cálculo.</para>
+          <para>Utilice este método para comprobar los encabezados, pies de página y objetos en una hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -862,7 +862,7 @@
       <Docs>
         <summary>Borra los círculos de los elementos no válidos de la hoja de cálculo.</summary>
         <remarks>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" /> método a círculo las celdas que contengan datos no válidos.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" /> método a círculo las celdas que contengan datos no válidos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -893,9 +893,9 @@
         <summary>Devuelve el nombre de código del objeto. <b>String</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El valor que se ve en la celda a la derecha de <b>(nombre)</b> en la ventana Propiedades es el nombre de código del objeto seleccionado. En tiempo de diseño, puede cambiar el nombre de código de un objeto cambiando este valor. No se puede cambiar mediante programación esta propiedad en tiempo de ejecución.</para>
-          <para>Se puede usar el nombre de código para un objeto en lugar de una expresión que devuelve el objeto.</para>
-          <para>Es posible que el nombre de la hoja que sea distinto del nombre de código. Cuando se crea una hoja, el nombre de la hoja y el nombre de código son los mismos, pero al cambiar el nombre de hoja no cambia el nombre de código, y cambiar el nombre de código (utilizando la ventana Propiedades en el Editor de Visual Basic) no cambia el nombre de la hoja.</para>
+          <para>El valor que aparece en la celda situada a la derecha de <b>(Name)</b> en la ventana Propiedades es el nombre de código del objeto seleccionado. En tiempo de diseño, se puede cambiar el nombre de código de un objeto si se cambia este valor. Sin embargo, no se puede cambiar esta propiedad mediante programación en tiempo de ejecución.</para>
+          <para>El nombre de código para un objeto se puede usar en lugar de una expresión que devuelve el objeto.</para>
+          <para>El nombre de la hoja puede ser diferente del nombre de código. Cuando se crea una hoja, su nombre coincide con el nombre de código. No obstante, los cambios que se efectúan en el nombre de la hoja no afectan al nombre de código, y los cambios que se efectúan en el nombre de código (mediante la ventana Propiedades del Editor de Visual Basic) tampoco afectan al nombre de la hoja.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1030,7 +1030,7 @@
             </item>
             <item>
               <term>3</term>
-              <description>crear vínculos con los datos de origen.</description>
+              <description>Crear vínculos a los datos de origen.</description>
             </item>
           </list>
           <para></para>
@@ -1100,7 +1100,7 @@
           <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja copiada. No puede especificar <paramref name="After" /> si especifica <paramref name="Before" />.</param>
         <summary>Copia la hoja en otro lugar del libro.</summary>
         <remarks>
-          <para>Si no especifique ningún valor <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
+          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1132,7 +1132,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomProperties">
@@ -1161,7 +1164,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" /> objeto que representa la información de identificación asociada con una hoja de cálculo.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Para la propiedad <b>CustomProperties</b> , información de identificador para una hoja de cálculo puede representar metadatos para XML.</para>
+          <para>Para la propiedad <b>CustomProperties</b>, la información de identificación correspondiente a una hoja de cálculo puede representar metadatos para XML.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1270,7 +1273,7 @@
           <b>True</b> si en la hoja de cálculo especificada se muestran los saltos de página (automáticos y manuales). <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>No se puede establecer esta propiedad si no dispone de una impresora instalada.</para>
+          <para>Esta propiedad no se puede establecer si no hay ninguna impresora instalada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1451,7 +1454,7 @@
           <b>True</b> si están habilitadas las flechas de filtro automático cuando se activa la protección de solo interfaz de usuario. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica a cada hoja de cálculo y no se guarda con la hoja de cálculo o sesión.</para>
+          <para>Esta propiedad se aplica a cada hoja de cálculo y no se guarda con la hoja ni la sesión.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1486,7 +1489,7 @@
           <b>True</b> si Microsoft Excel actualiza automáticamente la hoja de cálculo cuando sea necesario. <b>False</b> si Excel no actualiza la hoja. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Cuando el valor de esta propiedad es <b>False</b>, no podrá solicitar una actualización. Cuando cambie el valor de <b>False</b> a <b>True</b>, Excel vuelve a calcular la hoja de cálculo.</para>
+          <para>Cuando el valor de esta propiedad es <b>False</b>, no podrá solicitar una actualización. Cuando se cambia el valor de <b>False</b> a <b>True</b>, Excel actualiza la hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1523,7 +1526,7 @@
         </value>
         <remarks>
           <para>Cuando se establece en <b>True</b> (valor predeterminado), evaluación de formatos condicionales se producirá automáticamente según sea necesario.  Cuando se establece en <b>False</b>, los formatos condicionales no se vuelva a evaluados.  Cualquier formato condicional previamente aplicado seguirá estando visible, pero no se actualizarán como valores de celda o <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> los rangos.  </para>
-          <para>El propósito de esta marca es permitir que los programadores configurar una regla completamente antes de la evaluación.  Esto es especialmente útil cuando la condición se aplica a través de un intervalo de gran tamaño, como rendimiento puede ser lento en estos casos.</para>
+          <para>El propósito de esta marca es permiten a los programadores configurar una regla completamente antes de la evaluación.  Esto es especialmente útil cuando la condición se aplica a través de un intervalo de gran tamaño, como rendimiento puede ser lento en estos casos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1564,7 +1567,7 @@
           <b>True</b> si los símbolos de esquema están habilitados cuando se activa la protección de solo interfaz de usuario. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica a cada hoja de cálculo y no se guarda con la hoja de cálculo o sesión.</para>
+          <para>Esta propiedad se aplica a cada hoja de cálculo y no se guarda con la hoja ni la sesión.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1605,8 +1608,8 @@
           <b>True</b> si los controles y acciones de tabla dinámica están habilitados cuando se activa la protección de solo interfaz de usuario. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se aplica a cada hoja de cálculo y no se guarda con la hoja de cálculo o sesión.</para>
-          <para>Debe haber un número suficiente de celdas desbloqueadas que aparece a continuación y a la derecha del informe de tabla dinámica para que Microsoft Excel actualice y muestre el informe de tabla dinámica.</para>
+          <para>Esta propiedad se aplica a cada hoja de cálculo y no se guarda con la hoja ni la sesión.</para>
+          <para>Debe haber un número suficiente de celdas desbloqueadas debajo y a la derecha del informe de tabla dinámica para que Microsoft Excel actualice y muestre el informe de tabla dinámica.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1640,7 +1643,7 @@
         <summary>Devuelve o establece lo que se pueden seleccionar en la hoja. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Excel.XlEnableSelection" />.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad sólo tiene efecto si la hoja de cálculo está protegida: <b>xlNoSelection</b> impide realizar una selección en la hoja, <b>xlUnlockedCells</b> sólo permite esas celdas cuya propiedad <b>Locked</b> es <b>False</b> , que se seleccionen y <b> xlNoRestrictions</b> permite seleccionar cualquier celda que se seleccionen.</para>
+          <para>Esta propiedad sólo tiene efecto si la hoja de cálculo está protegida: <b>xlNoSelection</b> impide realizar una selección en la hoja, <b>xlUnlockedCells</b> sólo permite seleccionar las celdas cuya propiedad <b>Locked</b> tiene el valor <b>False</b> y <b>xlNoRestrictions</b> permite seleccionar cualquier celda.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1676,8 +1679,17 @@
         <summary>Convierte un nombre de Microsoft Excel en un objeto o un valor.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Los siguientes tipos de nombres en Microsoft Excel se pueden usar con este método:</para> Nombres de 
-          <list type="bullet"><item><description>definidas. Puede especificar cualquier nombre.</description></item><item><description>Las referencias externas. Puede usar la! Para hacer referencia a una hoja de cálculo definida en otro libro.</description></item></list><para></para></remarks>
+          <para>Los siguientes tipos de nombres de Microsoft Excel se pueden usar con este método:</para>
+          <list type="bullet">
+            <item>
+              <description>Nombres definidos. Puede especificar cualquier nombre.</description>
+            </item>
+            <item>
+              <description>Referencias externas. Puede usar la! Para hacer referencia a una hoja de cálculo definida en otro libro.</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -1724,7 +1736,7 @@
         <param name="FixedFormatExtClassPtr">Puntero a la clase <b>FixedFormatExt</b> .</param>
         <summary>Exporta a un archivo con el formato especificado.</summary>
         <remarks>
-          <para>Este método también admite la inicialización de un complemento para exportar un archivo a un archivo de formato fijo. Por ejemplo, Excel realizará la conversión de formato de archivo si están presentes los convertidores. La conversión generalmente es iniciada por el usuario.</para>
+          <para>Este método también admite la inicialización de un complemento para exportar un archivo a un formato de archivo fijo. Por ejemplo, Excel realizará la conversión del formato de archivo si están instalados los convertidores necesarios. Normalmente, el usuario es quien inicia la conversión.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2112,7 +2124,7 @@
           <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja que se ha movido. No puede especificar <paramref name="After" /> si especifica <paramref name="Before" />.</param>
         <summary>Mueve la hoja a otra ubicación en el libro</summary>
         <remarks>
-          <para>Si no especifique ningún valor <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
+          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2202,8 +2214,8 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Chart" />, <see cref="T:Microsoft.Office.Interop.Excel.Range" />, o <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object que representa la hoja o celda siguiente. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto es un rango, esta propiedad emula la tecla TAB, aunque la propiedad devuelve la celda siguiente sin seleccionar it.</para>
-          <para>En una hoja protegida, esta propiedad devuelve la siguiente celda desbloqueada. En una hoja desprotegida, esta propiedad siempre devuelve la celda inmediatamente a la derecha de la celda especificada.</para>
+          <para>Si el objeto es un rango, esta propiedad emula a la tecla TAB, aunque la propiedad devuelve la celda siguiente sin seleccionarla.</para>
+          <para>En una hoja protegida, esta propiedad devuelve la siguiente celda desbloqueada. En una hoja desprotegida, siempre devuelve la celda situada inmediatamente a la derecha de la celda especificada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2736,8 +2748,8 @@
         <summary>Pega el contenido del Portapapeles en la hoja con un formato especificado. Use este método para pegar datos desde otras aplicaciones o para pegar datos en un formato específico.</summary>
         <remarks>
           <para>
-            <paramref name="NoHTMLFormatting" />será sólo cuestión cuando <paramref name="Format" /> = "HTML". En todos los demás casos, <paramref name="NoHTMLFormatting" /> se omitirá.</para>
-          <para>Debe seleccionar el rango de destino antes de utilizar este método.</para>
+            <paramref name="NoHTMLFormatting" />será sólo cuestión cuando <paramref name="Format" /> = "HTML". En todos los demás casos, <paramref name="NoHTMLFormatting" /> se pasará por alto.</para>
+          <para>Seleccione el rango de destino antes de usar este método.</para>
           <para>Es posible que este método modifique la selección de la hoja, según el contenido del Portapapeles.</para>
           <para></para>
         </remarks>
@@ -2912,8 +2924,8 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Chart" />, <see cref="T:Microsoft.Office.Interop.Excel.Range" />, o <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object que representa la hoja o celda anterior. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto es un rango, esta propiedad emula la acción de presionar la tecla MAYÚS + TAB; sin embargo, a diferencia de la combinación de teclas, la propiedad devuelve la celda anterior sin seleccionar it.</para>
-          <para>En una hoja protegida, esta propiedad devuelve la celda desbloqueada anterior. En una hoja desprotegida, esta propiedad siempre devuelve la celda inmediatamente a la izquierda de la celda especificada.</para>
+          <para>Si el objeto es un rango, esta propiedad emula la acción de presionar las teclas MAYÚS+TAB; no obstante, a diferencia de la combinación de teclas, la propiedad devuelve la celda anterior sin seleccionarla.</para>
+          <para>En una hoja protegida, esta propiedad devuelve la celda anterior no bloqueada. En una hoja desprotegida, la propiedad siempre devuelve la celda situada inmediatamente a la izquierda de la celda especificada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -2944,7 +2956,7 @@
         <summary>Obtiene el número de páginas de comentarios que se imprimirán para la hoja de cálculo actual.</summary>
         <value>El número de páginas de comentarios que se imprimirán para la hoja de cálculo actual.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para>El <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" /> (propiedad) sólo devolverá un número mayor que cero si los comentarios en la ficha de hoja de la configuración de página se establece cuadro de diálogo en al final de la hoja. Esta propiedad devolverá cero si la hoja es una hoja de gráfico o una hoja de diálogo de MS Excel 5.0.</para>
           <para></para>
         </remarks>
@@ -3621,7 +3633,7 @@
         <summary>Devuelve o establece el rango donde se permite el desplazamiento como una referencia de rango de estilo A1. No se pueden seleccionar celdas fuera del área de desplazamiento. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Establecer esta propiedad en una cadena vacía ("") para habilitar la selección de celda para toda la hoja.</para>
+          <para>Si define esta propiedad como la cadena vacía (""), habilitará la selección de celdas en toda la hoja.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3689,7 +3701,7 @@
           <b>Objeto</b>de opcional. Objeto que se va a reemplazar.</param>
         <summary>Selecciona el objeto.</summary>
         <remarks>
-          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> método.</para>
+          <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3806,7 +3818,7 @@
         <summary>Muestra el formulario de datos correspondiente a la hoja de cálculo.</summary>
         <remarks>
           <para>Se detiene la ejecución mientras se está usando el formulario de datos. Cuando se cierra el formulario de datos, la ejecución se reanuda en la línea siguiente al método <b>ShowDataForm</b> .</para>
-          <para>Este método ejecuta el formulario de datos personalizado, si lo hay.</para>
+          <para>Este método ejecuta el formulario de datos personalizado, si existe.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -3972,7 +3984,7 @@
         <summary>Devuelve o establece el ancho estándar (predeterminado) de todas las columnas de la hoja de cálculo. <b>Double</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Una unidad del ancho de columna equivale al ancho de un carácter en el estilo Normal. Para fuentes proporcionales, se utiliza el ancho del carácter 0 (cero).</para>
+          <para>Una unidad de ancho de columna equivale al ancho de un carácter con el estilo Normal. En las fuentes proporcionales se utiliza el ancho del carácter 0 (cero).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4187,7 +4199,7 @@
           <b>Objeto</b>de opcional. Una cadena que representa la contraseña distingue mayúsculas de minúsculas a utilizar para desproteger la hoja o libro. Si la hoja o el libro no está protegido con una contraseña, se omite este argumento. Si se omite este argumento en una hoja que está protegida con una contraseña, se le pedirá la contraseña. Si se omite este argumento para un libro que está protegido con una contraseña, se produce un error en el método.</param>
         <summary>Elimina la protección de una hoja o de un libro. Este método no tiene efecto si la hoja o el libro no están protegidos.</summary>
         <remarks>
-          <para>Si olvida la contraseña, no puede desproteger la hoja o libro. Es una buena idea para mantener una lista de las contraseñas y sus nombres de documento correspondientes en un lugar seguro.</para>
+          <para>Si olvida la contraseña, no se podrá desproteger la hoja de cálculo ni el libro. Es conveniente guardar en un lugar seguro una lista de las contraseñas y nombres de los documentos correspondientes.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4259,7 +4271,7 @@
         <value>To be added.</value>
         <remarks>
           <para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
-          <para>Si se establece la propiedad <b>Visible</b> de un nombre en <b>False</b>, el nombre no aparecerá en el cuadro de diálogo Definir nombre.</para>
+          <para>Si se establece la propiedad <b>Visible</b> de un nombre como <b>False</b>, el nombre no se muestra en el cuadro de diálogo Definir nombre.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -4324,7 +4336,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa las celdas asignadas a un elemento XPath determinado. Devuelve <b>Nothing</b> si la expresión XPath especificada no se ha asignado a la hoja de cálculo o si el rango asignado está vacío.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para>Si XPath existe en una columna de una lista XML, el objeto <b>Range</b> devuelto no incluye la fila de encabezado ni la fila de inserción.</para>
           <para></para>
         </remarks>
@@ -4362,8 +4374,8 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa las celdas asignadas a un elemento XPath determinado. Devuelve <b>Nothing</b> si la expresión XPath especificada no se ha asignado a la hoja de cálculo.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para>a diferencia de la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" /> (método), el método <b>XmlMapQuery</b> devuelve la columna entera de una lista XML, incluidas la fila de encabezado y la fila de inserción.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>A diferencia de la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" /> (método), el método <b>XmlMapQuery</b> devuelve la columna entera de una lista XML, incluidas la fila de encabezado y la fila de inserción.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="94eccbe19d3d32c07fd1936d4fcbe2799d83801e" />
+    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584479" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -33,7 +33,7 @@
     <summary>Representa el color de un objeto de un solo color, el color de primer plano o de fondo de un objeto con relleno degradado o de trama, o el color del puntero.</summary>
     <remarks>
       <para>Pueden establecerse los colores en un valor rojo, verde y azul explícito (mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> (propiedad)) o en un color de la combinación de colores (mediante el uso de la <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> (propiedad)).</para>
-      <para>Uso de las propiedades que aparecen en la siguiente tabla para devolver un objeto <b>ColorFormat</b> .</para>
+      <para>Utilice una de las propiedades enumeradas en la siguiente tabla para devolver un objeto <b>ColorFormat</b>.</para>
       <list type="table">
         <item>
           <term>
@@ -42,7 +42,7 @@
           <description>
             <b>FillFormat</b>
           </description>
-          <description>el color de relleno de fondo (utilizado en un relleno con sombra o entramado)</description>
+          <description>Color de relleno de fondo (empleado en un relleno con sombra o de trama)</description>
         </item>
         <item>
           <term>
@@ -51,7 +51,7 @@
           <description>
             <b>FillFormat</b>
           </description>
-          <description>el color de relleno de primer plano (o simplemente el color de relleno de un relleno sólido)</description>
+          <description>Color de relleno de primer plano, o simplemente el color de un relleno opaco</description>
         </item>
         <item>
           <term>
@@ -60,7 +60,7 @@
           <description>
             <b>LineFormat</b>
           </description>
-          <description>el color de línea de fondo (utilizado en una línea de entramado)</description>
+          <description>Color de la línea de fondo (empleado en una línea de entramado)</description>
         </item>
         <item>
           <term>
@@ -69,16 +69,16 @@
           <description>
             <b>LineFormat</b>
           </description>
-          <description>el color de línea de primer plano (o simplemente el color de línea de una línea sólida)</description>
+          <description>Color de la línea de primer plano, o simplemente el color de una línea opaca</description>
         </item>
         <item>
           <term>
             <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
           </term>
           <description>
-            <b> ShadowFormat</b>
+            <b>ShadowFormat</b>
           </description>
-          <description>el color de sombra</description>
+          <description>Color de la sombra</description>
         </item>
         <item>
           <term>
@@ -87,7 +87,7 @@
           <description>
             <b>ThreeDFormat</b>
           </description>
-          <description>el color de los lados de un objeto extruido</description>
+          <description>Color de los lados de un objeto extruido</description>
         </item>
       </list>
       <para></para>
@@ -155,7 +155,7 @@
         <value>La luminosidad del objeto especificado.</value>
         <remarks>
           <para>Lectura y escritura.</para>
-          <para>El valor de esta propiedad debe ser un número de 0,0 (el más tenue) a 1,0 (el más brillante).</para>
+          <para>El valor de esta propiedad debe ser un número de 0,0 (atenuación máxima) a 1,0 (brillo máximo).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -191,7 +191,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
           <para>El <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. Consulte también <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
           <para></para>
         </remarks>
@@ -354,7 +354,7 @@
         <summary>Devuelve o establece un valor <b>Single</b> que aclara u oscurece el color de una forma especificada.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Se puede especificar un número comprendido entre -1 (más oscuro) al 1 (más claro) para la propiedad <b>TintAndShade</b> , siendo 0 (cero) neutro.</para>
+          <para>Puede escribir un número comprendido entre -1 (más oscuro) y 1 (más claro) para la propiedad <b>TintAndShade</b>, siendo 0 (cero) neutro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -386,7 +386,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoCalloutType</b> puede ser una de estas constantes <b>MsoCalloutType</b> .</para>
+            <b>MsoCalloutType</b> puede ser una de estas constantes <b>MsoCalloutType</b>.</para>
           <para>
             <b>msoCalloutFour</b>
           </para>

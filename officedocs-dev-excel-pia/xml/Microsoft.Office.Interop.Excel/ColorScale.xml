@@ -1,10 +1,10 @@
 <Type Name="ColorScale" FullName="Microsoft.Office.Interop.Excel.ColorScale">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="06c205813dcccacb04e48254943037851cce5de7" />
+    <Meta Name="ms.openlocfilehash" Value="1f67e87764cc01fd4ea79e3073b361913e5007f2" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585592" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScale" />
@@ -31,10 +31,13 @@
   <Docs>
     <summary>Representa una regla de formato condicional de escala de colores.</summary>
     <remarks>
-      <para>Todos los objetos de formato condicionales están contenidos en una <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de colección, que es un elemento secundario de un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Puede crear una regla de formato mediante cualquiera de escala de color la <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> método de la colección <b>FormatConditions</b> .</para> Escalas de color 
-      <para>son visual las guías que le ayudarán a comprender la variación y la distribución de datos. Puede aplicar un color de dos o una escala de tres colores a un rango de datos, los datos en una tabla o los datos en un informe de tabla dinámica. Para un formato condicional de escala de dos colores, se asignan el valor, el tipo y el color a los umbrales mínimos y máximo de un rango. Una escala de tres colores también tiene un umbral de punto medio.</para><para>Cada uno de estos umbrales se determina estableciendo las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto. El objeto <b>ColorScaleCriteria</b> , que es un elemento secundario del objeto <b>ColorScale</b> , es una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos para la escala de colores.</para><para></para></remarks>
+      <para>Todos los objetos de formato condicionales están contenidos en una <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de colección, que es un elemento secundario de un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Puede crear una regla de formato mediante cualquiera de escala de color la <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> método de la colección <b>FormatConditions</b> .</para>
+      <para>Las escalas de colores son guías visuales que ayudan a comprender la distribución y la variación de los datos. Puede aplicar una escala de colores de dos colores o una escala de tres colores a un rango de datos, a datos de una tabla o a los datos de un informe de tabla dinámica. En el caso de formato condicional de escala de dos colores, se asigna el valor, tipo y color a los umbrales mínimo y máximo de un rango. Las escalas de tres colores también tienen un umbral de punto medio.</para>
+      <para>Cada uno de estos umbrales se determina estableciendo las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto. El objeto <b>ColorScaleCriteria</b> , que es un elemento secundario del objeto <b>ColorScale</b> , es una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos para la escala de colores.</para>
+      <para></para>
+    </remarks>
     <example>
-      <para>En el ejemplo de código siguiente se crea un intervalo de números y, a continuación, se aplica una regla de formato condicional de escala de dos colores a dicho intervalo. El color para el umbral mínimo, a continuación, se asigna a rojo y al umbral máximo en azul.</para>
+      <para>El ejemplo de código siguiente crea un rango de números y después le aplica a dicho rango una regla de formato condicional de escala de dos colores. Al umbral mínimo se le asigna el color rojo y al umbral máximo, el azul.</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
 
 
@@ -478,7 +481,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>Esta propiedad es útil para limitar el intervalo de valores que mostrará el formato condicional. Un escenario típico es cuando haya un intervalo de números que contiene valores positivos y negativos. Es posible que desee crear más de un formato condicional para este rango de números: uno para los valores positivos y otro para los valores negativos.</para>
+          <para>Esta propiedad es útil para limitar el rango de valores que mostrará el formato condicional. Un escenario típico es cuando se tiene un rango de números que contiene valores positivos y negativos. Quizás desee crear más de un formato condicional para este rango de números: uno para los valores positivos y otro para los valores negativos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -509,7 +512,7 @@
         <summary>Establece el rango de celdas al que se aplica esta regla de formato.</summary>
         <remarks>
           <para>El rango debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
-          <para>También puede usar un nombre definido local en cualquier parte del rango, pero el nombre debe ser en el lenguaje de la macro.</para>
+          <para>Asimismo, se puede utilizar un nombre definido local en cualquier parte del rango, pero debe estar en el lenguaje de la macro.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -575,7 +578,7 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>Al establecer la prioridad, el valor debe ser un entero positivo comprendido entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas en la hoja de cálculo, por lo que cambiar la prioridad de la regla de formato condicional especificada puede provocar el valor de prioridad de las demás reglas en la hoja de cálculo que se va a desplazar.</para>
+          <para>Cuando se establece la prioridad, el valor debe ser un número entero positivo entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas de la hoja, por lo que si se cambia la prioridad para la regla de formato condicional especificada, es posible que varíe el valor de prioridad de las demás reglas en la hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -669,9 +672,9 @@
       <Docs>
         <summary>Establece el valor de prioridad para esta regla de formato condicional en "1" para que se evalúe antes que todas las demás reglas en la hoja de cálculo.</summary>
         <remarks>
-          <para>Cuando tiene varias reglas de formato condicionales en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
+          <para>Cuando se tienen varias reglas de formato condicional en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
           <para>
-            <b>Nota</b>: niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
+            <b>Nota</b>: los niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -699,9 +702,9 @@
       <Docs>
         <summary>Establece el orden de evaluación para esta regla de formato condicional de modo que se evalúe después que todas las demás reglas en la hoja de cálculo.</summary>
         <remarks>
-          <para>El valor real de la prioridad será igual que el número total de reglas de formato condicional en la hoja de cálculo. Si tiene varias reglas de formato condicionales en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que esta regla aumente en uno.</para>
+          <para>El valor real de la prioridad será igual al número total de reglas de formato condicional en la hoja de cálculo. Cuando se tengan varias reglas de formato condicional en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que el de esta regla aumente en uno.</para>
           <para>
-            <b>Nota</b>: niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
+            <b>Nota</b>: los niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -734,7 +737,7 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>Para compatibilidad con versiones anteriores, el valor predeterminado de esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de un formato regla creada en la interfaz de usuario.</para>
+          <para>Para mantener la compatibilidad con versiones anteriores, el valor predeterminado para esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de una regla de formato creada en la interfaz del usuario.</para>
           <para></para>
         </remarks>
       </Docs>

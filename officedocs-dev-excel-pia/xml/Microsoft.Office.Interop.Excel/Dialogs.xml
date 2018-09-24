@@ -1,10 +1,10 @@
 <Type Name="Dialogs" FullName="Microsoft.Office.Interop.Excel.Dialogs">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b158b69f9595ef9ab4167d866a4ab355c844a356" />
+    <Meta Name="ms.openlocfilehash" Value="65b059ad8c2b31f5ebb0e015a1b9611b6b82e3e3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582351" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
@@ -37,7 +37,7 @@
     <remarks>
       <para>Cada objeto <b>Dialog</b> representa un cuadro de diálogo integrado. No se puede crear un nuevo cuadro de diálogo integrado o agregar uno a la colección. Lo único que puede hacer con un objeto <b>Dialog</b> es emplearlo con el <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para mostrar el cuadro de diálogo correspondiente.</para>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.Dialogs" /> (propiedad) para devolver la colección <b>Dialogs</b> .</para>
-      <para>Uso de <b>los cuadros de diálogo</b>(<paramref name="index" />), donde <paramref name="index" /> es una constante integrada que identifica el cuadro de diálogo, para devolver un solo objeto <b>Dialog</b> .</para>
+      <para>Utilice la <b>sintaxis Dialogs</b>(<paramref name="index" />), donde <paramref name="index" /> es una constante integrada que identifica el cuadro de diálogo, para devolver un solo objeto <b>Dialog</b> .</para>
       <para>Microsoft Excel incluye constantes integradas para muchos de los cuadros de diálogo integrados. Cada constante se forma con el prefijo "xlDialog" seguido por el nombre del cuadro de diálogo. Por ejemplo, la constante de cuadro de diálogo Aplicar nombres es <b>xlDialogApplyNames</b>y la constante del cuadro de diálogo Buscar archivo es <b>xlDialogFindFile</b>. Estas constantes son miembros de la <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> tipo enumerado.</para>
       <para></para>
     </remarks>
@@ -160,8 +160,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="TreeviewControl" FullName="Microsoft.Office.Interop.Excel.TreeviewControl">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d4b0076c6b1e63cbd22e3acb6d70fcbb44e93bb5" />
+    <Meta Name="ms.openlocfilehash" Value="1afb6b42e9222ca9571894f88d24856a84c5f717" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587125" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TreeviewControl" />
@@ -87,8 +87,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Drilled">
@@ -122,7 +124,7 @@
         <remarks>
           <para>La propiedad <b>Drilled</b> acepta una matriz. Cada elemento de la matriz corresponde a un nivel del campo de cubo que se ha expandido. El número máximo de elementos es el número de niveles en el campo de cubo. Cada elemento de la matriz es una matriz de tipo <b>String</b>, que contiene nombres de miembro únicos que están visibles (expandidos) en el nivel correspondiente del control. Vea el <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> del objeto <see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" /> (propiedad) para determinar cuándo los miembros están explícitamente ocultos en una vista expandida.</para>
           <para>
-            <b>Nota</b>: esta propiedad no devuelve una matriz que representa el estado de los miembros del campo de cubo en el control de selección de miembros jerárquicos de un campo de cubo drilled.</para>
+            <b>Nota</b>: esta propiedad no devuelve una matriz que representa el estado de los miembros del campo de cubo en el control de selección de miembros jerárquicos de un campo de cubo.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -155,7 +157,10 @@
       <Docs>
         <summary>Devuelve o establece el estado oculto del cubo miembros del campo en el control de selección de miembros jerárquicos de un campo de cubo.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad <para>el <b>oculto</b> Devuelve o establece una matriz. Cada elemento de la matriz corresponde a un nivel del campo de cubo que está oculto. El número máximo de elementos es el número de niveles en el campo de cubo. Cada elemento de la matriz es una matriz de tipo <b>String</b>, que contiene nombres de miembro únicos que están ocultos en el nivel correspondiente del control. Vea el <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> de objetos para determinar cuándo los miembros están visibles (expandidos) en el control.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Hidden</b> Devuelve o establece una matriz. Cada elemento de la matriz corresponde a un nivel del campo de cubo que está oculto. El número máximo de elementos es el número de niveles en el campo de cubo. Cada elemento de la matriz es una matriz de tipo <b>String</b>, que contiene nombres de miembro únicos que están ocultos en el nivel correspondiente del control. Vea el <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> de objetos para determinar cuándo los miembros están visibles (expandidos) en el control.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

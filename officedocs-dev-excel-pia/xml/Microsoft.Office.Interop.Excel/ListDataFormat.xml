@@ -1,10 +1,10 @@
 <Type Name="ListDataFormat" FullName="Microsoft.Office.Interop.Excel.ListDataFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4df686af9f061ec3050fc2bf9f8fd3050bea8dd2" />
+    <Meta Name="ms.openlocfilehash" Value="e8996710d46e4696a0020971d9b6a260b5721114" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580783" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListDataFormat" />
@@ -149,7 +149,7 @@
         <summary>Devuelve una <b>matriz</b> de valores de <b>cadena</b> que contiene las opciones ofrecidas al usuario por los tipos de datos <b>ListLookUp</b>, <b>ChoiceMulti</b>y <b>Choice</b> de la <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.DefaultValue" /> (propiedad). Read-only <b>objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el servidor que ejecuta Microsoft Windows SharePoint Services.</para>
+          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el servidor que ejecuta Microsoft Windows SharePoint Services.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -179,7 +179,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DecimalPlaces">
@@ -208,7 +211,7 @@
         <summary>Devuelve un valor <b>entero</b> que representa el número de posiciones decimales para mostrar para los números de la <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto. Devuelve 0 si la <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.Type" /> valor de la propiedad no es adecuado para posiciones decimales. Devuelve <b>xlAutomatic</b> (decimal -4105) si el sitio de Microsoft Windows SharePoint Services determina automáticamente el número de posiciones decimales para mostrar en la lista de SharePoint. <b>Integer</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>En Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el sitio de SharePoint.</para>
+          <para>En Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -240,7 +243,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de Microsoft Windows SharePoint Services.</para>
-          <para>En Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el sitio de SharePoint.</para>
+          <para>En Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -272,7 +275,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de Microsoft Windows SharePoint Services.</para>
-          <para>En Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el sitio de SharePoint.</para>
+          <para>En Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -303,7 +306,7 @@
         <summary>Devuelve un valor <b>entero</b> que representa el LCID de la <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto que se especifica en la definición de esquema. En Microsoft Excel, el LCID indica el símbolo de moneda que se utilizará cuando se trata de un tipo <b>xlListDataTypeCurrency</b> . Devuelve 0 (que es el LCID de idioma neutro) cuando no se establece ninguna configuración regional para el tipo de datos de la columna. <b>Integer</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de Microsoft Windows SharePoint Services. En Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el sitio de SharePoint.</para>
+          <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de Microsoft Windows SharePoint Services. En Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -334,8 +337,8 @@
         <summary>Devuelve un <b>entero</b> que contiene el número máximo de caracteres permitidos en el <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto si la <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.Type" /> propiedad está establecida en <b>xlListDataTypeText</b> o en <b>xlListDataTypeMultiLineText</b>. Devuelve -1 para las columnas cuya propiedad <b>Type</b> está establecida en un valor que no son de texto. <b>Integer</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de SharePoint.</para>
-          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el sitio de SharePoint.</para>
+          <para>Esta propiedad se utiliza sólo para las listas vinculadas a un sitio de SharePoint.</para>
+          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -366,8 +369,8 @@
         <summary>Devuelve un <b>objeto</b> que contiene el valor máximo permitido en este campo en la columna de lista. Se devuelve el objeto <b>Nothing</b> si no se ha especificado un número de valor máximo o si el <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.Type" /> valor de la propiedad es tal que no es aplicable ningún valor máximo para la columna. Read-only <b>objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de SharePoint.</para>
-          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el sitio de SharePoint.</para>
+          <para>Esta propiedad se utiliza sólo para las listas vinculadas a un sitio de SharePoint.</para>
+          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -398,8 +401,8 @@
         <summary>Devuelve un <b>objeto</b> que contiene el valor mínimo permitido en este campo en la columna de lista. Esto puede ser un número negativo de punto flotante. Esta propiedad devolverá el objeto <b>Nothing</b> si no se ha especificado ningún valor para este campo o si la propiedad <b>Type</b> está configurada de manera que no es aplicable un valor mínimo a la columna. Read-only <b>objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de SharePoint.</para>
-          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el sitio de SharePoint.</para>
+          <para>Esta propiedad se utiliza sólo para las listas vinculadas a un sitio de SharePoint.</para>
+          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -458,7 +461,7 @@
         <summary>Devuelve <b>True</b> si el objeto se ha abierto como de solo lectura. <b>Boolean</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de SharePoint.</para>
+          <para>Esta propiedad se utiliza sólo para las listas vinculadas a un sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -489,8 +492,8 @@
         <summary>Devuelve un valor <b>Boolean</b> que indica si la definición de esquema de una columna requiere insertar datos antes de que se confirme la fila. Valor <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de SharePoint.</para>
-          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Puede establecer estas propiedades, sin embargo, mediante la modificación de la lista en el sitio de SharePoint.</para>
+          <para>Esta propiedad se utiliza sólo para las listas vinculadas a un sitio de SharePoint.</para>
+          <para>En Microsoft Excel, no se puede establecer cualquiera de las propiedades asociadas con el <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto. Sin embargo, puede establecer estas propiedades mediante la modificación de la lista en el sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -521,7 +524,7 @@
         <summary>Indica el tipo de datos de la columna de lista. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlListDataType" />.</summary>
         <value>Obligatorio. Expresión que devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto.</value>
         <remarks>
-          <para>Esta propiedad se utiliza únicamente para las listas vinculadas a un sitio de SharePoint.</para>
+          <para>Esta propiedad se usa únicamente para las listas vinculadas a un sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>

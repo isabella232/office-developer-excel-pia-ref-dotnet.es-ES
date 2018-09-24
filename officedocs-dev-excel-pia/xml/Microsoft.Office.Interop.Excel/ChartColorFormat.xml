@@ -1,10 +1,10 @@
 <Type Name="ChartColorFormat" FullName="Microsoft.Office.Interop.Excel.ChartColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fc25a7018dd0e9e1de00d846f891570157c61e7" />
+    <Meta Name="ms.openlocfilehash" Value="deb6994bf1703cd29b935ef38c58228a26d6f7d9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582309" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartColorFormat" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Se utiliza únicamente con gráficos. Representa el color de un objeto de un color o el color de primer plano o de fondo de un objeto con un relleno degradado o de entramado.</summary>
     <remarks>
-      <para>Utilice una de las propiedades que aparecen en la siguiente tabla para devolver un objeto <b>ChartColorFormat</b> .</para>
+      <para>Utilice una de las propiedades enumeradas en la siguiente tabla para devolver un objeto <b>ChartColorFormat</b>.</para>
       <list type="table">
         <item>
           <term>
@@ -39,16 +39,18 @@
           </term>
           <description>
             <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />
-          </description>Color de relleno de fondo (utilizado en un relleno con sombra o entramado)
+          </description>
+          <description>Color de relleno de fondo (se utiliza en rellenos sombreados o de entramado)</description>
         </item>
         <item>
           <term>
             <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.ForeColor" />
           </term>
           <description>
-            <b>ChartFillFormat </b>
-          </description>de 
-          <description>relleno de primer plano, color (o simplemente el color de relleno de un relleno sólido)</description></item>
+            <b>ChartFillFormat</b>
+          </description>
+          <description>Color de relleno de primer plano, o simplemente el color de relleno en un relleno opaco</description>
+        </item>
       </list>
       <para></para>
     </remarks>
@@ -139,8 +141,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

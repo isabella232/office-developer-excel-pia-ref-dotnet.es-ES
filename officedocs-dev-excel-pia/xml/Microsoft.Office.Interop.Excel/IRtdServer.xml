@@ -1,10 +1,10 @@
 <Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6fb4c2630e49381cd91d798ba2d0b584987cef3b" />
+    <Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579131" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IRtdServer" />
@@ -28,7 +28,7 @@
   <Docs>
     <summary>Representa una interfaz para el servidor de datos en tiempo real.</summary>
     <remarks>
-      <para>El objeto <b>IRTDServer</b> se puede crear instancias o crearse implementando la interfaz <b>IRTDServer</b> mediante la palabra clave <b>Implements</b> .</para>
+      <para>Únicamente se puede crear el objeto <b>IRTDServer</b> o instancias del mismo si se implementa la interfaz <b>IRTDServer</b> mediante la palabra clave <b>Implements</b>.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -121,7 +121,7 @@
         <summary>Determina si el servidor de datos en tiempo real está todavía activo. Cero o un número negativo indica un error; un número positivo indica que el servidor está activo.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Microsoft Excel llama al método Heartbeat el si el <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> (propiedad) ha transcurrido desde la última vez que se llamó a Excel con el <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> método.</para>
+          <para>Microsoft Excel llama al método Heartbeat si la <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> propiedad ha transcurrido desde la última vez que se llamó a Excel con el <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -154,7 +154,7 @@
         <summary>Este método es invocado por Microsoft Excel para obtener nuevos datos.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Los datos devueltos a Excel es un <b>objeto</b> que contiene una matriz bidimensional. La primera dimensión representa la lista de identificadores de temas. La segunda dimensión representa los valores asociados con los identificadores de tema.</para>
+          <para>Los datos devueltos a Excel están un <b>objeto</b> que contiene una matriz bidimensional. La primera dimensión representa la lista de identificadores de temas. La segunda dimensión representa los valores asociados con los identificadores de tema.</para>
           <para></para>
         </remarks>
       </Docs>

@@ -1,10 +1,10 @@
 <Type Name="Charts" FullName="Microsoft.Office.Interop.Excel.Charts">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f0e75c27ff1370b7c1737585a6a29f589fcd20eb" />
+    <Meta Name="ms.openlocfilehash" Value="21bb7adb80852e2d82d5897dcd0ffec87dcefadd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581742" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
@@ -36,9 +36,9 @@
     <summary>Colección de todas las hojas de gráficos del libro especificado o activo. Cada hoja de gráficos está representada por un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto. Esto no incluye los gráficos incrustados en hojas de cálculo u hojas de diálogo. Para obtener información acerca de los gráficos incrustados, consulte el <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objeto.</summary>
     <remarks>
       <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /> propiedad para devolver la colección <b>Charts</b> . Usar el <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> (método) para crear una hoja de gráfico nueva y agregarla al libro.</para>
-      <para>Se puede combinar el <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> método con el <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para agregar un nuevo gráfico que contiene los datos de una hoja de cálculo.</para>
-      <para>Utilizar <b>gráficos</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de hoja de gráfico o el nombre, para devolver un solo objeto <b>Chart</b> .</para>
-      <para>La <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección contiene todas las hojas del libro (hojas de gráficos y hojas de cálculo). Usar <b>hojas</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la hoja o el número, para devolver una sola hoja.</para>
+      <para>Puede combinar el <see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" /> método con el <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para agregar un nuevo gráfico que contiene los datos de una hoja de cálculo.</para>
+      <para>Usar <b>gráficos</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un solo objeto <b>Chart</b> o número de índice de hoja de gráfico.</para>
+      <para>El <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección contiene todas las hojas del libro (hojas de gráficos y hojas de cálculo). Usar <b>hojas</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la hoja o el número, para devolver una sola hoja.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -274,7 +274,7 @@
           <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja copiada. No puede especificar <paramref name="After" /> si especifica <paramref name="Before" />.</param>
         <summary>Copia la hoja en otro lugar del libro.</summary>
         <remarks>
-          <para>Si no especifique ningún valor <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
+          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja copiada.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -332,7 +332,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -418,7 +421,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> saltos de colección que representa la página horizontal en la hoja. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Hay un límite de saltos de página horizontales de 1026 por hoja.</para>
+          <para>El número de saltos de página horizontales está limitado a 1.026 por hoja.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -485,7 +488,7 @@
           <b>Objeto</b>de opcional. La hoja después de la cual se colocará la hoja que se ha movido. No puede especificar <paramref name="After" /> si especifica <paramref name="Before" />.</param>
         <summary>Desplaza la hoja a otro lugar del libro.</summary>
         <remarks>
-          <para>Si no especifique ningún valor <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
+          <para>Si no se especifica cualquiera <paramref name="Before" /> o <paramref name="After" />, Microsoft Excel crea un nuevo libro que contiene la hoja que se ha movido.</para>
           <para></para>
         </remarks>
       </Docs>

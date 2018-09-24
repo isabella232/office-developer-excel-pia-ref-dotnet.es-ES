@@ -1,10 +1,10 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7e25b0218180f3970a9efba6f581a14516fdea82" />
+    <Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587685" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Point" />
@@ -32,8 +32,9 @@
     <summary>Representa un solo punto de una serie de un gráfico.</summary>
     <remarks>
       <para>El objeto <b>Point</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Points" /> colección. La colección <b>Points</b> contiene todos los puntos de la uno serie.</para>
-      <b>Puntos</b>de uso de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del punto, para devolver un solo objeto <b>Point</b> . Puntos se numeran de izquierda a derecha en la serie. Points (1) es el punto del extremo izquierdo y Points (Points.Count) es el punto más a la derecha.</para><para></para></remarks>
+      <para>Use <b>puntos</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del punto, para devolver un solo objeto <b>Point</b> . Puntos se numeran de izquierda a derecha en la serie. Points (1) es el punto del extremo izquierdo y Points (Points.Count) es el punto más a la derecha.</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_ApplyDataLabels">
@@ -370,8 +371,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -429,7 +432,7 @@
         <summary>Elimina el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Eliminar un <see cref="T:Microsoft.Office.Interop.Excel.Point" /> objeto elimina toda la serie.</para>
+          <para>Eliminación de un <see cref="T:Microsoft.Office.Interop.Excel.Point" /> objeto elimina toda la serie.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -555,8 +558,8 @@
         <summary>Devuelve o establece un valor que indica si un punto tiene aspecto tridimensional. Lectura y escritura.</summary>
         <value>Booleano</value>
         <remarks>
-          <para>Devuelve True si un punto tiene aspecto tridimensional.</para>
-          <para>Esta propiedad se aplica a los gráficos de burbujas.</para>
+          <para>Devuelve True si un punto tiene aspecto tridimensional. </para>
+          <para>Esta propiedad se aplica solamente a los gráficos de burbujas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -619,7 +622,7 @@
         <summary>Obtiene el alto, en puntos, del objeto.</summary>
         <value>Alto del objeto, en puntos.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -713,7 +716,7 @@
         <summary>Obtiene un valor que representa la distancia, en puntos, desde el borde izquierdo del objeto hasta el borde izquierdo del área del gráfico.</summary>
         <value>La distancia, en puntos, desde el borde izquierdo del objeto hasta el borde izquierdo del área del gráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -905,29 +908,29 @@
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />puede ser una de las siguientes constantes <b>XlMarkerStyle</b> :</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>. Marcadores automáticos</para>
+            <b>xlMarkerStyleAutomatic</b>. Automatic markers</para>
           <para>
-            <b>xlMarkerStyleCircle</b>. Marcadores circulares</para>
+            <b>xlMarkerStyleCircle</b>. Circular markers</para>
           <para>
-            <b>xlMarkerStyleDash</b>. Marcadores de barra larga</para>
+            <b>xlMarkerStyleDash</b>. Long bar markers</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>. Marcadores con forma de rombo</para>
+            <b>xlMarkerStyleDiamond</b>. Diamond-shaped markers</para>
           <para>
-            <b>xlMarkerStyleDot</b>. Marcadores de barra corta</para>
+            <b>xlMarkerStyleDot</b>. Short bar markers</para>
           <para>
-            <b>xlMarkerStyleNone</b>. Sin marcadores</para>
+            <b>xlMarkerStyleNone</b>. No markers</para>
           <para>
-            <b>xlMarkerStylePicture</b>. Marcadores de imagen</para>
+            <b>xlMarkerStylePicture</b>. Picture markers</para>
           <para>
-            <b>xlMarkerStylePlus</b>. Marcadores cuadrados con un signo más</para>
+            <b>xlMarkerStylePlus</b>. Square markers with a plus sign</para>
           <para>
-            <b>xlMarkerStyleSquare</b>. Marcadores cuadrados</para>
+            <b>xlMarkerStyleSquare</b>. Square markers</para>
           <para>
-            <b>xlMarkerStyleStar</b>. Marcadores cuadrados con un asterisco</para>
+            <b>xlMarkerStyleStar</b>. Square markers with an asterisk</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>. Marcadores triangulares</para>
+            <b>xlMarkerStyleTriangle</b>. Triangular markers</para>
           <para>
-            <b>xlMarkerStyleX</b>. Marcadores cuadrados con una X</para>
+            <b>xlMarkerStyleX</b>. Square markers with an X</para>
           <para></para>
         </remarks>
       </Docs>
@@ -958,8 +961,8 @@
         <summary>Obtiene el nombre del objeto.</summary>
         <value>El nombre del objeto.</value>
         <remarks>
-          <para>De sólo lectura.</para>
-          <para>Esta propiedad se corresponde con el nombre de un punto de datos en un gráfico. El nombre se representa con el siguiente formato: S&lt;número de serie&gt;P&lt;número de punto&gt;.</para>
+          <para>Solo lectura.</para>
+          <para>Esta propiedad corresponde al nombre de un punto de datos en un gráfico. El nombre se representa con el siguiente formato: S&lt;número de serie&gt;P&lt;número de punto&gt;.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1163,7 +1166,7 @@
         <summary>Devuelve la posición horizontal o vertical (en puntos) de un punto en un elemento de gráfico, desde el borde superior o izquierdo del objeto hasta el borde superior o izquierdo del área del gráfico.</summary>
         <returns>La posición horizontal o vertical de la de un punto de un elemento de gráfico, en puntos, desde el borde superior o izquierdo del objeto hasta el borde superior o izquierdo del área del gráfico.</returns>
         <remarks>
-          <para>Esta propiedad sólo se aplica a los tipos de gráficos circulares y de anillos.</para>
+          <para>Esta propiedad se aplica solamente a los tipos de gráficos circulares y de anillos.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1284,7 +1287,7 @@
         <summary>Obtiene un valor que representa la distancia, en puntos, desde el borde superior del objeto hasta el borde superior del área del gráfico.</summary>
         <value>La distancia, en puntos, desde el borde superior del objeto hasta el borde superior del área del gráfico.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1315,7 +1318,7 @@
         <summary>Obtiene el ancho, en puntos, del objeto.</summary>
         <value>El ancho del objeto en puntos.</value>
         <remarks>
-          <para>De sólo lectura.</para>
+          <para>Solo lectura.</para>
           <para></para>
         </remarks>
       </Docs>

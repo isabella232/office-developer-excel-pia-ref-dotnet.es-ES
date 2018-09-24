@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579978" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _OLEObject" />
@@ -153,8 +153,8 @@
         <summary>Es <b>True</b> si el objeto OLE se carga automáticamente cuando se abre el libro que lo contiene. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Esta propiedad se omite los controles ActiveX. Los controles ActiveX siempre se cargan cuando se abre un libro.</para>
-          <para>Para la mayoría de los tipos de objeto OLE, esta propiedad no debe establecerse en <b>True</b>. De forma predeterminada, la propiedad <b>AutoLoad</b> se establece en <b>False</b> para objetos OLE nuevos. Esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar automáticamente OLE objects es que, para objetos que representan datos volátiles, los vínculos a los datos de origen pueden restablecerse inmediatamente y los objetos se pueden representar de nuevo si es necesario.</para>
+          <para>Los controles ActiveX no tienen en cuenta esta propiedad. Los controles ActiveX siempre se cargan cuando se abre un libro.</para>
+          <para>Para la mayoría de los tipos de objeto OLE, esta propiedad no debe establecerse en <b>True</b>. De forma predeterminada, la propiedad <b>AutoLoad</b> se establece en <b>False</b> para objetos OLE nuevos. Esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar objetos OLE automáticamente es que, para objetos que representan datos volátiles, los vínculos a los datos de origen pueden restablecerse inmediatamente y los objetos se pueden representar de nuevo si es necesario.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -354,7 +354,10 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. De sólo lectura <b>xlCreatorCode</b>.</summary>
         <value>To be added.</value>
-        <remarks>Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+        <remarks>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -381,7 +384,7 @@
         <summary>Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>Gráficos incrustados sólo pueden cortarse.</para>
+          <para>Sólo pueden cortarse los gráficos incrustados.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -619,7 +622,7 @@
         <summary>Devuelve o establece el rango de la hoja de cálculo vinculado al valor del control. Si sitúa un valor en la celda, el control toma dicho valor. De la misma forma, si el valor del control cambia, ese valor también se coloca en la celda. Valor <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>No se puede utilizar esta propiedad con cuadros de lista de selección múltiple.</para>
+          <para>No es posible utilizar esta propiedad con cuadros de lista de selección múltiple.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -653,7 +656,7 @@
         <summary>Devuelve o establece el rango de hoja de cálculo que se utiliza para rellenar el cuadro de lista especificado. Al establecer esta propiedad, destruye cualquier lista existente en el cuadro de lista. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Microsoft Excel lee el contenido de cada celda del rango y se inserta los valores de celda en el cuadro de lista. La lista realiza un seguimiento de los cambios en las celdas del rango.</para>
+          <para>Microsoft Excel lee el contenido de cada celda del rango y lo coloca en el cuadro de lista. Esta lista controla los cambios producidos en las celdas del rango.</para>
           <para>Si se ha creado la lista en el cuadro de lista con el <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> (método), esta propiedad devuelve una cadena vacía ("").</para>
           <para></para>
         </remarks>
@@ -813,23 +816,23 @@
         <summary>Devuelve o establece el nombre de una macro que se ejecuta al hacer clic en el objeto especificado. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Al establecer esta propiedad para un elemento de menú invalida cualquier ayuda personalizada configura información configurada para el elemento de menú con la información de la macro asignada.</para>
+          <para>Al establecer esta propiedad para un elemento de menú, se reemplaza la información de la ayuda personalizada del elemento por la información específica de la macro asignada.</para>
           <para></para>
         </remarks>
         <example>
-          <para>En este ejemplo se hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se hace clic en la forma uno.</para>
+          <para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>En este ejemplo se hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se hace clic en la forma uno.</para>
+          <para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>En este ejemplo se hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se hace clic en la forma uno.</para>
+          <para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
@@ -893,7 +896,7 @@
         <summary>Devuelve o establece la forma en que el objeto está unido a las celdas situadas debajo de él. Lectura/Escritura <b>Objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Utilizar una de las constantes siguientes:</para>
+          <para>Utilice una de las constantes siguientes:</para>
           <para>
             <b>xlFreeFloating</b>
           </para>

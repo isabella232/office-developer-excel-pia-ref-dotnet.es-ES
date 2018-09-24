@@ -1,10 +1,10 @@
 <Type Name="ChartFillFormat" FullName="Microsoft.Office.Interop.Excel.ChartFillFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c7085bf85affb6e2fef37f11e45a4f8673cac74d" />
+    <Meta Name="ms.openlocfilehash" Value="bd04354836c97d4508a39ba9a578e1e6ede7fef8" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585599" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartFillFormat" />
@@ -31,7 +31,7 @@
   <Docs>
     <summary>Se utiliza únicamente con gráficos. Representa el formato de relleno de elementos de gráficos.</summary>
     <remarks>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.ChartArea.Fill" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objeto.</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ChartArea.Fill" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> objeto.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -118,8 +118,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -191,7 +193,7 @@
             <b>msoGradientTwoColors</b>
           </para>
           <para>
-            <b>MsoGradientColorMixed</b> indica una combinación de los demás Estados del intervalo especificado. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para establecer el tipo de degradado para el relleno.</para>
+            <b>MsoGradientColorMixed</b> indica una combinación de los demás Estados del intervalo especificado. Usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para establecer el tipo de degradado del relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -271,7 +273,7 @@
             <b>msoGradientFromTitle</b>
           </para>
           <para>
-            <b> msoGradientHorizontal</b>
+            <b>msoGradientHorizontal</b>
           </para>
           <para>
             <b>msoGradientMixed</b>
@@ -310,7 +312,7 @@
         <value>To be added.</value>
         <remarks>
           <para>Los valores de la propiedad <b>GradientVariant</b> corresponden a las variantes de degradado (numeradas de izquierda a derecha y de arriba a abajo) en la ficha Degradado en el cuadro de diálogo efectos de relleno.</para>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> (método) para establecer la variante de degradado para el relleno.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> (método) para establecer la variante de degradado del relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -585,7 +587,7 @@
       <Docs>
         <summary>Establece un color uniforme para el relleno especificado.</summary>
         <remarks>
-          <para>Utilizar el método <b>sólido</b> para convertir un relleno degradado, con textura, de entramado o de fondo en un relleno sólido.</para>
+          <para>Utilice el método <b>sólido</b> para convertir un relleno degradado, con textura, de entramado o de fondo en un relleno sólido.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -616,7 +618,7 @@
         <summary>Devuelve el nombre de archivo de la textura personalizada para el relleno especificado.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> método para establecer el archivo de textura para el relleno.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> método para establecer el archivo de textura para el relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -658,7 +660,7 @@
           <para>
             <b>msoTextureUserDefined</b>
           </para>
-          <para>usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> (método) para establecer el tipo de textura para el relleno.</para>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserTextured(System.String)" /> (método) para establecer el tipo de textura para el relleno.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -721,7 +723,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoFillType" /> puede ser una de las siguientes constantes:</para>
+            <see cref="T:Microsoft.Office.Core.MsoFillType" />puede ser una de las constantes siguientes:</para>
           <para>
             <b>msoFillGradient</b>
           </para>
@@ -813,7 +815,7 @@
           <b>String</b> requerida. Nombre del archivo de imagen.</param>
         <summary>Rellena la forma especificada con mosaicos pequeños de una imagen.</summary>
         <remarks>
-          <para>Si desea rellenar la forma con una imagen grande, utilice el <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> método.</para>
+          <para>Si desea rellenar la forma con una imagen grande, utilice el <see cref="M:Microsoft.Office.Interop.Excel.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> (método).</para>
           <para></para>
         </remarks>
       </Docs>
@@ -862,8 +864,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> el objeto está visible.</para>
-          <para>Si se establece la propiedad <b>Visible</b> de un nombre en <b>False</b>, el nombre no aparecerá en el cuadro de diálogo Definir nombre.</para>
+            <b>msoTrue</b> El objeto es visible.</para>
+          <para>Si se establece la propiedad <b>Visible</b> de un nombre como <b>False</b>, el nombre no se muestra en el cuadro de diálogo Definir nombre.</para>
           <para></para>
         </remarks>
       </Docs>

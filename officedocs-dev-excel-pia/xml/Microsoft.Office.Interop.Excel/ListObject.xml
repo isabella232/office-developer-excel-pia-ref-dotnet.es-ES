@@ -1,10 +1,10 @@
 <Type Name="ListObject" FullName="Microsoft.Office.Interop.Excel.ListObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5db05498474766473e84216636995014a7a4d11" />
+    <Meta Name="ms.openlocfilehash" Value="1bb3f266b1d484c480fc364acfdb40b99ff98c94" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583023" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObject" />
@@ -94,7 +94,7 @@
         <summary>Devuelve un valor <b>Boolean</b> que indica si un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto en una hoja de cálculo está activo, es decir, si la celda activa se encuentra dentro del rango del objeto <b>ListObject</b> .</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Porque no hay ningún método <b>Activate</b> para el objeto <b>ListObject</b> , puede activar un objeto <b>ListObject</b> sólo mediante la activación de un rango de celdas dentro de la lista.</para>
+          <para>Debido a que no hay ningún método <b>Activate</b> para el objeto <b>ListObject</b> , puede activar un objeto <b>ListObject</b> sólo mediante la activación de un rango de celdas dentro de la lista.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -225,7 +225,7 @@
           <b>String</b>
         </value>
         <remarks>
-          <para>El texto del comentario no puede superar los 255 caracteres.</para>
+          <para>El comentario no puede exceder de 255 caracteres.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -256,8 +256,10 @@
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></remarks>
+          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBodyRange">
@@ -459,7 +461,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa la inserción de fila, si lo hay, de un objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Si la fila de inserción no está visible porque la lista está inactiva, se devolverá el objeto <b>Nothing</b> .</para>
+          <para>Si no se ve la fila de inserción porque la lista está inactiva, se devolverá el objeto <b>Nothing</b>.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -518,7 +520,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> object que representa todas las filas de datos en el <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El objeto <b>ListRows</b> devuelto no incluye el encabezado, total o insertar filas.</para>
+          <para>El objeto <b>ListRows</b> devuelto no incluye las filas de encabezado, las totales ni las insertadas.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -729,7 +731,7 @@
           <b>Range</b>requerido.</param>
         <summary>El método <b>Resize</b> permite un <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto para cambiar de tamaño sobre un nuevo rango.</summary>
         <remarks>
-          <para>Se insertan o se mueve por esta propiedad no celdas.</para>
+          <para>No hay ninguna celda está insertada o desplazada por esta propiedad.</para>
           <para>Esta propiedad devuelve <b>Nothing</b>.</para>
           <para>Para las listas vinculadas a un servidor que ejecuta Microsoft Windows SharePoint Services, puede cambiar el tamaño de la lista mediante este método para proporcionar un <paramref name="Range" /> argumento que difiera del rango actual del objeto ListObject sólo en el número de filas contiene. Si se intenta cambiar el tamaño de las listas vinculadas a Windows SharePoint Services mediante la adición o eliminación de columnas (en el <paramref name="Range" /> argumento) da como resultado un error en tiempo de ejecución.</para>
           <para></para>
@@ -762,7 +764,7 @@
         <summary>Devuelve una<b>String</b> que representa la dirección URL de la lista de SharePoint para un determinado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Acceso a esta propiedad genera un error en tiempo de ejecución si la lista no está vinculada a un sitio de SharePoint.</para>
+          <para>Obtener acceso a esta propiedad genera un error en tiempo de ejecución si la lista no está vinculada a un sitio de SharePoint.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1055,7 +1057,7 @@
         <summary>Devuelve una lista de las segmentaciones de datos de la tabla asociada con un <b>objeto ListObject</b>. Solo lectura</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Un <b>ListObject</b> es esencialmente una tabla.</para>
+          <para>Un <b>objeto ListObject</b> es esencialmente una tabla.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1269,7 +1271,7 @@
         <summary>Quita el vínculo a un sitio de Microsoft Windows SharePoint Services de una lista.</summary>
         <remarks>
           <para>Esta propiedad devuelve <b>Nothing</b>.</para>
-          <para>Una vez que se llama a este método y la lista se desvincula, no se puede invertir.</para>
+          <para>Después de llamar a este método, la lista se desvincula y la operación no puede deshacerse.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1364,7 +1366,7 @@
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object que representa la asignación de esquema utilizada para la lista especificada.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para></para>
         </remarks>
       </Docs>

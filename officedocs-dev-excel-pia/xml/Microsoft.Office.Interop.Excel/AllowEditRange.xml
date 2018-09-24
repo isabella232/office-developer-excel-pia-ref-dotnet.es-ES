@@ -1,10 +1,10 @@
 <Type Name="AllowEditRange" FullName="Microsoft.Office.Interop.Excel.AllowEditRange">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5306cd46ae37b135861511f86f23c995990f64bd" />
+    <Meta Name="ms.openlocfilehash" Value="5ed1c5d1b07edaa52f829f20631c74db61529a28" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580104" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AllowEditRange" />
@@ -32,7 +32,7 @@
     <summary>Representa las celdas que se pueden modificar en una hoja de cálculo protegida.</summary>
     <remarks>
       <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" /> (método) o el <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRanges.Item(System.Object)" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" /> colección para devolver un objeto <b>AllowEditRange</b> .</para>
-      <para>Una vez que haya obtenido un objeto <b>AllowEditRange</b> , puede usar el <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" /> (método) para cambiar la contraseña para tener acceso a un rango que se puede modificar en una hoja de cálculo protegida.</para>
+      <para>Cuando haya obtenido un objeto <b>AllowEditRange</b> , puede usar el <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" /> (método) para cambiar la contraseña para tener acceso a un rango que se puede modificar en una hoja de cálculo protegida.</para>
       <para></para>
     </remarks>
   </Docs>
@@ -151,7 +151,7 @@
         <summary>Devuelve o establece el título de la página Web cuando el documento se guarda como una página Web.</summary>
         <value>To be added.</value>
         <remarks>
-          <para>El título suele mostrarse en el título de la ventana de la barra cuando el documento se ve en el explorador Web.</para>
+          <para>El título suele mostrarse en la barra de título de la ventana al ver el documento en el explorador Web.</para>
           <para></para>
         </remarks>
       </Docs>
@@ -182,8 +182,8 @@
           <b>Objeto</b>de opcional. Una cadena que representa la contraseña distingue mayúsculas de minúsculas a utilizar para desproteger la hoja o libro. Si la hoja o el libro no está protegido con una contraseña, se omite este argumento. Si se omite este argumento en una hoja que está protegida con una contraseña, se le pedirá la contraseña. Si se omite este argumento para un libro que está protegido con una contraseña, se produce un error en el método.</param>
         <summary>Quita la protección de una hoja o libro.</summary>
         <remarks>
-          <para>Este método no tiene ningún efecto si la hoja o el libro no está protegido.</para>
-          <para>Si olvida la contraseña, no se puede desproteger la hoja o libro.</para>
+          <para>Este método no tiene efecto si la hoja o el libro no está protegido.</para>
+          <para>Si olvida la contraseña, no se puede desproteger la hoja o el libro.</para>
           <para></para>
         </remarks>
       </Docs>
