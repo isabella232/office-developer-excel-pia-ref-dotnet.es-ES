@@ -1,10 +1,10 @@
 <Type Name="Areas" FullName="Microsoft.Office.Interop.Excel.Areas">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7cdbce4233c98945faa9b4ad7a5d8d53b5756c20" />
+    <Meta Name="ms.openlocfilehash" Value="3d66092e7ce8a02412645f2fcf1c40d1d7d63d9e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584360" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
@@ -34,25 +34,49 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="751c3-101">Colección de áreas, o bloques de celdas contiguas, de una selección.</span>
+      <span data-ttu-id="a07d6-101">Colección de áreas, o bloques de celdas contiguas, de una selección.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="751c3-101">A collection of the areas, or contiguous blocks of cells, within a selection.</span>
+        <span data-stu-id="a07d6-101">A collection of the areas, or contiguous blocks of cells, within a selection.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="751c3-102">
-        <para>No hay ningún objeto <b>Area</b> singular; los miembros individuales de la colección de <b>áreas</b> son <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objetos. La colección <b>Areas</b> contiene un objeto <b>Range</b> por cada rango discreto y contiguo de celdas dentro de la selección. Si la selección contiene sólo un área, la colección <b>Areas</b> contiene un único objeto <b>Range</b> que corresponderá a esa selección.</para>
-        <para>Usar la <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> propiedad para devolver la colección <b>Areas</b> .</para> Usar <b>áreas</b>de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del área, para devolver un único objeto <b>Range</b> de la colección. Los números de índice se corresponden con el orden en que se han seleccionado las áreas.</para><para>Algunas operaciones no pueden realizarse en más de un área de una selección al mismo tiempo; debe ejecutar un bucle en las áreas individuales de la selección y realizar las operaciones en cada área por separado.</para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="751c3-102">
-          <para>There’s no singular <b>Area</b> object; individual members of the <b>Areas</b> collection are <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objects. The <b>Areas</b> collection contains one <b>Range</b> object for each discrete, contiguous range of cells within the selection. If the selection contains only one area, the <b>Areas</b> collection contains a single <b>Range</b> object that corresponds to that selection.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> property to return the <b>Areas</b> collection.</para>
-          <para>Use <b>Areas</b>(<paramref name="index" />), where <paramref name="index" /> is the area index number, to return a single <b>Range</b> object from the collection. The index numbers correspond to the order in which the areas were selected.</para>
-          <para>Some operations cannot be performed on more than one area in a selection at the same time; you must loop through the individual areas in the selection and perform the operations on each area separately.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="a07d6-102">No hay ningún objeto <b>Area</b> singular; los miembros individuales de la colección de <b>áreas</b> son <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objetos.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a07d6-102">There’s no singular <b>Area</b> object; individual members of the <b>Areas</b> collection are <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objects.</span>
         </span>
-      </span>
+        <span data-ttu-id="a07d6-103">La colección <b>Areas</b> contiene un objeto <b>Range</b> por cada rango discreto y contiguo de celdas dentro de la selección.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a07d6-103">The <b>Areas</b> collection contains one <b>Range</b> object for each discrete, contiguous range of cells within the selection.</span>
+        </span>
+        <span data-ttu-id="a07d6-104">Si la selección contiene sólo un área, la colección <b>Areas</b> contiene un único objeto <b>Range</b> que corresponderá a esa selección.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a07d6-104">If the selection contains only one area, the <b>Areas</b> collection contains a single <b>Range</b> object that corresponds to that selection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="a07d6-105">Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> (propiedad) para devolver la colección de <b>áreas</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a07d6-105">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> property to return the <b>Areas</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="a07d6-106">Usar <b>áreas</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del área, para devolver un único objeto <b>Range</b> de la colección.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a07d6-106">Use <b>Areas</b>(<paramref name="index" />), where <paramref name="index" /> is the area index number, to return a single <b>Range</b> object from the collection.</span>
+        </span>
+        <span data-ttu-id="a07d6-107">Los números de índice se corresponden con el orden en que se han seleccionado las áreas.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a07d6-107">The index numbers correspond to the order in which the areas were selected.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="a07d6-108">Algunas operaciones no pueden realizarse en más de un área de una selección al mismo tiempo; debe ejecutar un bucle en las áreas individuales de la selección y realizar las operaciones en cada área por separado.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a07d6-108">Some operations cannot be performed on more than one area in a selection at the same time; you must loop through the individual areas in the selection and perform the operations on each area separately.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -87,9 +111,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="751c3-103">Reservado para uso interno.</span>
+          <span data-ttu-id="a07d6-109">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="751c3-103">Reserved for internal use.</span>
+            <span data-stu-id="a07d6-109">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -120,9 +144,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="751c3-104">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
+          <span data-ttu-id="a07d6-110">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="751c3-104">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="a07d6-110">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -153,9 +177,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="751c3-105">Devuelve el número de objetos de la colección.</span>
+          <span data-ttu-id="a07d6-111">Devuelve el número de objetos de la colección.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="751c3-105">Returns the number of objects in the collection.</span>
+            <span data-stu-id="a07d6-111">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -186,23 +210,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="751c3-106">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
+          <span data-ttu-id="a07d6-112">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="751c3-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="a07d6-112">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="751c3-107">
-            <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="751c3-107">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a07d6-113">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a07d6-113">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="a07d6-114">La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a07d6-114">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="a07d6-115">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a07d6-115">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -265,20 +296,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="751c3-108">
+          <span data-ttu-id="a07d6-116">
             <b>Integer</b>requerido.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="751c3-108">Required <b>Integer</b>.</span>
+            <span data-stu-id="a07d6-116">Required <b>Integer</b>.</span>
           </span>
-          <span data-ttu-id="751c3-109">Número de índice del objeto.</span>
+          <span data-ttu-id="a07d6-117">Número de índice del objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="751c3-109">The index number of the object.</span>
+            <span data-stu-id="a07d6-117">The index number of the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="751c3-110">Devuelve un solo objeto de una colección.</span>
+          <span data-ttu-id="a07d6-118">Devuelve un solo objeto de una colección.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="751c3-110">Returns a single object from a collection.</span>
+            <span data-stu-id="a07d6-118">Returns a single object from a collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -309,9 +340,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="751c3-111">Devuelve el objeto primario del objeto especificado.</span>
+          <span data-ttu-id="a07d6-119">Devuelve el objeto primario del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="751c3-111">Returns the parent object for the specified object.</span>
+            <span data-stu-id="a07d6-119">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>

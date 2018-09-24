@@ -1,10 +1,10 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Excel.Shape">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fbb7ccfce4b3641da65d4d7f598e5099a4404460" />
+    <Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585088" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Shape" />
@@ -30,96 +30,173 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="086c3-101">Representa un objeto de la capa de dibujo, como una autoforma, una forma libre, un objeto OLE o una imagen.</span>
+      <span data-ttu-id="993d6-101">Representa un objeto de la capa de dibujo, como una autoforma, una forma libre, un objeto OLE o una imagen.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="086c3-101">Represents an object in the drawing layer, such as an AutoShape, freeform, OLE object, or picture.</span>
+        <span data-stu-id="993d6-101">Represents an object in the drawing layer, such as an AutoShape, freeform, OLE object, or picture.</span>
       </span>
-      <span data-ttu-id="086c3-102">El objeto <b>Shape</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección.</span>
+      <span data-ttu-id="993d6-102">El objeto <b>Shape</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="086c3-102">The <b>Shape</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</span>
+        <span data-stu-id="993d6-102">The <b>Shape</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</span>
       </span>
-      <span data-ttu-id="086c3-103">La colección <b>Shapes</b> contiene todas las formas de una diapositiva.</span>
+      <span data-ttu-id="993d6-103">La colección <b>Shapes</b> contiene todas las formas de una diapositiva.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="086c3-103">The <b>Shapes</b> collection contains all the shapes on a slide.</span>
+        <span data-stu-id="993d6-103">The <b>Shapes</b> collection contains all the shapes on a slide.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="086c3-104">
-        <para>Existen tres objetos que representan formas: la colección <b>Shapes</b> , que representa todas las formas de un documento; el <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> colección, que representa un subconjunto especificado de las formas de un documento (por ejemplo, un objeto <b>ShapeRange</b> podría representar las formas uno y cuatro del documento o todas las formas seleccionadas en el documento); y el objeto <b>Shape</b> , que representa una sola forma en un documento. Si desea trabajar con varias formas al mismo tiempo o con formas dentro de la selección, utilice una colección <b>ShapeRange</b> .</para>
-        <para>En esta sección se describe cómo:</para>
-        <list type="bullet">
-          <item>
-            <description>Devolver una forma existente.</description>
-          </item>
-          <item>
-            <description>Devolver una forma dentro de la selección.</description>
-          </item>
-          <item>
-            <description>Devolver las formas adjuntas a los finales de un conector.</description>
-          </item>
-          <item>
-            <description>Devolver forma libre recién creada.</description>
-          </item>
-          <item>
-            <description>Devolver una sola forma desde dentro de un grupo.</description>
-          </item>
-          <item>
-            <description>Devolver un grupo de formas recién creado.</description>
-          </item>
-        </list>
-        <para>Devolver una forma existente</para>
-        <para>Usar <b>las formas</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la forma o el número de índice, para devolver un objeto <b>Shape</b> que representa una forma.</para>
-        <para>Cada forma se le asigna un nombre predeterminado cuando se agrega a la colección <b>Shapes</b> . Para dar a la forma un nombre más descriptivo, utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> (propiedad).</para>
-        <para>Devolver una forma dentro de la selección</para>
-        <para>Use <b>Selection.ShapeRange</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la forma o el número de índice, para devolver un objeto <b>Shape</b> que representa una forma dentro de la selección.</para>
-        <para>Devolver las formas adjuntas a los finales de un conector</para>
-        <para>Para devolver un objeto <b>Shape</b> que representa una de las formas adjuntadas por un conector, use la <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> o <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> (propiedad).</para>
-        <para>Devolución de forma libre recién creada</para>
-        <para>Usar la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> y <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> métodos para definir la geometría de una nueva forma libre y use el <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> (método) para crear la forma libre y devolver el objeto <b>Shape</b> que representa it.</para>
-        <para>Devolver una sola forma desde dentro de un grupo</para>
-        <para>Use <b>GroupItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la forma o el número de índice dentro del grupo, para devolver un objeto <b>Shape</b> que representa una sola forma de una forma agrupada.</para>
-        <para>Devolver un grupo de formas recién creado</para> Uso de 
-      <para>la <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> o <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> método para agrupar un intervalo de formas y devolver un solo objeto <b>Shape</b> que representa el nuevo grupo formado. Una vez creado un grupo, puede trabajar con el grupo de la misma manera que con cualquier otra forma.</para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="086c3-104">
-          <para>There are three objects that represent shapes: the <b>Shapes</b> collection, which represents all the shapes on a document; the <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection, which represents a specified subset of the shapes on a document (for example, a <b>ShapeRange</b> object could represent shapes one and four on the document, or it could represent all the selected shapes on the document); and the <b>Shape</b> object, which represents a single shape on a document. If you want to work with several shapes at the same time or with shapes within the selection, use a <b>ShapeRange</b> collection.</para>
-          <para>This section describes how to:</para>
-          <list type="bullet">
-            <item>
-              <description>Return an existing shape.</description>
-            </item>
-            <item>
-              <description>Return a shape within the selection.</description>
-            </item>
-            <item>
-              <description>Return the shapes attached to the ends of a connector.</description>
-            </item>
-            <item>
-              <description>Return a newly created freeform.</description>
-            </item>
-            <item>
-              <description>Return a single shape from within a group.</description>
-            </item>
-            <item>
-              <description>Return a newly formed group of shapes.</description>
-            </item>
-          </list>
-          <para>Returning an Existing Shape</para>
-          <para>Use <b>Shapes</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number, to return a <b>Shape</b> object that represents a shape.</para>
-          <para>Each shape is assigned a default name when you add it to the <b>Shapes</b> collection. To give the shape a more meaningful name, use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> property.</para>
-          <para>Returning a Shape Within the Selection</para>
-          <para>Use <b>Selection.ShapeRange</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number, to return a <b>Shape</b> object that represents a shape within the selection.</para>
-          <para>Returning the Shapes Attached to the Ends of a Connector</para>
-          <para>To return a <b>Shape</b> object that represents one of the shapes attached by a connector, use the <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> or <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> property.</para>
-          <para>Returning a newly created freeform</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> and <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> methods to define the geometry of a new freeform, and use the <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> method to create the freeform and return the <b>Shape</b> object that represents it.</para>
-          <para>Returning a Single Shape from Within a Group</para>
-          <para>Use <b>GroupItems</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number within the group, to return a <b>Shape</b> object that represents a single shape in a grouped shape.</para>
-          <para>Returning a Newly Formed Group of Shapes</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> or <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> method to group a range of shapes and return a single <b>Shape</b> object that represents the newly formed group. After a group has been formed, you can work with the group the same way you work with any other shape.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="993d6-104">Existen tres objetos que representan formas: la colección <b>Shapes</b> , que representa todas las formas de un documento; el <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> colección, que representa un subconjunto especificado de las formas de un documento (por ejemplo, un objeto <b>ShapeRange</b> podría representar las formas uno y cuatro del documento o todas las formas seleccionadas en el documento); y el objeto <b>Shape</b> , que representa una sola forma en un documento.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-104">There are three objects that represent shapes: the <b>Shapes</b> collection, which represents all the shapes on a document; the <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection, which represents a specified subset of the shapes on a document (for example, a <b>ShapeRange</b> object could represent shapes one and four on the document, or it could represent all the selected shapes on the document); and the <b>Shape</b> object, which represents a single shape on a document.</span>
         </span>
-      </span>
+        <span data-ttu-id="993d6-105">Si desea trabajar con varias formas al mismo tiempo o con formas dentro de la selección, utilice una colección <b>ShapeRange</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-105">If you want to work with several shapes at the same time or with shapes within the selection, use a <b>ShapeRange</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-106">En esta sección se describe cómo:</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-106">This section describes how to:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="993d6-107">Devolver una forma existente.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-107">Return an existing shape.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="993d6-108">Devolver una forma dentro de la selección.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-108">Return a shape within the selection.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="993d6-109">Devolver las formas adjuntas a los extremos de un conector.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-109">Return the shapes attached to the ends of a connector.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="993d6-110">Devolver una forma libre recién creada.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-110">Return a newly created freeform.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="993d6-111">Devolver una forma de un grupo.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-111">Return a single shape from within a group.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="993d6-112">Devolver un grupo de formas creado recientemente.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-112">Return a newly formed group of shapes.</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para>
+        <span data-ttu-id="993d6-113">Devolución de una forma existente</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-113">Returning an Existing Shape</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-114">Usar <b>formas</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la forma o el número de índice, para devolver un objeto <b>Shape</b> que representa una forma.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-114">Use <b>Shapes</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number, to return a <b>Shape</b> object that represents a shape.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-115">Cada forma se le asigna un nombre predeterminado cuando se agrega a la colección <b>Shapes</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-115">Each shape is assigned a default name when you add it to the <b>Shapes</b> collection.</span>
+        </span>
+        <span data-ttu-id="993d6-116">Para dar a la forma un nombre más descriptivo, utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> (propiedad).</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-116">To give the shape a more meaningful name, use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> property.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-117">Devolución de una forma dentro de la selección</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-117">Returning a Shape Within the Selection</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-118">Use <b>Selection.ShapeRange</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la forma o el número de índice, para devolver un objeto <b>Shape</b> que representa una forma dentro de la selección.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-118">Use <b>Selection.ShapeRange</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number, to return a <b>Shape</b> object that represents a shape within the selection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-119">Devolución de las formas adjuntas a los extremos de un conector</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-119">Returning the Shapes Attached to the Ends of a Connector</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-120">Para devolver un objeto <b>Shape</b> que representa una de las formas adjuntadas por un conector, use la <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> o <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> (propiedad).</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-120">To return a <b>Shape</b> object that represents one of the shapes attached by a connector, use the <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> or <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> property.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-121">Devolución de una forma libre recién creada</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-121">Returning a newly created freeform</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-122">Usar el <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> y <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> métodos para definir la geometría de una nueva forma libre y use el <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> (método) para crear la forma libre y devolver el objeto <b>Shape</b> que la representa.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-122">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> and <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> methods to define the geometry of a new freeform, and use the <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> method to create the freeform and return the <b>Shape</b> object that represents it.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-123">Devolución de una sola forma desde dentro de un grupo</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-123">Returning a Single Shape from Within a Group</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-124">Utilice la <b>sintaxis GroupItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la forma o el número de índice dentro del grupo, para devolver un objeto <b>Shape</b> que representa una sola forma de una forma agrupada.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-124">Use <b>GroupItems</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number within the group, to return a <b>Shape</b> object that represents a single shape in a grouped shape.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-125">Devolución de grupos de formas recién formados</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-125">Returning a Newly Formed Group of Shapes</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="993d6-126">Usar el <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> o <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> método para agrupar un intervalo de formas y devolver un solo objeto <b>Shape</b> que representa el nuevo grupo formado.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-126">Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> or <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> method to group a range of shapes and return a single <b>Shape</b> object that represents the newly formed group.</span>
+        </span>
+        <span data-ttu-id="993d6-127">Una vez creado un grupo, puede trabajar con el grupo de la misma manera que con cualquier otra forma.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="993d6-127">After a group has been formed, you can work with the group the same way you work with any other shape.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -147,27 +224,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-105">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> objeto que contiene valores de ajuste de todos los ajustes de la forma especificada.</span>
+          <span data-ttu-id="993d6-128">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> objeto que contiene valores de ajuste de todos los ajustes de la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-105">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> object that contains adjustment values for all the adjustments in the specified shape.</span>
+            <span data-stu-id="993d6-128">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> object that contains adjustment values for all the adjustments in the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-106">Solo lectura.</span>
+          <span data-ttu-id="993d6-129">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-106">Read-only.</span>
+            <span data-stu-id="993d6-129">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-107">
-            <para>Esta propiedad se aplica a cualquier <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> o <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto que representa una autoforma, WordArt o conector.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-107">
-              <para>This property applies to any <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object that represents an AutoShape, WordArt, or a connector.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-130">Esta propiedad se aplica a cualquier <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> o <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto que representa una autoforma, WordArt o conector.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-130">This property applies to any <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object that represents an AutoShape, WordArt, or a connector.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -198,28 +272,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-108">Devuelve o establece la cadena de texto descriptivo (alternativa) para un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto cuando el objeto se guarda en una página Web.</span>
+          <span data-ttu-id="993d6-131">Devuelve o establece la cadena de texto descriptivo (alternativa) para un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto cuando el objeto se guarda en una página Web.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-108">Returns or sets the descriptive (alternative) text string for a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object when the object is saved to a Web page.</span>
+            <span data-stu-id="993d6-131">Returns or sets the descriptive (alternative) text string for a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object when the object is saved to a Web page.</span>
           </span>
-          <span data-ttu-id="086c3-109">
+          <span data-ttu-id="993d6-132">
             <b>String</b> de lectura y escritura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-109">Read/write <b>String</b>.</span>
+            <span data-stu-id="993d6-132">Read/write <b>String</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-110">
-            <para>El texto alternativo puede mostrarse en lugar de imagen de la forma en el explorador Web o directamente a través de la imagen cuando se sitúa el puntero del mouse sobre la imagen (en los exploradores que admiten estas características).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-110">
-              <para>The alternative text can be displayed either in place of the shape’s image in the Web browser or directly over the image when the mouse pointer hovers over the image (in browsers that support these features).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-133">El texto alternativo puede mostrarse en lugar de imagen de la forma en el explorador Web o directamente a través de la imagen cuando se sitúa el puntero del mouse sobre la imagen (en los exploradores que admiten estas características).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-133">The alternative text can be displayed either in place of the shape’s image in the Web browser or directly over the image when the mouse pointer hovers over the image (in browsers that support these features).</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -247,13 +318,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-111">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
+          <span data-ttu-id="993d6-134">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-111">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="993d6-134">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
-          <span data-ttu-id="086c3-112">Solo lectura.</span>
+          <span data-ttu-id="993d6-135">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-112">Read-only.</span>
+            <span data-stu-id="993d6-135">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -282,9 +353,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-113">Se aplica a la forma especificada el formato que se ha copiado mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" /> (método).</span>
+          <span data-ttu-id="993d6-136">Se aplica a la forma especificada el formato que se ha copiado mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" /> (método).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-113">Applies to the specified shape formatting that’s been copied by using the <see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" /> method.</span>
+            <span data-stu-id="993d6-136">Applies to the specified shape formatting that’s been copied by using the <see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" /> method.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -317,29 +388,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-114">Devuelve o establece el tipo de forma para especificado <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto, que debe representar una autoforma que no sea una línea, un dibujo de forma libre o un conector.</span>
+          <span data-ttu-id="993d6-137">Devuelve o establece el tipo de forma para especificado <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto, que debe representar una autoforma que no sea una línea, un dibujo de forma libre o un conector.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-114">Returns or sets the shape type for the specified <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object, which must represent an AutoShape other than a line, freeform drawing, or connector.</span>
+            <span data-stu-id="993d6-137">Returns or sets the shape type for the specified <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object, which must represent an AutoShape other than a line, freeform drawing, or connector.</span>
           </span>
-          <span data-ttu-id="086c3-115">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</span>
+          <span data-ttu-id="993d6-138">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-115">Read/write <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</span>
+            <span data-stu-id="993d6-138">Read/write <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-116">
-            <para>Cuando se cambia el tipo de una forma, la forma mantiene su tamaño, color y otros atributos.</para>
-            <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto para establecer o devolver el tipo de conector.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-116">
-              <para>When you change the type of a shape, the shape retains its size, color, and other attributes.</para>
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> object to set or return the connector type.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-139">[!NOTA] Al cambiar el tipo de una forma, la forma mantiene su tamaño, color y otros atributos.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-139">When you change the type of a shape, the shape retains its size, color, and other attributes.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="993d6-140">Usar el <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto para establecer o devolver el tipo de conector.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-140">Use the <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> object to set or return the connector type.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -370,13 +442,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-117">Devuelve o establece el estilo de fondo.</span>
+          <span data-ttu-id="993d6-141">Devuelve o establece el estilo de fondo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-117">Returns or sets the background style.</span>
+            <span data-stu-id="993d6-141">Returns or sets the background style.</span>
           </span>
-          <span data-ttu-id="086c3-118">Lectura y escritura.</span>
+          <span data-ttu-id="993d6-142">Lectura y escritura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-118">Read/write.</span>
+            <span data-stu-id="993d6-142">Read/write.</span>
           </span>
         </summary>
         <value>
@@ -412,13 +484,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-119">Devuelve o establece un valor que indica cómo aparece la forma especificada cuando la presentación se visualiza en modo blanco y negro.</span>
+          <span data-ttu-id="993d6-143">Devuelve o establece un valor que indica cómo aparece la forma especificada cuando la presentación se visualiza en modo blanco y negro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-119">Returns or sets a value that indicates how the specified shape appears when the presentation is viewed in black-and-white mode.</span>
+            <span data-stu-id="993d6-143">Returns or sets a value that indicates how the specified shape appears when the presentation is viewed in black-and-white mode.</span>
           </span>
-          <span data-ttu-id="086c3-120">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />.</span>
+          <span data-ttu-id="993d6-144">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-120">Read/write <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />.</span>
+            <span data-stu-id="993d6-144">Read/write <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -449,13 +521,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-121">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina inferior derecha del objeto.</span>
+          <span data-ttu-id="993d6-145">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina inferior derecha del objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-121">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the cell that lies under the lower-right corner of the object.</span>
+            <span data-stu-id="993d6-145">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the cell that lies under the lower-right corner of the object.</span>
           </span>
-          <span data-ttu-id="086c3-122">Solo lectura.</span>
+          <span data-ttu-id="993d6-146">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-122">Read-only.</span>
+            <span data-stu-id="993d6-146">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -486,17 +558,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-123">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> objeto que contiene las propiedades de la forma especificada el formato de la llamada.</span>
+          <span data-ttu-id="993d6-147">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> objeto que contiene las propiedades de la forma especificada el formato de la llamada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-123">Returns a <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> object that contains callout formatting properties for the specified shape.</span>
+            <span data-stu-id="993d6-147">Returns a <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> object that contains callout formatting properties for the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-124">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan llamadas de línea.</span>
+          <span data-ttu-id="993d6-148">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan llamadas de línea.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-124">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent line callouts.</span>
+            <span data-stu-id="993d6-148">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent line callouts.</span>
           </span>
-          <span data-ttu-id="086c3-125">Solo lectura.</span>
+          <span data-ttu-id="993d6-149">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-125">Read-only.</span>
+            <span data-stu-id="993d6-149">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -531,9 +603,9 @@
       <Docs>
         <param name="Increment">To be added.</param>
         <summary>
-          <span data-ttu-id="086c3-126">Reservado para uso interno.</span>
+          <span data-ttu-id="993d6-150">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-126">Reserved for internal use.</span>
+            <span data-stu-id="993d6-150">Reserved for internal use.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -567,9 +639,9 @@
       <Docs>
         <param name="Increment">To be added.</param>
         <summary>
-          <span data-ttu-id="086c3-127">Reservado para uso interno.</span>
+          <span data-ttu-id="993d6-151">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-127">Reserved for internal use.</span>
+            <span data-stu-id="993d6-151">Reserved for internal use.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -603,9 +675,9 @@
       <Docs>
         <param name="Increment">To be added.</param>
         <summary>
-          <span data-ttu-id="086c3-128">Reservado para uso interno.</span>
+          <span data-ttu-id="993d6-152">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-128">Reserved for internal use.</span>
+            <span data-stu-id="993d6-152">Reserved for internal use.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -639,9 +711,9 @@
       <Docs>
         <param name="Increment">To be added.</param>
         <summary>
-          <span data-ttu-id="086c3-129">Reservado para uso interno.</span>
+          <span data-ttu-id="993d6-153">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-129">Reserved for internal use.</span>
+            <span data-stu-id="993d6-153">Reserved for internal use.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -674,9 +746,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-130">Reservado para uso interno.</span>
+          <span data-ttu-id="993d6-154">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-130">Reserved for internal use.</span>
+            <span data-stu-id="993d6-154">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -707,13 +779,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-131">Devuelve un objeto object que representa el <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> contenidos en el <see cref="T:Microsoft.Office.Interop.Excel.Shape" />.</span>
+          <span data-ttu-id="993d6-155">Devuelve un objeto object que representa el <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> contenidos en el <see cref="T:Microsoft.Office.Interop.Excel.Shape" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-131">Returns an object that represents the <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> contained in the <see cref="T:Microsoft.Office.Interop.Excel.Shape" />.</span>
+            <span data-stu-id="993d6-155">Returns an object that represents the <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> contained in the <see cref="T:Microsoft.Office.Interop.Excel.Shape" />.</span>
           </span>
-          <span data-ttu-id="086c3-132">Solo lectura.</span>
+          <span data-ttu-id="993d6-156">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-132">Read-only.</span>
+            <span data-stu-id="993d6-156">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -746,13 +818,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-133">Devuelve <b>msoTrue</b> si la forma especificada es una forma secundaria o si todas las formas en un intervalo de formas son secundarias de la misma forma primaria.</span>
+          <span data-ttu-id="993d6-157">Devuelve <b>msoTrue</b> si la forma especificada es una forma secundaria o si todas las formas en un intervalo de formas son secundarias de la misma forma primaria.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-133">Returns <b>msoTrue</b> if the specified shape is a child shape or if all shapes in a shape range are child shapes of the same parent.</span>
+            <span data-stu-id="993d6-157">Returns <b>msoTrue</b> if the specified shape is a child shape or if all shapes in a shape range are child shapes of the same parent.</span>
           </span>
-          <span data-ttu-id="086c3-134">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-158">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-134">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-158">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -783,14 +855,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-135">Devuelve el número de sitios de conexión en la forma especificada.</span>
+          <span data-ttu-id="993d6-159">Devuelve el número de sitios de conexión en la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-135">Returns the number of connection sites on the specified shape.</span>
+            <span data-stu-id="993d6-159">Returns the number of connection sites on the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-136">
+          <span data-ttu-id="993d6-160">
             <b>Integer</b> de sólo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-136">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="993d6-160">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -821,15 +893,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-137">
+          <span data-ttu-id="993d6-161">
             <b>True</b> si la forma especificada es un conector.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-137">
+            <span data-stu-id="993d6-161">
               <b>True</b> if the specified shape is a connector.</span>
           </span>
-          <span data-ttu-id="086c3-138">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-162">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-138">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-162">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -860,17 +932,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-139">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto que contiene propiedades de formato del conector.</span>
+          <span data-ttu-id="993d6-163">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> objeto que contiene propiedades de formato del conector.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-139">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> object that contains connector formatting properties.</span>
+            <span data-stu-id="993d6-163">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> object that contains connector formatting properties.</span>
           </span>
-          <span data-ttu-id="086c3-140">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan conectores.</span>
+          <span data-ttu-id="993d6-164">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan conectores.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-140">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent connectors.</span>
+            <span data-stu-id="993d6-164">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent connectors.</span>
           </span>
-          <span data-ttu-id="086c3-141">Solo lectura.</span>
+          <span data-ttu-id="993d6-165">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-141">Read-only.</span>
+            <span data-stu-id="993d6-165">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -901,13 +973,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-142">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> objeto que contiene las propiedades de control de Microsoft Excel.</span>
+          <span data-ttu-id="993d6-166">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> objeto que contiene las propiedades de control de Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-142">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> object that contains Microsoft Excel control properties.</span>
+            <span data-stu-id="993d6-166">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> object that contains Microsoft Excel control properties.</span>
           </span>
-          <span data-ttu-id="086c3-143">Solo lectura.</span>
+          <span data-ttu-id="993d6-167">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-143">Read-only.</span>
+            <span data-stu-id="993d6-167">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -936,9 +1008,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-144">Copia el objeto al Portapapeles.</span>
+          <span data-ttu-id="993d6-168">Copia el objeto al Portapapeles.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-144">Copies the object to the Clipboard.</span>
+            <span data-stu-id="993d6-168">Copies the object to the Clipboard.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -968,31 +1040,31 @@
       </Parameters>
       <Docs>
         <param name="Appearance">
-          <span data-ttu-id="086c3-145">
+          <span data-ttu-id="993d6-169">
             <b>Objeto</b>de opcional.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-145">Optional <b>Object</b>.</span>
+            <span data-stu-id="993d6-169">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="086c3-146">Especifica cómo se debe copiar la imagen.</span>
+          <span data-ttu-id="993d6-170">Especifica cómo se debe copiar la imagen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-146">Specifies how the picture should be copied.</span>
+            <span data-stu-id="993d6-170">Specifies how the picture should be copied.</span>
           </span>
         </param>
         <param name="Format">
-          <span data-ttu-id="086c3-147">
+          <span data-ttu-id="993d6-171">
             <b>Objeto</b>de opcional.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-147">Optional <b>Object</b>.</span>
+            <span data-stu-id="993d6-171">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="086c3-148">El formato de la imagen.</span>
+          <span data-ttu-id="993d6-172">El formato de la imagen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-148">The format of the picture.</span>
+            <span data-stu-id="993d6-172">The format of the picture.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-149">Copia el objeto seleccionado en el Portapapeles como una imagen.</span>
+          <span data-ttu-id="993d6-173">Copia el objeto seleccionado en el Portapapeles como una imagen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-149">Copies the selected object to the Clipboard as a picture.</span>
+            <span data-stu-id="993d6-173">Copies the selected object to the Clipboard as a picture.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1022,28 +1094,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-150">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
+          <span data-ttu-id="993d6-174">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-150">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="993d6-174">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="086c3-151">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
+          <span data-ttu-id="993d6-175">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-151">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="993d6-175">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="086c3-152">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span data-ttu-id="993d6-176">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-152">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="993d6-176">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-153">Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-153">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-177">La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-177">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="993d6-178">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-178">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1069,24 +1145,25 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-154">Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</span>
+          <span data-ttu-id="993d6-179">Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-154">Cuts the object to the Clipboard or pastes it into a specified destination.</span>
+            <span data-stu-id="993d6-179">Cuts the object to the Clipboard or pastes it into a specified destination.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="086c3-155">
-            <para>El rango cortado debe estar compuesto por celdas adyacentes.</para>
-            <para>Gráficos incrustados sólo pueden cortarse.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-155">
-              <para>The cut range must be made up of adjacent cells.</para>
-              <para>Only embedded charts can be cut.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-180">El rango cortado debe estar compuesto por celdas adyacentes.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-180">The cut range must be made up of adjacent cells.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="993d6-181">Sólo pueden cortarse los gráficos incrustados.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-181">Only embedded charts can be cut.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1112,9 +1189,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-156">Elimina el objeto.</span>
+          <span data-ttu-id="993d6-182">Elimina el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-156">Deletes the object.</span>
+            <span data-stu-id="993d6-182">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1147,9 +1224,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-157">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> objeto que representa un diagrama.</span>
+          <span data-ttu-id="993d6-183">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> objeto que representa un diagrama.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-157">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> object representing a diagram.</span>
+            <span data-stu-id="993d6-183">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> object representing a diagram.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1183,9 +1260,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-158">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto que representa un nodo en un diagrama.</span>
+          <span data-ttu-id="993d6-184">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto que representa un nodo en un diagrama.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-158">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object that represents a node in a diagram.</span>
+            <span data-stu-id="993d6-184">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object that represents a node in a diagram.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1219,9 +1296,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-159">Reservado para uso interno.</span>
+          <span data-ttu-id="993d6-185">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-159">Reserved for internal use.</span>
+            <span data-stu-id="993d6-185">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1250,9 +1327,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-160">Duplica el objeto y devuelve una referencia a la nueva copia.</span>
+          <span data-ttu-id="993d6-186">Duplica el objeto y devuelve una referencia a la nueva copia.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-160">Duplicates the object and returns a reference to the new copy.</span>
+            <span data-stu-id="993d6-186">Duplicates the object and returns a reference to the new copy.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -1283,13 +1360,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-161">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contiene las propiedades de la forma o el gráfico especificado del formato de relleno.</span>
+          <span data-ttu-id="993d6-187">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contiene las propiedades de la forma o el gráfico especificado del formato de relleno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-161">Returns a <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> object that contains fill formatting properties for the specified chart or shape.</span>
+            <span data-stu-id="993d6-187">Returns a <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> object that contains fill formatting properties for the specified chart or shape.</span>
           </span>
-          <span data-ttu-id="086c3-162">Solo lectura.</span>
+          <span data-ttu-id="993d6-188">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-162">Read-only.</span>
+            <span data-stu-id="993d6-188">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1320,19 +1397,19 @@
       </Parameters>
       <Docs>
         <param name="FlipCmd">
-          <span data-ttu-id="086c3-163">Requiere <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />.</span>
+          <span data-ttu-id="993d6-189">Requiere <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-163">Required <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />.</span>
+            <span data-stu-id="993d6-189">Required <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />.</span>
           </span>
-          <span data-ttu-id="086c3-164">Especifica si se va a voltear la forma horizontal o verticalmente.</span>
+          <span data-ttu-id="993d6-190">Especifica si se va a voltear la forma horizontal o verticalmente.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-164">Specifies whether the shape is to be flipped horizontally or vertically.</span>
+            <span data-stu-id="993d6-190">Specifies whether the shape is to be flipped horizontally or vertically.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-165">Voltea la forma especificada alrededor de su eje horizontal o vertical.</span>
+          <span data-ttu-id="993d6-191">Voltea la forma especificada alrededor de su eje horizontal o vertical.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-165">Flips the specified shape around its horizontal or vertical axis.</span>
+            <span data-stu-id="993d6-191">Flips the specified shape around its horizontal or vertical axis.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1362,27 +1439,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-166">Devuelve el tipo de control de Microsoft Excel.</span>
+          <span data-ttu-id="993d6-192">Devuelve el tipo de control de Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-166">Returns the Microsoft Excel control type.</span>
+            <span data-stu-id="993d6-192">Returns the Microsoft Excel control type.</span>
           </span>
-          <span data-ttu-id="086c3-167">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />.</span>
+          <span data-ttu-id="993d6-193">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-167">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />.</span>
+            <span data-stu-id="993d6-193">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-168">
-            <para>No se puede utilizar esta propiedad con los controles ActiveX (la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> (propiedad) para la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto debe devolver <b>msoFormControl</b>).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-168">
-              <para>You cannot use this property with ActiveX controls (the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> property for the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object must return <b>msoFormControl</b>).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-194">No se puede utilizar esta propiedad con los controles ActiveX (la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> (propiedad) para la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto debe devolver <b>msoFormControl</b>).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-194">You cannot use this property with ActiveX controls (the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> property for the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object must return <b>msoFormControl</b>).</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1410,29 +1484,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-169">Devuelve un objeto de una forma especificada que contiene propiedades para que la forma de formato de iluminado.</span>
+          <span data-ttu-id="993d6-195">Devuelve un objeto de una forma especificada que contiene propiedades para que la forma de formato de iluminado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-169">Returns an object for a specified shape that contains glow formatting properties for that shape.</span>
+            <span data-stu-id="993d6-195">Returns an object for a specified shape that contains glow formatting properties for that shape.</span>
           </span>
-          <span data-ttu-id="086c3-170">Solo lectura.</span>
+          <span data-ttu-id="993d6-196">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-170">Read-only.</span>
+            <span data-stu-id="993d6-196">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Core.GlowFormat" />
         </value>
         <remarks>
-          <span data-ttu-id="086c3-171">
-            <para>El efecto de resplandor agrega un borde coloreado vibrante a los gráficos.  </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-171">
-              <para>The glow effect adds a vibrant colored edge to graphics.  </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-197">El efecto de resplandor agrega un borde coloreado vibrante a los gráficos.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-197">The glow effect adds a vibrant colored edge to graphics.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1460,21 +1531,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-172">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object que representa las formas individuales del grupo especificado.</span>
+          <span data-ttu-id="993d6-198">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object que representa las formas individuales del grupo especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-172">Returns a <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object that represents the individual shapes in the specified group.</span>
+            <span data-stu-id="993d6-198">Returns a <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object that represents the individual shapes in the specified group.</span>
           </span>
-          <span data-ttu-id="086c3-173">Usar el <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> método del objeto <b>GroupShapes</b> para devolver una sola forma desde el grupo.</span>
+          <span data-ttu-id="993d6-199">Usar el <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> método del objeto <b>GroupShapes</b> para devolver una sola forma desde el grupo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-173">Use the <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> method of the <b>GroupShapes</b> object to return a single shape from the group.</span>
+            <span data-stu-id="993d6-199">Use the <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> method of the <b>GroupShapes</b> object to return a single shape from the group.</span>
           </span>
-          <span data-ttu-id="086c3-174">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan formas agrupadas.</span>
+          <span data-ttu-id="993d6-200">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan formas agrupadas.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-174">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent grouped shapes.</span>
+            <span data-stu-id="993d6-200">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent grouped shapes.</span>
           </span>
-          <span data-ttu-id="086c3-175">Solo lectura.</span>
+          <span data-ttu-id="993d6-201">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-175">Read-only.</span>
+            <span data-stu-id="993d6-201">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1505,13 +1576,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-176">Devuelve información acerca de if un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> contiene un gráfico.</span>
+          <span data-ttu-id="993d6-202">Devuelve información acerca de if un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> contiene un gráfico.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-176">Returns information on if a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> contains a chart.</span>
+            <span data-stu-id="993d6-202">Returns information on if a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> contains a chart.</span>
           </span>
-          <span data-ttu-id="086c3-177">Solo lectura.</span>
+          <span data-ttu-id="993d6-203">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-177">Read-only.</span>
+            <span data-stu-id="993d6-203">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -1547,13 +1618,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-178">Devuelve si una forma o un intervalo de formas contiene un diagrama.</span>
+          <span data-ttu-id="993d6-204">Devuelve si una forma o un intervalo de formas contiene un diagrama.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-178">Returns whether a shape or shape range contains a diagram.</span>
+            <span data-stu-id="993d6-204">Returns whether a shape or shape range contains a diagram.</span>
           </span>
-          <span data-ttu-id="086c3-179">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-205">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-179">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-205">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1587,13 +1658,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-180">Devuelve un valor que indica si existe un nodo de diagrama en una forma o intervalo de formas.</span>
+          <span data-ttu-id="993d6-206">Devuelve un valor que indica si existe un nodo de diagrama en una forma o intervalo de formas.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-180">Returns a value indicating whether a diagram node exists in a given shape or shape range.</span>
+            <span data-stu-id="993d6-206">Returns a value indicating whether a diagram node exists in a given shape or shape range.</span>
           </span>
-          <span data-ttu-id="086c3-181">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-207">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-181">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-207">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1624,32 +1695,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-182">Obtiene si hay un diagrama de SmartArt presente en la forma especificada.</span>
+          <span data-ttu-id="993d6-208">Obtiene si hay un diagrama de SmartArt presente en la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-182">Gets whether there is a SmartArt diagram present on the specified shape.</span>
+            <span data-stu-id="993d6-208">Gets whether there is a SmartArt diagram present on the specified shape.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="086c3-183">A <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</span>
+          <span data-ttu-id="993d6-209">A <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-183">A <see cref="T:Microsoft.Office.Core.MsoTriState" /> object.</span>
+            <span data-stu-id="993d6-209">A <see cref="T:Microsoft.Office.Core.MsoTriState" /> object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="086c3-184">
-            <para>De sólo lectura.</para>
-            <para>
-              <b>msoTrue</b> (-1) si no hay presente en la forma de un diagrama SmartArt; en caso contrario <b>msoFalse</b> (0).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-184">
-              <para>Read-only.</para>
-              <para>
-                <b>msoTrue</b> (-1) if there is a SmartArt diagram present on the shape; otherwise <b>msoFalse</b> (0).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-210">Solo lectura.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-210">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="993d6-211">
+              <b>msoTrue</b> (-1) si hay presente un diagrama SmartArt en la forma y <b>msoFalse</b> (0) en caso contrario.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-211">
+                <b>msoTrue</b> (-1) if there is a SmartArt diagram present on the shape; otherwise <b>msoFalse</b> (0).</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1680,13 +1752,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-185">El alto del objeto.</span>
+          <span data-ttu-id="993d6-212">El alto del objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-185">The height of the object.</span>
+            <span data-stu-id="993d6-212">The height of the object.</span>
           </span>
-          <span data-ttu-id="086c3-186">Lectura y escritura <b>único</b>.</span>
+          <span data-ttu-id="993d6-213">Lectura y escritura <b>único</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-186">Read/write <b>Single</b>.</span>
+            <span data-stu-id="993d6-213">Read/write <b>Single</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1717,15 +1789,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-187">
+          <span data-ttu-id="993d6-214">
             <b>True</b> si la forma especificada está volteada alrededor del eje horizontal.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-187">
+            <span data-stu-id="993d6-214">
               <b>True</b> if the specified shape is flipped around the horizontal axis.</span>
           </span>
-          <span data-ttu-id="086c3-188">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-215">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-188">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-215">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1756,9 +1828,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-189">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> object que representa el hipervínculo de la forma.</span>
+          <span data-ttu-id="993d6-216">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> object que representa el hipervínculo de la forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-189">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> object that represents the hyperlink for the shape.</span>
+            <span data-stu-id="993d6-216">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> object that represents the hyperlink for the shape.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1789,28 +1861,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-190">Devuelve el tipo del objeto especificado.</span>
+          <span data-ttu-id="993d6-217">Devuelve el tipo del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-190">Returns the type for the specified object.</span>
+            <span data-stu-id="993d6-217">Returns the type for the specified object.</span>
           </span>
-          <span data-ttu-id="086c3-191">
+          <span data-ttu-id="993d6-218">
             <b>Integer</b> de sólo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-191">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="993d6-218">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-192">
-            <para>Puede usar una etiqueta de identificador como referencia de hipervínculo en otros documentos HTML o en la misma página Web.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-192">
-              <para>You can use an ID label as a hyperlink reference in other HTML documents or on the same Web page.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-219">Se puede usar un rótulo de Id. como referencia de hipervínculo en otros documentos HTML o en la misma página Web.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-219">You can use an ID label as a hyperlink reference in other HTML documents or on the same Web page.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1838,24 +1907,24 @@
       </Parameters>
       <Docs>
         <param name="Increment">
-          <span data-ttu-id="086c3-193">
+          <span data-ttu-id="993d6-220">
             <b>Single</b>requerido.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-193">Required <b>Single</b>.</span>
+            <span data-stu-id="993d6-220">Required <b>Single</b>.</span>
           </span>
-          <span data-ttu-id="086c3-194">Especifica cuánto se aleja la forma va a mover horizontalmente en puntos.</span>
+          <span data-ttu-id="993d6-221">Especifica cuánto se aleja la forma va a mover horizontalmente en puntos.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-194">Specifies how far the shape is to be moved horizontally in points.</span>
+            <span data-stu-id="993d6-221">Specifies how far the shape is to be moved horizontally in points.</span>
           </span>
-          <span data-ttu-id="086c3-195">Un valor positivo mueve la forma hacia la derecha; un valor negativo la mueve hacia la izquierda.</span>
+          <span data-ttu-id="993d6-222">Un valor positivo mueve la forma hacia la derecha; un valor negativo la mueve hacia la izquierda.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-195">A positive value moves the shape to the right; a negative value moves it to the left.</span>
+            <span data-stu-id="993d6-222">A positive value moves the shape to the right; a negative value moves it to the left.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-196">Mueve la forma horizontalmente el número de puntos especificado.</span>
+          <span data-ttu-id="993d6-223">Mueve la forma horizontalmente el número de puntos especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-196">Moves the specified shape horizontally by the specified number of points.</span>
+            <span data-stu-id="993d6-223">Moves the specified shape horizontally by the specified number of points.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1885,41 +1954,38 @@
       </Parameters>
       <Docs>
         <param name="Increment">
-          <span data-ttu-id="086c3-197">
+          <span data-ttu-id="993d6-224">
             <b>Single</b>requerido.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-197">Required <b>Single</b>.</span>
+            <span data-stu-id="993d6-224">Required <b>Single</b>.</span>
           </span>
-          <span data-ttu-id="086c3-198">Especifica cuánto se aleja la forma va a girar horizontalmente en grados.</span>
+          <span data-ttu-id="993d6-225">Especifica cuánto se aleja la forma va a girar horizontalmente en grados.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-198">Specifies how far the shape is to be rotated horizontally in degrees.</span>
+            <span data-stu-id="993d6-225">Specifies how far the shape is to be rotated horizontally in degrees.</span>
           </span>
-          <span data-ttu-id="086c3-199">Un valor positivo gira la forma a la derecha; un valor negativo gira a la izquierda.</span>
+          <span data-ttu-id="993d6-226">Un valor positivo gira la forma a la derecha; un valor negativo gira a la izquierda.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-199">A positive value rotates the shape clockwise; a negative value rotates it counterclockwise.</span>
+            <span data-stu-id="993d6-226">A positive value rotates the shape clockwise; a negative value rotates it counterclockwise.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-200">Cambia el giro de la forma alrededor del eje Z el número especificado de grados.</span>
+          <span data-ttu-id="993d6-227">Cambia el giro de la forma alrededor del eje Z el número especificado de grados.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-200">Changes the rotation of the specified shape around the z-axis by the specified number of degrees.</span>
+            <span data-stu-id="993d6-227">Changes the rotation of the specified shape around the z-axis by the specified number of degrees.</span>
           </span>
-          <span data-ttu-id="086c3-201">Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> (propiedad) para establecer el giro absoluto de la forma.</span>
+          <span data-ttu-id="993d6-228">Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> (propiedad) para establecer el giro absoluto de la forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-201">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> property to set the absolute rotation of the shape.</span>
+            <span data-stu-id="993d6-228">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> property to set the absolute rotation of the shape.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="086c3-202">
-            <para>Para girar una forma tridimensional alrededor del eje x o del eje y, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> método.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-202">
-              <para>To rotate a three-dimensional shape around the x-axis or the y-axis, use the <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> method or the <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> method.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-229">Para girar una forma tridimensional alrededor del eje x o del eje y, use el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> (método) o el <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> (método).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-229">To rotate a three-dimensional shape around the x-axis or the y-axis, use the <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> method or the <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> method.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1947,24 +2013,24 @@
       </Parameters>
       <Docs>
         <param name="Increment">
-          <span data-ttu-id="086c3-203">
+          <span data-ttu-id="993d6-230">
             <b>Single</b>requerido.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-203">Required <b>Single</b>.</span>
+            <span data-stu-id="993d6-230">Required <b>Single</b>.</span>
           </span>
-          <span data-ttu-id="086c3-204">Especifica cuánto se aleja el objeto shape es va a mover verticalmente en puntos.</span>
+          <span data-ttu-id="993d6-231">Especifica cuánto se aleja el objeto shape es va a mover verticalmente en puntos.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-204">Specifies how far the shape object is to be moved vertically in points.</span>
+            <span data-stu-id="993d6-231">Specifies how far the shape object is to be moved vertically in points.</span>
           </span>
-          <span data-ttu-id="086c3-205">Un valor positivo mueve la forma hacia abajo; un valor negativo la mueve hacia arriba.</span>
+          <span data-ttu-id="993d6-232">Un valor positivo mueve la forma hacia abajo; un valor negativo la mueve hacia arriba.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-205">A positive value moves the shape down; a negative value moves it up.</span>
+            <span data-stu-id="993d6-232">A positive value moves the shape down; a negative value moves it up.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-206">Mueve la forma verticalmente el número de puntos especificado.</span>
+          <span data-ttu-id="993d6-233">Mueve la forma verticalmente el número de puntos especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-206">Moves the specified shape vertically by the specified number of points.</span>
+            <span data-stu-id="993d6-233">Moves the specified shape vertically by the specified number of points.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1997,13 +2063,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-207">La distancia desde el borde izquierdo del objeto hasta el borde izquierdo de la columna A (en una hoja de cálculo) o el borde izquierdo del área del gráfico (en un gráfico).</span>
+          <span data-ttu-id="993d6-234">La distancia desde el borde izquierdo del objeto hasta el borde izquierdo de la columna A (en una hoja de cálculo) o el borde izquierdo del área del gráfico (en un gráfico).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-207">The distance from the left edge of the object to the left edge of column A (on a worksheet) or the left edge of the chart area (on a chart).</span>
+            <span data-stu-id="993d6-234">The distance from the left edge of the object to the left edge of column A (on a worksheet) or the left edge of the chart area (on a chart).</span>
           </span>
-          <span data-ttu-id="086c3-208">Lectura y escritura <b>único</b>.</span>
+          <span data-ttu-id="993d6-235">Lectura y escritura <b>único</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-208">Read/write <b>Single</b>.</span>
+            <span data-stu-id="993d6-235">Read/write <b>Single</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2034,27 +2100,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-209">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objeto que contiene las propiedades de la forma especificada el formato de línea.</span>
+          <span data-ttu-id="993d6-236">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> objeto que contiene las propiedades de la forma especificada el formato de línea.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-209">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> object that contains line formatting properties for the specified shape.</span>
+            <span data-stu-id="993d6-236">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> object that contains line formatting properties for the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-210">Solo lectura.</span>
+          <span data-ttu-id="993d6-237">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-210">Read-only.</span>
+            <span data-stu-id="993d6-237">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-211">
-            <para>Para una línea, el objeto <b>LineFormat</b> representa la línea en Sí; para una forma con borde, el objeto <b>LineFormat</b> representa el borde.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-211">
-              <para>For a line, the <b>LineFormat</b> object represents the line itself; for a shape with a border, the <b>LineFormat</b> object represents the border.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-238">Para una línea, el objeto <b>LineFormat</b> representa la línea en Sí; para una forma con borde, el objeto <b>LineFormat</b> representa el borde.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-238">For a line, the <b>LineFormat</b> object represents the line itself; for a shape with a border, the <b>LineFormat</b> object represents the border.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2082,13 +2145,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-212">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> objeto que contiene propiedades de objeto OLE vinculado.</span>
+          <span data-ttu-id="993d6-239">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> objeto que contiene propiedades de objeto OLE vinculado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-212">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> object that contains linked OLE object properties.</span>
+            <span data-stu-id="993d6-239">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> object that contains linked OLE object properties.</span>
           </span>
-          <span data-ttu-id="086c3-213">Solo lectura.</span>
+          <span data-ttu-id="993d6-240">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-213">Read-only.</span>
+            <span data-stu-id="993d6-240">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2122,21 +2185,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-214">
+          <span data-ttu-id="993d6-241">
             <b>True</b> si la forma especificada mantiene sus proporciones originales cuando se cambia el tamaño.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-214">
+            <span data-stu-id="993d6-241">
               <b>True</b> if the specified shape retains its original proportions when you resize it.</span>
           </span>
-          <span data-ttu-id="086c3-215">
+          <span data-ttu-id="993d6-242">
             <b>False</b> si puede cambiar el alto y el ancho de la forma independientemente de otra cuando se cambia el tamaño.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-215">
+            <span data-stu-id="993d6-242">
               <b>False</b> if you can change the height and width of the shape independently of one another when you resize it.</span>
           </span>
-          <span data-ttu-id="086c3-216">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-243">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-216">Read/write <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-243">Read/write <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2170,16 +2233,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-217">
+          <span data-ttu-id="993d6-244">
             <b>True</b> si el objeto está bloqueado, <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-217">
+            <span data-stu-id="993d6-244">
               <b>True</b> if the object is locked, <b>False</b> if the object can be modified when the sheet is protected.</span>
           </span>
-          <span data-ttu-id="086c3-218">
+          <span data-ttu-id="993d6-245">
             <b>Boolean</b> de lectura y escritura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-218">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="993d6-245">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2213,91 +2276,162 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-p139">Devuelve o establece el nombre del objeto. <b>String</b> de lectura y escritura.</span>
+          <span data-ttu-id="993d6-p143">Devuelve o establece el nombre del objeto. <b>String</b> de lectura y escritura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-p139">Returns or sets the name of the object. Read/write <b>String</b>.</span>
+            <span data-stu-id="993d6-p143">Returns or sets the name of the object. Read/write <b>String</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-221">
-            <para>La siguiente tabla muestran valores de ejemplo de la propiedad <b>Name</b> y las propiedades relacionadas dados un origen de datos OLAP con el nombre único "[Europe]. [France]. [Paris] "y el nombre de un origen de datos no OLAP con el elemento"Paris".</para>
-            <list type="table">
-              <item>
-                <term>
-                  <b>Título</b>
-                </term>
-                <description>París</description>
-                <description>París</description>
-              </item>
-              <item>
-                <term>
-                  <b>nombre</b>
-                </term>
-                <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-                <description>París</description>
-              </item>
-              <item>
-                <term>
-                  <b>SourceName</b>
-                </term>
-                <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-                <description>(Igual que el valor de la propiedad SQL, sólo lectura)</description>
-              </item> El 
-              <term><b>valor</b></term>de 
-            <item><description>[Europe]. [ Francia]. [Paris] (solo lectura)</description><description>París</description></item></list>
-            <para>Cuando se especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para> expresión de 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>Expression.PivotItems("Paris")</description></item></list><para>cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para><list type="table"><item><term>[Europe]. [ Francia]. [Paris]</term><description>París</description></item></list><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-221">
-              <para>The following table shows example values of the <b>Name</b> property and related properties given an OLAP data source with the unique name "[Europe].[France].[Paris]" and a non-OLAP data source with the item name "Paris".</para>
-              <list type="table">
-                <item>
-                  <term>
-                    <b>Caption</b>
-                  </term>
-                  <description>Paris</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Name</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>SourceName</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>(Same as SQL property value, read-only)</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Value</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-              </list>
-              <para>When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</para>
-              <list type="table">
-                <item>
-                  <term>expression.PivotItems("[Europe].[France].[Paris]")</term>
-                  <description>Expression.PivotItems("Paris")</description>
-                </item>
-              </list>
-              <para>When using the <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> property to reference a specific member of a collection, you can use the text index name as shown in the following table.</para>
-              <list type="table">
-                <item>
-                  <term>[Europe].[France].[Paris]</term>
-                  <description>Paris</description>
-                </item>
-              </list>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-248">En la siguiente tabla se muestran valores de ejemplo de la propiedad <b>Name</b> y otras propiedades relacionadas partiendo de un origen de datos OLAP con el nombre exclusivo "[Europe].[France].[Paris]" y un origen de datos no OLAP con el nombre de elemento "Paris".</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-248">The following table shows example values of the <b>Name</b> property and related properties given an OLAP data source with the unique name "[Europe].[France].[Paris]" and a non-OLAP data source with the item name "Paris".</span>
             </span>
-          </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="993d6-249">
+                  <b>Título</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-249">
+                    <b>Caption</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-250">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-250">Paris</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="993d6-251">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-251">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="993d6-252">
+                  <b>Nombre</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-252">
+                    <b>Name</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-253">[Europe].[France].[Paris] (sólo lectura)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-253">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="993d6-254">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-254">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="993d6-255">
+                  <b>SourceName</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-255">
+                    <b>SourceName</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-256">[Europe].[France].[Paris] (sólo lectura)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-256">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="993d6-257">(igual que el valor de la propiedad SQL, sólo lectura)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-257">(Same as SQL property value, read-only)</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="993d6-258">
+                  <b>Valor</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-258">
+                    <b>Value</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-259">[Europe].[France].[Paris] (sólo lectura)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-259">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="993d6-260">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-260">Paris</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="993d6-261">Cuando especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-261">When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="993d6-262">expresión. PivotItems ("[Europe]. [ Francia]. [Paris] ")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-262">expression.PivotItems("[Europe].[France].[Paris]")</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-263">Expression.PivotItems("Paris")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-263">Expression.PivotItems("Paris")</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="993d6-264">Cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-264">When using the <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> property to reference a specific member of a collection, you can use the text index name as shown in the following table.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="993d6-265">[Europe]. [France]. [Paris]</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-265">[Europe].[France].[Paris]</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-266">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-266">Paris</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2325,13 +2459,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-222">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> colección que representa la descripción geométrica de la forma especificada.</span>
+          <span data-ttu-id="993d6-267">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> colección que representa la descripción geométrica de la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-222">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection that represents the geometric description of the specified shape.</span>
+            <span data-stu-id="993d6-267">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection that represents the geometric description of the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-223">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan dibujos de forma libre.</span>
+          <span data-ttu-id="993d6-268">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan dibujos de forma libre.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-223">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent freeform drawings.</span>
+            <span data-stu-id="993d6-268">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent freeform drawings.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2362,13 +2496,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-224">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objeto que contiene las propiedades del objeto OLE.</span>
+          <span data-ttu-id="993d6-269">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objeto que contiene las propiedades del objeto OLE.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-224">Returns an <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> object that contains OLE object properties.</span>
+            <span data-stu-id="993d6-269">Returns an <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> object that contains OLE object properties.</span>
           </span>
-          <span data-ttu-id="086c3-225">Solo lectura.</span>
+          <span data-ttu-id="993d6-270">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-225">Read-only.</span>
+            <span data-stu-id="993d6-270">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2402,23 +2536,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-p142">Devuelve o establece el nombre de una macro que se ejecuta al hacer clic en el objeto especificado. <b>String</b> de lectura y escritura.</span>
+          <span data-ttu-id="993d6-p146">Devuelve o establece el nombre de una macro que se ejecuta al hacer clic en el objeto especificado. <b>String</b> de lectura y escritura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-p142">Returns or sets the name of a macro that’s run when the specified object is clicked. Read/write <b>String</b>.</span>
+            <span data-stu-id="993d6-p146">Returns or sets the name of a macro that’s run when the specified object is clicked. Read/write <b>String</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-228">
-            <para>Al establecer esta propiedad para un elemento de menú invalida cualquier ayuda personalizada configura información configurada para el elemento de menú con la información de la macro asignada.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-228">
-              <para>Setting this property for a menu item overrides any custom help information set up for the menu item with the information set up for the assigned macro.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-273">Al establecer esta propiedad para un elemento de menú, se reemplaza la información de la ayuda personalizada del elemento por la información específica de la macro asignada.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-273">Setting this property for a menu item overrides any custom help information set up for the menu item with the information set up for the assigned macro.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2446,9 +2577,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-p143">Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</span>
+          <span data-ttu-id="993d6-p147">Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-p143">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="993d6-p147">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2479,9 +2610,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-231">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto que representa la forma primaria común de una forma secundaria o un intervalo de formas secundarias.</span>
+          <span data-ttu-id="993d6-276">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto que representa la forma primaria común de una forma secundaria o un intervalo de formas secundarias.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-231">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the common parent shape of a child shape or a range of child shapes.</span>
+            <span data-stu-id="993d6-276">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the common parent shape of a child shape or a range of child shapes.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2510,13 +2641,13 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-232">Copia el formato de la forma especificada.</span>
+          <span data-ttu-id="993d6-277">Copia el formato de la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-232">Copies the formatting of the specified shape.</span>
+            <span data-stu-id="993d6-277">Copies the formatting of the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-233">Usar el <see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" /> (método) para aplicar el formato copiado a otra forma.</span>
+          <span data-ttu-id="993d6-278">Usar el <see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" /> (método) para aplicar el formato copiado a otra forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-233">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" /> method to apply the copied formatting to another shape.</span>
+            <span data-stu-id="993d6-278">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" /> method to apply the copied formatting to another shape.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -2546,17 +2677,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-234">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objeto que contiene las propiedades de la forma especificada el formato de imagen.</span>
+          <span data-ttu-id="993d6-279">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objeto que contiene las propiedades de la forma especificada el formato de imagen.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-234">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> object that contains picture formatting properties for the specified shape.</span>
+            <span data-stu-id="993d6-279">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> object that contains picture formatting properties for the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-235">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan imágenes u objetos OLE.</span>
+          <span data-ttu-id="993d6-280">Se aplica a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objetos que representan imágenes u objetos OLE.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-235">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent pictures or OLE objects.</span>
+            <span data-stu-id="993d6-280">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent pictures or OLE objects.</span>
           </span>
-          <span data-ttu-id="086c3-236">Solo lectura.</span>
+          <span data-ttu-id="993d6-281">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-236">Read-only.</span>
+            <span data-stu-id="993d6-281">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2590,13 +2721,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-237">Devuelve o establece la forma en que el objeto está unido a las celdas situadas debajo de él.</span>
+          <span data-ttu-id="993d6-282">Devuelve o establece la forma en que el objeto está unido a las celdas situadas debajo de él.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-237">Returns or sets the way the object is attached to the cells below it.</span>
+            <span data-stu-id="993d6-282">Returns or sets the way the object is attached to the cells below it.</span>
           </span>
-          <span data-ttu-id="086c3-238">Lectura y escritura <see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" />.</span>
+          <span data-ttu-id="993d6-283">Lectura y escritura <see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-238">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" />.</span>
+            <span data-stu-id="993d6-283">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2627,13 +2758,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-239">Devuelve un objeto que contiene propiedades de la forma de formato de reflejo.</span>
+          <span data-ttu-id="993d6-284">Devuelve un objeto que contiene propiedades de la forma de formato de reflejo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-239">Returns an object that contains reflection formatting properties for the shape.</span>
+            <span data-stu-id="993d6-284">Returns an object that contains reflection formatting properties for the shape.</span>
           </span>
-          <span data-ttu-id="086c3-240">Solo lectura.</span>
+          <span data-ttu-id="993d6-285">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-240">Read-only.</span>
+            <span data-stu-id="993d6-285">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -2664,24 +2795,29 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-241">Redistribuye los conectores para que tomen la ruta más corta posible entre las formas que conectan.</span>
+          <span data-ttu-id="993d6-286">Redistribuye los conectores para que tomen la ruta más corta posible entre las formas que conectan.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-241">Reroutes connectors so that they take the shortest possible path between the shapes they connect.</span>
+            <span data-stu-id="993d6-286">Reroutes connectors so that they take the shortest possible path between the shapes they connect.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="086c3-242">
-            <para>Para usar la ruta de acceso más corta, el método <b>RerouteConnections</b> puede separar los finales de un conector y volver a conectarlos a sitios de conexión diferentes en las formas conectadas. Este método redistribuye todos los conectores adjuntos a la forma especificada; Si la forma especificada es un conector, se redistribuirá.</para>
-            <para>Si este método se aplica a un conector, sólo que se redistribuirá. Si este método se aplica a una forma conectada, se redistribuirá todos los conectores a dicha forma.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-242">
-              <para>To use the shortest path, the <b>RerouteConnections</b> method may detach the ends of a connector and reattach them to different connecting sites on the connected shapes. This method reroutes all connectors attached to the specified shape; if the specified shape is a connector, it’s rerouted.</para>
-              <para>If this method is applied to a connector, only that connector will be rerouted. If this method is applied to a connected shape, all connectors to that shape will be rerouted.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-287">Para usar la ruta de acceso más corta, el método <b>RerouteConnections</b> puede separar los finales de un conector y volver a conectarlos a sitios de conexión diferentes en las formas conectadas.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-287">To use the shortest path, the <b>RerouteConnections</b> method may detach the ends of a connector and reattach them to different connecting sites on the connected shapes.</span>
             </span>
-          </span>
+            <span data-ttu-id="993d6-288">Este método cambia la ruta de todos los conectores adjuntos a la forma especificada; si la forma especificada es un conector, se cambia la ruta.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-288">This method reroutes all connectors attached to the specified shape; if the specified shape is a connector, it’s rerouted.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="993d6-p153">Si este método se aplica a un conector, sólo se volverá a redistribuir dicho conector. Si este método se aplica a una forma conectada, se volverán a redistribuir todos los conectores a dicha forma.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-p153">If this method is applied to a connector, only that connector will be rerouted. If this method is applied to a connected shape, all connectors to that shape will be rerouted.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2712,13 +2848,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-243">Devuelve o establece el giro de la forma en grados.</span>
+          <span data-ttu-id="993d6-291">Devuelve o establece el giro de la forma en grados.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-243">Returns or sets the rotation of the shape in degrees.</span>
+            <span data-stu-id="993d6-291">Returns or sets the rotation of the shape in degrees.</span>
           </span>
-          <span data-ttu-id="086c3-244">Lectura y escritura <b>único</b>.</span>
+          <span data-ttu-id="993d6-292">Lectura y escritura <b>único</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-244">Read/write <b>Single</b>.</span>
+            <span data-stu-id="993d6-292">Read/write <b>Single</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2750,69 +2886,70 @@
       </Parameters>
       <Docs>
         <param name="Factor">
-          <span data-ttu-id="086c3-245">
+          <span data-ttu-id="993d6-293">
             <b>Single</b>requerido.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-245">Required <b>Single</b>.</span>
+            <span data-stu-id="993d6-293">Required <b>Single</b>.</span>
           </span>
-          <span data-ttu-id="086c3-246">Especifica la proporción entre el alto de la forma después de cambiar su tamaño y el alto original o actual.</span>
+          <span data-ttu-id="993d6-294">Especifica la proporción entre el alto de la forma después de cambiar su tamaño y el alto original o actual.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-246">Specifies the ratio between the height of the shape after you resize it and the current or original height.</span>
+            <span data-stu-id="993d6-294">Specifies the ratio between the height of the shape after you resize it and the current or original height.</span>
           </span>
-          <span data-ttu-id="086c3-247">Por ejemplo, para aumentar en un 50% el tamaño de un rectángulo, especifique 1,5 para este argumento.</span>
+          <span data-ttu-id="993d6-295">Por ejemplo, para aumentar en un 50% el tamaño de un rectángulo, especifique 1,5 para este argumento.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-247">For example, to make a rectangle 50 percent larger, specify 1.5 for this argument.</span>
+            <span data-stu-id="993d6-295">For example, to make a rectangle 50 percent larger, specify 1.5 for this argument.</span>
           </span>
         </param>
         <param name="RelativeToOriginalSize">
-          <span data-ttu-id="086c3-248">Requiere <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-296">Requiere <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-248">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-296">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
-          <span data-ttu-id="086c3-249">
+          <span data-ttu-id="993d6-297">
             <b>msoTrue</b> para escalar la forma respecto a su tamaño original.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-249">
+            <span data-stu-id="993d6-297">
               <b>msoTrue</b> to scale the shape relative to its original size.</span>
           </span>
-          <span data-ttu-id="086c3-250">
+          <span data-ttu-id="993d6-298">
             <b>msoFalse</b> para escalar respecto a su tamaño actual.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-250">
+            <span data-stu-id="993d6-298">
               <b>msoFalse</b> to scale it relative to its current size.</span>
           </span>
-          <span data-ttu-id="086c3-251">Puede especificar <b>msoTrue</b> para este argumento sólo si la forma especificada es una imagen o un objeto OLE.</span>
+          <span data-ttu-id="993d6-299">Puede especificar <b>msoTrue</b> para este argumento sólo si la forma especificada es una imagen o un objeto OLE.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-251">You can specify <b>msoTrue</b> for this argument only if the specified shape is a picture or an OLE object.</span>
+            <span data-stu-id="993d6-299">You can specify <b>msoTrue</b> for this argument only if the specified shape is a picture or an OLE object.</span>
           </span>
         </param>
         <param name="Scale">
-          <span data-ttu-id="086c3-252">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
+          <span data-ttu-id="993d6-300">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-252">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
+            <span data-stu-id="993d6-300">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
           </span>
-          <span data-ttu-id="086c3-253">Especifica qué parte de la forma mantiene su posición cuando se ajusta el tamaño de la forma.</span>
+          <span data-ttu-id="993d6-301">Especifica qué parte de la forma mantiene su posición cuando se ajusta el tamaño de la forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-253">Specifies which part of the shape retains its position when the shape is scaled.</span>
+            <span data-stu-id="993d6-301">Specifies which part of the shape retains its position when the shape is scaled.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-254">Aplica una escala al alto de la forma con el factor especificado.</span>
+          <span data-ttu-id="993d6-302">Aplica una escala al alto de la forma con el factor especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-254">Scales the height of the shape by a specified factor.</span>
+            <span data-stu-id="993d6-302">Scales the height of the shape by a specified factor.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="086c3-255">
-            <para>Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al original o al tamaño actual. Formas que no son imágenes y objetos OLE siempre se escalan respecto a su alto actual.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-255">
-              <para>For pictures and OLE objects, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures and OLE objects are always scaled relative to their current height.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-303">Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al original o al tamaño actual.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-303">For pictures and OLE objects, you can indicate whether you want to scale the shape relative to the original or the current size.</span>
             </span>
-          </span>
+            <span data-ttu-id="993d6-304">El tamaño de las formas distintas de imágenes y objetos OLE siempre se ajusta en relación con su alto actual.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-304">Shapes other than pictures and OLE objects are always scaled relative to their current height.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2841,61 +2978,62 @@
       </Parameters>
       <Docs>
         <param name="Factor">
-          <span data-ttu-id="086c3-256">
+          <span data-ttu-id="993d6-305">
             <b>Single</b>requerido.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-256">Required <b>Single</b>.</span>
+            <span data-stu-id="993d6-305">Required <b>Single</b>.</span>
           </span>
-          <span data-ttu-id="086c3-257">Especifica la proporción entre el ancho de la forma después de cambiar su tamaño y el ancho original o actual.</span>
+          <span data-ttu-id="993d6-306">Especifica la proporción entre el ancho de la forma después de cambiar su tamaño y el ancho original o actual.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-257">Specifies the ratio between the width of the shape after you resize it and the current or original width.</span>
+            <span data-stu-id="993d6-306">Specifies the ratio between the width of the shape after you resize it and the current or original width.</span>
           </span>
-          <span data-ttu-id="086c3-258">Por ejemplo, para aumentar en un 50% el tamaño de un rectángulo, especifique 1,5 para este argumento.</span>
+          <span data-ttu-id="993d6-307">Por ejemplo, para aumentar en un 50% el tamaño de un rectángulo, especifique 1,5 para este argumento.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-258">For example, to make a rectangle 50 percent larger, specify 1.5 for this argument.</span>
+            <span data-stu-id="993d6-307">For example, to make a rectangle 50 percent larger, specify 1.5 for this argument.</span>
           </span>
         </param>
         <param name="RelativeToOriginalSize">
-          <span data-ttu-id="086c3-259">Requiere <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-308">Requiere <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-259">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-308">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
-          <span data-ttu-id="086c3-260">False para cambiarlo con relación a su tamaño actual.</span>
+          <span data-ttu-id="993d6-309">False para cambiarlo con relación a su tamaño actual.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-260">False to scale it relative to its current size.</span>
+            <span data-stu-id="993d6-309">False to scale it relative to its current size.</span>
           </span>
-          <span data-ttu-id="086c3-261">Puede especificar True para este argumento sólo si la forma especificada es una imagen o un objeto OLE.</span>
+          <span data-ttu-id="993d6-310">Puede especificar True para este argumento sólo si la forma especificada es una imagen o un objeto OLE.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-261">You can specify True for this argument only if the specified shape is a picture or an OLE object.</span>
+            <span data-stu-id="993d6-310">You can specify True for this argument only if the specified shape is a picture or an OLE object.</span>
           </span>
         </param>
         <param name="Scale">
-          <span data-ttu-id="086c3-262">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
+          <span data-ttu-id="993d6-311">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-262">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
+            <span data-stu-id="993d6-311">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
           </span>
-          <span data-ttu-id="086c3-263">Especifica qué parte de la forma mantiene su posición cuando se ajusta el tamaño de la forma.</span>
+          <span data-ttu-id="993d6-312">Especifica qué parte de la forma mantiene su posición cuando se ajusta el tamaño de la forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-263">Specifies which part of the shape retains its position when the shape is scaled.</span>
+            <span data-stu-id="993d6-312">Specifies which part of the shape retains its position when the shape is scaled.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-264">Aplica una escala al ancho de la forma con el factor especificado.</span>
+          <span data-ttu-id="993d6-313">Aplica una escala al ancho de la forma con el factor especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-264">Scales the width of the shape by a specified factor.</span>
+            <span data-stu-id="993d6-313">Scales the width of the shape by a specified factor.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="086c3-265">
-            <para>Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al original o al tamaño actual. Formas que no son imágenes y objetos OLE siempre se escalan respecto a su ancho actual.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-265">
-              <para>For pictures and OLE objects, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures and OLE objects are always scaled relative to their current width.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-314">Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al original o al tamaño actual.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-314">For pictures and OLE objects, you can indicate whether you want to scale the shape relative to the original or the current size.</span>
             </span>
-          </span>
+            <span data-ttu-id="993d6-315">El tamaño de las formas distintas de imágenes y objetos OLE siempre se ajusta con relación a su ancho actual.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-315">Shapes other than pictures and OLE objects are always scaled relative to their current width.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -2926,9 +3064,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-p155">Devuelve el objeto <b>Script</b>, que representa un bloque de secuencias de comandos o código de la página Web especificada. Si la página no contiene secuencias de comandos, no se devuelve nada.</span>
+          <span data-ttu-id="993d6-p163">Devuelve el objeto <b>Script</b>, que representa un bloque de secuencias de comandos o código de la página Web especificada. Si la página no contiene secuencias de comandos, no se devuelve nada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-p155">Returns the <b>Script</b> object, which represents a block of script or code on the specified Web page. If the page contains no script, nothing is returned.</span>
+            <span data-stu-id="993d6-p163">Returns the <b>Script</b> object, which represents a block of script or code on the specified Web page. If the page contains no script, nothing is returned.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -2958,33 +3096,34 @@
       </Parameters>
       <Docs>
         <param name="Replace">
-          <span data-ttu-id="086c3-268">
+          <span data-ttu-id="993d6-318">
             <b>Objeto</b>de opcional.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-268">Optional <b>Object</b>.</span>
+            <span data-stu-id="993d6-318">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="086c3-269">Objeto que se va a reemplazar.</span>
+          <span data-ttu-id="993d6-319">Objeto que se va a reemplazar.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-269">The object to replace.</span>
+            <span data-stu-id="993d6-319">The object to replace.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-270">Selecciona el objeto.</span>
+          <span data-ttu-id="993d6-320">Selecciona el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-270">Selects the object.</span>
+            <span data-stu-id="993d6-320">Selects the object.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="086c3-271">
-            <para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> . Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> método.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-271">
-              <para>To select a cell or a range of cells, use the <b>Select</b> method. To make a single cell the active cell, use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> method.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-321">Para seleccionar una celda o un rango de celdas, use el método <b>Select</b> .</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-321">To select a cell or a range of cells, use the <b>Select</b> method.</span>
             </span>
-          </span>
+            <span data-ttu-id="993d6-322">Para hacer que la celda activa de una sola celda, use la <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> (método).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-322">To make a single cell the active cell, use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> method.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3010,9 +3149,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-272">Convierte el formato de la forma especificada en el formato predeterminado de la forma.</span>
+          <span data-ttu-id="993d6-323">Convierte el formato de la forma especificada en el formato predeterminado de la forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-272">Makes the formatting of the specified shape the default formatting for the shape.</span>
+            <span data-stu-id="993d6-323">Makes the formatting of the specified shape the default formatting for the shape.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -3042,16 +3181,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-273">
+          <span data-ttu-id="993d6-324">
             <b>True</b> si el objeto tiene una sombra.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-273">
+            <span data-stu-id="993d6-324">
               <b>True</b> if the object has a shadow.</span>
           </span>
-          <span data-ttu-id="086c3-274">
+          <span data-ttu-id="993d6-325">
             <b>Boolean</b> de lectura y escritura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-274">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="993d6-325">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3085,13 +3224,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-275">Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> que representa el estilo de la forma de la forma.</span>
+          <span data-ttu-id="993d6-326">Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> que representa el estilo de la forma de la forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-275">Returns or sets a <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> that represents the shape style of the shape.</span>
+            <span data-stu-id="993d6-326">Returns or sets a <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> that represents the shape style of the shape.</span>
           </span>
-          <span data-ttu-id="086c3-276">Lectura y escritura.</span>
+          <span data-ttu-id="993d6-327">Lectura y escritura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-276">Read/write.</span>
+            <span data-stu-id="993d6-327">Read/write.</span>
           </span>
         </summary>
         <value>
@@ -3124,28 +3263,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-277">Obtiene un objeto object que representa el SmartArt asociado con la forma.</span>
+          <span data-ttu-id="993d6-328">Obtiene un objeto object que representa el SmartArt asociado con la forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-277">Gets an object that represents the SmartArt associated with the shape.</span>
+            <span data-stu-id="993d6-328">Gets an object that represents the SmartArt associated with the shape.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="086c3-278">Un objeto object que representa el SmartArt asociado con la forma.</span>
+          <span data-ttu-id="993d6-329">Un objeto object que representa el SmartArt asociado con la forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-278">An object that represents the SmartArt associated with the shape.</span>
+            <span data-stu-id="993d6-329">An object that represents the SmartArt associated with the shape.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="086c3-279">
-            <para>De sólo lectura.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-279">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-330">Solo lectura.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-330">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3173,13 +3309,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-280">Devuelve un <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> objeto para una forma especificada que contiene propiedades de la forma de formato de borde suave.</span>
+          <span data-ttu-id="993d6-331">Devuelve un <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> objeto para una forma especificada que contiene propiedades de la forma de formato de borde suave.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-280">Returns a <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> object for a specified shape that contains soft edge formatting properties for the shape.</span>
+            <span data-stu-id="993d6-331">Returns a <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> object for a specified shape that contains soft edge formatting properties for the shape.</span>
           </span>
-          <span data-ttu-id="086c3-281">Solo lectura.</span>
+          <span data-ttu-id="993d6-332">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-281">Read-only.</span>
+            <span data-stu-id="993d6-332">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -3212,17 +3348,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-282">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objeto que contiene propiedades de formato de efecto de texto de la forma especificada.</span>
+          <span data-ttu-id="993d6-333">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objeto que contiene propiedades de formato de efecto de texto de la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-282">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> object that contains text-effect formatting properties for the specified shape.</span>
+            <span data-stu-id="993d6-333">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> object that contains text-effect formatting properties for the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-283">Se aplica a los objetos <b>T:Microsoft.Office.Interop.Excel.Shape</b> que representan WordArt.</span>
+          <span data-ttu-id="993d6-334">Se aplica a los objetos <b>T:Microsoft.Office.Interop.Excel.Shape</b> que representan WordArt.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-283">Applies to <b>T:Microsoft.Office.Interop.Excel.Shape</b> objects that represent WordArt.</span>
+            <span data-stu-id="993d6-334">Applies to <b>T:Microsoft.Office.Interop.Excel.Shape</b> objects that represent WordArt.</span>
           </span>
-          <span data-ttu-id="086c3-284">Solo lectura.</span>
+          <span data-ttu-id="993d6-335">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-284">Read-only.</span>
+            <span data-stu-id="993d6-335">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3253,13 +3389,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-285">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objeto que contiene la alineación y delimitación de propiedades de la forma especificada.</span>
+          <span data-ttu-id="993d6-336">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> objeto que contiene la alineación y delimitación de propiedades de la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-285">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> object that contains the alignment and anchoring properties for the specified shape.</span>
+            <span data-stu-id="993d6-336">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> object that contains the alignment and anchoring properties for the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-286">Solo lectura.</span>
+          <span data-ttu-id="993d6-337">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-286">Read-only.</span>
+            <span data-stu-id="993d6-337">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3290,13 +3426,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-287">Devuelve un objeto que contiene el formato de texto para la forma especificada.</span>
+          <span data-ttu-id="993d6-338">Devuelve un objeto que contiene el formato de texto para la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-287">Returns an object that contains text formatting for the specified shape.</span>
+            <span data-stu-id="993d6-338">Returns an object that contains text formatting for the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-288">Solo lectura.</span>
+          <span data-ttu-id="993d6-339">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-288">Read-only.</span>
+            <span data-stu-id="993d6-339">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -3329,13 +3465,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-289">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto que contiene las propiedades de la forma especificada el formato de efectos 3D.</span>
+          <span data-ttu-id="993d6-340">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto que contiene las propiedades de la forma especificada el formato de efectos 3D.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-289">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> object that contains 3-D – effect formatting properties for the specified shape.</span>
+            <span data-stu-id="993d6-340">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> object that contains 3-D – effect formatting properties for the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-290">Solo lectura.</span>
+          <span data-ttu-id="993d6-341">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-290">Read-only.</span>
+            <span data-stu-id="993d6-341">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3369,30 +3505,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-291">Obtiene o establece el título del texto alternativo asociado a la forma especificada.</span>
+          <span data-ttu-id="993d6-342">Obtiene o establece el título del texto alternativo asociado a la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-291">Gets or sets the title of the alternative text associated with the specified shape.</span>
+            <span data-stu-id="993d6-342">Gets or sets the title of the alternative text associated with the specified shape.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="086c3-292">El título del texto alternativo asociado a la forma especificada.</span>
+          <span data-ttu-id="993d6-343">El título del texto alternativo asociado a la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-292">The title of the alternative text associated with the specified shape.</span>
+            <span data-stu-id="993d6-343">The title of the alternative text associated with the specified shape.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="086c3-293">
-            <para>Lectura y escritura.</para>
-            <para>Para establecer la cadena de texto descriptivo del texto alternativo para una forma, utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> (propiedad).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-293">
-              <para>Read/write.</para>
-              <para>To set the descriptive text string of the alternative text for a shape, use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-344">Lectura y escritura.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-344">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="993d6-345">Para establecer la cadena de texto descriptivo del texto alternativo para una forma, utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> (propiedad).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-345">To set the descriptive text string of the alternative text for a shape, use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> property.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3423,13 +3560,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-294">La distancia desde el borde superior de la forma superior del rango hasta el borde superior de la hoja de cálculo.</span>
+          <span data-ttu-id="993d6-346">La distancia desde el borde superior de la forma superior del rango hasta el borde superior de la hoja de cálculo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-294">The distance from the top edge of the topmost shape in the shape range to the top edge of the worksheet.</span>
+            <span data-stu-id="993d6-346">The distance from the top edge of the topmost shape in the shape range to the top edge of the worksheet.</span>
           </span>
-          <span data-ttu-id="086c3-295">Lectura y escritura <b>único</b>.</span>
+          <span data-ttu-id="993d6-347">Lectura y escritura <b>único</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-295">Read/write <b>Single</b>.</span>
+            <span data-stu-id="993d6-347">Read/write <b>Single</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3460,13 +3597,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-296">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina superior izquierda del objeto especificado.</span>
+          <span data-ttu-id="993d6-348">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina superior izquierda del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-296">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the cell that lies under the upper-left corner of the specified object.</span>
+            <span data-stu-id="993d6-348">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the cell that lies under the upper-left corner of the specified object.</span>
           </span>
-          <span data-ttu-id="086c3-297">Solo lectura.</span>
+          <span data-ttu-id="993d6-349">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-297">Read-only.</span>
+            <span data-stu-id="993d6-349">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3497,13 +3634,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-298">Devuelve o establece el tipo de forma.</span>
+          <span data-ttu-id="993d6-350">Devuelve o establece el tipo de forma.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-298">Returns or sets the shape type.</span>
+            <span data-stu-id="993d6-350">Returns or sets the shape type.</span>
           </span>
-          <span data-ttu-id="086c3-299">Read-only <see cref="T:Microsoft.Office.Core.MsoShapeType" />.</span>
+          <span data-ttu-id="993d6-351">Read-only <see cref="T:Microsoft.Office.Core.MsoShapeType" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-299">Read-only <see cref="T:Microsoft.Office.Core.MsoShapeType" />.</span>
+            <span data-stu-id="993d6-351">Read-only <see cref="T:Microsoft.Office.Core.MsoShapeType" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3532,31 +3669,28 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-300">Desagrupa las formas agrupadas en la forma especificada o intervalo de formas.</span>
+          <span data-ttu-id="993d6-352">Desagrupa las formas agrupadas en la forma especificada o intervalo de formas.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-300">Ungroups any grouped shapes in the specified shape or range of shapes.</span>
+            <span data-stu-id="993d6-352">Ungroups any grouped shapes in the specified shape or range of shapes.</span>
           </span>
-          <span data-ttu-id="086c3-301">Separa las imágenes y objetos OLE dentro de la forma especificada.</span>
+          <span data-ttu-id="993d6-353">Separa las imágenes y objetos OLE dentro de la forma especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-301">Disassembles pictures and OLE objects within the specified shape.</span>
+            <span data-stu-id="993d6-353">Disassembles pictures and OLE objects within the specified shape.</span>
           </span>
-          <span data-ttu-id="086c3-302">Devuelve las formas desagrupadas como un único <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto.</span>
+          <span data-ttu-id="993d6-354">Devuelve las formas desagrupadas como un único <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-302">Returns the ungrouped shapes as a single <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object.</span>
+            <span data-stu-id="993d6-354">Returns the ungrouped shapes as a single <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="086c3-303">
-            <para>Debido a que un grupo de formas se trata como un único objeto, agrupar y desagrupar formas cambia el número de elementos de la colección <b>Shapes</b> y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-303">
-              <para>Because a group of shapes is treated as a single object, grouping and ungrouping shapes changes the number of items in the <b>Shapes</b> collection and changes the index numbers of items that come after the affected items in the collection.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-355">Debido a que un grupo de formas se trata como un único objeto, al agrupar y desagrupar formas cambia el número de elementos de la colección <b>Shapes</b> y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-355">Because a group of shapes is treated as a single object, grouping and ungrouping shapes changes the number of items in the <b>Shapes</b> collection and changes the index numbers of items that come after the affected items in the collection.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3584,15 +3718,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-304">
+          <span data-ttu-id="993d6-356">
             <b>True</b> si la forma especificada está volteada alrededor del eje vertical.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-304">
+            <span data-stu-id="993d6-356">
               <b>True</b> if the specified shape is flipped around the vertical axis.</span>
           </span>
-          <span data-ttu-id="086c3-305">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-357">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-305">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-357">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3623,81 +3757,116 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-306">Devuelve las coordenadas de los vértices del dibujo forma libre especificado (y los puntos de control para curvas Bézier) como una serie de pares de coordenadas.</span>
+          <span data-ttu-id="993d6-358">Devuelve las coordenadas de los vértices del dibujo forma libre especificado (y los puntos de control para curvas Bézier) como una serie de pares de coordenadas.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-306">Returns the coordinates of the specified freeform drawing's vertices (and control points for Bézier curves) as a series of coordinate pairs.</span>
+            <span data-stu-id="993d6-358">Returns the coordinates of the specified freeform drawing's vertices (and control points for Bézier curves) as a series of coordinate pairs.</span>
           </span>
-          <span data-ttu-id="086c3-307">Read-only <b>objeto</b>.</span>
+          <span data-ttu-id="993d6-359">Read-only <b>objeto</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-307">Read-only <b>Object</b>.</span>
+            <span data-stu-id="993d6-359">Read-only <b>Object</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-308">
-            <para>Puede usar la matriz devuelta por esta propiedad como un argumento a la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> método o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> método.</para>
-            <para>En la tabla siguiente se muestra cómo la propiedad <b>Vertices</b> asocia los valores de la matriz vertArray() con las coordenadas de los vértices del triángulo.</para>
-            <list type="table">
-              <item>
-                <term>vertArray (1, 1)</term>
-                <description>distancia horizontal desde el primer vértice hasta el lado izquierdo del documento</description>
-              </item>
-              <item>
-                <term>vertArray (1, 2)</term>
-                <description>distancia vertical desde el primer vértice hasta la parte superior del documento</description>
-              </item>
-              <item>
-                <term> vertArray (2, 1)</term>
-                <description>la distancia horizontal desde el segundo vértice hasta el lado izquierdo del documento</description>
-              </item>
-              <item>
-                <term>vertArray (2, 2)</term>
-                <description>distancia vertical desde el segundo vértice hasta la parte superior del documento</description>
-              </item>
-              <item>
-                <term> vertArray (3, 1)</term>
-                <description>la distancia horizontal desde el tercer vértice hasta el lado izquierdo del documento</description>
-              </item>
-              <item>
-                <term>vertArray (3, 2)</term>
-                <description>la distancia vertical desde el tercer vértice hasta la parte superior del documento</description>
-              </item>
-            </list>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-308">
-              <para>You can use the array returned by this property as an argument to the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> method or <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> method.</para>
-              <para>The following table shows how the <b>Vertices</b> property associates the values in the array vertArray() with the coordinates of a triangle's vertices.</para>
-              <list type="table">
-                <item>
-                  <term>vertArray(1, 1)</term>
-                  <description>The horizontal distance from the first vertex to the left side of the document</description>
-                </item>
-                <item>
-                  <term>vertArray(1, 2)</term>
-                  <description>The vertical distance from the first vertex to the top of the document</description>
-                </item>
-                <item>
-                  <term>vertArray(2, 1)</term>
-                  <description>The horizontal distance from the second vertex to the left side of the document</description>
-                </item>
-                <item>
-                  <term>vertArray(2, 2)</term>
-                  <description>The vertical distance from the second vertex to the top of the document</description>
-                </item>
-                <item>
-                  <term>vertArray(3, 1)</term>
-                  <description>The horizontal distance from the third vertex to the left side of the document</description>
-                </item>
-                <item>
-                  <term>vertArray(3, 2)</term>
-                  <description>The vertical distance from the third vertex to the top of the document</description>
-                </item>
-              </list>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-360">Puede usar la matriz devuelta por esta propiedad como un argumento a la <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> método o <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> (método).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-360">You can use the array returned by this property as an argument to the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> method or <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> method.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="993d6-361">La tabla siguiente muestra cómo la propiedad <b>Vertices</b> asocia los valores de la matriz vertArray() a las coordenadas de los vértices de un triángulo.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-361">The following table shows how the <b>Vertices</b> property associates the values in the array vertArray() with the coordinates of a triangle's vertices.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="993d6-362">vertArray (1, 1)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-362">vertArray(1, 1)</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-363">Distancia horizontal desde el primer vértice hasta el lado izquierdo del documento</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-363">The horizontal distance from the first vertex to the left side of the document</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="993d6-364">vertArray (1, 2)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-364">vertArray(1, 2)</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-365">Distancia vertical desde el primer vértice hasta la parte superior del documento</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-365">The vertical distance from the first vertex to the top of the document</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="993d6-366">vertArray (2, 1)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-366">vertArray(2, 1)</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-367">Distancia horizontal desde el segundo vértice hasta el lado izquierdo del documento</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-367">The horizontal distance from the second vertex to the left side of the document</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="993d6-368">vertArray (2, 2)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-368">vertArray(2, 2)</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-369">Distancia vertical desde el segundo vértice hasta la parte superior del documento</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-369">The vertical distance from the second vertex to the top of the document</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="993d6-370">vertArray (3, 1)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-370">vertArray(3, 1)</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-371">Distancia horizontal desde el tercer vértice hasta el lado izquierdo del documento</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-371">The horizontal distance from the third vertex to the left side of the document</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="993d6-372">vertArray (3, 2)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-372">vertArray(3, 2)</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="993d6-373">Distancia vertical desde el tercer vértice hasta la parte superior del documento</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="993d6-373">The vertical distance from the third vertex to the top of the document</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3728,13 +3897,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-309">Determina si el objeto es visible.</span>
+          <span data-ttu-id="993d6-374">Determina si el objeto es visible.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-309">Determines whether the object is visible.</span>
+            <span data-stu-id="993d6-374">Determines whether the object is visible.</span>
           </span>
-          <span data-ttu-id="086c3-310">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span data-ttu-id="993d6-375">Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-310">Read/write <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+            <span data-stu-id="993d6-375">Read/write <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3768,13 +3937,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-311">El ancho del objeto.</span>
+          <span data-ttu-id="993d6-376">El ancho del objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-311">The width of the object.</span>
+            <span data-stu-id="993d6-376">The width of the object.</span>
           </span>
-          <span data-ttu-id="086c3-312">Lectura y escritura <b>único</b>.</span>
+          <span data-ttu-id="993d6-377">Lectura y escritura <b>único</b>.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-312">Read/write <b>Single</b>.</span>
+            <span data-stu-id="993d6-377">Read/write <b>Single</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -3805,32 +3974,29 @@
       </Parameters>
       <Docs>
         <param name="ZOrderCmd">
-          <span data-ttu-id="086c3-313">Requiere <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />.</span>
+          <span data-ttu-id="993d6-378">Requiere <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-313">Required <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />.</span>
+            <span data-stu-id="993d6-378">Required <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />.</span>
           </span>
-          <span data-ttu-id="086c3-314">Especifica a qué lugar se va a mover la forma especificada con respecto a las demás formas.</span>
+          <span data-ttu-id="993d6-379">Especifica a qué lugar se va a mover la forma especificada con respecto a las demás formas.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-314">Specifies where to move the specified shape relative to the other shapes.</span>
+            <span data-stu-id="993d6-379">Specifies where to move the specified shape relative to the other shapes.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="086c3-315">Desplaza la forma especificada delante o detrás de otras formas del conjunto (es decir, cambia la posición de la forma en el orden z).</span>
+          <span data-ttu-id="993d6-380">Desplaza la forma especificada delante o detrás de otras formas del conjunto (es decir, cambia la posición de la forma en el orden z).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-315">Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's position in the z-order).</span>
+            <span data-stu-id="993d6-380">Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's position in the z-order).</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="086c3-316">
-            <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> (propiedad) para determinar la posición actual de una forma en el orden z.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-316">
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> property to determine a shape's current position in the z-order.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-381">Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> (propiedad) para determinar la posición actual de una forma en el orden z.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-381">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> property to determine a shape's current position in the z-order.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -3858,29 +4024,41 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="086c3-317">Devuelve la posición de la forma especificada en el orden Z.</span>
+          <span data-ttu-id="993d6-382">Devuelve la posición de la forma especificada en el orden Z.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-317">Returns the position of the specified shape in the z-order.</span>
+            <span data-stu-id="993d6-382">Returns the position of the specified shape in the z-order.</span>
           </span>
-          <span data-ttu-id="086c3-318">
+          <span data-ttu-id="993d6-383">
             <b>Integer</b> de sólo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="086c3-318">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="993d6-383">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="086c3-319">
-            <para>Para establecer la posición de la forma en el orden z, use la <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> método.</para> Posición de 
-          <para>una forma en el orden z corresponde al número de índice de la forma en la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección. Por ejemplo, Shapes (1) devuelve la forma en la parte posterior del orden z y Shapes (4) devuelve la forma en la parte delantera del orden z.</para><para>Siempre que agregue una forma nueva a una colección, se agrega a la parte delantera del orden z de forma predeterminada.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="086c3-319">
-              <para>To set the shape's position in the z-order, use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> method.</para>
-              <para>A shape's position in the z-order corresponds to the shape's index number in the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection. For example, Shapes(1) returns the shape at the back of the z-order, and Shapes(4) returns the shape at the front of the z-order.</para>
-              <para>Whenever you add a new shape to a collection, it’s added to the front of the z-order by default.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="993d6-384">Para establecer la posición de la forma en el orden z, use la <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> (método).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-384">To set the shape's position in the z-order, use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> method.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="993d6-385">Posición de una forma en el orden z corresponde al número de índice de la forma en la <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-385">A shape's position in the z-order corresponds to the shape's index number in the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</span>
+            </span>
+            <span data-ttu-id="993d6-386">Por ejemplo, Shapes (1) devuelve la forma en la parte posterior del orden z y Shapes (4) devuelve la forma en la parte delantera del orden z.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-386">For example, Shapes(1) returns the shape at the back of the z-order, and Shapes(4) returns the shape at the front of the z-order.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="993d6-387">Siempre que se agrega una nueva forma a una colección, se agrega de forma predeterminada en la parte delantera del orden Z.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="993d6-387">Whenever you add a new shape to a collection, it’s added to the front of the z-order by default.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

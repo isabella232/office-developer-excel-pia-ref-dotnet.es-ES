@@ -1,10 +1,10 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Excel.ChartGroups">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ed49e202a12a761d2ea1f0fade680591aab69567" />
+    <Meta Name="ms.openlocfilehash" Value="d05b335ff2ac16ca069b154e14a4f4ac9e9eb27d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582771" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
@@ -34,49 +34,121 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="b2400-101">Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objetos del gráfico especificado.</span>
+      <span data-ttu-id="755fd-101">Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objetos del gráfico especificado.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="b2400-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objects in the specified chart.</span>
+        <span data-stu-id="755fd-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objects in the specified chart.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="b2400-102">
-        <para>Cada <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objeto representa uno o más series trazadas en un gráfico con el mismo formato. Un gráfico contiene uno o más grupos de gráficos, cada grupo de gráficos contiene una o más series y cada serie contiene uno o varios puntos. Por ejemplo, un único gráfico podría contener un grupo de gráficos de líneas, que contiene todas las series trazadas con el formato de gráfico de líneas y un grupo de gráficos de barras, que contiene todas las series trazadas con el formato de gráfico de barras.</para> Uso de 
-      <para>la <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> método para devolver la colección <b>ChartGroups</b> . Use <b>ChartGroups</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del grupo de gráficos, para devolver un único objeto <b>ChartGroup</b> . Si el gráfico está activado, puede usar <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</para><para>Debido a que el número de índice para un grupo de gráficos determinado puede cambiar si se cambia el formato de gráfico utilizado para dicho grupo, puede ser más fácil de usar uno de los métodos de acceso directo del grupo de gráficos con nombre para devolver un grupo de gráficos determinado. El <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método devuelve la colección de grupos de gráficos circulares en un gráfico, el <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método devuelve la colección de grupos de gráficos de línea y así sucesivamente. Cada uno de estos métodos puede utilizarse con un número de índice para devolver un solo objeto <b>ChartGroup</b> , o sin un número de índice para devolver <b>un conjunto ChartGroups</b> . Están disponibles los siguientes métodos de grupo de gráficos:</para><list type="bullet"><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> (método)</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> (método)</description></item></list><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="b2400-102">
-          <para>Each <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object represents one or more series plotted in a chart with the same format. A chart contains one or more chart groups, each chart group contains one or more series, and each series contains one or more points. For example, a single chart might contain both a line chart group, containing all the series plotted with the line chart format, and a bar chart group, containing all the series plotted with the bar chart format.</para>
-          <para>Use the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> method to return the <b>ChartGroups</b> collection. Use <b>ChartGroups</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-group index number, to return a single <b>ChartGroup</b> object. If the chart has been activated, you can use <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</para>
-          <para>Because the index number for a particular chart group can change if the chart format used for that group is changed, it may be easier to use one of the named chart group shortcut methods to return a particular chart group. The <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method returns the collection of pie chart groups in a chart, the <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method returns the collection of line chart groups, and so on. Each of these methods can be used with an index number to return a single <b>ChartGroup</b> object, or without an index number to return a <b>ChartGroups</b> collection. The following chart group methods are available:</para>
-          <list type="bullet">
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="755fd-102">Cada <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objeto representa uno o más series trazadas en un gráfico con el mismo formato.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-102">Each <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object represents one or more series plotted in a chart with the same format.</span>
         </span>
-      </span>
+        <span data-ttu-id="755fd-103">Un gráfico contiene uno o más grupos de gráficos, cada grupo de gráficos contiene una o más series y cada serie contiene uno o varios puntos.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-103">A chart contains one or more chart groups, each chart group contains one or more series, and each series contains one or more points.</span>
+        </span>
+        <span data-ttu-id="755fd-104">Por ejemplo, un único gráfico podría contener un grupo de gráficos de línea, que contiene todas las series trazadas con el formato de gráfico de líneas y un grupo de gráficos de barras, que contiene todas las series trazadas con el formato de gráfico de barras.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-104">For example, a single chart might contain both a line chart group, containing all the series plotted with the line chart format, and a bar chart group, containing all the series plotted with the bar chart format.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="755fd-105">Usar el <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> método para devolver la colección <b>ChartGroups</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-105">Use the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> method to return the <b>ChartGroups</b> collection.</span>
+        </span>
+        <span data-ttu-id="755fd-106">Use <b>ChartGroups</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del grupo de gráficos, para devolver un único objeto <b>ChartGroup</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-106">Use <b>ChartGroups</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-group index number, to return a single <b>ChartGroup</b> object.</span>
+        </span>
+        <span data-ttu-id="755fd-107">Si el gráfico está activado, puede usar <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-107">If the chart has been activated, you can use <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="755fd-108">Debido a que el número de índice para un grupo de gráficos determinado puede cambiar si se cambia el formato de gráfico utilizado para dicho grupo, puede ser más fácil de usar uno de los métodos de acceso directo del grupo de gráficos con nombre para devolver un grupo de gráficos determinado.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-108">Because the index number for a particular chart group can change if the chart format used for that group is changed, it may be easier to use one of the named chart group shortcut methods to return a particular chart group.</span>
+        </span>
+        <span data-ttu-id="755fd-109">El <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método devuelve la colección de grupos de gráficos circulares en un gráfico, el <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método devuelve la colección de grupos de gráficos de línea y así sucesivamente.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-109">The <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method returns the collection of pie chart groups in a chart, the <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method returns the collection of line chart groups, and so on.</span>
+        </span>
+        <span data-ttu-id="755fd-110">Cada uno de estos métodos puede utilizarse con un número de índice para devolver un solo objeto <b>ChartGroup</b> , o sin un número de índice para devolver <b>un conjunto ChartGroups</b> .</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-110">Each of these methods can be used with an index number to return a single <b>ChartGroup</b> object, or without an index number to return a <b>ChartGroups</b> collection.</span>
+        </span>
+        <span data-ttu-id="755fd-111">Están disponibles los siguientes métodos de grupo de gráficos:</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="755fd-111">The following chart group methods are available:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="755fd-112">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />(método)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="755fd-112">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="755fd-113">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />(método)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="755fd-113">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="755fd-114">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />(método)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="755fd-114">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="755fd-115">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />(método)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="755fd-115">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="755fd-116">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />(método)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="755fd-116">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="755fd-117">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />(método)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="755fd-117">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -104,13 +176,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b2400-103">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto).</span>
+          <span data-ttu-id="755fd-118">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
+            <span data-stu-id="755fd-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
           </span>
-          <span data-ttu-id="b2400-104">Solo lectura.</span>
+          <span data-ttu-id="755fd-119">Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-104">Read-only.</span>
+            <span data-stu-id="755fd-119">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -141,14 +213,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b2400-105">Devuelve el número de objetos de la colección.</span>
+          <span data-ttu-id="755fd-120">Devuelve el número de objetos de la colección.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-105">Returns the number of objects in the collection.</span>
+            <span data-stu-id="755fd-120">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="b2400-106">
+          <span data-ttu-id="755fd-121">
             <b>Integer</b> de sólo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-106">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="755fd-121">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -179,28 +251,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b2400-107">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
+          <span data-ttu-id="755fd-122">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="755fd-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="b2400-108">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
+          <span data-ttu-id="755fd-123">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-108">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="755fd-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="b2400-109">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+          <span data-ttu-id="755fd-124">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-109">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="755fd-124">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="b2400-110">Propiedad de <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b2400-110">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="755fd-125">La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="755fd-125">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="755fd-126">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="755fd-126">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -260,20 +336,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="b2400-111">
+          <span data-ttu-id="755fd-127">
             <b>Objeto</b>requerido.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-111">Required <b>Object</b>.</span>
+            <span data-stu-id="755fd-127">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="b2400-112">Número de índice o nombre del objeto.</span>
+          <span data-ttu-id="755fd-128">Número de índice o nombre del objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-112">The name or index number for the object.</span>
+            <span data-stu-id="755fd-128">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="b2400-113">Devuelve un solo objeto de una colección.</span>
+          <span data-ttu-id="755fd-129">Devuelve un solo objeto de una colección.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-113">Returns a single object from a collection.</span>
+            <span data-stu-id="755fd-129">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -304,9 +380,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b2400-p105">Devuelve el objeto primario del objeto especificado. Solo lectura.</span>
+          <span data-ttu-id="755fd-p109">Devuelve el objeto primario del objeto especificado. Solo lectura.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b2400-p105">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="755fd-p109">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>

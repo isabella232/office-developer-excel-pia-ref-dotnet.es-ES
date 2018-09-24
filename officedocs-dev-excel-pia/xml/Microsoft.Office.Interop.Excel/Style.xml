@@ -1,10 +1,10 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Excel.Style">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d16dc7a8953f4adcd743c663cce1a8e9c3cd90e3" />
+    <Meta Name="ms.openlocfilehash" Value="c4f738901e25e0863ca50d9f0bc3e164a839d737" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574049" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Style" />
@@ -30,31 +30,59 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="d22d0-101">Representa la descripción de un estilo para un rango.</span>
+      <span data-ttu-id="a9afa-101">Representa la descripción de un estilo para un rango.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="d22d0-101">Represents a style description for a range.</span>
+        <span data-stu-id="a9afa-101">Represents a style description for a range.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="d22d0-102">
-        <para>El objeto <b>Style</b> contiene todos los atributos de estilo (fuente, formato numérico, alineación etc.) como propiedades. Existen varios estilos integrados, como Normal, moneda y porcentaje. Uso del objeto <b>Style</b> es una forma rápida y eficaz para cambiar las propiedades de formato de celda en varias celdas al mismo tiempo.</para>
-        <para>Para el <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> de objetos, el objeto <b>Style</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> colección. La colección <b>Styles</b> contiene todos los estilos definidos para el libro.</para>
-        <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Style" /> (propiedad) para devolver el objeto de <b>estilo</b> que se utiliza con un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</para>
-        <para>Puede cambiar la apariencia de una celda cambiando las propiedades del estilo aplicado a dicha celda. Tenga en cuenta, sin embargo, que al cambiar una propiedad de estilo afectará a todas las celdas que ya ha dado formateada con dicho estilo.</para>
-        <para>Usar <b>estilos</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un único objeto de <b>estilo</b> de la colección <b>Styles</b> del libro o número de índice del estilo.</para> Estilos de 
-      <para>se ordenan alfabéticamente por nombre de estilo. El número de índice del estilo representa la posición del estilo especificado en la lista ordenada de nombres de estilo. Styles (1) es el primer estilo en la lista alfabética y Styles (Styles.Count) es el último en la lista.</para><para>Para obtener más información sobre la creación y modificación de un estilo, vea el <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> objeto.</para><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="d22d0-102">
-          <para>The <b>Style</b> object contains all style attributes (font, number format, alignment, and so on) as properties. There are several built-in styles, including Normal, Currency, and Percent. Using the <b>Style</b> object is a fast and efficient way to change several cell-formatting properties on multiple cells at the same time.</para>
-          <para>For the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object, the <b>Style</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> collection. The <b>Styles</b> collection contains all the defined styles for the workbook.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Style" /> property to return the <b>Style</b> object used with a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object.</para>
-          <para>You can change the appearance of a cell by changing properties of the style applied to that cell. Keep in mind, however, that changing a style property will affect all cells already formatted with that style.</para>
-          <para>Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style index number or name, to return a single <b>Style</b> object from the workbook <b>Styles</b> collection.</para>
-          <para>Styles are sorted alphabetically by style name. The style index number denotes the position of the specified style in the sorted list of style names. Styles(1) is the first style in the alphabetic list, and Styles(Styles.Count) is the last one in the list.</para>
-          <para>For more information about creating and modifying a style, see the <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="a9afa-p101">El objeto <b>Style</b> contiene todos los atributos de estilo (fuente, formato numérico, alineación, etc.) en forma de propiedades. Existen varios estilos integrados, como Normal, Moneda y Porcentaje. El uso del objeto <b>Style</b> es el modo más rápido y eficaz para cambiar las propiedades de formato de varias celdas a la vez.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a9afa-p101">The <b>Style</b> object contains all style attributes (font, number format, alignment, and so on) as properties. There are several built-in styles, including Normal, Currency, and Percent. Using the <b>Style</b> object is a fast and efficient way to change several cell-formatting properties on multiple cells at the same time.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="a9afa-105">Para el <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> de objetos, el objeto <b>Style</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> colección.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a9afa-105">For the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object, the <b>Style</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> collection.</span>
+        </span>
+        <span data-ttu-id="a9afa-106">La colección <b>Styles</b> contiene todos los estilos definidos para el libro.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a9afa-106">The <b>Styles</b> collection contains all the defined styles for the workbook.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="a9afa-107">Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Style" /> (propiedad) para devolver el objeto de <b>estilo</b> que se utiliza con un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a9afa-107">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Style" /> property to return the <b>Style</b> object used with a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="a9afa-p103">Puede cambiar el aspecto de una celda si cambia las propiedades del estilo aplicado a dicha celda. Sin embargo, recuerde que al cambiar una propiedad de estilo se verán afectadas las celdas que ya tengan el formato de ese estilo.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a9afa-p103">You can change the appearance of a cell by changing properties of the style applied to that cell. Keep in mind, however, that changing a style property will affect all cells already formatted with that style.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="a9afa-110">Usar <b>estilos de</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un único objeto de <b>estilo</b> de la colección <b>Styles</b> del libro o número de índice del estilo.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a9afa-110">Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style index number or name, to return a single <b>Style</b> object from the workbook <b>Styles</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="a9afa-p104">Los estilos se ordenan alfabéticamente por nombre. El número de índice del estilo representa la posición del estilo especificado en la lista ordenada de nombres de estilo. Styles(1) es el primer estilo de la lista alfabética y Styles(Styles.Count) es el último.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a9afa-p104">Styles are sorted alphabetically by style name. The style index number denotes the position of the specified style in the sorted list of style names. Styles(1) is the first style in the alphabetic list, and Styles(Styles.Count) is the last one in the list.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="a9afa-114">Para obtener más información sobre la creación y modificación de un estilo, vea el <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> objeto.</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="a9afa-114">For more information about creating and modifying a style, see the <see cref="T:Microsoft.Office.Interop.Excel.Styles" /> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -85,9 +113,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-103">Reservado para uso interno.</span>
+          <span data-ttu-id="a9afa-115">Reservado para uso interno.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-103">Reserved for internal use.</span>
+            <span data-stu-id="a9afa-115">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -121,25 +149,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-104">
+          <span data-ttu-id="a9afa-116">
             <b>True</b> si se aplica sangría al texto automáticamente cuando la alineación del texto en una celda se establece en distribución equitativa, ya sea horizontal o verticalmente.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-104">
+            <span data-stu-id="a9afa-116">
               <b>True</b> if text is automatically indented when the text alignment in a cell is set to equal distribution either horizontally or vertically.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-105">
-            <para>Para establecer la alineación del texto para que sea igual de distribución, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad <b>Orientation</b> es <b>xlHorizontal</b>.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-105">
-              <para>To set text alignment to equal distribution, you can set the <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> property to <b>xlVAlignDistributed</b> when the value of the <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> property is <b>xlVertical</b>, and you can set the <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> property to <b>xlHAlignDistributed</b> when the value of the <b>Orientation</b> property is <b>xlHorizontal</b>.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-117">Para establecer la alineación del texto como distribución igualada, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad <b>Orientation</b> es <b>xlHorizontal</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-117">To set text alignment to equal distribution, you can set the <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" /> property to <b>xlVAlignDistributed</b> when the value of the <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> property is <b>xlVertical</b>, and you can set the <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" /> property to <b>xlHAlignDistributed</b> when the value of the <b>Orientation</b> property is <b>xlHorizontal</b>.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -167,9 +192,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-106">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
+          <span data-ttu-id="a9afa-118">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-106">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="a9afa-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -200,9 +225,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-107">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> colección que representa los bordes de un estilo.</span>
+          <span data-ttu-id="a9afa-119">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> colección que representa los bordes de un estilo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-107">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection that represents the borders of a style.</span>
+            <span data-stu-id="a9afa-119">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection that represents the borders of a style.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -233,10 +258,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-108">
+          <span data-ttu-id="a9afa-120">
             <b>True</b> si el estilo es un estilo integrado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-108">
+            <span data-stu-id="a9afa-120">
               <b>True</b> if the style is a built-in style.</span>
           </span>
         </summary>
@@ -268,23 +293,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-109">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
+          <span data-ttu-id="a9afa-121">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-109">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="a9afa-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-110">
-            <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente a la C. 5843454 número hexadecimal</para> Propiedad de 
-          <para>el <b>creador</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-110">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-122">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-122">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-123">La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-123">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="a9afa-124">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-124">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -310,9 +342,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-111">Elimina el objeto.</span>
+          <span data-ttu-id="a9afa-125">Elimina el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-111">Deletes the object.</span>
+            <span data-stu-id="a9afa-125">Deletes the object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -343,9 +375,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-112">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa la fuente del objeto especificado.</span>
+          <span data-ttu-id="a9afa-126">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa la fuente del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-112">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
+            <span data-stu-id="a9afa-126">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -379,25 +411,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-113">
+          <span data-ttu-id="a9afa-127">
             <b>True</b> si la fórmula se ocultará cuando la hoja de cálculo está protegida.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-113">
+            <span data-stu-id="a9afa-127">
               <b>True</b> if the formula will be hidden when the worksheet is protected.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-114">
-            <para>No se debe confundir esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad). La fórmula no se ocultará si el libro está protegido y la hoja de cálculo no lo es, pero solo si la hoja de cálculo está protegida.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-114">
-              <para>Don’t confuse this property with the <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> property. The formula will not be hidden if the workbook is protected and the worksheet is not, but only if the worksheet is protected.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-128">No confunda esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-128">Don’t confuse this property with the <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> property.</span>
             </span>
-          </span>
+            <span data-ttu-id="a9afa-129">La fórmula no se ocultará si el libro está protegido y la hoja de cálculo no lo es, pero solo si la hoja de cálculo está protegida.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-129">The formula will not be hidden if the workbook is protected and the worksheet is not, but only if the worksheet is protected.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -428,75 +461,108 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-115">Devuelve o establece la alineación horizontal del objeto especificado.</span>
+          <span data-ttu-id="a9afa-130">Devuelve o establece la alineación horizontal del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-115">Returns or sets the horizontal alignment for the specified object.</span>
+            <span data-stu-id="a9afa-130">Returns or sets the horizontal alignment for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-116">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />puede ser una de las siguientes constantes <b>XlHAlign</b> :</para>
-            <para>
-              <b>xlHAlignCenter</b>
-            </para>
-            <para>
-              <b>xlHAlignCenterAcrossSelection</b>
-            </para>
-            <para>
-              <b>xlHAlignDistributed</b>
-            </para>
-            <para>
-              <b>xlHAlignFill</b>
-            </para>
-            <para>
-              <b>xlHAlignGeneral</b>
-            </para>
-            <para>
-              <b>xlHAlignJustify</b>
-            </para>
-            <para>
-              <b> xlHAlignLeft</b>
-            </para>
-            <para>
-              <b>xlHAlignRight</b>
-            </para>
-            <para>algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-116">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> can be one of the following <b>XlHAlign</b> constants:</para>
-              <para>
-                <b>xlHAlignCenter</b>
-              </para>
-              <para>
-                <b>xlHAlignCenterAcrossSelection</b>
-              </para>
-              <para>
-                <b>xlHAlignDistributed</b>
-              </para>
-              <para>
-                <b>xlHAlignFill</b>
-              </para>
-              <para>
-                <b>xlHAlignGeneral</b>
-              </para>
-              <para>
-                <b>xlHAlignJustify</b>
-              </para>
-              <para>
-                <b>xlHAlignLeft</b>
-              </para>
-              <para>
-                <b>xlHAlignRight</b>
-              </para>
-              <para>Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you've selected or installed.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-131">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />puede ser una de las siguientes constantes <b>XlHAlign</b> :</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-131">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> can be one of the following <b>XlHAlign</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-132">
+              <b>xlHAlignCenter</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-132">
+                <b>xlHAlignCenter</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-133">
+              <b>xlHAlignCenterAcrossSelection</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-133">
+                <b>xlHAlignCenterAcrossSelection</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-134">
+              <b>xlHAlignDistributed</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-134">
+                <b>xlHAlignDistributed</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-135">
+              <b>xlHAlignFill</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-135">
+                <b>xlHAlignFill</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-136">
+              <b>xlHAlignGeneral</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-136">
+                <b>xlHAlignGeneral</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-137">
+              <b>xlHAlignJustify</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-137">
+                <b>xlHAlignJustify</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-138">
+              <b>xlHAlignLeft</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-138">
+                <b>xlHAlignLeft</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-139">
+              <b>xlHAlignRight</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-139">
+                <b>xlHAlignRight</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-140">[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-140">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you've selected or installed.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -527,10 +593,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-117">
+          <span data-ttu-id="a9afa-141">
             <b>True</b> si el estilo incluye la <see cref="P:Microsoft.Office.Interop.Excel.Style.AddIndent" />, <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" />, <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" />, <see cref="P:Microsoft.Office.Interop.Excel.Style.WrapText" />, y <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> propiedades.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-117">
+            <span data-stu-id="a9afa-141">
               <b>True</b> if the style includes the <see cref="P:Microsoft.Office.Interop.Excel.Style.AddIndent" />, <see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" />, <see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" />, <see cref="P:Microsoft.Office.Interop.Excel.Style.WrapText" />, and <see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" /> properties.</span>
           </span>
         </summary>
@@ -565,10 +631,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-118">
+          <span data-ttu-id="a9afa-142">
             <b>True</b> si el estilo incluye la <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Border.ColorIndex" />, <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" />, y <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> las propiedades de borde.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-118">
+            <span data-stu-id="a9afa-142">
               <b>True</b> if the style includes the <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Border.ColorIndex" />, <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" />, and <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> border properties.</span>
           </span>
         </summary>
@@ -603,10 +669,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-119">
+          <span data-ttu-id="a9afa-143">
             <b>True</b> si el estilo incluye la <see cref="P:Microsoft.Office.Interop.Excel.Font.Background" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.ColorIndex" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.FontStyle" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Name" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.OutlineFont" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Shadow" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Size" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Strikethrough" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Subscript" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Superscript" />, y <see cref="P:Microsoft.Office.Interop.Excel.Font.Underline" /> propiedades de la fuente.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-119">
+            <span data-stu-id="a9afa-143">
               <b>True</b> if the style includes the <see cref="P:Microsoft.Office.Interop.Excel.Font.Background" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.ColorIndex" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.FontStyle" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Name" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.OutlineFont" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Shadow" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Size" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Strikethrough" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Subscript" />, <see cref="P:Microsoft.Office.Interop.Excel.Font.Superscript" />, and <see cref="P:Microsoft.Office.Interop.Excel.Font.Underline" /> font properties.</span>
           </span>
         </summary>
@@ -641,9 +707,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-120">Es True si el estilo incluye la <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> (propiedad).</span>
+          <span data-ttu-id="a9afa-144">Es True si el estilo incluye la <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> (propiedad).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-120">True if the style includes the <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> property.</span>
+            <span data-stu-id="a9afa-144">True if the style includes the <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> property.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -677,10 +743,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-121">
+          <span data-ttu-id="a9afa-145">
             <b>True</b> si el estilo incluye la <see cref="P:Microsoft.Office.Interop.Excel.Interior.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Interior.ColorIndex" />, <see cref="P:Microsoft.Office.Interop.Excel.Interior.InvertIfNegative" />, <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />, <see cref="P:Microsoft.Office.Interop.Excel.Interior.PatternColor" />, y <see cref="P:Microsoft.Office.Interop.Excel.Interior.PatternColorIndex" /> propiedades interiores.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-121">
+            <span data-stu-id="a9afa-145">
               <b>True</b> if the style includes the <see cref="P:Microsoft.Office.Interop.Excel.Interior.Color" />, <see cref="P:Microsoft.Office.Interop.Excel.Interior.ColorIndex" />, <see cref="P:Microsoft.Office.Interop.Excel.Interior.InvertIfNegative" />, <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />, <see cref="P:Microsoft.Office.Interop.Excel.Interior.PatternColor" />, and <see cref="P:Microsoft.Office.Interop.Excel.Interior.PatternColorIndex" /> interior properties.</span>
           </span>
         </summary>
@@ -715,10 +781,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-122">
+          <span data-ttu-id="a9afa-146">
             <b>True</b> si el estilo incluye la <see cref="P:Microsoft.Office.Interop.Excel.Style.FormulaHidden" /> y <see cref="P:Microsoft.Office.Interop.Excel.Style.Locked" /> propiedades.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-122">
+            <span data-stu-id="a9afa-146">
               <b>True</b> if the style includes the <see cref="P:Microsoft.Office.Interop.Excel.Style.FormulaHidden" /> and <see cref="P:Microsoft.Office.Interop.Excel.Style.Locked" /> properties.</span>
           </span>
         </summary>
@@ -753,23 +819,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-123">Devuelve o establece el nivel de sangría del estilo.</span>
+          <span data-ttu-id="a9afa-147">Devuelve o establece el nivel de sangría del estilo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-123">Returns or sets the indent level for the style.</span>
+            <span data-stu-id="a9afa-147">Returns or sets the indent level for the style.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-124">
-            <para>Uso de esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 causará un error.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-124">
-              <para>Using this property to set the indent level to a number less than 0 (zero) or greater than 15 causes an error.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-148">Usar esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 produce un error.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-148">Using this property to set the indent level to a number less than 0 (zero) or greater than 15 causes an error.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -797,9 +860,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-125">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa el interior del objeto especificado.</span>
+          <span data-ttu-id="a9afa-149">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa el interior del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-125">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
+            <span data-stu-id="a9afa-149">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -833,10 +896,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-126">
+          <span data-ttu-id="a9afa-150">
             <b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-126">
+            <span data-stu-id="a9afa-150">
               <b>True</b> if the object is locked; <b>False</b> if the object can be modified when the sheet is protected.</span>
           </span>
         </summary>
@@ -871,25 +934,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-127">
+          <span data-ttu-id="a9afa-151">
             <b>True</b> si el estilo contiene celdas combinadas.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-127">
+            <span data-stu-id="a9afa-151">
               <b>True</b> if the style contains merged cells.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-128">
-            <para>Cuando se selecciona un rango que contiene celdas combinadas, la selección resultante puede ser diferente de la selección prevista. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> (propiedad) para comprobar la dirección del rango seleccionado.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-128">
-              <para>When you select a range that contains merged cells, the resulting selection may be different from the intended selection. Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> property to check the address of the selected range.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-152">Cuando se selecciona un rango que contiene celdas combinadas, la selección resultante puede ser diferente de la selección prevista.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-152">When you select a range that contains merged cells, the resulting selection may be different from the intended selection.</span>
             </span>
-          </span>
+            <span data-ttu-id="a9afa-153">Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> (propiedad) para comprobar la dirección del rango seleccionado.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-153">Use the <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> property to check the address of the selected range.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -917,91 +981,162 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-129">Devuelve el nombre del objeto.</span>
+          <span data-ttu-id="a9afa-154">Devuelve el nombre del objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-129">Returns the name of the object.</span>
+            <span data-stu-id="a9afa-154">Returns the name of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-130">
-            <para>La siguiente tabla muestran valores de ejemplo de la propiedad <b>Name</b> y las propiedades relacionadas dados un origen de datos con el nombre único "[Europe]. [France]. [Paris] "y el nombre de un origen de datos no OLAP con el elemento"Paris".</para>
-            <list type="table">
-              <item>
-                <term>
-                  <b>Título</b>
-                </term>
-                <description>París</description>
-                <description>París</description>
-              </item>
-              <item>
-                <term>
-                  <b>nombre</b>
-                </term>
-                <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-                <description>París</description>
-              </item>
-              <item>
-                <term>
-                  <b>SourceName</b>
-                </term>
-                <description>[Europe]. [ Francia]. [Paris] (solo lectura)</description>
-                <description>(Igual que el valor de la propiedad SQL, sólo lectura)</description>
-              </item> El 
-              <term><b>valor</b></term>de 
-            <item><description>[Europe]. [ Francia]. [Paris] (solo lectura)</description><description>París</description></item></list>
-            <para>Cuando se especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</para> expresión de 
-          <list type="table"><item><term>. PivotItems ("[Europe]. [ Francia]. [Paris] ")</term><description>expresión. PivotItems("Paris")</description></item></list><para>cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</para><list type="table"><item><term>[Europe]. [ Francia]. [Paris]</term><description>París</description></item></list><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-130">
-              <para>The following table shows example values of the <b>Name</b> property and related properties given an  data source with the unique name "[Europe].[France].[Paris]" and a non-OLAP data source with the item name "Paris".</para>
-              <list type="table">
-                <item>
-                  <term>
-                    <b>Caption</b>
-                  </term>
-                  <description>Paris</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Name</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>SourceName</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>(Same as SQL property value, read-only)</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Value</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-              </list>
-              <para>When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</para>
-              <list type="table">
-                <item>
-                  <term>expression.PivotItems("[Europe].[France].[Paris]")</term>
-                  <description>expression.PivotItems("Paris")</description>
-                </item>
-              </list>
-              <para>When using the <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> property to reference a specific member of a collection, you can use the text index name as shown in the following table.</para>
-              <list type="table">
-                <item>
-                  <term>[Europe].[France].[Paris]</term>
-                  <description>Paris</description>
-                </item>
-              </list>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-155">La siguiente tabla muestran valores de ejemplo de la propiedad <b>Name</b> y las propiedades relacionadas dados un origen de datos con el nombre único "[Europe]. [France]. [Paris] "y el nombre de un origen de datos no OLAP con el elemento"Paris".</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-155">The following table shows example values of the <b>Name</b> property and related properties given an  data source with the unique name "[Europe].[France].[Paris]" and a non-OLAP data source with the item name "Paris".</span>
             </span>
-          </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="a9afa-156">
+                  <b>Título</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-156">
+                    <b>Caption</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="a9afa-157">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-157">Paris</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="a9afa-158">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-158">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="a9afa-159">
+                  <b>Nombre</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-159">
+                    <b>Name</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="a9afa-160">[Europe].[France].[Paris] (sólo lectura)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-160">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="a9afa-161">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-161">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="a9afa-162">
+                  <b>SourceName</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-162">
+                    <b>SourceName</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="a9afa-163">[Europe].[France].[Paris] (sólo lectura)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-163">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="a9afa-164">(igual que el valor de la propiedad SQL, sólo lectura)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-164">(Same as SQL property value, read-only)</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="a9afa-165">
+                  <b>Valor</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-165">
+                    <b>Value</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="a9afa-166">[Europe].[France].[Paris] (sólo lectura)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-166">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="a9afa-167">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-167">Paris</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="a9afa-168">Cuando especifica un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la siguiente tabla.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-168">When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="a9afa-169">expresión. PivotItems ("[Europe]. [ Francia]. [Paris] ")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-169">expression.PivotItems("[Europe].[France].[Paris]")</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="a9afa-170">expresión. PivotItems("Paris")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-170">expression.PivotItems("Paris")</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="a9afa-171">Cuando se usa el <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> (propiedad) a un miembro específico de una colección de referencia, puede usar el nombre de índice de texto, tal como se muestra en la siguiente tabla.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-171">When using the <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> property to reference a specific member of a collection, you can use the text index name as shown in the following table.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="a9afa-172">[Europe]. [France]. [Paris]</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-172">[Europe].[France].[Paris]</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="a9afa-173">Paris</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="a9afa-173">Paris</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1029,23 +1164,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-131">Devuelve el nombre del objeto en el idioma del usuario.</span>
+          <span data-ttu-id="a9afa-174">Devuelve el nombre del objeto en el idioma del usuario.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-131">Returns the name of the object in the language of the user.</span>
+            <span data-stu-id="a9afa-174">Returns the name of the object in the language of the user.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-132">
-            <para>Si el estilo es un estilo integrado, esta propiedad devuelve el nombre del estilo en el idioma de la configuración regional actual.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-132">
-              <para>If the style is a built-in style, this property returns the name of the style in the language of the current locale.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-175">Si se usa un estilo integrado, esta propiedad devuelve el nombre del estilo en el idioma de la configuración regional actual.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-175">If the style is a built-in style, this property returns the name of the style in the language of the current locale.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1076,20 +1208,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-133">Devuelve o establece el código de formato para el objeto.</span>
+          <span data-ttu-id="a9afa-176">Devuelve o establece el código de formato para el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-133">Returns or sets the format code for the object.</span>
+            <span data-stu-id="a9afa-176">Returns or sets the format code for the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-134">Código de <para>el formato es la misma cadena que la opción códigos de formato en el cuadro de diálogo Formato de celdas. La función <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" /> propiedades.</para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-134">
-              <para>The format code is the same string as the Format Codes option in the Format Cells dialog box. The <b>Format</b> function uses different format code strings than do the <b>NumberFormat</b> and <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" /> properties.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-177">El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-177">The format code is the same string as the Format Codes option in the Format Cells dialog box.</span>
             </span>
-          </span>
+            <span data-ttu-id="a9afa-178">La función <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" /> propiedades.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-178">The <b>Format</b> function uses different format code strings than do the <b>NumberFormat</b> and <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" /> properties.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1120,23 +1256,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-135">Devuelve o establece el código de formato para el objeto como una cadena en el idioma del usuario.</span>
+          <span data-ttu-id="a9afa-179">Devuelve o establece el código de formato para el objeto como una cadena en el idioma del usuario.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-135">Returns or sets the format code for the object as a string in the language of the user.</span>
+            <span data-stu-id="a9afa-179">Returns or sets the format code for the object as a string in the language of the user.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-136">
-            <para>La función <b>Format</b> usa cadenas de código de formato diferentes que la <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> y propiedades <b>NumberFormatLocal</b> .</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-136">
-              <para>The <b>Format</b> function uses different format code strings than do the <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> and <b>NumberFormatLocal</b> properties.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-180">La función <b>Format</b> usa cadenas de código de formato diferentes que la <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> y propiedades <b>NumberFormatLocal</b> .</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-180">The <b>Format</b> function uses different format code strings than do the <see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" /> and <b>NumberFormatLocal</b> properties.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1167,53 +1300,66 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-137">La orientación del texto.</span>
+          <span data-ttu-id="a9afa-181">La orientación del texto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-137">The text orientation.</span>
+            <span data-stu-id="a9afa-181">The text orientation.</span>
           </span>
-          <span data-ttu-id="d22d0-138">Puede ser un valor entero entre – 90 y 90 grados o en uno de los <see cref="T:Microsoft.Office.Interop.Excel.XlOrientation" /> constantes.</span>
+          <span data-ttu-id="a9afa-182">Puede ser un valor entero entre – 90 y 90 grados o en uno de los <see cref="T:Microsoft.Office.Interop.Excel.XlOrientation" /> constantes.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-138">Can be an integer value from –90 to 90 degrees or one of the <see cref="T:Microsoft.Office.Interop.Excel.XlOrientation" /> constants.</span>
+            <span data-stu-id="a9afa-182">Can be an integer value from –90 to 90 degrees or one of the <see cref="T:Microsoft.Office.Interop.Excel.XlOrientation" /> constants.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-139">
-            <para>
-              <b>XlOrientation</b> puede ser una de las siguientes constantes:</para>
-            <para>
-              <b>xlDownward</b>
-            </para>
-            <para>
-              <b>xlUpward</b>
-            </para>
-            <para>
-              <b>xlHorizontal</b>
-            </para>
-            <para>
-              <b>xlVertical</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-139">
-              <para>
-                <b>XlOrientation</b> can be one of the following constants:</para>
-              <para>
-                <b>xlDownward</b>
-              </para>
-              <para>
-                <b>xlUpward</b>
-              </para>
-              <para>
-                <b>xlHorizontal</b>
-              </para>
-              <para>
-                <b>xlVertical</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-183">
+              <b>XlOrientation</b> puede ser una de las constantes siguientes:</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-183">
+                <b>XlOrientation</b> can be one of the following constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-184">
+              <b>xlDownward</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-184">
+                <b>xlDownward</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-185">
+              <b>xlUpward</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-185">
+                <b>xlUpward</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-186">
+              <b>xlHorizontal</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-186">
+                <b>xlHorizontal</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-187">
+              <b>xlVertical</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-187">
+                <b>xlVertical</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1241,9 +1387,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-140">Devuelve el objeto primario del objeto especificado.</span>
+          <span data-ttu-id="a9afa-188">Devuelve el objeto primario del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-140">Returns the parent object for the specified object.</span>
+            <span data-stu-id="a9afa-188">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1277,25 +1423,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-141">Devuelve o establece el orden de lectura para el objeto especificado.</span>
+          <span data-ttu-id="a9afa-189">Devuelve o establece el orden de lectura para el objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-141">Returns or sets the reading order for the specified object.</span>
+            <span data-stu-id="a9afa-189">Returns or sets the reading order for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-142">
-            <para>La propiedad <b>ReadingOrder</b> puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>.</para>
-            <para>Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-142">
-              <para>The <b>ReadingOrder</b> property can be one of the following constants: <b>xlRTL</b> (right-to-left), <b>xlLTR</b> (left-to-right), or <b>xlContext</b>.</para>
-              <para>Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you've selected or installed.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-190">La propiedad <b>ReadingOrder</b> puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-190">The <b>ReadingOrder</b> property can be one of the following constants: <b>xlRTL</b> (right-to-left), <b>xlLTR</b> (left-to-right), or <b>xlContext</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-191">[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-191">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you've selected or installed.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1326,10 +1473,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-143">
+          <span data-ttu-id="a9afa-192">
             <b>True</b> si el texto se reduce automáticamente para ajustarse al ancho de columna disponible.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-143">
+            <span data-stu-id="a9afa-192">
               <b>True</b> if text automatically shrinks to fit in the available column width.</span>
           </span>
         </summary>
@@ -1361,9 +1508,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-144">El nombre del estilo especificado.</span>
+          <span data-ttu-id="a9afa-193">El nombre del estilo especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-144">The name of the specified style.</span>
+            <span data-stu-id="a9afa-193">The name of the specified style.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -1397,57 +1544,78 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-145">Devuelve o establece la alineación vertical del objeto especificado.</span>
+          <span data-ttu-id="a9afa-194">Devuelve o establece la alineación vertical del objeto especificado.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-145">Returns or sets the vertical alignment of the specified object.</span>
+            <span data-stu-id="a9afa-194">Returns or sets the vertical alignment of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="d22d0-146">
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" />puede ser una de las siguientes constantes <b>XlVAlign</b> :</para>
-            <para>
-              <b>xlVAlignCenter</b>
-            </para>
-            <para>
-              <b>xlVAlignJustify</b>
-            </para>
-            <para>
-              <b>xlVAlignBottom</b>
-            </para>
-            <para>
-              <b>xlVAlignDistributed</b>
-            </para>
-            <para>
-              <b>xlVAlignTop</b>
-            </para>
-            <para>algunas de estas constantes no estén disponibles, Dependiendo de la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d22d0-146">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" /> can be one of the following <b>XlVAlign</b> constants:</para>
-              <para>
-                <b>xlVAlignCenter</b>
-              </para>
-              <para>
-                <b>xlVAlignJustify</b>
-              </para>
-              <para>
-                <b>xlVAlignBottom</b>
-              </para>
-              <para>
-                <b>xlVAlignDistributed</b>
-              </para>
-              <para>
-                <b>xlVAlignTop</b>
-              </para>
-              <para>Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you've selected or installed.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="a9afa-195">
+              <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" />puede ser una de las siguientes constantes <b>XlVAlign</b> :</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-195">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" /> can be one of the following <b>XlVAlign</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-196">
+              <b>xlVAlignCenter</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-196">
+                <b>xlVAlignCenter</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-197">
+              <b>xlVAlignJustify</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-197">
+                <b>xlVAlignJustify</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-198">
+              <b>xlVAlignBottom</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-198">
+                <b>xlVAlignBottom</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-199">
+              <b>xlVAlignDistributed</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-199">
+                <b>xlVAlignDistributed</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-200">
+              <b>xlVAlignTop</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-200">
+                <b>xlVAlignTop</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="a9afa-201">[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="a9afa-201">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you've selected or installed.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1478,10 +1646,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d22d0-147">
+          <span data-ttu-id="a9afa-202">
             <b>True</b> si Microsoft Excel ajusta el texto en el objeto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d22d0-147">
+            <span data-stu-id="a9afa-202">
               <b>True</b> if Microsoft Excel wraps the text in the object.</span>
           </span>
         </summary>

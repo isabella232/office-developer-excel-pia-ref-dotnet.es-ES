@@ -1,10 +1,10 @@
 <Type Name="AppEvents_Event" FullName="Microsoft.Office.Interop.Excel.AppEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a27629fb8f2b82071d18bfdd4a110964f2911154" />
+    <Meta Name="ms.openlocfilehash" Value="9bf90f2833e35c96400ee1d99e1cdd02fe945d69" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580244" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AppEvents_Event" />
@@ -30,9 +30,9 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="b5d9d-101">Interfaz de eventos para Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Application" /> eventos de objetos.</span>
+      <span data-ttu-id="ba43f-101">Interfaz de eventos para Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Application" /> eventos de objetos.</span>
       <span class="sxs-lookup">
-        <span data-stu-id="b5d9d-101">Events interface for Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object events.</span>
+        <span data-stu-id="ba43f-101">Events interface for Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object events.</span>
       </span>
     </summary>
     <remarks>To be added.</remarks>
@@ -54,26 +54,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-102">El <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> evento se produce cuando todas las actividades de actualización pendientes (sincrónico y asincrónico) y se hayan completado todas las actividades de cálculo resultantes.</span>
+          <span data-ttu-id="ba43f-102">El <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> evento se produce cuando todas las actividades de actualización pendientes (sincrónico y asincrónico) y se hayan completado todas las actividades de cálculo resultantes.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-102">The <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> event occurs when all pending refresh activity (both synchronous and asynchronous) and all of the resultant calculation activities have been completed.</span>
+            <span data-stu-id="ba43f-102">The <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> event occurs when all pending refresh activity (both synchronous and asynchronous) and all of the resultant calculation activities have been completed.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-103">
-            <para>Este evento se produce siempre que se haya completado el cálculo y no quedan consultas pendientes.  Es obligatorio para ambas condiciones que deben cumplirse antes de que se produce el evento.  Puede se ha generado el evento incluso cuando no hay ningún dato de la hoja en el libro, como cuando finalizan los cálculos para todo el libro y no quedan consultas en ejecución.  </para>
-            <para>Usan programadores de complementos el <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> evento saber cuando todos los datos en el libro se ha actualizado totalmente mediante consultas o cálculos que podrían haberse en curso.</para>
-            <para>Este evento se produce después de todo <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, y <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> eventos.  Es el último evento que se produzca después de han completado todo el proceso de actualización y todo el procesamiento de cálculo, y se produce después de<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> está establecida en <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-103">
-              <para>This event occurs whenever calculation is completed and there are no outstanding queries.  It is mandatory for both conditions to be met before the event occurs.  The event can be raised even when there is no sheet data in the workbook, such as whenever calculation finishes for the entire workbook and there are no queries running.  </para>
-              <para>Add-in developers use the <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> event to know when all the data in the workbook has been fully updated by any queries and/or calculations that may have been in progress.</para>
-              <para>This event occurs after all <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, and <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> events.  It is the last event to occur after all refresh processing and all calc processing have completed, and it occurs after<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> is set to <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-p101">Este evento se produce cuando finaliza un cálculo y no quedan consultas pendientes de realizar. Para que se produzca el evento es obligatorio que se cumplan ambas condiciones. El evento se puede producir incluso cuando no hay datos de hojas en el libro, así como cuando finalizan los cálculos para todo el libro y no quedan consultas en ejecución.
+
+</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-p101">This event occurs whenever calculation is completed and there are no outstanding queries.  It is mandatory for both conditions to be met before the event occurs.  The event can be raised even when there is no sheet data in the workbook, such as whenever calculation finishes for the entire workbook and there are no queries running.  </span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ba43f-106">Complemento de los programadores usan el <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> evento saber cuando todos los datos en el libro se ha actualizado totalmente mediante consultas o cálculos que podrían haberse en curso.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-106">Add-in developers use the <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> event to know when all the data in the workbook has been fully updated by any queries and/or calculations that may have been in progress.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ba43f-107">Este evento se produce después de todo <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, y <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> eventos.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-107">This event occurs after all <see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />, <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />, and <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" /> events.</span>
+            </span>
+            <span data-ttu-id="ba43f-108">Es el último evento que se produzca después de han completado todo el proceso de actualización y todo el procesamiento de cálculo, y se produce después de<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> está establecida en <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-108">It is the last event to occur after all refresh processing and all calc processing have completed, and it occurs after<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" /> is set to <see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -93,9 +104,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-104">Se produce al crear un nuevo libro.</span>
+          <span data-ttu-id="ba43f-109">Se produce al crear un nuevo libro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-104">Occurs when a new workbook is created.</span>
+            <span data-stu-id="ba43f-109">Occurs when a new workbook is created.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -117,9 +128,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-105">Se produce cuando se activa una ventana Vista protegida.</span>
+          <span data-ttu-id="ba43f-110">Se produce cuando se activa una ventana Vista protegida.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-105">Occurs when a Protected View window is activated.</span>
+            <span data-stu-id="ba43f-110">Occurs when a Protected View window is activated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -141,9 +152,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-106">Se produce inmediatamente antes de que se cierre una ventana Vista protegida o un libro de una ventana Vista protegida.</span>
+          <span data-ttu-id="ba43f-111">Se produce inmediatamente antes de que se cierre una ventana Vista protegida o un libro de una ventana Vista protegida.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-106">Occurs immediately before a Protected View window or a workbook in a Protected View window closes.</span>
+            <span data-stu-id="ba43f-111">Occurs immediately before a Protected View window or a workbook in a Protected View window closes.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -165,9 +176,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-107">Se produce inmediatamente antes de habilitar la edición en el libro de la ventana Vista protegida especificada.</span>
+          <span data-ttu-id="ba43f-112">Se produce inmediatamente antes de habilitar la edición en el libro de la ventana Vista protegida especificada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-107">Occurs immediately before editing is enabled on the workbook in the specified Protected View window.</span>
+            <span data-stu-id="ba43f-112">Occurs immediately before editing is enabled on the workbook in the specified Protected View window.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -189,9 +200,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-108">Se produce cuando se desactiva una ventana Vista protegida.</span>
+          <span data-ttu-id="ba43f-113">Se produce cuando se desactiva una ventana Vista protegida.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-108">Occurs when a Protected View window is deactivated.</span>
+            <span data-stu-id="ba43f-113">Occurs when a Protected View window is deactivated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -213,9 +224,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-109">Se produce cuando se abre un libro en una ventana Vista protegida.</span>
+          <span data-ttu-id="ba43f-114">Se produce cuando se abre un libro en una ventana Vista protegida.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-109">Occurs when a workbook is opened in a Protected View window.</span>
+            <span data-stu-id="ba43f-114">Occurs when a workbook is opened in a Protected View window.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -237,9 +248,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-110">Se produce cuando se cambia el tamaño de una ventana Vista protegida.</span>
+          <span data-ttu-id="ba43f-115">Se produce cuando se cambia el tamaño de una ventana Vista protegida.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-110">Occurs when any Protected View window is resized.</span>
+            <span data-stu-id="ba43f-115">Occurs when any Protected View window is resized.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -261,9 +272,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-111">Se produce cuando se activa una hoja.</span>
+          <span data-ttu-id="ba43f-116">Se produce cuando se activa una hoja.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-111">Occurs when any sheet is activated.</span>
+            <span data-stu-id="ba43f-116">Occurs when any sheet is activated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -304,22 +315,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-112">Se produce al hacer doble clic en una hoja de cálculo, antes de la acción de doble clic predeterminada.</span>
+          <span data-ttu-id="ba43f-117">Se produce al hacer doble clic en una hoja de cálculo, antes de la acción de doble clic predeterminada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-112">Occurs when any worksheet is double-clicked, before the default double-click action.</span>
+            <span data-stu-id="ba43f-117">Occurs when any worksheet is double-clicked, before the default double-click action.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-113">
-            <para>Este evento no se produce en hojas de gráficos.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-113">
-              <para>This event doesn't occur on chart sheets.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-118">Este evento no se produce en hojas de gráficos.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-118">This event doesn't occur on chart sheets.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -339,22 +347,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-114">Se produce al hacer clic con el botón secundario del mouse (ratón) en una hoja de cálculo, antes de la acción predeterminada.</span>
+          <span data-ttu-id="ba43f-119">Se produce al hacer clic con el botón secundario del mouse (ratón) en una hoja de cálculo, antes de la acción predeterminada.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-114">Occurs when any worksheet is right-clicked, before the default right-click action.</span>
+            <span data-stu-id="ba43f-119">Occurs when any worksheet is right-clicked, before the default right-click action.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-115">
-            <para>Este evento no se produce en hojas de gráficos.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-115">
-              <para>This event doesn't occur on chart sheets.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-120">Este evento no se produce en hojas de gráficos.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-120">This event doesn't occur on chart sheets.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -374,9 +379,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-116">Se produce después de actualizar una hoja de cálculo o de trazar los datos modificados de un gráfico.</span>
+          <span data-ttu-id="ba43f-121">Se produce después de actualizar una hoja de cálculo o de trazar los datos modificados de un gráfico.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-116">Occurs after any worksheet is recalculated or after any changed data is plotted on a chart.</span>
+            <span data-stu-id="ba43f-121">Occurs after any worksheet is recalculated or after any changed data is plotted on a chart.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -398,22 +403,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-117">Se produce cuando una celda de cualquier hoja de cálculo es modificada por el usuario o por un vínculo externo.</span>
+          <span data-ttu-id="ba43f-122">Se produce cuando una celda de cualquier hoja de cálculo es modificada por el usuario o por un vínculo externo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-117">Occurs when cells in any worksheet are changed by the user or by an external link.</span>
+            <span data-stu-id="ba43f-122">Occurs when cells in any worksheet are changed by the user or by an external link.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-118">
-            <para>Este evento no se produce en hojas de gráficos.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-118">
-              <para>This event doesn't occur on chart sheets.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-123">Este evento no se produce en hojas de gráficos.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-123">This event doesn't occur on chart sheets.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -433,9 +435,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-119">Se produce cuando se desactiva cualquier hoja.</span>
+          <span data-ttu-id="ba43f-124">Se produce cuando se desactiva cualquier hoja.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-119">Occurs when any sheet is deactivated.</span>
+            <span data-stu-id="ba43f-124">Occurs when any sheet is deactivated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -457,22 +459,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-120">Se produce al hacer clic en cualquier hipervínculo en Microsoft Excel.</span>
+          <span data-ttu-id="ba43f-125">Se produce al hacer clic en cualquier hipervínculo en Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-120">Occurs when you click any hyperlink in Microsoft Excel.</span>
+            <span data-stu-id="ba43f-125">Occurs when you click any hyperlink in Microsoft Excel.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-121">
-            <para>Para eventos de nivel de hoja de cálculo, vea la <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> evento.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-121">
-              <para>For worksheet-level events, see the <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> event.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-126">Para eventos de nivel de hoja de cálculo, vea el <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> (evento).</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-126">For worksheet-level events, see the <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" /> event.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -492,9 +491,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-122">Se produce después de que han terminado la representación de los iconos de la Galería de llamada (estáticos y dinámicos).</span>
+          <span data-ttu-id="ba43f-127">Se produce después de que han terminado la representación de los iconos de la Galería de llamada (estáticos y dinámicos).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-122">Occurs after a callout gallery’s icons (dynamic and static) have finished rendering.</span>
+            <span data-stu-id="ba43f-127">Occurs after a callout gallery’s icons (dynamic and static) have finished rendering.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -516,22 +515,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-123">Se produce después de editar o calcular de nuevo una celda o un rango de celdas (para celdas que contienen fórmulas) dentro de una tabla dinámica.</span>
+          <span data-ttu-id="ba43f-128">Se produce después de editar o calcular de nuevo una celda o un rango de celdas (para celdas que contienen fórmulas) dentro de una tabla dinámica.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-123">Occurs after a cell or range of cells inside a PivotTable are edited or recalculated (for cells that contain formulas).</span>
+            <span data-stu-id="ba43f-128">Occurs after a cell or range of cells inside a PivotTable are edited or recalculated (for cells that contain formulas).</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-124">
-            <para>La <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-124">
-              <para>The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> event does not occur under any conditions other than editing or recalculating cells. For example, it will not occur when the PivotTable is refreshed, sorted, filtered, or drilled down on, even though those operations move cells and potentially retrieve new values from the OLAP data source.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-129">El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-129">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" /> event does not occur under any conditions other than editing or recalculating cells.</span>
             </span>
-          </span>
+            <span data-ttu-id="ba43f-130">Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-130">For example, it will not occur when the PivotTable is refreshed, sorted, filtered, or drilled down on, even though those operations move cells and potentially retrieve new values from the OLAP data source.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -551,22 +551,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-125">Se produce antes de aplicar los cambios a una tabla dinámica.</span>
+          <span data-ttu-id="ba43f-131">Se produce antes de aplicar los cambios a una tabla dinámica.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-125">Occurs before changes are applied to a PivotTable.</span>
+            <span data-stu-id="ba43f-131">Occurs before changes are applied to a PivotTable.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-126">
-            <para>La <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-126">
-              <para>The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> event occurs immediately before Excel executes an UPDATE CUBE statement to apply all changes to the PivotTable's OLAP data source, and immediately after the user has chosen to apply changes in the user interface.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-132">El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-132">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> event occurs immediately before Excel executes an UPDATE CUBE statement to apply all changes to the PivotTable's OLAP data source, and immediately after the user has chosen to apply changes in the user interface.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -586,22 +583,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-127">Se produce antes de confirmar los cambios en el origen de datos OLAP de una tabla dinámica.</span>
+          <span data-ttu-id="ba43f-133">Se produce antes de confirmar los cambios en el origen de datos OLAP de una tabla dinámica.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-127">Occurs before changes are committed against the OLAP data source for a PivotTable.</span>
+            <span data-stu-id="ba43f-133">Occurs before changes are committed against the OLAP data source for a PivotTable.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-128">
-            <para>La <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra el origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-128">
-              <para>The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> event occurs immediately before Excel executes a COMMIT TRANSACTION against the PivotTable's OLAP data source, and immediately after the user has chosen to save changes for the whole PivotTable.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-134">El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra el origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-134">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" /> event occurs immediately before Excel executes a COMMIT TRANSACTION against the PivotTable's OLAP data source, and immediately after the user has chosen to save changes for the whole PivotTable.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -621,22 +615,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-129">Se produce antes de que se descarten los cambios realizados en una tabla dinámica.</span>
+          <span data-ttu-id="ba43f-135">Se produce antes de que se descarten los cambios realizados en una tabla dinámica.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-129">Occurs before changes to a PivotTable are discarded.</span>
+            <span data-stu-id="ba43f-135">Occurs before changes to a PivotTable are discarded.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-130">
-            <para>Tiene lugar inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-130">
-              <para>Occurs immediately before Excel executes a ROLLBACK TRANSACTION statement against the OLAP data source, if a transaction is still active, and then discards all edited values in the PivotTable, after the user has chosen to discard changes.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-136">Se produce inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-136">Occurs immediately before Excel executes a ROLLBACK TRANSACTION statement against the OLAP data source, if a transaction is still active, and then discards all edited values in the PivotTable, after the user has chosen to discard changes.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -656,9 +647,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-131">Se produce después de actualizar la hoja del informe de tabla dinámica.</span>
+          <span data-ttu-id="ba43f-137">Se produce después de actualizar la hoja del informe de tabla dinámica.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-131">Occurs after the sheet of the PivotTable report has been updated.</span>
+            <span data-stu-id="ba43f-137">Occurs after the sheet of the PivotTable report has been updated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -680,9 +671,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-132">Se produce cuando la selección cambia en una hoja (no se produce si la selección está en una hoja de gráfico).</span>
+          <span data-ttu-id="ba43f-138">Se produce cuando la selección cambia en una hoja (no se produce si la selección está en una hoja de gráfico).</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-132">Occurs when the selection changes on any worksheet (doesn't occur if the selection is on a chart sheet).</span>
+            <span data-stu-id="ba43f-138">Occurs when the selection changes on any worksheet (doesn't occur if the selection is on a chart sheet).</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -704,9 +695,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-133">Se produce cuando se actualiza una tabla en una hoja de cálculo.</span>
+          <span data-ttu-id="ba43f-139">Se produce cuando se actualiza una tabla en una hoja de cálculo.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-133">Occurs when a table on a worksheet is updated.</span>
+            <span data-stu-id="ba43f-139">Occurs when a table on a worksheet is updated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -728,9 +719,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-134">Se produce cuando se activa cualquier ventana del libro.</span>
+          <span data-ttu-id="ba43f-140">Se produce cuando se activa cualquier ventana del libro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-134">Occurs when any workbook window is activated.</span>
+            <span data-stu-id="ba43f-140">Occurs when any workbook window is activated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -752,9 +743,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-135">Se produce cuando se desactiva cualquier ventana del libro.</span>
+          <span data-ttu-id="ba43f-141">Se produce cuando se desactiva cualquier ventana del libro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-135">Occurs when any workbook window is deactivated.</span>
+            <span data-stu-id="ba43f-141">Occurs when any workbook window is deactivated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -776,9 +767,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-136">Se produce cuando se cambia el tamaño de cualquier ventana del libro.</span>
+          <span data-ttu-id="ba43f-142">Se produce cuando se cambia el tamaño de cualquier ventana del libro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-136">Occurs when any workbook window is resized.</span>
+            <span data-stu-id="ba43f-142">Occurs when any workbook window is resized.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -800,9 +791,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-137">Se produce cuando se activa cualquier libro.</span>
+          <span data-ttu-id="ba43f-143">Se produce cuando se activa cualquier libro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-137">Occurs when any workbook is activated.</span>
+            <span data-stu-id="ba43f-143">Occurs when any workbook is activated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -824,9 +815,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-138">Se produce al instalar un libro como complemento.</span>
+          <span data-ttu-id="ba43f-144">Se produce al instalar un libro como complemento.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-138">Occurs when a workbook is installed as an add-in.</span>
+            <span data-stu-id="ba43f-144">Occurs when a workbook is installed as an add-in.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -848,9 +839,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-139">Se produce al desinstalar cualquier libro que esté instalado como complemento.</span>
+          <span data-ttu-id="ba43f-145">Se produce al desinstalar cualquier libro que esté instalado como complemento.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-139">Occurs when any add-in workbook is uninstalled.</span>
+            <span data-stu-id="ba43f-145">Occurs when any add-in workbook is uninstalled.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -872,9 +863,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-140">Se produce después de guardar el libro.</span>
+          <span data-ttu-id="ba43f-146">Se produce después de guardar el libro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-140">Occurs after the workbook is saved.</span>
+            <span data-stu-id="ba43f-146">Occurs after the workbook is saved.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -896,24 +887,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-141">Se produce después de que Microsoft Excel guarde o exporte datos de cualquier libro abierto a un archivo de datos XML.</span>
+          <span data-ttu-id="ba43f-147">Se produce después de que Microsoft Excel guarde o exporte datos de cualquier libro abierto a un archivo de datos XML.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-141">Occurs after Microsoft Excel saves or exports data from any open workbook to an XML data file.</span>
+            <span data-stu-id="ba43f-147">Occurs after Microsoft Excel saves or exports data from any open workbook to an XML data file.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-142">
-            <para>Utilice el evento <b>AfterXmlExport</b> si desea realizar una operación después de haber exportado los datos XML desde un libro determinado.</para>
-            <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-142">
-              <para>Use the <b>AfterXmlExport</b> event if you want to perform an operation after XML data has been exported from a particular workbook.</para>
-              <para>XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-148">Use el evento <b>AfterXmlExport</b> si desea realizar una operación después de haber exportado los datos XML desde un libro determinado.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-148">Use the <b>AfterXmlExport</b> event if you want to perform an operation after XML data has been exported from a particular workbook.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ba43f-149">Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-149">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -933,24 +925,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-143">Se produce después de actualizar una conexión de datos XML existente o importarán nuevos datos XML a cualquier libro abierto de Microsoft Excel.</span>
+          <span data-ttu-id="ba43f-150">Se produce después de actualizar una conexión de datos XML existente o importarán nuevos datos XML a cualquier libro abierto de Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-143">Occurs after an existing XML data connection is refreshed or new XML data is imported into any open Microsoft Excel workbook.</span>
+            <span data-stu-id="ba43f-150">Occurs after an existing XML data connection is refreshed or new XML data is imported into any open Microsoft Excel workbook.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-144">
-            <para>Utilice el evento <b>AfterXmlImport</b> si desea realizar una operación después de haber importado los datos XML a un libro determinado.</para>
-            <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-144">
-              <para>Use the <b>AfterXmlImport</b> event if you want to perform an operation after XML data has been imported into a particular workbook.</para>
-              <para>XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-151">Use el evento <b>AfterXmlImport</b> si desea realizar una operación después de haber importado los datos XML a un libro determinado.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-151">Use the <b>AfterXmlImport</b> event if you want to perform an operation after XML data has been imported into a particular workbook.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ba43f-152">Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-152">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -970,9 +963,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-145">Se produce antes de que se cierre cualquier libro.</span>
+          <span data-ttu-id="ba43f-153">Se produce antes de que se cierre cualquier libro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-145">Occurs immediately before any open workbook closes.</span>
+            <span data-stu-id="ba43f-153">Occurs immediately before any open workbook closes.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -994,9 +987,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-146">Se produce antes de imprimir cualquier libro abierto.</span>
+          <span data-ttu-id="ba43f-154">Se produce antes de imprimir cualquier libro abierto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-146">Occurs before any open workbook is printed.</span>
+            <span data-stu-id="ba43f-154">Occurs before any open workbook is printed.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1018,9 +1011,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-147">Se produce antes de guardar un libro abierto.</span>
+          <span data-ttu-id="ba43f-155">Se produce antes de guardar un libro abierto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-147">Occurs before any open workbook is saved.</span>
+            <span data-stu-id="ba43f-155">Occurs before any open workbook is saved.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1042,24 +1035,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-148">Se produce antes de que Microsoft Excel guarde o exporte datos de cualquier libro abierto a un archivo de datos XML.</span>
+          <span data-ttu-id="ba43f-156">Se produce antes de que Microsoft Excel guarde o exporte datos de cualquier libro abierto a un archivo de datos XML.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-148">Occurs before Microsoft Excel saves or exports data from any open workbook to an XML data file.</span>
+            <span data-stu-id="ba43f-156">Occurs before Microsoft Excel saves or exports data from any open workbook to an XML data file.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-149">
-            <para>Use el evento <b>BeforeXmlExport</b> si desea capturar datos XML que se están guardando o exportando desde un libro determinado.</para>
-            <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-149">
-              <para>Use the <b>BeforeXmlExport</b> event if you want to capture XML data that is being exported or saved from a particular workbook.</para>
-              <para>XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-157">Use el evento <b>BeforeXmlExport</b> si desea capturar datos XML que se están guardando o exportando desde un libro determinado.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-157">Use the <b>BeforeXmlExport</b> event if you want to capture XML data that is being exported or saved from a particular workbook.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ba43f-158">Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-158">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1079,24 +1073,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-150">Se produce antes de actualizar una conexión de datos XML existente o importarán nuevos datos XML a cualquier libro abierto de Microsoft Excel.</span>
+          <span data-ttu-id="ba43f-159">Se produce antes de actualizar una conexión de datos XML existente o importarán nuevos datos XML a cualquier libro abierto de Microsoft Excel.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-150">Occurs before an existing XML data connection is refreshed or new XML data is imported into any open Microsoft Excel workbook.</span>
+            <span data-stu-id="ba43f-159">Occurs before an existing XML data connection is refreshed or new XML data is imported into any open Microsoft Excel workbook.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-151">
-            <para>Use el evento <b>BeforeXmlImport</b> si desea capturar datos XML que se va a importar o importando a un libro determinado.</para>
-            <para>Características XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-151">
-              <para>Use the <b>BeforeXmlImport</b> event if you want to capture XML data that is being imported or refreshed to a particular workbook.</para>
-              <para>XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-160">Use el evento <b>BeforeXmlImport</b> si desea capturar datos XML que se están actualizando o importando a un libro determinado.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-160">Use the <b>BeforeXmlImport</b> event if you want to capture XML data that is being imported or refreshed to a particular workbook.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="ba43f-161">Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-161">XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1116,9 +1111,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-152">Se produce antes de desactivar cualquier libro abierto.</span>
+          <span data-ttu-id="ba43f-162">Se produce antes de desactivar cualquier libro abierto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-152">Occurs when any open workbook is deactivated.</span>
+            <span data-stu-id="ba43f-162">Occurs when any open workbook is deactivated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1140,9 +1135,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-153">Se produce cuando se actualiza el modelo de datos.</span>
+          <span data-ttu-id="ba43f-163">Se produce cuando se actualiza el modelo de datos.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-153">Occurs when the data model is updated.</span>
+            <span data-stu-id="ba43f-163">Occurs when the data model is updated.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1164,24 +1159,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-154">Se produce cuando se crea un nuevo gráfico en cualquier libro abierto.</span>
+          <span data-ttu-id="ba43f-164">Se produce cuando se crea un nuevo gráfico en cualquier libro abierto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-154">Occurs when a new chart is created in any open workbook.</span>
+            <span data-stu-id="ba43f-164">Occurs when a new chart is created in any open workbook.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-155">
-            <para>El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> evento se produce cuando se inserta un nuevo gráfico o se pegan en una hoja de cálculo, una hoja de gráfico u otros tipos de hoja. Si se insertan varios gráficos o se pegan, se producirá el evento para cada gráfico en el orden en que se inserta o se pegan. Si un objeto chart o la hoja de gráfico se mueve de una ubicación a otra, no se producirá el evento. Sin embargo, si el gráfico se mueve entre un objeto de gráfico y una hoja de gráfico, se producirá el evento debido a que se debe crear un nuevo gráfico.</para>
-            <para>La <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> no se producirá el evento en los siguientes escenarios: copiar o pegar una hoja de gráfico, cambiar un tipo de gráfico, cambiar un origen de datos del gráfico, deshacer o Rehacer Insertar o pegar un gráfico y carga de un libro que contiene un gráfico.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-155">
-              <para>The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> event occurs when a new chart is inserted or pasted in a worksheet, a chart sheet, or other sheet types. If multiple charts are inserted or pasted, the event will occur for each chart in the order they are inserted or pasted. If a chart object or chart sheet is moved from one location to another, the event will not occur. However, if the chart is moved between a chart object and a chart sheet, the event will occur because a new chart must be created.</para>
-              <para>The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> event will not occur in the following scenarios: copying or pasting a chart sheet, changing a chart type, changing a chart data source, undoing or redoing inserting or pasting a chart, and loading a workbook that contains a chart.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-165">El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> evento se produce cuando se inserta un nuevo gráfico o se pegan en una hoja de cálculo, una hoja de gráfico u otros tipos de hoja.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-165">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> event occurs when a new chart is inserted or pasted in a worksheet, a chart sheet, or other sheet types.</span>
             </span>
-          </span>
+            <span data-ttu-id="ba43f-166">Si se insertan varios gráficos o se pegan, se producirá el evento para cada gráfico en el orden en que se inserta o se pegan.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-166">If multiple charts are inserted or pasted, the event will occur for each chart in the order they are inserted or pasted.</span>
+            </span>
+            <span data-ttu-id="ba43f-167">Si un objeto chart o la hoja de gráfico se mueve de una ubicación a otra, no se producirá el evento.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-167">If a chart object or chart sheet is moved from one location to another, the event will not occur.</span>
+            </span>
+            <span data-ttu-id="ba43f-168">Sin embargo, si el gráfico se mueve entre un objeto de gráfico y una hoja de gráfico, se producirá el evento debido a que se debe crear un nuevo gráfico.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-168">However, if the chart is moved between a chart object and a chart sheet, the event will occur because a new chart must be created.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="ba43f-169">La <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> no se producirá el evento en los siguientes escenarios: copiar o pegar una hoja de gráfico, cambiar un tipo de gráfico, cambiar un origen de datos del gráfico, deshacer o Rehacer Insertar o pegar un gráfico y carga de un libro que contiene un gráfico.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-169">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> event will not occur in the following scenarios: copying or pasting a chart sheet, changing a chart type, changing a chart data source, undoing or redoing inserting or pasting a chart, and loading a workbook that contains a chart.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1201,9 +1209,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-156">Se produce al crear una hoja nueva en un libro abierto.</span>
+          <span data-ttu-id="ba43f-170">Se produce al crear una hoja nueva en un libro abierto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-156">Occurs when a new sheet is created in any open workbook.</span>
+            <span data-stu-id="ba43f-170">Occurs when a new sheet is created in any open workbook.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1225,9 +1233,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-157">Se produce al abrir un libro.</span>
+          <span data-ttu-id="ba43f-171">Se produce al abrir un libro.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-157">Occurs when a workbook is opened.</span>
+            <span data-stu-id="ba43f-171">Occurs when a workbook is opened.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1249,9 +1257,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-158">Se produce después de cerrar la conexión de un informe de tabla dinámica.</span>
+          <span data-ttu-id="ba43f-172">Se produce después de cerrar la conexión de un informe de tabla dinámica.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-158">Occurs after a PivotTable report connection has been closed.</span>
+            <span data-stu-id="ba43f-172">Occurs after a PivotTable report connection has been closed.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1273,9 +1281,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-159">Se produce después de un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />conexión de informe se ha abierto.</span>
+          <span data-ttu-id="ba43f-173">Se produce después de un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />conexión de informe se ha abierto.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-159">Occurs after a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />report connection has been opened.</span>
+            <span data-stu-id="ba43f-173">Occurs after a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />report connection has been opened.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1297,22 +1305,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-160">El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />evento se produce cuando el usuario recorre el conjunto de registros o invoca la acción de conjunto de filas en una tabla dinámica OLAP.</span>
+          <span data-ttu-id="ba43f-174">El <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />evento se produce cuando el usuario recorre el conjunto de registros o invoca la acción de conjunto de filas en una tabla dinámica OLAP.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-160">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />event  occurs when the user either drills through the recordset or invokes the rowset action on an OLAP PivotTable.</span>
+            <span data-stu-id="ba43f-174">The <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />event  occurs when the user either drills through the recordset or invokes the rowset action on an OLAP PivotTable.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="b5d9d-161">
-            <para>Dado que el objeto recordset se crea de forma asincrónica, el evento permite la automatización determinar cuándo se ha completado la acción. Además, dado que se crea el objeto recordset en una hoja independiente, el evento debe estar en el nivel de libro.</para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-161">
-              <para>Because the recordset is created asynchronously, the event allows automation to determine when the action has been completed. Additionally, because the recordset is created on a separate sheet, the event needs to be on the workbook level.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ba43f-p105">Dado que el conjunto de registros se crea asincrónicamente, el evento permite que la automatización determine cuándo ha finalizado la acción. Además, ya que el conjunto de registros se crea en una hoja independiente, es necesario que el evento esté en el nivel de libro.</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ba43f-p105">Because the recordset is created asynchronously, the event allows automation to determine when the action has been completed. Additionally, because the recordset is created on a separate sheet, the event needs to be on the workbook level.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1332,9 +1337,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="b5d9d-162">Se produce cuando la copia local de un libro que forma parte de un área de documentos se sincroniza con la copia almacenada en el servidor.</span>
+          <span data-ttu-id="ba43f-177">Se produce cuando la copia local de un libro que forma parte de un área de documentos se sincroniza con la copia almacenada en el servidor.</span>
           <span class="sxs-lookup">
-            <span data-stu-id="b5d9d-162">Occurs when the local copy of a workbook that is part of a Document Workspace is synchronized with the copy on the server.</span>
+            <span data-stu-id="ba43f-177">Occurs when the local copy of a workbook that is part of a Document Workspace is synchronized with the copy on the server.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
