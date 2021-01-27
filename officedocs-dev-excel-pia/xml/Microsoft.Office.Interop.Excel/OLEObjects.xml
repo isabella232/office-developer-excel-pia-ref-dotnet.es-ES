@@ -1,13 +1,5 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575638" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011210" /></Metadata><TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEObjects&#xA;Implements IEnumerable" />
@@ -33,63 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="84d34-101">Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objetos en la hoja de cálculo especificada.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="84d34-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objects on the specified worksheet.</span>
-      </span>
-      <span data-ttu-id="84d34-102">Cada objeto  <b>OLEObject</b> representa un control ActiveX o un objeto OLE vinculado o incrustado.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="84d34-102">Each <b>OLEObject</b> object represents an ActiveX control or a linked or embedded OLE object.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="84d34-103">Usar el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> método para devolver la colección <b>OLEObjects</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-103">Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> method to return the <b>OLEObjects</b> collection.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="84d34-104">Usar el <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para crear un nuevo objeto OLE y agregarlo a la colección <b>OLEObjects</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new OLE object and add it to the <b>OLEObjects</b> collection.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="84d34-105">Un control ActiveX de una hoja tiene dos nombres: el nombre de la forma que contiene el control, que se puede ver en el cuadro nombre al ver la hoja y el nombre de código para el control, que se puede ver en la celda a la derecha de (Name) en la ventana Propiedades.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-105">An ActiveX control on a sheet has two names: the name of the shape that contains the control, which you can see in the Name box when you view the sheet, and the code name for the control, which you can see in the cell to the right of (Name) in the Properties window.</span>
-        </span>
-        <span data-ttu-id="84d34-106">Al agregar un control a una hoja en primer lugar, coincide con el nombre de la forma y el nombre de código.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-106">When you first add a control to a sheet, the shape name and code name match.</span>
-        </span>
-        <span data-ttu-id="84d34-107">Sin embargo, si cambia el nombre de la forma o el nombre de código, la otra no se cambia automáticamente para que coincidan con.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-107">However, if you change either the shape name or code name, the other is not automatically changed to match.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="84d34-108">Use el nombre de código de un control en los nombres de sus procedimientos de evento.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-108">You use the code name of a control in the names of its event procedures.</span>
-        </span>
-        <span data-ttu-id="84d34-109">Sin embargo, al devolver un control desde el <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> o colección <b>OLEObjects</b> de una hoja, debe utilizar el nombre de la forma, no el de código para hacer referencia al control por su nombre.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-109">However, when you return a control from the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> or <b>OLEObjects</b> collection for a sheet, you must use the shape name, not the code name, to refer to the control by name.</span>
-        </span>
-        <span data-ttu-id="84d34-110">Por ejemplo, suponga que agrega una casilla de verificación a una hoja y que el nombre de forma predeterminada y el nombre predeterminado en código son CheckBox1.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-110">For example, assume that you add a check box to a sheet and that both the default shape name and the default code name are CheckBox1.</span>
-        </span>
-        <span data-ttu-id="84d34-111">Si, a continuación, cambia el nombre de código de control escribiendo chkFinished junto a (Name) en la ventana Propiedades, debe usar chkFinished en los nombres de los procedimientos de eventos, pero aún tendrá que utilizar CheckBox1 para devolver el control de las <b>formas</b> o <b>OLEObjects</b> colección.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="84d34-111">If you then change the control code name by typing chkFinished next to (Name) in the Properties window, you must use chkFinished in event procedures names, but you still have to use CheckBox1 to return the control from the <b>Shapes</b> or <b>OLEObjects</b> collection.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="f08a2-101">Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objetos de la hoja de cálculo especificada.</span><span class="sxs-lookup"><span data-stu-id="f08a2-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objects on the specified worksheet.</span></span> <span data-ttu-id="f08a2-102">Cada objeto <b>OLEObject</b> representa un control ActiveX o un objeto OLE vinculado o insertado.</span><span class="sxs-lookup"><span data-stu-id="f08a2-102">Each <b>OLEObject</b> object represents an ActiveX control or a linked or embedded OLE object.</span></span></summary>
+    <remarks><para><span data-ttu-id="f08a2-103">Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> método para devolver la colección <b>OLEObjects</b> .</span><span class="sxs-lookup"><span data-stu-id="f08a2-103">Use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> method to return the <b>OLEObjects</b> collection.</span></span></para>
+      <para><span data-ttu-id="f08a2-104">Utilice el <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para crear un nuevo objeto OLE y agregarlo a la colección <b>OLEObjects</b> .</span><span class="sxs-lookup"><span data-stu-id="f08a2-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a new OLE object and add it to the <b>OLEObjects</b> collection.</span></span></para>
+      <para><span data-ttu-id="f08a2-105">Un control ActiveX de una hoja tiene dos nombres: el nombre de la forma que contiene el control, visible en el cuadro Nombre al ver la hoja, y el nombre en código del control, presente en la celda situada a la derecha de (Name) en la ventana Propiedades.</span><span class="sxs-lookup"><span data-stu-id="f08a2-105">An ActiveX control on a sheet has two names: the name of the shape that contains the control, which you can see in the Name box when you view the sheet, and the code name for the control, which you can see in the cell to the right of (Name) in the Properties window.</span></span> <span data-ttu-id="f08a2-106">La primera vez que se agrega un control a una hoja, el nombre de la forma y el nombre de código son iguales.</span><span class="sxs-lookup"><span data-stu-id="f08a2-106">When you first add a control to a sheet, the shape name and code name match.</span></span> <span data-ttu-id="f08a2-107">Sin embargo, si modifica uno de los nombres, el otro no cambiará automáticamente para coincidir con el que se modificó.</span><span class="sxs-lookup"><span data-stu-id="f08a2-107">However, if you change either the shape name or code name, the other is not automatically changed to match.</span></span></para>
+      <para><span data-ttu-id="f08a2-108">El nombre de código de un control se utiliza en los nombres de sus procedimientos de eventos.</span><span class="sxs-lookup"><span data-stu-id="f08a2-108">You use the code name of a control in the names of its event procedures.</span></span> <span data-ttu-id="f08a2-109">Sin embargo, cuando se devuelve un control de la colección <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> <b>o OLEObjects</b> de una hoja, debe usar el nombre de la forma, no el nombre de código, para hacer referencia al control por su nombre.</span><span class="sxs-lookup"><span data-stu-id="f08a2-109">However, when you return a control from the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> or <b>OLEObjects</b> collection for a sheet, you must use the shape name, not the code name, to refer to the control by name.</span></span> <span data-ttu-id="f08a2-110">Por ejemplo, suponga que agrega una casilla a una hoja y que tanto el nombre predeterminado de la forma como el de código son CheckBox1.</span><span class="sxs-lookup"><span data-stu-id="f08a2-110">For example, assume that you add a check box to a sheet and that both the default shape name and the default code name are CheckBox1.</span></span> <span data-ttu-id="f08a2-111">Si, a continuación, cambia el nombre del código de control escribiendo chkFinished junto a (Name) en la ventana Propiedades, debe usar chkFinished en los nombres de procedimientos de eventos, pero todavía tiene que usar CheckBox1 para devolver el control de la <b>colección Shapes</b> o <b>OLEObjects</b> .</span><span class="sxs-lookup"><span data-stu-id="f08a2-111">If you then change the control code name by typing chkFinished next to (Name) in the Properties window, you must use chkFinished in event procedures names, but you still have to use CheckBox1 to return the control from the <b>Shapes</b> or <b>OLEObjects</b> collection.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Dummy12">
@@ -116,12 +57,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-112">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-112">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-112">Reservado para uso interno. </span><span class="sxs-lookup"><span data-stu-id="f08a2-112">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,12 +85,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-113">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-113">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-113">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-113">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,12 +113,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-114">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-114">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-114">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-114">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,12 +141,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-115">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-115">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-115">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-115">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,12 +169,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-116">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-116">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-116">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-116">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,12 +197,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-117">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-117">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-117">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-117">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,12 +225,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-118">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-118">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-118">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-118">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,12 +253,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-119">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-119">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-119">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-119">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,12 +281,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-120">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-120">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-120">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-120">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,12 +309,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-121">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-121">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-121">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-121">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,12 +337,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-122">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-122">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-122">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-122">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,12 +365,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-123">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-123">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-123">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-123">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,12 +393,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-124">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-124">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-124">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-124">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,12 +421,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-125">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-125">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-125">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-125">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -586,181 +457,18 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">
-          <span data-ttu-id="84d34-126">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-126">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-127">(Debe especificar uno <paramref name="ClassType" /> o <paramref name="FileName" />.) Una cadena que contiene el identificador de programación para el objeto que se creará.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-127">(You must specify either <paramref name="ClassType" /> or <paramref name="FileName" />.) A string that contains the programmatic identifier for the object to be created.</span>
-          </span>
-          <span data-ttu-id="84d34-128">Si <paramref name="ClassType" /> se ha especificado, <paramref name="FileName" /> y <paramref name="Link" /> se omiten.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-128">If <paramref name="ClassType" /> is specified, <paramref name="FileName" /> and <paramref name="Link" /> are ignored.</span>
-          </span>
-        </param>
-        <param name="Filename">
-          <span data-ttu-id="84d34-129">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-129">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-130">(Debe especificar uno <paramref name="ClassType" /> o <paramref name="FileName" />.) Una cadena que especifica el archivo que se usará para crear el objeto OLE.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-130">(You must specify either <paramref name="ClassType" /> or <paramref name="FileName" />.) A string that specifies the file to be used to create the OLE object.</span>
-          </span>
-        </param>
-        <param name="Link">
-          <span data-ttu-id="84d34-131">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-131">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-132">
-            <b>True</b> para que el nuevo objeto OLE basado en <paramref name="FileName" /> vincularse a ese archivo.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-132">
-              <b>True</b> to have the new OLE object based on <paramref name="FileName" /> be linked to that file.</span>
-          </span>
-          <span data-ttu-id="84d34-133">Si el objeto no está vinculado, se crea el objeto como una copia del archivo.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-133">If the object isn't linked, the object is created as a copy of the file.</span>
-          </span>
-          <span data-ttu-id="84d34-134">El valor predeterminado es <b>False</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-134">The default value is <b>False</b>.</span>
-          </span>
-        </param>
-        <param name="DisplayAsIcon">
-          <span data-ttu-id="84d34-135">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-135">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-136">
-            <b>True</b> para mostrar el nuevo objeto OLE como un icono o como su imagen normal.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-136">
-              <b>True</b> to display the new OLE object either as an icon or as its regular picture.</span>
-          </span>
-          <span data-ttu-id="84d34-137">Si este argumento es <b>True</b>, <paramref name="IconFileName" /> y <paramref name="IconIndex" /> se puede usar para especificar un icono.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-137">If this argument is <b>True</b>, <paramref name="IconFileName" /> and <paramref name="IconIndex" /> can be used to specify an icon.</span>
-          </span>
-        </param>
-        <param name="IconFileName">
-          <span data-ttu-id="84d34-138">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-138">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-139">Una cadena que especifica el archivo que contiene el icono que se mostrará.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-139">A string that specifies the file that contains the icon to be displayed.</span>
-          </span>
-          <span data-ttu-id="84d34-140">Este argumento sólo se utiliza si <paramref name="DisplayAsIcon" /> es <b>True</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-140">This argument is used only if <paramref name="DisplayAsIcon" /> is <b>True</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-141">Si no se especifica este argumento o el archivo no contiene iconos, se utiliza el icono predeterminado para la clase OLE</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-141">If this argument isn't specified or the file contains no icons, the default icon for the OLE class is used</span>
-          </span>
-        </param>
-        <param name="IconIndex">
-          <span data-ttu-id="84d34-142">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-142">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-143">El número del icono en el archivo de icono.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-143">The number of the icon in the icon file.</span>
-          </span>
-          <span data-ttu-id="84d34-144">Esto sólo se utiliza si <paramref name="DisplayAsIcon" /> es <b>True</b> y <paramref name="IconFileName" /> hace referencia a un archivo válido que contiene iconos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-144">This is used only if <paramref name="DisplayAsIcon" /> is <b>True</b> and <paramref name="IconFileName" /> refers to a valid file that contains icons.</span>
-          </span>
-          <span data-ttu-id="84d34-145">Si no existe ningún icono con el número de índice especificado en el archivo especificado por <paramref name="IconFileName" />, se usa el primer icono en el archivo.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-145">If an icon with the given index number doesn't exist in the file specified by <paramref name="IconFileName" />, the first icon in the file is used.</span>
-          </span>
-        </param>
-        <param name="IconLabel">
-          <span data-ttu-id="84d34-146">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-146">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-147">Una cadena que especifica una etiqueta que se mostrará debajo del icono.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-147">A string that specifies a label to display beneath the icon.</span>
-          </span>
-          <span data-ttu-id="84d34-148">Esto sólo se utiliza si <paramref name="DisplayAsIcon" /> es <b>True</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-148">This is used only if <paramref name="DisplayAsIcon" /> is <b>True</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-149">Si este argumento se omite o es una cadena vacía (""), no se muestra ningún título.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-149">If this argument is omitted or is an empty string (""), no caption is displayed.</span>
-          </span>
-        </param>
-        <param name="Left">
-          <span data-ttu-id="84d34-150">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-150">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-151">Las coordenadas iniciales, en puntos, del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo o a la esquina superior izquierda de un gráfico.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-151">The initial coordinates of the new object in points, relative to the upper-left corner of cell A1 on a worksheet, or to the upper-left corner of a chart.</span>
-          </span>
-        </param>
-        <param name="Top">
-          <span data-ttu-id="84d34-152">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-152">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-153">Las coordenadas iniciales, en puntos, del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo o a la esquina superior izquierda de un gráfico.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-153">The initial coordinates of the new object in points, relative to the upper-left corner of cell A1 on a worksheet, or to the upper-left corner of a chart.</span>
-          </span>
-        </param>
-        <param name="Width">
-          <span data-ttu-id="84d34-154">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-154">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-155">El tamaño inicial del nuevo objeto en puntos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-155">The initial size of the new object in points.</span>
-          </span>
-        </param>
-        <param name="Height">
-          <span data-ttu-id="84d34-156">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-156">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-157">Tamaño inicial, en puntos, del nuevo objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-157">The initial size of the new object, in points.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="84d34-158">Agrega un objeto OLE nuevo a una hoja.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-158">Adds a new OLE object to a sheet.</span>
-          </span>
-          <span data-ttu-id="84d34-159">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-159">Returns an <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> object.</span>
-          </span>
-        </summary>
+        <param name="ClassType"><span data-ttu-id="f08a2-126">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-126">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-127">(Debe especificar uno <paramref name="ClassType" /> o <paramref name="FileName" /> .) Cadena que contiene el identificador de programación del objeto que se va a crear.</span><span class="sxs-lookup"><span data-stu-id="f08a2-127">(You must specify either <paramref name="ClassType" /> or <paramref name="FileName" />.) A string that contains the programmatic identifier for the object to be created.</span></span> <span data-ttu-id="f08a2-128">Si <paramref name="ClassType" /> se especifica y se <paramref name="FileName" /> <paramref name="Link" /> omite.</span><span class="sxs-lookup"><span data-stu-id="f08a2-128">If <paramref name="ClassType" /> is specified, <paramref name="FileName" /> and <paramref name="Link" /> are ignored.</span></span></param>
+        <param name="Filename"><span data-ttu-id="f08a2-129">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-129">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-130">(Debe especificar uno <paramref name="ClassType" /> o <paramref name="FileName" /> .) Cadena que especifica el archivo que se va a usar para crear el objeto OLE.</span><span class="sxs-lookup"><span data-stu-id="f08a2-130">(You must specify either <paramref name="ClassType" /> or <paramref name="FileName" />.) A string that specifies the file to be used to create the OLE object.</span></span></param>
+        <param name="Link"><span data-ttu-id="f08a2-131">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-131">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-132"><b>True</b> para que el nuevo objeto OLE basado en <paramref name="FileName" /> esté vinculado a ese archivo.</span><span class="sxs-lookup"><span data-stu-id="f08a2-132"><b>True</b> to have the new OLE object based on <paramref name="FileName" /> be linked to that file.</span></span> <span data-ttu-id="f08a2-133">Si el objeto no está vinculado, se crea como copia del archivo.</span><span class="sxs-lookup"><span data-stu-id="f08a2-133">If the object isn't linked, the object is created as a copy of the file.</span></span> <span data-ttu-id="f08a2-134">El valor predeterminado es <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-134">The default value is <b>False</b>.</span></span></param>
+        <param name="DisplayAsIcon"><span data-ttu-id="f08a2-135">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-135">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-136"><b>True</b> para mostrar el nuevo objeto OLE como un icono o como su imagen normal.</span><span class="sxs-lookup"><span data-stu-id="f08a2-136"><b>True</b> to display the new OLE object either as an icon or as its regular picture.</span></span> <span data-ttu-id="f08a2-137">Si este argumento es <b>True</b>y <paramref name="IconFileName" /> se puede usar para especificar un <paramref name="IconIndex" /> icono.</span><span class="sxs-lookup"><span data-stu-id="f08a2-137">If this argument is <b>True</b>, <paramref name="IconFileName" /> and <paramref name="IconIndex" /> can be used to specify an icon.</span></span></param>
+        <param name="IconFileName"><span data-ttu-id="f08a2-138">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-138">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-139">Una cadena que especifica el archivo que contiene el icono que se debe mostrar.</span><span class="sxs-lookup"><span data-stu-id="f08a2-139">A string that specifies the file that contains the icon to be displayed.</span></span> <span data-ttu-id="f08a2-140">Este argumento sólo se usa si <paramref name="DisplayAsIcon" /> es <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-140">This argument is used only if <paramref name="DisplayAsIcon" /> is <b>True</b>.</span></span> <span data-ttu-id="f08a2-141">Si no se especifica este argumento o el archivo no contiene iconos, se usa el icono predeterminado para la clase OLE.</span><span class="sxs-lookup"><span data-stu-id="f08a2-141">If this argument isn't specified or the file contains no icons, the default icon for the OLE class is used</span></span></param>
+        <param name="IconIndex"><span data-ttu-id="f08a2-142">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-142">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-143">El número del icono del archivo del icono.</span><span class="sxs-lookup"><span data-stu-id="f08a2-143">The number of the icon in the icon file.</span></span> <span data-ttu-id="f08a2-144">Esto solo se usa si es True y hace referencia <paramref name="DisplayAsIcon" /> a un archivo válido que contiene <b></b> <paramref name="IconFileName" /> iconos.</span><span class="sxs-lookup"><span data-stu-id="f08a2-144">This is used only if <paramref name="DisplayAsIcon" /> is <b>True</b> and <paramref name="IconFileName" /> refers to a valid file that contains icons.</span></span> <span data-ttu-id="f08a2-145">Si no existe un icono con el número de índice especificado en el archivo especificado por , se usa el primer icono <paramref name="IconFileName" /> del archivo.</span><span class="sxs-lookup"><span data-stu-id="f08a2-145">If an icon with the given index number doesn't exist in the file specified by <paramref name="IconFileName" />, the first icon in the file is used.</span></span></param>
+        <param name="IconLabel"><span data-ttu-id="f08a2-146">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-146">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-147">Una cadena que especifica una etiqueta para mostrar debajo del icono.</span><span class="sxs-lookup"><span data-stu-id="f08a2-147">A string that specifies a label to display beneath the icon.</span></span> <span data-ttu-id="f08a2-148">Esto solo se usa si <paramref name="DisplayAsIcon" /> es <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-148">This is used only if <paramref name="DisplayAsIcon" /> is <b>True</b>.</span></span> <span data-ttu-id="f08a2-149">Si este argumento se omite o es una cadena vacía (""), no se muestra ningún título.</span><span class="sxs-lookup"><span data-stu-id="f08a2-149">If this argument is omitted or is an empty string (""), no caption is displayed.</span></span></param>
+        <param name="Left"><span data-ttu-id="f08a2-150">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-150">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-151">Las coordenadas iniciales, en puntos, del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo o a la esquina superior izquierda de un gráfico.</span><span class="sxs-lookup"><span data-stu-id="f08a2-151">The initial coordinates of the new object in points, relative to the upper-left corner of cell A1 on a worksheet, or to the upper-left corner of a chart.</span></span></param>
+        <param name="Top"><span data-ttu-id="f08a2-152">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-152">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-153">Las coordenadas iniciales, en puntos, del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo o a la esquina superior izquierda de un gráfico.</span><span class="sxs-lookup"><span data-stu-id="f08a2-153">The initial coordinates of the new object in points, relative to the upper-left corner of cell A1 on a worksheet, or to the upper-left corner of a chart.</span></span></param>
+        <param name="Width"><span data-ttu-id="f08a2-154">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-154">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-155">Tamaño inicial del nuevo objeto en puntos.</span><span class="sxs-lookup"><span data-stu-id="f08a2-155">The initial size of the new object in points.</span></span></param>
+        <param name="Height"><span data-ttu-id="f08a2-156">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-156">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-157">Tamaño inicial, en puntos, del nuevo objeto.</span><span class="sxs-lookup"><span data-stu-id="f08a2-157">The initial size of the new object, in points.</span></span></param>
+        <summary><span data-ttu-id="f08a2-158">Agrega un objeto OLE nuevo a una hoja.</span><span class="sxs-lookup"><span data-stu-id="f08a2-158">Adds a new OLE object to a sheet.</span></span> <span data-ttu-id="f08a2-159">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="f08a2-159">Returns an <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> object.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -788,12 +496,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-160">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-160">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-160">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="f08a2-160">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -824,30 +527,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-161">
-            <b>True</b> si el objeto OLE se carga automáticamente cuando el libro que contiene se abre.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-161">
-              <b>True</b> if the OLE object is automatically loaded when the workbook that contains it is opened.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-161">Es <b>True</b> si el objeto OLE se carga automáticamente cuando se abre el libro que lo contiene.</span><span class="sxs-lookup"><span data-stu-id="f08a2-161"><b>True</b> if the OLE object is automatically loaded when the workbook that contains it is opened.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="84d34-p116">Los controles ActiveX no tienen en cuenta esta propiedad. Los controles ActiveX siempre se cargan cuando se abre un libro.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-p116">This property is ignored by ActiveX controls. ActiveX controls are always loaded when a workbook is opened.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="84d34-p117">Para la mayoría de los tipos de objetos OLE, esta propiedad no debe establecerse como <b>True</b>. La opción predeterminada para la propiedad <b>AutoLoad</b> es <b>False</b> para objetos OLE nuevos. Esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar objetos OLE automáticamente es que, para objetos que representan datos volátiles, los vínculos con los datos de origen pueden restablecerse inmediatamente y los objetos pueden volver a mostrarse si es necesario.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-p117">For most OLE object types, this property shouldn’t be set to <b>True</b>. By default, the <b>AutoLoad</b> property is set to <b>False</b> for new OLE objects; this saves time and memory when Microsoft Excel is loading workbooks. The benefit of automatically loading OLE objects is that, for objects that represent volatile data, links to source data can be reestablished immediately and the objects can be rendered again, if necessary.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f08a2-162">Los controles ActiveX no tienen en cuenta esta propiedad.</span><span class="sxs-lookup"><span data-stu-id="f08a2-162">This property is ignored by ActiveX controls.</span></span> <span data-ttu-id="f08a2-163">Los controles ActiveX siempre se cargan cuando se abre un libro.</span><span class="sxs-lookup"><span data-stu-id="f08a2-163">ActiveX controls are always loaded when a workbook is opened.</span></span></para>
+          <para><span data-ttu-id="f08a2-164">Para la mayoría de los tipos de objetos OLE, esta propiedad no debe establecerse en <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-164">For most OLE object types, this property shouldn’t be set to <b>True</b>.</span></span> <span data-ttu-id="f08a2-165">De forma predeterminada, <b>la propiedad AutoLoad</b> está establecida en <b>False</b> para nuevos objetos OLE; esto ahorra tiempo y memoria cuando Microsoft Excel carga libros.</span><span class="sxs-lookup"><span data-stu-id="f08a2-165">By default, the <b>AutoLoad</b> property is set to <b>False</b> for new OLE objects; this saves time and memory when Microsoft Excel is loading workbooks.</span></span> <span data-ttu-id="f08a2-166">La ventaja de cargar automáticamente objetos OLE es que, para los objetos que representan datos volátiles, los vínculos a los datos de origen se pueden restablecer inmediatamente y los objetos se pueden volver a representar, si es necesario.</span><span class="sxs-lookup"><span data-stu-id="f08a2-166">The benefit of automatically loading OLE objects is that, for objects that represent volatile data, links to source data can be reestablished immediately and the objects can be rendered again, if necessary.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -873,12 +557,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-167">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object que representa el borde del objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-167">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object that represents the border of the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-167">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa el borde del objeto.</span><span class="sxs-lookup"><span data-stu-id="f08a2-167">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object that represents the border of the object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -904,12 +583,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-168">Sitúa el objeto en el primer plano del orden z.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-168">Brings the object to the front of the z-order.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-168">Sitúa el objeto en el primer plano del orden z.</span><span class="sxs-lookup"><span data-stu-id="f08a2-168">Brings the object to the front of the z-order.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -935,12 +609,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-169">Copia el objeto al Portapapeles.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-169">Copies the object to the Clipboard.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-169">Copia el objeto al Portapapeles.</span><span class="sxs-lookup"><span data-stu-id="f08a2-169">Copies the object to the Clipboard.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -968,32 +637,9 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">
-          <span data-ttu-id="84d34-170">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-170">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />.</span>
-          </span>
-          <span data-ttu-id="84d34-171">Especifica cómo se debe copiar la imagen.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-171">Specifies how the picture should be copied.</span>
-          </span>
-        </param>
-        <param name="Format">
-          <span data-ttu-id="84d34-172">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-172">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />.</span>
-          </span>
-          <span data-ttu-id="84d34-173">El formato de la imagen.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-173">The format of the picture.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="84d34-174">Copia el objeto seleccionado en el Portapapeles como una imagen.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-174">Copies the selected object to the Clipboard as a picture.</span>
-          </span>
-        </summary>
+        <param name="Appearance"><span data-ttu-id="f08a2-170">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> .</span><span class="sxs-lookup"><span data-stu-id="f08a2-170">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />.</span></span> <span data-ttu-id="f08a2-171">Especifica cómo se debe copiar la imagen.</span><span class="sxs-lookup"><span data-stu-id="f08a2-171">Specifies how the picture should be copied.</span></span></param>
+        <param name="Format"><span data-ttu-id="f08a2-172">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> .</span><span class="sxs-lookup"><span data-stu-id="f08a2-172">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />.</span></span> <span data-ttu-id="f08a2-173">Formato de la imagen.</span><span class="sxs-lookup"><span data-stu-id="f08a2-173">The format of the picture.</span></span></param>
+        <summary><span data-ttu-id="f08a2-174">Copia el objeto seleccionado en el Portapapeles como una imagen.</span><span class="sxs-lookup"><span data-stu-id="f08a2-174">Copies the selected object to the Clipboard as a picture.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1021,12 +667,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-175">Devuelve el número de objetos de la colección.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-175">Returns the number of objects in the collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-175">Devuelve el número de objetos de la colección.</span><span class="sxs-lookup"><span data-stu-id="f08a2-175">Returns the number of objects in the collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1054,32 +695,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-176">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-176">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-176">Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</span><span class="sxs-lookup"><span data-stu-id="f08a2-176">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="84d34-177">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-177">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="84d34-178">La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-178">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="84d34-179">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-179">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f08a2-177">Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</span><span class="sxs-lookup"><span data-stu-id="f08a2-177">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="f08a2-178">La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="f08a2-178">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f08a2-179">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span><span class="sxs-lookup"><span data-stu-id="f08a2-179">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -1103,28 +723,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-180">Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-180">Cuts the object to the Clipboard or pastes it into a specified destination.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-180">Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</span><span class="sxs-lookup"><span data-stu-id="f08a2-180">Cuts the object to the Clipboard or pastes it into a specified destination.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="84d34-181">El rango cortado debe estar compuesto por celdas adyacentes.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-181">The cut range must be made up of adjacent cells.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="84d34-182">Sólo pueden cortarse los gráficos incrustados.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-182">Only embedded charts can be cut.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f08a2-181">El rango cortado debe estar compuesto por celdas adyacentes.</span><span class="sxs-lookup"><span data-stu-id="f08a2-181">The cut range must be made up of adjacent cells.</span></span></para>
+          <para><span data-ttu-id="f08a2-182">Sólo pueden cortarse los gráficos incrustados.</span><span class="sxs-lookup"><span data-stu-id="f08a2-182">Only embedded charts can be cut.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1148,12 +751,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-183">Elimina el objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-183">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-183">Elimina el objeto.</span><span class="sxs-lookup"><span data-stu-id="f08a2-183">Deletes the object.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1179,12 +777,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-184">Duplica el objeto y devuelve una referencia a la nueva copia.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-184">Duplicates the object and returns a reference to the new copy.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-184">Duplica el objeto y devuelve una referencia a la nueva copia.</span><span class="sxs-lookup"><span data-stu-id="f08a2-184">Duplicates the object and returns a reference to the new copy.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1215,14 +808,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-185">
-            <b>True</b> si el objeto está habilitado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-185">
-              <b>True</b> if the object is enabled.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-185">Es <b>True</b> si el objeto está habilitado.</span><span class="sxs-lookup"><span data-stu-id="f08a2-185"><b>True</b> if the object is enabled.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1283,12 +869,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-186">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-186">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-186">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-186">Reserved for internal use.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1319,12 +900,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-187">Alto del objeto, en puntos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-187">The height, in points, of the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-187">Alto del objeto, en puntos.</span><span class="sxs-lookup"><span data-stu-id="f08a2-187">The height, in points, of the object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1352,12 +928,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-188">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa el interior del objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-188">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-188">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que representa el interior del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="f08a2-188">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1385,23 +956,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="84d34-189">
-            <b>Objeto</b>requerido.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-189">Required <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-190">Número de índice o nombre del objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-190">The name or index number for the object.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="84d34-191">Devuelve un solo objeto de una colección.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-191">Returns a single object from a collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="f08a2-189">Objeto <b>requerido</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-189">Required <b>Object</b>.</span></span> <span data-ttu-id="f08a2-190">Número de índice o nombre del objeto.</span><span class="sxs-lookup"><span data-stu-id="f08a2-190">The name or index number for the object.</span></span></param>
+        <summary><span data-ttu-id="f08a2-191">Devuelve un solo objeto de una colección.</span><span class="sxs-lookup"><span data-stu-id="f08a2-191">Returns a single object from a collection.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1432,12 +988,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-192">La distancia, en puntos, desde el borde izquierdo del objeto al borde izquierdo de la columna A (en una hoja de cálculo) o al borde izquierdo del área del gráfico (en un gráfico).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-192">The distance, in points, from the left edge of the object to the left edge of column A (on a worksheet) or the left edge of the chart area (on a chart).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-192">La distancia, en puntos, desde el borde izquierdo del objeto al borde izquierdo de la columna A (en una hoja de cálculo) o al borde izquierdo del área del gráfico (en un gráfico).</span><span class="sxs-lookup"><span data-stu-id="f08a2-192">The distance, in points, from the left edge of the object to the left edge of column A (on a worksheet) or the left edge of the chart area (on a chart).</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1468,14 +1019,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-193">
-            <b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-193">
-              <b>True</b> if the object is locked; <b>False</b> if the object can be modified when the sheet is protected.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-193"><b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</span><span class="sxs-lookup"><span data-stu-id="f08a2-193"><b>True</b> if the object is locked; <b>False</b> if the object can be modified when the sheet is protected.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1512,12 +1056,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-194">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-194">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-194">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="f08a2-194">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1545,12 +1084,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-195">Devuelve el objeto primario del objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-195">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-195">Devuelve el objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="f08a2-195">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1581,52 +1115,25 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-196">Devuelve o establece la forma en que el objeto está unido a las celdas situadas debajo de él.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-196">Returns or sets the way the object is attached to the cells below it.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-196">Devuelve o establece la forma en que el objeto se adjunta a las celdas debajo de él.</span><span class="sxs-lookup"><span data-stu-id="f08a2-196">Returns or sets the way the object is attached to the cells below it.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="84d34-197">Utilice una de las constantes siguientes:</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-197">Use one of the following constants:</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="84d34-198">
-              <b>xlFreeFloating</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-198">
-                <b>xlFreeFloating</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="84d34-199">
-              <b>xlMove</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-199">
-                <b>xlMove</b>
-              </span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="84d34-200">
-              <b>xlMoveAndSize</b>
-            </span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-200">
-                <b>xlMoveAndSize</b>
-              </span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f08a2-197">Use una de las siguientes constantes:</span><span class="sxs-lookup"><span data-stu-id="f08a2-197">Use one of the following constants:</span></span></para>
+          <para><span data-ttu-id="f08a2-198">
+            <b>xlFreeFloating</b>
+          </span><span class="sxs-lookup"><span data-stu-id="f08a2-198">
+            <b>xlFreeFloating</b>
+          </span></span></para>
+          <para><span data-ttu-id="f08a2-199">
+            <b>xlMove</b>
+          </span><span class="sxs-lookup"><span data-stu-id="f08a2-199">
+            <b>xlMove</b>
+          </span></span></para>
+          <para><span data-ttu-id="f08a2-200">
+            <b>xlMoveAndSize</b>
+          </span><span class="sxs-lookup"><span data-stu-id="f08a2-200">
+            <b>xlMoveAndSize</b>
+          </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintObject">
@@ -1655,14 +1162,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-201">
-            <b>True</b> si el objeto se imprimirá cuando se imprime el documento.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-201">
-              <b>True</b> if the object will be printed when the document is printed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-201">Es <b>True</b> si el objeto se imprimirá junto con el documento.</span><span class="sxs-lookup"><span data-stu-id="f08a2-201"><b>True</b> if the object will be printed when the document is printed.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1689,31 +1189,8 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">
-          <span data-ttu-id="84d34-202">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-202">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="84d34-203">
-            <b>True</b> para reemplazar la selección actual con el objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-203">
-              <b>True</b> to replace the current selection with the specified object.</span>
-          </span>
-          <span data-ttu-id="84d34-204">
-            <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-204">
-              <b>False</b> to extend the current selection to include any previously selected objects and the specified object.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="84d34-205">Selecciona el objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-205">Selects the object.</span>
-          </span>
-        </summary>
+        <param name="Replace"><span data-ttu-id="f08a2-202">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="f08a2-202">Optional <b>Object</b>.</span></span> <span data-ttu-id="f08a2-203"><b>True</b> para reemplazar la selección actual con el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="f08a2-203"><b>True</b> to replace the current selection with the specified object.</span></span> <span data-ttu-id="f08a2-204"><b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="f08a2-204"><b>False</b> to extend the current selection to include any previously selected objects and the specified object.</span></span></param>
+        <summary><span data-ttu-id="f08a2-205">Selecciona el objeto.</span><span class="sxs-lookup"><span data-stu-id="f08a2-205">Selects the object.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1739,12 +1216,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-206">Envía el objeto al final del orden z.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-206">Sends the object to the back of the z-order.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-206">Envía el objeto al final del orden z.</span><span class="sxs-lookup"><span data-stu-id="f08a2-206">Sends the object to the back of the z-order.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1775,14 +1247,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-207">
-            <b>True</b> si la fuente es una fuente de sombra o si el objeto tiene una sombra.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-207">
-              <b>True</b> if the font is a shadow font or if the object has a shadow.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-207"><b>True</b> si la fuente es una fuente de sombra o si el objeto tiene una sombra.</span><span class="sxs-lookup"><span data-stu-id="f08a2-207"><b>True</b> if the font is a shadow font or if the object has a shadow.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1810,12 +1275,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-208">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object que representa el objeto u objetos especificados.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-208">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object that represents the specified object or objects.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-208">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto que representa el objeto u objetos especificados.</span><span class="sxs-lookup"><span data-stu-id="f08a2-208">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object that represents the specified object or objects.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1846,12 +1306,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-209">Devuelve o establece el nombre de origen del vínculo del objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-209">Returns or sets the specified object's link source name.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-209">Devuelve o establece el nombre de origen del vínculo del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="f08a2-209">Returns or sets the specified object's link source name.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1882,12 +1337,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-210">La distancia, en puntos, desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o la parte superior del área del gráfico (en un gráfico).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-210">The distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-210">Distancia, en puntos, desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o la parte superior del área del gráfico (en un gráfico).</span><span class="sxs-lookup"><span data-stu-id="f08a2-210">The distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1918,12 +1368,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-211">Determina si el objeto es visible.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-211">Determines whether the object is visible.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-211">Determina si el objeto es visible.</span><span class="sxs-lookup"><span data-stu-id="f08a2-211">Determines whether the object is visible.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1954,12 +1399,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-212">El ancho del objeto en puntos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-212">The width, in points, of the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-212">El ancho del objeto, en puntos.</span><span class="sxs-lookup"><span data-stu-id="f08a2-212">The width, in points, of the object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1987,22 +1427,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="84d34-213">Devuelve la posición del orden z del objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="84d34-213">Returns the z-order position of the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f08a2-213">Devuelve la posición del objeto en el orden z.</span><span class="sxs-lookup"><span data-stu-id="f08a2-213">Returns the z-order position of the object.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="84d34-214">En cualquier colección de objetos, el objeto en la parte posterior del orden z es <paramref name="collection" />(1), y el objeto en la parte delantera del orden z es <paramref name="collection" />(<paramref name="collection" />.<b> Contar</b>).</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="84d34-214">In any collection of objects, the object at the back of the z-order is <paramref name="collection" />(1), and the object at the front of the z-order is <paramref name="collection" />(<paramref name="collection" />.<b>Count</b>).</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="f08a2-214">En cualquier colección de objetos, el objeto situado en la parte posterior del orden z es (1) y el objeto situado delante del orden <paramref name="collection" /> z <paramref name="collection" /> es ( <paramref name="collection" /> .<b> Count</b>).</span><span class="sxs-lookup"><span data-stu-id="f08a2-214">In any collection of objects, the object at the back of the z-order is <paramref name="collection" />(1), and the object at the front of the z-order is <paramref name="collection" />(<paramref name="collection" />.<b>Count</b>).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

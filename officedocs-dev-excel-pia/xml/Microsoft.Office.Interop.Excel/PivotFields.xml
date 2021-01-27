@@ -1,13 +1,5 @@
 <Type Name="PivotFields" FullName="Microsoft.Office.Interop.Excel.PivotFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b9bff936f8cd3ec167ac2ff150e560a9433d1081" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586873" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b9bff936f8cd3ec167ac2ff150e560a9433d1081" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010881" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFields&#xA;Implements IEnumerable" />
@@ -33,95 +25,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="ba64c-101">Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objetos en un informe de tabla dinámica.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ba64c-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objects in a PivotTable report.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="ba64c-102">Usar el <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotFields(System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto para devolver la colección <b>PivotFields</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ba64c-102">Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotFields(System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object to return the <b>PivotFields</b> collection.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ba64c-103">Use <b>PivotFields</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre del campo o el número de índice, para devolver un solo objeto <b>PivotField</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ba64c-103">Use <b>PivotFields</b>(<paramref name="index" />), where <paramref name="index" /> is the field name or index number, to return a single <b>PivotField</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ba64c-p101">En algunos casos puede ser más sencillo usar una de las propiedades que devuelven un subconjunto de los campos de tabla dinámica. Los siguientes métodos de acceso están disponibles:</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ba64c-p101">In some cases, it may be easier to use one of the properties that returns a subset of the PivotTable fields. The following accessor methods are available:</span>
-        </span>
-      </para>
+    <summary><span data-ttu-id="ccd57-101">Colección de todos los objetos <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> de un informe de tabla dinámica.</span><span class="sxs-lookup"><span data-stu-id="ccd57-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objects in a PivotTable report.</span></span></summary>
+    <remarks><para><span data-ttu-id="ccd57-102">Utilice el <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotFields(System.Object)" /> método del objeto para devolver la colección <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <b>PivotFields</b> .</span><span class="sxs-lookup"><span data-stu-id="ccd57-102">Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotFields(System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> object to return the <b>PivotFields</b> collection.</span></span></para>
+      <para><span data-ttu-id="ccd57-103">Utilice <b>PivotFields</b>( ), donde se encuentra el nombre o número de índice <paramref name="index" /> del <paramref name="index" /> campo, para devolver un solo objeto <b>PivotField</b> .</span><span class="sxs-lookup"><span data-stu-id="ccd57-103">Use <b>PivotFields</b>(<paramref name="index" />), where <paramref name="index" /> is the field name or index number, to return a single <b>PivotField</b> object.</span></span></para>
+      <para><span data-ttu-id="ccd57-p101">En algunos casos puede ser más sencillo usar una de las propiedades que devuelven un subconjunto de los campos de tabla dinámica. Los siguientes métodos de acceso están disponibles:</span><span class="sxs-lookup"><span data-stu-id="ccd57-p101">In some cases, it may be easier to use one of the properties that returns a subset of the PivotTable fields. The following accessor methods are available:</span></span></para>
       <list type="bullet">
         <item>
-          <description>
-            <span data-ttu-id="ba64c-106">
-              <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ColumnFields(System.Object)" />(propiedad)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ba64c-106">
-                <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ColumnFields(System.Object)" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="ccd57-106">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ColumnFields(System.Object)" /> property</span><span class="sxs-lookup"><span data-stu-id="ccd57-106">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ColumnFields(System.Object)" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ba64c-107">
-              <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" />(propiedad)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ba64c-107">
-                <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="ccd57-107">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" /> property</span><span class="sxs-lookup"><span data-stu-id="ccd57-107">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ba64c-108">
-              <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" />(propiedad)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ba64c-108">
-                <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="ccd57-108">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" /> property</span><span class="sxs-lookup"><span data-stu-id="ccd57-108">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ba64c-109">
-              <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" />(propiedad)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ba64c-109">
-                <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="ccd57-109">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" /> property</span><span class="sxs-lookup"><span data-stu-id="ccd57-109">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ba64c-110">
-              <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" />(propiedad)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ba64c-110">
-                <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="ccd57-110">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" /> property</span><span class="sxs-lookup"><span data-stu-id="ccd57-110">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" /> property</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ba64c-111">
-              <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" />(propiedad)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ba64c-111">
-                <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" /> property</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="ccd57-111">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" /> property</span><span class="sxs-lookup"><span data-stu-id="ccd57-111">
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" /> property</span></span></description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -147,16 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ba64c-112">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-112">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-          <span data-ttu-id="ba64c-113">Solo lectura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-113">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="ccd57-112">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="ccd57-112">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span> <span data-ttu-id="ccd57-113">Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="ccd57-113">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,17 +115,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ba64c-114">Devuelve el número de objetos de la colección.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-114">Returns the number of objects in the collection.</span>
-          </span>
-          <span data-ttu-id="ba64c-115">
-            <b>Integer</b> de sólo lectura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-115">Read-only <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="ccd57-114">Devuelve el número de objetos de la colección.</span><span class="sxs-lookup"><span data-stu-id="ccd57-114">Returns the number of objects in the collection.</span></span> <span data-ttu-id="ccd57-115"><b>Integer</b> de solo lectura.</span><span class="sxs-lookup"><span data-stu-id="ccd57-115">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,34 +143,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ba64c-116">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-116">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-          <span data-ttu-id="ba64c-117">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-117">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-          </span>
-          <span data-ttu-id="ba64c-118">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-118">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="ccd57-116">Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</span><span class="sxs-lookup"><span data-stu-id="ccd57-116">Returns a 32-bit integer that indicates the application in which this object was created.</span></span> <span data-ttu-id="ccd57-117">Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</span><span class="sxs-lookup"><span data-stu-id="ccd57-117">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span> <span data-ttu-id="ccd57-118">Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</span><span class="sxs-lookup"><span data-stu-id="ccd57-118">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ba64c-119">La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ba64c-119">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="ba64c-120">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ba64c-120">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="ccd57-119">La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="ccd57-119">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="ccd57-120">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span><span class="sxs-lookup"><span data-stu-id="ccd57-120">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -307,23 +204,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="ba64c-121">
-            <b>Objeto</b>requerido.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-121">Required <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="ba64c-122">Número de índice o nombre del objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-122">The name or index number for the object.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ba64c-123">Devuelve un solo objeto de una colección.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-123">Returns a single object from a collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="ccd57-121">Objeto <b>requerido</b>.</span><span class="sxs-lookup"><span data-stu-id="ccd57-121">Required <b>Object</b>.</span></span> <span data-ttu-id="ccd57-122">Número de índice o nombre del objeto.</span><span class="sxs-lookup"><span data-stu-id="ccd57-122">The name or index number for the object.</span></span></param>
+        <summary><span data-ttu-id="ccd57-123">Devuelve un solo objeto de una colección.</span><span class="sxs-lookup"><span data-stu-id="ccd57-123">Returns a single object from a collection.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -351,12 +233,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ba64c-p107">Devuelve el objeto primario del objeto especificado. Solo lectura.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ba64c-p107">Returns the parent object for the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="ccd57-124">Devuelve el objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="ccd57-124">Returns the parent object for the specified object.</span></span> <span data-ttu-id="ccd57-125">Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="ccd57-125">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
