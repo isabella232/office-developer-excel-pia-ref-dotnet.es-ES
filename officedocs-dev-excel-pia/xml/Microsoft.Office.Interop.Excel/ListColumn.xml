@@ -1,13 +1,5 @@
 <Type Name="ListColumn" FullName="Microsoft.Office.Interop.Excel.ListColumn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08d4b05d05d4520afef5aa08e764c83df4bcd655" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575575" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListColumn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="08d4b05d05d4520afef5aa08e764c83df4bcd655" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999962" /></Metadata><TypeSignature Language="C#" Value="public interface ListColumn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListColumn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListColumn" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListColumn" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una columna en una lista. El <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> colección. El <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> colección contiene todas las columnas de una lista (<see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto).</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto para devolver un <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> colección.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa una columna de una lista. El <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> colección. La <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> colección contiene todas las columnas de una lista ( <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto).</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> propiedad del objeto para devolver una <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> colección.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,14 +108,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBodyRange">
@@ -151,14 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que es el tamaño de la parte de una columna de datos. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
-        <remarks>
-          <para>El objeto devuelto excluye la celdas de encabezado y totales.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que es el tamaño de la parte de datos de una columna. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
+        <remarks><para>El objeto devuelto excluye la celdas de encabezado y totales.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -182,7 +164,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Elimina la columna de datos de la lista. No elimina la columna de la hoja. Si la lista está vinculada a un sitio de Microsoft Windows SharePoint Services, no se puede quitar la columna desde el servidor y se genera un error.</summary>
+        <summary>Elimina la columna de datos de la lista. No quita la columna de la hoja. Si la lista está vinculada a un sitio de Microsoft Windows SharePoint Services, la columna no se puede quitar del servidor y se genera un error.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +191,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de índice de la <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> de objetos dentro de la <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> colección. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve el número de índice del <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto dentro de la <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> colección. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListDataFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> object para el <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> objeto para el <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el nombre de la columna de lista. Esto también se utiliza como el nombre para mostrar de la columna de lista. Este nombre debe ser único dentro de la lista. <b>String</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece el nombre de la columna de lista. También se usa como el nombre para mostrar de la columna de lista. Este nombre debe ser único en la lista. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,7 +309,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el rango al que se aplica el objeto de lista especificado en la lista anterior. Solo lectura.</summary>
+        <summary>Devuelve un objeto que representa el intervalo al que se aplica el objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> de lista especificado en la lista anterior. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -358,14 +340,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <b>cadena</b> que representa la fórmula en una columna calculada. La fórmula se expresa en la sintaxis de Excel (configuración regional inglés de Estados Unidos, notación A1). <b>String</b> de solo lectura.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Si el <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto no pertenece a una lista que está vinculada a un sitio de SharePoint o si no es una columna designada como columna calculada en el sitio de SharePoint, obtendrá un error en tiempo de ejecución.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve una <b>cadena que</b> representa la fórmula en una columna calculada. La fórmula se expresa en la sintaxis de Excel (configuración regional de inglés de EE. UU., notación A1). <b>String</b> de solo lectura.</summary>
+        <value><b>Cadena</b></value>
+        <remarks><para>Si el objeto no pertenece a una lista vinculada a un sitio de SharePoint o si no es una columna designada como columna calculada en el sitio de SharePoint, se producirá un error en tiempo de <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> ejecución.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Total">
@@ -392,9 +370,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la fila Total de un <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,12 +400,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTotalsCalculation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina el tipo de cálculo en la fila de totales de la columna de lista en función del valor de la <see cref="T:Microsoft.Office.Interop.Excel.XlTotalsCalculation" /> (enumeración). Lectura y escritura.</summary>
+        <summary>Determina el tipo de cálculo de la fila Totales de la columna de lista en función del valor de la <see cref="T:Microsoft.Office.Interop.Excel.XlTotalsCalculation" /> enumeración. Lectura/escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La fila de totales no es necesario para que se muestra con el fin de establecer esta propiedad. No hay ningún valor "predeterminado" fijo para esta propiedad. Excel puede cambiar el estado de esta propiedad, tal y como se agregan o se eliminan otras columnas.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>No es necesario que se muestre la fila Totales para establecer esta propiedad. No existe ningún valor "predeterminado" fijo para esta propiedad. Excel puede cambiar el estado de esta propiedad a medida que se agregan o eliminan otras columnas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -455,12 +429,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XPath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> object que representa la expresión Xpath del elemento asignado al especificado <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objeto que representa la ruta X del elemento asignado al objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> especificado. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

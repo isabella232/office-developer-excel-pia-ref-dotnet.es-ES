@@ -1,13 +1,5 @@
 <Type Name="AllowEditRange" FullName="Microsoft.Office.Interop.Excel.AllowEditRange">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5ed1c5d1b07edaa52f829f20631c74db61529a28" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580104" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AllowEditRange" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5ed1c5d1b07edaa52f829f20631c74db61529a28" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999738" /></Metadata><TypeSignature Language="C#" Value="public interface AllowEditRange" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AllowEditRange" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AllowEditRange" />
   <TypeSignature Language="VB.NET" Value="Public Interface AllowEditRange" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa las celdas que se pueden modificar en una hoja de cálculo protegida.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" /> (método) o el <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRanges.Item(System.Object)" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" /> colección para devolver un objeto <b>AllowEditRange</b> .</para>
-      <para>Cuando haya obtenido un objeto <b>AllowEditRange</b> , puede usar el <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" /> (método) para cambiar la contraseña para tener acceso a un rango que se puede modificar en una hoja de cálculo protegida.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" /> método o la propiedad de la colección para devolver un objeto <see cref="P:Microsoft.Office.Interop.Excel.AllowEditRanges.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRanges" /> <b>AllowEditRange</b> .</para>
+      <para>Una vez que se ha devuelto un objeto <b>AllowEditRange,</b> puede usar el método para cambiar la contraseña para tener acceso a un rango que se puede editar <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRange.ChangePassword(System.String)" /> en una hoja de cálculo protegida.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ChangePassword">
@@ -60,8 +50,7 @@
         <Parameter Name="Password" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Password">
-          <b>String</b> requerida. Nueva contraseña.</param>
+        <param name="Password"><b>String</b> requerida. Nueva contraseña.</param>
         <summary>Cambia la contraseña correspondiente a un rango que se puede modificar en una hoja de cálculo protegida.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa un subconjunto de los rangos que se pueden modificar en una hoja de cálculo protegida.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa un subconjunto de los rangos que se pueden editar en una hoja de cálculo protegida.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,12 +137,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el título de la página Web cuando el documento se guarda como una página Web.</summary>
+        <summary>Devuelve o establece el título de la página Web cuando el documento se guarda como página Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El título suele mostrarse en la barra de título de la ventana al ver el documento en el explorador Web.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El título suele mostrarse en la barra de título de la ventana al ver el documento en el explorador Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unprotect">
@@ -178,14 +165,11 @@
         <Parameter Name="Password" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Password">
-          <b>Objeto</b>de opcional. Una cadena que representa la contraseña distingue mayúsculas de minúsculas a utilizar para desproteger la hoja o libro. Si la hoja o el libro no está protegido con una contraseña, se omite este argumento. Si se omite este argumento en una hoja que está protegida con una contraseña, se le pedirá la contraseña. Si se omite este argumento para un libro que está protegido con una contraseña, se produce un error en el método.</param>
-        <summary>Quita la protección de una hoja o libro.</summary>
-        <remarks>
-          <para>Este método no tiene efecto si la hoja o el libro no está protegido.</para>
-          <para>Si olvida la contraseña, no se puede desproteger la hoja o el libro.</para>
-          <para></para>
-        </remarks>
+        <param name="Password">Optional <b>Object</b>. Cadena que representa la contraseña que se utiliza para desproteger la hoja o el libro (se distingue entre mayúsculas y minúsculas). El argumento se pasa por alto si la hoja o el libro no están protegidos mediante contraseña. Si no se especifica este argumento en una hoja que está protegida, se le pedirá que escriba la contraseña. Si no se especifica este argumento en un libro que está protegido mediante contraseña, se produce un error.</param>
+        <summary>Elimina la protección de una hoja o de un libro.</summary>
+        <remarks><para>Este método no tiene efecto si la hoja o el libro no están protegidos.</para>
+          <para>Si olvida la contraseña, no se podrá desproteger la hoja de cálculo ni el libro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Users">

@@ -1,13 +1,5 @@
 <Type Name="IconCriteria" FullName="Microsoft.Office.Interop.Excel.IconCriteria">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dee775d3bd8923235b1ef96a3cdebab5cd05c778" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572922" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IconCriteria : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dee775d3bd8923235b1ef96a3cdebab5cd05c778" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000242" /></Metadata><TypeSignature Language="C#" Value="public interface IconCriteria : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconCriteria implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconCriteria" />
   <TypeSignature Language="VB.NET" Value="Public Interface IconCriteria&#xA;Implements IEnumerable" />
@@ -33,13 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa la colección de <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objetos. Cada <b>IconCriterion</b> representa los valores y el tipo de umbral de cada icono contenido en una regla de formato condicional de conjunto.</summary>
-    <remarks>
-      <para>La colección <b>IconCriteria</b> se devuelve desde el <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objeto. Puede tener acceso a cada objeto <b>IconCriterion</b> de la colección pasando un índice a la colección. Vea el ejemplo para obtener información detallada.</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>El ejemplo de código siguiente crea un rango de números que representan puntuaciones de pruebas y después aplica una regla de formato condicional de conjunto de iconos a ese rango. El tipo de conjunto de iconos se cambia después de los iconos predeterminados a un conjunto de iconos de cinco flechas. Por último, el tipo de umbral se modifica de percentil a número especificado manualmente.</para>
+    <summary>Representa la colección de <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objetos. Cada <b>IconCriterion</b> representa los valores y el tipo de umbral de cada icono contenido en una regla de formato condicional de conjunto de iconos.</summary>
+    <remarks><para>La <b>colección IconCriteria</b> se devuelve de la <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> objeto. Puede obtener acceso a cada objeto <b>IconCriterion</b> de la colección pasando un índice a la colección. Vea el ejemplo para obtener más información.</para>
+      <para> </para></remarks>
+    <example><para>El ejemplo de código siguiente crea un rango de números que representan puntuaciones de pruebas y después aplica una regla de formato condicional de conjunto de iconos a ese rango. El tipo de conjunto de iconos se cambia después de los iconos predeterminados a un conjunto de iconos de cinco flechas. Por último, el tipo de umbral se modifica de percentil a número especificado manualmente.</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF() 
 
 
@@ -26664,8 +26653,7 @@
 
 
 
-End Sub&lt;/span&gt;</code>
-    </example>
+End Sub&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -26728,10 +26716,8 @@ End Sub&lt;/span&gt;</code>
       <Docs>
         <summary>Devuelve un valor <b>Long</b> que especifica el número de criterios de una regla de formato condicional de conjunto de iconos. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El número de criterios es equivalente al número de valores de umbral asignados a un conjunto de iconos.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El número de criterios es equivalente al número de valores de umbral asignados a un conjunto de iconos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -26793,12 +26779,10 @@ End Sub&lt;/span&gt;</code>
       </Parameters>
       <Docs>
         <param name="Index">Número de índice del objeto <b>IconCriterion</b>.</param>
-        <summary>Devuelve un valor single <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objeto de la colección <b>IconCriteria</b> . Solo lectura.</summary>
+        <summary>Devuelve un único <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> objeto de la colección <b>IconCriteria</b> . Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la <paramref name="Index" /> parámetro no puede ser mayor que el número de criterios establecidos para un icono de formato condicional de conjunto. Los criterios son equivalentes a los valores de umbral asignados a un conjunto de iconos. Para averiguar el número de valores de umbral, utilice la <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Count" /> (propiedad).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El valor del parámetro no puede ser mayor que el número de criterios establecidos para un formato condicional <paramref name="Index" /> de conjunto de iconos. Los criterios son equivalentes a los valores de umbral asignados a un conjunto de iconos. Para buscar el número de valores de umbral, utilice la <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Count" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

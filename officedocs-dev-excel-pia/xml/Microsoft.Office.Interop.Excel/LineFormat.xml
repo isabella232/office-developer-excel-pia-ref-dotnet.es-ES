@@ -1,13 +1,5 @@
 <Type Name="LineFormat" FullName="Microsoft.Office.Interop.Excel.LineFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7d64676ab2ca48d349cd8696c6abf4830f0a9f32" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575491" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LineFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7d64676ab2ca48d349cd8696c6abf4830f0a9f32" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000060" /></Metadata><TypeSignature Language="C#" Value="public interface LineFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LineFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.LineFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface LineFormat&#xA;Implements _IMsoDispObj" />
@@ -31,11 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Representa la línea y el formato de la punta de flecha.</summary>
-    <remarks>
-      <para>Para una línea, el objeto <b>LineFormat</b> contiene información de formato de la línea en Sí; para una forma con un borde, este objeto contiene información de formato de borde de la forma.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.Line" /> (propiedad) para devolver un objeto <b>LineFormat</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Para una línea, el objeto <b>LineFormat</b> contiene información de formato de la línea en Sí; para una forma con un borde, este objeto contiene información de formato de borde de la forma.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Line" /> propiedad para devolver un objeto <b>LineFormat</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> object que representa el color de fondo del relleno especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> objeto que representa el color de fondo de relleno especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,7 +147,7 @@
         <ReturnType>Microsoft.Office.Core.MsoArrowheadStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el estilo de la punta de flecha al comienzo de la línea especificada.</summary>
+        <summary>Devuelve o establece el estilo de la punta de flecha al principio de la línea especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,13 +209,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DashStyle">
@@ -378,7 +366,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> object que representa el color sólido o relleno de primer plano especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> objeto que representa el relleno de primer plano o el color sólido especificados.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,14 +397,12 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si las líneas se trazan dentro de los límites de la forma especificada.</summary>
-        <value>A <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
+        <summary>Obtiene o establece si se dibujan líneas dentro de los límites de la forma especificada.</summary>
+        <value>Un <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
+        <remarks><para>Lectura/escritura.</para>
           <para>
             <b>msoTrue</b> (-1) si se trazan líneas dentro de los límites de la forma y <b>msoFalse</b> (0) en caso contrario.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -504,7 +490,7 @@
         <ReturnType>Microsoft.Office.Core.MsoLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Style" /> object que representa el estilo del rango especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objeto que representa el estilo del intervalo especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -535,12 +521,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el grado de transparencia del relleno especificado como un valor comprendido entre 0,0 (opaco) y 1.0 (transparente).</summary>
+        <summary>Devuelve o establece el grado de transparencia del relleno especificado como valor entre 0,0 (opaco) y 1,0 (transparente).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de esta propiedad sólo afecta a la apariencia de los rellenos de colores sólidos y de las líneas pero no a los rellenos de las líneas de entramado o entramados, de los degradados, de las imágenes o de los rellenos con textura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El valor de esta propiedad sólo afecta a la apariencia de los rellenos de colores sólidos y de las líneas pero no a los rellenos de las líneas de entramado o entramados, de los degradados, de las imágenes o de los rellenos con textura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">

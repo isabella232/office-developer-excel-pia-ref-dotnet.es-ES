@@ -1,13 +1,5 @@
 <Type Name="XmlMap" FullName="Microsoft.Office.Interop.Excel.XmlMap">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="90e19f9871537de3824defd244b85c6255bb7e45" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583611" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XmlMap" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="90e19f9871537de3824defd244b85c6255bb7e45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999626" /></Metadata><TypeSignature Language="C#" Value="public interface XmlMap" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlMap" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlMap" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlMap" />
@@ -30,14 +22,12 @@
   </Attributes>
   <Docs>
     <summary>Representa una asignación XML que se ha agregado a un libro.</summary>
-    <remarks>
-      <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" /> colección que se va a agregar una asignación XML a un libro.</para>
+    <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" /> método de la colección para agregar una <see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" /> asignación XML a un libro.</para>
       <para>Importar y exportar datos XML</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> método para importar datos XML desde un archivo de datos XML en las celdas asignadas al objeto especificado <b>XmlMap</b>. El <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" /> método importa datos XML para una variable de <b>cadena</b> .</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> método para exportar datos desde las celdas asignadas al objeto especificado <b>XmlMap</b>. El <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> método exporta datos XML a una variable de <b>cadena</b> .</para>
-      <para></para>
-    </remarks>
+      <para>Utilice el método para importar datos XML de un archivo de datos XML en <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> celdas asignadas al <b>xmlmap especificado</b>. El <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" /> método importa datos XML para una variable <b>String.</b></para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> método para exportar datos de celdas asignadas al <b>xmlmap especificado.</b> El <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> método exporta datos XML a una variable <b>String.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,13 +87,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si los anchos de columna se ajustan automáticamente para lograr el mejor ajuste cada vez que se actualiza la tabla de consulta especificada o la asignación XML. <b>False</b> si no se ajustan automáticamente los anchos de columna con cada actualización. El valor predeterminado es <b>True</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
+        <summary><b>True</b> si los anchos de columna se ajustan automáticamente para el mejor ajuste cada vez que se actualiza la tabla de consulta especificada o la asignación XML. Es <b>False</b> si no se ajustan automáticamente los anchos de columna con cada actualización. El valor predeterminado es <b>True</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El ancho de columna máximo es dos tercios del ancho de la pantalla.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El ancho de columna máximo es dos tercios del ancho de la pantalla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendOnImport">
@@ -132,13 +119,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si desea anexar nuevas filas a las listas XML que están enlazadas a la asignación de esquema especificada cuando importa nuevos datos o actualiza una conexión existente. <b>False</b> si desea sobrescribir el contenido de las celdas. El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
+        <summary><b>True</b> si desea anexar nuevas filas a listas XML enlazadas a la asignación de esquema especificada al importar nuevos datos o actualizar una conexión existente. <b>False</b> si desea sobrescribir el contenido de las celdas. El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -164,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,12 +176,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -223,12 +205,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlDataBinding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XmlDataBinding" /> object que representa el enlace asociado con la asignación de esquema especificada. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XmlDataBinding" /> objeto que representa el enlace asociado a la asignación de esquema especificada. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -279,15 +259,12 @@
         <Parameter Name="Overwrite" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Url">
-          <b>String</b> requerida. La ruta de acceso y el nombre del archivo de datos XML para exportar a.</param>
-        <param name="Overwrite">Requerido de <b>tipo Boolean</b>. Se establece en <b>True</b> para sobrescribir el archivo especificado en el <paramref name="URL" /> parámetro si el archivo existe. El valor predeterminado si <b>es False</b>.</param>
-        <summary>Exporta el contenido de las celdas asignadas al especificado <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto a un archivo de datos XML. Devuelve <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />.</summary>
+        <param name="Url"><b>String</b> requerida. Ruta de acceso y nombre de archivo del archivo de datos XML al que se exportará.</param>
+        <param name="Overwrite"><b>Boolean</b> obligatorio. Se establece <b>en True</b> para sobrescribir el archivo especificado en el parámetro si el <paramref name="URL" /> archivo existe. El valor predeterminado si <b>False</b>.</param>
+        <summary>Exporta el contenido de las celdas asignadas al objeto <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> especificado a un archivo de datos XML. Devuelve <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" /> .</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> (método) para exportar el contenido de las celdas asignadas a una variable de <b>cadena</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" /> método para exportar el contenido de las celdas asignadas a una variable <b>String.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportXml">
@@ -313,15 +290,12 @@
         <Parameter Name="Data" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="Data">
-          <b>String</b> requerida. Para exportar los datos a la variable.</param>
-        <summary>Exporta el contenido de las celdas asignadas al especificado <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto a una variable de <b>cadena</b> . Devuelve <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />.</summary>
+        <param name="Data"><b>String</b> requerida. Variable a la que se exportarán los datos.</param>
+        <summary>Exporta el contenido de las celdas asignadas al objeto <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> especificado a una variable <b>String.</b> Devuelve <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" /> .</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para>Para exportar el contenido de las celdas asignadas a un archivo de datos XML, utilice el <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> (método).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Para exportar el contenido de las celdas asignadas a un archivo de datos XML, utilice el <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Import">
@@ -347,11 +321,9 @@
         <Parameter Name="Overwrite" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Url">
-          <b>String</b> requerida. La ruta de acceso a los datos XML que se va a importar. La ruta de acceso puede especificarse en el formato de localizador de recursos uniforme (URL) o convención de nomenclatura Universal (UNC). El archivo puede ser un archivo de datos XML o un archivo de conexión de origen (.uxdc) de datos XML de Office válido.</param>
-        <param name="Overwrite">
-          <b>Objeto</b>de opcional. Se establece en <b>True</b> para sobrescribir los datos existentes. Se establece en <b>False</b> para anexar a los datos existentes. El valor predeterminado es <b>False</b>.</param>
-        <summary>Importa datos desde el archivo de datos XML especificado a las celdas que se han asignado a especificado <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto. Devuelve <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />.</summary>
+        <param name="Url"><b>String</b> requerida. Ruta de acceso a los datos XML que se van a importar. La ruta de acceso se puede especificar con el formato UNC (Universal Naming convention, Convención de nomenclatura universal) o URL (Uniform Resource Locator, Localizador uniforme de recursos). El archivo puede ser un archivo de datos XML o un archivo de conexión de origen de datos XML de Office (.uxdc) válido.</param>
+        <param name="Overwrite">Optional <b>Object</b>. Establezca su valor en <b>True</b> para sobrescribir los datos existentes. Establezca su valor en <b>False</b> para anexar a los datos existentes. El valor predeterminado es <b>False</b>.</param>
+        <summary>Importa datos del archivo de datos XML especificado en celdas asignadas al objeto <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> especificado. Devuelve <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -379,16 +351,13 @@
         <Parameter Name="Overwrite" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="XmlData">
-          <b>String</b> requerida. Cadena que contiene los datos XML que se van a importar.</param>
-        <param name="Overwrite">Opcional <b>de tipo Boolean</b> . Especifica si se debe sobrescribir el contenido de las celdas que se encuentran asociados actualmente a la asignación XML especificada. Se establece en <b>True</b> para sobrescribir las celdas; se establece en <b>False</b> para anexar los datos al rango existente. Si no se especifica este parámetro, el valor actual de la <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.AppendOnImport" /> (propiedad) de la asignación XML determinará si el contenido de las celdas se sobrescribe o no.</param>
-        <summary>Importa datos XML de una variable de <b>cadena</b> en las celdas que se han asignado a especificado <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> constante.</summary>
+        <param name="XmlData"><b>String</b> requerida. Cadena que contiene los datos XML que se van a importar.</param>
+        <param name="Overwrite">Valor <b>booleano</b> opcional. Especifica si se debe sobrescribir el contenido de las celdas actualmente asignadas a la asignación XML especificada. Si es <b>True</b>, se sobrescribirán las celdas; si es <b>False</b>, se anexarán los datos al rango existente. Si no se especifica este parámetro, el valor actual de la propiedad de la asignación XML determina si el contenido de las celdas se <see cref="P:Microsoft.Office.Interop.Excel.XmlMap.AppendOnImport" /> sobrescribe o no.</param>
+        <summary>Importa datos XML de una variable <b>String</b> en celdas asignadas al objeto <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> especificado. Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> constante.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para>Para importar el contenido de un archivo de datos XML a las celdas asignadas a una asignación de esquema específica, use la <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> método del objeto <b>XmlMap</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para>Para importar el contenido de un archivo de datos XML en celdas asignadas a una asignación de esquema específica, utilice el método <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> del <b>objeto XmlMap</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsExportable">
@@ -414,12 +383,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve <b>True</b> si Microsoft Excel puede usar el <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> objetos en la asignación de esquema especificada para exportar datos XML y si se pueden exportar todas las listas XML asignadas a la asignación de esquema especificada. <b>Boolean</b> de sólo lectura.</summary>
+        <summary>Devuelve <b>True</b> si Microsoft Excel puede usar los objetos de la asignación de esquema especificada para exportar datos XML y si se pueden exportar todas las listas XML asignadas a la asignación de <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> esquema especificada. <b>Booleano</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -448,7 +415,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el nombre descriptivo usado para identificar de forma exclusiva una asignación en el libro. <b>String</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece el nombre descriptivo usado para identificar de forma única una asignación en el libro. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,7 +443,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -507,12 +474,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece si el filtrado se conserva cuando se actualiza la asignación XML especificada. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece si se mantiene el filtro cuando se actualiza la asignación XML especificada. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveNumberFormatting">
@@ -541,13 +506,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se conserva el formato de número en las celdas asignadas a la asignación de esquema XML especificada cuando se actualiza la asignación de esquema. El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
+        <summary><b>True</b> si se conserva el formato de número en las celdas asignadas a la asignación de esquema XML especificada cuando se actualiza la asignación de esquema. El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RootElementName">
@@ -573,12 +535,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor de tipo <b>String</b> que representa el nombre del elemento raíz correspondiente a la asignación de esquema XML especificada. Sólo lectura.</summary>
+        <summary>Devuelve un valor de tipo <b>String</b> que representa el nombre del elemento raíz correspondiente a la asignación de esquema XML especificada. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RootElementNamespace">
@@ -604,12 +564,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlNamespace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> object que representa el elemento raíz de la asignación de esquema XML especificada. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> objeto que representa el elemento raíz de la asignación de esquema XML especificada. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveDataSourceDefinition">
@@ -638,13 +596,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si los datos de definición de origen de la asignación de esquema XML especificada se guarda con el libro. El valor predeterminado es <b>True</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
+        <summary><b>True</b> si la definición de origen de datos correspondiente a la asignación de esquema XML especificada se guarda con el libro. El valor predeterminado es <b>True</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Schemas">
@@ -670,13 +625,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlSchemas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.XmlSchemas" /> colección que representa los esquemas que especificado <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> contiene el objeto. Solo lectura.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.XmlSchemas" /> colección que representa los esquemas que contiene el objeto <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> especificado. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para>El primer elemento devuelto de la colección <b>XmlSchemas</b> es el esquema usado como elemento raíz de la asignación de esquema XML especificada.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowImportExportValidationErrors">
@@ -705,12 +658,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece si se debe mostrar un cuadro de diálogo que recoja los errores de validación de esquema cuando se importen o exporten datos a través de la asignación de esquema XML especificada. El valor predeterminado es <b>False</b>. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece si se debe mostrar un cuadro de diálogo que recoja los errores de validación de esquema cuando se importen o exporten datos a través de la asignación de esquema XML especificada. El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookConnection">
@@ -736,10 +687,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una nueva conexión para especificado <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
-        </value>
+        <summary>Vuelve a conectar una nueva conexión para el objeto <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

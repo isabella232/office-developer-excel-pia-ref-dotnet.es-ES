@@ -1,13 +1,5 @@
 <Type Name="IRTDUpdateEvent" FullName="Microsoft.Office.Interop.Excel.IRTDUpdateEvent">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d11bd9b734395c326ae11b307cdfec21f36a30a4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583954" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d11bd9b734395c326ae11b307cdfec21f36a30a4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50001362" /></Metadata><TypeSignature Language="C#" Value="public interface IRTDUpdateEvent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRTDUpdateEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRTDUpdateEvent" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa eventos de actualización de datos en tiempo real.</summary>
-    <remarks>
-      <para>Para devolver un objeto <b>IRTDUpdateEvent</b> o crear instancias del mismo, declare una variable como un objeto <b>IRTDUpdateEvent</b> y, a continuación, use esa variable como un objeto de devolución de llamada.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Para devolver un objeto <b>IRTDUpdateEvent</b> o crear instancias del mismo, declare una variable como un objeto <b>IRTDUpdateEvent</b> y, a continuación, use esa variable como un objeto de devolución de llamada.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Disconnect">
@@ -54,7 +44,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indica al servidor de datos en tiempo real (RTD) desconectar de especificado <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> objeto.</summary>
+        <summary>Indica al servidor de datos en tiempo real (RTD) que se desconecte del objeto <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,14 +74,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>número entero</b> para el intervalo entre actualizaciones para los datos en tiempo real. Lectura y escritura.</summary>
+        <summary>Devuelve o establece un <b>valor de tipo Integer</b> para el intervalo entre actualizaciones de datos en tiempo real. Lectura/escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> propiedad en -1 dará como resultado el <see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" /> (método) no se llama.</para>
+        <remarks><para>Si se <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> establece la propiedad en -1, no se llamará al <see cref="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" /> método.</para>
           <para>
-            <b>Nota</b>  El intervalo heartbeat no puede establecerse por debajo de 15.000 milisegundos debido al tiempo de espera estándar de 15 segundos.</para>
-          <para></para>
-        </remarks>
+            <b>Nota</b>  El intervalo de latido no se puede establecer por debajo de 15.000 milisegundos debido al tiempo de espera estándar de 15 segundos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateNotify">
