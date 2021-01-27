@@ -1,13 +1,5 @@
 <Type Name="ListRows" FullName="Microsoft.Office.Interop.Excel.ListRows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bcb7462c451d383da63cf1f64ce9cc9fb82f3c41" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575519" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListRows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bcb7462c451d383da63cf1f64ce9cc9fb82f3c41" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999906" /></Metadata><TypeSignature Language="C#" Value="public interface ListRows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListRows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListRows" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListRows&#xA;Implements IEnumerable" />
@@ -33,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> objetos en especificado <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> objeto. Cada objeto <b>ListRow</b> representa una fila en la lista.</summary>
+    <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> objetos del objeto <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> especificado. Cada <b>objeto ListRow</b> representa una fila de la lista.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -97,14 +89,11 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>Integer</b> opcional. Especifica la posición relativa de la nueva fila.</param>
+        <param name="Position"><b>Integer</b> opcional. Especifica la posición relativa de la nueva fila.</param>
         <summary>Agrega una nueva fila al objeto de lista. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si <paramref name="Position" /> no es se especifica, se agrega una nueva fila inferior.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si <paramref name="Position" /> no se especifica, se agrega una nueva fila inferior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -160,7 +149,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +177,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de objetos de la colección. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve el número de objetos de la colección. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,12 +205,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -282,8 +269,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Nombre o número de índice del objeto.</param>
+        <param name="Index">Objeto <b>requerido</b>. Nombre o número de índice del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

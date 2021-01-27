@@ -1,13 +1,5 @@
 <Type Name="AddIns2" FullName="Microsoft.Office.Interop.Excel.AddIns2">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d290e5057bbb26e2361ba5782d2258e77753d8fd" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580132" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIns2 : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d290e5057bbb26e2361ba5782d2258e77753d8fd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50002307" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns2 : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIns2 implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIns2" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIns2&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> objetos que representan todos los complementos que están actualmente disponibles o abiertos en Microsoft Excel, independientemente de si están instalados.</summary>
-    <remarks>
-      <para>El contenido de la <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> colección corresponde a la lista de complementos que se muestra en el cuadro de diálogo Complementos (comando complementos en la ficha Programador) y los complementos que están actualmente abiertos.</para>
-      <para></para>
-    </remarks>
+    <summary>Una colección de objetos que representan todos los complementos que están actualmente disponibles o abiertos en Microsoft Excel, independientemente de si <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> están instalados.</summary>
+    <remarks><para>El contenido de la colección corresponde a la lista de complementos que se muestra en el cuadro de diálogo Add-Ins (comando Complementos en la pestaña Programador) y a los complementos que están abiertos <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> actualmente.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -71,7 +61,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>To be added.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.AddIn" />.</value>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +89,7 @@
       </Parameters>
       <Docs>
         <param name="Filename">Nombre del archivo que contiene el complemento que se va a agregar a la lista en el cuadro de diálogo Complementos.</param>
-        <param name="CopyFile">Si el archivo de complemento está en un medio extraíble, especifica si se debe copiar el complemento en el disco duro local. Especifique <b>true</b> para copiar el complemento en el disco duro. Especifique <b>false</b> para mantener el complemento en el medio extraíble. Si se omite este parámetro, Microsoft Excel muestra un cuadro de diálogo y solicita al usuario que decida si desea copiar el archivo de complemento. Este parámetro se omite si el archivo ya está en el disco duro.</param>
+        <param name="CopyFile">Si el archivo de complemento está en un medio extraíble, especifica si se copia el complemento en el disco duro local. Especifique <b>true</b> para copiar el complemento en el disco duro. Especifique <b>false</b> para mantener el complemento en el medio extraíble. Si se omite este parámetro, Microsoft Excel muestra un cuadro de diálogo y pide al usuario que elija si desea copiar el archivo del complemento. Este parámetro se omite si el archivo de complemento ya está en el disco duro.</param>
         <summary>Agrega un nuevo complemento a la lista de complementos.</summary>
         <returns>Un <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> objeto.</returns>
         <remarks>To be added.</remarks>
@@ -128,12 +118,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -187,13 +175,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
-        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.AddIns2.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
+        <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks><para>De sólo <b>lectura de larga</b>.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.AddIns2.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -224,7 +210,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,7 +242,7 @@
       <Docs>
         <param name="Index">Nombre o número de índice del objeto.</param>
         <summary>Obtiene un único objeto de una colección.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.AddIn" />.</value>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,11 +270,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el objeto primario del objeto especificado.</summary>
-        <value>El objeto primario del objeto especificado.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <value>Objeto primario del objeto especificado.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

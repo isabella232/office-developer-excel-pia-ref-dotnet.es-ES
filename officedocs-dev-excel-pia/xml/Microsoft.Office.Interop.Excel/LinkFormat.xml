@@ -1,13 +1,5 @@
 <Type Name="LinkFormat" FullName="Microsoft.Office.Interop.Excel.LinkFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1a995188705fb59142acdeab25a44ccebd98ec56" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573783" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LinkFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1a995188705fb59142acdeab25a44ccebd98ec56" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000032" /></Metadata><TypeSignature Language="C#" Value="public interface LinkFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LinkFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.LinkFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface LinkFormat" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Contiene las propiedades de un objeto OLE vinculado.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.LinkFormat" /> (propiedad) para devolver el objeto <b>LinkFormat</b> .</para>
-      <para>Si el <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto no representa un objeto vinculado, la propiedad <b>LinkFormat</b> , genera un error.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.LinkFormat" /> propiedad para devolver el objeto <b>LinkFormat</b> .</para>
+      <para>Si el objeto no representa un objeto vinculado, se produce un error <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>en la propiedad LinkFormat.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,8 +81,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto OLE se actualiza automáticamente al cambiar el origen. Válido sólo si el objeto está vinculado (su <see cref="P:Microsoft.Office.Interop.Excel._IOLEObject.OLEType" /> (propiedad) debe ser <b>xlOLELink</b>).</summary>
+        <summary>Es <b>True</b> si el objeto OLE se actualiza automáticamente al cambiar el origen. Sólo es válido si el objeto está vinculado (su <see cref="P:Microsoft.Office.Interop.Excel._IOLEObject.OLEType" /> propiedad debe ser <b>xlOLELink</b>).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,13 +109,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -155,8 +142,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</summary>
+        <summary><b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
