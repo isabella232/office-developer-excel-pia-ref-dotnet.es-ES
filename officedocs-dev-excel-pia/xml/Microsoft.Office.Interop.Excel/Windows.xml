@@ -1,13 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574924" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009257" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objetos de Microsoft Excel.</summary>
-    <remarks>
-      <para>La colección <b>Windows</b> devuelta por la <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto contiene todas las ventanas de la aplicación, mientras que la colección <b>Windows</b> devuelto por la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto únicamente contiene las ventanas en el libro especificado.</para>
-      <para>Use el método <b>NewWindow</b> de un objeto <b>Window</b> o <b>Workbook</b> para crear una ventana nueva y agregarla a la colección.</para>
-      <para>Use <b>Windows</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la ventana o el número de índice, para devolver un único objeto <b>Window</b> .</para>
+    <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objetos de Microsoft Excel.</summary>
+    <remarks><para>La <b>colección Windows</b> devuelta por la propiedad del objeto contiene todas las ventanas de la aplicación, mientras que la colección Windows devuelta por la propiedad del objeto contiene solo las ventanas del libro <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> especificado.</para>
+      <para>Utilice el <b>método NewWindow</b> de un <b>objeto Window</b> o <b>Workbook</b> para crear una nueva ventana y agregarla a la colección.</para>
+      <para>Utilice <b>Windows</b>( ), donde se encuentra el nombre o número de índice de la <paramref name="index" /> <paramref name="index" /> ventana, para devolver un único objeto <b>Window.</b></para>
       <para>Tenga en cuenta que la ventana activa siempre es Windows(1).</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,13 +121,10 @@
         <Parameter Name="SyncVertical" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ArrangeStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" />.</param>
-        <param name="ActiveWorkbook">
-          <b>Objeto</b>de opcional. <b>True</b> para organizar sólo las ventanas visibles del libro activo. <b>False</b> para organizar todas las ventanas. El valor predeterminado es <b>False</b>.</param>
-        <param name="SyncHorizontal">
-          <b>Objeto</b>de opcional. Por alto si <paramref name="ActiveWorkbook" /> es <b>False</b> o se omite. <b>True</b> para sincronizar las ventanas del libro activo al desplazarse horizontalmente. <b>False</b> para no sincronizar las ventanas. El valor predeterminado es <b>False</b>.</param>
-        <param name="SyncVertical">
-          <b>Objeto</b>de opcional. Por alto si <paramref name="ActiveWorkbook" /> es <b>False</b> o se omite. <b>True</b> para sincronizar las ventanas del libro activo al desplazarse verticalmente. <b>False</b> para no sincronizar las ventanas. El valor predeterminado es <b>False</b>.</param>
+        <param name="ArrangeStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" /> .</param>
+        <param name="ActiveWorkbook">Optional <b>Object</b>. <b>True</b> para organizar sólo las ventanas visibles del libro activo. <b>False</b> para organizar todas las ventanas. El valor predeterminado es <b>False</b>.</param>
+        <param name="SyncHorizontal">Optional <b>Object</b>. Se omite si <paramref name="ActiveWorkbook" /> es <b>False</b> o se omite. <b>True</b> para sincronizar las ventanas del libro activo al desplazarse horizontalmente. <b>False</b> para no sincronizar las ventanas. El valor predeterminado es <b>False</b>.</param>
+        <param name="SyncVertical">Optional <b>Object</b>. Se omite si <paramref name="ActiveWorkbook" /> es <b>False</b> o se omite. <b>True</b> para sincronizar las ventanas del libro activo al desplazarse verticalmente. <b>False</b> para no sincronizar las ventanas. El valor predeterminado es <b>False</b>.</param>
         <summary>Organiza las ventanas en la pantalla.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -164,7 +151,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Finaliza el modo de en paralelo si dos ventanas están en modo de forma simultánea.</summary>
+        <summary>Finaliza el modo paralelo si dos ventanas están en dicho modo.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,13 +179,11 @@
         <Parameter Name="WindowName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="WindowName">El nombre de una ventana para abrir.</param>
-        <summary>Abre dos ventanas en modo de forma simultánea.</summary>
+        <param name="WindowName">Nombre de una ventana que se debe abrir.</param>
+        <summary>Abre dos ventanas en paralelo.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>No se puede usar el método <b>CompareSideBySideWith</b> con el <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto o el <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> (propiedad).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>No puede utilizar el <b>método CompareSideBySideWith</b> con el <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto o la <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -252,13 +237,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -319,8 +302,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Nombre o número de índice del objeto.</param>
+        <param name="Index">Objeto <b>requerido</b>. Nombre o número de índice del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -376,10 +358,8 @@
       <Parameters />
       <Docs>
         <summary>Restablece la posición de las ventanas de dos hojas que se están comparando una al lado de la otra.</summary>
-        <remarks>
-          <para>Utilice el método <b>ResetPositionsSideBySide</b> para restablecer la posición de dos hojas que se están comparando una al lado de. Por ejemplo, si un usuario minimiza o maximiza una de las dos ventanas de hoja de cálculo que se están comparadas, el método <b>ResetPositionsSideBySide</b> restablece la presentación para que las dos ventanas se muestran al lado de nuevo.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilice el <b>método ResetPositionsSideBySide</b> para restablecer la posición de dos hojas de cálculo que se están comparando en paralelo. Por ejemplo, si el usuario minimiza o maximiza una de las dos ventanas de las hojas que se están comparando, el método <b>ResetPositionsSideBySide</b> restablece la presentación en pantalla de modo que las dos ventanas se muestren de nuevo una al lado de la otra.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">
@@ -408,8 +388,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> permite desplazar simultáneamente el contenido de las ventanas cuando los documentos se están comparando uno al lado del otro. <b>False</b> deshabilita el desplazamiento simultáneo de las ventanas.</summary>
+        <summary><b>True</b> permite desplazar simultáneamente el contenido de las ventanas cuando los documentos se están comparando uno al lado del otro. <b>False</b> deshabilita el desplazamiento simultáneo de las ventanas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

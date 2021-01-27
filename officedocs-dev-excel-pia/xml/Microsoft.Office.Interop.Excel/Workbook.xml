@@ -1,13 +1,5 @@
 <Type Name="Workbook" FullName="Microsoft.Office.Interop.Excel.Workbook">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="38fbc25ab1d7bdcab1f5c79b80d9c636b7fd7389" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587356" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Workbook : Microsoft.Office.Interop.Excel._Workbook, Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="38fbc25ab1d7bdcab1f5c79b80d9c636b7fd7389" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009250" /></Metadata><TypeSignature Language="C#" Value="public interface Workbook : Microsoft.Office.Interop.Excel._Workbook, Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Workbook implements class Microsoft.Office.Interop.Excel._Workbook, class Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Workbook" />
   <TypeSignature Language="VB.NET" Value="Public Interface Workbook&#xA;Implements _Workbook, WorkbookEvents_Event" />
@@ -34,35 +26,33 @@
   </Attributes>
   <Docs>
     <summary>Representa un libro de Microsoft Excel.</summary>
-    <remarks>
-      <para>Ésta es una interfaz de .NET que se deriva de una coclase COM que requiere código administrado para la interoperabilidad con el objeto COM correspondiente. Use esta interfaz derivada para tener acceso a todos los miembros de método, evento y propiedad del objeto COM. Sin embargo, si un método o evento que va a usar comparte el mismo nombre en el mismo objeto COM, se convierte en la interfaz primaria correspondiente para llamar al método y convierte en la interfaz de eventos más reciente para conectar con el evento. Hacer referencia a este tema para obtener información sobre el objeto COM. Para obtener información acerca de los miembros de métodos y propiedades del objeto COM, consulte <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />.</para>
+    <remarks><para>Se trata de una interfaz de .NET derivada de una coclase COM que requiere el código administrado para garantizar la interoperabilidad con el objeto COM correspondiente. Utilice esta interfaz derivada para acceder a todos los miembros de métodos, propiedades y eventos del objeto COM. No obstante, si quiere utilizar un método o un evento que comparte el mismo nombre en el mismo objeto COM, realice la conversión a la interfaz principal correspondiente para llamar al método y la conversión a la última interfaz de eventos para conectarse al evento. Consulte este tema si necesita información sobre el objeto COM. Para obtener información acerca de los miembros del método y la propiedad del objeto COM, vea <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> .</para>
       <para>El <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> colección. La colección <b>Workbooks</b> contiene todos los objetos <b>Workbook</b> abiertos actualmente en Microsoft Excel.</para>
-      <para>En esta sección, se describen las siguientes propiedades para devolver un objeto de <b>libro</b> :</para>
+      <para>En esta sección se describen las siguientes propiedades para devolver un objeto <b>Workbook:</b></para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" />(propiedad)</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" />(propiedad)</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" />(propiedad)</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Application.ThisWorkbook" /> property</description>
         </item>
       </list>
       <para>Workbooks (propiedad)</para>
-      <para>Usar <b>libros</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre del libro o número de índice, para devolver un solo objeto <b>Workbook</b> .</para>
-      <para>El número de índice representa el orden en que se abrieron o crearon los libros. Workbooks(1) es el primer libro que se creó y Workbooks(Workbooks.Count) es el último. Al activar un libro no cambia su número de índice. En el recuento de índice se incluyen todos los libros, aunque estén ocultos.</para>
-      <para>El <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> (propiedad) devuelve el nombre del libro. No se puede establecer el nombre mediante el uso de esta propiedad; Si necesita cambiar el nombre, use la <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para guardar el libro con un nombre diferente.</para>
+      <para>Use <b>Workbooks</b>( ), donde se encuentra el nombre o número <paramref name="index" /> de índice del <paramref name="index" /> libro, para devolver un solo objeto <b>Workbook.</b></para>
+      <para>El número de índice indica el orden en que se abrieron o crearon los libros. Workbooks(1) es el primer libro que se creó y Workbooks(Workbooks.Count) es el último. Al activar un libro no cambia su número de índice. En el recuento de índice se incluyen todos los libros, aunque estén ocultos.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> propiedad devuelve el nombre del libro. No se puede establecer el nombre mediante esta propiedad; Si necesita cambiar el nombre, use el método <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> para guardar el libro con un nombre diferente.</para>
       <para>ActiveWorkbook (propiedad)</para>
-      <para>La propiedad <b>ActiveWorkbook</b> devuelve el libro que está activo actualmente.</para>
+      <para>La <b>propiedad ActiveWorkbook</b> devuelve el libro que está activo actualmente.</para>
       <para>Propiedad ThisWorkbook</para>
-      <para>La propiedad <b>ThisWorkbook</b> devuelve el libro donde se ejecuta el código de Visual Basic. En la mayoría de los casos, es el mismo que el libro activo. Sin embargo, si el código de Visual Basic forma parte de un complemento, la propiedad <b>ThisWorkbook</b> no devolverá el libro activo. En este caso, el libro activo es el libro que llama el complemento, por lo que la propiedad <b>ThisWorkbook</b> devuelve el libro del complemento. </para>
-      <para>Si desea crear un complemento-desde el código de Visual Basic, debe usar la propiedad <b>ThisWorkbook</b> para calificar cualquier instrucción que debe ejecutarse en el libro que se compile en el complemento.</para>
-      <para></para>
-    </remarks>
+      <para>La <b>propiedad ThisWorkbook</b> devuelve el libro en el que se Visual Basic código. En la mayoría de los casos, coincide con el libro activo. No obstante, si el código de Visual Basic forma parte de un complemento, la propiedad <b>ThisWorkbook</b> no devolverá el libro activo. En este caso, el libro activo es el libro que llama al complemento, por lo que la propiedad <b>ThisWorkbook</b> devuelve el libro del complemento. </para>
+      <para>Si quiere crear un complemento a partir del código de Visual Basic, debe usar la propiedad <b>ThisWorkbook</b> para calificar toda instrucción que deba ejecutarse en el libro que se compile en el complemento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

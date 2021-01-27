@@ -1,13 +1,5 @@
 <Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586264" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009019" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookEvents_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Interfaz de eventos para Excel<see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> eventos de objetos.</summary>
+    <summary>Interfaz de eventos para eventos de <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objetos de Excel.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,11 +41,9 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce cuando se activa un libro.</summary>
-        <remarks>
-          <para>Al cambiar entre dos ventanas que muestran el mismo libro, se produce el evento <b>WindowActivate</b> , pero no se produce el evento <b>Activate</b> del libro.</para>
+        <remarks><para>Cuando se cambia entre dos ventanas que muestran el mismo libro, se produce el evento <b>WindowActivate,</b> pero no se produce el evento <b>Activate</b> del libro.</para>
           <para>Este evento no ocurre cuando se crea una ventana nueva.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddinInstall">
@@ -71,7 +61,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AddinInstallEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce cuando el libro se instala como un complemento.</summary>
+        <summary>Se produce cuando el libro se instala como complemento.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,10 +81,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce al desinstalar el libro como complemento.</summary>
-        <remarks>
-          <para>El complemento no se cierra automáticamente al ser desinstalado.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El complemento no se cierra automáticamente al ser desinstalado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AfterSave">
@@ -112,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterSaveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce después de guardar el libro.</summary>
+        <summary>Se produce después de que el libro se guarde.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +120,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce después de que Excel guarde o exporte datos del libro especificado a un archivo de datos XML.</summary>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AfterXmlImport">
@@ -153,11 +139,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce después de actualiza una conexión de datos XML existente o después de importarán nuevos datos XML al libro de Excel especificado.</summary>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produce después de actualizar una conexión de datos XML existente o después de importar nuevos datos XML en el libro de Excel especificado.</summary>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeClose">
@@ -175,7 +159,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce antes de que el libro se cierre. Si el libro ha sido modificado, este evento se produce antes de pedir al usuario que guarde las modificaciones.</summary>
+        <summary>Se produce antes de que el libro se cierre. Si se ha modificado el libro, este evento se produce antes de pedir al usuario que guarde las modificaciones.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,10 +217,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce antes de que Excel guarde o exporte datos del libro especificado a un archivo de datos XML.</summary>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeXmlImport">
@@ -254,11 +236,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce antes de actualizar una conexión de datos XML existente o antes de nuevo XML se importan los datos a un libro de Excel.</summary>
-        <remarks>
-          <para>Funciones de XML, salvo para guardar archivos en el formato de hoja de cálculo XML, sólo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produce antes de actualizar una conexión de datos XML existente o antes de importar nuevos datos XML a un libro de Excel.</summary>
+        <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
@@ -295,7 +275,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_ModelChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce después de cambia el modelo de datos de Excel.</summary>
+        <summary>Se produce después de cambiar el modelo de datos de Excel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,11 +295,9 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce al crear un gráfico nuevo en el libro.</summary>
-        <remarks>
-          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> evento se produce siempre que un gráfico nuevo se inserta o se pegan en una hoja de cálculo, una hoja de gráfico u otros tipos de hoja. Si se insertan varios gráficos o se pegan, se producirá el evento para cada gráfico en el orden en que se inserta o se pegan. Si un objeto chart o la hoja de gráfico se mueve de una ubicación a otra, no se producirá el evento. Sin embargo, si el gráfico se mueve entre un objeto de gráfico y una hoja de gráfico, se producirá el evento debido a que se debe crear un nuevo gráfico.</para>
-          <para>La <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> no se producirá el evento en los siguientes escenarios: copiar o pegar una hoja de gráfico, cambiar un tipo de gráfico, cambiar un origen de datos del gráfico, deshacer o Rehacer Insertar o pegar un gráfico y carga de un libro que contiene un gráfico.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El evento se produce siempre que se inserta o pega un nuevo gráfico en una hoja de cálculo, una hoja de <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> gráficos u otros tipos de hoja. Si se insertan o pegan varios gráficos, el evento se producirá para cada gráfico en el orden en el que se insertan o pegan. Si un objeto de gráfico o una hoja de gráfico se mueven de una ubicación a otra, el evento no se producirá. No obstante, si el gráfico se mueve entre un objeto de gráfico y una hoja de gráfico, el evento se producirá porque debe crearse un nuevo gráfico.</para>
+          <para>El evento no se producirá en los siguientes escenarios: copiar o pegar una hoja de gráficos, cambiar un tipo de gráfico, cambiar un origen de datos del gráfico, deshacer o rehacer la inserción o pegar un gráfico y cargar un libro que contiene un <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> gráfico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NewSheet">
@@ -413,11 +391,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_RowsetCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El evento se produce cuando el usuario recorre el conjunto de registros o invoca la acción de conjunto de filas en una tabla dinámica OLAP.</summary>
-        <remarks>
-          <para>Dado que el conjunto de registros se crea asincrónicamente, el evento permite que la automatización determine cuándo ha finalizado la acción. Además, ya que el conjunto de registros se crea en una hoja independiente, es necesario que el evento esté en el nivel de libro.</para>
-          <para></para>
-        </remarks>
+        <summary>El evento se genera cuando el usuario explore en profundidad el conjunto de registros o invoca la acción de conjunto de filas en una tabla dinámica OLAP.</summary>
+        <remarks><para>Dado que el conjunto de registros se crea asincrónicamente, el evento permite que la automatización determine cuándo ha finalizado la acción. Además, ya que el conjunto de registros se crea en una hoja independiente, es necesario que el evento esté en el nivel de libro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetActivate">
@@ -493,10 +469,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce al hacer clic con el botón secundario del mouse (ratón) en una hoja de cálculo, antes de la acción predeterminada.</summary>
-        <remarks>
-          <para>Este evento no se produce en hojas de gráficos.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Este evento no se produce en hojas de gráficos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetCalculate">
@@ -534,10 +508,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce cuando una celda de cualquier hoja de cálculo es modificada por el usuario o por un vínculo externo.</summary>
-        <remarks>
-          <para>Este evento no se produce en hojas de gráficos.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Este evento no se produce en hojas de gráficos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetDeactivate">
@@ -593,11 +565,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce cuando los iconos de la Galería de llamada (estáticos y dinámicos) han completado la representación de una hoja de cálculo.</summary>
-        <remarks>
-          <para>Este evento puede utilizarse para indicar cuándo para mostrar adicional o volver a habilitar la actualización de la pantalla los cuadros de diálogo, por ejemplo.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produce cuando los iconos de una galería de llamadas (dinámicos y estáticos) han completado la representación de una hoja de cálculo.</summary>
+        <remarks><para>Este evento se puede usar para indicar cuándo volver a habilitar la actualización de pantalla o mostrar cuadros de diálogo adicionales, por ejemplo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableAfterValueChange">
@@ -615,11 +585,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableAfterValueChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce después de editar o calcular de nuevo una celda o un rango de celdas (para celdas que contienen fórmulas) dentro de una tabla dinámica.</summary>
-        <remarks>
-          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> evento no se produce en todas las condiciones que no sean de edición o volver a calcular las celdas. Por ejemplo, no se producirá cuando la tabla dinámica se actualiza, ordenar, filtrar o desplazada, aunque esas operaciones muevan celdas y potencialmente recuperen nuevos valores desde el origen de datos OLAP.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produce después de editar o actualizar una celda o un rango de celdas en una tabla dinámica (en celdas que contienen fórmulas).</summary>
+        <remarks><para>El evento no se produce en ninguna condición que no sea <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableAfterValueChange" /> la edición o actualización de celdas. No se produce, por ejemplo, cuando se actualiza, ordena, filtra o detalla la tabla dinámica, incluso aunque dichas operaciones mueven celdas y pueden recuperar nuevos valores del origen de datos OLAP.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeAllocateChanges">
@@ -637,11 +605,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeAllocateChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce antes de aplicar los cambios a una tabla dinámica.</summary>
-        <remarks>
-          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de usuario.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produce antes de que se apliquen los cambios a la tabla dinámica.</summary>
+        <remarks><para>El evento se produce inmediatamente antes de que Excel ejecute una instrucción UPDATE CUBE para aplicar todos los cambios al origen de datos OLAP de la tabla dinámica e inmediatamente después de que el usuario haya elegido aplicar los cambios en la interfaz de <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /> usuario.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeCommitChanges">
@@ -660,10 +626,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce antes de confirmar los cambios en el origen de datos OLAP de una tabla dinámica.</summary>
-        <remarks>
-          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> evento se produce inmediatamente antes de que Excel ejecute una instrucción COMMIT TRANSACTION contra el origen de datos OLAP de la tabla dinámica, e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla dinámica.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El evento se produce inmediatamente antes de que Excel ejecute commit TRANSACTION en el origen de datos OLAP de la tabla dinámica e inmediatamente después de que el usuario haya elegido guardar los cambios para toda la tabla <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> dinámica.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeDiscardChanges">
@@ -681,11 +645,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce antes de que se descarten los cambios realizados en una tabla dinámica.</summary>
-        <remarks>
-          <para>Se produce inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION contra el origen de datos OLAP, si una transacción todavía está activa y, a continuación, descarta todos los valores revisados en la tabla dinámica, después de que el usuario ha decidido descartar los cambios.</para>
-          <para></para>
-        </remarks>
+        <summary>Se produce antes de que se descarten los cambios realizados en la tabla dinámica.</summary>
+        <remarks><para>Se produce inmediatamente antes de que Excel ejecute una instrucción ROLLBACK TRANSACTION en el origen de datos OLAP, si una transacción sigue activa y, a continuación, descarta todos los valores editados en la tabla dinámica, después de que el usuario haya decidido descartar los cambios.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableChangeSync">
@@ -704,10 +666,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produce después de realizar cambios en una tabla dinámica.</summary>
-        <remarks>
-          <para>El <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" />se produce durante la mayoría de los cambios a una tabla dinámica, por lo que puede escribir código para responder a acciones del usuario, como borrar, agrupar o actualizar elementos de la tabla dinámica.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Se produce durante la mayoría de los cambios en una tabla dinámica, de modo que puede escribir código para responder a acciones del usuario, como borrar, agrupar o actualizar elementos en la tabla <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" /> dinámica.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableUpdate">
@@ -763,7 +723,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetTableUpdateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce después de que se ha actualizado la tabla de la hoja.</summary>
+        <summary>Se produce después de actualizar la tabla de hoja.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
