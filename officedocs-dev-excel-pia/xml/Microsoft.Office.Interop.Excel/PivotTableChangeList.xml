@@ -1,13 +1,5 @@
 <Type Name="PivotTableChangeList" FullName="Microsoft.Office.Interop.Excel.PivotTableChangeList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="636cf57ba1c7b70d9eb9e8e8297d99ac0acff5dc" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574721" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotTableChangeList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="636cf57ba1c7b70d9eb9e8e8297d99ac0acff5dc" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997232" /></Metadata><TypeSignature Language="C#" Value="public interface PivotTableChangeList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotTableChangeList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotTableChangeList&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa la lista de los cambios realizados por un usuario a las celdas de valor en un informe de tabla dinámica basado en un origen de datos OLAP.</summary>
-    <remarks>
-      <para>El <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección contiene <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objetos que representan los cambios que ha realizado un usuario a las celdas de valor en un informe de tabla dinámica. Para devolver el <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección para una tabla dinámica, use el <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa la lista de cambios que un usuario ha realizado en las celdas de valor de un informe de tabla dinámica basado en un origen de datos OLAP.</summary>
+    <remarks><para>La colección contiene objetos que representan los cambios que el usuario ha realizado en las celdas <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> de valor de un informe de tabla <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> dinámica. Para devolver la <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección de una tabla dinámica, utilice la propiedad del <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -71,7 +61,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>To be added.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />.</value>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,12 +96,10 @@
         <param name="AllocationValue">El valor que se asignará al realizar un análisis de hipótesis. Si no se proporciona este parámetro, se usará el valor de asignación predeterminado del servidor OLAP.</param>
         <param name="AllocationMethod">El método que se usará para asignar este valor al realizar un análisis de hipótesis. Si no se proporciona este parámetro, se usará el método de asignación predeterminado del servidor OLAP.</param>
         <param name="AllocationWeightExpression">La expresión de ponderación de MDX que se usará para este valor al realizar un análisis de hipótesis. Si no se proporciona este parámetro, se usará la expresión de ponderación de la asignación predeterminada del servidor OLAP.</param>
-        <summary>Agrega un <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto a especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección.</summary>
-        <returns>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />.</returns>
-        <remarks>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> método le permite agregar <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objetos que representan cambios en el informe de tabla dinámica mediante código. Al hacerlo, se agregará a la instrucción UPDATE CUBE que las construcciones de Excel basada en esta lista de cambio. Tenga en cuenta que si el usuario cambia la configuración de asignación de modo que no todos los cambios tienen la misma configuración, Excel ejecutará varias instrucciones UPDATE CUBE, uno para cada grupo de los cambios realizados mientras se han aplicado la misma configuración.</para>
-          <para></para>
-        </remarks>
+        <summary>Agrega un <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto a la colección <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> especificada.</summary>
+        <returns>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> .</returns>
+        <remarks><para>El método permite agregar objetos que representan cambios en el <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> informe de tabla dinámica mediante <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> código. Si lo hace, se agregará a la instrucción UPDATE CUBE que Excel construye basándose en esta lista de cambios. Tenga en cuenta que si el usuario cambia los valores de asignación de modo que no todos los cambios tengan la misma configuración, Excel ejecutará varias instrucciones UPDATE CUBE, una para cada grupo de cambios realizados mientras se aplicó la misma configuración.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -137,12 +125,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -196,13 +182,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
-        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
+        <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks><para>De sólo <b>lectura de longitud</b>.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -233,7 +217,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +248,8 @@
       </Parameters>
       <Docs>
         <param name="Index">Nombre MDX (tupla) o número de índice del objeto.</param>
-        <summary>Devuelve un valor single <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto de la colección <b>PivotTableChangeList</b> especificada.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />.</value>
+        <summary>Devuelve un único <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> objeto de la colección <b>PivotTableChangeList</b> especificada.</summary>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,12 +276,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección.</summary>
-        <value>El elemento primario <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> colección.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> primario de la colección <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> especificada.</summary>
+        <value>Objeto primario <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> de la colección <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> especificada.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
