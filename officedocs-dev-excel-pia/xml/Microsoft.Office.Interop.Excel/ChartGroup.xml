@@ -1,13 +1,5 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Excel.ChartGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578249" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005855" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
@@ -29,119 +21,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="a3d7b-101">Representa una o varias series trazadas en un gráfico empleando el mismo formato.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a3d7b-101">Represents one or more series plotted in a chart with the same format.</span>
-      </span>
-      <span data-ttu-id="a3d7b-102">El objeto <b>ChartGroup</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> colección.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a3d7b-102">The <b>ChartGroup</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="a3d7b-103">Un gráfico contiene uno o más grupos de gráficos, cada grupo de gráficos contiene una o más series y cada serie contiene uno o varios puntos.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a3d7b-103">A chart contains one or more chart groups, each chart group contains one or more series, and each series contains one or more points.</span>
-        </span>
-        <span data-ttu-id="a3d7b-104">Por ejemplo, un único gráfico podría contener un grupo de gráficos de línea, que contiene todas las series trazadas con el formato de gráfico de líneas y un grupo de gráficos de barras, que contiene todas las series trazadas con el formato de gráfico de barras.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a3d7b-104">For example, a single chart might contain both a line chart group, containing all the series plotted with the line chart format, and a bar chart group, containing all the series plotted with the bar chart format.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a3d7b-105">Use <b>ChartGroups</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del grupo de gráficos, para devolver un único objeto <b>ChartGroup</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a3d7b-105">Use <b>ChartGroups</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-group index number, to return a single <b>ChartGroup</b> object.</span>
-        </span>
-        <span data-ttu-id="a3d7b-106">Si el gráfico está activado, puede usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> (propiedad).</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a3d7b-106">If the chart has been activated, you can use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> property.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="a3d7b-107">Debido a que el número de índice para un grupo de gráficos determinado puede cambiar si se cambia el formato de gráfico utilizado para dicho grupo, puede ser más fácil de usar uno de los métodos de acceso directo del grupo de gráficos con nombre para devolver un grupo de gráficos determinado.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a3d7b-107">Because the index number for a particular chart group can change if the chart format used for that group is changed, it may be easier to use one of the named chart group shortcut methods to return a particular chart group.</span>
-        </span>
-        <span data-ttu-id="a3d7b-108">El <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> método devuelve la colección de grupos de gráficos circulares en un gráfico, el <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> método devuelve la colección de grupos de gráficos de línea y así sucesivamente.</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a3d7b-108">The <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method returns the collection of pie chart groups in a chart, the <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method returns the collection of line chart groups, and so on.</span>
-        </span>
-        <span data-ttu-id="a3d7b-109">Cada uno de estos métodos puede utilizarse con un número de índice para devolver un solo objeto <b>ChartGroup</b> , o sin un número de índice para devolver <b>un conjunto ChartGroups</b> .</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a3d7b-109">Each of these methods can be used with an index number to return a single <b>ChartGroup</b> object, or without an index number to return a <b>ChartGroups</b> collection.</span>
-        </span>
-        <span data-ttu-id="a3d7b-110">Están disponibles los siguientes métodos de grupo de gráficos:</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="a3d7b-110">The following chart group methods are available:</span>
-        </span>
-      </para>
+    <summary><span data-ttu-id="26424-101">Representa una o varias series trazadas en un gráfico empleando el mismo formato.</span><span class="sxs-lookup"><span data-stu-id="26424-101">Represents one or more series plotted in a chart with the same format.</span></span> <span data-ttu-id="26424-102">El <b>objeto ChartGroup</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> colección.</span><span class="sxs-lookup"><span data-stu-id="26424-102">The <b>ChartGroup</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> collection.</span></span></summary>
+    <remarks><para><span data-ttu-id="26424-103">Un gráfico contiene uno o más grupos de gráficos, cada grupo de gráficos contiene una o más series y cada serie contiene uno o varios puntos.</span><span class="sxs-lookup"><span data-stu-id="26424-103">A chart contains one or more chart groups, each chart group contains one or more series, and each series contains one or more points.</span></span> <span data-ttu-id="26424-104">Por ejemplo, un único gráfico podría contener un grupo de gráficos de línea, que contiene todas las series trazadas con el formato de gráfico de líneas y un grupo de gráficos de barras, que contiene todas las series trazadas con el formato de gráfico de barras.</span><span class="sxs-lookup"><span data-stu-id="26424-104">For example, a single chart might contain both a line chart group, containing all the series plotted with the line chart format, and a bar chart group, containing all the series plotted with the bar chart format.</span></span></para>
+      <para><span data-ttu-id="26424-105">Utilice <b>ChartGroups</b>( ), donde es el número de índice del grupo de <paramref name="index" /> gráficos, para devolver un solo objeto <paramref name="index" /> <b>ChartGroup</b> .</span><span class="sxs-lookup"><span data-stu-id="26424-105">Use <b>ChartGroups</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-group index number, to return a single <b>ChartGroup</b> object.</span></span> <span data-ttu-id="26424-106">Si el gráfico se ha activado, puede usar la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> propiedad.</span><span class="sxs-lookup"><span data-stu-id="26424-106">If the chart has been activated, you can use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> property.</span></span></para>
+      <para><span data-ttu-id="26424-107">Dado que el número de índice de un grupo de gráficos determinado puede cambiar si se cambia el formato de gráfico usado para ese grupo, puede resultar más fácil usar uno de los métodos abreviados del grupo de gráficos con nombre para devolver un grupo de gráficos determinado.</span><span class="sxs-lookup"><span data-stu-id="26424-107">Because the index number for a particular chart group can change if the chart format used for that group is changed, it may be easier to use one of the named chart group shortcut methods to return a particular chart group.</span></span> <span data-ttu-id="26424-108">El método devuelve la colección de grupos de gráficos circulares de un gráfico, el método devuelve la colección de grupos de gráficos de <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> líneas, y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="26424-108">The <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method returns the collection of pie chart groups in a chart, the <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method returns the collection of line chart groups, and so on.</span></span> <span data-ttu-id="26424-109">Cada uno de estos métodos se puede usar con un número de índice para devolver un solo objeto <b>ChartGroup</b> o sin un número de índice para devolver una <b>colección ChartGroups</b> .</span><span class="sxs-lookup"><span data-stu-id="26424-109">Each of these methods can be used with an index number to return a single <b>ChartGroup</b> object, or without an index number to return a <b>ChartGroups</b> collection.</span></span> <span data-ttu-id="26424-110">Están disponibles los siguientes métodos de grupo de gráficos:</span><span class="sxs-lookup"><span data-stu-id="26424-110">The following chart group methods are available:</span></span></para>
       <list type="bullet">
         <item>
-          <description>
-            <span data-ttu-id="a3d7b-111">
-              <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />(método)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-111">
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="26424-111">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</span><span class="sxs-lookup"><span data-stu-id="26424-111">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="a3d7b-112">
-              <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />(método)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-112">
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="26424-112">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</span><span class="sxs-lookup"><span data-stu-id="26424-112">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="a3d7b-113">
-              <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />(método)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-113">
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="26424-113">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</span><span class="sxs-lookup"><span data-stu-id="26424-113">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="a3d7b-114">
-              <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />(método)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-114">
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="26424-114">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</span><span class="sxs-lookup"><span data-stu-id="26424-114">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="a3d7b-115">
-              <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />(método)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-115">
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="26424-115">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</span><span class="sxs-lookup"><span data-stu-id="26424-115">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="a3d7b-116">
-              <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />(método)</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-116">
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="26424-116">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</span><span class="sxs-lookup"><span data-stu-id="26424-116">
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</span></span></description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -167,12 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-117">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-117">Devuelve un objeto que representa al creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> aplicación de ese objeto).</span><span class="sxs-lookup"><span data-stu-id="26424-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,22 +114,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-118">Devuelve el grupo de la serie o grupo de gráficos especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-118">Returns the group for the specified chart group or series.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-118">Devuelve el grupo de la serie o grupo de gráficos especificados.</span><span class="sxs-lookup"><span data-stu-id="26424-118">Returns the group for the specified chart group or series.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="a3d7b-119">Para gráficos 3D sólo <b>xlPrimary</b> es válido.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-119">For 3-D charts only <b>xlPrimary</b> is valid.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="26424-119">Para gráficos 3D, <b>solo xlPrimary</b> es válido.</span><span class="sxs-lookup"><span data-stu-id="26424-119">For 3-D charts only <b>xlPrimary</b> is valid.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BubbleScale">
@@ -247,20 +146,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-120">Devuelve o establece el factor de escala para las burbujas del grupo de gráficos especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-120">Returns or sets the scale factor for bubbles in the specified chart group.</span>
-          </span>
-          <span data-ttu-id="a3d7b-121">Puede ser un valor entero entre 0 (cero) y 300, que corresponde a un porcentaje del tamaño predeterminado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-121">Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size.</span>
-          </span>
-          <span data-ttu-id="a3d7b-122">Se aplica sólo a los gráficos de burbujas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-122">Applies only to bubble charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-120">Devuelve o establece el factor de escala para las burbujas del grupo de gráficos especificado.</span><span class="sxs-lookup"><span data-stu-id="26424-120">Returns or sets the scale factor for bubbles in the specified chart group.</span></span> <span data-ttu-id="26424-121">Puede ser un valor entero entre 0 (cero) y 300, que correspondiente a un porcentaje de tamaño predeterminado.</span><span class="sxs-lookup"><span data-stu-id="26424-121">Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size.</span></span> <span data-ttu-id="26424-122">Solo se aplica a los gráficos de burbujas.</span><span class="sxs-lookup"><span data-stu-id="26424-122">Applies only to bubble charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,18 +173,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="a3d7b-123">El nombre o número de las categorías.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-123">The name or number of the categories.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="a3d7b-124">Devuelve un objeto object que representa una colección de todas las categorías visibles (un <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> colección) en el grupo de gráficos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-124">Returns an object that represents a collection of all of the visible categories (a <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> collection) in the chart group.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="26424-123">Nombre o número de las categorías.</span><span class="sxs-lookup"><span data-stu-id="26424-123">The name or number of the categories.</span></span></param>
+        <summary><span data-ttu-id="26424-124">Devuelve un objeto que representa una colección de todas las categorías visibles (una <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> colección) del grupo de gráficos.</span><span class="sxs-lookup"><span data-stu-id="26424-124">Returns an object that represents a collection of all of the visible categories (a <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> collection) in the chart group.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,30 +202,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-125">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-125">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-          <span data-ttu-id="a3d7b-126">Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-126">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-125">Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</span><span class="sxs-lookup"><span data-stu-id="26424-125">Returns a 32-bit integer that indicates the application in which this object was created.</span></span> <span data-ttu-id="26424-126">Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</span><span class="sxs-lookup"><span data-stu-id="26424-126">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="a3d7b-127">La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-127">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="a3d7b-128">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-128">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="26424-127">La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="26424-127">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="26424-128">Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</span><span class="sxs-lookup"><span data-stu-id="26424-128">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -378,16 +234,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-129">Devuelve o establece el tamaño del agujero en un grupo de gráficos de anillos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-129">Returns or sets the size of the hole in a doughnut chart group.</span>
-          </span>
-          <span data-ttu-id="a3d7b-130">El tamaño del agujero se expresa como un porcentaje del tamaño del gráfico, comprendido entre 10 y 90 por ciento.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-130">The hole size is expressed as a percentage of the chart size, between 10 and 90 percent.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-129">Devuelve o establece el tamaño del agujero en un grupo de gráficos de anillos.</span><span class="sxs-lookup"><span data-stu-id="26424-129">Returns or sets the size of the hole in a doughnut chart group.</span></span> <span data-ttu-id="26424-130">El tamaño del agujero se expresa como un porcentaje del tamaño del gráfico, comprendido entre el 10 y el 90%.</span><span class="sxs-lookup"><span data-stu-id="26424-130">The hole size is expressed as a percentage of the chart size, between 10 and 90 percent.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -415,16 +262,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DownBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-131">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> object que representa las barras descendentes en un gráfico de líneas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-131">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> object that represents the down bars on a line chart.</span>
-          </span>
-          <span data-ttu-id="a3d7b-132">Sólo se aplica a gráficos de líneas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-132">Applies only to line charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-131">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> objeto que representa las barras desplegables de un gráfico de líneas.</span><span class="sxs-lookup"><span data-stu-id="26424-131">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> object that represents the down bars on a line chart.</span></span> <span data-ttu-id="26424-132">Sólo se aplica a gráficos de líneas.</span><span class="sxs-lookup"><span data-stu-id="26424-132">Applies only to line charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -452,16 +290,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DropLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-133">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> object que representa las líneas de unión de una serie en un gráfico de líneas o un gráfico de área.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-133">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> object that represents the drop lines for a series on a line chart or area chart.</span>
-          </span>
-          <span data-ttu-id="a3d7b-134">Sólo se aplica a gráficos de líneas o gráficos de áreas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-134">Applies only to line charts or area charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-133">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> objeto que representa las líneas de colocación de una serie en un gráfico de líneas o un gráfico de áreas.</span><span class="sxs-lookup"><span data-stu-id="26424-133">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> object that represents the drop lines for a series on a line chart or area chart.</span></span> <span data-ttu-id="26424-134">Se aplica solamente a los gráficos de líneas o gráficos de áreas.</span><span class="sxs-lookup"><span data-stu-id="26424-134">Applies only to line charts or area charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -492,16 +321,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-135">Devuelve o establece el ángulo del primer sector del gráfico circular o gráfico de anillos en grados (agujas del reloj desde vertical).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-135">Returns or sets the angle of the first pie-chart or doughnut-chart slice in degrees (clockwise from vertical).</span>
-          </span>
-          <span data-ttu-id="a3d7b-136">Se aplica sólo a circular, gráficos circulares 3D y gráficos de anillos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-136">Applies only to pie, 3-D pie, and doughnut charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-135">Devuelve o establece el ángulo del primer sector del gráfico circular o gráfico de anillos en grados (en el sentido de las agujas del reloj desde vertical).</span><span class="sxs-lookup"><span data-stu-id="26424-135">Returns or sets the angle of the first pie-chart or doughnut-chart slice in degrees (clockwise from vertical).</span></span> <span data-ttu-id="26424-136">Se aplica solo a gráficos circulares, circulares 3D y de anillos.</span><span class="sxs-lookup"><span data-stu-id="26424-136">Applies only to pie, 3-D pie, and doughnut charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,18 +348,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="a3d7b-137">El nombre o número de las categorías.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-137">The name or number of the categories.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="a3d7b-138">Devuelve un objeto object que representa una colección de todas las categorías visibles y filtradas (un <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" />) en el grupo de gráficos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-138">Returns an object that represents a collection of all of the visible and filtered categories (a <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" />) in the chart group.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="26424-137">Nombre o número de las categorías.</span><span class="sxs-lookup"><span data-stu-id="26424-137">The name or number of the categories.</span></span></param>
+        <summary><span data-ttu-id="26424-138">Devuelve un objeto que representa una colección de todas las categorías visibles y filtradas <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> (a) del grupo de gráficos.</span><span class="sxs-lookup"><span data-stu-id="26424-138">Returns an object that represents a collection of all of the visible and filtered categories (a <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" />) in the chart group.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -570,26 +380,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-139">Gráficos de barras y columnas: Devuelve o establece el espacio entre barra o columna clústeres como un porcentaje de la barra o columna de ancho.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-139">Bar and Column charts: Returns or sets the space between bar or column clusters as a percentage of the bar or column width.</span>
-          </span>
-          <span data-ttu-id="a3d7b-140">Gráfico circular con subgráfico circular y barras de gráficos circulares: Devuelve o establece el espacio entre las secciones principales y secundaria del gráfico.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-140">Pie of Pie and Bar of Pie charts: Returns or sets the space between the primary and secondary sections of the chart.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-139">Gráficos de barras y columnas: devuelve o establece el espacio entre los clústeres de columnas o barras como un porcentaje del ancho de la barra o columna.</span><span class="sxs-lookup"><span data-stu-id="26424-139">Bar and Column charts: Returns or sets the space between bar or column clusters as a percentage of the bar or column width.</span></span> <span data-ttu-id="26424-140">Gráficos circulares con subgráfico circular y gráficos circulares con subgráfico de barras: devuelve o establece el espacio entre las secciones primaria y secundaria del gráfico.</span><span class="sxs-lookup"><span data-stu-id="26424-140">Pie of Pie and Bar of Pie charts: Returns or sets the space between the primary and secondary sections of the chart.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="a3d7b-141">El valor de la propiedad debe ser entre 0 y 500.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-141">The value of this property must be between 0 and 500.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="26424-141">El valor de la propiedad debe ser entre 0 y 500.</span><span class="sxs-lookup"><span data-stu-id="26424-141">The value of this property must be between 0 and 500.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DShading">
@@ -618,18 +412,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-142">
-            <b>True</b> si el grupo de gráficos tiene sombreado 3D.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-142">
-              <b>True</b> if the chart group has three-dimensional shading.</span>
-          </span>
-          <span data-ttu-id="a3d7b-143">Esta propiedad sólo se aplica a los gráficos de superficie y devolverá un error en tiempo de ejecución si se intenta establecer para un gráfico de superficie no.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-143">This property only applies to surface charts and will return a run-time error if you try to set it to a non-surface chart.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-142"><b>True</b> si el grupo de gráficos tiene sombreado 3D.</span><span class="sxs-lookup"><span data-stu-id="26424-142"><b>True</b> if the chart group has three-dimensional shading.</span></span> <span data-ttu-id="26424-143">Esta propiedad solo se aplica a los gráficos de superficie y devolverá un error en tiempo de ejecución si intentas establecerlo en un gráfico que no sea de superficie.</span><span class="sxs-lookup"><span data-stu-id="26424-143">This property only applies to surface charts and will return a run-time error if you try to set it to a non-surface chart.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -660,18 +443,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-144">
-            <b>True</b> si el gráfico de líneas o un gráfico de áreas tiene líneas de unión.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-144">
-              <b>True</b> if the line chart or area chart has drop lines.</span>
-          </span>
-          <span data-ttu-id="a3d7b-145">Se aplica solamente a gráficos de líneas y de áreas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-145">Applies only to line and area charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-144"><b>True</b> si el gráfico de líneas o de áreas tiene líneas de unión.</span><span class="sxs-lookup"><span data-stu-id="26424-144"><b>True</b> if the line chart or area chart has drop lines.</span></span> <span data-ttu-id="26424-145">Se aplica sólo a los gráficos de líneas y de áreas.</span><span class="sxs-lookup"><span data-stu-id="26424-145">Applies only to line and area charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -702,18 +474,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-146">
-            <b>True</b> si el gráfico de líneas tiene líneas de máximos y mínimos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-146">
-              <b>True</b> if the line chart has high-low lines.</span>
-          </span>
-          <span data-ttu-id="a3d7b-147">Sólo se aplica a gráficos de líneas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-147">Applies only to line charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-146"><b>True</b> si el gráfico de líneas tiene líneas de máximos y mínimos.</span><span class="sxs-lookup"><span data-stu-id="26424-146"><b>True</b> if the line chart has high-low lines.</span></span> <span data-ttu-id="26424-147">Sólo se aplica a gráficos de líneas.</span><span class="sxs-lookup"><span data-stu-id="26424-147">Applies only to line charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -744,18 +505,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-148">
-            <b>True</b> si un gráfico radial tiene rótulos de ejes.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-148">
-              <b>True</b> if a radar chart has axis labels.</span>
-          </span>
-          <span data-ttu-id="a3d7b-149">Se aplica solamente a gráficos radiales.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-149">Applies only to radar charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-148"><b>True</b> si un gráfico radial tiene rótulos de ejes.</span><span class="sxs-lookup"><span data-stu-id="26424-148"><b>True</b> if a radar chart has axis labels.</span></span> <span data-ttu-id="26424-149">Se aplica sólo a gráficos radiales.</span><span class="sxs-lookup"><span data-stu-id="26424-149">Applies only to radar charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -786,18 +536,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-150">
-            <b>True</b> si un gráfico de columnas apiladas o gráfico de barras tiene líneas de serie o si un gráfico circular con subgráfico circular o barras de gráfico circular tiene líneas de conexión entre las dos secciones.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-150">
-              <b>True</b> if a stacked column chart or bar chart has series lines or if a Pie of Pie chart or Bar of Pie chart has connector lines between the two sections.</span>
-          </span>
-          <span data-ttu-id="a3d7b-151">Sólo se aplica a gráficos de columnas apiladas, gráficos de barras, gráficos circulares con subgráfico circular o barras de gráficos circulares.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-151">Applies only to stacked column charts, bar charts, Pie of Pie charts, or Bar of Pie charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-150"><b>True</b> si un gráfico de columnas o barras apiladas tiene líneas de serie o un gráfico de sectores circulares o de barras de gráfico circular tiene líneas de conexión entre las dos secciones.</span><span class="sxs-lookup"><span data-stu-id="26424-150"><b>True</b> if a stacked column chart or bar chart has series lines or if a Pie of Pie chart or Bar of Pie chart has connector lines between the two sections.</span></span> <span data-ttu-id="26424-151">Se aplica únicamente a los gráficos de columnas apiladas, gráficos de barras, gráficos de sectores circulares o gráficos de barras de sector circular.</span><span class="sxs-lookup"><span data-stu-id="26424-151">Applies only to stacked column charts, bar charts, Pie of Pie charts, or Bar of Pie charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -828,16 +567,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-152">True si un gráfico de líneas tiene barras ascendentes y descendentes.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-152">True if a line chart has up and down bars.</span>
-          </span>
-          <span data-ttu-id="a3d7b-153">Sólo se aplica a gráficos de líneas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-153">Applies only to line charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-152">True si un gráfico de líneas tiene barras ascendentes y descendentes.</span><span class="sxs-lookup"><span data-stu-id="26424-152">True if a line chart has up and down bars.</span></span> <span data-ttu-id="26424-153">Sólo se aplica a gráficos de líneas.</span><span class="sxs-lookup"><span data-stu-id="26424-153">Applies only to line charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -865,16 +595,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HiLoLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-154">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> object que representa las líneas de máximos y mínimos de una serie en un gráfico de líneas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-154">Returns a <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> object that represents the high-low lines for a series on a line chart.</span>
-          </span>
-          <span data-ttu-id="a3d7b-155">Sólo se aplica a gráficos de líneas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-155">Applies only to line charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-154">Devuelve un objeto que representa las líneas de máximos y mínimos <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> de una serie en un gráfico de líneas.</span><span class="sxs-lookup"><span data-stu-id="26424-154">Returns a <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> object that represents the high-low lines for a series on a line chart.</span></span> <span data-ttu-id="26424-155">Sólo se aplica a gráficos de líneas.</span><span class="sxs-lookup"><span data-stu-id="26424-155">Applies only to line charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -902,12 +623,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-156">Devuelve el número de índice del objeto contenido en el conjunto de objetos similares.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-156">Returns the index number of the object within the collection of similar objects.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-156">Devuelve el número de índice del objeto contenido en el conjunto de objetos similares.</span><span class="sxs-lookup"><span data-stu-id="26424-156">Returns the index number of the object within the collection of similar objects.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -938,38 +654,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-157">Especifica cómo se colocan las barras y columnas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-157">Specifies how bars and columns are positioned.</span>
-          </span>
-          <span data-ttu-id="a3d7b-158">Puede ser un valor comprendido entre -100 y 100.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-158">Can be a value between –100 and 100.</span>
-          </span>
-          <span data-ttu-id="a3d7b-159">Se aplica sólo a las barras 2D y de los gráficos de columnas 2D.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-159">Applies only to 2-D bar and 2-D column charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-157">Especifica cómo se colocan las barras y columnas.</span><span class="sxs-lookup"><span data-stu-id="26424-157">Specifies how bars and columns are positioned.</span></span> <span data-ttu-id="26424-158">Puede ser un valor entre –100 y 100.</span><span class="sxs-lookup"><span data-stu-id="26424-158">Can be a value between –100 and 100.</span></span> <span data-ttu-id="26424-159">Se aplica solo a los gráficos 2D de barras y columnas.</span><span class="sxs-lookup"><span data-stu-id="26424-159">Applies only to 2-D bar and 2-D column charts.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="a3d7b-160">Si esta propiedad se establece en -100, se colocan las barras para que haya una barra Ancho entre ellas.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-160">If this property is set to –100, bars are positioned so that there's one bar width between them.</span>
-            </span>
-            <span data-ttu-id="a3d7b-161">Si la superposición es 0 (cero), no hay ningún espacio entre las barras (cada barra empieza inmediatamente después de la barra de anterior).</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-161">If the overlap is 0 (zero), there's no space between bars (one bar starts immediately after the preceding bar).</span>
-            </span>
-            <span data-ttu-id="a3d7b-162">Si la superposición es 100, las barras se colocarán unas sobre otras.</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="a3d7b-162">If the overlap is 100, bars are positioned on top of each other.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="26424-160">Si esta propiedad se establece en –100, las barras se sitúan para que haya un ancho de barra entre ellas.</span><span class="sxs-lookup"><span data-stu-id="26424-160">If this property is set to –100, bars are positioned so that there's one bar width between them.</span></span> <span data-ttu-id="26424-161">Con superposición igual a 0 (cero), no hay espacio entre las barras (cada barra empieza inmediatamente después de la que le precede).</span><span class="sxs-lookup"><span data-stu-id="26424-161">If the overlap is 0 (zero), there's no space between bars (one bar starts immediately after the preceding bar).</span></span> <span data-ttu-id="26424-162">Si la superposición es 100, las barras se colocarán unas sobre otras.</span><span class="sxs-lookup"><span data-stu-id="26424-162">If the overlap is 100, bars are positioned on top of each other.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -995,12 +683,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-163">Devuelve el objeto primario del objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-163">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-163">Devuelve el objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="26424-163">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1028,12 +711,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-164">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> objeto que representa los rótulos del eje radial para el grupo de gráficos especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-164">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> object that represents the radar axis labels for the specified chart group.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-164">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> objeto que representa los rótulos de ejes radiales para el grupo de gráficos especificado.</span><span class="sxs-lookup"><span data-stu-id="26424-164">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> object that represents the radar axis labels for the specified chart group.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1064,16 +742,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-165">Devuelve o establece el tamaño de la sección secundaria de un gráfico circular con subgráfico circular o de un subgráfico, como un porcentaje del tamaño del gráfico circular principal.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-165">Returns or sets the size of the secondary section of either a Pie of Pie chart or a Bar of Pie chart, as a percentage of the size of the primary pie.</span>
-          </span>
-          <span data-ttu-id="a3d7b-166">Puede ser un valor comprendido entre 5 y 200.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-166">Can be a value from 5 to 200.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-165">Devuelve o establece el tamaño de la sección secundaria de un gráfico circular con gráfico circular o de barras, como un porcentaje del tamaño del gráfico circular principal.</span><span class="sxs-lookup"><span data-stu-id="26424-165">Returns or sets the size of the secondary section of either a Pie of Pie chart or a Bar of Pie chart, as a percentage of the size of the primary pie.</span></span> <span data-ttu-id="26424-166">Puede ser un valor comprendido entre 5 y 200.</span><span class="sxs-lookup"><span data-stu-id="26424-166">Can be a value from 5 to 200.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1100,23 +769,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="a3d7b-167">
-            <b>Objeto</b>de opcional.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-167">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="a3d7b-168">Nombre o número de la serie.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-168">The name or number of the series.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="a3d7b-169">Devuelve un objeto object que representa una sola serie (un <see cref="T:Microsoft.Office.Interop.Excel.Series" /> objeto) o una colección de todas las series (una <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> colección) en el gráfico o grupo de gráficos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-169">Returns an object that represents either a single series (a <see cref="T:Microsoft.Office.Interop.Excel.Series" /> object) or a collection of all the series (a <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> collection) in the chart or chart group.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="26424-167">Optional <b>Object</b>.</span><span class="sxs-lookup"><span data-stu-id="26424-167">Optional <b>Object</b>.</span></span> <span data-ttu-id="26424-168">Nombre o número de la serie.</span><span class="sxs-lookup"><span data-stu-id="26424-168">The name or number of the series.</span></span></param>
+        <summary><span data-ttu-id="26424-169">Devuelve un objeto que representa una sola serie (un objeto) o una colección de todas las <see cref="T:Microsoft.Office.Interop.Excel.Series" /> series (una colección) del gráfico o grupo de <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> gráficos.</span><span class="sxs-lookup"><span data-stu-id="26424-169">Returns an object that represents either a single series (a <see cref="T:Microsoft.Office.Interop.Excel.Series" /> object) or a collection of all the series (a <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> collection) in the chart or chart group.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1144,16 +798,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SeriesLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-170">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> object que representa las líneas de serie de un gráfico de barras apiladas o un gráfico de columnas apiladas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-170">Returns a <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> object that represents the series lines for a stacked bar chart or a stacked column chart.</span>
-          </span>
-          <span data-ttu-id="a3d7b-171">Sólo se aplica a gráficos de barras apiladas y gráficos de columnas apiladas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-171">Applies only to stacked bar and stacked column charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-170">Devuelve un objeto que representa las líneas de serie de un gráfico de barras <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> apiladas o un gráfico de columnas apiladas.</span><span class="sxs-lookup"><span data-stu-id="26424-170">Returns a <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> object that represents the series lines for a stacked bar chart or a stacked column chart.</span></span> <span data-ttu-id="26424-171">Se aplica solo a los gráficos de barras apiladas y columnas apiladas.</span><span class="sxs-lookup"><span data-stu-id="26424-171">Applies only to stacked bar and stacked column charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1184,18 +829,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-172">
-            <b>True</b> si se muestran las burbujas negativas para el grupo de gráficos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-172">
-              <b>True</b> if negative bubbles are shown for the chart group.</span>
-          </span>
-          <span data-ttu-id="a3d7b-173">Válido sólo para los gráficos de burbujas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-173">Valid only for bubble charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-172"><b>True</b> si se muestran las burbujas negativas del grupo de gráficos.</span><span class="sxs-lookup"><span data-stu-id="26424-172"><b>True</b> if negative bubbles are shown for the chart group.</span></span> <span data-ttu-id="26424-173">Válido únicamente para gráficos de burbujas.</span><span class="sxs-lookup"><span data-stu-id="26424-173">Valid only for bubble charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1226,16 +860,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSizeRepresents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-174">Devuelve o establece qué representa el tamaño de burbuja en un gráfico de burbujas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-174">Returns or sets what the bubble size represents on a bubble chart.</span>
-          </span>
-          <span data-ttu-id="a3d7b-175">Puede ser cualquiera de las siguientes constantes <b>XlSizeRepresents</b> : <b>xlSizeIsArea</b> o <b>xlSizeIsWidth</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-175">Can be either of the following <b>XlSizeRepresents</b> constants: <b>xlSizeIsArea</b> or <b>xlSizeIsWidth</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-174">Devuelve o establece qué representa el tamaño de burbuja en un gráfico de burbujas.</span><span class="sxs-lookup"><span data-stu-id="26424-174">Returns or sets what the bubble size represents on a bubble chart.</span></span> <span data-ttu-id="26424-175">Puede ser cualquiera de las siguientes constantes <b>XlSizeRepresents</b>: <b>xlSizeIsArea</b> o <b>xlSizeIsWidth</b>.</span><span class="sxs-lookup"><span data-stu-id="26424-175">Can be either of the following <b>XlSizeRepresents</b> constants: <b>xlSizeIsArea</b> or <b>xlSizeIsWidth</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1266,12 +891,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartSplitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-176">Devuelve o establece la manera en que se dividen en las dos secciones de un gráfico circular con subgráfico circular o un gráfico de barras de gráfico circular.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-176">Returns or sets the way the two sections of either a Pie of Pie chart or a Bar of Pie chart are split.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-176">Devuelve o establece la forma en que se dividen las dos secciones de un gráfico circular con gráfico circular o de barras.</span><span class="sxs-lookup"><span data-stu-id="26424-176">Returns or sets the way the two sections of either a Pie of Pie chart or a Bar of Pie chart are split.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1302,12 +922,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-177">Devuelve o establece el valor de umbral que separa las dos secciones de un gráfico circular con subgráfico circular o un gráfico de barras de gráfico circular.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-177">Returns or sets the threshold value separating the two sections of either a Pie of Pie chart or a Bar of Pie chart.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-177">Devuelve o establece el valor de umbral que separa las dos secciones de un gráfico circular con gráfico circular o de barras.</span><span class="sxs-lookup"><span data-stu-id="26424-177">Returns or sets the threshold value separating the two sections of either a Pie of Pie chart or a Bar of Pie chart.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1344,12 +959,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-178">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-178">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-178">Reservado para uso interno. </span><span class="sxs-lookup"><span data-stu-id="26424-178">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1386,12 +996,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-179">Reservado para uso interno.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-179">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-179">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="26424-179">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1419,16 +1024,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.UpBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-180">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> object que representa las barras ascendentes de un gráfico de líneas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-180">Returns an <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> object that represents the up bars on a line chart.</span>
-          </span>
-          <span data-ttu-id="a3d7b-181">Sólo se aplica a gráficos de líneas.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-181">Applies only to line charts.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-180">Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> objeto que representa las barras arriba de un gráfico de líneas.</span><span class="sxs-lookup"><span data-stu-id="26424-180">Returns an <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> object that represents the up bars on a line chart.</span></span> <span data-ttu-id="26424-181">Sólo se aplica a gráficos de líneas.</span><span class="sxs-lookup"><span data-stu-id="26424-181">Applies only to line charts.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1459,18 +1055,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a3d7b-182">
-            <b>True</b> si Microsoft Excel asigna un color o trama diferente a cada marcador de datos.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-182">
-              <b>True</b> if Microsoft Excel assigns a different color or pattern to each data marker.</span>
-          </span>
-          <span data-ttu-id="a3d7b-183">El gráfico debe contener una sola serie.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a3d7b-183">The chart must contain only one series.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="26424-182"><b>True</b> si Microsoft Excel asigna un color o patrón diferente a cada marcador de datos.</span><span class="sxs-lookup"><span data-stu-id="26424-182"><b>True</b> if Microsoft Excel assigns a different color or pattern to each data marker.</span></span> <span data-ttu-id="26424-183">El gráfico debe contener una sola serie.</span><span class="sxs-lookup"><span data-stu-id="26424-183">The chart must contain only one series.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
