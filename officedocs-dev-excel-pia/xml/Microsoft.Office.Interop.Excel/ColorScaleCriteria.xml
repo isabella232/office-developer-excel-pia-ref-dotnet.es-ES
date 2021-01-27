@@ -1,13 +1,5 @@
 <Type Name="ColorScaleCriteria" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriteria">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587440" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004007" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriteria implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriteria&#xA;Implements IEnumerable" />
@@ -33,13 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos que representa todos los criterios de un formato condicional de escala de color. Cada criterio especifica el mínimo, punto medio o máximo umbral para la escala de colores.</summary>
-    <remarks>
-      <para>Para devolver la colección <b>ColorScaleCriteria</b> , utilice la <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> objeto.</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>El ejemplo de código siguiente crea un rango de números y después le aplica a dicho rango una regla de formato condicional de escala de dos colores. Al umbral mínimo se le asigna el color rojo y al umbral máximo, el azul realizando referencias al índice de la colección <b>ColorScaleCriteria</b> para establecer los criterios individuales.</para>
+    <summary>Colección de objetos <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> que representa todos los criterios para un formato condicional de escala de colores. Cada criterio especifica los umbrales mínimo, de punto medio o máximo de la escala de colores.</summary>
+    <remarks><para>Para devolver la <b>colección ColorScaleCriteria,</b> utilice la <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> objeto.</para>
+      <para> </para></remarks>
+    <example><para>El ejemplo de código siguiente crea un rango de números y después le aplica a dicho rango una regla de formato condicional de escala de dos colores. Al umbral mínimo se le asigna el color rojo y al umbral máximo, el azul realizando referencias al índice de la colección <b>ColorScaleCriteria</b> para establecer los criterios individuales.</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF()  
 
 
@@ -4396,8 +4385,7 @@
 &lt;i&gt;ColorScaleCriteria(1)&lt;/i&gt;
 &lt;span class="label"&gt;.FormatColor.Color = RGB(255, 0, 0)     cfColorScale.&lt;/span&gt;
 &lt;i&gt;ColorScaleCriteria(2)&lt;/i&gt;
-&lt;span class="label"&gt;.FormatColor.Color = RGB(0, 0, 255)          End Sub &lt;/span&gt;</code>
-    </example>
+&lt;span class="label"&gt;.FormatColor.Color = RGB(0, 0, 255)          End Sub &lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -4458,14 +4446,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor <b>entero</b> que especifica el número de criterios de una regla de formato condicional de escala de color. Solo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>El número de criterios es equivalente al número de valores de umbral asignados a una escala de colores. Serán dos o tres, dependiendo de si se utiliza una escala de dos colores o de tres colores para la regla de formato condicional.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un <b>valor de</b> tipo Integer que especifica el número de criterios para una regla de formato condicional de escala de colores. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>El número de criterios es equivalente al número de valores de umbral asignados a una escala de colores. Serán dos o tres, dependiendo de si se utiliza una escala de dos colores o de tres colores para la regla de formato condicional.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -4526,15 +4510,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">El número de índice de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objeto.</param>
-        <summary>Devuelve un valor single <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objeto desde el <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />colección. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
-        </value>
-        <remarks>
-          <para>El valor de la <paramref name="Index" /> parámetro no puede ser mayor que el número de criterios establecidos para un formato condicional de escala de colores. Los criterios son equivalentes a los valores de umbral asignados a la escala de color. Para averiguar el número de valores de umbral, utilice la <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> (propiedad).</para>
-          <para></para>
-        </remarks>
+        <param name="Index">Número de índice del <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objeto.</param>
+        <summary>Devuelve un único <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objeto de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> colección. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /></value>
+        <remarks><para>El valor del parámetro no puede ser mayor que el número de criterios <paramref name="Index" /> establecidos para un formato condicional de escala de colores. Los criterios son equivalentes a los valores de umbral asignados a la escala de colores. Para buscar el número de valores de umbral, utilice la <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

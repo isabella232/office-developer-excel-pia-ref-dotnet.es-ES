@@ -1,13 +1,5 @@
 <Type Name="ErrorCheckingOptions" FullName="Microsoft.Office.Interop.Excel.ErrorCheckingOptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fcbc54c7e67e1b8642a95dec50c04ef275b48f27" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585641" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ErrorCheckingOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fcbc54c7e67e1b8642a95dec50c04ef275b48f27" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003615" /></Metadata><TypeSignature Language="C#" Value="public interface ErrorCheckingOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ErrorCheckingOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface ErrorCheckingOptions" />
@@ -30,10 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa las opciones de comprobación de errores de una aplicación.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.ErrorCheckingOptions" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto para devolver un objeto <b>ErrorCheckingOptions</b> .</para>
-      <para>Referencia de la <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> objeto para ver una lista de valores de índice asociados a la comprobación de errores opciones.</para>
-      <para>Puede usar las siguientes propiedades, que son miembros del objeto <b>ErrorCheckingOptions</b> , para establecer o devolver opciones de comprobación de errores.</para>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.ErrorCheckingOptions" /> propiedad del objeto para devolver un objeto <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b>ErrorCheckingOptions</b> .</para>
+      <para>Haga referencia a la propiedad del objeto para ver una lista de valores de <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> índice asociados con las opciones de comprobación de errores.</para>
+      <para>Puede usar las siguientes propiedades, que son miembros del objeto <b>ErrorCheckingOptions,</b> para establecer o devolver opciones de comprobación de errores.</para>
       <list type="bullet">
         <item>
           <description>
@@ -81,8 +72,7 @@
           </description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -108,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,13 +129,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Avisa al usuario para todas las celdas que infringen las reglas de comprobación de errores habilitadas.</summary>
+        <summary>Avisa al usuario de todas las celdas que no cumplan las reglas de comprobación de errores habilitadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cuando la propiedad <b>BackgroundChecking</b> se establece en <b>True</b> (valor predeterminado), el botón Opciones de Autocorrección aparece junto a todas las celdas que infringen habilitadas. <b>False</b> deshabilita la comprobación de errores en segundo plano.</para>
-          <para>Hacer referencia a la <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> objeto para ver una lista de sus miembros que se pueden habilitar.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Cuando la <b>propiedad BackgroundChecking</b> se establece en <b>True</b> (valor predeterminado), el botón Opciones de Autocorrección aparece junto a todas las celdas que infringen los errores habilitados. <b>False</b> deshabilita la comprobación de errores en segundo plano.</para>
+          <para>Haga referencia al <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> objeto para ver una lista de sus miembros que se pueden habilitar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -171,13 +159,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EmptyCellReferences">
@@ -206,7 +192,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con el botón Opciones de Autocorrección, las celdas seleccionadas que contienen fórmulas que hacen referencia a celdas vacías. <b>False</b> deshabilita la comprobación de referencia de celda vacía.</summary>
+        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con un botón Opciones de Autocorrección, las celdas seleccionadas que contienen fórmulas que hacen referencia a celdas vacías. <b>False</b> deshabilita la comprobación de referencias a celdas vacías.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con el botón Opciones de Autocorrección, las celdas seleccionadas que contienen fórmulas que se evalúe como error. <b>False</b> deshabilita la comprobación de errores para las celdas que se evalúan como un valor de error.</summary>
+        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con un botón Opciones de Autocorrección, las celdas seleccionadas que contienen fórmulas evaluando un error. <b>False</b> deshabilita la comprobación de errores para las celdas cuyo resultado sea un valor de error.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,10 +256,8 @@
       <Docs>
         <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica las celdas que contienen una fórmula incoherente en una región. <b>False</b> deshabilita la comprobación de fórmulas incoherentes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para que la propiedad <b>InconsistentFormula</b> funcione correctamente, las fórmulas coherentes de la región deben estar a la izquierda y a la derecha, o encima y debajo de la celda que contiene la fórmula incoherente.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para que la propiedad <b>InconsistentFormula</b> funcione correctamente, las fórmulas coherentes de la región deben estar a la izquierda y a la derecha, o encima y debajo de la celda que contiene la fórmula incoherente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InconsistentTableFormula">
@@ -302,10 +286,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve <b>True</b> si la fórmula de la tabla no es coherente. Valor <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve <b>True</b> si la fórmula de la tabla no es coherente. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Valor booleano</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,17 +319,15 @@
       <Docs>
         <summary>Devuelve o establece el color del indicador de opciones de comprobación de errores.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />puede ser una de las siguientes <b>constantes XlColorIndex:</b></para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />puede ser una de las siguientes constantes <b>XlColorIndex</b> :</para>
+            <b>xlColorIndexAutomatic</b> Color predeterminado del sistema.</para>
           <para>
-            <b>xlColorIndexAutomatic</b> El color predeterminado del sistema.</para>
-          <para>
-            <b>xlColorIndexNone</b> No se utiliza con esta propiedad.</para>
-          <para>Puede especificar un color en particular para el indicador escribiendo el valor de índice correspondiente. Puede usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" /> propiedad para devolver la paleta de colores actual.</para>
-          <para>En la siguiente ilustración se muestra los valores de índice de color de la paleta de colores predeterminada.</para>
-          <para></para>
-        </remarks>
+            <b>xlColorIndexNone</b> No se usa con esta propiedad.</para>
+          <para>Para especificar un color de indicador determinado, escriba el valor de índice correspondiente. Puede usar la propiedad <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" /> para devolver la paleta de colores actual.</para>
+          <para>En la siguiente ilustración se muestran los valores de índice de color de la paleta de colores predeterminada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListDataValidation">
@@ -376,12 +356,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Un valor <b>booleano</b> que es <b>True</b> si está habilitada la validación de datos en una lista.</summary>
+        <summary>Valor <b>Boolean</b> que es <b>True</b> si está habilitada la validación de datos en una lista.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Validación de datos para obtener una lista puede también se activar o desactivar por en la interfaz de usuario activando o desactivando la casilla de verificación lista error de validación de datos en la ficha comprobación de errores del cuadro de diálogo Opciones.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La validación de datos para una lista también se puede activar o desactivar en la interfaz de usuario activando o desactivando la casilla de verificación error de validación de datos de lista en la ficha Comprobación de errores del cuadro de diálogo Opciones.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberAsText">
@@ -410,7 +388,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con el botón Opciones de Autocorrección, las celdas seleccionadas que contienen números escritos como texto. <b>False</b> deshabilita la comprobación de errores para números escritos como texto.</summary>
+        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con un botón Opciones de Autocorrección, las celdas seleccionadas que contienen números escritos como texto. <b>False</b> deshabilita la comprobación de errores para números escritos como texto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -441,7 +419,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con el botón Opciones de Autocorrección, las celdas seleccionadas que contienen fórmulas que hacen referencia a un rango que omite las celdas adyacentes que podrían incluirse. <b>False</b> deshabilita la comprobación de errores para celdas omitidas.</summary>
+        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con el botón Opciones de Autocorrección, las celdas seleccionadas que contienen fórmulas que hacen referencia a un rango que omite las celdas adyacentes que podrían incluirse. <b>False</b> deshabilita la comprobación de errores en las celdas omitidas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -500,7 +478,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con el botón Opciones de Autocorrección, las celdas que contienen una fecha de texto con un año de dos dígitos. <b>False</b> deshabilita la comprobación de errores para celdas que contienen una fecha de texto con un año de dos dígitos.</summary>
+        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica, con un botón Opciones de Autocorrección, las celdas que contienen una fecha de texto con un año de dos dígitos. <b>False</b> deshabilita la comprobación de errores en las celdas que contengan fechas de texto con años de dos dígitos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -531,7 +509,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica las celdas seleccionadas que están desbloqueadas y contienen una fórmula. <b>False</b> deshabilita la comprobación de errores para celdas desbloqueadas que contienen fórmulas.</summary>
+        <summary>Si se establece en <b>True</b> (valor predeterminado), Microsoft Excel identifica las celdas seleccionadas que están desbloqueadas y contienen una fórmula. <b>False</b> deshabilita la comprobación de errores para celdas desbloqueadas que contienen fórmulas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Excel.Dialog">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="274e93847efbe2121de825e75c0a66505c3899d3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582869" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialog" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="274e93847efbe2121de825e75c0a66505c3899d3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003860" /></Metadata><TypeSignature Language="C#" Value="public interface Dialog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Dialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialog" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa un cuadro de diálogo integrado de Microsoft Excel.</summary>
-    <remarks>
-      <para>El objeto <b>Dialog</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> colección. La colección <b>Dialogs</b> contiene todos los cuadros de diálogo integrados en Microsoft Excel. No se puede crear un nuevo cuadro de diálogo integrado o agregar uno a la colección. Lo único que puede hacer con un objeto <b>Dialog</b> es emplearlo con el <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para mostrar el cuadro de diálogo correspondiente.</para>
-      <para>Utilice la <b>sintaxis Dialogs</b>(<paramref name="index" />), donde <paramref name="index" /> es una constante integrada que identifica el cuadro de diálogo, para devolver un solo objeto <b>Dialog</b> .</para>
-      <para>Microsoft Excel incluye constantes integradas para muchos de los cuadros de diálogo integrados. Cada constante se forma con el prefijo "xlDialog" seguido por el nombre del cuadro de diálogo. Por ejemplo, la constante de cuadro de diálogo Aplicar nombres es <b>xlDialogApplyNames</b>y la constante del cuadro de diálogo Buscar archivo es <b>xlDialogFindFile</b>. Estas constantes son miembros de la <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> tipo enumerado.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>El <b>objeto Dialog</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> colección. La colección <b>Dialogs</b> contiene todos los cuadros de diálogo integrados de Microsoft Excel. No se pueden crear cuadros de diálogo integrados nuevos ni agregarlos a la colección. Lo único útil que puede hacer con un objeto <b>Dialog</b> es usarlo con el <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para mostrar el cuadro de diálogo correspondiente.</para>
+      <para>Utilice <b>Dialogs</b>( ), donde es una constante integrada que identifica el cuadro de <paramref name="index" /> <paramref name="index" /> diálogo, para devolver un único <b>objeto Dialog.</b></para>
+      <para>Microsoft Excel incluye constantes integradas para muchos de los cuadros de diálogo integrados. Cada constante se forma con el prefijo "xlDialog" seguido del nombre del cuadro de diálogo. Por ejemplo, la constante del cuadro de diálogo Aplicar nombres es <b>xlDialogApplyNames</b> y la del cuadro de diálogo Buscar archivo es <b>xlDialogFindFile</b>. Estas constantes son miembros del <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> tipo enumerado.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,13 +79,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -177,74 +165,42 @@
         <Parameter Name="Arg30" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Arg1">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg2">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg3">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg4">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg5">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg6">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg7">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg8">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg9">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg10">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg11">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg12">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg13">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg14">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg15">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg16">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg17">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg18">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg19">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg20">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg21">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg22">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg23">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg24">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg25">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg26">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg27">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg28">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg29">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
-        <param name="Arg30">
-          <b>Objeto</b>de opcional. Los argumentos iniciales del comando.</param>
+        <param name="Arg1">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg2">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg3">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg4">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg5">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg6">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg7">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg8">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg9">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg10">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg11">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg12">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg13">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg14">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg15">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg16">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg17">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg18">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg19">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg20">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg21">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg22">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg23">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg24">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg25">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg26">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg27">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg28">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg29">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
+        <param name="Arg30">Optional <b>Object</b>. Argumentos iniciales del comando.</param>
         <summary>Muestra el cuadro de diálogo integrado y espera a que el usuario escriba datos.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>En los cuadros de diálogo integrados, este método devuelve <b>True</b> si el usuario hace clic en Aceptar, o bien devuelve <b>False</b> si el usuario hace clic en Cancelar.</para>
-          <para>Puede usar un cuadro de diálogo para cambiar varias propiedades al mismo tiempo. Por ejemplo, puede usar el cuadro de diálogo Formato de celdas para cambiar todas las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto.</para>
-          <para>Para algunos cuadros de diálogo integrados (cuadro de diálogo Abrir, por ejemplo), puede establecer valores iniciales utilizando arg1, arg2,..., arg30. Para obtener más información acerca de los cuadros de diálogo integrados, vea el <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> colección.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para los cuadros de diálogo integrados, este método devuelve <b>True</b> si el usuario hace clic en Aceptar, o <b>devuelve False</b> si el usuario hace clic en Cancelar.</para>
+          <para>Puede usar un solo cuadro de diálogo para cambiar varias propiedades simultáneamente. Por ejemplo, puede usar el cuadro de diálogo Formato de celdas para cambiar todas las propiedades del <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto.</para>
+          <para>Para algunos cuadros de diálogo integrados (Abrir, por ejemplo), podrá establecer valores iniciales utilizando arg1, arg2, ..., arg30. Para obtener más información acerca de los cuadros de diálogo integrados, vea la <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> colección.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ChartObjects" FullName="Microsoft.Office.Interop.Excel.ChartObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2c2b455b605d204bbd8ef7f4faf0116be7341efd" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586096" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c2b455b605d204bbd8ef7f4faf0116be7341efd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004021" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartObjects&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objetos en la hoja de gráficos especificado, hoja de diálogo u hoja de cálculo.</summary>
-    <remarks>
-      <para>Cada objeto <b>ChartObject</b> representa un gráfico incrustado. El objeto <b>ChartObject</b> actúa como un contenedor para una <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto. Propiedades y métodos del objeto <b>ChartObject</b> controlan el aspecto y el tamaño del gráfico incrustado en la hoja.</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> método para devolver la colección <b>ChartObjects</b> . Usar el <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> (método) para crear un nuevo gráfico incrustado vacío y agregarlo a la colección. Usar el <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para agregar datos y dar formato al nuevo gráfico.</para>
-      <para>Utilice <b>ChartObjects</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un solo objeto <b>ChartObject</b> o número de índice del gráfico incrustado.</para>
-      <para></para>
-    </remarks>
+    <summary>Colección de todos los objetos de la hoja de <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> gráficos, hoja de diálogo o hoja de cálculo especificada.</summary>
+    <remarks><para>Cada objeto <b>ChartObject</b> representa un gráfico incrustado. El <b>objeto ChartObject</b> actúa como contenedor de un <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> objeto. Las propiedades y los métodos para el objeto <b>ChartObject</b> controlan el aspecto y el tamaño del gráfico incrustado en la hoja.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> método para devolver la colección <b>ChartObjects</b> . Utilice el método para crear un nuevo gráfico incrustado vacío <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> y agregarlo a la colección. Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para agregar datos y dar formato al nuevo gráfico.</para>
+      <para>Utilice <b>ChartObjects</b>( ), donde se encuentra el nombre o número de índice del gráfico incrustado, para <paramref name="index" /> devolver un solo objeto <paramref name="index" /> <b>ChartObject</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Copy">
@@ -66,7 +56,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reservado para uso interno.</summary>
+        <summary>Reservado para uso interno. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,14 +315,10 @@
         <Parameter Name="Height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>Double</b>requerido. Coordenadas iniciales (en puntos) del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo, o a la esquina superior izquierda de un gráfico.</param>
-        <param name="Top">
-          <b>Double</b>requerido. Coordenadas iniciales (en puntos) del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo, o a la esquina superior izquierda de un gráfico.</param>
-        <param name="Width">
-          <b>Double</b>requerido. El tamaño inicial del nuevo objeto en puntos.</param>
-        <param name="Height">
-          <b>Double</b>requerido. El tamaño inicial del nuevo objeto en puntos.</param>
+        <param name="Left">Required <b>Double</b>. Coordenadas iniciales (en puntos) del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo, o a la esquina superior izquierda de un gráfico.</param>
+        <param name="Top">Required <b>Double</b>. Coordenadas iniciales (en puntos) del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo, o a la esquina superior izquierda de un gráfico.</param>
+        <param name="Width">Required <b>Double</b>. Tamaño inicial del nuevo objeto en puntos.</param>
+        <param name="Height">Required <b>Double</b>. Tamaño inicial del nuevo objeto en puntos.</param>
         <summary>Crea un nuevo gráfico incrustado. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -361,7 +347,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,7 +378,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object que representa el borde del objeto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa el borde del objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -475,8 +461,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />. Especifica cómo se debe copiar la imagen.</param>
-        <param name="Format">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />. El formato de la imagen.</param>
+        <param name="Appearance">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> . Especifica cómo se debe copiar la imagen.</param>
+        <param name="Format">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> . Formato de la imagen.</param>
         <summary>Copia el objeto seleccionado en el Portapapeles como una imagen.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -533,12 +519,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -564,10 +548,8 @@
       <Docs>
         <summary>Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Sólo pueden cortarse los gráficos incrustados.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Sólo pueden cortarse los gráficos incrustados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -654,8 +636,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto está habilitado.</summary>
+        <summary>Es <b>True</b> si el objeto está habilitado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -747,7 +728,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El alto del objeto.</summary>
+        <summary>Alto del objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -778,7 +759,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa el interior del objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que representa el interior del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -806,8 +787,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Número de índice o nombre del objeto.</param>
+        <param name="Index">Objeto <b>requerido</b>. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -839,12 +819,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La distancia desde el borde izquierdo del objeto hasta el borde izquierdo de la columna A (en una hoja de cálculo) o el borde izquierdo del área del gráfico (en un gráfico).</summary>
+        <summary>Distancia desde el borde izquierdo del objeto hasta el borde izquierdo de la columna A (en una hoja de cálculo) o el borde izquierdo del área del gráfico (en un gráfico).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la ventana está maximizada, esta propiedad devuelve un número negativo que varía según el ancho del borde ventana. Al establecer esta propiedad en 0 (cero) hará que la ventana de un poco más pequeña de lo que sería si la ventana de la aplicación estuviera maximizada. En otras palabras, si esta propiedad es 0 (cero), el borde izquierdo de la ventana principal de Microsoft Excel apenas estará visible en la pantalla.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la ventana está maximizada, esta propiedad devuelve un número negativo que varía según el ancho del borde de la ventana. Si se establece esta propiedad en 0 (cero), la ventana será un poco más pequeña de lo que sería si se maximizara la ventana de la aplicación. En otras palabras, si esta propiedad es 0 (cero), el borde izquierdo de la ventana principal de Microsoft Excel apenas estará visible en la pantalla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -873,8 +851,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</summary>
+        <summary><b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -970,7 +947,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la forma en que el objeto está unido a las celdas situadas debajo de él.</summary>
+        <summary>Devuelve o establece la forma en que el objeto se adjunta a las celdas debajo de él.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1001,8 +978,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto se imprimirá cuando se imprime el documento.</summary>
+        <summary>Es <b>True</b> si el objeto se imprimirá junto con el documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1033,15 +1009,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si no es posible mover, cambiar de tamaño o eliminar el marco del gráfico incrustado. Valor <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Establecer esta propiedad en <b>True</b> no protegerá el marco de gráfico incrustado que se modifica mediante el modelo de objetos.</para>
-          <para></para>
-        </remarks>
+        <summary><b>True</b> si no es posible mover, cambiar de tamaño o eliminar el marco del gráfico insertado mediante la interfaz de usuario. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Valor booleano</b></value>
+        <remarks><para>Establecer esta propiedad en <b>True</b> no protegerá el marco de gráfico incrustado que se modifica mediante el modelo de objetos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RoundedCorners">
@@ -1076,8 +1047,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el gráfico incrustado tiene esquinas redondeadas.</summary>
+        <summary>Es <b>True</b> si el gráfico incrustado tiene esquinas redondeadas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1104,8 +1074,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">
-          <b>Objeto</b>de opcional. <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
+        <param name="Replace">Optional <b>Object</b>. <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
         <summary>Selecciona el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1172,8 +1141,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto tiene una sombra</summary>
+        <summary><b>True</b> si el objeto tiene una sombra</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1201,7 +1169,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object que representa el objeto u objetos especificados.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto que representa el objeto u objetos especificados.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1232,7 +1200,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La distancia desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o la parte superior del área del gráfico (en un gráfico).</summary>
+        <summary>Distancia desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o la parte superior del área del gráfico (en un gráfico).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1265,11 +1233,9 @@
       <Docs>
         <summary>Determina si el objeto es visible.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
-          <para>Si se establece la propiedad <b>Visible</b> de un nombre como <b>False</b>, el nombre no se muestra en el cuadro de diálogo Definir nombre.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
+          <para>Si establece la propiedad <b>Visible</b> para un nombre en <b>False</b>, el nombre no aparecerá en el cuadro de diálogo Definir nombre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1298,7 +1264,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El ancho del objeto.</summary>
+        <summary>Ancho del objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

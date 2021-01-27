@@ -1,13 +1,5 @@
 <Type Name="Hyperlinks" FullName="Microsoft.Office.Interop.Excel.Hyperlinks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582708" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="384731b744bc8d5ac5fc450f7f7db1aaeb7f87e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003433" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlinks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Hyperlinks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlinks&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Representa la colección de hipervínculos de una hoja de cálculo o de un rango. Cada hipervínculo está representado por un <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> objeto.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>Hyperlinks</b> para devolver la colección <b>Hyperlinks</b>.</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> (método) para crear un hipervínculo y agregarlo a la colección <b>Hyperlinks</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice la propiedad <b>Hyperlinks</b> para devolver la colección <b>Hyperlinks</b>.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.Hyperlinks.Add(System.Object,System.String,System.Object,System.Object,System.Object)" /> método para crear un hipervínculo y agregarlo a la colección <b>Hyperlinks</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,22 +92,15 @@
         <Parameter Name="TextToDisplay" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Anchor">
-          <b>Objeto</b>requerido. El delimitador para el hipervínculo. Puede ser un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> o <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto.</param>
-        <param name="Address">
-          <b>String</b> requerida. Dirección del hipervínculo.</param>
-        <param name="SubAddress">
-          <b>Objeto</b>de opcional. Subdirección del hipervínculo.</param>
-        <param name="ScreenTip">
-          <b>Objeto</b>de opcional. Información de pantalla que se debe mostrar cuando el puntero del mouse se coloca sobre el hipervínculo.</param>
-        <param name="TextToDisplay">
-          <b>Objeto</b>de opcional. Texto que se debe mostrar para el hipervínculo.</param>
-        <summary>Agrega un hipervínculo al rango o a la forma especificados. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> objeto.</summary>
+        <param name="Anchor">Objeto <b>requerido</b>. Delimitador del hipervínculo. Puede ser un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> o un objeto.</param>
+        <param name="Address"><b>String</b> requerida. La dirección del hipervínculo.</param>
+        <param name="SubAddress">Optional <b>Object</b>. La subdirección del hipervínculo.</param>
+        <param name="ScreenTip">Optional <b>Object</b>. La información en pantalla para que aparezca cuando se sitúa el puntero del ratón sobre el hipervínculo.</param>
+        <param name="TextToDisplay">Optional <b>Object</b>. El texto que se muestra para el hipervínculo.</param>
+        <summary>Agrega un hipervínculo al rango o la forma especificados. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cuando se especifica la <paramref name="TextToDisplay" /> argumento, el texto debe ser una cadena.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Al especificar el <paramref name="TextToDisplay" /> argumento, el texto debe ser una cadena.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -143,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,13 +182,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -291,8 +272,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Nombre o número de índice del objeto.</param>
+        <param name="Index">Objeto <b>requerido</b>. Nombre o número de índice del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
