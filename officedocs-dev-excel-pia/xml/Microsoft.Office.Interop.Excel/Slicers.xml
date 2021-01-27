@@ -1,13 +1,5 @@
 <Type Name="Slicers" FullName="Microsoft.Office.Interop.Excel.Slicers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="05cbedda2d8d91112708ccf7b57d8cc47f56c8f7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575645" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Slicers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="05cbedda2d8d91112708ccf7b57d8cc47f56c8f7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010153" /></Metadata><TypeSignature Language="C#" Value="public interface Slicers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicers" />
   <TypeSignature Language="VB.NET" Value="Public Interface Slicers&#xA;Implements IEnumerable" />
@@ -34,10 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objetos.</summary>
-    <remarks>
-      <para>Cada <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto representa una segmentación de datos en un libro. Las segmentaciones de datos se usan para filtrar los datos.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Cada <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto representa una segmentación de datos de un libro. Las segmentaciones de datos se usan para filtrar datos.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -71,7 +61,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>Reservado para uso interno.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.Slicer" />.</value>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +94,7 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SlicerDestination">Una cadena que especifica el nombre de la hoja, o bien un <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objeto que representa la hoja, donde se colocará la segmentación de datos resultante. La hoja de destino debe estar en el libro que contiene el <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> objeto especificado por expresión.</param>
+        <param name="SlicerDestination">Cadena que especifica el nombre de la hoja o un objeto que representa la hoja, donde se colocará la segmentación de datos <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> resultante. La hoja de destino debe estar en el libro que contiene el <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> objeto especificado por la expresión.</param>
         <param name="Level">Para los orígenes de datos OLAP, el índice o el nombre de expresión multidimensional (MDX) del nivel en el que se basa la creación de la segmentación de datos. No compatible con los orígenes de datos que no son de OLAP.</param>
         <param name="Name">Nombre de la segmentación de datos. Excel genera automáticamente un nombre, si aún no se ha especificado ninguno. El nombre deber ser único entre todas las segmentaciones de datos de un libro.</param>
         <param name="Caption">Título de la segmentación de datos.</param>
@@ -112,8 +102,8 @@
         <param name="Left">Posición horizontal inicial de la segmentación de datos, en puntos, en relación con la esquina superior izquierda de la celda A1 de un libro.</param>
         <param name="Width">Ancho inicial, en puntos, del control de segmentación de datos.</param>
         <param name="Height">Altura inicial, en puntos, del control de segmentación de datos.</param>
-        <summary>Crea una segmentación de datos nueva y devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</returns>
+        <summary>Crea una nueva segmentación de datos y devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</summary>
+        <returns>Un <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,12 +130,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -199,13 +187,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
-        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.Slicers.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
+        <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks><para>De sólo <b>lectura de longitud</b>.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.Slicers.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -236,7 +222,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,9 +252,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">El nombre o número de índice de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</param>
+        <param name="Index">Nombre o número de índice del <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto de la colección.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.Slicer" />.</value>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,12 +281,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> colección.</summary>
-        <value>El elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto para especificado <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> colección.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> primario de la colección <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> especificada.</summary>
+        <value>Objeto primario <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> de la colección <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> especificada.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

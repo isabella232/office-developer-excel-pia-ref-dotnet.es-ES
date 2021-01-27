@@ -1,13 +1,5 @@
 <Type Name="SortField" FullName="Microsoft.Office.Interop.Excel.SortField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="09ab33fde95e7157898c0497fe493406f1158f5e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575715" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SortField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="09ab33fde95e7157898c0497fe493406f1158f5e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010027" /></Metadata><TypeSignature Language="C#" Value="public interface SortField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SortField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SortField" />
   <TypeSignature Language="VB.NET" Value="Public Interface SortField" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>El <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> objeto contiene toda la información de ordenación para la <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />, <see cref="T:Microsoft.Office.Interop.Excel.ListObject" />, y <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> objetos.</summary>
+    <summary>El <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> objeto contiene toda la información de ordenación de los objetos , y <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,14 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa el creador del objeto especificado. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
-          <para></para>
-        </remarks>
+        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel._Application" /> al creador del objeto especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -89,14 +77,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  El <see cref="P:Microsoft.Office.Interop.Excel.SortField.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Es de solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.  La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.SortField.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomOrder">
@@ -125,10 +109,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica un orden personalizado para ordenar los campos. Lectura y escritura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Especifica un orden personalizado según el cual ordenar los campos. Lectura/escritura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,10 +140,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSortDataOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica cómo ordenar el texto del rango especificado en <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> objeto. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" />
-        </value>
+        <summary>Especifica cómo ordenar texto en el intervalo especificado en <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> el objeto. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,7 +166,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Quita el especificado <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> objeto desde el <see cref="T:Microsoft.Office.Interop.Excel.SortFields" /> colección.</summary>
+        <summary>Quita el objeto <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> especificado de la <see cref="T:Microsoft.Office.Interop.Excel.SortFields" /> colección.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,9 +194,7 @@
       </ReturnValue>
       <Docs>
         <summary>Especifica el rango que se está ordenando. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,10 +252,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina el criterio de ordenación para los valores especificados en la clave. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" />
-        </value>
+        <summary>Determina el criterio de ordenación para los valores especificados en la clave. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,10 +280,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,10 +311,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica la prioridad del campo de ordenación. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Especifica la prioridad del campo de ordenación. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,10 +369,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSortOn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el atributo de la celda que ordenar. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlSortOn" />
-        </value>
+        <summary>Devuelve o establece el atributo de la celda por el cual realizar la ordenación. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlSortOn" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,10 +397,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el valor en que se lleva a cabo la ordenación para especificado <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> objeto. Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Vuelva a afinar el valor en el que se realiza la ordenación para el objeto <see cref="T:Microsoft.Office.Interop.Excel.SortField" /> especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

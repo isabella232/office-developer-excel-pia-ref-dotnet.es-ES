@@ -1,13 +1,5 @@
 <Type Name="TableStyle" FullName="Microsoft.Office.Interop.Excel.TableStyle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4195e3f6ef14d553a26ff7dba570149f82c6b4a9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583527" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableStyle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4195e3f6ef14d553a26ff7dba570149f82c6b4a9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009768" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableStyle" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyle" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo estilo que se puede aplicar a una tabla.</summary>
-    <remarks>
-      <para>Un estilo de tabla define el formato de uno o todos los elementos de una tabla o una tabla dinámica. Por ejemplo, una columna es un elemento de una tabla. Puede definir un estilo de tabla que tienen el formato de columnas de una tabla con alternos formato (también conocido como las bandas o bandas).  </para>
-      <para></para>
-    </remarks>
+    <remarks><para>Un estilo de tabla define el formato de uno o todos los elementos de una tabla o tabla dinámica. Por ejemplo, una columna es un elemento de una tabla. Un estilo de tabla puede definir que las columnas de una tabla tengan el formato con características alternas (también conocido como formato de bandas o franjas).  </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -63,7 +53,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
-        <value>Devuelve <see cref="T:System.String" />.</value>
+        <value>Devuelve <see cref="T:System.String" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,14 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa el creador del objeto especificado. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
-          <para></para>
-        </remarks>
+        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel._Application" /> al creador del objeto especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BuiltIn">
@@ -123,11 +109,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el estilo es un estilo integrado. Solo lectura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si el estilo es un estilo integrado. Solo lectura.</summary>
+        <value><b>Valor booleano</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,14 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  El <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Es de solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.  La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -212,14 +191,10 @@
       </Parameters>
       <Docs>
         <param name="NewTableStyleName">Nombre del nuevo estilo de tabla.</param>
-        <summary>Duplica la <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /> de objetos y devuelve una referencia a la nueva copia.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" />
-        </returns>
-        <remarks>
-          <para>Si no se especifica ningún nombre, el <see cref="M:Microsoft.Office.Interop.Excel.TableStyle.Duplicate(System.Object)" /> método usa el mismo nombre predeterminado como la interfaz de usuario.</para>
-          <para></para>
-        </remarks>
+        <summary>Duplica el objeto <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /> y devuelve una referencia a la nueva copia.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /></returns>
+        <remarks><para>Si no se especifica ningún nombre, <see cref="M:Microsoft.Office.Interop.Excel.TableStyle.Duplicate(System.Object)" /> el método usa el mismo nombre predeterminado que la interfaz de usuario.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -246,9 +221,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el nombre del objeto. Solo lectura.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>Cadena</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,14 +248,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el nombre del objeto, en el idioma del usuario. Solo lectura.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Si se usa un estilo integrado, esta propiedad devuelve el nombre del estilo en el idioma de la configuración regional actual.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve o establece el nombre del objeto en el idioma del usuario. Solo lectura.</summary>
+        <value><b>Cadena</b></value>
+        <remarks><para>Si se usa un estilo integrado, esta propiedad devuelve el nombre del estilo en el idioma de la configuración regional actual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -308,10 +277,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,16 +308,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve si un estilo se muestra en la Galería de estilos de tabla dinámica o no. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>La propiedad devuelve True, si se muestra el estilo en la Galería de estilos de tabla dinámica.</para>
+        <summary>Devuelve o establece si se muestra o no un estilo en la galería de estilos de tabla dinámica. Lectura/escritura.</summary>
+        <value><b>Valor booleano</b></value>
+        <remarks><para>La propiedad devuelve True, si el estilo se muestra en la galería para los estilos de tabla dinámica.</para>
           <para>
-            <b>Nota</b>: los usuarios pueden establecer el <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailableTableStyle" /> o <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailablePivotTableStyle" /> propiedades en False incluso cuando el estilo ya se aplica a una tabla o tabla dinámica.  En este caso, la Galería no mostrará el estilo y ningún estilo se muestra como seleccionado cuando la celda activa se encuentra en la tabla o la tabla dinámica.</para>
-          <para></para>
-        </remarks>
+            <b>Nota:</b>Los usuarios pueden establecer las propiedades o en False incluso cuando el estilo <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailableTableStyle" /> ya se haya aplicado a una tabla o tabla <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailablePivotTableStyle" /> dinámica.  En este caso, la galería no mostrará el estilo y no aparecerá ningún estilo como seleccionado cuando la celda activa pertenezca a la tabla o a la tabla dinámica.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAsAvailableSlicerStyle">
@@ -379,13 +342,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si el estilo de tabla especificado se muestra como disponible en la Galería de estilos de segmentación de datos.</summary>
-        <value>
-          <b>true</b> si el estilo de tabla especificado se muestra como disponible en la Galería de estilos de segmentación de datos; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece si el estilo de tabla especificado se muestra como disponible en la galería de estilos de segmentación de datos.</summary>
+        <value><b>true</b> si el estilo de tabla especificado se muestra como disponible en la galería de estilos de segmentación de datos; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAsAvailableTableStyle">
@@ -414,15 +374,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un estilo de tabla que se muestra como disponible en la Galería de estilos de tabla. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Si es <b>True</b>, este estilo aparece en la galería de estilos de tabla.</para>
-          <para>Esta propiedad se puede establecer en <b>False</b> incluso si el estilo ya se ha aplicado a una tabla. En este caso, la galería no mostrará el estilo y, cuando la celda activa se encuentre en esa tabla, no se indicará como seleccionado ningún estilo.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve o establece un estilo de tabla mostrado como disponible en la galería de estilos de tabla. Lectura/escritura.</summary>
+        <value><b>Valor booleano</b></value>
+        <remarks><para>Si es <b>True</b>, este estilo aparece en la galería de estilos de tabla.</para>
+          <para>Esta propiedad se puede establecer en <b>False</b> incluso si el estilo ya se ha aplicado a una tabla.  En este caso, la galería no mostrará el estilo y, cuando la celda activa se encuentre en esa tabla, no se indicará como seleccionado ningún estilo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAsAvailableTimelineStyle">
@@ -451,7 +407,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece si el estilo de tabla especificado se muestra como disponible en la Galería de estilos de escala de tiempo. <b>Boolean</b> (<b>bool</b> en C#). Es de lectura y escritura.</summary>
+        <summary>Devuelve o establece si el estilo de tabla especificado se muestra como disponible en la galería de estilos de escala de tiempo. <b>Booleano</b> (<b>bool</b> en C#). Lectura/escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -480,7 +436,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" /> objeto. Solo lectura.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" />.</value>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

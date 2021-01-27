@@ -1,13 +1,5 @@
 <Type Name="Scenario" FullName="Microsoft.Office.Interop.Excel.Scenario">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="86d8d02ae441f3ac07255a45ae9cd0cf278fe5fe" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575225" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Scenario" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="86d8d02ae441f3ac07255a45ae9cd0cf278fe5fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010482" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenario" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenario" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenario" />
@@ -29,13 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa un escenario de una hoja de cálculo. Un escenario es un grupo de valores de entrada (denominado <paramref name="changing cells" />) que tienen nombre y se guarda.</summary>
-    <remarks>
-      <para>El objeto <b>Scenario</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> colección. La colección <b>Scenarios</b> contiene todos los escenarios definidos para una hoja de cálculo.</para>
-      <para>
-        <b>Escenarios</b>de uso (<paramref name="index" />), donde <paramref name="index" /> es el nombre del escenario o el número de índice, para devolver un solo objeto <b>Scenario</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Representa un escenario de una hoja de cálculo. Un escenario es un grupo de valores de entrada (denominados ) que <paramref name="changing cells" /> se denominan y guardan.</summary>
+    <remarks><para>El <b>objeto Scenario</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> colección. La colección <b>Scenarios</b> contiene todos los escenarios definidos en una hoja de cálculo.</para>
+      <para>Use <b>Scenarios</b>( ), donde se encuentra el nombre del escenario o el número de <paramref name="index" /> <paramref name="index" /> índice, para devolver un único <b>objeto Scenario.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,16 +78,12 @@
         <Parameter Name="Values" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChangingCells">
-          <b>Objeto</b>requerido. A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que especifica el nuevo conjunto de celdas cambiantes del escenario. Las celdas cambiantes deben estar en la misma hoja que el escenario.</param>
-        <param name="Values">
-          <b>Objeto</b>de opcional. Una matriz que contiene los nuevos valores de escenario para las celdas cambiantes. Si se omite este argumento, los valores de escenario se supone que los valores actuales de las celdas cambiantes.</param>
+        <param name="ChangingCells">Objeto <b>requerido</b>. Objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> que especifica el nuevo conjunto de celdas cambiantes para el escenario. Las celdas cambiantes deben estar en la misma hoja que el escenario.</param>
+        <param name="Values">Optional <b>Object</b>. Matriz que contiene los nuevos valores de escenario de las celdas cambiantes. Si este argumento se omite, se supondrá que los valores de escenario son los valores actuales de las celdas cambiantes.</param>
         <summary>Cambia el escenario para que tenga un nuevo conjunto de celdas cambiantes y (de manera opcional) valores de escenario.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si especifica v<paramref name="alues" />, la matriz debe contener un elemento por cada celda de la <paramref name="ChangingCells" /> rango; de lo contrario, Microsoft Excel genera un error.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si especifica v , la matriz debe contener un elemento para cada celda del rango; de lo <paramref name="alues" /> <paramref name="ChangingCells" /> contrario, Microsoft Excel genera un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangingCells">
@@ -124,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa el cambio de las celdas para un escenario.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa las celdas cambiantes de un escenario.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,7 +140,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el comentario asociado con el escenario. El comentario no puede exceder de 255 caracteres.</summary>
+        <summary>Devuelve o establece el comentario asociado al escenario. El comentario no puede exceder de 255 caracteres.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,13 +168,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -244,13 +227,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el escenario está oculto. El valor predeterminado es <b>False</b>.</summary>
+        <summary><b>True</b> si el escenario está oculto. El valor predeterminado es <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>No confunda esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> (propiedad).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>No confunda esta propiedad con la <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -307,8 +287,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</summary>
+        <summary><b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -424,9 +403,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. Posición del valor.</param>
-        <summary>Devuelve una matriz que contiene los valores actuales de las celdas cambiantes para el escenario.</summary>
+        <param name="Index">Optional <b>Object</b>. Posición del valor.</param>
+        <summary>Devuelve una matriz que contiene los valores actuales de las celdas cambiantes del escenario.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="TextFrame2" FullName="Microsoft.Office.Interop.Excel.TextFrame2">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ed2de645a61dfb227782869ab7a06f69f1159fde" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576037" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextFrame2 : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ed2de645a61dfb227782869ab7a06f69f1159fde" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009635" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame2 : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame2 implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextFrame2" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame2&#xA;Implements _IMsoDispObj" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa el marco de texto en un <see cref="T:Microsoft.Office.Interop.Excel.Shape" />, <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />, o <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto.</summary>
-    <remarks>
-      <para>Este objeto contiene el texto en el marco de texto, así como las propiedades y métodos que controlan la alineación y delimitación del marco de texto. Utilice la propiedad <b>TextFrame2</b> para devolver un <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /> objeto.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa el marco de texto en <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> un  <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> , u    <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto.</summary>
+    <remarks><para>Este objeto contiene el texto en el marco de texto, así como las propiedades y métodos que controlan la alineación y delimitación del marco de texto. Utilice la <b>propiedad TextFrame2</b> para devolver un <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,13 +54,9 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). </para>
-          <para></para>
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa al creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de <see cref="T:Microsoft.Office.Interop.Excel._Application" /> ese objeto). </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -99,10 +85,8 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El tamaño del objeto especificado que cambia automáticamente para ajustar el texto dentro de sus límites. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoAutoSize" />
-        </value>
+        <summary>El tamaño del objeto especificado cambia automáticamente para ajustar el texto dentro de sus límites. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoAutoSize" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,10 +113,8 @@
         <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Core.TextColumn2" /> object que representa las columnas dentro del marco de texto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.TextColumn2" />
-        </value>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Core.TextColumn2" /> objeto que representa las columnas dentro del marco de texto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.TextColumn2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,14 +144,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Solo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Es de solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -194,10 +172,8 @@
       <Parameters />
       <Docs>
         <summary>Elimina el texto de un marco de texto y todas las propiedades de texto asociadas.</summary>
-        <remarks>
-          <para>Las propiedades de texto asociadas incluyen <see cref="T:Microsoft.Office.Interop.Excel.Font" /> atributos, como negrita, subrayado y así sucesivamente.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Las propiedades de texto <see cref="T:Microsoft.Office.Interop.Excel.Font" /> asociadas incluyen atributos como negrita, subrayado, entre otros.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasText">
@@ -223,10 +199,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve si el marco de texto especificado tiene texto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary>Devuelve si el marco de texto especificado posee texto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,10 +230,8 @@
         <ReturnType>Microsoft.Office.Core.MsoHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de delimitador horizontal para el texto especificado. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />
-        </value>
+        <summary>Devuelve o establece el tipo de delimitador horizontal para el texto especificado. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,9 +262,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece la distancia (en puntos) entre la parte inferior del marco de texto y la parte inferior del rectángulo inscrito de la forma que contiene el texto. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,9 +293,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece la distancia (en puntos) entre el borde izquierdo del marco de texto y el borde izquierdo del rectángulo inscrito de la forma que contiene el texto. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,9 +324,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece la distancia (en puntos) entre el borde derecho del marco de texto y el borde derecho del rectángulo inscrito de la forma que contiene el texto. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -389,9 +355,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece la distancia (en puntos) entre la parte superior del marco de texto y la parte superior del rectángulo inscrito de la forma que contiene el texto. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,8 +387,7 @@
       <Docs>
         <summary>Devuelve o establece un valor que especifica si el texto en una forma se rota si la forma se rota. Es de escrita y lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
+        <remarks><para>Lectura/escritura.</para>
           <para>Devuelve o establece enumeraciones MsoTriState con los siguientes valores:</para>
           <list type="number">
             <item>
@@ -453,8 +416,7 @@
               </description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -483,14 +445,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que representa la orientación del marco de texto. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />
-        </value>
-        <remarks>
-          <para>El valor de esta propiedad se puede establecer en un valor entero entre – 90 y 90 grados o en una de las <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /> constantes.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve o establece un valor que representa la orientación del marco de texto. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTextOrientation" /></value>
+        <remarks><para>El valor de esta propiedad puede establecerse en un valor entero de -90 a 90 grados, o en una de las <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -516,10 +474,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,9 +506,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece el tipo de ruta para el marco de texto especificado. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoPathFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Core.MsoPathFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -580,9 +534,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la regla del texto especificado. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.Ruler2" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Core.Ruler2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,10 +561,8 @@
         <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Core.TextRange2" /> object que representa el texto en el objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.TextRange2" />
-        </value>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Core.TextRange2" /> objeto que representa el texto del objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.TextRange2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -639,10 +589,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> objeto que contiene propiedades de formato de efecto de 3-D para el texto especificado. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />
-        </value>
+        <summary>Devuelve un objeto que contiene propiedades de formato de efecto <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 3D para el texto especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -672,10 +620,8 @@
         <ReturnType>Microsoft.Office.Core.MsoVerticalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de delimitador vertical para el texto especificado. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoVerticalAnchor" />
-        </value>
+        <summary>Devuelve o establece el tipo de delimitador vertical para el texto especificado. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoVerticalAnchor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -705,10 +651,8 @@
         <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de deformación para el marco de texto especificado. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />
-        </value>
+        <summary>Devuelve o establece el tipo de trama del marco de texto especificado. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoWarpFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -738,10 +682,8 @@
         <ReturnType>Microsoft.Office.Core.MsoPresetTextEffect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de Word Art del marco de texto especificado. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />
-        </value>
+        <summary>Devuelve o establece el tipo de Word Art del marco de texto especificado. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,10 +713,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece saltos de línea dentro de o más allá de los límites de la forma. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary>Devuelve o establece saltos de línea dentro de los límites de la forma o fuera de ellos. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

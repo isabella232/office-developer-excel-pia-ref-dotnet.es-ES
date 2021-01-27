@@ -1,13 +1,5 @@
 <Type Name="Outline" FullName="Microsoft.Office.Interop.Excel.Outline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ce084732f853490e51e0b2ae76bee9cab95e3b55" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584052" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Outline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ce084732f853490e51e0b2ae76bee9cab95e3b55" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011161" /></Metadata><TypeSignature Language="C#" Value="public interface Outline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Outline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Outline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Outline" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa un esquema de una hoja de cálculo.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Outline" /> propiedad para devolver un objeto <b>Outline</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Outline" /> propiedad para devolver un objeto <b>Outline</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,8 +80,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el esquema usa estilos automáticos.</summary>
+        <summary><b>True</b> si el esquema usa estilos automáticos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,13 +108,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -179,16 +166,12 @@
         <Parameter Name="ColumnLevels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="RowLevels">
-          <b>Objeto</b>de opcional. Especifica el número de niveles de fila de un esquema para mostrar. Si el esquema tiene menos niveles que el número especificado, Microsoft Excel muestra todos los niveles. Si este argumento es 0 (cero) o se omite, se realiza ninguna acción en las filas.</param>
-        <param name="ColumnLevels">
-          <b>Objeto</b>de opcional. Especifica el número de niveles de columna de un esquema para mostrar. Si el esquema tiene menos niveles que el número especificado, Microsoft Excel muestra todos los niveles. Si este argumento es 0 (cero) o se omite, se realiza ninguna acción en las columnas.</param>
+        <param name="RowLevels">Optional <b>Object</b>. Especifica el número de niveles de fila que se mostrarán en un esquema. Si el esquema tiene menos niveles que el número especificado, Microsoft Excel mostrará todos los niveles. Si este argumento es 0 (cero) o se omite, no se efectuará ninguna acción en las filas.</param>
+        <param name="ColumnLevels">Optional <b>Object</b>. Especifica el número de niveles de columna que se mostrarán en un esquema. Si el esquema tiene menos niveles que el número especificado, Microsoft Excel mostrará todos los niveles. Si este argumento es 0 (cero) o se omite, no se efectuará ninguna acción en las columnas.</param>
         <summary>Muestra el número especificado de niveles de fila o columna en un esquema.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Especifique por lo menos un argumento.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Especifique por lo menos un argumento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SummaryColumn">
@@ -217,7 +200,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSummaryColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la ubicación de las columnas de resumen en el esquema.</summary>
+        <summary>Devuelve o establece la ubicación de las columnas de resumen del esquema.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,12 +231,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSummaryRow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la ubicación de las filas de resumen en el esquema.</summary>
+        <summary>Devuelve o establece la ubicación de las filas de resumen del esquema.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Establezca <b>SummaryRow</b> a <b>xlAbove con</b> estilo de Microsoft Word-, donde los encabezados de categorías están encima de la información detallada. Establezca <b>SummaryRow</b> como <b>xlBelow</b> para los esquemas con estilo de contabilidad, en la que los totales están debajo de la información detallada.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Establezca <b>SummaryRow</b> en <b>xlAbove para</b> esquemas de estilo de Microsoft Word, donde los encabezados de categoría están encima de la información detallada. Establezca <b>SummaryRow</b> en <b>xlBelow</b> para esquemas de estilo contable, donde las sumaciones están por debajo de la información detallada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

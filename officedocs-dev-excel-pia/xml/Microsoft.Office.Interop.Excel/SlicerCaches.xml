@@ -1,13 +1,5 @@
 <Type Name="SlicerCaches" FullName="Microsoft.Office.Interop.Excel.SlicerCaches">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d7eb213ba3f374c8e657b8b86922544743741125" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584080" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SlicerCaches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d7eb213ba3f374c8e657b8b86922544743741125" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010202" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCaches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerCaches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerCaches" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerCaches&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa la colección de memorias caché de segmentación de datos asociada con el libro especificado.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Item(System.Object)" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> colección que se va a devolver un <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto asociado con el texto especificado <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto. A <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto se puede recuperar utilizando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Item(System.Object)" /> (propiedad) o el <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Name" /> (propiedad) del objeto especificado.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa la colección de cachés de segmentación de datos asociadas con el libro especificado.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Item(System.Object)" /> propiedad de la colección para devolver un objeto asociado con el objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> especificado. Un <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto se puede recuperar utilizando el valor de la propiedad o la propiedad del objeto <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Item(System.Object)" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Name" /> especificado.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -71,7 +61,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>Reservado para uso interno.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.</value>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +95,7 @@
         <param name="Source">To be added.</param>
         <param name="SourceField">To be added.</param>
         <param name="Name">To be added.</param>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,10 +125,10 @@
         <Parameter Name="SlicerCacheType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">El origen de datos que se van a basar el nuevo <b>SlicerCache</b> . El argumento que se pasa para el parámetro Source puede ser un <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> objeto, un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto, o una cadena. Si un objeto de <b>tabla dinámica</b> se pasa, el asociado <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto se usa como el origen de datos. Si se pasa una cadena, se interpreta como el nombre de un objeto <b>WorkbookConnection</b> y, si no existe el objeto <b>WorkbookConnection</b> existe, se genera un error en tiempo de ejecución.</param>
-        <param name="SourceField">El nombre del campo en el origen de datos para filtrar por. Para los orígenes de datos no OLAP, use la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto desde el objeto <b>PivotCache</b> que se basa la segmentación de datos o el nombre único de ese objeto (el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Name" /> (propiedad)). Para los orígenes de datos OLAP, use el nombre único MDX de la jerarquía que se basa el <b>objeto SlicerCache</b> . También puede especificar un nivel de la jerarquía OLAP y Excel, usa la jerarquía correspondiente.</param>
-        <param name="Name">El nombre de Excel que se usa para hacer referencia a la memoria caché de segmentación de datos (el valor de la propiedad SlicerCache.Name). Si se omite, Excel generará un nombre. De forma predeterminada, Excel concatena "Slicer_" con el valor de la propiedad PivotField.Caption para segmentaciones de datos con orígenes de datos no OLAP, o con el valor de la propiedad CubeField.Caption para segmentaciones de datos con orígenes de datos OLAP. (Reemplace los espacios por "_"). Si es necesario para que el nombre único en el espacio de nombres de libro, Excel agrega un número entero hasta el final del nombre generado. Si se especifica un nombre que ya existe en el espacio de nombres de libro, se producirá un error en el método <b>Add</b> .</param>
-        <param name="SlicerCacheType">Designa el tipo de segmentación de datos o la memoria caché de segmentación de datos.</param>
+        <param name="Source">El origen de datos en el que se basará el nuevo objeto <b>SlicerCache</b>. El argumento que se pasa al parámetro Source puede ser <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> un objeto, un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto o una cadena. Si se <b>pasa un</b> objeto de tabla dinámica, el objeto asociado se usa como origen <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> de datos. Si se pasa una cadena, se interpreta como el nombre de un objeto <b>WorkbookConnection</b> y, si no existe dicho objeto <b>WorkbookConnection,</b> se genera un error en tiempo de ejecución.</param>
+        <param name="SourceField">El nombre del campo del origen de datos que se usará para filtrar. Para orígenes de datos que no son OLAP, use el objeto del objeto PivotCache en el que se basa la segmentación de datos o el nombre único de ese objeto (el valor de <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> la <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Name" /> propiedad). En el caso de los orígenes de datos OLAP, use el nombre único MDX de la jerarquía en la que se basa el objeto <b>SlicerCache</b>. Además, puede especificar un nivel de la jerarquía OLAP y Excel usará la jerarquía correspondiente.</param>
+        <param name="Name">El nombre que Excel usa para hacer referencia a la memoria caché de segmentación de datos (el valor de la SlicerCache.Name datos). Si se omite, Excel generará un nombre. De forma predeterminada, Excel concatena "Slicer_" con el valor de la propiedad PivotField.Caption para segmentaciones de datos con orígenes de datos que no son OLAP o con el valor de la propiedad CubeField.Caption para segmentaciones de datos con orígenes de datos OLAP. (Reemplazar los espacios por "_"). Si es necesario para que el nombre sea único en el espacio de nombres del libro, Excel agrega un entero al final del nombre generado. Si especifica un nombre que ya existe en el espacio de nombres del libro, se producirá un error en el <b>método</b> Add.</param>
+        <param name="SlicerCacheType">Designa el tipo de memoria caché de segmentación de datos o segmentación de datos.</param>
         <summary>Agrega un nuevo <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto a la colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -167,12 +157,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -226,12 +214,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
-        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
+        <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -262,7 +248,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Devuelve <see cref="T:System.Collections.IEnumerator" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,8 +279,8 @@
       </Parameters>
       <Docs>
         <param name="Index">Nombre o número de índice del objeto.</param>
-        <summary>Obtiene un valor single <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto de la colección.</summary>
-        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />.</value>
+        <summary>Obtiene un único <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto de la colección.</summary>
+        <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,12 +307,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto de la colección.</summary>
-        <value>El elemento primario <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto de la colección.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el objeto <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> primario de la colección.</summary>
+        <value>El objeto <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> primario de la colección.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="TableStyleElement" FullName="Microsoft.Office.Interop.Excel.TableStyleElement">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4539961ebad2a3fc05442269d4ef16529e67948a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587223" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableStyleElement" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4539961ebad2a3fc05442269d4ef16529e67948a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009747" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyleElement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyleElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableStyleElement" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyleElement" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa un único elemento de estilo de tabla.</summary>
-    <remarks>
-      <para>Estilos de tabla definen el formato de uno o todos los elementos de una tabla o una tabla dinámica.  Por ejemplo, una fila de encabezado es un elemento de una tabla. Un estilo de tabla puede definir que el color de relleno de la fila de encabezado es rojo.  </para>
+    <remarks><para>Los estilos de tabla definen el formato de uno o todos los elementos de una tabla o tabla dinámica.  Por ejemplo, una fila de encabezado es un elemento de una tabla. Un estilo de tabla puede definir que el color de relleno de una fila de encabezado sea rojo.  </para>
       <para>Cada elemento de estilo de una tabla puede tener el formato especificado en un estilo de tabla aplicado al elemento.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,14 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object que representa el creador del objeto especificado. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
-          <para></para>
-        </remarks>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel._Application" /> al creador del objeto especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -94,9 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve los bordes de un elemento de estilo de tabla. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Borders" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Borders" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,14 +132,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  El <see cref="P:Microsoft.Office.Interop.Excel.TableStyleElement.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Es de solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.  La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.TableStyleElement.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -182,9 +162,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la fuente del objeto especificado. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,10 +189,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve si un elemento de estilo de tabla tiene formato aplicado al elemento especificado. Solo lectura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve si un elemento de estilo de tabla tiene aplicado formato al elemento especificado. Solo lectura.</summary>
+        <value><b>Valor booleano</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,10 +217,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa el interior del objeto especificado. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que representa el interior del objeto especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,10 +245,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,14 +276,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tamaño de las bandas. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad no se aplica a todos los <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElement" /> objetos. Se aplica sólo a <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe1" />, <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe2" />, <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe1" /> y <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe2" /> tipos.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve o establece el tamaño de las bandas. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Esta propiedad no se aplica a todos los <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElement" /> objetos. Solo se aplica a <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe1" /> , <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe2" /> y <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe1" /> <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe2" /> tipos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

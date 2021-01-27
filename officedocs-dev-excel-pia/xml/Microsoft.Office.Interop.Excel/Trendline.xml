@@ -1,13 +1,5 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Excel.Trendline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575736" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009481" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
@@ -30,12 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una línea de tendencia de un gráfico. Una línea de tendencia muestra la tendencia, o dirección de los datos de una serie.</summary>
-    <remarks>
-      <para>El objeto <b>Trendline</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> colección. La colección <b>Trendlines</b> contiene todos los objetos <b>Trendline</b> de una única serie.</para>
-      <para>Use <b>Trendlines</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de la línea de tendencia, para devolver un solo objeto <b>Trendline</b> .</para>
+    <remarks><para>El <b>objeto Trendline</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> colección. La colección <b>Trendlines</b> contiene todos los objetos <b>Trendline</b> de una única serie.</para>
+      <para>Utilice <b>Trendlines</b>( ), donde es el número de índice de la línea de <paramref name="index" /> <paramref name="index" /> tendencia, para devolver un único <b>objeto Trendline.</b></para>
       <para>El número de índice indica el orden en el que se agregaron las líneas de tendencia a la serie. Trendlines(1) es la primera línea de tendencia que se agregó a la serie y Trendlines(Trendlines.Count) es la última.</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,10 +119,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número de períodos (o unidades en un gráfico de dispersión) que la línea de tendencia se extiende hacia atrás. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Devuelve o establece el número de períodos (o unidades en un gráfico de dispersión) que la línea de tendencia se extiende hacia atrás. Lectura/escritura.</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +147,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object que representa el borde del objeto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa el borde del objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,13 +201,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -245,12 +231,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> object que representa el rótulo de datos asociado al punto o la línea de tendencia.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objeto que representa el rótulo de datos asociado con el punto o la línea de tendencia.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para activar los rótulos de datos para una línea de tendencia, para establecer el <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> (propiedad) o la <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> propiedad en <b>True</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para activar los rótulos de datos de una línea de tendencia, debe establecer la propiedad <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> o la propiedad en <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -305,8 +289,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la ecuación de la línea de tendencia se muestra en el gráfico (en el mismo rótulo de datos que el valor de R cuadrado). Si se establece esta propiedad en <b>True</b> se activarán automáticamente los rótulos de datos.</summary>
+        <summary><b>True</b> si la ecuación de la línea de tendencia se muestra en el gráfico (en el mismo rótulo de datos que el valor de R cuadrado). Si se establece esta propiedad como <b>True</b> se activarán automáticamente los rótulos de datos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,8 +320,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el valor de R cuadrado de la línea de tendencia se muestra en el gráfico (en el mismo rótulo de datos que la ecuación). Si se establece esta propiedad en <b>True</b> se activarán automáticamente los rótulos de datos.</summary>
+        <summary><b>True</b> si se muestra el valor R cuadrado de la línea de tendencia en el gráfico (en la misma etiqueta de datos que la ecuación). Si se establece esta propiedad como <b>True</b> se activarán automáticamente los rótulos de datos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -367,9 +349,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el formato de los elementos del gráfico. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,10 +416,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número de períodos (o unidades en un gráfico de dispersión) que la línea de tendencia se extiende hacia delante. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Devuelve o establece el número de períodos (o unidades en un gráfico de dispersión) que la línea de tendencia se extiende hacia delante. Lectura/escritura.</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,10 +477,8 @@
       <Docs>
         <summary>Devuelve o establece el punto en que la línea de tendencia corta al eje de valores.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Establece esta propiedad la <see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" /> propiedad en <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si se establece esta <see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" /> propiedad, la propiedad se establece en <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InterceptIsAuto">
@@ -531,13 +507,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el punto en que la línea de tendencia corta al eje de valores lo determina automáticamente la regresión.</summary>
+        <summary><b>True</b> si el punto en que la línea de tendencia corta al eje de valores lo determina automáticamente la regresión.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si se <see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" /> establece la propiedad, esta propiedad se establece en <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -597,8 +570,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Excel determina automáticamente el nombre de la línea de tendencia.</summary>
+        <summary><b>True</b> si Microsoft Excel determina automáticamente el nombre de la línea de tendencia.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

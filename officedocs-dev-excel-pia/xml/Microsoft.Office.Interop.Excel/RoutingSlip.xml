@@ -1,13 +1,5 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572705" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RoutingSlip" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010496" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RoutingSlip" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RoutingSlip" />
   <TypeSignature Language="VB.NET" Value="Public Interface RoutingSlip" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa la lista de distribución de un libro. La lista de distribución se emplea para enviar un libro a través del sistema de correo electrónico.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> (propiedad) para devolver el objeto <b>RoutingSlip</b> .</para>
-      <para>El objeto <b>RoutingSlip</b> no existe y no se puede devolver a menos que el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> (propiedad) para el libro es <b>True</b>.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> propiedad para devolver el objeto <b>RoutingSlip</b> .</para>
+      <para>El <b>objeto RoutingSlip</b> no existe y no se puede devolver a menos que la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> propiedad del libro sea <b>True</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,13 +78,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delivery">
@@ -123,12 +111,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el método de enrutamiento de entrega. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> constantes: <b>xlOneAfterAnother</b> o <b>xlAllAtOnce</b>.</summary>
+        <summary>Devuelve o establece el método de entrega de distribución. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> constantes: <b>xlOneAfterAnother</b> o <b>xlAllAtOnce</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad no se puede establecer si hay una distribución en curso.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad no se puede establecer si hay una distribución en curso.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -157,7 +143,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el texto del mensaje para la lista de distribución. Este texto se utiliza como el texto del cuerpo de los mensajes de correo que se usan para distribuir el libro.</summary>
+        <summary>Devuelve o establece el texto del mensaje enviado a la lista de distribución. Este texto se emplea como texto principal de los mensajes de correo usados para distribuir el libro.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,15 +205,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. El destinatario. Si este argumento no se especifica, la propiedad <b>Recipients</b> devuelve (o se puede establecer en) una matriz que contiene todos los destinatarios.</param>
+        <param name="Index">Optional <b>Object</b>. El destinatario. Si no se especifica este argumento, la propiedad <b>Recipients</b> devuelve (o puede establecerse en) una matriz que contiene todos los destinatarios.</param>
         <summary>Devuelve o establece los destinatarios de la lista de distribución.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El orden de la lista de destinatarios define la secuencia de envío si la opción de distribución es <b>xlOneAfterAnother</b>.</para>
+        <remarks><para>El orden de la lista de destinatarios define la secuencia de envío si la opción de distribución es <b>xlOneAfterAnother</b>.</para>
           <para>Si hay una lista de distribución en curso, sólo se devolverán o establecerán aquellos destinatarios que no hayan recibido ni enviado el documento.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -251,12 +234,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Restablece la lista de distribución para que puede iniciarse una nueva distribución con la misma lista (usando la misma información de entrega y de lista de destinatarios).</summary>
+        <summary>Restablece la lista de distribución para que se pueda iniciar una nueva distribución con la misma lista (usando la misma lista de destinatarios e información de entrega).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>El enrutamiento debe realizarse antes de usar este método. Uso de este método en otros momentos, produce un error.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para poder utilizar este método debe haberse completado la distribución. El uso de este método en otras ocasiones causa un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnWhenDone">
@@ -285,8 +266,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el libro se devuelve al remitente cuando la distribución finaliza.</summary>
+        <summary><b>True</b> si el libro se devuelve al remitente cuando finaliza la distribución.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -345,12 +325,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece al asunto para el formulario o la lista de distribución.</summary>
+        <summary>Devuelve o establece el tema del formulario o la lista de distribución.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El asunto de la <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> objeto se usa como el asunto de los mensajes de correo empleados para distribuir el libro.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El asunto del objeto <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> se usa como asunto de los mensajes de correo usados para enrutar el libro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackStatus">
@@ -379,13 +357,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si está habilitado el seguimiento de estado para la lista de distribución.</summary>
+        <summary><b>True</b> si el seguimiento del estado está habilitado en la lista de distribución.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad no se puede establecer si hay una distribución en curso.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad no se puede establecer si hay una distribución en curso.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

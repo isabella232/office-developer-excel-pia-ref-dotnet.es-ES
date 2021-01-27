@@ -1,13 +1,5 @@
 <Type Name="PivotFilter" FullName="Microsoft.Office.Interop.Excel.PivotFilter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8ca490d3d62655bdb53770e1be334fbb762008fb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579495" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotFilter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8ca490d3d62655bdb53770e1be334fbb762008fb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010874" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFilter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFilter" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>A <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> se aplica a un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</summary>
-    <remarks>
-      <para>Los desarrolladores tienen la opción de nomenclatura filtros para referencia debido a que el índice no es confiable. El <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" /> propiedad especifica la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> a basar un filtro de valores.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Los programadores tienen la posibilidad de asignar nombres como referencia, ya que el índice no es confiable. La <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" /> propiedad especifica en qué base se basa un filtro de <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> valores.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -60,13 +50,9 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve si el especificado <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter" /> está activo. Solo lectura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> cuando el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> del filtro está en la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> y el filtro se evalúa cuando el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> se ha actualizado. Devuelve <b>False</b> cuando el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> del filtro no está en la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> y no tiene ningún efecto el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cálculo.</para>
-          <para></para>
-        </remarks>
+        <value><b>Valor booleano</b></value>
+        <remarks><para>Esta propiedad devuelve <b>True</b> cuando el filtro está en el filtro y el filtro se <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> evalúa cuando se <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> actualiza. Devuelve <b>False cuando</b> el filtro no está en el cálculo y no tiene <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> ningún efecto en el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> cálculo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,14 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve el Microsoft Office Excel <see cref="T:Microsoft.Office.Interop.Excel._Application" />. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve el creador del objeto especificado. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
-          <para></para>
-        </remarks>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve el Microsoft Office Excel <see cref="T:Microsoft.Office.Interop.Excel._Application" /> . Cuando se usa con un calificador de objeto, esta propiedad devuelve el creador del objeto especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -125,14 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataCubeField">
@@ -158,10 +136,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Esta propiedad sólo es aplicable a OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> y proporciona la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> campo (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> en el área de valores) que se filtra mediante un filtro de valores. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />
-        </value>
+        <summary>Esta propiedad solo se aplica a OLAP y proporciona el campo (en el área Valores) filtrado <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> por un filtro de <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> valores. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.CubeField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,10 +164,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Esta propiedad sólo es aplicable a que no son OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> y proporciona la <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> campo (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> en el área de valores) que se filtra mediante un filtro de valores. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
-        </value>
+        <summary>Esta propiedad solo se aplica a los que no son OLAP y proporciona el campo (en el área Valores) filtrado <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> por un filtro de <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> valores. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +190,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Elimina el filtro y lo quita de las colecciones de filtros de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> y el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</summary>
+        <summary>Elimina el filtro y lo quita de las colecciones de filtros del <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> archivo <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,14 +217,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Proporciona una descripción opcional para la <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> objeto. Solo lectura.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>La longitud máxima de la <b>cadena</b> de descripción es de 255 caracteres.</para>
-          <para></para>
-        </remarks>
+        <summary>Proporciona una descripción opcional para el <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> objeto. Solo lectura.</summary>
+        <value><b>Cadena</b></value>
+        <remarks><para>La longitud máxima de la <b>cadena</b> de descripción es de 255 caracteres.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterType">
@@ -277,11 +247,8 @@
       </ReturnValue>
       <Docs>
         <summary>Especifica el tipo de filtro que se va a aplicar. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" />
-        </value>
-        <remarks>
-          <para>La siguiente tabla muestran los tipos de filtro que pueden agregarse a un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Los argumentos que se deben proporcionar a la <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> método para ese tipo de filtro se marcan "Required", y aquellos que no se pueden proporcionar están marcados "No disponible".</para>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" /></value>
+        <remarks><para>En la tabla siguiente se muestran los tipos de filtro que se pueden agregar a un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> archivo . Los argumentos que se deben proporcionar al método para ese tipo de filtro se marcan como "Requerido" y los que no se pueden proporcionar se marcan <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> como "No disponible".</para>
           <list type="table">
             <item>
               <term>
@@ -307,7 +274,7 @@
               <term>xlPivotFilterType</term>
               <description>DataField</description>
               <description>DataCubeField (OLAP)</description>
-              <description>Valor1</description>
+              <description>Value1</description>
               <description>Value2</description>
             </item>
             <item>
@@ -787,8 +754,7 @@
               <description>No disponible</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMemberPropertyFilter">
@@ -814,15 +780,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica si el filtro de rótulo se basa en el <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de una propiedad miembro del campo o en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> propio. Solo lectura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>El valor predeterminado de esta propiedad es <b>False</b>.</para>
-          <para>Devuelve <b>True</b> si el filtro de rótulo se basa en <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de una propiedad de miembro de la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />; o devuelve<b>False</b> si el filtro está basado en el <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de la c. Esta propiedad es válida únicamente para los filtros de rótulo y OLAP de <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> que tengan al menos una propiedad miembro.</para>
-          <para></para>
-        </remarks>
+        <summary>Especifica si el filtro de etiqueta se basa en los títulos de una propiedad miembro del campo o en los <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos del <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> mismo. Solo lectura.</summary>
+        <value><b>Valor booleano</b></value>
+        <remarks><para>El valor predeterminado de esta propiedad es <b>False</b>.</para>
+          <para>Devuelve <b>True</b> si el filtro de etiqueta se basa en los títulos de una propiedad miembro de la ; o devuelve False si el filtro se basa en los <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <b></b> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> títulos de c. Esta propiedad solo es válida para filtros label y solo para OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> que tengan al menos una propiedad miembro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberPropertyField">
@@ -848,14 +810,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Esta propiedad especifica la propiedad de miembro <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> en el que se basa el filtro de rótulo. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
-        </value>
-        <remarks>
-          <para>Esta propiedad es válida únicamente para los filtros de rótulo y para OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> que tengan al menos una propiedad miembro.</para>
-          <para></para>
-        </remarks>
+        <summary>Esta propiedad especifica la propiedad miembro en la que se basa el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> filtro de etiquetas. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
+        <remarks><para>Esta propiedad solo es válida para filtros label y para OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> que tienen al menos una propiedad miembro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -882,9 +840,7 @@
       </ReturnValue>
       <Docs>
         <summary>Esta propiedad proporciona la opción de asignar nombres a los filtros para referencia. No se puede confiar en el valor del índice como referencia precisa porque este valor puede cambiar.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>Cadena</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -914,17 +870,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica el orden de evaluación del filtro entre todos los filtros de valor aplicados a toda la <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />. Es de lectura y escritura.</summary>
-        <value>
-          <b>Número entero</b>.</value>
-        <remarks>
-          <para>Esta propiedad sólo es válida para <b>Value</b> y <b>Top</b><paramref name="n" /> tipo <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />s. Si se realiza un intento para establecer u obtener esta propiedad para los filtros de <b>etiqueta</b> y <b>fecha</b> , se devuelve un error en tiempo de ejecución. 1 representa el primer filtro evaluado, 2 representa el siguiente filtro evaluado y así sucesivamente, hasta que el <paramref name="n" />se alcanza el valor de ésimo. -1 representa un filtro inactivo.</para>
-          <para>Si la <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> no se especifica la propiedad cuando se agrega un nuevo filtro, se establecerá en <paramref name="N+1" /> (donde <paramref name="N" /> es el más alto actual <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> número en la colección de filtros).</para>
-          <para>La propiedad se puede especificar en el <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> (método) o se puede establecer más adelante para un campo cambiando la propiedad.</para>
+        <summary>Especifica el orden de evaluación del filtro entre todos los filtros value aplicados a todo el <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> archivo . Lectura/escritura</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Esta propiedad solo es válida para los tipos <b>Value</b> y <b></b> <paramref name="n" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> Top. Se devuelve un error en tiempo de ejecución si se intenta establecer u obtener esta propiedad para los filtros <b>Label</b> y <b>Date.</b> 1 representa el primer filtro evaluado, 2 representa el siguiente filtro evaluado, y así sucesivamente, hasta que se alcanza <paramref name="n" /> el valor ésima. El valor -1 representa un filtro inactivo.</para>
+          <para>Si no se especifica la propiedad cuando se agrega un filtro nuevo, se establecerá en (donde es el número más alto actual de la <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> colección de <paramref name="N" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> filtros).</para>
+          <para>La propiedad se puede especificar en el método o se puede establecer más adelante <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> para un campo cambiando la propiedad.</para>
           <para>Al aumentar el orden de evaluación de un campo se reducirá en uno el valor del orden de evaluación del campo que anteriormente tenía ese valor de orden de evaluación (y de todos los campos contenidos entre los dos campos). Estableciendo el orden de evaluación en el mismo valor anterior no se ejerce ningún efecto. Al reducir el orden de evaluación de un campo aumentará en uno el orden de evaluación del campo que anteriormente tenía ese valor de orden de evaluación (y de todos los campos existentes entre los dos campos).</para>
-          <para>El orden de <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> en la colección es el mismo que el orden en que se evalúan. Por lo que los desarrolladores pueden cambiar el orden en que un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> se evalúa. Cuando un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (que no son OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) o un <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> (OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) se ha quitado de la <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> colección, esta propiedad se establece en -1 para un valor o una parte superior <paramref name="n" /> filtro aplicado al campo. Vuelva a agregar el campo, se establecerá el <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> (propiedad) a <paramref name="N+1" /> para un valor o Top <paramref name="n" /> filtro aplicado si no se especifica explícitamente un valor.</para>
-          <para></para>
-        </remarks>
+          <para>El orden de la colección es el mismo que el <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> orden en que se evalúan. Por lo tanto, los desarrolladores pueden cambiar el orden en que <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> se evalúa a. Cuando se quita una (que no es OLAP) o una (OLAP) de la colección, esta propiedad se establece en <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> -1 para un valor o un filtro superior aplicado al <paramref name="n" /> campo. Si se vuelve a agregar el campo de nuevo, se establecerá la propiedad para un filtro Valor o Superior aplicado si no se especifica <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> <paramref name="n" /> explícitamente un valor.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -950,10 +903,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario para especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />. Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el elemento primario del objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> . Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -980,10 +931,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> al que se aplica el filtro. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
-        </value>
+        <summary>Especifica el filtro <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> al que se aplica el filtro. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1010,10 +959,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Esta propiedad es un parámetro proporcionado por el usuario para definir un filtro para una <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />. Lectura y escritura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Esta propiedad es un parámetro proporcionado por el usuario para definir un filtro para un <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" /> archivo . Lectura/escritura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1040,10 +987,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Esta propiedad es un parámetro proporcionado por el usuario para definir un filtro para una <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />. Lectura y escritura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Esta propiedad es un parámetro proporcionado por el usuario para definir un filtro para un <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" /> archivo . Lectura/escritura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1073,22 +1018,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la semántica de filtrado para filtros de fecha. <b>Boolean</b> (<b>bool</b> en C#). Lectura y escritura</summary>
+        <summary>Establece u obtiene la semántica de filtrado de los filtros de fecha. <b>Booleano</b> (<b>bool</b> en C#). Lectura y escritura</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A continuación describen los resultados para la configuración de la propiedad anterior y la actual:</para>
+        <remarks><para>A continuación se describen los resultados de la configuración de propiedad anterior y actual:</para>
           <list type="bullet">
             <item>
-              <description>False (el comportamiento de Office 2010): se puede especificar cualquier momento; las fechas se encuentran puntos precisos en tiempo (medianoche de la fecha especificada). Filtrado de intervalos de fechas de iniciar o finalizar en la medianoche.</description>
+              <description>False (comportamiento de Office 2010): se puede especificar cualquier momento; fechas son puntos precisos en la hora (medianoche de la fecha especificada). Los intervalos de fechas de filtrado comienzan o finalizan a medianoche.</description>
             </item>
             <item>
-              <description>True (el comportamiento de Office 2013): se exige este comportamiento para los controles de escala de tiempo. Se especifican sólo fechas completas; las fechas incluyen todas las horas del día hasta y no incluye el siguiente día a partir de la medianoche.</description>
+              <description>True (comportamiento de Office 2013): este comportamiento se aplica a los controles de escala de tiempo. Solo se especifican fechas enteras; las fechas incluyen todas las horas del día hasta y sin incluir el día siguiente a medianoche.</description>
             </item>
           </list>
-          <para>Para una escala de tiempo, siempre devuelve <b>True</b>; Devuelve un error en tiempo de ejecución cuando se establece a esto en <b>False</b>.</para>
-          <para>Para un filtro de fecha que no sean, cualquier acceso devuelve un error en tiempo de ejecución.</para>
-          <para></para>
-        </remarks>
+          <para>Para una escala de tiempo, siempre devuelve <b>True</b>; devuelve un error en tiempo de ejecución cuando se establece en <b>False</b>.</para>
+          <para>Para un filtro que no es de fecha, cualquier acceso devuelve un error en tiempo de ejecución.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

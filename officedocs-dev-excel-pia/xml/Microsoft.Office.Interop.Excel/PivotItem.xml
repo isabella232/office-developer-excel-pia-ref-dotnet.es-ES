@@ -1,13 +1,5 @@
 <Type Name="PivotItem" FullName="Microsoft.Office.Interop.Excel.PivotItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fb2cfd5e547820789be4ff24b8428ca8e43d853e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578984" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fb2cfd5e547820789be4ff24b8428ca8e43d853e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010825" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotItem" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa un elemento de un campo de tabla dinámica. Los elementos son las entradas de datos individuales de una categoría de campo. El objeto <b>PivotItem</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección. La colección <b>PivotItems</b> contiene todos los elementos en una <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</summary>
-    <remarks>
-      <para>Use <b>PivotItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre, para devolver un solo objeto <b>PivotItem</b> o número de índice del elemento.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa un elemento de un campo de tabla dinámica. Los elementos son las entradas de datos individuales de una categoría de campo. El <b>objeto PivotItem</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección. La <b>colección PivotItems</b> contiene todos los elementos de un <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</summary>
+    <remarks><para>Utilice <b>PivotItems</b>( ), donde se encuentra el nombre o número de índice del <paramref name="index" /> <paramref name="index" /> elemento, para devolver un único <b>objeto PivotItem</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,7 +117,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El texto del rótulo del elemento dinámico. <b>String</b> de solo lectura.</summary>
+        <summary>Texto de la etiqueta del elemento dinámico. <b>String</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,14 +148,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. Nombre o número de elemento (puede ser una matriz si se desea especificar varios elementos).</param>
-        <summary>Devuelve un objeto object que representa un solo elemento de tabla dinámica (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objeto) o una colección de todos los elementos (un <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> objeto) que son elementos secundarios del grupo en el campo especificado o los elementos secundarios del elemento especificado. Solo lectura.</summary>
+        <param name="Index">Optional <b>Object</b>. Nombre o número de elemento (puede ser una matriz si se desea especificar varios elementos).</param>
+        <summary>Devuelve un objeto que representa un único elemento de tabla dinámica (un objeto) o una colección de todos los elementos (un objeto) que son elementos secundarios de grupo en el campo especificado o elementos secundarios del elemento <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> especificado. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -191,12 +178,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataRange">
@@ -224,8 +209,7 @@
       <Docs>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>DataRange</b> devuelve los siguientes valores, dependiendo del objeto:</para>
+        <remarks><para>La <b>propiedad DataRange</b> devuelve lo siguiente, dependiendo del objeto:</para>
           <list type="table">
             <item>
               <term>Campo de datos</term>
@@ -236,12 +220,11 @@
               <description>Elementos del campo</description>
             </item>
             <item>
-              <term>Elemento</term>
+              <term>Item</term>
               <description>Datos calificados por el elemento</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -266,10 +249,8 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <remarks>
-          <para>Puede eliminar campos de cubo sólo si ha creado el cubo de campos de usted mismo mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> método con el <paramref name="xlCalculatedSet" /> argumento.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo puede eliminar campos de cubo si ha creado los campos de cubo usted mismo mediante el <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> método con el <paramref name="xlCalculatedSet" /> argumento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DrilledDown">
@@ -298,13 +279,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Es <b>True</b> si se establece la marca del campo o el elemento de tabla dinámica especificados como "drilled" (expandida o visible). Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Es <b>True</b> si se establece la marca del campo o el elemento de tabla dinámica especificados como "drilled" (expandida o visible). <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad únicamente puede usarse para orígenes de datos OLAP.</para>
+        <remarks><para>Esta propiedad únicamente puede usarse para orígenes de datos OLAP.</para>
           <para>No puede configurarse si está oculto el campo o el elemento.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DrillTo">
@@ -331,11 +310,9 @@
       </Parameters>
       <Docs>
         <param name="Field">To be added.</param>
-        <summary>El<see cref="M:Microsoft.Office.Interop.Excel.PivotItem.DrillTo(System.String)" /> método permite profundizar hasta un especificado <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> desde una <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />.</summary>
-        <remarks>
-          <para>Para los orígenes de datos OLAP, el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> que se está haciendo a tiene que estar en la misma jerarquía que la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> que se profundice o, si varias jerarquías de atributos se colocan uno junto a otro en filas o columnas, la <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> va a profundizar en detalle debe ser uno del atributo jerarquías que están junto a los otros; no se pueden colocar ningún jerarquías de usuario entre el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> de la <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> que se está haciendo y el <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> va a profundizar en detalle.  Si no se cumplen estas condiciones, se devuelve un error en tiempo de ejecución.</para>
-          <para></para>
-        </remarks>
+        <summary>El <see cref="M:Microsoft.Office.Interop.Excel.PivotItem.DrillTo(System.String)" /> método admite la exploración en profundidad hasta un especificado desde un archivo <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> .</summary>
+        <remarks><para>En el caso de los orígenes de datos OLAP, la obtención de detalles debe estar en la misma jerarquía que la que se va a explorar o, si se colocan varias jerarquías de atributos unas al lado de otras en filas o columnas, el que se drilled tiene que ser una de las jerarquías de atributos que están al lado de la otra; no se pueden colocar jerarquías de usuario entre el objeto que se está drilled y el que se <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> drilled.  Si no se cumplen estas condiciones, se devuelve un error en tiempo de ejecución.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -366,14 +343,12 @@
       <Docs>
         <summary>Devuelve o establece la fórmula del objeto en notación de estilo A1 y en el lenguaje de la macro. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para>Si la celda contiene una constante, esta propiedad <b>Formula</b> la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+        <remarks><para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
+          <para>Si la celda contiene una constante, esta propiedad devolverá dicha constante. Si la celda está vacía, esta <b>propiedad Formula</b> devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
           <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corta predeterminado.</para>
           <para>Si el rango tiene una o dos dimensiones, se puede definir la fórmula conforme a una matriz de Visual Basic de las mismas dimensiones. Asimismo, es posible escribir la fórmula en una matriz de Visual Basic.</para>
           <para>Si se define la fórmula para un rango de varias celdas, se rellenan todas las celdas del rango con la fórmula.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCalculated">
@@ -399,13 +374,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el campo de tabla dinámica o el elemento de tabla dinámica es un campo calculado o elemento. <b>Boolean</b> de sólo lectura.</summary>
+        <summary><b>True</b> si el campo de tabla dinámica o el elemento de tabla dinámica es un campo o elemento calculado. <b>Booleano</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para los orígenes de datos OLAP, esta propiedad siempre devuelve <b>False</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para los orígenes de datos OLAP, esta propiedad siempre devuelve <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelRange">
@@ -431,7 +403,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa todas las celdas en el informe de tabla dinámica que contienen el elemento. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa todas las celdas del informe de tabla dinámica que contienen el elemento. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -490,7 +462,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -518,12 +490,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> object que representa el elemento de tabla dinámica primario en el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (el campo deberá estar agrupado para que tenga un primario). Solo lectura.</summary>
+        <summary>Devuelve un objeto que representa el elemento de tabla dinámica primario en el objeto primario (el campo debe agruparse para que <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> tenga un elemento primario). Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentShowDetail">
@@ -549,12 +519,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Es <b>True</b> si el elemento especificado se muestra porque uno de sus primarios muestra los detalles. Es <b>False</b> si el elemento especificado no se muestra porque uno de sus primarios oculta los detalles. Esta propiedad sólo está disponible si el elemento está agrupado. Valor <b>Boolean</b> de sólo lectura.</summary>
+        <summary>Es <b>True</b> si el elemento especificado se muestra porque uno de sus primarios muestra los detalles. Es <b>False</b> si el elemento especificado no se muestra porque uno de sus primarios oculta los detalles. Esta propiedad sólo está disponible si el elemento está agrupado. <b>Booleano</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -583,12 +551,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Posición del elemento en su campo si se está mostrando actualmente. <b>Integer</b> de lectura y escritura.</summary>
+        <summary>Posición del elemento en su campo si el elemento se muestra actualmente. Valor <b>Entero</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para una <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> colección, esta propiedad devuelve la posición del campo de jerarquía en el informe de tabla dinámica cuando se arrastra desde el campo.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para una colección, esta propiedad devuelve la posición del campo de jerarquía en el informe de tabla dinámica cuando se arrastra <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> desde el campo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecordCount">
@@ -614,12 +580,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de registros en la memoria caché de tabla dinámica o el número de registros de caché que contienen el elemento especificado. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve el número de registros de la memoria caché de tabla dinámica o el número de registros de caché que contienen el elemento especificado. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad representa el estado transitorio de la caché en el momento en que se hace la consulta. La caché puede sufrir modificaciones entre consulta y consulta.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad representa el estado transitorio de la caché en el momento en que se hace la consulta. La caché puede sufrir modificaciones entre consulta y consulta.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDetail">
@@ -648,11 +612,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el esquema se expande para el rango especificado (para que el detalle de la columna o fila esté visible). Lectura/Escritura <b>Objeto</b>.</summary>
+        <summary>Es <b>True</b> si el esquema se expande en el rango especificado (para que la información detallada de la columna o la fila esté visible). Lectura/Escritura<b>Objeto</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El rango especificado debe ser una sola columna de resumen o una fila en un esquema. Esta propiedad se establece en <b>True</b> si el elemento muestra el detalle.</para>
+        <remarks><para>El rango especificado debe ser una sola columna o fila de resumen de un esquema. Esta propiedad se establece en <b>True</b> si el elemento muestra detalles.</para>
           <para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
           <para>Si el rango especificado no está en un informe de tabla dinámica, serán ciertas las siguientes afirmaciones:</para>
           <list type="bullet">
@@ -660,7 +622,7 @@
               <description>El rango debe encontrarse en una sola columna o fila de resumen.</description>
             </item>
             <item>
-              <description>Esta propiedad devuelve <b>False</b> si cualquiera de los secundarios de la fila o la columna están ocultos.</description>
+              <description>Esta propiedad devuelve <b>False</b> si alguno de los elementos secundarios de la fila o columna está oculto.</description>
             </item>
             <item>
               <description>Establecer el valor <b>True</b> para esta propiedad equivale a mostrar todos los secundarios de la fila o la columna de resumen.</description>
@@ -670,8 +632,7 @@
             </item>
           </list>
           <para>Si el rango especificado está en un informe de tabla dinámica, es posible establecer esta propiedad para más de una celda a la vez si el rango es contiguo. Esta propiedad sólo se devolverá si el rango es una sola celda.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -697,7 +658,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el nombre del objeto especificado tal como aparece en los datos de origen para el informe de tabla dinámica especificado. Esto puede ser diferente del nombre actual del elemento si el usuario cambió el elemento después de crear el informe de tabla dinámica. Read-only <b>objeto</b>.</summary>
+        <summary>Devuelve el nombre del objeto especificado tal como aparece en los datos de origen originales del informe de tabla dinámica especificado. Esto puede ser diferente del nombre del elemento actual si el usuario cambió el nombre del elemento después de crear el informe de tabla dinámica. Read-only <b>objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -725,12 +686,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <b>cadena</b> que representa el nombre de origen del elemento de tabla dinámica en la configuración de formato estándar de inglés (Estados Unidos). Solo lectura.</summary>
+        <summary>Devuelve una <b>cadena</b> que representa el nombre de origen del elemento de tabla dinámica en la configuración de formato inglés estándar (Estados Unidos). Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad se utiliza cuando un elemento tiene una versión localizada y el valor de su propiedad <b>SourceNameStandard</b> difiere de la <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.SourceName" /> propiedad value, al igual que con formato de fecha.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad se usa cuando un elemento tiene una versión localizada y su valor de la propiedad <b>SourceNameStandard</b> difiere del valor de la propiedad, como con el <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.SourceName" /> formato de fecha.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardFormula">
@@ -759,13 +718,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>String</b> que especifica fórmulas con formato Inglés (Estados Unidos) estándar. Lectura y escritura.</summary>
+        <summary>Devuelve o establece un valor <b>String</b> que especifica fórmulas con formato Inglés (Estados Unidos) estándar. Lectura/escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>StandardFormula</b> afecta principalmente a los nombres de elementos con formato de fecha o número. Proporciona una forma de especificar o consultar una fórmula para un elemento calculado determinado.</para>
-          <para>La propiedad <b>StandardFormula</b> es "international descriptivo" mientras que el <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" /> propiedad no es compatible.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>StandardFormula</b> afecta principalmente a los nombres de elementos con formato de fecha o número. Proporciona una forma de especificar o consultar una fórmula para un elemento calculado determinado.</para>
+          <para>La <b>propiedad StandardFormula</b> es "de uso internacional", mientras que <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" /> la propiedad no.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -794,7 +751,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El nombre del elemento especificado en el campo de tabla dinámica. <b>String</b> de lectura y escritura.</summary>
+        <summary>Nombre del elemento especificado en el campo de tabla dinámica. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -827,11 +784,9 @@
       <Docs>
         <summary>Determina si el objeto es visible. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
-          <para>Si se establece la propiedad <b>Visible</b> de un nombre como <b>False</b>, el nombre no se muestra en el cuadro de diálogo Definir nombre.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Visible</b> de un elemento de tabla dinámica es <b>True</b> si el elemento actualmente está visible en la tabla.</para>
+          <para>Si establece la propiedad <b>Visible</b> para un nombre en <b>False</b>, el nombre no aparecerá en el cuadro de diálogo Definir nombre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

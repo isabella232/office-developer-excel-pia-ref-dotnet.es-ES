@@ -1,13 +1,5 @@
 <Type Name="Sparkline" FullName="Microsoft.Office.Interop.Excel.Sparkline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c3b25443564b1ba5ad0aba47d0107551ef56fce0" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581882" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Sparkline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c3b25443564b1ba5ad0aba47d0107551ef56fce0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009908" /></Metadata><TypeSignature Language="C#" Value="public interface Sparkline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sparkline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Sparkline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Sparkline" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo minigráfico.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> (método) para cambiar la ubicación de un solo minigráfico y usar el <see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifySourceData(System.String)" /> método para cambiar el intervalo de los datos de origen. Para que funcione con un grupo de minigráficos a la vez, utilice los miembros de la <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice el método para cambiar la ubicación de un solo minigráfico y use el método para cambiar <see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> el rango de los datos de <see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifySourceData(System.String)" /> origen. Para trabajar con un grupo de minigráficos a la vez, use los miembros del <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,12 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -90,13 +78,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
-        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.Sparkline.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
+        <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks><para>De sólo <b>lectura de larga</b>.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.Sparkline.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -126,11 +112,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la ubicación de un solo minigráfico.</summary>
-        <value>La ubicación de un solo minigráfico.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <value>Ubicación de un solo minigráfico.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyLocation">
@@ -183,12 +167,10 @@
         <Parameter Name="Formula" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Formula">El intervalo de la contiene los datos de origen.</param>
+        <param name="Formula">El rango que contiene los datos de origen.</param>
         <summary>Modifica los datos de origen de un solo minigráfico.</summary>
-        <remarks>
-          <para>El rango de origen de datos de un solo minigráfico debe ser continuo.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El rango de origen de datos de un solo minigráfico debe ser continuo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -214,12 +196,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para el objeto especificado.</summary>
-        <value>El elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para el objeto especificado.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el objeto <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> primario del objeto especificado.</summary>
+        <value>Objeto primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> del objeto especificado.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceData">
@@ -248,13 +228,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el rango que contiene los datos de origen para un solo minigráfico.</summary>
-        <value>El rango que contiene los datos de origen para un solo minigráfico.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
+        <summary>Obtiene o establece el rango que contiene los datos de origen de un solo minigráfico.</summary>
+        <value>Rango que contiene los datos de origen de un solo minigráfico.</value>
+        <remarks><para>Lectura/escritura.</para>
           <para>El rango de origen de datos de un solo minigráfico debe ser continuo.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

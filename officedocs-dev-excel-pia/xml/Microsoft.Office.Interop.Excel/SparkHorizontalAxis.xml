@@ -1,13 +1,5 @@
 <Type Name="SparkHorizontalAxis" FullName="Microsoft.Office.Interop.Excel.SparkHorizontalAxis">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d17f400b5b6b710e5d3be00feaaaf13db697ccb6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582029" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SparkHorizontalAxis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d17f400b5b6b710e5d3be00feaaaf13db697ccb6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009950" /></Metadata><TypeSignature Language="C#" Value="public interface SparkHorizontalAxis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparkHorizontalAxis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" />
   <TypeSignature Language="VB.NET" Value="Public Interface SparkHorizontalAxis" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa la configuración de los ejes horizontales de un grupo de minigráficos.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.SparkAxes.Horizontal" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> objeto para devolver la <see cref="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" /> objeto para el grupo de minigráficos. El eje horizontal se muestra sólo si los datos para el minigráfico tienen valores positivos y negativos en el eje vertical.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.SparkAxes.Horizontal" /> propiedad del objeto para devolver el objeto para el grupo de <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> <see cref="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" /> minigráficos. El eje horizontal se muestra solo si los datos del minigráfico tienen valores negativos y positivos en el eje vertical.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,12 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Axis">
@@ -91,11 +79,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que especifica el color del eje horizontal del minigráfico.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> objeto que especifica el color del eje horizontal del minigráfico.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> que especifica el color del eje horizontal del minigráfico.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -121,13 +107,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
-        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, excelnv1 tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
+        <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks><para>De sólo <b>lectura de longitud</b>.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.Creator" /> caracteres. Por ejemplo, excelnv1 tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDateAxis">
@@ -154,14 +138,11 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene si el eje horizontal del minigráfico se basa en los valores de fecha.</summary>
-        <value>
-          <b>true</b> si el eje horizontal del minigráfico se basa en los valores de fecha; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Solo lectura.</para>
+        <value><b>true</b> si el eje horizontal del minigráfico se basa en valores de fecha; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Solo lectura.</para>
           <para>
-            <b>true</b> si el eje horizontal se basa en los valores de fecha; en caso contrario, <b>false</b>.</para>
-          <para></para>
-        </remarks>
+            <b>true</b> si el eje horizontal se basa en valores de fecha; de lo <b>contrario, false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -187,12 +168,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para el objeto especificado.</summary>
-        <value>El elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para el objeto especificado.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el objeto <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> primario del objeto especificado.</summary>
+        <value>Objeto primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> del objeto especificado.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightToLeftPlotOrder">
@@ -221,14 +200,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si se trazan los puntos en el eje horizontal en el orden de derecha a izquierda.</summary>
-        <value>
-          <b>true</b> si se trazan los puntos en el eje horizontal en el orden de derecha a izquierda; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para>Establecer el <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.RightToLeftPlotOrder" /> propiedad en <b>true</b> para trazar los valores en el eje horizontal en el orden de derecha a izquierda.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece si los puntos del eje horizontal se trazan de derecha a izquierda.</summary>
+        <value><b>true</b> si los puntos del eje horizontal se trazan de derecha a izquierda; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para>Establezca la propiedad en true para trazar los valores del eje <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.RightToLeftPlotOrder" /> horizontal en orden de derecha a izquierda. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

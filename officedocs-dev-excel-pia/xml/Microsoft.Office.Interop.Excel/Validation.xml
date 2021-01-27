@@ -1,13 +1,5 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575806" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Validation" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009355" /></Metadata><TypeSignature Language="C#" Value="public interface Validation" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Validation" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Validation" />
   <TypeSignature Language="VB.NET" Value="Public Interface Validation" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa la validación de datos para un rango de hoja de cálculo.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> (propiedad) para devolver el objeto de <b>validación</b> .</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para agregar validación de datos a un rango y crear un nuevo objeto <b>Validation</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> propiedad para devolver el objeto <b>Validation</b> .</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para agregar validación de datos a un rango y crear un nuevo objeto <b>Validation.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,48 +53,42 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Requiere <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />. Tipo de validación.</param>
-        <param name="AlertStyle">
-          <b>Objeto</b>de opcional. Estilo de alerta de validación. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constantes: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>o <b>xlValidAlertWarning</b>.</param>
-        <param name="Operator">
-          <b>Objeto</b>de opcional. Operador de validación de datos. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>o <b>xlNotEqual</b>.</param>
-        <param name="Formula1">
-          <b>Objeto</b>de opcional. Primera parte de la ecuación de validación de datos.</param>
-        <param name="Formula2">
-          <b>Objeto</b>de opcional. La segunda parte de la validación de datos cuando <paramref name="Operator" /> es <b>xlBetween</b> o <b>xlNotBetween</b> (en caso contrario, se omite este argumento).</param>
+        <param name="Type">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> . Tipo de validación.</param>
+        <param name="AlertStyle">Optional <b>Object</b>. Estilo de alerta de validación. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> constantes: <b>xlValidAlertInformation</b>, <b>xlValidAlertStop</b>o <b>xlValidAlertWarning</b>.</param>
+        <param name="Operator">Optional <b>Object</b>. Operador de validación de datos. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> constantes: <b>xlBetween</b>, <b>xlEqual</b>, <b>xlGreater</b>, <b>xlGreaterEqual</b>, <b>xlLess</b>, <b>xlLessEqual</b>, <b>xlNotBetween</b>o <b>xlNotEqual</b>.</param>
+        <param name="Formula1">Optional <b>Object</b>. Primera parte de la ecuación de validación de datos.</param>
+        <param name="Formula2">Optional <b>Object</b>. La segunda parte de la validación de datos cuando <paramref name="Operator" /> es <b>xlBetween</b> o <b>xlNotBetween</b> (de lo contrario, se omite este argumento).</param>
         <summary>Agrega validación de datos al rango especificado.</summary>
-        <remarks>
-          <para>El método Add requiere diferentes argumentos, que dependen del tipo de validación, como se muestra en la siguiente tabla.</para>
+        <remarks><para>El método Add requiere argumentos diferentes, según el tipo de validación, como se muestra en la tabla siguiente.</para>
           <list type="table">
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" />es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" />debe contener una expresión que se evalúa como <b>True</b> si la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
+                <paramref name="Formula1" /> es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una expresión que se evalúa como <b>True</b> cuando la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
             </item>
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />, <paramref name="Formula1" />, o <paramref name="Formula2" /> se usan.</description>
+                <paramref name="AlertStyle" />, <paramref name="Formula1" /> o <paramref name="Formula2" /> se usan.</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" />es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" />debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a esta lista.</description>
+                <paramref name="Formula1" /> es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a esta lista.</description>
             </item>
             <item>
               <term>
                 <b>xlValidateWholeNumber</b>, <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b> o <b>xlValidateTime</b></term>
-              <description>Una de estas <paramref name="Formula1" /> o <paramref name="Formula2" /> deben especificarse, o ambos puede especificarse.</description>
+              <description>Uno de <paramref name="Formula1" /> los dos o debe <paramref name="Formula2" /> especificarse, o ambos pueden especificarse.</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlertStyle">
@@ -130,12 +114,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el estilo de alerta de validación. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />.</summary>
+        <summary>Devuelve el estilo de alerta de validación. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> (método) para establecer el estilo de alerta de un rango. Si el rango ya tiene validación de datos, use la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para cambiar el estilo de alerta.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> método para establecer el estilo de alerta de un rango. Si el rango ya tiene validación de datos, utilice <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> el método para cambiar el estilo de alerta.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -161,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,12 +171,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -279,7 +259,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el título del cuadro de error asociado a la validación de datos. <b>String</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece el título del cuadro de diálogo de error asociado a la validación de datos. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,7 +287,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el valor o la expresión correspondiente al formato condicional o a la validación de datos. Puede ser un valor constante, un valor de cadena, una referencia de celda o una fórmula. Valor <b>String</b> de sólo lectura.</summary>
+        <summary>Devuelve el valor o la expresión correspondiente al formato condicional o a la validación de datos. Puede ser un valor constante, un valor de cadena, una referencia de celda o una fórmula. <b>String</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,12 +315,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el valor o una expresión asociada con la segunda parte de una validación de datos o formato condicional. <b>String</b> de solo lectura.</summary>
+        <summary>Devuelve el valor o la expresión correspondiente a la segunda parte de un formato condicional o validación de datos. <b>String</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad se utiliza sólo al formato condicional de validación de datos <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> propiedad es <b>xlBetween</b> o <b>xlNotBetween</b>. Puede ser un valor constante, un valor de tipo string, una referencia de celda o una fórmula.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad sólo se usa cuando la propiedad de formato condicional de validación de <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> datos es <b>xlBetween</b> o <b>xlNotBetween</b>. Puede ser un valor constante, un valor de cadena, una referencia de celda o una fórmula.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreBlank">
@@ -369,13 +347,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la validación de datos del rango permite valores en blanco. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si la validación de datos del rango permite valores en blanco. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la propiedad <b>IgnoreBlank</b> es <b>True</b>, los datos de celda se considerarán válidos si la celda está en blanco, o bien si una celda hace referencia, ya sea por la <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> o <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> propiedad está en blanco.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la <b>propiedad IgnoreBlank</b> es <b>True</b>, los datos de celda se consideran válidos si la celda está en blanco o si una celda a la que hace referencia la <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> propiedad or está en <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> blanco.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IMEMode">
@@ -404,12 +379,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la descripción de las reglas de entrada en japonés. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constantes. <b>Integer</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece la descripción de las reglas de entrada en idioma japonés. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> constantes. Valor <b>Entero</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Tenga en cuenta que esta propiedad sólo se puede establecer si se ha instalado y seleccionado una versión de idioma japonés.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Tenga en cuenta que esta propiedad sólo se puede establecer si se ha instalado y seleccionado una versión de idioma japonés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InCellDropdown">
@@ -438,14 +411,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la validación de datos muestra una lista desplegable que contiene valores aceptables. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si la validación de datos muestra una lista desplegable que contiene valores aceptables. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad se pasa por alto si el tipo de validación no es <b>xlValidateList</b>.</para>
-          <para>Usar el <paramref name="Minimum" /> argumento de la <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> objeto para especificar el rango que contiene datos válidos.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Esta propiedad se pasa por alto si el tipo de validación no es <b>xlValidateList</b>.</para>
+          <para>Utilice el <paramref name="Minimum" /> argumento del objeto or para especificar el rango que contiene datos <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> válidos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InputMessage">
@@ -505,7 +475,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el título del cuadro de entrada con validación de datos. <b>String</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece el título del cuadro de diálogo de entrada asociado a la validación de datos. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -536,47 +506,43 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Requiere <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />. Tipo de validación.</param>
-        <param name="AlertStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />. Estilo de alerta de validación.</param>
-        <param name="Operator">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />. Operador de validación de datos.</param>
-        <param name="Formula1">
-          <b>Objeto</b>de opcional. Primera parte de la ecuación de validación de datos.</param>
-        <param name="Formula2">
-          <b>Objeto</b>de opcional. La segunda parte de la validación de datos cuando <paramref name="Operator" /> es <b>xlBetween</b> o <b>xlNotBetween</b> (en caso contrario, se omite este argumento).</param>
+        <param name="Type">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> . Tipo de validación.</param>
+        <param name="AlertStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> . Estilo de alerta de validación.</param>
+        <param name="Operator">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> . Operador de validación de datos.</param>
+        <param name="Formula1">Optional <b>Object</b>. Primera parte de la ecuación de validación de datos.</param>
+        <param name="Formula2">Optional <b>Object</b>. La segunda parte de la validación de datos cuando <paramref name="Operator" /> es <b>xlBetween</b> o <b>xlNotBetween</b> (de lo contrario, se omite este argumento).</param>
         <summary>Modifica la validación de datos para un rango.</summary>
-        <remarks>
-          <para>El método <b>Modify</b> requiere diferentes argumentos, que dependen del tipo de validación, como se muestra en la siguiente tabla:</para>
+        <remarks><para>El método <b>Modify</b> requiere diferentes argumentos, que dependen del tipo de validación, como se muestra en la siguiente tabla:</para>
           <list type="table">
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />, <paramref name="Formula1" />, y <paramref name="Formula2" /> no se usan.</description>
+                <paramref name="AlertStyle" />, <paramref name="Formula1" /> y no se <paramref name="Formula2" /> usan.</description>
             </item>
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" />es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" />debe contener una expresión que se evalúa como <b>True</b> si la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
+                <paramref name="Formula1" /> es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una expresión que se evalúa como <b>True</b> cuando la entrada de datos es válida y <b>False</b> cuando la entrada de datos no es válida.</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" />es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" />debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a la lista.</description>
+                <paramref name="Formula1" /> es necesario; <paramref name="Formula2" /> se omite. <paramref name="Formula1" /> debe contener una lista delimitada por comas de valores o una referencia de hoja de cálculo a la lista.</description>
             </item>
             <item>
               <term>
                 <b>xlValidateDate</b>, <b>xlValidateDecimal</b>, <b>xlValidateTextLength</b>, <b>xlValidateTime</b> o <b>xlValidateWholeNumber</b></term>
               <description>
-                <paramref name="Formula1" />o <paramref name="Formula2" />, o ambos, debe especificarse.</description>
+                <paramref name="Formula1" /> o, <paramref name="Formula2" /> o ambos, deben especificarse.</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">
@@ -602,7 +568,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el operador para la validación de datos o formato condicional. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve el operador del formato condicional o validación de datos. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -630,7 +596,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -661,8 +627,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestra un mensaje de error de validación de datos siempre que el usuario escriba datos no válidos. Valot <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si se muestra un mensaje de error de validación de datos siempre que el usuario escriba datos no válidos. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -693,8 +658,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestra el mensaje de entrada de validación de datos siempre que el usuario seleccione una celda del rango de validación de datos. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si se muestra el mensaje de entrada de validación de datos siempre que el usuario seleccione una celda del rango de validación de datos. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -722,7 +686,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la validación de tipo de datos para un rango. Sólo lectura <b>entero</b> que puede ser una de las constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />.</summary>
+        <summary>Devuelve la validación de tipo de datos de un intervalo. Integer <b>de</b> solo lectura que puede ser una de las constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -750,8 +714,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se cumplen todos los criterios de validación (es decir, si el rango contiene datos válidos). <b>Boolean</b> de sólo lectura.</summary>
+        <summary><b>True</b> si se cumplen todos los criterios de validación (es decir, si el rango contiene datos válidos). <b>Booleano</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="PivotFilters" FullName="Microsoft.Office.Interop.Excel.PivotFilters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="241a7e92c74b8d47295e5e1915f8efb2b688ac82" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572698" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotFilters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="241a7e92c74b8d47295e5e1915f8efb2b688ac82" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010867" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFilters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFilters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFilters" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFilters&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>El <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> objeto es una colección de <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> objetos.</summary>
-    <remarks>
-      <para>El <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> colección contiene propiedades y métodos para agregar nuevos filtros, contar el número de filtros existentes en la colección y hacer referencia específicos <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> objetos.</para>
-      <para></para>
-    </remarks>
+    <summary>El  <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> objeto es una colección de <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> objetos.</summary>
+    <remarks><para>La colección contiene propiedades y métodos para agregar nuevos filtros, contar el número de filtros existentes en la colección y hacer referencia <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> a objetos <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />  específicos.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -115,7 +105,7 @@
         <param name="Name">To be added.</param>
         <param name="Description">To be added.</param>
         <param name="MemberPropertyField">To be added.</param>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,14 +177,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
-          <para></para>
-        </remarks>
+        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -220,10 +206,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de elementos contenidos en la colección <b>PivotFilters</b>. Es de sólo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve la cantidad de elementos que se incluyen en la colección <b>PivotFilters</b>. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,14 +234,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.  La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -318,11 +298,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Requiere el <b>objeto</b> especifica la posición de un elemento de la colección.</param>
-        <summary>Devuelve un elemento concreto del objeto de colección <b>PivotFilters</b> por su posición en la colección. Es de sólo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />
-        </value>
+        <param name="Index">Required <b>Object</b> Especifica la posición de un elemento de la colección.</param>
+        <summary>Devuelve un elemento específico del objeto de colección <b>PivotFilters</b> por su posición en la colección. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,10 +327,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve al objeto primario del objeto <b>PivotFilters</b> especificado. Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el elemento primario del objeto <b>PivotFilters</b> especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

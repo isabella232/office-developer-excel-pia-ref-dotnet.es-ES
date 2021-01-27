@@ -1,13 +1,5 @@
 <Type Name="QueryTables" FullName="Microsoft.Office.Interop.Excel.QueryTables">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="243a843ba48be5881f9e62bc2223ea6860624c17" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586943" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="243a843ba48be5881f9e62bc2223ea6860624c17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010727" /></Metadata><TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract QueryTables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.QueryTables" />
   <TypeSignature Language="VB.NET" Value="Public Interface QueryTables&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objetos. Cada objeto  <b>QueryTable</b> representa una tabla de hoja de cálculo creada a partir de los datos de un origen de datos externo.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> propiedad para devolver la colección <b>QueryTables</b> .</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> (método) para crear una nueva tabla de consulta y agregarla a la colección <b>QueryTables</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objetos. Cada objeto <b>QueryTable</b> representa una tabla de hoja de cálculo creada a partir de los datos de un origen de datos externo.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" /> propiedad para devolver la colección <b>QueryTables</b> .</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> método para crear una nueva tabla de consulta y agregarla a la <b>colección QueryTables</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,18 +90,13 @@
         <Parameter Name="Sql" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Connection">
-          <b>Objeto</b>requerido. El origen de datos de la tabla de consulta. Puede ser uno de los siguientes: tipo string que contiene una cadena de conexión de ODBC o de OLE DB. La cadena de conexión ODBC tiene la forma "ODBC; &lt;cadena de conexión&gt;". Un objeto <b>QueryTable</b> del cual se copia inicialmente la información de la consulta, incluidos la cadena de conexión y el texto SQL, pero no incluir la <paramref name="Destination" /> intervalo. Si se especifica un objeto <b>QueryTable</b> el <paramref name="Sql" /> argumento se pasará por alto. Un objeto <b>Recordset</b> DAO o ADO. Leen datos desde el objeto recordset de ADO o DAO. Microsoft Excel conserva el conjunto de registros hasta que se elimina la tabla de consulta o se cambia la conexión. No se puede editar la tabla de consulta resultante. Una consulta Web. Una cadena con el formato "URL; &lt;dirección url&gt;", donde"URL"; es obligatorio pero no localizada y el resto de la cadena se usa para la dirección URL de la consulta Web. Búsqueda de datos. Una cadena con el formato "FINDER; &lt;ruta de acceso del archivo de búsqueda de datos&gt;"donde"FINDER;"es obligatorio pero no localizada. El resto de la cadena es la ruta de acceso y el nombre de un archivo de búsqueda de datos (*.dqy o *.iqy). El archivo es de lectura cuando se ejecute el método <b>Add</b> ; las llamadas posteriores a la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> (propiedad) de la tabla de consulta devuelven cadenas que empiezan por "ODBC;" o "URL;" según corresponda. Un archivo de texto. Una cadena con el formato "TEXT; &lt;nombre y ruta de archivo de texto&gt;", donde texto es obligatorio pero no localizado.</param>
-        <param name="Destination">
-          <b>Range</b>requerido. La celda en la esquina superior izquierda del rango de destino de tabla de consulta (es decir, el intervalo donde se colocará en la tabla de consulta resultante). El rango de destino debe estar en la hoja de cálculo que contiene el <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> objeto.</param>
-        <param name="Sql">
-          <b>Objeto</b>de opcional. La cadena de consulta SQL que se ejecutará en el origen de datos ODBC. Este argumento es opcional cuando se utiliza un origen de datos ODBC no puede utilizar este argumento cuando se especifica un objeto <b>QueryTable</b> , el archivo de texto o el objeto de <b>conjunto de registros</b> de DAO o ADO como el origen de datos.</param>
-        <summary>Crea una nueva tabla de consultas. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> object que representa la nueva tabla de consulta.</summary>
+        <param name="Connection">Objeto <b>requerido</b>. Origen de datos de la tabla de consultas. Puede ser una de las siguientes: una cadena que contiene una cadena de conexión OLE DB u ODBC. La cadena de conexión ODBC tiene la forma "ODBC; &lt; cadena de conexión &gt; ". Objeto <b>QueryTable</b> desde el que se copia inicialmente la información de la consulta, incluida la cadena de conexión y el SQL texto, pero sin incluir el <paramref name="Destination" /> intervalo. Si se especifica <b>un objeto QueryTable,</b> <paramref name="Sql" /> se omitirá el argumento. Un objeto Recordset de ADO <b>o</b> DAO. Los datos se leen del conjunto de registros ADO o DAO. Microsoft Excel conserva el conjunto de registros hasta que se elimine la tabla de consultas o cambie la conexión. No se puede editar la tabla de consulta resultante. Una consulta web. Una cadena con el formato "URL; &lt; url ", donde "URL;" es necesario pero no localizado y el resto de la cadena se usa para la &gt; dirección URL de la consulta web. Buscador de datos. Una cadena con el formato "FINDER; &lt; ruta de acceso del archivo del &gt; buscador de datos " donde "FINDER;" es necesario pero no está localizado. El resto de la cadena es la ruta de acceso y el nombre de archivo de un archivo Data Finder (*.dqy o *.iqy). El archivo se lee cuando se <b>ejecuta</b> el método Add; Las llamadas posteriores a la propiedad de la tabla de consulta devolverán cadenas que comienzan por <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> "ODBC;" o "URL;" según corresponda. Un archivo de texto. Una cadena con el formato "TEXT; &lt; nombre y ruta de acceso del archivo de texto, donde &gt; TEXT es obligatorio pero no localizado.</param>
+        <param name="Destination">Intervalo <b>requerido.</b> Celda de la esquina superior izquierda del rango de destino de la tabla de consultas (el rango en el que se colocará la tabla de consultas). El rango de destino debe estar en la hoja de cálculo que contiene el <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> objeto.</param>
+        <param name="Sql">Optional <b>Object</b>. Cadena SQL que se debe ejecutar en el origen de datos ODBC. Este argumento es opcional cuando se usa un origen de datos ODBC No se puede utilizar este argumento cuando se especifica un objeto <b>QueryTable,</b> un archivo de texto o un objeto <b>Recordset</b> de ADO o DAO como origen de datos.</param>
+        <summary>Crea una nueva tabla de consultas. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> objeto que representa la nueva tabla de consulta.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Una consulta creada por este método no se ejecuta hasta que el <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> se llama al método.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Una consulta creada por este método no se ejecuta hasta que se <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> llama al método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -137,7 +122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,7 +150,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de objetos de la colección. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve el número de objetos de la colección. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,12 +178,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -256,14 +239,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Número de índice o nombre del objeto.</param>
+        <param name="Index">Objeto <b>requerido</b>. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>El nombre de texto del objeto es el valor de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> (propiedad).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El nombre de texto del objeto es el valor de la <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

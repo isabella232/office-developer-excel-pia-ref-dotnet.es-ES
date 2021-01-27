@@ -1,13 +1,5 @@
 <Type Name="RectangularGradient" FullName="Microsoft.Office.Interop.Excel.RectangularGradient">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="32bd8a6a6080dd51d08bba085fda72e6b6f51462" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584451" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RectangularGradient" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="32bd8a6a6080dd51d08bba085fda72e6b6f51462" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010594" /></Metadata><TypeSignature Language="C#" Value="public interface RectangularGradient" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RectangularGradient" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RectangularGradient" />
   <TypeSignature Language="VB.NET" Value="Public Interface RectangularGradient" />
@@ -29,20 +21,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>El <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objeto transiciones a través de una serie de colores de forma lineal siguiendo un ángulo específico.</summary>
-    <remarks>
-      <para>
-        <b>Nota</b>: algunas cosas que debe considerar cuando se trabaja con <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objetos</para>
+    <summary>El <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objeto pasa a través de una serie de colores de forma lineal a lo largo de un ángulo específico.</summary>
+    <remarks><para>
+        <b>Nota:</b>Algunos aspectos que se deben tener en cuenta al trabajar con <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objetos</para>
       <list type="bullet">
         <item>
-          <description>Intentar acceso una <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> (propiedad) de un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que no tiene un relleno degradado existente, se producirá un error en tiempo de ejecución.  Debe tener en cuenta el <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> (propiedad) antes de obtener acceso a la <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> (propiedad).</description>
+          <description>Si se intenta obtener acceso a una propiedad de un objeto que no tiene un relleno degradado existente, se producirá <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> un error en tiempo de <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> ejecución.  Tenga en cuenta la <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> propiedad antes de tener acceso a la <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> propiedad.</description>
         </item>
         <item>
-          <description>Si <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> se cambia de un tipo de degradado a un tipo sin degradado, el <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> objeto Gradient recibirá los valores predeterminados.</description>
+          <description>Si se cambia de un tipo de degradado a un tipo no degradado, el objeto <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />  se rellenará con los valores predeterminados.</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -68,10 +58,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,10 +86,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.ColorStops" /> para el <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objeto. Solo lectura</summary>
-        <value>
-          <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.ColorStops" />
-        </value>
+        <summary>Devuelve el <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.ColorStops" /> <see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" /> objeto. Solo lectura</summary>
+        <value><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.ColorStops" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,14 +114,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto. Solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. </para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto. Solo lectura</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -162,9 +144,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve al objeto primario del objeto especificado. Solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,12 +174,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Representa el punto o el vector hacia el que converge el relleno degradado. Es de lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Funciona con <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, y <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />.  Los valores válidos se enumeran en la tabla siguiente.</para>
+        <summary>Representa el punto o el vector hacia el que converge el relleno degradado. Lectura/escritura</summary>
+        <value><b>Double</b></value>
+        <remarks><para>Funciona con <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" /> , <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" /> y <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" /> .  En la tabla siguiente se indican los valores válidos.</para>
           <list type="table">
             <item>
               <term>
@@ -226,8 +203,7 @@
               <description>0-1</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RectangleLeft">
@@ -256,12 +232,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Representa el punto o el vector hacia el que converge el relleno degradado. Es de lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Funciona con <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />, y <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Los valores válidos se enumeran en la tabla siguiente.</para>
+        <summary>Representa el punto o el vector hacia el que converge el relleno degradado. Lectura/escritura</summary>
+        <value><b>Double</b></value>
+        <remarks><para>Funciona con <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" /> , <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" /> y <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" /> .  En la tabla siguiente se indican los valores válidos.</para>
           <list type="table">
             <item>
               <term>
@@ -288,8 +261,7 @@
               <description>0-1</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RectangleRight">
@@ -318,12 +290,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Representa el punto o el vector hacia el que converge el relleno degradado. Es de lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Funciona con <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />, y <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Los valores válidos se enumeran en la tabla siguiente.</para>
+        <summary>Representa el punto o el vector hacia el que converge el relleno degradado. Lectura/escritura</summary>
+        <value><b>Double</b></value>
+        <remarks><para>Funciona con <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" /> , <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" /> y <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" /> .  En la tabla siguiente se indican los valores válidos.</para>
           <list type="table">
             <item>
               <term>
@@ -350,8 +319,7 @@
               <description>0-1</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RectangleTop">
@@ -380,12 +348,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Representa el punto o el vector hacia el que converge el relleno degradado. Es de lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Funciona con <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />, <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />, y <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />.  Los valores válidos se enumeran en la tabla siguiente.</para>
+        <summary>Representa el punto o el vector hacia el que converge el relleno degradado. Lectura/escritura</summary>
+        <value><b>Double</b></value>
+        <remarks><para>Funciona con <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" /> , <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" /> y <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" /> .  En la tabla siguiente se indican los valores válidos.</para>
           <list type="table">
             <item>
               <term>
@@ -412,8 +377,7 @@
               <description>0-1</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Watches" FullName="Microsoft.Office.Interop.Excel.Watches">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a25459aa6b0f09a23aa12ace666f145c1a6dd16f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581077" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Watches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a25459aa6b0f09a23aa12ace666f145c1a6dd16f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009299" /></Metadata><TypeSignature Language="C#" Value="public interface Watches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Watches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Watches" />
   <TypeSignature Language="VB.NET" Value="Public Interface Watches&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Watch" /> objetos de una aplicación especificada.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.Watches" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto para devolver una colección <b>Watches</b> .</para>
-      <para>Puede especificar para quitar las celdas individuales de la función de inspección mediante el uso de la <see cref="M:Microsoft.Office.Interop.Excel.Watches.Delete" /> método de la colección <b>Watches</b> .</para>
-      <para>También puede especificar para quitar todas las celdas de la ventana Inspección, mediante el método <b>Delete</b> de la colección <b>Watches</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Watch" /> objetos de una aplicación especificada.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.Watches" /> propiedad del objeto para devolver una colección <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b>Watches.</b></para>
+      <para>Puede especificar la eliminación de celdas individuales de la instalación de reloj mediante el <see cref="M:Microsoft.Office.Interop.Excel.Watches.Delete" /> método de la colección <b>Watches.</b></para>
+      <para>También puede especificar la eliminación de todas las celdas de la ventana Inspección si usa el método <b>Delete</b> de la colección <b>Watches</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,8 +90,7 @@
         <Parameter Name="Source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>Objeto</b>requerido. Origen correspondiente al rango.</param>
+        <param name="Source">Objeto <b>requerido</b>. Origen correspondiente al rango.</param>
         <summary>Agrega un rango cuyos cambios se controlan cuando se vuelve a calcular la hoja de cálculo. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Watch" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -130,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,13 +175,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -278,8 +265,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Nombre o número de índice del objeto.</param>
+        <param name="Index">Objeto <b>requerido</b>. Nombre o número de índice del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

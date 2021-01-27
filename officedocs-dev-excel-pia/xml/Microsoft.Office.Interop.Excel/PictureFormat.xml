@@ -1,13 +1,5 @@
 <Type Name="PictureFormat" FullName="Microsoft.Office.Interop.Excel.PictureFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="87aeae7792de72516fdcdfd36f8f7269365bfbb4" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576233" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PictureFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="87aeae7792de72516fdcdfd36f8f7269365bfbb4" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011000" /></Metadata><TypeSignature Language="C#" Value="public interface PictureFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PictureFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PictureFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface PictureFormat&#xA;Implements _IMsoDispObj" />
@@ -31,11 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Contiene propiedades y métodos que se pueden aplicar a imágenes y objetos OLE.</summary>
-    <remarks>
-      <para>El <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> objeto contiene propiedades y métodos que se aplican a objetos OLE vinculados sólo. El <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objeto contiene propiedades y métodos que se aplican a objetos OLE vinculados o no.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" /> propiedad para devolver un objeto <b>PictureFormat</b> .</para>
-      <para></para>
-    </remarks>
+    <remarks><para>El <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> objeto contiene propiedades y métodos que solo se aplican a objetos OLE vinculados. El <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objeto contiene propiedades y métodos que se aplican a objetos OLE tanto si están vinculados como si no.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.PictureFormat" /> propiedad para devolver un objeto <b>PictureFormat</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,13 +178,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Crop">
@@ -220,12 +208,10 @@
         <ReturnType>Microsoft.Office.Core.Crop</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Core.Crop" /> object que representa la configuración de recorte de especificado <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objeto.</summary>
-        <value>A <see cref="T:Microsoft.Office.Core.Crop" /> object que representa la configuración de recorte de especificado <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Core.Crop" /> objeto que representa la configuración de recorte del objeto <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> especificado.</summary>
+        <value>Objeto <see cref="T:Microsoft.Office.Core.Crop" /> que representa la configuración de recorte del objeto <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> especificado.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -256,10 +242,8 @@
       <Docs>
         <summary>Devuelve o establece el número de puntos que se recortan de la parte inferior de la imagen o del objeto OLE especificados.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un alto de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de alto y, a continuación, establece la propiedad <b>CropBottom</b> en 50, se recortarán 100 puntos (no 50) de la parte inferior de la imagen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un alto de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de alto y, a continuación, establece la propiedad <b>CropBottom</b> en 50, se recortarán 100 puntos (no 50) de la parte inferior de la imagen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropLeft">
@@ -290,10 +274,8 @@
       <Docs>
         <summary>Devuelve o establece el número de puntos que se recortará el lado izquierdo de la imagen especificada o un objeto OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un ancho de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de ancho y, a continuación, establece la propiedad <b>CropLeft</b> en 50, se recortarán 100 puntos (no 50) del lado izquierdo de la imagen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un ancho de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de ancho y, a continuación, establece la propiedad <b>CropLeft</b> en 50, se recortarán 100 puntos (no 50) del lado izquierdo de la imagen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropRight">
@@ -324,10 +306,8 @@
       <Docs>
         <summary>Devuelve o establece el número de puntos que se recortará el lado derecho de la imagen especificada o un objeto OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un ancho de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de ancho y, a continuación, establece la propiedad <b>CropRight</b> en 50, se recortarán 100 puntos (no 50) del lado derecho de la imagen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un ancho de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de ancho y, a continuación, establece la propiedad <b>CropRight</b> en 50, se recortarán 100 puntos (no 50) del lado derecho de la imagen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropTop">
@@ -358,10 +338,8 @@
       <Docs>
         <summary>Devuelve o establece el número de puntos que se recortará la parte superior de la imagen especificada o un objeto OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un alto de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de alto y, a continuación, establece la propiedad <b>CropTop</b> en 50, se recortarán 100 puntos (no 50) de la parte superior de la imagen.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El recorte se calcula con relación al tamaño original de la imagen. Por ejemplo, si inserta una imagen que originalmente tenía un alto de 100 puntos, ajusta su tamaño de modo que tenga 200 puntos de alto y, a continuación, establece la propiedad <b>CropTop</b> en 50, se recortarán 100 puntos (no 50) de la parte superior de la imagen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementBrightness">
@@ -387,14 +365,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. Especifica cuánto para cambiar el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Brightness" /> (propiedad) de la imagen. Un valor positivo hace la imagen más brillante; un valor negativo oscurece la imagen.</param>
+        <param name="Increment">Obligatorio <b>único</b>. Especifica cuánto se va a cambiar el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Brightness" /> propiedad de la imagen. Un valor positivo hace la imagen más brillante; un valor negativo oscurece la imagen.</param>
         <summary>Cambia el brillo de la imagen en la cantidad especificada.</summary>
-        <remarks>
-          <para>Utilice la propiedad <b>Brightness</b> para establecer el brillo absoluto de la imagen.</para>
-          <para>No se puede ajustar el brillo de una imagen pasado el límite superior o inferior de la propiedad <b>Brightness</b>. Por ejemplo, si la propiedad <b>Brightness</b> se establece inicialmente en 0,9 y especifica 0,3 para el <paramref name="Increment" /> argumento, el nivel de brillo resultante será 1,0, que es el límite superior de la propiedad <b>Brightness</b> , en lugar de 1,2.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilice la propiedad <b>Brightness</b> para establecer el brillo absoluto de la imagen.</para>
+          <para>No se puede ajustar el brillo de una imagen pasado el límite superior o inferior de la propiedad <b>Brightness</b>. Por ejemplo, si la propiedad <b>Brightness</b> se establece inicialmente en 0,9 y especificas 0,3 para el argumento, el nivel de brillo resultante será 1,0, que es el límite superior de la propiedad Brightness, en lugar de <paramref name="Increment" /> 1,2. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementContrast">
@@ -420,14 +395,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. Especifica cuánto para cambiar el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Contrast" /> (propiedad) de la imagen. Un valor positivo aumenta el contraste; un valor negativo reduce el contraste.</param>
+        <param name="Increment">Obligatorio <b>único</b>. Especifica cuánto se va a cambiar el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.Contrast" /> propiedad de la imagen. Un valor positivo aumenta el contraste; un valor negativo reduce el contraste.</param>
         <summary>Cambia el contraste de la imagen en la cantidad especificada.</summary>
-        <remarks>
-          <para>Use la propiedad <b>Contrast</b> para establecer el contraste absoluto de la imagen.</para>
-          <para>No se puede ajustar el contraste de una imagen pasado el límite superior o inferior de la propiedad <b>Contrast</b>. Por ejemplo, si la propiedad <b>Contrast</b> se establece inicialmente en 0,9 y especifica 0,3 para el <paramref name="Increment" /> argumento, el nivel de contraste resultante será 1,0, que es el límite superior de la propiedad <b>Contrast</b> , en lugar de 1,2.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Use la propiedad <b>Contrast</b> para establecer el contraste absoluto de la imagen.</para>
+          <para>No se puede ajustar el contraste de una imagen pasado el límite superior o inferior de la propiedad <b>Contrast</b>. Por ejemplo, si la propiedad <b>Contrast</b> se establece inicialmente en 0,9 y especifica 0,3 para el argumento, el nivel de contraste resultante será 1,0, que es el límite superior de la propiedad Contrast, en lugar de <paramref name="Increment" /> 1,2. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -489,11 +461,9 @@
       <Docs>
         <summary>Devuelve o establece el color transparente de la imagen especificada como un valor rojo, verde y azul (RGB). Se aplica a los mapas de bits sólo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para que esta propiedad surta efecto, la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" /> propiedad debe establecerse en <b>True</b>.</para>
-          <para>Si desea poder ver a través de las partes transparentes de la imagen, todos los objetos detrás de la imagen, debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> (propiedad) de la imagen <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto en <b>False</b>. Si la imagen tiene un color transparente y la propiedad <b>Visible</b> del objeto <b>FillFormat</b> de la imagen se establece en <b>True</b>, relleno de la imagen será visible a través del color transparente, pero los objetos situados detrás del dibujo quedarán ocultos.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para que esta propiedad su efecto, la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparentBackground" /> propiedad debe establecerse en <b>True</b>.</para>
+          <para>Si desea poder ver a través de las partes transparentes de la imagen hasta los objetos situados detrás de la imagen, debe establecer la propiedad del objeto de la imagen en <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <b>False</b>. Si la imagen tiene un color transparente y la propiedad <b>Visible</b> del objeto <b>FillFormat</b> de la imagen se establece en <b>True</b>, relleno de la imagen será visible a través del color transparente, pero los objetos situados detrás del dibujo quedarán ocultos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TransparentBackground">
@@ -522,13 +492,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece si el formato de la imagen especificada usa un fondo transparente.</summary>
+        <summary>Devuelve o establece si el formato de imagen especificado usa un fondo transparente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" /> (propiedad) para establecer el color transparente. Se aplica a los mapas de bits sólo.</para>
-          <para>Si desea poder ver a través de las partes transparentes de la imagen, todos los objetos detrás de la imagen, debe establecer el <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> (propiedad) de la imagen <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto en <b>False</b>. Si la imagen tiene un color transparente y la propiedad <b>Visible</b> del objeto <b>FillFormat</b> de la imagen se establece en <b>True</b>, relleno de la imagen será visible a través del color transparente, pero los objetos situados detrás del dibujo quedarán ocultos.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.PictureFormat.TransparencyColor" /> propiedad para establecer el color transparente. Se aplica a los mapas de bits sólo.</para>
+          <para>Si desea poder ver a través de las partes transparentes de la imagen hasta los objetos situados detrás de la imagen, debe establecer la propiedad del objeto de la imagen en <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.Visible" /> <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <b>False</b>. Si la imagen tiene un color transparente y la propiedad <b>Visible</b> del objeto <b>FillFormat</b> de la imagen se establece en <b>True</b>, relleno de la imagen será visible a través del color transparente, pero los objetos situados detrás del dibujo quedarán ocultos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

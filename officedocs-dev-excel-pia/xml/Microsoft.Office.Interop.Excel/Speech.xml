@@ -1,13 +1,5 @@
 <Type Name="Speech" FullName="Microsoft.Office.Interop.Excel.Speech">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1a463e61ce556cdcc28ee34539e04ed33852d6ca" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576226" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Speech" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1a463e61ce556cdcc28ee34539e04ed33852d6ca" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009880" /></Metadata><TypeSignature Language="C#" Value="public interface Speech" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Speech" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Speech" />
   <TypeSignature Language="VB.NET" Value="Public Interface Speech" />
@@ -30,13 +22,11 @@
   </Attributes>
   <Docs>
     <summary>Contiene los métodos y las propiedades que se aplican a la síntesis de voz.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto para devolver un objeto <b>Speech</b> .</para>
-      <para>Cuando haya obtenido un objeto <b>Speech</b> , puede usar el <see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" /> método del objeto <b>Speech</b> para reproducir el contenido de una cadena.</para>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" /> propiedad del objeto para devolver un objeto <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b>Speech.</b></para>
+      <para>Una vez <b>que se</b> devuelve un objeto Speech, puedes usar el método del objeto <see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" /> <b>Speech</b> para reproducir el contenido de una cadena.</para>
       <para>
-        <b>Nota</b>: no hay una característica de voz en el árbol de configuración correspondiente a Dictation y comando &amp; Control que no tiene que estar instalado.</para>
-      <para></para>
-    </remarks>
+        <b>Nota:</b>Hay una característica de voz en el árbol de configuración que pertenece a dictado y control de comandos que no es necesario &amp; instalar.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Direction">
@@ -65,12 +55,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSpeakDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el orden en el que se dirá las celdas.</summary>
+        <summary>Devuelve o establece el orden en que se dirán las celdas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>Direction</b> es un <see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" /> constante.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El valor de la <b>propiedad Direction</b> es una <see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" /> constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Speak">
@@ -98,15 +86,11 @@
         <Parameter Name="Purge" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>String</b> requerida. Texto que se va a decir.</param>
-        <param name="SpeakAsync">
-          <b>Objeto</b>de opcional. <b>True</b> hará que el <paramref name="Text" /> se diga de forma asíncrona (el método no esperará para la <paramref name="Text" /> se digan por). <b>False</b> hace que el <paramref name="Text" /> se diga de forma sincrónica (el método espera a que el <paramref name="Text" /> se digan por antes de continuar). El valor predeterminado es <b>False</b>.</param>
-        <param name="SpeakXML">
-          <b>Boolean</b> opcional.  <b>True</b> hará que el <paramref name="Text" /> se interpreta como XML. <b>False</b> hace que el <paramref name="Text" /> para que no se interprete como XML, por lo que las etiquetas XML se leen no interpreta. El valor predeterminado es <b>False</b>.</param>
-        <param name="Purge">
-          <b>Objeto</b>de opcional. <b>True</b> hará que la síntesis de voz actual y el texto que se purgarán antes en el búfer <paramref name="Text" /> se habla. <b>False</b> no hará que la síntesis de voz actual y no depurará el texto del búfer antes de <paramref name="Text" /> se habla. El valor predeterminado es <b>False</b>.</param>
-        <summary>Microsoft Excel reproduce la cadena de texto especificado.</summary>
+        <param name="Text"><b>String</b> requerida. Texto que se va a decir.</param>
+        <param name="SpeakAsync">Optional <b>Object</b>. <b>True</b> hará que <paramref name="Text" /> se hable asincrónicamente (el método no esperará a que <paramref name="Text" /> se hable). <b>False</b> hará que <paramref name="Text" /> se hable sincrónicamente (el método espera a que se hable <paramref name="Text" /> antes de continuar). El valor predeterminado es <b>False</b>.</param>
+        <param name="SpeakXML"><b>Boolean</b> opcional. <b>True</b> hará que <paramref name="Text" /> se interprete como XML. <b>False</b> hará que no se interprete como XML, por lo que <paramref name="Text" /> las etiquetas XML se leerán y no se interpretarán. El valor predeterminado es <b>False</b>.</param>
+        <param name="Purge">Optional <b>Object</b>. <b>True</b> hará que la voz actual finalice y que cualquier texto almacenado en búfer se purgue antes <paramref name="Text" /> de que se hable. <b>False</b> no hará que la voz actual finalice y no purgará el texto almacenado en búfer antes <paramref name="Text" /> de que se hable. El valor predeterminado es <b>False</b>.</param>
+        <summary>Microsoft Excel reproduce la cadena de texto especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +120,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel admite un modo donde la celda activa se dirá cuando se presiona la tecla ENTRAR o cuando se termina la celda activa está editando. Al establecer la propiedad <b>SpeakCellOnEnter</b> en <b>True</b> se activará este modo. <b>False</b> desactiva este modo.</summary>
+        <summary>Microsoft Excel admite un modo en que se lee la celda activa al presionar la tecla ENTRAR o cuando se termina de modificar la celda activa. Al establecer la propiedad <b>SpeakCellOnEnter</b> en <b>True</b> se activará este modo. <b>False</b> desactiva este modo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="SeriesLines" FullName="Microsoft.Office.Interop.Excel.SeriesLines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4391fa7806d633ad9ab407bbf4845d8131816a1d" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575330" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4391fa7806d633ad9ab407bbf4845d8131816a1d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010398" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SeriesLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesLines" />
@@ -29,13 +21,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa las líneas de la serie de un grupo de gráficos. Las líneas de la serie conectan los valores de datos de cada serie.</summary>
-    <remarks>
-      <para>2-D sólo grupos de gráfico de columnas o barras apiladas pueden tener líneas de serie. Este objeto no es una colección. No hay ningún objeto que represente una línea de serie individual; líneas de serie activadas para todos los puntos de un grupo de gráficos o bien se desactivan.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.SeriesLines" /> (propiedad) para devolver un objeto <b>SeriesLines</b> .</para>
-      <para>Si el <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasSeriesLines" /> propiedad es <b>False</b>, la mayoría de las propiedades del objeto <b>SeriesLines</b> estarán desactivada.</para>
-      <para></para>
-    </remarks>
+    <summary>Representa las líneas de serie de un grupo de gráficos. Las líneas de la serie conectan los valores de datos de cada serie.</summary>
+    <remarks><para>Solo los grupos de gráficos de columnas o barras apiladas 2D pueden tener líneas de serie. Este objeto no es una colección. Ningún objeto representa una línea de serie individual; bien se activan las líneas de las series para todos los puntos de un grupo de gráficos, bien aparecen desactivadas.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.SeriesLines" /> propiedad para devolver un objeto <b>SeriesLines</b> .</para>
+      <para>Si la propiedad es False , la mayoría de las propiedades <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasSeriesLines" /> del <b>objeto SeriesLines</b> están deshabilitadas. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object que representa el borde del objeto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa el borde del objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,13 +107,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -176,9 +164,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

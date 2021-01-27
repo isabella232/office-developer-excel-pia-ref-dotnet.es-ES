@@ -1,13 +1,5 @@
 <Type Name="TextEffectFormat" FullName="Microsoft.Office.Interop.Excel.TextEffectFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fbb84779b82f0d04327c445fb2dede8ff19b5468" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581014" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fbb84779b82f0d04327c445fb2dede8ff19b5468" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009656" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextEffectFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextEffectFormat&#xA;Implements _IMsoDispObj" />
@@ -60,7 +52,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTextEffectAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la alineación del WordArt.</summary>
+        <summary>Devuelve o establece la alineación de WordArt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +83,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,13 +114,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontBold">
@@ -157,8 +147,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la fuente del WordArt especificado está en negrita.</summary>
+        <summary><b>True</b> si la fuente del WordArt especificado está en negrita.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,7 +178,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve <b>msoTrue</b> si la fuente del WordArt especificado está en cursiva.</summary>
+        <summary>Devuelve <b>msoTrue</b> si la fuente del objeto WordArt especificado es cursiva.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -282,8 +271,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si están ajustado el espacio entre pares de caracteres del WordArt especificado.</summary>
+        <summary><b>True</b> si los pares de caracteres del WordArt especificado están interletrados.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,8 +302,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si todos los caracteres (mayúsculas y minúsculas) del WordArt especificado tienen el mismo alto.</summary>
+        <summary><b>True</b> si todos los caracteres del WordArt especificado (tanto mayúsculas como minúsculas) tienen el mismo alto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,10 +363,8 @@
       <Docs>
         <summary>Devuelve o establece la forma del WordArt especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.PresetTextEffect" /> propiedad establece automáticamente la propiedad <b>PresetShape</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Al establecer <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.PresetTextEffect" /> la propiedad, se establece automáticamente la <b>propiedad PresetShape.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTextEffect">
@@ -410,11 +395,9 @@
       <Docs>
         <summary>Devuelve o establece el estilo del WordArt especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Los valores de esta propiedad corresponden a los formatos en el cuadro de diálogo Galería de WordArt (numerados de izquierda a derecha y de arriba a abajo).</para>
+        <remarks><para>Los valores de esta propiedad corresponden a los formatos del cuadro de diálogo Galería de WordArt (numerados de izquierda a derecha, de arriba a abajo).</para>
           <para>Establecer la propiedad <b>PresetTextEffect</b> automáticamente establece otras propiedades de formato de la forma especificada.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RotatedChars">
@@ -443,14 +426,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si los caracteres del WordArt especificado giran 90 grados con respecto a la forma de límite del WordArt. <b>False</b> si los caracteres del WordArt especificado mantienen la orientación original con respecto a la forma de límite.</summary>
+        <summary><b>True</b> si los caracteres del WordArt especificado giran 90 grados con relación a la forma que rodea el WordArt. <b>False</b> si los caracteres del WordArt especificado mantienen la orientación original con relación a la forma que los rodea.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el WordArt tiene texto horizontal, al establecer la propiedad <b>RotatedChars</b> en <b>msoTrue</b> gira los caracteres 90 grados en el sentido contrario. Si el WordArt contiene texto vertical, al establecer la propiedad <b>RotatedChars</b> en <b>msoFalse</b> gira los caracteres 90 grados a la derecha. Usar el <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> método para cambiar entre flujo de texto horizontal y vertical.</para>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> (método) y <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto y la propiedad <b>RotatedChars</b> y <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objeto afectan a la orientación de los caracteres y la dirección del flujo de texto en un objeto <b>Shape</b> que representa WordArt. Es podrán que deba experimentar para descubrir cómo combinar los efectos de estas propiedades y métodos para obtener el resultado que desea.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el WordArt tiene texto horizontal, al establecer la propiedad <b>RotatedChars</b> en <b>msoTrue</b> gira los caracteres 90 grados en el sentido contrario. Si el WordArt contiene texto vertical, al establecer la propiedad <b>RotatedChars</b> en <b>msoFalse</b> gira los caracteres 90 grados a la derecha. Utilice el <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> método para cambiar entre el flujo de texto horizontal y vertical.</para>
+          <para>El método y la propiedad del objeto y la propiedad <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>RotatedChars</b> y el método del objeto afectan a la orientación y dirección del carácter del flujo de texto en un objeto Shape que representa <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> WordArt. <b></b> Es podrán que deba experimentar para descubrir cómo combinar los efectos de estas propiedades y métodos para obtener el resultado que desea.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -506,11 +486,9 @@
       <Parameters />
       <Docs>
         <summary>Cambia el flujo de texto del WordArt especificado de horizontal a vertical o viceversa.</summary>
-        <remarks>
-          <para>Utilizar el método <b>ToggleVerticalText</b> intercambia los valores de la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> y <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> las propiedades del objeto <b>Shape</b> que representa el WordArt y deja el <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> y <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> propiedades sin cambios.</para>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> (método) y <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto y el <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> (propiedad) y el método <b>ToggleVerticalText</b> de la <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> objetos afectan a la orientación de carácter y la dirección del flujo de texto en una <b>forma</b> de objeto que representa el WordArt. Es podrán que deba experimentar para descubrir cómo combinar los efectos de estas propiedades y métodos para obtener el resultado que desea.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El uso <b>del método ToggleVerticalText</b> intercambia los valores de los y propiedades del objeto Shape que representa el WordArt y deja las <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> propiedades y sin <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> cambios.</para>
+          <para>El método y la propiedad del objeto y la propiedad y el método <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> <b>ToggleVerticalText</b> del objeto afectan <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> a <b></b> la orientación de caracteres y a la dirección del flujo de texto en un objeto Shape que representa WordArt. Es podrán que deba experimentar para descubrir cómo combinar los efectos de estas propiedades y métodos para obtener el resultado que desea.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tracking">
@@ -539,19 +517,18 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la relación del espacio horizontal asignado a cada carácter del WordArt especificado para el ancho del carácter. Puede ser un valor comprendido entre 0 (cero) al 5.</summary>
+        <summary>Devuelve o establece la relación entre el espacio horizontal asignado a cada carácter del WordArt especificado y el ancho del carácter. Puede ser un valor comprendido entre 0 (cero) y 5.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Valores grandes para esta propiedad indican amplio espacio entre caracteres; valores inferiores a 1 pueden producir superposición de caracteres.</para>
+        <remarks><para>Los valores grandes de esta propiedad especifican un amplio espacio entre caracteres; los valores inferiores a 1 pueden producir superposición de caracteres.</para>
           <para>En la tabla siguiente proporciona los valores de la propiedad <b>Tracking</b> que corresponden a los valores disponibles en la interfaz de usuario.</para>
           <list type="table">
             <item>
               <term>Muy estrecha</term>
-              <description>0,8</description>
+              <description>0.8</description>
             </item>
             <item>
               <term>Estrecha</term>
-              <description>0,9</description>
+              <description>0.9</description>
             </item>
             <item>
               <term>Normal</term>
@@ -566,8 +543,7 @@
               <description>1,5</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

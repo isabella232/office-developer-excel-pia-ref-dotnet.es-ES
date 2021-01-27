@@ -1,13 +1,5 @@
 <Type Name="SparkVerticalAxis" FullName="Microsoft.Office.Interop.Excel.SparkVerticalAxis">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fe955a98c00424a8f8a9fec57fcf8d6210bc302d" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575890" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SparkVerticalAxis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fe955a98c00424a8f8a9fec57fcf8d6210bc302d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009922" /></Metadata><TypeSignature Language="C#" Value="public interface SparkVerticalAxis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparkVerticalAxis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" />
   <TypeSignature Language="VB.NET" Value="Public Interface SparkVerticalAxis" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Representa la configuración de los ejes verticales de un grupo de minigráficos.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.SparkAxes.Vertical" />(propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> objeto para devolver la <see cref="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" /> objeto para el grupo de minigráficos.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.SparkAxes.Vertical" /> propiedad del objeto para devolver el objeto para el grupo de <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> <see cref="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" /> minigráficos.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,12 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -90,13 +78,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
-        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
+        <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks><para>De sólo <b>lectura de larga</b>.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomMaxScaleValue">
@@ -127,11 +113,9 @@
       <Docs>
         <summary>Obtiene o establece el valor máximo personalizado para el eje vertical de un minigráfico.</summary>
         <value>El valor máximo personalizado para el eje vertical de un minigráfico.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para>El <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.CustomMaxScaleValue" /> (propiedad) se puede devolver o establecer sólo cuando el <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.MaxScaleType" /> (propiedad) del especificado <see cref="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" /> objeto está establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlSparkScale.xlSparkScaleCustom" /> (3).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Lectura/escritura.</para>
+          <para>La propiedad sólo se puede devolver o establecer cuando la propiedad del <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.CustomMaxScaleValue" /> objeto especificado está establecida en <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.MaxScaleType" /> <see cref="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" /> <see cref="F:Microsoft.Office.Interop.Excel.XlSparkScale.xlSparkScaleCustom" /> (3).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomMinScaleValue">
@@ -161,12 +145,10 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el valor mínimo personalizado para el eje vertical de un minigráfico.</summary>
-        <value>El valor mínimo personalizado para el eje vertical de un minigráfico.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para>El <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.CustomMinScaleValue" /> (propiedad) se puede devolver o establecer sólo cuando el <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.MinScaleType" /> (propiedad) del especificado <see cref="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" /> objeto está establecido en <see cref="F:Microsoft.Office.Interop.Excel.XlSparkScale.xlSparkScaleCustom" /> (3).</para>
-          <para></para>
-        </remarks>
+        <value>Valor mínimo personalizado para el eje vertical de un minigráfico.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para>La propiedad sólo se puede devolver o establecer cuando la propiedad del <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.CustomMinScaleValue" /> objeto especificado está establecida en <see cref="P:Microsoft.Office.Interop.Excel.SparkVerticalAxis.MinScaleType" /> <see cref="T:Microsoft.Office.Interop.Excel.SparkVerticalAxis" /> <see cref="F:Microsoft.Office.Interop.Excel.XlSparkScale.xlSparkScaleCustom" /> (3).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxScaleType">
@@ -195,12 +177,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSparkScale</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece cómo se cambia la escala el valor máximo del eje vertical del minigráfico con respecto a otros minigráficos en el grupo.</summary>
-        <value>Especifica cómo se ajusta el valor máximo del eje vertical del minigráfico con respecto a otros minigráficos en el grupo.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece cómo se escala el valor máximo del eje vertical del minigráfico con respecto a otros minigráficos del grupo.</summary>
+        <value>Especifica cómo se escala el valor máximo del eje vertical del minigráfico con respecto a otros minigráficos del grupo.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinScaleType">
@@ -229,12 +209,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSparkScale</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece cómo se cambia la escala el valor mínimo del eje vertical del minigráfico con respecto a otros minigráficos en el grupo.</summary>
-        <value>Especifica cómo se ajusta el valor mínimo del eje vertical del minigráfico con respecto a otros minigráficos en el grupo.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece cómo se escala el valor mínimo del eje vertical del minigráfico con respecto a otros minigráficos del grupo.</summary>
+        <value>Especifica cómo se escala el valor mínimo del eje vertical del minigráfico con respecto a otros minigráficos del grupo.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -260,12 +238,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para el objeto especificado.</summary>
-        <value>El elemento primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> objeto para el objeto especificado.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el objeto <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> primario del objeto especificado.</summary>
+        <value>Objeto primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> del objeto especificado.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

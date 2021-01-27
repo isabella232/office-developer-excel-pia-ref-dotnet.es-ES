@@ -1,13 +1,5 @@
 <Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587671" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Slicer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010258" /></Metadata><TypeSignature Language="C#" Value="public interface Slicer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicer" />
   <TypeSignature Language="VB.NET" Value="Public Interface Slicer" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa una segmentación de datos en un libro.</summary>
-    <remarks>
-      <para>Cada <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto representa una segmentación de datos en un libro. Las segmentaciones de datos se usan para filtrar datos de informes de tabla dinámica o de orígenes de datos OLAP.</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> método para agregar una <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto a la <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> colección. Access la <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object que representa el botón seleccionado actualmente en una segmentación de datos, use la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Cada <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto representa una segmentación de datos de un libro. Las segmentaciones de datos se usan para filtrar datos en informes de tabla dinámica u orígenes de datos OLAP.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> método para agregar un objeto a la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> colección. Para obtener acceso al objeto que representa el botón seleccionado actualmente en una segmentación <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> de datos, utilice la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveItem">
@@ -60,11 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> object que representa el botón de segmentación de datos que está actualmente en el foco de la segmentación de datos especificado. Solo lectura.</summary>
+        <summary>Devuelve un objeto que representa el botón de segmentación de datos que está actualmente en el <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> foco para la segmentación de datos especificada. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>ActiveItem</b> devuelve un objeto <b>SlicerItem</b> si la segmentación de datos especificada tiene un foco y el control activo es un botón de la segmentación de datos (por ejemplo, el usuario puede navegar por los botones de la segmentación de datos con el teclado en este estado).</para>
-          <para>La propiedad <b>ActiveItem</b> devuelve <b>Nothing</b> (una referencia nula (Nothing en Visual Basic) en C#) en las siguientes circunstancias:</para>
+        <remarks><para>La propiedad <b>ActiveItem</b> devuelve un objeto <b>SlicerItem</b> si la segmentación de datos especificada tiene un foco y el control activo es un botón de la segmentación de datos (por ejemplo, el usuario puede navegar por los botones de la segmentación de datos con el teclado en este estado).</para>
+          <para>La <b>propiedad ActiveItem</b> devolverá <b>Nothing</b> (una referencia nula (Nothing en Visual Basic) en C#) en las siguientes circunstancias:</para>
           <list type="bullet">
             <item>
               <description>La segmentación de datos especificada no tiene foco (no está seleccionada o activa).</description>
@@ -76,8 +65,7 @@
               <description>La segmentación de datos especificada tiene foco y el control activo es el botón <b>Borrar filtro</b> en el encabezado de la segmentación de datos.</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -103,12 +91,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -137,13 +123,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el título de la segmentación de datos especificado.</summary>
-        <value>El título de la segmentación de datos especificado.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para>El valor especificado para la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> (propiedad) se muestra en el encabezado de la segmentación de datos. Si el <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> (propiedad) no se especifica, Excel utiliza el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> propiedad de subyacente <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objeto.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece el título de la segmentación de datos especificada.</summary>
+        <value>Título de la segmentación de datos especificada.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para>El valor especificado para la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> propiedad se muestra en el encabezado de la segmentación de datos. Si no <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> se especifica la propiedad, Excel usa el valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> propiedad del objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> subyacente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnWidth">
@@ -173,12 +157,10 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el ancho, en puntos, de cada columna de la segmentación de datos.</summary>
-        <value>El ancho, en puntos, de cada columna de la segmentación de datos.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para>El <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto se ajusta automáticamente basándose en el valor de la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> (propiedad) y el <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> (propiedad).</para>
-          <para></para>
-        </remarks>
+        <value>Ancho, en puntos, de cada columna de la segmentación de datos.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para>La propiedad del objeto se ajusta automáticamente en <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> función del valor de la propiedad y de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -229,13 +211,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <b>entero</b> de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
-        <value>De 32 bits <b>número entero</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. El <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
+        <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
+        <remarks><para>De sólo <b>lectura de longitud</b>.</para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -284,7 +264,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Elimina la segmentación de datos y lo quita de la asociada <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> colección.</summary>
+        <summary>Elimina la segmentación de datos y la quita de la colección <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> asociada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,15 +294,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si la segmentación de datos especificada se puede mover o cambiar el tamaño mediante el uso de la interfaz de usuario.</summary>
-        <value>
-          <b>true</b> si la segmentación de datos especificada se puede mover o cambiar el tamaño mediante el uso de la interfaz de usuario; en caso contrario, <b>false</b>. El valor predeterminado es <b>false</b>.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
+        <summary>Obtiene o establece si la segmentación de datos especificada se puede mover o cambiar de tamaño mediante la interfaz de usuario.</summary>
+        <value><b>true</b> si la segmentación de datos especificada se puede mover o cambiar de tamaño mediante la interfaz de usuario; de lo contrario, <b>false</b>. El valor predeterminado es <b>false</b>.</value>
+        <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si la segmentación de datos no se puede mover o cambiar el tamaño mediante la selección de bordes o controladores en la interfaz de usuario; en caso contrario, <b>false</b>. El valor predeterminado es <b>false</b>. Configuración de la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> sólo la interfaz de usuario afecta a la propiedad en <b>true</b> . Mover o cambiar el tamaño de la segmentación de datos mediante el establecimiento de propiedades, como el <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />, <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />, o <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> no esté deshabilitado el objeto desde el código.</para>
-          <para></para>
-        </remarks>
+            <b>true</b> si no se puede mover o cambiar el tamaño de la segmentación de datos seleccionando bordes o controladores en la interfaz de usuario; de lo <b>contrario, false</b>. El valor predeterminado es <b>False</b>. Establecer la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> propiedad en <b>true</b> afecta solo a la interfaz de usuario. Mover o cambiar el tamaño de la segmentación de datos estableciendo propiedades como , , o las propiedades del objeto desde <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" /> el código no está <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> deshabilitada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHeader">
@@ -352,14 +329,11 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece si el encabezado que muestra la segmentación de datos <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> está visible.</summary>
-        <value>
-          <b>true</b> si el encabezado que muestra la segmentación de datos <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> está visible; en caso contrario, <b>false</b>. El valor predeterminado es <b>true</b>.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
+        <value><b>true</b> si el encabezado que muestra la segmentación de datos <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> está visible; de lo contrario, <b>false</b>. The default is <b>true</b>.</value>
+        <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si el encabezado está visible; en caso contrario, <b>false</b>. El valor predeterminado es <b>true</b>.</para>
-          <para></para>
-        </remarks>
+            <b>true</b> si el encabezado está visible; de lo <b>contrario, false</b>. El valor predeterminado es <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -388,12 +362,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el alto de la segmentación de datos especificado, en puntos.</summary>
-        <value>El alto de la segmentación de datos especificado, en puntos.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece el alto de la segmentación de datos especificada, en puntos.</summary>
+        <value>Alto de la segmentación de datos especificada, en puntos.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -422,12 +394,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la posición horizontal de la segmentación de datos especificado, en puntos, con relación a la esquina superior izquierda de la celda A1 de una hoja de cálculo.</summary>
-        <value>La posición horizontal de la segmentación de datos especificado, en puntos, con relación a la esquina superior izquierda de la celda A1 de una hoja de cálculo.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece la posición horizontal de la segmentación de datos especificada, en puntos, con respecto a la esquina superior izquierda de la celda A1 de una hoja de cálculo.</summary>
+        <value>Posición horizontal de la segmentación de datos especificada, en puntos, con respecto a la esquina superior izquierda de la celda A1 de una hoja de cálculo.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -456,15 +426,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si la segmentación de datos especificado se puede modificar cuando la hoja que lo contiene está protegida.</summary>
-        <value>
-          <b>true</b> si la segmentación de datos especificado se puede modificar cuando la hoja que contiene está protegida; en caso contrario, <b>false</b>. El valor predeterminado es <b>true</b></value>
-        <remarks>
-          <para>Lectura y escritura.</para>
+        <summary>Obtiene o establece si se puede modificar la segmentación de datos especificada cuando la hoja que la contiene está protegida.</summary>
+        <value><b>true</b> si la segmentación de datos especificada se puede modificar cuando la hoja que la contiene está protegida; de lo contrario, <b>false</b>. El valor predeterminado es <b>true</b></value>
+        <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si la segmentación de datos está bloqueado cuando la hoja está protegida. <b>false</b> si la segmentación de datos se puede modificar cuando la hoja está protegida. El valor predeterminado es <b>true</b>.</para>
-          <para></para>
-        </remarks>
+            <b>true</b> si la segmentación de datos está bloqueada cuando la hoja está protegida. <b>false</b> si la segmentación de datos se puede modificar cuando la hoja está protegida. El valor predeterminado es <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -493,13 +460,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el nombre de la segmentación de datos especificado.</summary>
-        <value>El nombre de la segmentación de datos especificado.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para>El nombre debe ser único entre todas las segmentaciones de datos dentro de un libro. El nombre predeterminado utiliza el texto que el nombre del campo del campo dinámico en el que se basa la segmentación de datos, y si es necesario, anexa un espacio y el número al crear un nombre único.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece el nombre de la segmentación de datos especificada.</summary>
+        <value>Nombre de la segmentación de datos especificada.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para>El nombre deber ser único entre todas las segmentaciones de datos de un libro. El nombre predeterminado usa el texto que el nombre del campo dinámico en el que se basa la segmentación de datos y, si es necesario, anexa un espacio y un número para que el nombre sea único.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberOfColumns">
@@ -528,13 +493,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el número de columnas en la segmentación de datos especificado.</summary>
-        <value>El número de columnas de la segmentación de datos especificado. El valor predeterminado es 1.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
+        <summary>Obtiene o establece el número de columnas de la segmentación de datos especificada.</summary>
+        <value>Número de columnas de la segmentación de datos especificada. El valor predeterminado es 1.</value>
+        <remarks><para>Lectura/escritura.</para>
           <para>El valor predeterminado es 1.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -560,12 +523,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object que representa la hoja que contiene la segmentación de datos.</summary>
-        <value>El <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> object que representa la hoja que contiene la segmentación de datos.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objeto que representa la hoja que contiene la segmentación de datos.</summary>
+        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> que representa la hoja que contiene la segmentación de datos.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RowHeight">
@@ -594,13 +555,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el alto, en puntos, de cada fila de la segmentación de datos especificado.</summary>
-        <value>El alto, en puntos, de cada fila de la segmentación de datos especificado.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para>Esta propiedad no afecta a la altura de la segmentación de datos. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto para devolver o establecer el alto de la segmentación de datos.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece el alto, en puntos, de cada fila de la segmentación de datos especificada.</summary>
+        <value>Alto, en puntos, de cada fila de la segmentación de datos especificada.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para>Esta propiedad no afecta a la altura de la segmentación de datos. Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> propiedad del objeto para devolver o establecer el alto de la <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> segmentación de datos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shape">
@@ -626,13 +585,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto asociado con la segmentación de datos especificado.</summary>
-        <value>El <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto asociado con la segmentación de datos especificado.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para>Algunas propiedades de la segmentación de datos, como el <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> (propiedad), sólo se puede acceder desde el <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto asociado con la segmentación de datos.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto asociado a la segmentación de datos especificada.</summary>
+        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> asociado a la segmentación de datos especificada.</value>
+        <remarks><para>Solo lectura.</para>
+          <para>Solo se puede tener acceso a algunas propiedades de la segmentación de datos, como la propiedad, desde <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> el objeto asociado a la <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> segmentación de datos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCache">
@@ -658,12 +615,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerCache</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto asociado con la segmentación de datos.</summary>
-        <value>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto asociado con la segmentación de datos.</value>
-        <remarks>
-          <para>Solo lectura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto asociado a la segmentación de datos.</summary>
+        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> asociado a la segmentación de datos.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCacheLevel">
@@ -689,13 +644,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SlicerCacheLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto asociado con la segmentación de datos.</summary>
-        <value>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto asociado con la segmentación de datos.</value>
-        <remarks>
-          <para>Solo lectura.</para>
+        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto asociado a la segmentación de datos.</summary>
+        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> asociado a la segmentación de datos.</value>
+        <remarks><para>Solo lectura.</para>
           <para>Esta propiedad solo se aplica a los orígenes de datos OLAP.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCacheType">
@@ -721,7 +674,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCacheType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el tipo de la memoria caché de segmentación de datos: segmentación de datos o de escala de tiempo. <b>XlSlicerCacheType</b> Sólo lectura</summary>
+        <summary>Devuelve el tipo de caché de segmentación de datos: segmentación de datos o escala de tiempo. <b>XlSlicerCacheType</b> Solo lectura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -752,12 +705,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el estilo aplicado actualmente a la segmentación de datos especificado.</summary>
-        <value>El estilo aplicado actualmente a la segmentación de datos especificado.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece el estilo aplicado actualmente a la segmentación de datos especificada.</summary>
+        <value>Estilo aplicado actualmente a la segmentación de datos especificada.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TimelineViewState">
@@ -783,7 +734,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TimelineViewState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El estado de la escala de tiempo específicos de la segmentación de datos. <b>TimelineViewState</b> Sólo lectura</summary>
+        <summary>Estado específico de la escala de tiempo de la segmentación de datos. <b>TimelineViewState</b> Solo lectura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -814,12 +765,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la posición vertical de la segmentación de datos especificado, en puntos, con relación a la esquina superior izquierda de la celda A1 de una hoja de cálculo.</summary>
-        <value>La posición vertical de la segmentación de datos especificado, en puntos, con relación a la esquina superior izquierda de la celda A1 de una hoja de cálculo.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece la posición vertical de la segmentación de datos especificada, en puntos, con respecto a la esquina superior izquierda de la celda A1 de una hoja de cálculo.</summary>
+        <value>Posición vertical de la segmentación de datos especificada, en puntos, con respecto a la esquina superior izquierda de la celda A1 de una hoja de cálculo.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -848,12 +797,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el ancho de la segmentación de datos especificado, en puntos.</summary>
-        <value>El ancho de la segmentación de datos especificado, en puntos.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para></para>
-        </remarks>
+        <summary>Obtiene o establece el ancho de la segmentación de datos especificada, en puntos.</summary>
+        <value>Ancho de la segmentación de datos especificada, en puntos.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

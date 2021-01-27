@@ -1,13 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Excel.TickLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579572" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009621" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -29,12 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa los rótulos de marcas de graduación asociados con marcas de graduación de un eje del gráfico.</summary>
-    <remarks>
-      <para>Este objeto no es una colección. No hay ningún objeto que representa un rótulo de marca de graduación único; debe devolver todos los rótulos de marca de graduación como una unidad. Texto del rótulo de marca de graduación del eje de categorías proviene del nombre de la categoría asociada en el gráfico. El texto del rótulo predeterminada marca de graduación del eje de categorías es el número que indica la posición de la categoría con respecto al extremo izquierdo de este eje. Para cambiar el número de graduación sin rótulo marcas entre rótulos de marcas de graduación, debe cambiar el <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> (propiedad) para el eje de categorías. Texto del rótulo de marca de graduación para el eje de valores se calcula según el <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />, <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />, y <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> las propiedades del eje de valores. Para cambiar el texto del rótulo de marca de graduación del eje de valores, debe cambiar los valores de estas propiedades.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> (propiedad) para devolver el objeto <b>TickLabels</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Representa los rótulos de marcas de graduación asociados con las marcas de graduación de un eje de gráficos.</summary>
+    <remarks><para>Este objeto no es una colección. No hay ningún objeto que represente una sola etiqueta de marca de graduación; debe devolver todas las etiquetas de marcas de graduación como una unidad. El texto de la etiqueta de marcas de graduación del eje de categorías proviene del nombre de la categoría asociada en el gráfico. El texto de la etiqueta de marca de graduación predeterminado para el eje de categorías es el número que indica la posición de la categoría en relación con el extremo izquierdo de este eje. Para cambiar el número de marcas de graduación sin etiquetar entre las etiquetas de marcas de graduación, debe cambiar la propiedad <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> del eje de categorías. El texto del rótulo de marcas de graduación del eje de valores se calcula basándose en <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> el eje de valores y en las propiedades del eje de <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> valores. Para cambiar el texto del rótulo de marcas de graduación del eje de valores, debe cambiar los valores de estas propiedades.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> propiedad para devolver el objeto <b>TickLabels</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -63,10 +53,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la alineación para el rótulo de graduación especificados.</summary>
+        <summary>Devuelve o establece la alineación de la etiqueta de graduación especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Alignment</b> puede ser una de estas <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> constantes:</para>
+        <remarks><para>La <b>propiedad Alignment</b> puede ser una de estas <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" /> constantes:</para>
           <para>
             <b>XlHAlignCenter</b>
           </para>
@@ -76,8 +65,7 @@
           <para>
             <b>XlHAlignRight</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -103,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,8 +128,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto del objeto cambia el tamaño de fuente cuando cambia el tamaño del objeto. El valor predeterminado es <b>True</b>.</summary>
+        <summary><b>True</b> si el tamaño de la fuente de texto del objeto cambia cuando cambia el tamaño del objeto. El valor predeterminado es <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,13 +156,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -255,7 +240,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa la fuente del objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto que representa la fuente del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -283,10 +268,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el formato de los elementos de gráfico. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>Devuelve el formato del elemento de gráfico. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,14 +299,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece si un eje es multinivel o no.  Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>El valor predeterminado de esta propiedad es <b>True</b>.</para>
-          <para></para>
-        </remarks>
+        <summary>Establece si un eje es multinivel o no.  Lectura/escritura.</summary>
+        <value><b>Valor booleano</b></value>
+        <remarks><para>El valor predeterminado de esta propiedad es <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -382,10 +361,8 @@
       <Docs>
         <summary>Devuelve o establece el código de formato para el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -414,8 +391,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el formato de número está vinculado a las celdas (de modo que el formato de número cambie en los rótulos cuando cambie en las celdas).</summary>
+        <summary><b>True</b> si el formato de número está vinculado a las celdas (de modo que el formato de número cambie en los rótulos cuando cambie en las celdas).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -477,12 +453,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la distancia entre los niveles de rótulos y la distancia entre el primer nivel y la línea del eje.</summary>
+        <summary>Devuelve o establece la distancia entre los niveles de etiquetas y la distancia entre el primer nivel y la línea del eje.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La distancia predeterminada es 100%, que representa el espacio predeterminado entre los rótulos de ejes y la línea de ejes. El valor puede ser un porcentaje expresado en números enteros entre 0 y 1000 con respecto al tamaño de fuente del rótulo de ejes.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La distancia predeterminada es 100%, que representa el espacio predeterminado entre los rótulos de ejes y la línea de ejes. El valor puede ser un porcentaje expresado en números enteros entre 0 y 1000 con respecto al tamaño de fuente del rótulo de ejes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -511,7 +485,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTickLabelOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La orientación del texto. Puede ser un valor entero entre – 90 y 90 grados o en uno de los <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> constantes.</summary>
+        <summary>Orientación del texto. Puede ser un valor entero entre -90 y 90 grados o una de las <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> constantes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -570,13 +544,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el orden de lectura para el objeto especificado.</summary>
+        <summary>Devuelve o establece el orden de lectura del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>ReadingOrder</b> puede ser una de las constantes siguientes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>.</para>
+        <remarks><para>La <b>propiedad ReadingOrder</b> puede ser una de las siguientes constantes: <b>xlRTL</b> (de derecha a izquierda), <b>xlLTR</b> (de izquierda a derecha) o <b>xlContext</b>.</para>
           <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
