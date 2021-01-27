@@ -1,13 +1,5 @@
 <Type Name="LinearGradient" FullName="Microsoft.Office.Interop.Excel.LinearGradient">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="82c4b43f65abfbbe4c1e37be6fcbcaa9b08edec1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573818" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LinearGradient" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="82c4b43f65abfbbe4c1e37be6fcbcaa9b08edec1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000074" /></Metadata><TypeSignature Language="C#" Value="public interface LinearGradient" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LinearGradient" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.LinearGradient" />
   <TypeSignature Language="VB.NET" Value="Public Interface LinearGradient" />
@@ -29,20 +21,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>El <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto transiciones a través de una serie de colores de forma lineal siguiendo un ángulo específico.</summary>
-    <remarks>
-      <para>
-        <b>Nota</b>: algunas cosas que debe considerar cuando se trabaja con <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objetos</para>
+    <summary>El <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto pasa a través de una serie de colores de forma lineal a lo largo de un ángulo específico.</summary>
+    <remarks><para>
+        <b>Nota:</b>Algunos aspectos que se deben tener en cuenta al trabajar con <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objetos</para>
       <list type="bullet">
         <item>
-          <description>Intentar acceso una <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> (propiedad) de un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que no tiene un relleno degradado existente, se producirá un error en tiempo de ejecución.  Debe tener en cuenta el <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> (propiedad) antes de obtener acceso a la propiedad Gradient.</description>
+          <description>Si se intenta obtener acceso a una propiedad de un objeto que no tiene un relleno degradado existente, se producirá <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> un error en tiempo de <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> ejecución.  Tenga en cuenta la propiedad <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> antes de tener acceso a la propiedad Gradient.</description>
         </item>
         <item>
-          <description>Si <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> se cambia de un tipo de degradado a un tipo sin degradado, el <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto Gradient recibirá los valores predeterminados.</description>
+          <description>Si se cambia de un tipo de degradado a un tipo no degradado, el objeto <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />  <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> se rellenará con los valores predeterminados.</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -68,9 +58,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
-        <value>
-          <b>Aplicación</b> (vea lo anterior)</value>
+        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
+        <value><b>Aplicación</b> (vea más arriba)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,10 +86,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.ColorStops" /> para el <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto. Solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ColorStops" />
-        </value>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.ColorStops" /> <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto. Solo lectura</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ColorStops" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,14 +114,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits equivalente a un valor en el <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad Creator está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. </para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve un entero de 32 bits equivalente a un valor en el que indica la aplicación en la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> que se creó este objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad Creator está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Degree">
@@ -163,14 +146,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ángulo del relleno degradado lineal en una selección. Es de lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Utiliza valores comprendidos entre 0 y 360.</para>
-          <para></para>
-        </remarks>
+        <summary>Ángulo del relleno degradado lineal en una selección. Lectura/escritura</summary>
+        <value><b>Double</b></value>
+        <remarks><para>Utiliza valores comprendidos entre 0 y 360.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -197,9 +176,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el objeto primario del objeto especificado. Solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
