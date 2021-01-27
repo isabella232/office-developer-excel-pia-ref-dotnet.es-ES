@@ -1,13 +1,5 @@
 <Type Name="OLEFormat" FullName="Microsoft.Office.Interop.Excel.OLEFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="61a7c8fcda1ae1bb96bf7ac4ce6f4954d1baef24" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584374" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="61a7c8fcda1ae1bb96bf7ac4ce6f4954d1baef24" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011336" /></Metadata><TypeSignature Language="C#" Value="public interface OLEFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEFormat" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Contiene las propiedades de un objeto OLE.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.Shape.OLEFormat" /> (propiedad) para devolver el objeto <b>OLEFormat</b> .</para>
-      <para>Si el <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto no representa un objeto vinculado o incrustado, la propiedad <b>OLEFormat</b> falla.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.OLEFormat" /> propiedad para devolver el objeto <b>OLEFormat</b> .</para>
+      <para>Si el objeto no representa un objeto vinculado o incrustado, se produce un error en <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>la propiedad OLEFormat.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -85,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,13 +103,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -228,8 +216,7 @@
         <Parameter Name="Verb" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Verb">
-          <b>Objeto</b>de opcional. El verbo que debe actuar el servidor del objeto OLE. Si se omite este argumento, se envía el verbo predeterminado. Los verbos disponibles están determinados por la aplicación del objeto origen. Los verbos habituales para un objeto OLE son Open y Primary (representado por la <see cref="T:Microsoft.Office.Interop.Excel.XlOLEVerb" /> constantes <b>xlOpen</b> y <b>xlPrimary</b>).</param>
+        <param name="Verb">Optional <b>Object</b>. Verbo sobre el cual el servidor del objeto OLE debe actuar. Si no se especifica este argumento, se envía el verbo predeterminado. Los verbos disponibles están determinados por la aplicación de origen del objeto. Los verbos típicos de un objeto OLE son Open y Primary (representados por las constantes <see cref="T:Microsoft.Office.Interop.Excel.XlOLEVerb" /> <b>xlOpen</b> y <b>xlPrimary</b>).</param>
         <summary>Envía un verbo al servidor del objeto OLE especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>

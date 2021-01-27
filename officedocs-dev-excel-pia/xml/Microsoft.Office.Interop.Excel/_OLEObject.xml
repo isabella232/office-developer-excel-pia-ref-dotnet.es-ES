@@ -1,13 +1,5 @@
 <Type Name="_OLEObject" FullName="Microsoft.Office.Interop.Excel._OLEObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="af49a80aff9121295165535f61d74b6cd1d1256b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579978" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OLEObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="af49a80aff9121295165535f61d74b6cd1d1256b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012687" /></Metadata><TypeSignature Language="C#" Value="public interface _OLEObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OLEObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._OLEObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OLEObject" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Esto es una interfaz principal en una coclase COM que requiere código administrado para la interoperabilidad con el objeto COM correspondiente. Use esta interfaz principal sólo cuando el método que desea usar comparte el mismo nombre que un evento del objeto COM; en este caso, se convierte en esta interfaz para llamar al método y convierte en la interfaz de eventos más reciente para conectar con el evento. De lo contrario, use la interfaz de .NET que se deriva de la coclase COM para tener acceso a los métodos, propiedades y eventos del objeto COM. Para obtener más información sobre el objeto COM, vea <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" />.</summary>
+    <summary>Es una interfaz principal en una coclase COM que el código administrado necesita para la interoperabilidad con el objeto COM correspondiente. Use esta interfaz principal únicamente cuando el método que desee usar comparta el mismo nombre que un evento del objeto COM; en este caso, realice la conversión a esta interfaz para llamar al método y realice la conversión a la última versión de la interfaz de eventos para conectarse al evento. En caso contrario, use la interfaz .NET derivada de la coclase COM para obtener acceso a los métodos, propiedades y eventos del objeto COM. Para obtener más información acerca del objeto COM, vea <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -119,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Solo lectura.</summary>
+        <summary>Esta propiedad devuelve un objeto que representa al creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación <see cref="T:Microsoft.Office.Interop.Excel.Application" /> de dicho objeto). Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,13 +142,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Es <b>True</b> si el objeto OLE se carga automáticamente cuando se abre el libro que lo contiene. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Es <b>True</b> si el objeto OLE se carga automáticamente cuando se abre el libro que lo contiene. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Los controles ActiveX no tienen en cuenta esta propiedad. Los controles ActiveX siempre se cargan cuando se abre un libro.</para>
-          <para>Para la mayoría de los tipos de objeto OLE, esta propiedad no debe establecerse en <b>True</b>. De forma predeterminada, la propiedad <b>AutoLoad</b> se establece en <b>False</b> para objetos OLE nuevos. Esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar objetos OLE automáticamente es que, para objetos que representan datos volátiles, los vínculos a los datos de origen pueden restablecerse inmediatamente y los objetos se pueden representar de nuevo si es necesario.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Los controles ActiveX no tienen en cuenta esta propiedad. Los controles ActiveX siempre se cargan cuando se abre un libro.</para>
+          <para>Para la mayoría de los tipos de objetos OLE, esta propiedad no debe establecerse en <b>True</b>. De forma predeterminada, <b>la propiedad AutoLoad</b> está establecida en <b>False</b> para nuevos objetos OLE; esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar automáticamente objetos OLE es que, para los objetos que representan datos volátiles, los vínculos a los datos de origen se pueden restablecer inmediatamente y los objetos se pueden volver a representar si es necesario.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoUpdate">
@@ -185,8 +175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto OLE se actualiza automáticamente al cambiar el origen. Válido sólo si el objeto está vinculado (su <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.OLEType" /> (propiedad) debe ser <b>xlOLELink</b>). <b>Boolean</b> de sólo lectura.</summary>
+        <summary>Es <b>True</b> si el objeto OLE se actualiza automáticamente al cambiar el origen. Sólo es válido si el objeto está vinculado (su <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.OLEType" /> propiedad debe ser <b>xlOLELink</b>). <b>Booleano</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,7 +203,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object que representa el borde del objeto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa el borde del objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina inferior derecha del objeto. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa la celda que se encuentra debajo de la esquina inferior derecha del objeto. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -322,8 +311,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />. Especifica cómo se debe copiar la imagen.</param>
-        <param name="Format">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />. El formato de la imagen.</param>
+        <param name="Appearance">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> . Especifica cómo se debe copiar la imagen.</param>
+        <param name="Format">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> . Formato de la imagen.</param>
         <summary>Copia el objeto seleccionado en el Portapapeles como una imagen. <b>Objeto</b>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -352,12 +341,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. De sólo lectura <b>xlCreatorCode</b>.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. <b>XlCreatorCode de solo lectura.</b></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -383,10 +370,8 @@
       <Docs>
         <summary>Corta el objeto y lo pega en el Portapapeles o en un destino especificado.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Sólo pueden cortarse los gráficos incrustados.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Sólo pueden cortarse los gráficos incrustados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -467,7 +452,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Es <b>True</b> si el objeto está habilitado. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Es <b>True</b> si el objeto está habilitado. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -498,7 +483,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Alto del objeto, en puntos. Lectura y escritura <b>doble</b>.</summary>
+        <summary>Alto del objeto, en puntos. <b>Double</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,7 +511,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de índice del objeto contenido en el conjunto de objetos similares. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve el número de índice del objeto contenido en el conjunto de objetos similares. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -554,7 +539,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object que representa el interior del objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que representa el interior del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -585,12 +570,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La distancia, en puntos, desde el borde izquierdo del objeto al borde izquierdo de la columna A (en una hoja de cálculo) o al borde izquierdo del área del gráfico (en un gráfico). Lectura y escritura <b>doble</b>.</summary>
+        <summary>La distancia, en puntos, desde el borde izquierdo del objeto al borde izquierdo de la columna A (en una hoja de cálculo) o al borde izquierdo del área del gráfico (en un gráfico). <b>Double</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la ventana está maximizada, esta propiedad devuelve un número negativo que varía según el ancho del borde ventana. Al establecer esta propiedad en 0 (cero) hará que la ventana de un poco más pequeña de lo que sería si la ventana de la aplicación estuviera maximizada. En otras palabras, si la propiedad <b>Left</b> es 0 (cero), el borde izquierdo de la ventana principal de Microsoft Excel apenas estará visible en la pantalla.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si la ventana está maximizada, esta propiedad devuelve un número negativo que varía según el ancho del borde de la ventana. Si se establece esta propiedad en 0 (cero), la ventana será un poco más pequeña de lo que sería si se maximizara la ventana de la aplicación. En otras palabras, si la propiedad <b>Left</b> es 0 (cero), el borde izquierdo de la ventana principal de Microsoft Excel apenas estará visible en la pantalla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkedCell">
@@ -619,12 +602,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el rango de la hoja de cálculo vinculado al valor del control. Si sitúa un valor en la celda, el control toma dicho valor. De la misma forma, si el valor del control cambia, ese valor también se coloca en la celda. Valor <b>String</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece el rango de la hoja de cálculo vinculado al valor del control. Si sitúa un valor en la celda, el control toma dicho valor. De la misma forma, si el valor del control cambia, ese valor también se coloca en la celda. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>No es posible utilizar esta propiedad con cuadros de lista de selección múltiple.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>No es posible utilizar esta propiedad con cuadros de lista de selección múltiple.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListFillRange">
@@ -653,13 +634,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el rango de hoja de cálculo que se utiliza para rellenar el cuadro de lista especificado. Al establecer esta propiedad, destruye cualquier lista existente en el cuadro de lista. <b>String</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece el intervalo de la hoja de cálculo empleado para rellenar el cuadro de lista especificado. Al establecer esta propiedad desaparece cualquier lista existente en el cuadro de lista. Valor <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Excel lee el contenido de cada celda del rango y lo coloca en el cuadro de lista. Esta lista controla los cambios producidos en las celdas del rango.</para>
-          <para>Si se ha creado la lista en el cuadro de lista con el <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> (método), esta propiedad devuelve una cadena vacía ("").</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Microsoft Excel lee el contenido de cada celda del rango y lo coloca en el cuadro de lista. Esta lista controla los cambios producidos en las celdas del rango.</para>
+          <para>Si la lista del cuadro de lista se creó con el <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> método, esta propiedad devuelve una cadena vacía ("").</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -688,8 +667,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto está bloqueado, <b>False</b> si el objeto se puede modificar cuando la hoja está protegida. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si el objeto está bloqueado, <b>False</b> si el objeto se puede modificar cuando la hoja está protegida. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -748,7 +726,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto de automatización OLE asociado a este objeto OLE. Valor <b>Object</b> de sólo lectura.</summary>
+        <summary>Devuelve el objeto de automatización OLE asociado a este objeto OLE. Read-only <b>objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -776,7 +754,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el tipo de objeto OLE. Puede ser una de las siguientes constantes <b>XlOLEType</b> : <b>xlOLELink</b> o <b>xlOLEEmbed</b>. Devuelve <b>xlOLELink</b> si el objeto está vinculado (existe fuera del archivo) o <b>xlOLEEmbed si el objeto está incrustado</b> (está contenido totalmente dentro del archivo). Read-only <b>objeto</b>.</summary>
+        <summary>Devuelve el tipo de objeto OLE. Puede ser una de las siguientes constantes <b>XlOLEType</b>: <b>xlOLELink</b> o <b>xlOLEEmbed</b>. Devuelve <b>xlOLELink</b> si el objeto está vinculado (existe fuera del archivo) o <b>devuelve xlOLEEmbed</b> si el objeto está incrustado (está totalmente incluido en el archivo). Read-only <b>objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -815,28 +793,20 @@
       <Docs>
         <summary>Devuelve o establece el nombre de una macro que se ejecuta al hacer clic en el objeto especificado. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Al establecer esta propiedad para un elemento de menú, se reemplaza la información de la ayuda personalizada del elemento por la información específica de la macro asignada.</para>
-          <para></para>
-        </remarks>
-        <example>
-          <para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
+        <remarks><para>Al establecer esta propiedad para un elemento de menú, se reemplaza la información de la ayuda personalizada del elemento por la información específica de la macro asignada.</para>
+          <para> </para></remarks>
+        <example><para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
-&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
-        </example>
-        <example>
-          <para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
+&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code></example>
+        <example><para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
-&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
-        </example>
-        <example>
-          <para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
+&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code></example>
+        <example><para>Este ejemplo hace que Microsoft Excel ejecute el procedimiento ShapeClick siempre que se haga clic en la forma uno.</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
-&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -862,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -893,10 +863,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la forma en que el objeto está unido a las celdas situadas debajo de él. Lectura/Escritura <b>Objeto</b>.</summary>
+        <summary>Devuelve o establece la forma en que el objeto se adjunta a las celdas debajo de él. Lectura/Escritura<b>Objeto</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilice una de las constantes siguientes:</para>
+        <remarks><para>Use una de las siguientes constantes:</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -906,8 +875,7 @@
           <para>
             <b>xlMoveAndSize</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintObject">
@@ -936,7 +904,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Es <b>True</b> si el objeto se imprimirá junto con el documento. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Es <b>True</b> si el objeto se imprimirá junto con el documento. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -964,7 +932,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve los identificadores programáticos del objeto. Valor <b>String</b> de sólo lectura.</summary>
+        <summary>Devuelve los identificadores programáticos del objeto. <b>String</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -991,8 +959,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">
-          <b>Objeto</b>de opcional. <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
+        <param name="Replace">Optional <b>Object</b>. <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
         <summary>Selecciona el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1050,8 +1017,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la fuente es una fuente de sombra o si el objeto tiene una sombra. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si la fuente es una fuente de sombra o si el objeto tiene una sombra. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1079,7 +1045,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object que representa el objeto u objetos especificados. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto que representa el objeto u objetos especificados. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1141,7 +1107,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La distancia, en puntos, desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o la parte superior del área del gráfico (en un gráfico). Lectura y escritura <b>doble</b>.</summary>
+        <summary>Distancia, en puntos, desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o la parte superior del área del gráfico (en un gráfico). <b>Double</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1169,7 +1135,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object que representa la celda que se encuentra debajo de la esquina superior izquierda del objeto especificado. Solo lectura.</summary>
+        <summary>Devuelve un objeto que representa la celda que se encuentra debajo de la <see cref="T:Microsoft.Office.Interop.Excel.Range" /> esquina superior izquierda del objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1222,7 +1188,7 @@
         <Parameter Name="Verb" Type="Microsoft.Office.Interop.Excel.XlOLEVerb" />
       </Parameters>
       <Docs>
-        <param name="Verb">Opcional <b>XlOLEVerb</b>. El verbo que debe actuar el servidor del objeto OLE. Si se omite este argumento, se envía el verbo predeterminado. Los verbos disponibles están determinados por la aplicación del objeto origen. Los verbos habituales para un objeto OLE son Open y Primary (representados por las constantes <b>XlOLEVerb</b><b>xlOpen</b> y <b>xlPrimary</b>).</param>
+        <param name="Verb"><b>XlOLEVerb opcional.</b> Verbo sobre el cual el servidor del objeto OLE debe actuar. Si no se especifica este argumento, se envía el verbo predeterminado. Los verbos disponibles están determinados por la aplicación de origen del objeto. Los verbos habituales para un objeto OLE son Open y Primary (representados por las constantes <b>XlOLEVerb</b><b>xlOpen</b> y <b>xlPrimary</b>).</param>
         <summary>Envía un verbo al servidor del objeto OLE especificado.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1285,7 +1251,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El ancho del objeto en puntos. Lectura y escritura <b>doble</b>.</summary>
+        <summary>El ancho del objeto, en puntos. <b>Double</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1313,12 +1279,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la posición del orden z del objeto. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve la posición del objeto en el orden z. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>En cualquier colección de objetos, el objeto en la parte posterior del orden z es <paramref name="collection" />(1), y el objeto en la parte delantera del orden z es <paramref name="collection" />(<paramref name="collection" />.<b> Contar</b>).</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En cualquier colección de objetos, el objeto situado en la parte posterior del orden z es (1) y el objeto situado delante del orden <paramref name="collection" /> z <paramref name="collection" /> es ( <paramref name="collection" /> .<b> Count</b>).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

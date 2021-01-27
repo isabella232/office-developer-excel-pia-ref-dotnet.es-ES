@@ -1,13 +1,5 @@
 <Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584731" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011434" /></Metadata><TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Names implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Names" />
   <TypeSignature Language="VB.NET" Value="Public Interface Names&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objetos de la aplicación o el libro. Cada objeto <b>Name</b> representa un nombre definido para un rango de celdas. Los nombres pueden ser integrados, como la base de datos, Área_de_impresión y Auto_abrir — o nombres personalizados.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> (propiedad) para devolver la colección de <b>nombres</b> .</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> (método) para crear un nombre y agregarlo a la colección. El método <b>Add</b><paramref name="RefersTo" /> argumento debe especificarse en notación de estilo A1, incluidos signos de dólar ($) donde corresponda. Por ejemplo, si se selecciona la celda A10 de Sheet1 y se define un nombre mediante el uso de la <paramref name="RefersTo" /> argumento "¡= sheet1! A1: B1 ", el nuevo nombre en realidad hace referencia a las celdas a10: B10 (debido a que se ha especificado una referencia relativa). Para especificar una referencia absoluta, use "¡= sheet1! $A$ 1: $B$ 1".</para>
-      <para>Usar <b>nombres</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del nombre o el nombre definido, para devolver un único objeto <b>Name</b> .</para>
-      <para></para>
-    </remarks>
+    <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objetos de la aplicación o libro. Cada objeto <b>Name</b> representa un nombre definido para un rango de celdas. Los nombres pueden ser integrados, como Base_de_datos, Área_de_impresión y Auto_abrir, o personalizados.</summary>
+    <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> propiedad para devolver la colección <b>Names.</b></para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para crear un nombre y agregarlo a la colección. El <b>argumento</b> del método Add debe especificarse en la notación de estilo A1, incluidos los signos de dólar <paramref name="RefersTo" /> ($) cuando corresponda. Por ejemplo, si la celda A10 está seleccionada en Sheet1 y define un nombre con el <paramref name="RefersTo" /> argumento "=sheet1! A1:B1", el nuevo nombre en realidad hace referencia a las celdas A10:B10 (porque ha especificado una referencia relativa). Para especificar una referencia absoluta, use "=sheet1!$A$1:$B$1".</para>
+      <para>Use <b>Names</b>( ), donde se encuentra el número de <paramref name="index" /> índice o el nombre definido del <paramref name="index" /> nombre, para devolver un solo <b>objeto Name.</b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -108,28 +98,17 @@
         <Parameter Name="RefersToR1C1Local" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Objeto</b>de opcional. Requerido si <paramref name="NameLocal" /> no se especifica. El texto que se utilizará como el nombre. Los nombres no pueden incluir espacios y no pueden parecerse a las referencias de celda.</param>
-        <param name="RefersTo">
-          <b>Objeto</b>de opcional. Obligatorio a menos que una de las otras <paramref name="RefersTo" /> se especifica argumentos. Describe lo que hace referencia el nombre a (usando la notación de estilo A1). <b>Nota</b> Se devuelve si la referencia no existe.</param>
-        <param name="Visible">
-          <b>Objeto</b>de opcional. <b>True</b> para definir el nombre normalmente. <b>False</b> para definir el nombre como oculto (es decir, no aparece en el cuadro de diálogo Definir nombre, Pegar nombre o Goto). El valor predeterminado es <b>True</b>.</param>
-        <param name="MacroType">
-          <b>Objeto</b>de opcional. El tipo de macro, como se muestra en la siguiente tabla. 2Macro de función definida por el ValueMeaning1User (procedimiento<b>Function</b> ) (también conocido como procedimiento <b>Sub</b> ) 3 o omittedNone (es decir, el nombre no hace referencia a una función definida por el usuario o una macro)</param>
-        <param name="ShortcutKey">
-          <b>Objeto</b>de opcional. La tecla de método abreviado de la macro. Debe ser una sola letra, como "z" o "Z". Se aplica únicamente para macros de comando.</param>
-        <param name="Category">
-          <b>Objeto</b>de opcional. La categoría de la macro o función si <paramref name="MacroType" /> es 1 o 2. La categoría se usa en el Asistente para la función. Las categorías existentes se pueden contempladas por número (comenzando en 1) o por nombre (en el lenguaje de la macro). Microsoft Excel crea una nueva categoría si la categoría especificada ya no existe.</param>
-        <param name="NameLocal">
-          <b>Objeto</b>de opcional. Requerido si <paramref name="Name" /> no se especifica. El texto que se utilizará como el nombre (en el idioma del usuario). Los nombres no pueden incluir espacios y no pueden parecerse a las referencias de celda.</param>
-        <param name="RefersToLocal">
-          <b>Objeto</b>de opcional. Obligatorio a menos que una de las otras <paramref name="RefersTo" /> se especifica argumentos. Describe lo que hace referencia el nombre (en el idioma del usuario, mediante la notación de estilo A1).</param>
-        <param name="CategoryLocal">
-          <b>Objeto</b>de opcional. Requerido si <paramref name="Category" /> no se especifica. Texto que identifica la categoría de una función personalizada en el idioma del usuario.</param>
-        <param name="RefersToR1C1">
-          <b>Objeto</b>de opcional. Obligatorio a menos que una de las otras <paramref name="RefersTo" /> se especifica argumentos. Describe lo que hace referencia el nombre a (usando la notación de estilo R1C1).</param>
-        <param name="RefersToR1C1Local">
-          <b>Objeto</b>de opcional. Obligatorio a menos que una de las otras <paramref name="RefersTo" /> se especifica argumentos. Describe lo que hace referencia el nombre (en el idioma del usuario, mediante la notación de estilo F1C1).</param>
+        <param name="Name">Optional <b>Object</b>. Obligatorio si <paramref name="NameLocal" /> no se especifica. Texto que se usará como nombre. Los nombres no pueden incluir espacios y no pueden parecer a referencias de celda.</param>
+        <param name="RefersTo">Optional <b>Object</b>. Obligatorio a menos que se especifique <paramref name="RefersTo" /> uno de los demás argumentos. Describe a qué hace referencia el nombre (mediante la notación de estilo A1). <b>Nota</b> No se devuelve nada si la referencia no existe.</param>
+        <param name="Visible">Optional <b>Object</b>. <b>True</b> para definir el nombre normalmente. <b>False</b> para definir el nombre como un nombre oculto (es decir, no aparece en el cuadro de diálogo Definir nombre, Pegar nombre o Goto). El valor predeterminado es <b>True</b>.</param>
+        <param name="MacroType">Optional <b>Object</b>. Tipo de macro, como se muestra en la tabla siguiente. Función definida por ValueMeaning1User (procedimiento function)2Macro (también conocido como <b>procedimiento Sub)3</b> u omitidoNone (es decir, el nombre no hace referencia a una función o macro definidas por el usuario)<b></b></param>
+        <param name="ShortcutKey">Optional <b>Object</b>. Tecla de método abreviado de macro. Debe ser una sola letra, como "z" o "Z". Se aplica solo a macros de comando.</param>
+        <param name="Category">Optional <b>Object</b>. Categoría de la macro o función si <paramref name="MacroType" /> es 1 o 2. La categoría se utiliza en el Asistente para funciones. Se puede hacer referencia a las categorías existentes por número (empezando por 1) o por nombre (en el idioma de la macro). Microsoft Excel crea una nueva categoría si la categoría especificada aún no existe.</param>
+        <param name="NameLocal">Optional <b>Object</b>. Obligatorio si <paramref name="Name" /> no se especifica. Texto que se usará como nombre (en el idioma del usuario). Los nombres no pueden incluir espacios y no pueden parecer a referencias de celda.</param>
+        <param name="RefersToLocal">Optional <b>Object</b>. Obligatorio a menos que se especifique <paramref name="RefersTo" /> uno de los demás argumentos. Describe a qué hace referencia el nombre (en el idioma del usuario, mediante la notación de estilo A1).</param>
+        <param name="CategoryLocal">Optional <b>Object</b>. Obligatorio si <paramref name="Category" /> no se especifica. Texto que identifica la categoría de una función personalizada en el idioma del usuario.</param>
+        <param name="RefersToR1C1">Optional <b>Object</b>. Obligatorio a menos que se especifique <paramref name="RefersTo" /> uno de los demás argumentos. Describe a qué hace referencia el nombre (mediante la notación de estilo R1C1).</param>
+        <param name="RefersToR1C1Local">Optional <b>Object</b>. Obligatorio a menos que se especifique <paramref name="RefersTo" /> uno de los demás argumentos. Describe a qué hace referencia el nombre (en el idioma del usuario, mediante la notación de estilo R1C1).</param>
         <summary>Define un nombre nuevo. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -158,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,7 +165,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de objetos de la colección. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve el número de objetos de la colección. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,12 +193,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto. Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C. Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -278,18 +255,13 @@
         <Parameter Name="RefersTo" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. Nombre o número del nombre definido que se va a devolver.</param>
-        <param name="IndexLocal">
-          <b>Objeto</b>de opcional. El nombre del nombre definido en el idioma del usuario. No hay nombres se traducirán si usa este argumento.</param>
-        <param name="RefersTo">
-          <b>Objeto</b>de opcional. ¿Qué hace referencia el nombre a. Utilice este argumento para identificar un nombre, por lo que se refiere a.</param>
-        <summary>Devuelve un valor single <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto desde una <see cref="T:Microsoft.Office.Interop.Excel.Names" /> colección.</summary>
+        <param name="Index">Optional <b>Object</b>. Nombre o número del nombre definido que se va a devolver.</param>
+        <param name="IndexLocal">Optional <b>Object</b>. Nombre del nombre definido en el idioma del usuario. Si se usa este argumento no se traduce ningún nombre.</param>
+        <param name="RefersTo">Optional <b>Object</b>. Elemento al que hace referencia el objeto. Puede utilizar este argumento para identificar un nombre a través de aquello a lo que hace referencia.</param>
+        <summary>Devuelve un único <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objeto de una <see cref="T:Microsoft.Office.Interop.Excel.Names" /> colección.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Debe especificar uno, y sólo uno, de los tres argumentos.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Debe especificar uno, y sólo uno, de los tres argumentos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

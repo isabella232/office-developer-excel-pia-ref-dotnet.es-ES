@@ -1,13 +1,5 @@
 <Type Name="ModelRelationships" FullName="Microsoft.Office.Interop.Excel.ModelRelationships">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ff2c861dc129a90c82535937f7b7bb06e86060a9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587594" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModelRelationships : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ff2c861dc129a90c82535937f7b7bb06e86060a9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011616" /></Metadata><TypeSignature Language="C#" Value="public interface ModelRelationships : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelRelationships implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelRelationships" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelRelationships&#xA;Implements IEnumerable" />
@@ -33,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Esta colección contiene todas las relaciones actualmente entre las tablas de datos en el modelo de datos de Excel de 2013.</summary>
+    <summary>Esta colección contiene todas las relaciones actualmente entre tablas de datos en el modelo de datos de Excel 2013.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -96,9 +88,9 @@
         <Parameter Name="PrimaryKeyColumn" Type="Microsoft.Office.Interop.Excel.ModelTableColumn" />
       </Parameters>
       <Docs>
-        <param name="ForeignKeyColumn">A <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> objeto que representa la columna de clave externa en la tabla en el lado varios de la relación uno a varios.</param>
-        <param name="PrimaryKeyColumn">A <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> objeto que representa la columna de clave principal en la tabla en el uno lado de la relación uno a varios.</param>
-        <summary>Agrega una nueva relación en el modelo.</summary>
+        <param name="ForeignKeyColumn">Objeto que representa la columna de clave externa de la tabla en el lado varios de la relación uno <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> a varios.</param>
+        <param name="PrimaryKeyColumn">Objeto que representa la columna de clave principal de la tabla en el lado uno de la relación uno <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> a varios.</param>
+        <summary>Agrega una nueva relación al modelo.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +146,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor <b>entero</b> (<b>int</b> en C#) que representa el número de <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationship" /> objetos en un <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> colección. Solo lectura.</summary>
+        <summary>Devuelve un <b>valor integer</b> (<b>int</b> en C#) que representa el número de objetos de <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationship" /> una <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> colección. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,12 +174,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Sólo lectura <b>entero</b> (<b>int</b> en C#).</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Integer de solo <b>lectura</b> (<b>int</b> en C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Debido a que el objeto se creó en Excel, esta propiedad devuelve el valor hexadecimal 5843454C, que representa la cadena "XCEL".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Dado que el objeto se creó en Excel, esta propiedad devuelve el valor hexadecimal, 5843454C, que representa la cadena "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -246,7 +236,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Número de índice del objeto.</param>
-        <summary>Devuelve un único objeto de la <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> objeto.</summary>
+        <summary>Devuelve un único objeto del <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,7 +264,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>objeto</b> (<b>objeto</b> de C#) que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> objeto. Solo lectura.</summary>
+        <summary>Devuelve un <b>objeto Object</b> (<b>objeto</b> en C#) que representa el objeto primario del objeto <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationships" /> especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
