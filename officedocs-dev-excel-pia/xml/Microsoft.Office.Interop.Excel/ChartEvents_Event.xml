@@ -1,13 +1,5 @@
 <Type Name="ChartEvents_Event" FullName="Microsoft.Office.Interop.Excel.ChartEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8fa24bd36a40b86e1c8eda5d1c429fc248c390f6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576646" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fa24bd36a40b86e1c8eda5d1c429fc248c390f6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005918" /></Metadata><TypeSignature Language="C#" Value="public interface ChartEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartEvents_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Interfaz de eventos para Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> eventos de objetos.</summary>
+    <summary>Interfaz de eventos para eventos de objetos de Microsoft <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> Excel.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_ActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce cuando se activa una hoja de gráfico o el gráfico incrustado.</summary>
+        <summary>Se produce cuando se activa una hoja de gráfico o un gráfico incrustado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,12 +59,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_BeforeDoubleClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce cuando un gráfico incrustado se hace doble clic, antes de que el valor predeterminado, haga doble clic en acción.</summary>
-        <remarks>
-          <para>El <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" /> método no hace que se produzca este evento.</para>
+        <summary>Se produce cuando se hace doble clic en un gráfico incrustado, antes de la acción de doble clic predeterminada.</summary>
+        <remarks><para>El <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" /> método no provoca que se produzca este evento.</para>
           <para>Este evento no se produce cuando el usuario hace doble clic en el borde de una celda.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeRightClick">
@@ -90,11 +80,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_BeforeRightClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce cuando un gráfico incrustado se mouse (ratón), antes de que el valor predeterminado, haga clic en acción.</summary>
-        <remarks>
-          <para>Al igual que otros eventos de hoja de cálculo, este evento no se produce si, al hacer clic, el puntero del mouse se encuentra sobre una forma o una barra de comandos (una barra de herramientas o una barra de menús).</para>
-          <para></para>
-        </remarks>
+        <summary>Se produce cuando se hace clic con el botón secundario en un gráfico incrustado, antes de la acción predeterminada de hacer clic con el botón secundario.</summary>
+        <remarks><para>Al igual que otros eventos de hoja de cálculo, este evento no se produce si, al hacer clic, el puntero del mouse se encuentra sobre una forma o una barra de comandos (una barra de herramientas o una barra de menús).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Calculate">
@@ -112,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_CalculateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce después de que el gráfico trace datos nuevos o modificados.</summary>
+        <summary>Se produce después de que el gráfico traza datos nuevos o modificados.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +157,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_DragPlotEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce cuando se arrastra un rango de celdas y se coloca en un gráfico.</summary>
+        <summary>Se produce cuando se arrastra y se descarta un rango de celdas en un gráfico.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

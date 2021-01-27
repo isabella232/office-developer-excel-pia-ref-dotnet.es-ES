@@ -1,13 +1,5 @@
 <Type Name="CellFormat" FullName="Microsoft.Office.Interop.Excel.CellFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bb607767f33cbf4ea76bfc37821ee59c522eeb21" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581175" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CellFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bb607767f33cbf4ea76bfc37821ee59c522eeb21" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006009" /></Metadata><TypeSignature Language="C#" Value="public interface CellFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CellFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CellFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CellFormat" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa los criterios de búsqueda del formato de celda.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> o <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> las propiedades de la <see cref="P:Microsoft.Office.Interop.Excel._Application.Application" /> objeto para devolver un objeto <b>CellFormat</b> .</para>
-      <para>Puede usar el <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Borders" />, <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Font" />, o <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Interior" /> las propiedades del objeto <b>CellFormat</b> para definir los criterios de búsqueda del formato de celda.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice las <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> propiedades del objeto para devolver un objeto <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> <see cref="P:Microsoft.Office.Interop.Excel._Application.Application" /> <b>CellFormat</b> .</para>
+      <para>Puede usar el , o las propiedades del objeto CellFormat para definir los criterios de <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Borders" /> búsqueda para el formato de <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Font" /> <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Interior" /> celda. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddIndent">
@@ -63,13 +53,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se aplica sangría al texto automáticamente cuando la alineación del texto en una celda se establece en distribución equitativa, ya sea horizontal o verticalmente.</summary>
+        <summary><b>True</b> si el texto se aplica sangría automáticamente cuando la alineación del texto en una celda se establece en distribución igual ya sea horizontal o vertical.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer la alineación del texto como distribución igualada, puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> (propiedad) en <b>xlVAlignDistributed</b> cuando el valor de la <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> propiedad es <b>xlVertical</b>, y se puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /> (propiedad) en <b>xlHAlignDistributed</b> cuando el valor de la propiedad <b>Orientation</b> es <b>xlHorizontal</b>.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Para establecer la alineación del texto en una distribución igual, puede establecer la propiedad en <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.VerticalAlignment" /> <b>xlVAlignDistributed</b> cuando el valor de la propiedad es xlVertical y puede establecer la propiedad en <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.Orientation" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.CellFormat.HorizontalAlignment" /> <b>xlHAlignDistributed</b> <b></b> cuando el valor de la propiedad Orientation es <b>xlHorizontal</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,7 +113,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Permite al usuario establecer o devolver los criterios de búsqueda basados en formato de borde de la celda.</summary>
+        <summary>Permite al usuario establecer o devolver los criterios de búsqueda en función del formato de borde de la celda.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +139,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Borra los criterios establecidos en el <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> y <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> propiedades.</summary>
+        <summary>Borra los criterios establecidos en las <see cref="P:Microsoft.Office.Interop.Excel._Application.FindFormat" /> propiedades <see cref="P:Microsoft.Office.Interop.Excel._Application.ReplaceFormat" /> y.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,13 +166,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -214,7 +199,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto, que permite al usuario establecer o devolver los criterios de búsqueda basados en formato de fuente de la celda.</summary>
+        <summary>Devuelve un objeto, lo que permite al usuario establecer o devolver los criterios de búsqueda en función del <see cref="T:Microsoft.Office.Interop.Excel.Font" /> formato de fuente de la celda.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,13 +230,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la fórmula se ocultará cuando la hoja de cálculo está protegida. Devuelve <b>Null</b> si el rango especificado contiene algunas celdas con <b>FormulaHidden</b> igual a <b>True</b> y algunas celdas con <b>FormulaHidden</b> igual a <b>False</b>.</summary>
+        <summary><b>True</b> si la fórmula se ocultará cuando la hoja de cálculo esté protegida. Devuelve <b>Null</b> si el rango especificado contiene algunas celdas con <b>FormulaHidden</b> igual a <b>True</b> y algunas celdas con <b>FormulaHidden</b> igual a <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>No confunda esta propiedad con el <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> (propiedad). La fórmula no estará oculta si el libro está protegido y la hoja de cálculo no; se ocultará sólo si la hoja de cálculo está protegida.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>No confunda esta propiedad con la <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> propiedad. La fórmula no se ocultará si el libro está protegido y la hoja de cálculo no lo está; solo se ocultará si la hoja de cálculo está protegida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -282,8 +264,7 @@
       <Docs>
         <summary>Devuelve o establece la alineación horizontal del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pueden usarse las siguientes constantes:</para>
+        <remarks><para>Se pueden usar las siguientes constantes:</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -300,8 +281,7 @@
             <b>xlRight</b>
           </para>
           <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentLevel">
@@ -330,12 +310,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el nivel de sangría de la celda o rango. Puede ser un entero entre 0 y 15.</summary>
+        <summary>Devuelve o establece el nivel de sangría de la celda o del rango. Puede ser un entero comprendido entre 0 y 15.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 produce un error.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Usar esta propiedad para establecer el nivel de sangría en un número inferior a 0 (cero) o mayor que 15 produce un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -364,7 +342,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> objeto que permite al usuario establecer o devolver los criterios de búsqueda basados en el formato interior de la celda.</summary>
+        <summary>Devuelve un objeto que permite al usuario establecer o devolver los criterios de búsqueda según <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> el formato interior de la celda.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -395,8 +373,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida. Devuelve <b>Null</b> si el rango especificado contiene celdas bloqueadas y desbloqueadas.</summary>
+        <summary><b>True</b> si el objeto está bloqueado; <b>False</b> si el objeto se puede modificar cuando la hoja está protegida. Devuelve <b>Null</b> si el rango especificado contiene celdas bloqueadas y desbloqueadas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -427,13 +404,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el rango o el estilo contiene celdas combinadas.</summary>
+        <summary>Es <b>True</b> si el rango o el estilo contienen celdas combinadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cuando se selecciona un rango que contiene celdas combinadas, la selección resultante puede ser diferente de la selección prevista. Usar el <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> (propiedad) para comprobar la dirección del rango seleccionado.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Al seleccionar un rango que contiene celdas combinadas, la selección resultante puede ser diferente de la selección prevista. Use la <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> propiedad para comprobar la dirección del intervalo seleccionado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -464,10 +438,8 @@
       <Docs>
         <summary>Devuelve o establece el código de formato para el objeto. Devuelve <b>Null</b> si todas las celdas del rango especificado no tienen el mismo formato de número.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas. La función de Visual Basic <b>Format</b> usa cadenas de código de formato diferentes que la <b>NumberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propiedades.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas. La Visual Basic <b>Format utiliza</b> cadenas de código de formato diferentes que <b>numberFormat</b> y <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> propiedades.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -498,10 +470,8 @@
       <Docs>
         <summary>Devuelve o establece el código de formato para el objeto como una cadena en el idioma del usuario.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La función de Visual Basic <b>Format</b> usa cadenas de código de formato diferentes que la <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> y propiedades <b>NumberFormatLocal</b> .</para>
-          <para></para>
-        </remarks>
+        <remarks><para>La Visual Basic <b>Format</b> usa cadenas de código de formato diferentes que las <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> propiedades <b>NumberFormatLocal y NumberFormatLocal.</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -530,10 +500,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La orientación del texto. Puede ser un valor entero entre – 90 y 90 grados.</summary>
+        <summary>Orientación del texto. Puede ser un valor entero entre -90 y 90 grados.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Orientation</b> puede ser una de las constantes siguientes:</para>
+        <remarks><para>La <b>propiedad Orientation</b> puede ser una de las siguientes constantes:</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -547,8 +516,7 @@
             <b>xlVertical</b>
           </para>
           <para>Para los orígenes de datos OLAP, si se establece esta propiedad para un campo de una jerarquía, se establece la orientación del resto de los campos de la misma jerarquía. Los campos de dimensiones sólo pueden orientarse en las áreas de campos de fila, columna y página del informe de tabla dinámica. Los campos de medida sólo pueden orientarse en el área de datos. Al establecer una jerarquía o un campo de datos en <b>xlHidden</b>, se quita la jerarquía o el campo del informe de tabla dinámica.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -605,8 +573,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto se reduce automáticamente para ajustarse al ancho de columna disponible. Devuelve <b>Null</b> si no se establece esta propiedad en el mismo valor para todas las celdas del rango especificado.</summary>
+        <summary><b>True</b> si el texto se reduce automáticamente para ajustarse al ancho de columna disponible. Devuelve <b>Null</b> si esta propiedad no está establecida en el mismo valor para todas las celdas del rango especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -639,8 +606,7 @@
       <Docs>
         <summary>Devuelve o establece la alineación vertical del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>VerticalAlignment</b> puede ser una de las constantes siguientes:</para>
+        <remarks><para>La <b>propiedad VerticalAlignment</b> puede ser una de las siguientes constantes:</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -656,8 +622,7 @@
           <para>
             <b>xlTop</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapText">
@@ -686,13 +651,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Excel ajusta el texto en el objeto. Devuelve <b>Null</b> si el rango especificado contiene algunas celdas cuyo texto se ajusta y otras celdas que no.</summary>
+        <summary><b>True</b> si Microsoft Excel ajusta el texto en el objeto. Devuelve <b>Null</b> si el rango especificado contiene algunas celdas que encapsulan texto y otras que no lo contienen.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si es necesario, Microsoft Excel cambia el alto de las filas del rango para mostrar el texto del rango en pantalla.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si es necesario, Microsoft Excel cambia el alto de las filas del rango para mostrar el texto del rango en pantalla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

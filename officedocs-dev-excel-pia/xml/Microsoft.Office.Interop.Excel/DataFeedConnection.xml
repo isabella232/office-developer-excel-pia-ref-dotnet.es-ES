@@ -1,13 +1,5 @@
 <Type Name="DataFeedConnection" FullName="Microsoft.Office.Interop.Excel.DataFeedConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6e9ab9b71f15cad689d5836c7164a39d28a7e6fb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582841" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataFeedConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6e9ab9b71f15cad689d5836c7164a39d28a7e6fb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005701" /></Metadata><TypeSignature Language="C#" Value="public interface DataFeedConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataFeedConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataFeedConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataFeedConnection" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contiene los datos y la funcionalidad necesaria para conectarse a fuentes de datos. El mismo objeto se usa para todos los tipos de fuente de datos.</summary>
+    <summary>Contiene los datos y la funcionalidad necesarios para conectarse a fuentes de datos. Se usa el mismo objeto para todos los tipos de fuente de datos.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,8 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el archivo de conexión siempre se usa para establecer conexión con el origen de datos. <b>Boolean</b> (<b>bool</b> en C#). Lectura y escritura</summary>
+        <summary><b>True </b> si siempre se usa el archivo de conexión para establecer conexión con el origen de datos. <b>Booleano</b> (<b>bool</b> en C#). Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación de Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación excel. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +105,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancela una operación de actualización en una fuente de conexión de datos.</summary>
+        <summary>Cancela una operación de actualización en una conexión de fuente de datos.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,7 +135,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la cadena de comando para el origen de datos especificado. <b>Objeto</b> (<b>objeto</b> en C#) Lectura y escritura</summary>
+        <summary>Devuelve o establece la cadena de comandos del origen de datos especificado. <b>Objeto</b> (<b>objeto</b> en C#) Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la cadena de comando para el origen de datos especificado. <b>Objeto</b> (<b>objeto</b> en C#) Lectura y escritura</summary>
+        <summary>Devuelve o establece la cadena de comandos del origen de datos especificado. <b>Objeto</b> (<b>objeto</b> en C#) Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +197,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor de tipo string que contiene la configuración de contrato de servicio que permiten a Microsoft Excel conectarse a un origen de datos de la fuente de datos. <b>Objeto</b> (<b>objeto</b> en C#) Lectura y escritura</summary>
+        <summary>Devuelve o establece una cadena que contiene la configuración del contrato de servicio que permite a Excel conectarse a un origen de datos de fuente de datos. <b>Objeto</b> (<b>objeto</b> en C#) Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,12 +225,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Número entero</b> (<b>int</b> en C#) Sólo lectura</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> (<b>int</b> en C#) Solo lectura</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Debido a que el objeto se creó en Excel, esta propiedad devuelve el valor hexadecimal 5843454C, que representa la cadena "XCEL".</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Dado que el objeto se creó en Excel, esta propiedad devuelve el valor hexadecimal, 5843454C, que representa la cadena "XCEL".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRefresh">
@@ -268,8 +257,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la conexión se puede actualizar por el usuario. El valor predeterminado es <b>True</b>. <b>Boolean</b> (<b>bool</b> en C#) Lectura y escritura</summary>
+        <summary>Es <b>True</b> si el usuario puede actualizar la conexión. El valor predeterminado es <b>True</b>. <b>Booleano</b> (<b>bool</b> en C#) Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +285,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>objeto</b> (<b>objeto</b> de C#) que representa el objeto primario del objeto <b>DataFeedConnection</b> especificado. Solo lectura.</summary>
+        <summary>Devuelve un <b>objeto Object</b> (<b>objeto</b> en C#) que representa el objeto primario del objeto <b>DataFeedConnection</b> especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -323,7 +311,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Actualiza la fuente de conexión de datos.</summary>
+        <summary>Actualiza la conexión de fuente de datos.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,7 +338,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la fecha en la que se actualizó por última vez la conexión OLE DB. <b>Fecha y hora</b>. Solo lectura</summary>
+        <summary>Devuelve la fecha de la última actualización de la conexión OLE DB. <b>DateTime</b>. Solo lectura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,8 +366,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si hay una consulta OLE DB en curso para la conexión de origen de datos especificado. <b>Boolean</b> (<b>bool</b> en C#) Lectura y escritura</summary>
+        <summary><b>True</b> si hay una consulta OLE DB en curso para la conexión de origen de datos especificada. <b>Booleano</b> (<b>bool</b> en C#) Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -410,8 +397,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la conexión se actualiza automáticamente cada vez que se abre el libro. El valor predeterminado es <b>False</b>.</summary>
+        <summary>Es <b>True</b> si se actualiza automáticamente la conexión cada vez que se abre el libro. El valor predeterminado es <b>False</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -442,7 +428,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número de minutos entre las actualizaciones. <b>Número entero</b> (<b>int</b> en C#) Lectura y escritura</summary>
+        <summary>Devuelve o establece el número de minutos entre actualizaciones. <b>Integer</b> (<b>int</b> en C#) Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,7 +460,7 @@
         <param name="ODCFileName">Ubicación donde guardar el archivo.</param>
         <param name="Description">Descripción que se guardará en el archivo.</param>
         <param name="Keywords">Palabras clave separadas por espacios que se pueden utilizar para buscar este archivo.</param>
-        <summary>Guarda la conexión como un archivo de conexión de datos de Office de fuente de datos.</summary>
+        <summary>Guarda la conexión de fuente de datos como un archivo de conexión de datos de Office.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -504,8 +490,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la fuente de información de contraseña de datos de una cadena de conexión se guarda en la cadena de conexión. <b>False</b> si se ha quitado la contraseña.</summary>
+        <summary><b>True</b> si la información de contraseña en una cadena de conexión de fuente de datos se guarda en la cadena de conexión. Es <b>False</b> si la contraseña se elimina.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -536,10 +521,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCredentialsMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de credenciales que se debe usar para la autenticación de servidor. <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />Lectura y escritura</summary>
+        <summary>Devuelve o establece el tipo de credenciales que se deben usar para la autenticación en el servidor. <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" /> Lectura y escritura</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A continuación es los tipos de credenciales que se pueden usar:</para>
+        <remarks><para>A continuación se enumeran los tipos de credenciales que se pueden usar:</para>
           <list type="bullet">
             <item>
               <description>
@@ -557,8 +541,7 @@
               </description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionFile">
@@ -587,7 +570,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor String (<b>cadena</b> en C#) que indica el archivo de conexión de datos de Office o el archivo similar que se usó para crear la conexión. Lectura y escritura</summary>
+        <summary>Devuelve o establece una cadena (<b>cadena</b> en C#) que indica el archivo de conexión de datos de Office o un archivo similar que se usó para crear la conexión. Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -618,7 +601,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Una ruta de acceso al archivo original utilizado para crear la conexión. En el caso de una conexión de OData, esto es la ubicación del archivo *.atom o *.atomsvc utilizado para crear la conexión. <b>Cadena</b> (<b>cadena</b> en C#) Lectura y escritura</summary>
+        <summary>Ruta de acceso al archivo original que se usa para crear la conexión. En el caso de una conexión OData, esta es la ubicación del archivo *.atom o *.atomsvc usado para crear la conexión. <b>String</b> (<b>string</b> in C#) Read/Write</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

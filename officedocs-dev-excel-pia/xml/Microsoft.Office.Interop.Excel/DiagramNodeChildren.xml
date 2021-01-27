@@ -1,13 +1,5 @@
 <Type Name="DiagramNodeChildren" FullName="Microsoft.Office.Interop.Excel.DiagramNodeChildren">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c37b83ec609da17fbc1f54f6970e5d09d6941f16" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573545" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNodeChildren : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c37b83ec609da17fbc1f54f6970e5d09d6941f16" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005624" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodeChildren : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNodeChildren implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNodeChildren&#xA;Implements _IMsoDispObj, IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objetos que representa los nodos secundarios de un diagrama.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> (propiedad) del objeto <b>DiagramNode</b> para devolver una colección <b>DiagramNodeChildren</b> . Para agregar un nodo de diagrama secundario individual a la colección, utilice el <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> (método). Para devolver nodos de diagramas de secundarias individuales de la colección, utilice el <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> o <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> propiedades, o la <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> (método).</para>
-      <para></para>
-    </remarks>
+    <summary>Colección de objetos <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> que representa nodos secundarios en un diagrama.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> propiedad del objeto <b>DiagramNode</b> para devolver una <b>colección DiagamNodeChildren</b> . Para agregar un nodo de diagrama secundario individual a la colección, utilice el <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> método. Para devolver nodos de diagrama secundarios individuales de la colección, use las <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> propiedades o <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> el <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> método.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -63,10 +53,9 @@
         <Parameter Name="nodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. La posición del nodo.</param>
-        <param name="nodeType">Opcional <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" />. El tipo de nodo. <b>MsoDiagramNodeType</b> puede ser una de estas constantes:<b>msoDiagramAssistant</b><b>msoDiagramNode valor</b> predeterminado</param>
-        <summary>Crea un nodo de diagrama. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object que representa el nuevo nodo.</summary>
+        <param name="Index">Optional <b>Object</b>. Posición del nodo.</param>
+        <param name="nodeType">Opcional <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" /> . El tipo de nodo. <b>MsoDiagramNodeType</b> puede ser una de estas constantes:<b>msoDiagramAssistant</b><b>msoDiagramNode Default</b></param>
+        <summary>Crea un nodo de diagrama. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto que representa el nuevo nodo.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +86,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,13 +145,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -188,7 +175,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object que representa el primer nodo secundario de un nodo primario.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto que representa el primer nodo secundario de un nodo primario.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,8 +235,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Número de índice o nombre del objeto.</param>
+        <param name="Index">Objeto <b>requerido</b>. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -278,7 +264,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object que representa el último nodo secundario de un nodo primario.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> objeto que representa el último nodo secundario de un nodo primario.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="XlFileValidationPivotMode" FullName="Microsoft.Office.Interop.Excel.XlFileValidationPivotMode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b2b09bda61eed0ec23579a26ff7207bf32c883e0" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575351" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b2b09bda61eed0ec23579a26ff7207bf32c883e0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50007234" /></Metadata><TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlFileValidationPivotMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum XlFileValidationPivotMode" />
@@ -21,25 +13,23 @@
   </Base>
   <Docs>
     <summary>Especifica cómo validar las memorias caché de datos de los informes de tabla dinámica.</summary>
-    <remarks>
-      <para>Esta enumeración se usa para especificar la configuración de la <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto.</para>
-      <para>El efecto de la opción <b>xlFileValidationPivotDefault</b> está controlado por el valor del registro PivotOptions, que se establece en la siguiente subclave del registro: HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation. El valor de PivotOptions es un valor DWORD que se puede establecer como se muestra en la siguiente tabla.</para>
+    <remarks><para>Esta enumeración se usa para especificar el valor de la <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto.</para>
+      <para>El efecto de la configuración <b>xlFileValidationPivotDefault</b> se controla mediante el valor del Registro PivotOptions, que se establece en la siguiente subclave del Registro: HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation. El valor PivotOptions es un valor DWORD que se puede establecer como se muestra en la tabla siguiente.</para>
       <list type="table">
         <item>
           <term>0</term>
           <description>No valida nunca las memorias caché de datos de los informes de tabla dinámica. (No recomendado).</description>
         </item>
         <item>
-          <term>1</term>
-          <description>Validar las memorias caché de datos del informe de tabla dinámica en los siguientes casos (valor predeterminado): el archivo se abrió desde Internet.el archivo es datos adjuntos de correo electrónico. El archivo se abrió con el comando Abrir en Vista protegida del cuadro de diálogo Abrir. El archivo se abrió desde una ubicación conocida no segura donde el contenido de Internet se almacena en caché localmente, o desde una ubicación de confianza definidas por el usuario. Se analiza la memoria caché de datos que se carga cuando se abre el archivo.</description>
+          <term>1 </term>
+          <description>Valide las memorias caché de datos del informe de tabla dinámica en los siguientes casos (configuración predeterminada): el archivo se abrió desde Internet.El archivo es un archivo adjunto de correo electrónico. El archivo se abrió mediante el comando Abrir en vista protegida del cuadro de diálogo Abrir. El archivo se abrió desde una ubicación no segura conocida donde el contenido de Internet se almacena en caché localmente o desde una ubicación no de confianza definida por el usuario. Se analiza la memoria caché de datos que se carga cuando se abre el archivo.</description>
         </item>
         <item>
-          <term>2</term>
+          <term>2 </term>
           <description>Valida todas las memorias caché de datos de los informes de tabla dinámica.</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="xlFileValidationPivotDefault">

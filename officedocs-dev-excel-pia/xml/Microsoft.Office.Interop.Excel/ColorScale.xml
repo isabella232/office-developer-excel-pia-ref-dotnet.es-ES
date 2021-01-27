@@ -1,13 +1,5 @@
 <Type Name="ColorScale" FullName="Microsoft.Office.Interop.Excel.ColorScale">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1f67e87764cc01fd4ea79e3073b361913e5007f2" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585592" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorScale" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1f67e87764cc01fd4ea79e3073b361913e5007f2" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005764" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScale" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScale" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScale" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScale" />
@@ -30,14 +22,11 @@
   </Attributes>
   <Docs>
     <summary>Representa una regla de formato condicional de escala de colores.</summary>
-    <remarks>
-      <para>Todos los objetos de formato condicionales están contenidos en una <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> objeto de colección, que es un elemento secundario de un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Puede crear una regla de formato mediante cualquiera de escala de color la <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> o <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> método de la colección <b>FormatConditions</b> .</para>
+    <remarks><para>Todos los objetos de formato condicional están contenidos dentro de un objeto <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> de colección, que es un elemento secundario de una <see cref="T:Microsoft.Office.Interop.Excel.Range" /> colección. Puede crear una regla de formato de escala de colores mediante el método o el método <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> de la colección <b>FormatConditions</b> .</para>
       <para>Las escalas de colores son guías visuales que ayudan a comprender la distribución y la variación de los datos. Puede aplicar una escala de colores de dos colores o una escala de tres colores a un rango de datos, a datos de una tabla o a los datos de un informe de tabla dinámica. En el caso de formato condicional de escala de dos colores, se asigna el valor, tipo y color a los umbrales mínimo y máximo de un rango. Las escalas de tres colores también tienen un umbral de punto medio.</para>
-      <para>Cada uno de estos umbrales se determina estableciendo las propiedades de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto. El objeto <b>ColorScaleCriteria</b> , que es un elemento secundario del objeto <b>ColorScale</b> , es una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos para la escala de colores.</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>El ejemplo de código siguiente crea un rango de números y después le aplica a dicho rango una regla de formato condicional de escala de dos colores. Al umbral mínimo se le asigna el color rojo y al umbral máximo, el azul.</para>
+      <para>Cada uno de estos umbrales se determina estableciendo las propiedades del <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto. El <b>objeto ColorScaleCriteria,</b> que es un elemento secundario del objeto <b>ColorScale</b> , es una colección de todos los objetos <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> para la escala de colores.</para>
+      <para> </para></remarks>
+    <example><para>El ejemplo de código siguiente crea un rango de números y después le aplica a dicho rango una regla de formato condicional de escala de dos colores. Al umbral mínimo se le asigna el color rojo y al umbral máximo, el azul.</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
 
 
@@ -296,8 +285,7 @@
 
     Dim cfColorScale As &lt;/span&gt;
 &lt;i&gt;ColorScale&lt;/i&gt;
-&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
-    </example>
+&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -323,13 +311,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación de Microsoft Office Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
-        <value>
-          <b>Aplicación</b> (vea lo anterior)</value>
-        <remarks>
-          <para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
-          <para></para>
-        </remarks>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
+        <value><b>Aplicación</b> (vea más arriba)</value>
+        <remarks><para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -356,9 +341,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que especifica el rango de celdas al que se aplica la regla de formato.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,10 +368,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorScaleCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto, que es una colección de individuo <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objetos. El <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objeto especifica el tipo, el valor y el color de los criterios de umbral usados en el formato condicional de escala de color. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />
-        </value>
+        <summary>Devuelve un   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> objeto, que es una colección de objetos <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> individuales. El objeto especifica el tipo, el valor y el color de los criterios de umbral <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> usados en el formato condicional de escala de colores. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,14 +396,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una constante en el <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> (enumeración) que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.  El <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> (propiedad) está diseñado para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve una constante de la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeración que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.  La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -477,13 +454,9 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un valor <b>String</b> que representa una fórmula que determina los valores a los que se aplicará el conjunto de iconos.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad es útil para limitar el rango de valores que mostrará el formato condicional. Un escenario típico es cuando se tiene un rango de números que contiene valores positivos y negativos. Quizás desee crear más de un formato condicional para este rango de números: uno para los valores positivos y otro para los valores negativos.</para>
-          <para></para>
-        </remarks>
+        <value><b>Cadena</b></value>
+        <remarks><para>Esta propiedad es útil para limitar el rango de valores que mostrará el formato condicional. Un escenario típico es cuando se tiene un rango de números que contiene valores positivos y negativos. Quizás desee crear más de un formato condicional para este rango de números: uno para los valores positivos y otro para los valores negativos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyAppliesToRange">
@@ -510,11 +483,9 @@
       <Docs>
         <param name="Range">Rango al que se aplicará esta regla de formato.</param>
         <summary>Establece el rango de celdas al que se aplica esta regla de formato.</summary>
-        <remarks>
-          <para>El rango debe estar en el estilo de referencia A1 y totalmente contenido dentro de la hoja que es el elemento principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir el operador de rango (dos puntos), el operador de intersección (un espacio) o el operador de unión (una coma). También se puede usar signos de dólar, pero se pasan por alto.</para>
+        <remarks><para>El rango debe estar en el estilo de referencia A1 y estar totalmente contenido en la hoja principal de la <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> colección. Puede incluir un operador de rango (dos puntos), de intersección (espacio) o de unión (coma). También se pueden usar signos de dólar, pero no se tendrán en cuenta.</para>
           <para>Asimismo, se puede utilizar un nombre definido local en cualquier parte del rango, pero debe estar en el lenguaje de la macro.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -540,10 +511,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario correspondiente al objeto especificado. Sólo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,13 +543,9 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece el valor de prioridad de la regla de formato condicional. La prioridad determina el orden de evaluación cuando existen varias reglas de formato condicional en una hoja de cálculo.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Cuando se establece la prioridad, el valor debe ser un número entero positivo entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas de la hoja, por lo que si se cambia la prioridad para la regla de formato condicional especificada, es posible que varíe el valor de prioridad de las demás reglas en la hoja de cálculo.</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Cuando se establece la prioridad, el valor debe ser un número entero positivo entre 1 y el número total de reglas de formato condicional en la hoja de cálculo. La prioridad debe ser un valor único para todas las reglas de la hoja, por lo que si se cambia la prioridad para la regla de formato condicional especificada, es posible que varíe el valor de prioridad de las demás reglas en la hoja de cálculo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -606,10 +571,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor <b>Boolean</b> que indica si se aplica el formato condicional a un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> gráfico. Solo lectura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve un <b>valor</b> booleano que indica si el formato condicional se aplica a un <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> gráfico. Solo lectura.</summary>
+        <value><b>Valor booleano</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -639,14 +602,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> (enumeración), que determina el ámbito del formato condicional cuando se aplica a un gráfico de tabla dinámica.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, que establece el ámbito utilizando el <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />(propiedad).</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve o establece una de las constantes de la enumeración, que determina el ámbito del formato condicional cuando se aplica <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> a un gráfico de tabla dinámica.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> , que establece el ámbito mediante la <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -671,12 +630,10 @@
       <Parameters />
       <Docs>
         <summary>Establece el valor de prioridad para esta regla de formato condicional en "1" para que se evalúe antes que todas las demás reglas en la hoja de cálculo.</summary>
-        <remarks>
-          <para>Cuando se tienen varias reglas de formato condicional en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
+        <remarks><para>Cuando se tienen varias reglas de formato condicional en una hoja de cálculo, si la regla no se estableció previamente como "prioridad 1", este método hará que la prioridad de todas las demás reglas existentes en la hoja de cálculo aumente en uno.</para>
           <para>
-            <b>Nota</b>: los niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
-          <para></para>
-        </remarks>
+            <b>Nota:</b>Los niveles de prioridad para las reglas de formato condicional se aplican en el nivel de hoja de cálculo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -701,12 +658,10 @@
       <Parameters />
       <Docs>
         <summary>Establece el orden de evaluación para esta regla de formato condicional de modo que se evalúe después que todas las demás reglas en la hoja de cálculo.</summary>
-        <remarks>
-          <para>El valor real de la prioridad será igual al número total de reglas de formato condicional en la hoja de cálculo. Cuando se tengan varias reglas de formato condicional en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que el de esta regla aumente en uno.</para>
+        <remarks><para>El valor real de la prioridad será igual al número total de reglas de formato condicional en la hoja de cálculo. Cuando se tengan varias reglas de formato condicional en una hoja de cálculo, este método hará que la prioridad de las reglas que tenían un valor de prioridad mayor que el de esta regla aumente en uno.</para>
           <para>
-            <b>Nota</b>: los niveles de prioridad para reglas de formato condicional se aplican según el nivel de hoja de cálculo.</para>
-          <para></para>
-        </remarks>
+            <b>Nota:</b>Los niveles de prioridad para las reglas de formato condicional se aplican en el nivel de hoja de cálculo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -733,13 +688,9 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un valor <b>Boolean</b> que determina si se deben evaluar reglas adicionales de formato en la celda si la regla actual da como resultado <b>True</b>.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Para mantener la compatibilidad con versiones anteriores, el valor predeterminado para esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de una regla de formato creada en la interfaz del usuario.</para>
-          <para></para>
-        </remarks>
+        <value><b>Valor booleano</b></value>
+        <remarks><para>Para mantener la compatibilidad con versiones anteriores, el valor predeterminado para esta propiedad es <b>True</b>, que corresponde al comportamiento opuesto de una regla de formato creada en la interfaz del usuario.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -765,14 +716,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> (enumeración), que especifica el tipo de formato condicional. Solo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad siempre devolverá un valor <b>entero</b> de "3", que es equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve una de las constantes de la <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeración, que especifica el tipo de formato condicional. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Esta propiedad siempre devolverá un <b>valor entero</b> de "3", que es equivalente a <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

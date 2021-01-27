@@ -1,13 +1,5 @@
 <Type Name="AutoRecover" FullName="Microsoft.Office.Interop.Excel.AutoRecover">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cd09f7ea28f0544739412fc8f1a64ac1370cadc1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576751" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoRecover" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cd09f7ea28f0544739412fc8f1a64ac1370cadc1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006198" /></Metadata><TypeSignature Language="C#" Value="public interface AutoRecover" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoRecover" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoRecover" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoRecover" />
@@ -30,14 +22,12 @@
   </Attributes>
   <Docs>
     <summary>Representa las funciones de recuperación automática de un libro.</summary>
-    <remarks>
-      <para>Las propiedades del objeto AutoRecover determinan la ruta y el intervalo de tiempo para la realización de una copia de seguridad de todos los archivos.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto para devolver un objeto <b>AutoRecover</b> .</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" /> (propiedad) del objeto <b>AutoRecover</b> para establecer la ruta de acceso donde se guardará el archivo AutoRecover.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" /> (propiedad) del objeto <b>AutoRecover</b> para establecer el intervalo de tiempo para la copia de seguridad de todos los archivos.</para>
-      <para>Tenga en cuenta las unidades de la propiedad <b>Time</b> están en minutos.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Las propiedades del objeto AutoRecover determinan la ruta y el intervalo de tiempo para la realización de una copia de seguridad de todos los archivos.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" /> propiedad del objeto para devolver un objeto <see cref="T:Microsoft.Office.Interop.Excel._Application" /> <b>AutoRecover</b> .</para>
+      <para>Utilice la propiedad del objeto AutoRecover para establecer la ruta de acceso para la que se guardará <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" /> el archivo <b></b> AutoRecover.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" /> propiedad del objeto <b>AutoRecover</b> para establecer el intervalo de tiempo para hacer una copia de seguridad de todos los archivos.</para>
+      <para>Nota: Las unidades de <b>la propiedad Time</b> están en minutos.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,13 +81,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -126,8 +114,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto está habilitado.</summary>
+        <summary>Es <b>True</b> si el objeto está habilitado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,7 +173,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve la ruta de acceso completa a donde Microsoft Excel guardará los archivos AutoRecover temporales.</summary>
+        <summary>Establece o devuelve la ruta de acceso completa a donde Microsoft Excel almacenará los archivos temporales de Autorrecuperar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,14 +204,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve el intervalo de tiempo para la <see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" /> objeto.</summary>
+        <summary>Establece o devuelve el intervalo de tiempo del <see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" /> objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Los valores permitidos están comprendidos entre 1 y 120 minutos. El valor predeterminado es 10 minutos.</para>
+        <remarks><para>Los valores permitidos son enteros comprendidos entre 1 y 120 minutos. El valor predeterminado es de 10 minutos.</para>
           <para>Si escribe un valor decimal se redondeará hasta el número entero más próximo. Por ejemplo, si escribe 5,5 equivale a 6.</para>
-          <para>Si se escriben valores fuera del intervalo válido, Microsoft Excel recuperará el valor de tiempo utilizado.</para>
-          <para></para>
-        </remarks>
+          <para>Si se introducen valores de hora fuera del intervalo válido, Microsoft Excel revertirá al valor de hora anterior utilizado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Excel.Borders">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ac67cbe49f4367fa1e2be6aa391091c3d7ab6ce3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580664" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac67cbe49f4367fa1e2be6aa391091c3d7ab6ce3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006135" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Borders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Borders" />
   <TypeSignature Language="VB.NET" Value="Public Interface Borders&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de cuatro <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objetos que representan los cuatro bordes de un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> o <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objeto.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>bordes</b> de un objeto <b>Range</b> o <b>Style</b> para devolver la colección <b>Borders</b> , que contiene los cuatro bordes.</para>
-      <para>Utilice <b>bordes</b>(<paramref name="index" />), donde <paramref name="index" /> identifica el borde, para devolver un solo objeto <b>Border</b> .</para>
-      <para>Index puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>o <b>xlInsideVertical </b>.</para>
-      <para></para>
-    </remarks>
+    <summary>Una colección de cuatro <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objetos que representan los cuatro bordes de un u <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> objeto.</summary>
+    <remarks><para>Utilice la <b>propiedad Borders</b> de un <b>objeto Range</b> o <b>Style</b> para devolver la <b>colección Borders,</b> que contiene los cuatro bordes.</para>
+      <para>Use <b>Borders</b>( <paramref name="index" /> ), donde identifica el <paramref name="index" /> borde, para devolver un solo <b>objeto Border</b> .</para>
+      <para>Index puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>o <b>xlInsideVertical</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +121,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color principal de los cuatro bordes de un rango. Si no está el mismo color, devuelve 0 (cero).</summary>
+        <summary>Devuelve o establece el color principal de los cuatro bordes de un intervalo. Si no son todos del mismo color, devuelve 0 (cero).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,18 +152,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color de los cuatro bordes. Devuelve <b>Null</b> si los cuatro bordes no son del mismo color.</summary>
+        <summary>Devuelve o establece el color de los cuatro bordes. Devuelve <b>Null</b> si los cuatro bordes no tienen el mismo color.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El color se especifica como un valor de índice para la paleta de colores actual o como uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes:</para>
+        <remarks><para>El color se especifica como un valor de índice en la paleta de colores actual o como una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constantes:</para>
           <para>
             <b>xlColorIndexAutomatic</b>
           </para>
           <para>
             <b>xlColorIndexNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -227,13 +215,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -294,7 +280,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Excel.XlBordersIndex" />
       </Parameters>
       <Docs>
-        <param name="Index">Requiere <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" />. Puede ser una de estas constantes <b>XlBordersIndex</b> :<b>xlDiagonalDown</b><b>xlDiagonalUp</b><b>xlEdgeBottom</b><b>xlEdgeLeft</b><b>xlEdgeRight</b><b>xlEdgeTop</b><b>xlInsideHorizontal</b><b>xlInsideVertical</b></param>
+        <param name="Index">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> . Puede ser una de estas constantes <b>XlBordersIndex:</b> <b>xlDiagonalDown</b><b>xlDiagonalUp</b><b>xlEdgeBottom</b><b>xlEdgeLeft</b><b>xlEdgeRight</b><b>xlEdgeTop</b><b>xlInsideHorizontal</b><b>xlInsideVertical</b></param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Border" /> objeto que representa uno de los bordes de un rango de celdas o un estilo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -328,9 +314,8 @@
       <Docs>
         <summary>Devuelve o configura el estilo de línea para el borde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />puede ser una de estas constantes <b>XlLineStyle</b> :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />puede ser una de estas <b>constantes XlLineStyle:</b></para>
           <para>
             <b>xlContinuous</b>
           </para>
@@ -347,7 +332,7 @@
             <b>xlDot</b>
           </para>
           <para>
-            <b>constantes xlDouble</b>
+            <b>xlDouble</b>
           </para>
           <para>
             <b>xlSlantDashDot</b>
@@ -355,8 +340,7 @@
           <para>
             <b>xlLineStyleNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -413,14 +397,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color del tema de la combinación de colores aplicada que está asociada con el objeto especificado.  Lectura/Escritura <b>Objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Al intentar tener acceso a un color de tema de un objeto cuyo color no se encuentre incluido en el tema en ese momento, se producirá un error en tiempo de ejecución por solicitud no válida.</para>
-          <para></para>
-        </remarks>
+        <summary>Devuelve o establece el color del tema de la combinación de colores aplicada que está asociada con el objeto especificado.  Lectura/Escritura<b>Objeto</b>.</summary>
+        <value><b>Objeto</b></value>
+        <remarks><para>Al intentar tener acceso a un color de tema de un objeto cuyo color no se encuentre incluido en el tema en ese momento, se producirá un error en tiempo de ejecución por solicitud no válida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TintAndShade">
@@ -450,14 +430,10 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un valor <b>Single</b> que aclara u oscurece un color.</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>Puede escribir un número comprendido entre -1 (más oscuro) y 1 (más claro) para la <see cref="P:Microsoft.Office.Interop.Excel.Borders.TintAndShade" /> (propiedad). Cero (0) es neutro.</para>
+        <value><b>Single</b></value>
+        <remarks><para>Puede escribir un número entre -1 (más oscuro) y 1 (más claro) para la <see cref="P:Microsoft.Office.Interop.Excel.Borders.TintAndShade" /> propiedad. Cero (0) es neutro.</para>
           <para>Al intentar establecer esta propiedad en un valor inferior a -1 o mayor que 1 se produce un error en tiempo de ejecución: "El valor especificado se encuentra fuera de los límites". Esta propiedad funciona tanto para los colores de temas como para los no incluidos en temas.</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -519,9 +495,8 @@
       <Docs>
         <summary>Devuelve o establece el grosor del borde.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />puede ser una de estas constantes <b>XlBorderWeight</b> :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />puede ser una de estas <b>constantes XlBorderWeight:</b></para>
           <para>
             <b>xlHairline</b>
           </para>
@@ -534,8 +509,7 @@
           <para>
             <b>xlThick</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

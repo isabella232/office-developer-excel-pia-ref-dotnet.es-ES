@@ -1,13 +1,5 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Excel.Characters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582365" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Characters" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005995" /></Metadata><TypeSignature Language="C#" Value="public interface Characters" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Characters" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Characters" />
   <TypeSignature Language="VB.NET" Value="Public Interface Characters" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa los caracteres de un objeto que contiene texto. El objeto <b>Characters</b> permite modificar cualquier secuencia de caracteres que esté contenida en la cadena de texto completa.</summary>
-    <remarks>
-      <para>Use <b>Characters</b>(<paramref name="start" />, <paramref name="length" />), donde <paramref name="start" /> es el número del carácter inicial y <paramref name="length" /> es el número de caracteres, para devolver un objeto <b>Characters</b> .</para>
-      <para>El método <b>Characters</b> es necesario sólo cuando sea necesario cambiar parte del texto de un objeto sin afectar al resto (no se puede usar el método <b>Characters</b> para dar formato a una parte del texto si el objeto no admite texto enriquecido). Para cambiar todo el texto al mismo tiempo, normalmente se puede aplicar el método adecuado o la propiedad directamente en el objeto.</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Utilice <b>Characters</b>( , ), donde es el número de carácter inicial y <paramref name="start" /> es el número de <paramref name="length" /> <paramref name="start" /> <paramref name="length" /> caracteres, para devolver un <b>objeto Characters</b> .</para>
+      <para>El método <b>Characters</b> sólo es necesario cuando se necesita cambiar parte del texto de un objeto sin afectar al resto (no se puede usar el método <b>Characters</b> para dar formato a una parte del texto si el objeto no admite texto enriquecido). Para cambiar todo el texto al mismo tiempo, normalmente se puede aplicar el método adecuado o la propiedad directamente en el objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +81,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>El texto de este rango de caracteres.</summary>
+        <summary>Texto de este intervalo de caracteres.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,13 +137,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
-          <para>La propiedad <b>Creator</b> está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C.</para>
+          <para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -205,7 +193,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object que representa la fuente del objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Font" /> objeto que representa la fuente del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,8 +220,7 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String">
-          <b>String</b> requerida. La cadena que se insertará.</param>
+        <param name="String"><b>String</b> requerida. La cadena que se insertará.</param>
         <summary>Inserta una cadena antes de los caracteres seleccionados.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -293,13 +280,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el texto fonético en especificado <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> objeto.</summary>
+        <summary>Devuelve o establece el texto fonético del objeto <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>En lugar de usar esta propiedad, debe utilizar el <see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> colección para agregar información de texto fonético a una celda y utilizar el <see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> objeto para devolver o establecer las cadenas de texto fonético en una celda.</para>
-          <para>Puede usar esta propiedad únicamente con objetos de <b>caracteres</b> que se basan en una sola celda.</para>
-          <para></para>
-        </remarks>
+        <remarks><para>En lugar de usar esta propiedad, debe usar el método de la colección para agregar información fonética a una celda y usar la propiedad del objeto para devolver o establecer las cadenas de texto fonético de una <see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> <see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> celda.</para>
+          <para>Esta propiedad sólo se puede usar con <b>objetos Characters</b> basados en una sola celda.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
