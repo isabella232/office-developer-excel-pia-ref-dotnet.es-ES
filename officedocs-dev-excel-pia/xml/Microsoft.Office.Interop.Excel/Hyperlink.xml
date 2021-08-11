@@ -1,5 +1,5 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Excel.Hyperlink">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0dfd3a08d223fb5d9858e759d9369366737cb84c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012078" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ddef5c28ce4220915cbb6915b0dba5b10e71c8d04c4f13e46c5888eb3931f62" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509154" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
@@ -23,8 +23,8 @@
   <Docs>
     <summary>Representa un hipervínculo.</summary>
     <remarks><para>El <b>objeto Hyperlink</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" /> colección.</para>
-      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> propiedad para devolver el hipervínculo de una forma (una forma sólo puede tener un hipervínculo).</para>
-      <para>Un rango o una hoja de cálculo pueden tener más de un hipervínculo. Utilice <b>Hyperlinks</b>( <paramref name="index" /> ), donde está el número de <paramref name="index" /> hipervínculo, para devolver un solo objeto <b>Hyperlink</b> .</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> propiedad para devolver el hipervínculo de una forma (una forma solo puede tener un hipervínculo).</para>
+      <para>Un rango o una hoja de cálculo pueden tener más de un hipervínculo. Utilice <b>Hyperlinks</b>( <paramref name="index" /> ), donde es el número de <paramref name="index" /> hipervínculo, para devolver un solo objeto <b>Hyperlink.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +139,7 @@
       <Docs>
         <param name="Filename"><b>String</b> requerida. Nombre del archivo del documento especificado.</param>
         <param name="EditNow"><b>Boolean</b> obligatorio. <b>True</b> para que el documento especificado se abra inmediatamente en el entorno de edición asociado. El valor predeterminado es True.</param>
-        <param name="Overwrite"><b>Boolean</b> obligatorio. <b>True</b> para sobrescribir cualquier archivo con el mismo nombre que esté guardado en la misma carpeta. <b>False</b> si se conserva cualquier archivo existente con el mismo nombre y <paramref name="Filename" /> el argumento especifica un nuevo nombre de archivo. El valor predeterminado es <b>False</b>.</param>
+        <param name="Overwrite"><b>Boolean</b> obligatorio. <b>True</b> para sobrescribir cualquier archivo con el mismo nombre que esté guardado en la misma carpeta. <b>False</b> si se conserva cualquier archivo existente del mismo nombre y <paramref name="Filename" /> el argumento especifica un nuevo nombre de archivo. El valor predeterminado es <b>False</b>.</param>
         <summary>Crea un nuevo documento vinculado al hipervínculo especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,11 +258,11 @@
         <Parameter Name="HeaderInfo" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="NewWindow">Optional <b>Object</b>. <b>True</b> para mostrar la aplicación de destino en una nueva ventana. El valor predeterminado es <b>False</b>.</param>
-        <param name="AddHistory">Optional <b>Object</b>. No se usa. Reservado para uso futuro.</param>
-        <param name="ExtraInfo">Optional <b>Object</b>. Una <b>cadena</b> o matriz de bytes que especifica información adicional que el HTTP usa para resolver el hipervínculo. Por ejemplo, puede usar para especificar las coordenadas de un mapa de imágenes, el contenido de un formulario o <paramref name="ExtraInfo" /> un nombre de archivo FAT.</param>
-        <param name="Method">Optional <b>Object</b>. Especifica el modo en que <paramref name="ExtraInfo" /> se adjunta. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> constantes.</param>
-        <param name="HeaderInfo">Optional <b>Object</b>. Una <b>cadena</b> que especifica información de encabezado para la solicitud HTTP. El valor predeterminado es una cadena vacía.</param>
+        <param name="NewWindow">Objeto <b>opcional</b>. <b>True</b> para mostrar la aplicación de destino en una nueva ventana. El valor predeterminado es <b>False</b>.</param>
+        <param name="AddHistory">Objeto <b>opcional</b>. No se usa. Reservado para uso futuro.</param>
+        <param name="ExtraInfo">Objeto <b>opcional</b>. Una <b>cadena</b> o matriz de bytes que especifica información adicional que el HTTP usa para resolver el hipervínculo. Por ejemplo, puede usar para especificar las coordenadas de un mapa de imagen, el contenido de un <paramref name="ExtraInfo" /> formulario o un nombre de archivo FAT.</param>
+        <param name="Method">Objeto <b>opcional</b>. Especifica que se <paramref name="ExtraInfo" /> adjunta la forma. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> constantes.</param>
+        <param name="HeaderInfo">Objeto <b>opcional</b>. Una <b>cadena</b> que especifica información de encabezado para la solicitud HTTP. El valor predeterminado es una cadena vacía.</param>
         <summary>Muestra un documento almacenado en caché si ya se ha descargado. De lo contrario, este método resuelve el hipervínculo, descarga el documento de destino y muestra el documento en la aplicación apropiada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -346,7 +346,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa el intervalo al que está unido el hipervínculo especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa el intervalo al que se adjunta el hipervínculo especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,7 +406,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que representa la forma adjunta al <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> comentario, nodo de diagrama o hipervínculo especificados.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto que representa la forma adjunta al comentario, nodo de diagrama o hipervínculo especificados.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

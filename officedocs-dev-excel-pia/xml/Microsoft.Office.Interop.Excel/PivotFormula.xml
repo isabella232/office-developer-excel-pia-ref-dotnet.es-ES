@@ -1,5 +1,5 @@
 <Type Name="PivotFormula" FullName="Microsoft.Office.Interop.Excel.PivotFormula">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ce492b9d9661d497cae1980426cde80b49102656" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010860" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFormula" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f6679aa5b5c3f27e5e9d76b81703a52f24417b449b5fc6d293914b5b2a5d7c9c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517288" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFormula" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFormula" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFormula" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFormula" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa una fórmula que se usa para calcular resultados en un informe de tabla dinámica.</summary>
-    <remarks><para>Utilice <b>PivotFormulas</b>( ), donde se encuentra el número de fórmula o la cadena en el lado izquierdo de la fórmula, para devolver <paramref name="index" /> el objeto <paramref name="index" /> <b>PivotFormula</b> .</para>
+    <remarks><para>Utilice <b>PivotFormulas</b>( ), donde se encuentra el número de fórmula o cadena en el lado izquierdo de la fórmula, para devolver <paramref name="index" /> el objeto <paramref name="index" /> <b>PivotFormula.</b></para>
       <para>Este objeto y sus propiedades y métodos asociados no están disponibles para orígenes de datos OLAP porque los campos calculados y los elementos no son compatibles.</para>
       <para> </para></remarks>
   </Docs>
@@ -87,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,9 +176,9 @@
         <summary>Devuelve o establece la fórmula del objeto en notación de estilo A1.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
-          <para>Si la celda contiene una constante, esta propiedad devolverá dicha constante. Si la celda está vacía, esta <b>propiedad Formula</b> devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
+          <para>Si la celda contiene una constante, esta propiedad <b>Formula</b> la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
           <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corta predeterminado.</para>
-          <para>Si el rango es de una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
+          <para>Si el intervalo es de una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. Del mismo modo, puede colocar la fórmula en una matriz.</para>
           <para>Si se define la fórmula para un rango de varias celdas, se rellenan todas las celdas del rango con la fórmula.</para>
           <para> </para></remarks>
       </Docs>
@@ -271,7 +271,7 @@
         <summary>Devuelve o establece un valor <b>String</b> que especifica fórmulas con formato Inglés (Estados Unidos) estándar.</summary>
         <value>To be added.</value>
         <remarks><para>La propiedad <b>StandardFormula</b> afecta principalmente a los nombres de elementos con formato de fecha o número. Proporciona una forma de especificar o consultar una fórmula para un elemento calculado determinado.</para>
-          <para>La <b>propiedad StandardFormula</b> es "de uso internacional", mientras que la <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> propiedad no.</para>
+          <para>La <b>propiedad StandardFormula</b> es "de aceptación internacional", mientras que la <see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Formula" /> propiedad no lo es.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

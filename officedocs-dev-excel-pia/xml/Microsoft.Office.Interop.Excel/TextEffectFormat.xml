@@ -1,5 +1,5 @@
 <Type Name="TextEffectFormat" FullName="Microsoft.Office.Interop.Excel.TextEffectFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fbb84779b82f0d04327c445fb2dede8ff19b5468" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009656" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e8f3ae739158fd1702c8341c6ed61e782925c4b99779e9b46e91a0ada3d11532" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517582" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextEffectFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextEffectFormat&#xA;Implements _IMsoDispObj" />
@@ -83,7 +83,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -428,8 +428,8 @@
       <Docs>
         <summary><b>True</b> si los caracteres del WordArt especificado giran 90 grados con relación a la forma que rodea el WordArt. <b>False</b> si los caracteres del WordArt especificado mantienen la orientación original con relación a la forma que los rodea.</summary>
         <value>To be added.</value>
-        <remarks><para>Si el WordArt tiene texto horizontal, al establecer la propiedad <b>RotatedChars</b> en <b>msoTrue</b> gira los caracteres 90 grados en el sentido contrario. Si el WordArt contiene texto vertical, al establecer la propiedad <b>RotatedChars</b> en <b>msoFalse</b> gira los caracteres 90 grados a la derecha. Utilice el <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> método para cambiar entre el flujo de texto horizontal y vertical.</para>
-          <para>El método y la propiedad del objeto y la propiedad <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>RotatedChars</b> y el método del objeto afectan a la orientación y dirección del carácter del flujo de texto en un objeto Shape que representa <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> WordArt. <b></b> Es podrán que deba experimentar para descubrir cómo combinar los efectos de estas propiedades y métodos para obtener el resultado que desea.</para>
+        <remarks><para>Si el WordArt tiene texto horizontal, al establecer la propiedad <b>RotatedChars</b> en <b>msoTrue</b> gira los caracteres 90 grados en el sentido contrario. Si el WordArt contiene texto vertical, al establecer la propiedad <b>RotatedChars</b> en <b>msoFalse</b> gira los caracteres 90 grados a la derecha. Use el <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> método para cambiar entre el flujo de texto horizontal y vertical.</para>
+          <para>El método y la propiedad del objeto y la <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> propiedad <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>RotatedChars</b> y el método del objeto afectan a la orientación y dirección del carácter del flujo de texto en un objeto Shape que representa <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> WordArt. <b></b> Es podrán que deba experimentar para descubrir cómo combinar los efectos de estas propiedades y métodos para obtener el resultado que desea.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -486,8 +486,8 @@
       <Parameters />
       <Docs>
         <summary>Cambia el flujo de texto del WordArt especificado de horizontal a vertical o viceversa.</summary>
-        <remarks><para>El uso <b>del método ToggleVerticalText</b> intercambia los valores de los y propiedades del objeto Shape que representa el WordArt y deja las <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> propiedades y sin <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> cambios.</para>
-          <para>El método y la propiedad del objeto y la propiedad y el método <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> <b>ToggleVerticalText</b> del objeto afectan <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> a <b></b> la orientación de caracteres y a la dirección del flujo de texto en un objeto Shape que representa WordArt. Es podrán que deba experimentar para descubrir cómo combinar los efectos de estas propiedades y métodos para obtener el resultado que desea.</para>
+        <remarks><para>Mediante el <b>método ToggleVerticalText</b> se intercambian los valores de las propiedades y del objeto Shape que representa El WordArt y deja las <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> propiedades y sin <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> cambios.</para>
+          <para>El método y la propiedad del objeto y la propiedad y el método <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> <b>ToggleVerticalText</b> del objeto afectan <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> a <b></b> la orientación del carácter y a la dirección del flujo de texto en un objeto Shape que representa WordArt. Es podrán que deba experimentar para descubrir cómo combinar los efectos de estas propiedades y métodos para obtener el resultado que desea.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="Areas" FullName="Microsoft.Office.Interop.Excel.Areas">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3d66092e7ce8a02412645f2fcf1c40d1d7d63d9e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006261" /></Metadata><TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c5ab8827592d9d74239b97b8ff0a6caefd9705fb1a777535ffeab95e7803a519" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506732" /></Metadata><TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Areas implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Areas" />
   <TypeSignature Language="VB.NET" Value="Public Interface Areas&#xA;Implements IEnumerable" />
@@ -26,10 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Colección de áreas, o bloques de celdas contiguas, de una selección.</summary>
-    <remarks><para>No hay ningún objeto <b>Area</b> singular; los miembros individuales de la <b>colección Areas</b> son <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objetos. La <b>colección Areas</b> contiene un objeto <b>Range</b> para cada rango discreto y contiguo de celdas dentro de la selección. Si la selección contiene solo un área, la <b>colección Areas</b> contiene un único objeto <b>Range</b> que corresponde a esa selección.</para>
+    <remarks><para>No hay ningún objeto <b>Area</b> singular; los miembros individuales de la <b>colección Areas</b> son <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objetos. La <b>colección Areas</b> contiene un objeto <b>Range</b> para cada intervalo discreto y contiguo de celdas de la selección. Si la selección contiene solo un área, la <b>colección Areas</b> contiene un único <b>objeto Range</b> que corresponde a esa selección.</para>
       <para>Use la <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /> propiedad para devolver la colección <b>Areas.</b></para>
-      <para>Utilice <b>Areas</b>( ), donde es el número de índice del <paramref name="index" /> <paramref name="index" /> área, para devolver un único objeto <b>Range</b> de la colección. Los números de índice corresponden al orden en que se seleccionaron las áreas.</para>
-      <para>Algunas operaciones no se pueden realizar en más de una área de una selección al mismo tiempo; debe recorrer las áreas individuales de la selección y realizar las operaciones en cada área por separado.</para>
+      <para>Use <b>Areas</b>( ), donde es el número de índice de <paramref name="index" /> <paramref name="index" /> área, para devolver un único objeto <b>Range</b> de la colección. Los números de índice corresponden al orden en que se seleccionaron las áreas.</para>
+      <para>Algunas operaciones no se pueden realizar en más de un área de una selección al mismo tiempo; debe recorrer las áreas individuales de la selección y realizar las operaciones en cada área por separado.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

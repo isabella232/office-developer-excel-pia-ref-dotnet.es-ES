@@ -1,5 +1,5 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006233" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="35dcac565514a9ae9dedbb2922b0f6e42ecdc23a946d510190b6725ab509a1b5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506725" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Contiene los atributos de Autocorrección de Microsoft Excel (uso de mayúsculas en nombres de días, corrección de dos mayúsculas iniciales, lista de corrección automática, etc.).</summary>
-    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> propiedad para devolver el objeto <b>AutoCorrect</b> .</para>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> propiedad para devolver el objeto <b>AutoCorrect.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +111,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Un <b>valor</b> booleano que indica si la expansión automática está habilitada para las listas.</summary>
+        <summary>Valor <b>booleano</b> que indica si la expansión automática está habilitada para listas.</summary>
         <value>To be added.</value>
         <remarks><para>Al escribir en una celda de una fila o columna vacía junto a una lista, la lista se expandirá para incluir esa fila o columna si está habilitada la expansión automática.</para>
           <para> </para></remarks>
@@ -143,8 +143,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Afecta a la creación de columnas calculadas creadas por listas de relleno automático hacia abajo. <b>Boolean</b> de lectura y escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Afecta a la creación de columnas calculadas creadas por listas de relleno automático hacia abajo. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks><para>La propiedad no afecta a las columnas calculadas existentes ni a las columnas calculadas creadas cuando no funciona el autorrelleno.</para>
           <para> </para></remarks>
       </Docs>
@@ -391,21 +391,21 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optional <b>Object</b>. Índice de fila de la matriz de reemplazos de Autocorrección que se ha de devolver. La fila se devuelve como una matriz unidimensional con dos elementos: el primer elemento es el texto de la columna 1 y el segundo elemento es el texto de la columna 2.</param>
+        <param name="Index">Objeto <b>opcional</b>. Índice de fila de la matriz de reemplazos de Autocorrección que se ha de devolver. La fila se devuelve como una matriz unidimensional con dos elementos: el primer elemento es el texto de la columna 1 y el segundo elemento es el texto de la columna 2.</param>
         <summary>Devuelve la matriz de reemplazos de Autocorrección.</summary>
         <value>To be added.</value>
         <remarks><para>Si <paramref name="Index" /> no se especifica, este método devuelve una matriz bidimensional. Cada fila de la matriz contiene un solo reemplazo, como se muestra en la siguiente tabla.</para>
           <list type="table">
             <item>
-              <term>1 </term>
+              <term>1</term>
               <description>El texto que se reemplaza.</description>
             </item>
             <item>
-              <term>2 </term>
+              <term>2</term>
               <description>El texto de reemplazo.</description>
             </item>
           </list>
-          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> método para agregar una entrada a la lista de reemplazo.</para>
+          <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> método para agregar una entrada a la lista de reemplazo.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

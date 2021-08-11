@@ -1,5 +1,5 @@
 <Type Name="SlicerCacheLevels" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevels">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="aa0b86cacb4cc71377b8c24dce9b71558a7bfc10" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010223" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCacheLevels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="58543807a1007d14bdc732932965f5f60f63acddd6a5746845e58dae765bc14a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517393" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCacheLevels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerCacheLevels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerCacheLevels&#xA;Implements IEnumerable" />
@@ -26,7 +26,7 @@
   </Attributes>
   <Docs>
     <summary>Representa la colección de niveles de jerarquía del origen de datos OLAP que se filtra mediante una segmentación de datos.</summary>
-    <remarks><para>Cuando se usa una segmentación de datos para filtrar un origen de datos OLAP, su memoria caché de segmentación de datos primaria puede contener varios niveles de jerarquía del origen de datos. Use la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> colección del objeto primario para tener acceso a los objetos que representan estos niveles de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> jerarquía. Esta colección no es accesible para orígenes de datos que no son de OLAP.</para>
+    <remarks><para>Cuando se usa una segmentación de datos para filtrar un origen de datos OLAP, su memoria caché de segmentación de datos primaria puede contener varios niveles de jerarquía del origen de datos. Use la <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> colección del objeto primario para obtener acceso a los objetos que representan estos niveles de <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> jerarquía. Esta colección no es accesible para orígenes de datos que no son de OLAP.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -88,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Cuando se usa con un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
@@ -117,7 +117,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el número de niveles de la colección especificada, que <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> representa el número de niveles en el objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> asociado.</summary>
+        <summary>Obtiene el número de niveles de la colección <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> especificada, que representa el número de niveles del objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> asociado.</summary>
         <value>El número de niveles de la colección <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> especificada, que representa el número de niveles en el objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> asociado.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,8 +147,8 @@
       <Docs>
         <summary>Obtiene un entero de 32 bits que indica la aplicación en la que se creó este objeto.</summary>
         <value>Entero de 32 bits que indica la aplicación en la que se creó este objeto.</value>
-        <remarks><para>De sólo <b>lectura de larga</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+        <remarks><para>Long de solo <b>lectura.</b></para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" /> propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -211,7 +211,7 @@
       </Parameters>
       <Docs>
         <param name="Level">Nombre único MDX del nivel o número de índice del objeto.</param>
-        <summary>Devuelve el objeto especificado de la colección o, si no se especifica ningún nivel, devuelve el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> primer objeto de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> colección.</summary>
+        <summary>Devuelve el objeto especificado de la colección, o si no se especifica ningún <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> nivel, devuelve el primer <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objeto de la colección.</summary>
         <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,8 +239,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto primario del objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> especificado.</summary>
-        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> que es el elemento principal del objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> especificado.</value>
+        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que es el elemento primario del objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> especificado.</summary>
+        <value>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que es el elemento primario del objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> especificado.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>

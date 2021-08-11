@@ -1,5 +1,5 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006051" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fc245e92c85150517fd12e026c41809f81cc10e575c90e1dd6b0210fb3fef8b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506634" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedMembers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedMembers&#xA;Implements IEnumerable" />
@@ -96,12 +96,12 @@
       <Docs>
         <param name="Name"><b>String</b> requerida. Nombre del miembro calculado.</param>
         <param name="Formula"><b>String</b> requerida. Fórmula del miembro calculado.</param>
-        <param name="SolveOrder">Optional <b>Object</b>. Orden de resolución del miembro calculado.</param>
-        <param name="Type">Optional <b>Object</b>. Tipo de miembro calculado.</param>
+        <param name="SolveOrder">Objeto <b>opcional</b>. Orden de resolución del miembro calculado.</param>
+        <param name="Type">Objeto <b>opcional</b>. Tipo de miembro calculado.</param>
         <summary>Agrega un campo calculado o un elemento calculado a una tabla dinámica.</summary>
         <returns>To be added.</returns>
         <remarks><para>El <paramref name="Formula" /> argumento debe tener una instrucción de sintaxis MDX (expresión multidimensional) válida. El argumento debe ser aceptable para el proveedor de procesamiento analítico en línea (OLAP) y el <paramref name="Name" /> <paramref name="Type" /> argumento debe definirse.</para>
-          <para>Si establece el argumento de este método en , debe llamar al método para que el nuevo conjunto de campos <paramref name="Type" /> sea visible en la tabla <paramref name="xlCalculatedSet" /> <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> dinámica.</para>
+          <para>Si establece el argumento de este método en , debe llamar al método para que el nuevo conjunto de <paramref name="Type" /> campos sea visible en la tabla <paramref name="xlCalculatedSet" /> <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> dinámica.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -181,24 +181,24 @@
         <param name="Type">Tipo de miembro calculado.</param>
         <param name="DisplayFolder">Carpeta que existe para mostrar medidas calculadas.</param>
         <param name="MeasureGroup">El grupo al que pertenece el calculado.</param>
-        <param name="ParentHierarchy">La ruta de acceso principal del <b>objeto ParentMember</b>.</param>
+        <param name="ParentHierarchy">La ruta de acceso principal de <b>ParentMember</b>.</param>
         <param name="ParentMember">El elemento primario del miembro calculado.</param>
-        <param name="NumberFormat">Formato de los números usados para los miembros calculados.</param>
+        <param name="NumberFormat">Formato de números usados para miembros calculados.</param>
         <summary>Agrega un campo calculado o un elemento calculado a una tabla dinámica.</summary>
         <returns>To be added.</returns>
         <remarks><para>El <b>argumento Formula</b> debe tener una instrucción de sintaxis MDX (expresión multidimensional) válida. El <b>argumento Name</b> debe ser aceptable para el proveedor de procesamiento analítico en línea (OLAP).</para>
           <list type="bullet">
             <item>
               <description>
-                <b>DisplayFolder:</b>las carpetas de visualización solo son válidas para medidas calculadas. No son válidos para los miembros calculados. La cadena puede tener punto y coma; en él. Los punto y coma designan varias carpetas para mostrar. Por ejemplo, si usa la cadena my folder1;myfolder2, la medida calculada se mostrará en dos carpetas de visualización, una denominada myfolder1 y otra denominada "myfolder2". La cadena puede tener barras diagonales inversas \. Esto designa una ruta jerárquica para la carpeta para mostrar. Por ejemplo, si usa la cadena welcome\to\seattle, habrá una carpeta para mostrar denominada welcome que contiene una carpeta para mostrar a la que se llama que contiene una carpeta para mostrar llamada seattle. Las carpetas de visualización son carpetas virtuales.En realidad, no existen en el mismo sentido que las carpetas del sistema. Solo existen para mostrar las medidas calculadas.</description>
+                <b>DisplayFolder:</b>las carpetas de presentación solo son válidas para medidas calculadas. No son válidos para miembros calculados. La cadena puede tener punto y coma; en él. Los puntos y coma designan varias carpetas para mostrar. Por ejemplo, si usa la cadena my folder1;myfolder2, la medida calculada se mostrará en dos carpetas de presentación, una denominada myfolder1 y otra denominada 'myfolder2'. La cadena puede tener barras diagonales inversas \. Esto designa una ruta jerárquica para la carpeta para mostrar. Por ejemplo, si usa la cadena welcome\to\seattle, habrá una carpeta para mostrar denominada welcome que contiene una carpeta para mostrar llamada a la que contiene una carpeta para mostrar llamada seattle. Las carpetas para mostrar son carpetas virtuales.En realidad, no existen en el mismo sentido en que pensamos en las carpetas del sistema. Solo existen para mostrar las medidas calculadas.</description>
             </item>
             <item>
               <description>
-                <b>NumberFormat:</b>los formatos de número solo se pueden establecer mediante macros. No hay ninguna interfaz de usuario para configurarlos. Esta es la única propiedad que no se puede establecer a través de la interfaz de usuario. El tipo siempre es <b>xlNumberFormatTypeDefault cuando</b> se crea un miembro calculado a través de la interfaz de usuario. Los formatos de número solo son válidos para los miembros calculados. No son válidos para medidas calculadas.</description>
+                <b>NumberFormat:</b>los formatos de número solo se pueden establecer mediante macros. No hay ninguna interfaz de usuario para establecerlos. Esta es la única propiedad que no se puede establecer a través de la interfaz de usuario. El tipo siempre es <b>xlNumberFormatTypeDefault cuando</b> se crea un miembro calculado a través de la interfaz de usuario. Los formatos de número solo son válidos para miembros calculados. No son válidos para medidas calculadas.</description>
             </item>
             <item>
               <description>
-                <b>ParentHierarchy:</b>la jerarquía principal puede ser cualquier jerarquía MDX válida. Las jerarquías primarias solo son válidas para los miembros calculados. No son válidos para medidas calculadas. Si se elige un miembro primario que se encuentra en una jerarquía primaria diferente, la jerarquía primaria se cambiará automáticamente para que coincida con la jerarquía primaria del miembro primario.</description>
+                <b>ParentHierarchy:</b>la jerarquía primaria puede ser cualquier jerarquía MDX válida. Las jerarquías primarias solo son válidas para los miembros calculados. No son válidos para medidas calculadas. Si se elige un miembro primario que se encuentra en una jerarquía principal diferente, la jerarquía primaria se cambiará automáticamente para que coincida con la jerarquía primaria del miembro primario.</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -227,7 +227,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -348,7 +348,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Nombre o número de índice del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Nombre o número de índice del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,5 +1,5 @@
 <Type Name="NegativeBarFormat" FullName="Microsoft.Office.Interop.Excel.NegativeBarFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="dd36d7dd837c15479c5a57be46fefd60a5f43b02" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011427" /></Metadata><TypeSignature Language="C#" Value="public interface NegativeBarFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5ae184250424bef0f2270d4f0f73cd80c6fb55ec0bc0dc6179943d87ef266748" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506389" /></Metadata><TypeSignature Language="C#" Value="public interface NegativeBarFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NegativeBarFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface NegativeBarFormat" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa la configuración de color de las barras de datos para valores negativos que se definen mediante una regla de formato condicional de barra de datos.</summary>
-    <remarks><para>Las propiedades del objeto se pueden usar para especificar el color de relleno y el borde de las <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> barras de datos para valores negativos. Utilice el objeto que representa una regla de formato condicional de barra de datos para tener acceso <see cref="P:Microsoft.Office.Interop.Excel.Databar.NegativeBarFormat" /> al objeto asociado con esa <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> regla.</para>
+    <remarks><para>Las propiedades del objeto se pueden usar para especificar el color de relleno y el borde de <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> las barras de datos para valores negativos. Use el objeto que representa una regla de formato condicional de barra de datos para obtener <see cref="P:Microsoft.Office.Interop.Excel.Databar.NegativeBarFormat" /> acceso al objeto asociado a esa <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> regla.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Cuando se usa con un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
@@ -78,8 +78,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objeto que puede usar para especificar el color del borde de las barras de datos negativas.</summary>
-        <value>Objeto que se puede usar para especificar el color del borde de <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> las barras de datos negativas.</value>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objeto que puede usar para especificar el color de borde de las barras de datos negativas.</summary>
+        <value>Un <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objeto que puede usar para especificar el color de borde de las barras de datos negativas.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -140,8 +140,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un objeto que puede usar para especificar el color de relleno de <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> las barras de datos negativas.</summary>
-        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> que se puede usar para especificar el color de relleno de las barras de datos negativas.</value>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> objeto que puede usar para especificar el color de relleno de las barras de datos negativas.</summary>
+        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> que puede usar para especificar el color de relleno de las barras de datos negativas.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -175,7 +175,7 @@
         <summary>Obtiene o establece si se va a usar el mismo color de relleno que las barras de datos positivas.</summary>
         <value>Especifica si se usa el mismo color de relleno como barras de datos positivas.</value>
         <remarks><para>Lectura/escritura.</para>
-          <para>Si establece la propiedad en , utilice la propiedad del objeto para devolver un objeto que puede <see cref="P:Microsoft.Office.Interop.Excel.NegativeBarFormat.ColorType" /> usar para especificar el color de <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarNegativeColorType.xlDataBarColor" /> <see cref="P:Microsoft.Office.Interop.Excel.NegativeBarFormat.Color" /> <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> relleno.</para>
+          <para>Si establece la propiedad en , use la propiedad del objeto para devolver un objeto que puede <see cref="P:Microsoft.Office.Interop.Excel.NegativeBarFormat.ColorType" /> usar para especificar el color de <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarNegativeColorType.xlDataBarColor" /> <see cref="P:Microsoft.Office.Interop.Excel.NegativeBarFormat.Color" /> <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> relleno.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -204,8 +204,8 @@
       <Docs>
         <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
         <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks><para>De sólo <b>lectura de larga</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.NegativeBarFormat.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+        <remarks><para>Long de solo <b>lectura.</b></para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La <see cref="P:Microsoft.Office.Interop.Excel.NegativeBarFormat.Creator" /> propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -233,7 +233,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el objeto primario del objeto especificado.</summary>
-        <value>Objeto primario del objeto especificado.</value>
+        <value>El objeto primario del objeto especificado.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
