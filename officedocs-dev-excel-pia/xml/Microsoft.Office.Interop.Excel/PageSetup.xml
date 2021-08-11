@@ -1,5 +1,5 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Excel.PageSetup">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="50c5531a9636ff8479dc8d559960466d2a73af0f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011126" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6547f45c61e4415beeb18b9e68f2bb5decc40eb68b9e4c5dacc599e36eb2a762" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515237" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageSetup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PageSetup" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageSetup" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa la descripción de la configuración de página. El <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> objeto contiene todos los atributos de configuración de página (margen izquierdo, margen inferior, tamaño de papel, entre otros) como propiedades.</summary>
-    <remarks><para>Utilice la <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> propiedad de un objeto o de un objeto para devolver un <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> objeto.</para>
+    <remarks><para>Utilice la <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> propiedad de un objeto or para devolver un <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> objeto.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -52,8 +52,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve <b>True</b> para que Excel alinee el encabezado y el pie de página con los márgenes establecidos en las opciones de configuración de página. <b>Boolean</b> de lectura y escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Devuelve <b>True</b> para que Excel alinee el encabezado y el pie de página con los márgenes establecidos en las opciones de configuración de página. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,7 +144,7 @@
       <Docs>
         <summary>Devuelve o establece el tamaño del margen inferior en puntos.</summary>
         <value>To be added.</value>
-        <remarks><para>Los márgenes se establecen o devuelven en puntos. Use el método <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> o el método para realizar la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> conversión.</para>
+        <remarks><para>Los márgenes se establecen o devuelven en puntos. Use el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para realizar la <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> conversión.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -360,9 +360,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlObjectSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la forma en que se escala un gráfico para ajustarlo a una página.</summary>
+        <summary>Devuelve o establece la forma en que se escala un gráfico para que se ajuste a una página.</summary>
         <value>To be added.</value>
-        <remarks><para>Esta propiedad sólo se aplica a hojas de gráficos (no se puede usar con gráficos incrustados).</para>
+        <remarks><para>Esta propiedad solo se aplica a hojas de gráficos (no se puede usar con gráficos incrustados).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -422,8 +422,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si un encabezado o pie de página se usa en la primera página. <b>Boolean</b> de lectura y escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Es <b>True</b> si se usa un encabezado o pie de página diferente para la primera página. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,7 +574,7 @@
       <Docs>
         <summary>Devuelve o establece el número de páginas en que se ajustará el tamaño vertical de la hoja de cálculo para la impresión. Esta propiedad sólo se aplica a hojas de cálculo.</summary>
         <value>To be added.</value>
-        <remarks><para>Si esta propiedad es <b>False</b>, Microsoft Excel escala la hoja de cálculo de acuerdo con la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> propiedad.</para>
+        <remarks><para>Si esta propiedad es <b>False</b>, Microsoft Excel escala la hoja de cálculo según la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> propiedad.</para>
           <para>Si la propiedad es True , se omite la propiedad <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" /> <b>FitToPagesTall.</b> <b></b></para>
           <para> </para></remarks>
       </Docs>
@@ -671,7 +671,7 @@
       <Docs>
         <summary>Devuelve o establece la distancia en puntos desde el borde superior de la página hasta el encabezado.</summary>
         <value>To be added.</value>
-        <remarks><para>Los márgenes se establecen o devuelven en puntos. Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para convertir <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> medidas desde pulgadas o centímetros.</para>
+        <remarks><para>Los márgenes se establecen o devuelven en puntos. Use el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para convertir <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> medidas de pulgadas o centímetros.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -821,7 +821,7 @@
       <Docs>
         <summary>Devuelve o establece el tamaño del margen izquierdo en puntos.</summary>
         <value>To be added.</value>
-        <remarks><para>Los márgenes se establecen o devuelven en puntos. Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para convertir <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> medidas de pulgadas o centímetros.</para>
+        <remarks><para>Los márgenes se establecen o devuelven en puntos. Use el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para convertir <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> medidas de pulgadas o centímetros.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -852,7 +852,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b> si el objeto <b>PageSetup</b> especificado tiene distintos encabezados y pies de página para páginas pares e impares. <b>Boolean</b> de lectura y escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -882,7 +882,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el orden que Microsoft Excel usa para numerar páginas al imprimir una hoja de cálculo grande.</summary>
+        <summary>Devuelve o establece el orden que Microsoft Excel para numerar páginas al imprimir una hoja de cálculo grande.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -942,7 +942,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el recuento o número de elemento de las páginas de la <see cref="T:Microsoft.Office.Interop.Excel.Pages" /> colección.</summary>
+        <summary>Devuelve o establece el número de recuento o elemento de las páginas de la <see cref="T:Microsoft.Office.Interop.Excel.Pages" /> colección.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Pages" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1096,7 +1096,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPrintErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve una <see cref="T:Microsoft.Office.Interop.Excel.XlPrintErrors" /> constante que especifica el tipo de error de impresión mostrado. Esta característica permite al usuario suprimir la presentación de valores de error al imprimir una hoja de cálculo.</summary>
+        <summary>Establece o devuelve una <see cref="T:Microsoft.Office.Interop.Excel.XlPrintErrors" /> constante que especifica el tipo de error de impresión que se muestra. Esta característica permite al usuario suprimir la presentación de valores de error al imprimir una hoja de cálculo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1160,7 +1160,7 @@
       <Docs>
         <summary>Es <b>True</b> si se imprimen encabezados de fila y de columna en esta página. Esta propiedad sólo se aplica a hojas de cálculo.</summary>
         <value>To be added.</value>
-        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" /> propiedad controla la visualización en pantalla de los encabezados.</para>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" /> propiedad controla la presentación en pantalla de los encabezados.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1225,7 +1225,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optional <b>Object</b>. La calidad de impresión horizontal (1) o vertical (2). Es posible que algunas impresoras no acepten la calidad de impresión vertical. Si no se especifica este argumento, la propiedad <b>PrintQuality</b> devuelve (o se puede establecer en ella) una matriz de dos elementos que contiene la calidad de impresión vertical y la horizontal.</param>
+        <param name="Index">Objeto <b>opcional</b>. La calidad de impresión horizontal (1) o vertical (2). Es posible que algunas impresoras no acepten la calidad de impresión vertical. Si no se especifica este argumento, la propiedad <b>PrintQuality</b> devuelve (o se puede establecer en ella) una matriz de dos elementos que contiene la calidad de impresión vertical y la horizontal.</param>
         <summary>Devuelve o establece la calidad de impresión.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1445,7 +1445,7 @@
       <Docs>
         <summary>Devuelve o establece el tamaño del margen derecho en puntos.</summary>
         <value>To be added.</value>
-        <remarks><para>Los márgenes se establecen o devuelven en puntos. Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para convertir <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> medidas desde pulgadas o centímetros.</para>
+        <remarks><para>Los márgenes se establecen o devuelven en puntos. Use el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para convertir <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> medidas de pulgadas o centímetros.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1475,8 +1475,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece si se debe aplicar escala al encabezado y al pie de página junto con el documento cuando cambie el tamaño del documento. <b>Boolean</b> de lectura y escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Devuelve o establece si se debe aplicar escala al encabezado y al pie de página junto con el documento cuando cambie el tamaño del documento. Valor <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1508,7 +1508,7 @@
       <Docs>
         <summary>Devuelve o establece el tamaño del margen superior en puntos.</summary>
         <value>To be added.</value>
-        <remarks><para>Los márgenes se establecen o devuelven en puntos. Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para convertir <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> medidas de pulgadas o centímetros.</para>
+        <remarks><para>Los márgenes se establecen o devuelven en puntos. Use el <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> método o el método para convertir <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> medidas de pulgadas o centímetros.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1540,7 +1540,7 @@
       <Docs>
         <summary>Devuelve o establece un porcentaje (entre el 10 y el 400 por ciento) por el que Microsoft Excel escalará la hoja de cálculo para imprimir. Esta propiedad sólo se aplica a hojas de cálculo.</summary>
         <value>To be added.</value>
-        <remarks><para>Si esta propiedad es <b>False</b>, las <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> propiedades y controlan cómo se escala la hoja de <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> cálculo.</para>
+        <remarks><para>Si esta propiedad es <b>False</b>, las propiedades y controlan cómo se escala <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> la hoja de <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> cálculo.</para>
           <para>Los ajustes de tamaño conservan la proporción del aspecto del documento original.</para>
           <para> </para></remarks>
       </Docs>

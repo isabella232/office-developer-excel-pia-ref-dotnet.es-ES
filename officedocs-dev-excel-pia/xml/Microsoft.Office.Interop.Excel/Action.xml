@@ -1,5 +1,5 @@
 <Type Name="Action" FullName="Microsoft.Office.Interop.Excel.Action">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2161b566bfd02a2bafb42673b2e765964172c1df" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999787" /></Metadata><TypeSignature Language="C#" Value="public interface Action" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dd0f08a29f414d3f675de4dd6ebfd05ec2a1bef30b4ce6829803b86d7f262cc6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505486" /></Metadata><TypeSignature Language="C#" Value="public interface Action" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Action" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Action" />
   <TypeSignature Language="VB.NET" Value="Public Interface Action" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una acción que se va a ejecutar en <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> datos <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> o en datos.</summary>
+    <summary>Representa una acción que se va a ejecutar en <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> o <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> en datos.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la Microsoft Office Excel aplicación. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
         <value><b>Aplicación</b> (vea más arriba)</value>
         <remarks><para>Puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto.</para>
           <para> </para></remarks>
@@ -78,7 +78,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el título asignado al <see cref="P:Microsoft.Office.Interop.Excel.Action" /> objeto. <b>String</b> de solo lectura.</summary>
-        <value><b>Cadena</b></value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +106,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el contenido asociado al <see cref="P:Microsoft.Office.Interop.Excel.Action" /> objeto. <b>String</b> de solo lectura.</summary>
-        <value><b>Cadena</b></value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +133,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la propiedad de coordenada del <see cref="P:Microsoft.Office.Interop.Excel.Action" /> objeto. Solo lectura</summary>
+        <summary>Devuelve la propiedad de coordenadas del <see cref="P:Microsoft.Office.Interop.Excel.Action" /> objeto. Solo lectura</summary>
         <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,9 +161,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una constante de la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeración que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
+        <summary>Devuelve una constante en la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeración que indica la aplicación en la que se creó este objeto. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C y decimal 1480803660. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C y 1480803660. La <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" /> propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -216,7 +216,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el nombre del objeto. Sólo lectura de la <b>cadena</b>.</summary>
-        <value><b>Cadena</b></value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +243,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <summary>Devuelve el objeto primario para el objeto especificado. Solo lectura.</summary>
         <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>

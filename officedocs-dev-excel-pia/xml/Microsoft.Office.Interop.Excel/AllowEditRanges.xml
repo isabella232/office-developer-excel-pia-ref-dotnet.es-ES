@@ -1,5 +1,5 @@
 <Type Name="AllowEditRanges" FullName="Microsoft.Office.Interop.Excel.AllowEditRanges">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="af710486197f282cbd6ae343c8e625da4def5409" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999731" /></Metadata><TypeSignature Language="C#" Value="public interface AllowEditRanges : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="74454fb90febc17f614409cc56b2b3460aed756e7c606dd0b2c3b8b3a7589a33" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506249" /></Metadata><TypeSignature Language="C#" Value="public interface AllowEditRanges : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AllowEditRanges implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AllowEditRanges" />
   <TypeSignature Language="VB.NET" Value="Public Interface AllowEditRanges&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Colección de todos los objetos <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> que representan las celdas que se pueden editar en una hoja de cálculo protegida.</summary>
-    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowEditRanges" /> propiedad del objeto para devolver una colección <see cref="T:Microsoft.Office.Interop.Excel.Protection" /> <b>AllowEditRanges</b> .</para>
-      <para>Una vez que se ha devuelto una colección <b>AllowEditRanges,</b> puede usar el método para agregar un rango que se puede <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" /> editar en una hoja de cálculo protegida.</para>
+    <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> objetos que representan las celdas que se pueden editar en una hoja de cálculo protegida.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowEditRanges" /> propiedad del objeto para devolver una colección <see cref="T:Microsoft.Office.Interop.Excel.Protection" /> <b>AllowEditRanges.</b></para>
+      <para>Una vez que se ha devuelto una colección <b>AllowEditRanges,</b> puede usar el método para agregar un rango que se <see cref="M:Microsoft.Office.Interop.Excel.AllowEditRanges.Add(System.String,Microsoft.Office.Interop.Excel.Range,System.Object)" /> puede editar en una hoja de cálculo protegida.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -89,7 +89,7 @@
         <Parameter Name="Password" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Title">Optional <b>Object</b>. Contraseña correspondiente al rango.</param>
+        <param name="Title">Objeto <b>opcional</b>. Contraseña correspondiente al rango.</param>
         <param name="Range"><b>String</b> requerida. Título del rango.</param>
         <param name="Password">Objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> obligatorio. Rango que está permitido modificar.</param>
         <summary>Agrega un rango que se puede modificar en una hoja de cálculo protegida.</summary>
@@ -183,7 +183,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Nombre o número de índice del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Nombre o número de índice del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,5 +1,5 @@
 <Type Name="_Workbook" FullName="Microsoft.Office.Interop.Excel._Workbook">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0dc241801e29cd7a9aa2098f883cf029f3c40f54" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012680" /></Metadata><TypeSignature Language="C#" Value="public interface _Workbook" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="525b0c0643ce97e370c33ada053f45415ea85b7d79474f154008ca03e7904ba1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515608" /></Metadata><TypeSignature Language="C#" Value="public interface _Workbook" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Workbook" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._Workbook" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Workbook" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Es una interfaz principal en una coclase COM que el código administrado necesita para la interoperabilidad con el objeto COM correspondiente. Use esta interfaz principal únicamente cuando el método que desee usar comparta el mismo nombre que un evento del objeto COM; en este caso, realice la conversión a esta interfaz para llamar al método y realice la conversión a la última versión de la interfaz de eventos para conectarse al evento. En caso contrario, use la interfaz .NET derivada de la coclase COM para obtener acceso a los métodos, propiedades y eventos del objeto COM. Para obtener más información acerca del objeto COM, vea <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> .</summary>
+    <summary>Es una interfaz principal en una coclase COM que el código administrado necesita para la interoperabilidad con el objeto COM correspondiente. Use esta interfaz principal únicamente cuando el método que desee usar comparta el mismo nombre que un evento del objeto COM; en este caso, realice la conversión a esta interfaz para llamar al método y realice la conversión a la última versión de la interfaz de eventos para conectarse al evento. En caso contrario, use la interfaz .NET derivada de la coclase COM para obtener acceso a los métodos, propiedades y eventos del objeto COM. Para obtener más información sobre el objeto COM, vea <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -249,9 +249,9 @@
         <Parameter Name="Where" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="When">Optional <b>Object</b>. Especifica cuándo se aceptan todos los cambios.</param>
-        <param name="Who">Optional <b>Object</b>. Especifica quién acepta todos los cambios.</param>
-        <param name="Where">Optional <b>Object</b>. Especifica dónde se aceptan todos los cambios.</param>
+        <param name="When">Objeto <b>opcional</b>. Especifica cuándo se aceptan todos los cambios.</param>
+        <param name="Who">Objeto <b>opcional</b>. Especifica quién acepta todos los cambios.</param>
+        <param name="Where">Objeto <b>opcional</b>. Especifica dónde se aceptan todos los cambios.</param>
         <summary>Acepta todos los cambios del libro compartido especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,7 +288,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si se pueden usar etiquetas en las fórmulas de hoja de cálculo. El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
+        <summary><b>True</b> si se pueden usar etiquetas en fórmulas de hoja de cálculo. El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -320,26 +320,26 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece si determinadas funciones de hoja de cálculo usan los algoritmos de precisión más recientes para calcular sus resultados.</summary>
-        <value>Especifica qué versión de algoritmos usar para determinadas funciones de hoja de cálculo.</value>
+        <value>Especifica la versión de los algoritmos que se usarán para determinadas funciones de hoja de cálculo.</value>
         <remarks><para>Lectura/escritura</para>
-          <para>De forma predeterminada, algunas de las funciones de hoja de cálculo de Microsoft Office Excel 2007 y versiones anteriores de Microsoft Excel usan algoritmos nuevos que aumentan su precisión. Sin embargo, en algunos casos, los nuevos algoritmos reducen el rendimiento de estas funciones en relación con su rendimiento en Microsoft Office Excel 2007 y versiones anteriores de Excel. Para especificar que estas funciones de hoja de cálculo usan los algoritmos más antiguos para aumentar su rendimiento, establezca la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propiedad en 1. En la tabla siguiente se describen los valores posibles de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propiedad.</para>
+          <para>De forma predeterminada, algunas de las funciones de hoja de cálculo de Microsoft Office Excel 2007 y versiones anteriores de Microsoft Excel usan algoritmos nuevos que aumentan su precisión. Sin embargo, en algunos casos, los nuevos algoritmos disminuyen el rendimiento de estas funciones en relación con su rendimiento en Microsoft Office Excel 2007 y versiones anteriores de Excel. Para especificar que estas funciones de hoja de cálculo usan los algoritmos más antiguos para aumentar su rendimiento, establezca la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propiedad en 1. En la tabla siguiente se describe la configuración posible de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propiedad.</para>
           <list type="table">
             <item>
               <term>0</term>
               <description>Se usan los últimos algoritmos más precisos (valor predeterminado)</description>
             </item>
             <item>
-              <term>1 </term>
-              <description>Usar Microsoft Office de Excel 2007 o versiones anteriores</description>
+              <term>1</term>
+              <description>Usar Microsoft Office Excel algoritmos de versión anterior o 2007</description>
             </item>
             <item>
-              <term>2 </term>
-              <description>Usar algoritmos de Microsoft Excel 2010</description>
+              <term>2</term>
+              <description>Usar Microsoft Excel 2010 algoritmos</description>
             </item>
           </list>
           <para>
-            <b>Precaución:</b>establecer la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propiedad en un valor distinto de 0, 1 o 2 dará como resultado un comportamiento no definido.</para>
-          <para>En la tabla siguiente se resumen las funciones que se ven afectadas al establecer la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propiedad en 1. Las funciones que se enumeran en la columna "Funciones no afectadas" siempre usarán los algoritmos de precisión más recientes o no se cambiaron en Excel 2010. Para los nombres de función que incluyen un punto (.) en sus nombres, para determinar el nombre de la función correspondiente implementada en VBA como método del objeto, sustituya el carácter de subrayado ( _ ) por el <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> punto. Por ejemplo, el método VBA que corresponde a la versión BETA. La función DIST es el <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> método.</para>
+            <b>Precaución:</b>Establecer la propiedad en un valor distinto de 0, 1 o 2 dará como resultado <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> un comportamiento indefinido.</para>
+          <para>En la tabla siguiente se resumen las funciones que se ven afectadas al establecer la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> propiedad en 1. Las funciones que se enumeran en la columna "Funciones no afectadas" siempre usarán los algoritmos de precisión más recientes o no se modificaron en Excel 2010. Para los nombres de función que incluyen un punto (.) en sus nombres, para determinar el nombre de la función correspondiente implementada en VBA como método del objeto, sustituya el carácter de subrayado ( _ ) para el <see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" /> período. Por ejemplo, el método VBA que corresponde a la BETA. La función DIST es el <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" /> método.</para>
           <list type="table">
             <item>
               <term>BETADIST</term>
@@ -363,11 +363,11 @@
             </item>
             <item>
               <term>CHITEST</term>
-              <description>CEILING</description>
+              <description>TECHO</description>
             </item>
             <item>
               <term>CONFIANZA</term>
-              <description>CEILING. PRECISE</description>
+              <description>TECHO. PRECISE</description>
             </item>
             <item>
               <term>CRITBINOM</term>
@@ -387,7 +387,7 @@
             </item>
             <item>
               <term>ERFC</term>
-              <description>CHISQ. TEST</description>
+              <description>CHISQ. PRUEBA</description>
             </item>
             <item>
               <term>EXPONDIST</term>
@@ -414,7 +414,7 @@
               <description>ERF. PRECISE</description>
             </item>
             <item>
-              <term>GAMAMINV</term>
+              <term>GAMMINV</term>
               <description>ERFC. PRECISE</description>
             </item>
             <item>
@@ -447,7 +447,7 @@
             </item>
             <item>
               <term>NORMINV</term>
-              <description>PLANTA. PRECISE</description>
+              <description>FLOOR. PRECISE</description>
             </item>
             <item>
               <term>NORMSDIST</term>
@@ -467,7 +467,7 @@
             </item>
             <item>
               <term>PPMT</term>
-              <description>ISO. CEILING</description>
+              <description>ISO. TECHO</description>
             </item>
             <item>
               <term>STDEV</term>
@@ -487,14 +487,14 @@
             </item>
             <item>
               <term>TTEST</term>
-              <description>MODO. MULT</description>
+              <description>MODE. MULT</description>
             </item>
             <item>
               <term>VAR</term>
-              <description>MODO. SNGL</description>
+              <description>MODE. SNGL</description>
             </item>
             <item>
-              <term>DESA</term>
+              <term>VARA</term>
               <description>NEGBINOM. DIST</description>
             </item>
             <item>
@@ -519,15 +519,15 @@
             </item>
             <item>
               <term />
-              <description>PERCENTIL</description>
+              <description>PERCENTILE</description>
             </item>
             <item>
               <term />
-              <description>PERCENTIL. EXC</description>
+              <description>PERCENTILE. EXC</description>
             </item>
             <item>
               <term />
-              <description>PERCENTIL. INC</description>
+              <description>PERCENTILE. INC</description>
             </item>
             <item>
               <term />
@@ -551,11 +551,11 @@
             </item>
             <item>
               <term />
-              <description>CUARTIL. EXC</description>
+              <description>QUARTILE. EXC</description>
             </item>
             <item>
               <term />
-              <description>CUARTIL. INC</description>
+              <description>QUARTILE. INC</description>
             </item>
             <item>
               <term />
@@ -724,7 +724,7 @@
         <summary>Devuelve un objeto que representa la hoja activa (la hoja de la parte superior) en el libro activo o en la ventana o libro especificados.  Devuelve <b>Nothing</b> si no hay ninguna hoja activa. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Si no se especifica un calificador de objeto, la propiedad devuelve la hoja activa del libro activo.</para>
-          <para>Si un libro aparece en más de una ventana, la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> propiedad puede ser diferente en diferentes ventanas.</para>
+          <para>Si un libro aparece en más de una ventana, la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> propiedad puede ser diferente en ventanas diferentes.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -807,7 +807,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -878,7 +878,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el autor del comentario. <b>String</b> de solo lectura.</summary>
+        <summary>Devuelve o establece el autor del comentario. <b>String</b> de sólo lectura.</summary>
         <value>Devuelve <see cref="T:System.String" /> .</value>
         <remarks>To be added.</remarks>
         <example><para>Este ejemplo elimina todos los comentarios agregados por Jean Selva a la hoja activa.</para>
@@ -953,9 +953,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si los cambios actuales del libro compartido se envían a otros usuarios siempre que el libro se actualiza automáticamente. <b>False</b> si los cambios no se exponen (el libro seguirá sincronizado con los cambios que efectúen otros usuarios). El valor predeterminado es <b>True</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
+        <summary><b>True</b> si los cambios actuales del libro compartido se envían a otros usuarios siempre que el libro se actualiza automáticamente. <b>False</b> si los cambios no se exponen (el libro seguirá sincronizado con los cambios que efectúen otros usuarios). El valor predeterminado es <b>True</b>. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> propiedad debe establecerse en un valor entre 5 y 1.440 para que esta propiedad suba efecto.</para>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" /> propiedad debe establecerse en un valor de 5 a 1.440 para que esta propiedad entre en vigor.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1014,9 +1014,9 @@
       <Docs>
         <summary>Devuelve una <see cref="T:Microsoft.Office.Core.DocumentProperties" /> colección que representa todas las propiedades de documento integradas del libro especificado. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>Esta propiedad devuelve la colección completa de propiedades de documento integradas. Utilice el método para devolver un solo miembro de la colección (un objeto) especificando el nombre de la propiedad o el índice de la colección <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" /> (como un número).</para>
+        <remarks><para>Esta propiedad devuelve la colección completa de propiedades de documento integradas. Use el método para devolver un solo miembro de la colección (un objeto) especificando el nombre de la propiedad o el índice de la <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" /> colección (como un número).</para>
           <para>Puede hacer referencia a las propiedades de documento por el valor de índice o por nombre. En la siguiente lista se muestran los nombres de todas las propiedades de documento integradas disponibles:</para>
-          <para>El título </para>
+          <para>Cargo </para>
           <para>Subject</para>
           <para>Autor</para>
           <para>Palabras clave</para>
@@ -1035,8 +1035,8 @@
           <para>Seguridad</para>
           <para>Categoría</para>
           <para>Formato</para>
-          <para>Manager</para>
-          <para>Company</para>
+          <para>Administrador</para>
+          <para>Empresa</para>
           <para>Número de bytes</para>
           <para>Número de líneas</para>
           <para>Número de párrafos</para>
@@ -1044,11 +1044,11 @@
           <para>Número de notas</para>
           <para>Número de diapositivas ocultas</para>
           <para>Número de secuencias multimedia</para>
-          <para>Base de hipervínculo</para>
+          <para>Base de hipervínculos</para>
           <para>Número de caracteres (con espacios)</para>
-          <para>Las aplicaciones contenedor no deben definir valores para todas las propiedades de documento integradas. Si Microsoft Excel no define un valor para una de las propiedades de documento integradas, la lectura de la propiedad de esa propiedad de documento <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> produce un error.</para>
-          <para>El <b>método Item</b> es el método predeterminado para la colección <b>DocumentProperties</b> .</para>
-          <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> propiedad para devolver la colección de propiedades de documento personalizadas.</para>
+          <para>Las aplicaciones contenedor no deben definir valores para todas las propiedades de documento integradas. Si Microsoft Excel no define un valor para una de las propiedades de documento integradas, leer la propiedad de esa propiedad de documento <see cref="P:Microsoft.Office.Core.DocumentProperty.Value" /> provoca un error.</para>
+          <para>El <b>método Item</b> es el método predeterminado de la colección <b>DocumentProperties.</b></para>
+          <para>Use la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" /> propiedad para devolver la colección de propiedades de documento personalizadas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1075,9 +1075,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un número cuyos cuatro dígitos más a la derecha son el número de versión del motor de cálculo menor y cuyos otros dígitos (a la izquierda) son la versión principal de Microsoft Excel. Para un objeto, esta propiedad devuelve la información acerca de la versión de Excel por la que el libro se recalcula completamente <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> por última vez. <b>Integer</b> de solo lectura.</summary>
+        <summary>Devuelve un número cuyos cuatro dígitos más a la derecha son el número de versión del motor de cálculo menor y cuyos otros dígitos (a la izquierda) son la versión principal de Microsoft Excel. Para un objeto, esta propiedad devuelve la información acerca de la versión de Excel que el libro fue actualizado completamente <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> por última vez. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>Si el libro se guardó en una versión anterior de Excel y no se ha actualizado completamente, esta propiedad devuelve 0.</para>
+        <remarks><para>Si el libro se guardó en una versión anterior de Excel y si el libro no se ha recalculado completamente, esta propiedad devuelve 0.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1130,7 +1130,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el libro distingue entre mayúsculas y minúsculas al comparar contenido. Boolean de solo <b>lectura</b> (<b>bool</b> en C#).</summary>
+        <summary><b>True</b> si el libro distingue entre mayúsculas y minúsculas al comparar contenido. Boolean de <b>solo</b> lectura (<b>bool</b> en C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1163,8 +1163,8 @@
       </Parameters>
       <Docs>
         <param name="Mode">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlFileAccess" /> . Especifica el nuevo modo de acceso.</param>
-        <param name="WritePassword">Optional <b>Object</b>. Especifica la contraseña de escritura reservada si el archivo está reservado para escritura y <paramref name="Mode" /> <b>es xlReadWrite</b>. Se omite si no hay contraseña para el archivo o si <paramref name="Mode" /> es <b>xlReadOnly</b>.</param>
-        <param name="Notify">Optional <b>Object</b>. <b>True</b> (o se omite) para notificar al usuario si el acceso inmediato al archivo no es posible.</param>
+        <param name="WritePassword">Objeto <b>opcional</b>. Especifica la contraseña reservada para escritura si el archivo está reservado y <paramref name="Mode" /> es <b>xlReadWrite</b>. Se omite si no hay ninguna contraseña para el archivo o si <paramref name="Mode" /> es <b>xlReadOnly</b>.</param>
+        <param name="Notify">Objeto <b>opcional</b>. <b>True</b> (o se omite) para notificar al usuario si el acceso inmediato al archivo no es posible.</param>
         <summary>Cambia los permisos de acceso al libro. Esto puede requerir que se cargue una versión actualizada desde el disco.</summary>
         <remarks><para>Si tiene un archivo abierto en el modo de sólo lectura, no tendrá acceso exclusivo al archivo. Si cambia el modo de sólo lectura a lectura y escritura, Microsoft Excel deberá cargar una nueva copia del archivo para comprobar que no se han efectuado cambios mientras el archivo estaba en modo de sólo lectura.</para>
           <para> </para></remarks>
@@ -1229,7 +1229,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlLinkType" />
       </Parameters>
       <Docs>
-        <param name="Name"><b>String</b> requerida. Nombre del vínculo de Microsoft Excel o DDE/OLE que se va a cambiar, tal como se devolvió desde el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> método.</param>
+        <param name="Name"><b>String</b> requerida. Nombre del vínculo Microsoft Excel o DDE/OLE que se va a cambiar, tal como se devuelve desde el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> método.</param>
         <param name="NewName"><b>String</b> requerida. Nuevo nombre del vínculo.</param>
         <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlLinkType" /> . Tipo de vínculo.</param>
         <summary>Cambia un vínculo de un documento a otro.</summary>
@@ -1262,7 +1262,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> hará que todos los gráficos del documento actual realicen un seguimiento del punto de datos real al que está adjunto. <b>False</b> volverá al seguimiento del índice del punto de datos. <b>Booleano</b> (<b>bool</b> en C#) Lectura y escritura.</summary>
+        <summary><b>True</b> hará que todos los gráficos del documento actual realicen un seguimiento del punto de datos real al que está adjunto. <b>False</b> volverá a realizar el seguimiento del índice del punto de datos. <b>Boolean</b> (<b>bool</b> in C#) Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1290,9 +1290,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección que representa todas las hojas de gráfico del libro especificado. Solo lectura.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección que representa todas las hojas de gráficos del libro especificado. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>El uso de esta propiedad sin un calificador de objeto devuelve todas las hojas de gráfico del libro activo.</para>
+        <remarks><para>El uso de esta propiedad sin calificador de objeto devuelve todas las hojas de gráficos del libro activo.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1323,7 +1323,7 @@
       </ReturnValue>
       <Docs>
         <summary>Controla si se ejecuta o no automáticamente el comprobador de compatibilidad al guardar el libro. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1351,10 +1351,10 @@
         <Parameter Name="MakePublic" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">Optional <b>Object</b>. <b>True</b> guarda los cambios y protege el documento. <b>False</b> devuelve el documento a un estado de protección sin guardar la revisión.</param>
-        <param name="Comments">Optional <b>Object</b>. Permite al usuario escribir comentarios de check-in para la revisión del libro que se está protegido (sólo se aplica si <paramref name="SaveChanges" /> es igual a <b>True</b>).</param>
-        <param name="MakePublic">Optional <b>Object</b>. <b>True</b> permite al usuario publicar el documento después de haberlo protegido. Esto envía el libro para el proceso de aprobación, que puede acabar en una versión del libro que se publique para los usuarios con derechos de solo lectura en el libro (se aplica sólo si es igual a <paramref name="SaveChanges" /> <b>True</b>).</param>
-        <summary>Devuelve un libro de un equipo local a un servidor y establece el libro local como de solo lectura para que no se pueda editar localmente. La llamada a este método también cierra el libro.</summary>
+        <param name="SaveChanges">Objeto <b>opcional</b>. <b>True</b> guarda los cambios y protege el documento. <b>False</b> devuelve el documento a un estado de protección sin guardar la revisión.</param>
+        <param name="Comments">Objeto <b>opcional</b>. Permite al usuario escribir comentarios de check-in para la revisión del libro que se va a comprobar (solo se aplica si <paramref name="SaveChanges" /> es igual a <b>True</b>).</param>
+        <param name="MakePublic">Objeto <b>opcional</b>. <b>True</b> permite al usuario publicar el documento después de haberlo protegido. Esto envía el libro para el proceso de aprobación, lo que puede dar como resultado que una versión del libro se publique a los usuarios con derechos de solo lectura en el libro (solo se aplica si es igual a <paramref name="SaveChanges" /> <b>True</b>).</param>
+        <summary>Devuelve un libro de un equipo local a un servidor y establece el libro local en solo lectura para que no se pueda editar localmente. La llamada a este método también cierra el libro.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1384,12 +1384,12 @@
       </Parameters>
       <Docs>
         <param name="SaveChanges"><b>true</b> para guardar el libro en la ubicación del servidor. The default is <b>true</b>.</param>
-        <param name="Comments">Comentarios para la revisión del libro que se está protegido (se aplica sólo si <paramref name="SaveChanges" /> se establece en <b>true</b>).</param>
+        <param name="Comments">Comentarios para la revisión del libro que se está desproteyéndolo (solo se aplica si <paramref name="SaveChanges" /> se establece en <b>true</b>).</param>
         <param name="MakePublic"><b>true</b> para permitir que el usuario publique el libro después de que esté protegido.</param>
         <param name="VersionType">Especifica información sobre versiones para el libro.</param>
         <summary>Guarda un libro de un equipo local a un servidor y establece el libro local como de solo lectura para que no pueda modificarse localmente.</summary>
-        <remarks><para>Si se establece el parámetro en true, se envía el libro para el proceso de aprobación, lo que puede dar lugar a que una versión del libro se publique para los usuarios con derechos de solo lectura en el libro (se aplica sólo si se establece en <paramref name="MakePublic" /> <b></b> <paramref name="SaveChanges" /> <b>true</b>). </para>
-          <para>Para beneficiarse de las características de colaboración integradas en Microsoft Excel, los documentos deben almacenarse en un servidor de Microsoft SharePoint. </para>
+        <remarks><para>Si se establece el parámetro en true, se envía el libro para el proceso de aprobación, lo que puede dar como resultado una versión del libro que se publique a los usuarios con derechos de solo lectura en el libro (solo se aplica si se establece en <paramref name="MakePublic" /> <b></b> <paramref name="SaveChanges" /> <b>true</b>). </para>
+          <para>Para beneficiarse de las características de colaboración integradas en Microsoft Excel, los documentos deben almacenarse en un servidor de Microsoft SharePoint.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1420,11 +1420,11 @@
         <Parameter Name="RouteWorkbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">Optional <b>Object</b>. Si no hay cambios en el libro, este argumento se omite. Si hay cambios en el libro y este parece en otras ventanas abiertas, este argumento se omite. Si hay cambios en el libro pero el libro no aparece en ninguna otra ventana abierta, este argumento especifica si se deben guardar los cambios, como se muestra en la tabla siguiente. ValueAction<b>True</b>Guarda los cambios realizados en el libro. Si aún no hay un nombre de archivo asociado al libro, se <paramref name="FileName" /> usa. Si <paramref name="FileName" /> se omite, se pide al usuario que proporcione un nombre de archivo.<b> False</b>No guarda los cambios en este archivo. Se omite Muestra un cuadro de diálogo que pregunta al usuario si desea guardar los cambios.</param>
-        <param name="Filename">Optional <b>Object</b>. Guarda los cambios bajo este nombre de archivo.</param>
-        <param name="RouteWorkbook">Optional <b>Object</b>. Si el libro no debe enrutarse al destinatario siguiente (si no tiene albarán de enrutamiento o ya se ha enrutado), este argumento se omite. De lo contrario, Microsoft Excel enruta el libro como se muestra en la tabla siguiente. ValueMeaning<b>True</b>Envía el libro al siguiente destinatario. <b>False</b> No envía el libro. Se omite Muestra un cuadro de diálogo que pregunta al usuario si se debe enviar el libro.</param>
+        <param name="SaveChanges">Objeto <b>opcional</b>. Si no hay cambios en el libro, este argumento se omite. Si hay cambios en el libro y este parece en otras ventanas abiertas, este argumento se omite. Si hay cambios en el libro pero el libro no aparece en ninguna otra ventana abierta, este argumento especifica si los cambios deben guardarse, como se muestra en la tabla siguiente. ValueAction<b>True</b>Guarda los cambios en el libro. Si aún no hay un nombre de archivo asociado al libro, se <paramref name="FileName" /> usa. Si <paramref name="FileName" /> se omite, se pide al usuario que proporcione un nombre de archivo.<b> False</b>No guarda los cambios en este archivo. Omitido Muestra un cuadro de diálogo que pregunta al usuario si desea guardar los cambios o no.</param>
+        <param name="Filename">Objeto <b>opcional</b>. Guarda los cambios bajo este nombre de archivo.</param>
+        <param name="RouteWorkbook">Objeto <b>opcional</b>. Si el libro no debe enrutarse al destinatario siguiente (si no tiene albarán de enrutamiento o ya se ha enrutado), este argumento se omite. De lo contrario, Microsoft Excel enruta el libro como se muestra en la tabla siguiente. ValueMeaning<b>True</b>Envía el libro al siguiente destinatario. <b>False</b> No envía el libro. Omitido Muestra un cuadro de diálogo que pregunta al usuario si se debe enviar el libro.</param>
         <summary>Cierra el objeto.</summary>
-        <remarks><para>Cerrar un libro mediante el <b>método Close</b> no ejecuta ninguna Auto_Close macros del libro. Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para ejecutar el Auto_Close macros.</para>
+        <remarks><para>El cierre de un libro mediante <b>el método Close</b> no ejecuta ninguna Auto_Close macros en el libro. Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para ejecutar las Auto_Close macros.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1454,7 +1454,7 @@
         <summary>Devuelve el nombre de código del objeto. <b>String</b> de solo lectura. El valor que aparece en la celda situada a la derecha de <b>(Name)</b> en la ventana Propiedades es el nombre de código del objeto seleccionado. En tiempo de diseño, se puede cambiar el nombre de código de un objeto si se cambia este valor. Sin embargo, no se puede cambiar esta propiedad mediante programación en tiempo de ejecución.</summary>
         <value>To be added.</value>
         <remarks><para>Se puede usar el nombre de código de un objeto en lugar de una expresión que devuelva dicho objeto.</para>
-          <para>Es posible que el nombre de la hoja sea diferente del nombre de código. Al crear una hoja, el nombre de la hoja y el nombre de código son los mismos, pero al cambiar el nombre de la hoja no se cambia el nombre de código y al cambiar el nombre de código (mediante la ventana Propiedades del Editor de Visual Basic) no se cambia el nombre de la hoja.</para>
+          <para>El nombre de la hoja puede ser diferente del nombre de código. Cuando se crea una hoja, su nombre coincide con el nombre de código. No obstante, los cambios que se efectúan en el nombre de la hoja no afectan al nombre de código, y los cambios que se efectúan en el nombre de código (mediante la ventana Propiedades del Editor de Visual Basic) tampoco afectan al nombre de la hoja.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1493,7 +1493,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optional <b>Object</b>. El número del color (de 1 a 56). Si este argumento no se especifica, el método devolverá una matriz que contenga los 56 colores de la paleta.</param>
+        <param name="Index">Objeto <b>opcional</b>. El número del color (de 1 a 56). Si este argumento no se especifica, el método devolverá una matriz que contenga los 56 colores de la paleta.</param>
         <summary>Devuelve o establece los colores de la paleta del libro. La paleta tiene 56 elementos, representado cada uno por un valor RGB. Lectura/Escritura<b>Objeto</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1522,7 +1522,7 @@
         <ReturnType>Microsoft.Office.Core.CommandBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> objeto que representa las barras de comandos de Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> objeto que representa las barras Microsoft Excel comandos. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Cuando un libro está incrustado en otra aplicación y otro usuario lo ha activado haciendo doble clic en él, si se usa esta propiedad con un objeto <b>Workbook</b>, devuelve el conjunto de barras de comandos de Microsoft Excel disponible en la otra aplicación. En el resto de los casos, si se utiliza esta propiedad con un objeto <b>Workbook</b> devuelve <b>Nothing</b>.</para>
           <para>No hay ninguna forma de devolver el conjunto de barras de comandos asociado a un libro mediante programación.</para>
@@ -1638,7 +1638,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Connections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La propiedad establece una conexión entre el libro y un odbc o un origen de datos OLEDB y actualiza los datos sin preguntar <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Connections" /> al usuario. Solo lectura.</summary>
+        <summary>La propiedad establece una conexión entre el libro y un ODBC o un origen de datos OLEDB y actualiza los datos sin preguntar <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Connections" /> al usuario. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Connections" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1666,7 +1666,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Deshabilita las conexiones externas o los vínculos del libro. Solo lectura</summary>
+        <summary>Deshabilita las conexiones externas o los vínculos del libro. Es de sólo lectura.</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1694,7 +1694,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto que representa la aplicación contenedora del objeto OLE especificado. Read-only <b>objeto</b>.</summary>
+        <summary>Devuelve el objeto que representa la aplicación contenedora del objeto OLE especificado. <b>Object</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad permite obtener acceso al modelo de objetos de la aplicación contenedora si un libro de Excel se abre dentro de una aplicación host como Microsoft Internet Explorer.</para>
           <para> </para></remarks>
@@ -1754,7 +1754,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si se crea una copia de seguridad al guardar el archivo. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si se crea una copia de seguridad al guardar el archivo. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1782,7 +1782,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una constante de la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeración que indica la aplicación en la que se creó este objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
+        <summary>Devuelve una constante en la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeración que indica la aplicación en la que se creó este objeto. Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. Solo <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> lectura.</summary>
         <value>To be added.</value>
         <remarks><para>La propiedad <b>Creator</b> está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para> </para></remarks>
@@ -1811,10 +1811,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Core.DocumentProperties" /> colección que representa todas las propiedades de documento personalizadas del libro especificado.</summary>
+        <summary>Devuelve o establece una colección que representa todas las propiedades de documento <see cref="T:Microsoft.Office.Core.DocumentProperties" /> personalizadas del libro especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>Esta propiedad devuelve la colección completa de propiedades de documento personalizadas. Utilice el método para devolver un solo miembro de la colección (un objeto) especificando el nombre de la propiedad o el índice de la colección <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" /> (como un número).</para>
-          <para>El <b>método Item</b> es el método predeterminado para la colección <b>DocumentProperties</b> .</para>
+        <remarks><para>Esta propiedad devuelve la colección completa de propiedades de documento personalizadas. Use el método para devolver un solo miembro de la colección (un objeto) especificando el nombre de la propiedad o el índice de la <see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" /> <see cref="T:Microsoft.Office.Core.DocumentProperty" /> colección (como un número).</para>
+          <para>El <b>método Item</b> es el método predeterminado de la colección <b>DocumentProperties.</b></para>
           <para>Use la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" /> propiedad para devolver la colección de propiedades de documento integradas.</para>
           <para> </para></remarks>
       </Docs>
@@ -1944,7 +1944,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica el estilo de tabla de la <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> colección que se usa como estilo predeterminado para las tablas dinámicas. Lectura/escritura.</summary>
+        <summary>Especifica el estilo de tabla de la <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> colección que se usa como el estilo predeterminado para las tablas dinámicas. Lectura/escritura.</summary>
         <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1981,8 +1981,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el estilo del <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> objeto que se usa como estilo predeterminado para segmentaciones de datos.</summary>
-        <value>Estilo del objeto <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> que se usa como estilo predeterminado para segmentaciones de datos.</value>
+        <summary>Obtiene o establece el estilo del <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> objeto que se usa como estilo predeterminado para las segmentaciones de datos.</summary>
+        <value>El estilo del objeto <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> que se usa como el estilo predeterminado para las segmentaciones de datos.</value>
         <remarks><para>Lectura/escritura.</para>
           <para> </para></remarks>
       </Docs>
@@ -2019,7 +2019,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica el estilo de tabla de la <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> colección que se usa como TableStyle predeterminado. Lectura/escritura</summary>
+        <summary>Especifica el estilo de tabla de la <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" /> colección que se usa como tablestyle predeterminado. Lectura/escritura</summary>
         <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2235,7 +2235,7 @@
         <ReturnType>Microsoft.Office.Core.DocumentInspectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <see cref="T:Microsoft.Office.Core.DocumentInspectors" /> colección que representa los módulos inspector de documento para el libro especificado. Solo lectura.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Core.DocumentInspectors" /> colección que representa los módulos del Inspector de documentos para el libro especificado. Solo lectura.</summary>
         <value><b>DocumentInspectors</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2263,7 +2263,7 @@
         <ReturnType>Microsoft.Office.Core.DocumentLibraryVersions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que representa la colección de versiones de un libro compartido que tiene habilitado el control de versiones y que se almacena en una biblioteca de documentos <see cref="P:Microsoft.Office.Interop.Excel._Workbook.DocumentLibraryVersions" /> en un servidor.</summary>
+        <summary>Devuelve una colección que representa la colección de versiones de un libro compartido que tiene habilitado el control de versiones y que se almacena en una biblioteca de <see cref="P:Microsoft.Office.Interop.Excel._Workbook.DocumentLibraryVersions" /> documentos de un servidor.</summary>
         <value>To be added.</value>
         <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para> </para></remarks>
@@ -2296,7 +2296,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece si se debe pedir al usuario que convierta el libro si el libro contiene características que no son compatibles con versiones de Excel anteriores a short_Excel2007. Lectura/escritura</summary>
-        <value>Boolean</value>
+        <value>Booleano</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2498,7 +2498,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <b>cadena</b> que especifica el nombre del proveedor de cifrado de algoritmo que 1st_Excel12 al cifrar documentos. Lectura/escritura.</summary>
+        <summary>Devuelve una <b>cadena que</b> especifica el nombre del proveedor de cifrado de algoritmos que 1st_Excel12 al cifrar documentos. Lectura/escritura.</summary>
         <value><b>s</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2582,7 +2582,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que representa todas las hojas <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> de macros internacionales de Microsoft Excel 4.0 del libro especificado. Solo lectura.</summary>
+        <summary>Devuelve una colección que representa todas las <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Microsoft Excel 4.0 hojas de macros internacionales del libro especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2610,7 +2610,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que representa todas las hojas de macros de <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Microsoft Excel 4.0 del libro especificado. Solo lectura.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección que representa todas las Microsoft Excel de macros 4,0 del libro especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2638,9 +2638,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel8CompatibilityMode" /> propiedad proporciona a los programadores una forma de comprobar si el libro está en modo de compatibilidad. Solo lectura</summary>
+        <summary>La <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel8CompatibilityMode" /> propiedad proporciona a los desarrolladores una forma de comprobar si el libro está en modo de compatibilidad. Solo lectura</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>En el modo de compatibilidad, algunas características están deshabilitadas o funcionan de distinta manera.  Por ejemplo, en short_Excel2007 hay más filas y columnas disponibles en comparación con las versiones anteriores de Excel. También hay referencias estructuradas disponibles en short_Excel2007.</para>
+        <remarks><para>En el modo de compatibilidad, algunas características están deshabilitadas o funcionan de distinta manera.  Por ejemplo, en short_Excel2007 hay más filas y columnas disponibles en comparación con las versiones anteriores de Excel. También está disponible la referencia estructurada en short_Excel2007.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2671,7 +2671,7 @@
         <summary>Asigna al usuario actual acceso exclusivo al libro que está abierto como una lista compartida.</summary>
         <returns>To be added.</returns>
         <remarks><para>El método <b>ExclusiveAccess</b> guarda todos los cambios efectuados en el libro y solicita a los demás usuarios que estén trabajando en el libro que guarden sus cambios en otro archivo.</para>
-          <para>Si el libro especificado no está abierto como una lista compartida, este método devolverá un error. Para determinar si un libro está abierto como una lista compartida, utilice la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> propiedad.</para>
+          <para>Si el libro especificado no está abierto como una lista compartida, este método devolverá un error. Para determinar si un libro está abierto como una lista compartida, use la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" /> propiedad.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2707,18 +2707,18 @@
       <Docs>
         <param name="Type">Puede ser o <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypePDF" /> <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatType.xlTypeXPS" /> .</param>
         <param name="Filename">Cadena <b>que</b> indica el nombre del archivo que se va a guardar. Puede incluir una ruta de acceso completa o corta.  Excel2007 guarda el archivo en la carpeta actual.</param>
-        <param name="Quality">Puede establecerse en uno <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityStandard" /> o <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityMinimum" /> .</param>
+        <param name="Quality">Se puede establecer en cualquiera <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityStandard" /> o <see cref="F:Microsoft.Office.Interop.Excel.XlFixedFormatQuality.xlQualityMinimum" /> .</param>
         <param name="IncludeDocProperties">Se establece en <b>True</b> para indicar que se deben incluir las propiedades de los documentos, o bien se define en <b>False</b> para especificar que se deben omitir.</param>
         <param name="IgnorePrintAreas">Si se establece en <b>True</b>, se omiten las áreas de impresión establecidas al publicar el libro. Si se define en <b>False</b>, se usarán las áreas de impresión establecidas al publicar.</param>
-        <param name="From">El número de la página a partir de la cual comienza la publicación. Si se omite este argumento, la publicación empieza desde el principio.</param>
-        <param name="To">El número de la última página para publicar. Si se omite este argumento, la publicación termina con la última página.</param>
+        <param name="From">Número de la página en la que comienza la publicación. Si no se especifica este argumento, la publicación empieza por el principio.</param>
+        <param name="To">Número de la última página que se va a publicar. Si no se especifica este argumento, la publicación finaliza en la última página.</param>
         <param name="OpenAfterPublish">Si se establece en <b>True</b>, se muestra el archivo en el visor después de haberlo publicado. Si se establece en <b>False</b> el archivo se publica pero no se muestra.</param>
         <param name="FixedFormatExtClassPtr">Puntero a la clase <b>FixedFormatExt</b>.</param>
-        <summary>El <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método se usa para publicar un libro en formato PDF o XPS.</summary>
+        <summary>El <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método se usa para publicar un libro en el formato PDF o XPS.</summary>
         <remarks>To be added.</remarks>
-        <example><para>En el siguiente ejemplo se crea el PDF con calidad estándar en el directorio del archivo actual y se muestra el archivo en el visor después de su publicación.</para>
+        <example><para>En el ejemplo siguiente se crea el PDF con calidad estándar en el directorio del archivo actual y se muestra el archivo en el visor después de su publicación.</para>
           <para>
-            <b>Nota:</b>Si el complemento PDF no está instalado actualmente, se producirá un error.</para></example>
+            <b>Nota:</b>Se producirá un error si el complemento PDF no está instalado actualmente.</para></example>
       </Docs>
     </Member>
     <Member MemberName="FileFormat">
@@ -2780,7 +2780,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un valor <b>Boolean</b> que indica si un libro es final. Lectura/escritura</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks><para>Estableciendo el valor en <b>True</b> se marca el libro como final, se notifica a los destinatarios (si los hay) que la versión del libro es final y se establece el libro como sólo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -2814,12 +2814,12 @@
       </Parameters>
       <Docs>
         <param name="Address"><b>String</b> requerida. Dirección del documento de destino.</param>
-        <param name="SubAddress">Optional <b>Object</b>. La ubicación en el documento de destino. El valor predeterminado es una cadena vacía.</param>
-        <param name="NewWindow">Optional <b>Object</b>. <b>True</b> para mostrar la aplicación de destino en una nueva ventana. El valor predeterminado es <b>False</b>.</param>
-        <param name="AddHistory">Optional <b>Object</b>. No se usa. Reservado para uso futuro.</param>
-        <param name="ExtraInfo">Optional <b>Object</b>. Cadena o matriz de bytes que especifica la información adicional que HTTP va a utilizar para resolver el hipervínculo. Por ejemplo, puede usar para especificar las coordenadas de un mapa de imágenes, el contenido de un formulario o <paramref name="ExtraInfo" /> un nombre de archivo FAT.</param>
-        <param name="Method">Optional <b>Object</b>. Especifica el modo en que <paramref name="ExtraInfo" /> se adjunta. Puede ser una de las <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> constantes.</param>
-        <param name="HeaderInfo">Optional <b>Object</b>. Cadena que especifica la información de encabezado de la solicitud HTTP. El valor predeterminado es una cadena vacía.</param>
+        <param name="SubAddress">Objeto <b>opcional</b>. La ubicación en el documento de destino. El valor predeterminado es una cadena vacía.</param>
+        <param name="NewWindow">Objeto <b>opcional</b>. <b>True</b> para mostrar la aplicación de destino en una nueva ventana. El valor predeterminado es <b>False</b>.</param>
+        <param name="AddHistory">Objeto <b>opcional</b>. No se usa. Reservado para uso futuro.</param>
+        <param name="ExtraInfo">Objeto <b>opcional</b>. Cadena o matriz de bytes que especifica la información adicional que HTTP va a utilizar para resolver el hipervínculo. Por ejemplo, puede usar para especificar las coordenadas de un mapa de imagen, el contenido de un <paramref name="ExtraInfo" /> formulario o un nombre de archivo FAT.</param>
+        <param name="Method">Objeto <b>opcional</b>. Especifica que se <paramref name="ExtraInfo" /> adjunta la forma. Puede ser una de las <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> constantes.</param>
+        <param name="HeaderInfo">Objeto <b>opcional</b>. Cadena que especifica la información de encabezado de la solicitud HTTP. El valor predeterminado es una cadena vacía.</param>
         <summary>Muestra un documento almacenado en caché si ya se ha descargado. De lo contrario, este método resuelve el hipervínculo, descarga el documento de destino y muestra el documento en la aplicación apropiada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2851,7 +2851,7 @@
       </ReturnValue>
       <Docs>
         <summary>Fuerza un cálculo completo de un libro. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2909,9 +2909,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el nombre del objeto, incluida su ruta de acceso en el disco, en forma de cadena. <b>String</b> de solo lectura.</summary>
+        <summary>Devuelve el nombre del objeto, incluida su ruta de acceso en el disco, en forma de cadena. Valor <b>String</b> de sólo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>Esta propiedad es equivalente a la propiedad, seguida del separador del sistema de archivos <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> actual, seguido de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> propiedad.</para>
+        <remarks><para>Esta propiedad es equivalente a la propiedad, seguida del separador del sistema de <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> archivos actual, seguido de la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" /> propiedad.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2941,7 +2941,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <b>String</b> que indica el nombre del objeto, incluida su ruta de acceso en el disco, en forma de cadena. Solo lectura.</summary>
+        <summary>Devuelve una <b>String</b> que indica el nombre del objeto, incluida su ruta de acceso en el disco, en forma de cadena. Sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3067,7 +3067,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el libro está protegido con una contraseña. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si el libro está protegido con una contraseña. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Puede asignar una contraseña de protección a un libro mediante el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método.</para>
           <para> </para></remarks>
@@ -3141,7 +3141,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor <b>Boolean</b> que representa si un libro tiene adjunto un proyecto de Microsoft Visual Basic para Aplicaciones. Solo lectura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks><para>La propiedad resulta útil para determinar mediante programación si es necesario guardar el libro con un formato de archivo habilitado para macros. Si se guarda en otro formato, es posible que se pierdan las macros y los proyectos de código contenidos en el documento.</para>
           <para> </para></remarks>
       </Docs>
@@ -3201,9 +3201,9 @@
         <Parameter Name="Where" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="When">Optional <b>Object</b>. Cambios que se muestran. Puede ser una de las siguientes constantes: <b>XlHighlightChangesTime</b>: <b>xlSinceMyLastSave</b>, <b>xlAllChanges</b> o <b>xlNotYetReviewed</b>.</param>
-        <param name="Who">Optional <b>Object</b>. El usuario o usuarios cuyos cambios se muestran. Puede ser "Todos", "Todos menos yo" o el nombre de uno de los usuarios del libro compartido.</param>
-        <param name="Where">Optional <b>Object</b>. Una referencia a un rango, en estilo A1, que especifica el área cuyos cambios se tendrán en cuenta.</param>
+        <param name="When">Objeto <b>opcional</b>. Cambios que se muestran. Puede ser una de las siguientes constantes: <b>XlHighlightChangesTime</b>: <b>xlSinceMyLastSave</b>, <b>xlAllChanges</b> o <b>xlNotYetReviewed</b>.</param>
+        <param name="Who">Objeto <b>opcional</b>. El usuario o usuarios cuyos cambios se muestran. Puede ser "Todos", "Todos menos yo", o el nombre de uno de los usuarios del libro compartido.</param>
+        <param name="Where">Objeto <b>opcional</b>. Una referencia a un rango, en estilo A1, que especifica el área cuyos cambios se tendrán en cuenta.</param>
         <summary>Controla cómo se muestran los cambios en un libro compartido.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3234,7 +3234,7 @@
         <ReturnType>Microsoft.Office.Core.HTMLProject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto del libro especificado, que representa una rama de proyecto de nivel superior como en el Explorador de proyectos en el Editor de <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HTMLProject" /> scripts de Microsoft. Solo lectura.</summary>
+        <summary>Devuelve el objeto del libro especificado, que representa una rama de proyecto de nivel superior como en el Explorador de Project <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HTMLProject" /> en el Microsoft Script Editor. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3371,7 +3371,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si se está modificando el libro especificado en el sitio. <b>False</b> si el libro se ha abierto en Microsoft Excel para modificarlo. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si se está modificando el libro especificado en el sitio. <b>False</b> si el libro se ha abierto en Microsoft Excel para modificarlo. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3481,8 +3481,8 @@
         <param name="Name"><b>String</b> opcional.</param>
         <param name="LinkInfo">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlLinkInfo" /> . Tipo de información que se ha de devolver.</param>
         <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlLinkInfoType" /> . Tipo de vínculo que se devolverá.</param>
-        <param name="EditionRef">Optional <b>Object</b>. Si el vínculo es una edición, este argumento especifica la referencia a la edición en forma de cadena con el estilo F1C1. Este argumento se requiere si el libro contiene más de una publicación o suscripción con el mismo nombre.</param>
-        <summary>Devuelve información acerca de la fecha y el estado de actualización del vínculo. <b>Object</b>.</summary>
+        <param name="EditionRef">Objeto <b>opcional</b>. Si el vínculo es una edición, este argumento especifica la referencia a la edición en forma de cadena con el estilo F1C1. Este argumento se requiere si el libro contiene más de una publicación o suscripción con el mismo nombre.</param>
+        <summary>Devuelve información acerca de la fecha y el estado de actualización del vínculo. <b>Objeto</b>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3627,7 +3627,7 @@
         <Parameter Name="Filename" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">Objeto <b>requerido</b>. Nombre de archivo del libro que contiene los cambios que se combinarán en el libro abierto.</param>
+        <param name="Filename">Objeto <b>obligatorio</b>. Nombre de archivo del libro que contiene los cambios que se combinarán en el libro abierto.</param>
         <summary>Combina los cambios de un libro en un libro abierto.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3717,7 +3717,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el libro está abierto como una lista compartida. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si el libro está abierto como una lista compartida. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Para guardar un libro como una lista compartida, use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método. Para cambiar el libro del modo compartido al modo exclusivo, use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" /> método.</para>
           <para> </para></remarks>
@@ -3774,7 +3774,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Names</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que representa todos los nombres del libro especificado (incluidos todos los nombres específicos de la hoja <see cref="T:Microsoft.Office.Interop.Excel.Names" /> de cálculo). Objeto <b>Names</b> de sólo lectura.</summary>
+        <summary>Devuelve una colección que representa todos los nombres del <see cref="T:Microsoft.Office.Interop.Excel.Names" /> libro especificado (incluidos todos los nombres específicos de la hoja de cálculo). Objeto <b>Names</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3964,8 +3964,8 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name"><b>String</b> requerida. Nombre del vínculo de Microsoft Excel o DDE/OLE, tal como se devuelve desde el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> método.</param>
-        <param name="ReadOnly">Optional <b>Object</b>. <b>True</b> para que los documentos se abran como de sólo lectura. El valor predeterminado es <b>False</b>.</param>
+        <param name="Name"><b>String</b> requerida. Nombre del vínculo Microsoft Excel o DDE/OLE, tal como se devuelve desde el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> método.</param>
+        <param name="ReadOnly">Objeto <b>opcional</b>. <b>True</b> para que los documentos se abran como de sólo lectura. El valor predeterminado es <b>False</b>.</param>
         <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlLink" /> . Tipo de vínculo.</param>
         <summary>Abre los documentos auxiliares de uno o más vínculos.</summary>
         <remarks>To be added.</remarks>
@@ -3994,7 +3994,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <summary>Devuelve el objeto primario para el objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4054,9 +4054,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una cadena <b>String</b> que indica el algoritmo que utiliza Microsoft Excel para cifrar las contraseñas del libro especificado. Solo lectura.</summary>
+        <summary>Devuelve una cadena <b>String</b> que indica el algoritmo que utiliza Microsoft Excel para cifrar las contraseñas del libro especificado. Sólo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>Use el método para especificar si Excel cifra las propiedades <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> de archivo de los libros protegidos con contraseña.</para>
+        <remarks><para>Use el método para especificar si Excel las propiedades <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> del archivo para libros protegidos con contraseña.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4083,9 +4083,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si Microsoft Excel cifra las propiedades de archivo del libro especificado protegido con contraseña. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si Microsoft Excel cifra las propiedades de archivo del libro especificado protegido con contraseña. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>Use el método para especificar si Excel cifra las propiedades de archivo del <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> libro protegido con contraseña especificado.</para>
+        <remarks><para>Use el método para especificar si Excel las propiedades del archivo para el libro protegido <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> con contraseña especificado.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4112,9 +4112,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que indica la longitud de clave del algoritmo que Microsoft Excel usa al cifrar las contraseñas del libro especificado. Solo lectura.</summary>
+        <summary>Devuelve un <b>valor Integer</b> que indica la longitud de clave del algoritmo que Microsoft Excel cuando se cifran las contraseñas del libro especificado. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>Use el método para especificar si Excel cifra las propiedades de archivo del <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> libro protegido con contraseña especificado.</para>
+        <remarks><para>Use el método para especificar si Excel las propiedades del archivo para el libro protegido <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" /> con contraseña especificado.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4141,8 +4141,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una cadena <b>String</b> que especifica el nombre del proveedor del algoritmo de cifrado que utiliza Microsoft Excel para cifrar las contraseñas del libro especificado. Solo lectura.</summary>
-        <value><b>Cadena</b></value>
+        <summary>Devuelve una cadena <b>String</b> que especifica el nombre del proveedor del algoritmo de cifrado que utiliza Microsoft Excel para cifrar las contraseñas del libro especificado. Sólo lectura.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4262,7 +4262,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si se incluyen parámetros de impresión en la vista personal del usuario del libro compartido. Lectura y escritura de tipo <b>Boolean</b>.</summary>
+        <summary><b>True</b> si se incluyen parámetros de impresión en la vista personal del usuario del libro compartido. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4288,7 +4288,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> colección que representa todas las cachés de tabla dinámica del libro especificado. Solo lectura.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> colección que representa todas las memorias caché de tabla dinámica del libro especificado. Solo lectura.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4409,7 +4409,7 @@
         <Parameter Name="DestName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="DestName">Optional <b>Object</b>. Este argumento se omite. El método <b>Post</b> pide al usuario que especifique el destino del libro.</param>
+        <param name="DestName">Objeto <b>opcional</b>. Este argumento se omite. El método <b>Post</b> pide al usuario que especifique el destino del libro.</param>
         <summary>Envía el libro especificado a una carpeta pública. Este método sólo está disponible en un cliente de Microsoft Exchange que esté conectado con un servidor de Microsoft Exchange.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4446,7 +4446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si los cálculos de este libro se realizarán usando solo la precisión de los números tal como se muestran. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si los cálculos de este libro se llevan a cabo utilizando únicamente la misma precisión con que se muestran los números. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4486,16 +4486,16 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">Optional <b>Object</b>. Número de la página en la que comienza la impresión. Si no se especifica este argumento, la impresión empieza por el principio.</param>
-        <param name="To">Optional <b>Object</b>. Número de la última página que se va a imprimir. Si no se especifica este argumento, la impresión finaliza en la última página.</param>
-        <param name="Copies">Optional <b>Object</b>. Número de copias que se imprimirán. Si no se especifica este argumento, se imprime una sola copia.</param>
-        <param name="Preview">Optional <b>Object</b>. <b>True</b> para que Microsoft Excel invoque la vista preliminar antes de imprimir el objeto. <b>False</b> (u omitido) para imprimir el objeto inmediatamente.</param>
-        <param name="ActivePrinter">Optional <b>Object</b>. Establece el nombre de la impresora activa.</param>
-        <param name="PrintToFile">Optional <b>Object</b>. <b>True</b> para imprimir a un archivo. Si no se especifica, Microsoft Excel solicita al usuario que <paramref name="PrToFileName" /> escriba el nombre del archivo de salida.</param>
-        <param name="Collate">Optional <b>Object</b>. <b>True</b> para intercalar varias copias.</param>
-        <param name="PrToFileName">Optional <b>Object</b>. Si se establece en True , este argumento especifica el nombre del archivo <paramref name="PrintToFile" /> en el que desea imprimir. <b></b></param>
+        <param name="From">Objeto <b>opcional</b>. Número de la página en la que comienza la impresión. Si no se especifica este argumento, la impresión empieza por el principio.</param>
+        <param name="To">Objeto <b>opcional</b>. Número de la última página que se va a imprimir. Si no se especifica este argumento, la impresión finaliza en la última página.</param>
+        <param name="Copies">Objeto <b>opcional</b>. Número de copias que se imprimirán. Si no se especifica este argumento, se imprime una sola copia.</param>
+        <param name="Preview">Objeto <b>opcional</b>. <b>True</b> para que Microsoft Excel invoque la vista preliminar antes de imprimir el objeto. <b>False</b> (u omitido) para imprimir el objeto inmediatamente.</param>
+        <param name="ActivePrinter">Objeto <b>opcional</b>. Establece el nombre de la impresora activa.</param>
+        <param name="PrintToFile">Objeto <b>opcional</b>. <b>True</b> para imprimir a un archivo. Si no se especifica, Microsoft Excel solicita al usuario que <paramref name="PrToFileName" /> escriba el nombre del archivo de salida.</param>
+        <param name="Collate">Objeto <b>opcional</b>. <b>True</b> para intercalar varias copias.</param>
+        <param name="PrToFileName">Objeto <b>opcional</b>. Si se establece en True , este argumento especifica el nombre del archivo en el <paramref name="PrintToFile" /> que desea imprimir. <b></b></param>
         <summary>Imprime el objeto.</summary>
-        <remarks><para>"Páginas" en las descripciones de las páginas impresas y hace referencia a las páginas impresas, no a las páginas generales <paramref name="From" /> de la hoja o <paramref name="To" /> libro.</para>
+        <remarks><para>"Páginas" en las descripciones de y hace referencia a páginas impresas, no a páginas generales <paramref name="From" /> de la hoja o <paramref name="To" /> libro.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4570,7 +4570,7 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">Habilita los cambios realizados en el objeto.</param>
+        <param name="EnableChanges">Habilita los cambios en el objeto.</param>
         <summary>Muestra una vista preliminar del objeto tal como aparecería impreso.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4599,9 +4599,9 @@
         <Parameter Name="Windows" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Password">Optional <b>Object</b>. Una cadena que especifica una contraseña con distinción de mayúsculas y minúsculas para la hoja de cálculo o libro. Si se omite este argumento, puede desproteger la hoja de cálculo o el libro sin usar una contraseña. En caso contrario, debe especificar la contraseña para desproteger la hoja de cálculo o el libro. Si olvida la contraseña, no puede desproteger la hoja de cálculo o el libro. Es conveniente guardar en un lugar seguro una lista de las contraseñas y nombres de los documentos correspondientes.</param>
-        <param name="Structure">Optional <b>Object</b>. Si es <b>True</b> se protege la estructura del libro (la posición relativa de las hojas de cálculo). El valor predeterminado es <b>False</b>.</param>
-        <param name="Windows">Optional <b>Object</b>. Si es <b>True</b> se protegen las ventanas de los libros. Si no se especifica este argumento, las ventanas no estarán protegidas.</param>
+        <param name="Password">Objeto <b>opcional</b>. Una cadena que especifica una contraseña con distinción de mayúsculas y minúsculas para la hoja de cálculo o libro. Si se omite este argumento, puede desproteger la hoja de cálculo o el libro sin usar una contraseña. En caso contrario, debe especificar la contraseña para desproteger la hoja de cálculo o el libro. Si olvida la contraseña, no puede desproteger la hoja de cálculo o el libro. Es conveniente guardar en un lugar seguro una lista de las contraseñas y nombres de los documentos correspondientes.</param>
+        <param name="Structure">Objeto <b>opcional</b>. Si es <b>True</b> se protege la estructura del libro (la posición relativa de las hojas de cálculo). El valor predeterminado es <b>False</b>.</param>
+        <param name="Windows">Objeto <b>opcional</b>. Si es <b>True</b> se protegen las ventanas de los libros. Si no se especifica este argumento, las ventanas no estarán protegidas.</param>
         <summary>Protege un libro para que no se pueda modificar.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4636,12 +4636,12 @@
         <Parameter Name="SharingPassword" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">Optional <b>Object</b>. Cadena que especifica el nombre del archivo guardado. Se puede especificar la ruta completa del archivo; en caso contrario, Microsoft Excel guarda el archivo en la carpeta actual.</param>
-        <param name="Password">Optional <b>Object</b>. Cadena que indica la contraseña de protección que se va a dar al archivo (se distingue entre mayúsculas y minúsculas). No debe exceder de 15 caracteres.</param>
-        <param name="WriteResPassword">Optional <b>Object</b>. Cadena que indica la contraseña contra escritura del archivo. Si se utiliza la contraseña al guardar el archivo y no se especifica al abrirlo, el archivo se abrirá como de sólo lectura.</param>
-        <param name="ReadOnlyRecommended">Optional <b>Object</b>. <b>True</b> para mostrar un mensaje cuando se abre el archivo y se recomienda que el archivo se abra como de solo lectura.</param>
-        <param name="CreateBackup">Optional <b>Object</b>. <b>True</b> para crear un archivo de copia de seguridad.</param>
-        <param name="SharingPassword">Optional <b>Object</b>. Cadena que indica la contraseña que impedirá que el archivo sea compartido.</param>
+        <param name="Filename">Objeto <b>opcional</b>. Cadena que especifica el nombre del archivo guardado. Se puede especificar la ruta completa del archivo; en caso contrario, Microsoft Excel guarda el archivo en la carpeta actual.</param>
+        <param name="Password">Objeto <b>opcional</b>. Cadena que indica la contraseña de protección que se va a dar al archivo (se distingue entre mayúsculas y minúsculas). No debe exceder de 15 caracteres.</param>
+        <param name="WriteResPassword">Objeto <b>opcional</b>. Cadena que indica la contraseña contra escritura del archivo. Si se utiliza la contraseña al guardar el archivo y no se especifica al abrirlo, el archivo se abrirá como de sólo lectura.</param>
+        <param name="ReadOnlyRecommended">Objeto <b>opcional</b>. <b>True</b> para mostrar un mensaje cuando se abre el archivo que recomienda que el archivo se abra de solo lectura.</param>
+        <param name="CreateBackup">Objeto <b>opcional</b>. <b>True</b> para crear un archivo de copia de seguridad.</param>
+        <param name="SharingPassword">Objeto <b>opcional</b>. Cadena que indica la contraseña que impedirá que el archivo sea compartido.</param>
         <summary>Guarda el libro y establece una contraseña que impide que sea compartido.</summary>
         <remarks><para>[!NOTA] Use contraseñas seguras que combinen letras mayúsculas y minúsculas, números y símbolos. Las contraseñas que no son seguras no contienen una combinación de estos elementos. Contraseña segura: Y6dh!et5. Contraseña no segura: House27. Use una contraseña segura que pueda recordar para no tener que anotarla.</para>
           <para> </para></remarks>
@@ -4709,7 +4709,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el orden de las hojas del libro está protegido. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si el orden de las hojas del libro está protegido. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4737,7 +4737,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si las ventanas del libro están protegidas. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si las ventanas del libro están protegidas. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4794,7 +4794,7 @@
       </Parameters>
       <Docs>
         <param name="Days">Required <b>Integer</b>. Número de días que se mantendrán los cambios en el registro de cambios.</param>
-        <param name="SharingPassword">Optional <b>Object</b>. Contraseña que desprotege el libro para compartirlo. Si el libro está protegido con una contraseña para que no se comparta y se omite este argumento, se solicitará la contraseña al usuario.</param>
+        <param name="SharingPassword">Objeto <b>opcional</b>. Contraseña que desprotege el libro para compartirlo. Si el libro está protegido con una contraseña para que no se comparta y se omite este argumento, se solicitará la contraseña al usuario.</param>
         <summary>Quita las entradas del registro de cambios del libro especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4825,7 +4825,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve <b>True</b> si el objeto se ha abierto como de sólo lectura. <b>Booleano</b> de solo lectura.</summary>
+        <summary>Devuelve <b>True</b> si el objeto se ha abierto como de sólo lectura. Valor <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad se usa únicamente para las listas vinculadas a un sitio de SharePoint.</para>
           <para> </para></remarks>
@@ -4857,10 +4857,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el libro se ha guardado como recomendado sólo lectura. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si el libro se ha guardado como recomendado sólo lectura. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Si abre un libro que se ha guardado como recomendado sólo lectura, Microsoft Excel mostrará un mensaje para recomendar que lo abra en dicho modo.</para>
-          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para cambiar esta propiedad.</para>
+          <para>Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para cambiar esta propiedad.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4888,7 +4888,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Hace que se produzca una comprobación de etiqueta inteligente en primer plano, anotando automáticamente los datos que no se anotaron antes.</summary>
+        <summary>Hace que se produzca una comprobación de etiqueta inteligente en primer plano, anotando automáticamente datos que no se anotaron antes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4942,9 +4942,9 @@
         <Parameter Name="Where" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="When">Optional <b>Object</b>. Especifica cuándo se rechazan todos los cambios.</param>
-        <param name="Who">Optional <b>Object</b>. Especifica quién rechaza todos los cambios.</param>
-        <param name="Where">Optional <b>Object</b>. Especifica dónde se rechazan todos los cambios.</param>
+        <param name="When">Objeto <b>opcional</b>. Especifica cuándo se rechazan todos los cambios.</param>
+        <param name="Who">Objeto <b>opcional</b>. Especifica quién rechaza todos los cambios.</param>
+        <param name="Where">Objeto <b>opcional</b>. Especifica dónde se rechazan todos los cambios.</param>
         <summary>Rechaza todos los cambios del libro compartido especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4974,7 +4974,7 @@
       <Docs>
         <param name="Encoding">Obligatorio <see cref="T:Microsoft.Office.Core.MsoEncoding" /> . Codificación que se va a aplicar al libro.</param>
         <summary>Vuelve a cargar un libro basado en un documento HTML utilizando la codificación de documentos especificada.</summary>
-        <remarks><para>Solo <b>las constantes msoEncoding</b> que son aplicables a HTML funcionan con el <b>método ReloadAs.</b></para>
+        <remarks><para>Solo <b>las constantes msoEncoding</b> que son aplicables al trabajo HTML con el <b>método ReloadAs.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5032,7 +5032,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si es posible eliminar información personal del libro especificado. El valor predeterminado es <b>False</b>. Lectura y escritura de <b>tipo Boolean</b>.</summary>
+        <summary><b>True</b> si es posible eliminar información personal del libro especificado. El valor predeterminado es <b>False</b>. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5143,7 +5143,7 @@
         <Parameter Name="ShowMessage" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ShowMessage">Optional <b>Object</b>. <b>False</b> no muestra el mensaje. <b>True</b> presenta el mensaje.</param>
+        <param name="ShowMessage">Objeto <b>opcional</b>. <b>False</b> no muestra el mensaje. <b>True</b> presenta el mensaje.</param>
         <summary>Envía un mensaje de correo electrónico al autor de un libro que se ha enviado para su revisión, en el que se le comunica que el revisor ha terminado de revisar el libro.</summary>
         <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" /> método para iniciar una revisión de colaboración de un libro. Si el método <b>ReplyWithChanges</b> se ejecuta en un libro que no forma parte de un ciclo de revisiones de colaboración, el usuario recibirá un error.</para>
           <para> </para></remarks>
@@ -5172,7 +5172,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Research</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Research" /> objeto que representa el servicio de referencia de un libro. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Research" /> objeto que representa el servicio de investigación de un libro. Solo lectura.</summary>
         <value><b>Research</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5262,7 +5262,7 @@
       <Parameters />
       <Docs>
         <summary>Distribuye el libro usando la lista de distribución activa.</summary>
-        <remarks><para>El enrutamiento de un libro establece <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" /> la propiedad en <b>True</b>.</para>
+        <remarks><para>El enrutamiento de un libro establece la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" /> propiedad en <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5295,7 +5295,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el libro se ha distribuido al siguiente destinatario. <b>False</b> si se debe distribuir el libro. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si el libro se ha distribuido al siguiente destinatario. <b>False</b> si se debe distribuir el libro. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Si el libro no se distribuyó al destinatario actual, esta propiedad es siempre <b>False</b> (por ejemplo, si el documento no tiene lista de distribución o si se acaba de crear una).</para>
           <para> </para></remarks>
@@ -5327,7 +5327,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.RoutingSlip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> objeto que representa la lista de enrutamiento del libro. Leer esta propiedad si no hay ninguna lista de enrutamiento produce un error (compruebe <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> primero la propiedad). Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> objeto que representa la lista de enrutamiento del libro. Leer esta propiedad si no hay ninguna hoja de ruta provoca un error (compruebe primero <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> la propiedad). Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5390,7 +5390,7 @@
         <summary>Guarda los cambios del libro especificado.</summary>
         <remarks><para>Para abrir un archivo de libro, use el <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método.</para>
           <para>Para marcar un libro como guardado sin escribirlo en un disco, establezca su <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> propiedad en <b>True</b>.</para>
-          <para>La primera vez que guarde un libro, use <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> el método para especificar un nombre para el archivo.</para>
+          <para>La primera vez que guarde un libro, use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para especificar un nombre para el archivo.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5430,18 +5430,18 @@
         <Parameter Name="Local" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">Optional <b>Object</b>. Cadena que especifica el nombre del archivo que se va a guardar. Se puede especificar la ruta completa del archivo; en caso contrario, Microsoft Excel guarda el archivo en la carpeta actual.</param>
-        <param name="FileFormat">Optional <b>Object</b>. Formato con el que se guarda el archivo. Para obtener una lista de opciones válidas, vea la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.FileFormat" /> propiedad. Para un archivo existente, el formato predeterminado es el último formato de archivo especificado; para un archivo nuevo, el valor predeterminado es el formato de la versión de Excel que se esté usando.</param>
-        <param name="Password">Optional <b>Object</b>. Cadena que distingue entre mayúsculas y minúsculas (no más de 15 caracteres) y que indica que se aplicará la protección con contraseña al archivo.</param>
-        <param name="WriteResPassword">Optional <b>Object</b>. Cadena que indica la contraseña de protección contra escritura para este archivo. Si un archivo se guarda con la contraseña y esta no se indica al abrir el archivo, el archivo se abre en modo de solo lectura.</param>
-        <param name="ReadOnlyRecommended">Optional <b>Object</b>. <b>True</b> para mostrar un mensaje cuando se abre el archivo y se recomienda que el archivo se abra como de solo lectura.</param>
-        <param name="CreateBackup">Optional <b>Object</b>. <b>True</b> para crear un archivo de copia de seguridad.</param>
+        <param name="Filename">Objeto <b>opcional</b>. Cadena que especifica el nombre del archivo que se va a guardar. Se puede especificar la ruta completa del archivo; en caso contrario, Microsoft Excel guarda el archivo en la carpeta actual.</param>
+        <param name="FileFormat">Objeto <b>opcional</b>. Formato con el que se guarda el archivo. Para obtener una lista de opciones válidas, consulte la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.FileFormat" /> propiedad. Para un archivo existente, el formato predeterminado es el último formato de archivo especificado; para un archivo nuevo, el valor predeterminado es el formato de la versión de Excel que se esté usando.</param>
+        <param name="Password">Objeto <b>opcional</b>. Cadena que distingue entre mayúsculas y minúsculas (no más de 15 caracteres) y que indica que se aplicará la protección con contraseña al archivo.</param>
+        <param name="WriteResPassword">Objeto <b>opcional</b>. Cadena que indica la contraseña de protección contra escritura para este archivo. Si un archivo se guarda con la contraseña y esta no se indica al abrir el archivo, el archivo se abre en modo de solo lectura.</param>
+        <param name="ReadOnlyRecommended">Objeto <b>opcional</b>. <b>True</b> para mostrar un mensaje cuando se abre el archivo que recomienda que el archivo se abra como de solo lectura.</param>
+        <param name="CreateBackup">Objeto <b>opcional</b>. <b>True</b> para crear un archivo de copia de seguridad.</param>
         <param name="AccessMode">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlSaveAsAccessMode" /> .</param>
         <param name="ConflictResolution">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlSaveConflictResolution" /> .</param>
-        <param name="AddToMru">Optional <b>Object</b>. <b>True</b> para agregar este libro a la lista de archivos usados recientemente. El valor predeterminado es <b>False</b>.</param>
-        <param name="TextCodepage">Optional <b>Object</b>. No se usa en la versión en inglés de EE.UU. de Microsoft Excel.</param>
-        <param name="TextVisualLayout">Optional <b>Object</b>. No se usa en la versión en inglés de EE.UU. de Microsoft Excel.</param>
-        <param name="Local">Optional <b>Object</b>. <b>True</b> guarda el archivo contra el idioma de Microsoft Excel (incluida la configuración del Panel de control). <b>False</b> (valor predeterminado) guarda los archivos en el idioma de Visual Basic para Aplicaciones (VBA) (que suele ser inglés de EE.UU., a menos que el proyecto VBA desde el que se ejecuta Workbooks.Open sea un antiguo proyecto VBA XL5/95 internacionalizado).</param>
+        <param name="AddToMru">Objeto <b>opcional</b>. <b>True</b> para agregar este libro a la lista de archivos usados recientemente. El valor predeterminado es <b>False</b>.</param>
+        <param name="TextCodepage">Objeto <b>opcional</b>. No se usa en la versión en inglés de EE.UU. de Microsoft Excel.</param>
+        <param name="TextVisualLayout">Objeto <b>opcional</b>. No se usa en la versión en inglés de EE.UU. de Microsoft Excel.</param>
+        <param name="Local">Objeto <b>opcional</b>. <b>True</b> guarda el archivo contra el idioma de Microsoft Excel (incluida la configuración del Panel de control). <b>False</b> (predeterminado) guarda los archivos en el idioma de Visual Basic para Aplicaciones (VBA) (que suele ser inglés de Estados Unidos a menos que el proyecto VBA desde el que se ejecuta Workbooks.Open sea un antiguo proyecto VBA XL5/95 internacionalizado).</param>
         <summary>Guarda los cambios del libro en un archivo diferente.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5540,7 +5540,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si no se han realizado cambios en el libro especificado desde la última vez que se guardó. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si no se han efectuado cambios en el libro especificado desde la última vez que se guardó. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks><para>Si nunca se ha guardado un libro, su <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> propiedad devuelve una cadena vacía ("").</para>
           <para>Esta propiedad se puede establecer en <b>True</b> para cerrar un libro modificado sin guardarlo o sin que se pregunte si desea guardarlo.</para>
@@ -5639,14 +5639,14 @@
         <Parameter Name="ShowMessage" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Recipients">Optional <b>Object</b>. Cadena que representa los números de fax y las direcciones de correo electrónico de las personas a las que se enviará el fax. Separe a varios destinatarios mediante un punto y coma.</param>
-        <param name="Subject">Optional <b>Object</b>. Cadena que representa la línea de asunto del documento enviado por fax.</param>
-        <param name="ShowMessage">Optional <b>Object</b>. <b>True</b> muestra el mensaje de fax antes de enviarlo. <b>False</b> envía el fax sin mostrar el mensaje de fax.</param>
+        <param name="Recipients">Objeto <b>opcional</b>. Cadena que representa los números de fax y las direcciones de correo electrónico de las personas a las que se enviará el fax. Separe a varios destinatarios mediante un punto y coma.</param>
+        <param name="Subject">Objeto <b>opcional</b>. Cadena que representa la línea de asunto del documento enviado por fax.</param>
+        <param name="ShowMessage">Objeto <b>opcional</b>. <b>True</b> muestra el mensaje de fax antes de enviarlo. <b>False</b> envía el fax sin mostrar el mensaje de fax.</param>
         <summary>Envía una hoja de cálculo como fax a los destinatarios especificados.</summary>
         <remarks><para>Para poder utilizar el método <b>SendFaxOverInternet</b>, el servicio de fax debe estar habilitado en el equipo del usuario.</para>
-          <para>El formato usado para especificar números de fax en <paramref name="Recipients" /> el parámetro es uno o <paramref name="recipientsfaxnumber@usersfaxprovider" /> <paramref name="recipientsname@recipientsfaxnumber" /> . Puede obtener acceso a la información del proveedor de fax del usuario utilizando la siguiente ruta del Registro:</para>
+          <para>El formato usado para especificar números de fax en el <paramref name="Recipients" /> parámetro es <paramref name="recipientsfaxnumber@usersfaxprovider" /> o <paramref name="recipientsname@recipientsfaxnumber" /> . Puede obtener acceso a la información del proveedor de fax del usuario utilizando la siguiente ruta del Registro:</para>
           <para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para>
-          <para>Use el valor de la clave FaxAddress en esta ruta de acceso del Registro para determinar el formato que se va a usar para un destinatario.</para>
+          <para>Use el valor de la clave FaxAddress en esta ruta de acceso del Registro para determinar el formato que se usará para un destinatario.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5675,10 +5675,10 @@
         <Parameter Name="IncludeAttachment" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Recipients">Optional <b>Object</b>. Una cadena que muestra las personas a quienes se debe enviar el mensaje. Pueden ser nombres no resueltos y alias de una libreta de teléfonos de correo electrónico o direcciones de correo electrónico completa. Separe a varios destinatarios mediante un punto y coma (;). Si se deja en blanco <paramref name="ShowMessage" /> y <b>es False,</b>recibirá un mensaje de error y no se enviará el mensaje.</param>
-        <param name="Subject">Optional <b>Object</b>. Cadena para el asunto del mensaje. Si se deja en blanco, el asunto será: Revise " <paramref name="filename" /> ".</param>
-        <param name="ShowMessage">Optional <b>Object</b>. Un valor <b>booleano</b> que indica si se debe mostrar el mensaje cuando se ejecuta el método. El valor predeterminado es <b>True</b>. Si se establece en <b>False</b>, el mensaje se envía automáticamente a los destinatarios sin antes mostrar el mensaje al remitente.</param>
-        <param name="IncludeAttachment">Optional <b>Object</b>. Un valor <b>booleano</b> que indica si el mensaje debe incluir datos adjuntos o un vínculo a una ubicación de servidor. El valor predeterminado es <b>True</b>. Si se establece en <b>False</b>, el documento debe guardarse en una ubicación compartida.</param>
+        <param name="Recipients">Objeto <b>opcional</b>. Una cadena que muestra las personas a quienes se debe enviar el mensaje. Pueden ser nombres no resueltos y alias de una libreta de teléfonos de correo electrónico o direcciones de correo electrónico completa. Separe a varios destinatarios mediante un punto y coma (;). Si se deja en blanco <paramref name="ShowMessage" /> y <b>es False,</b>recibirá un mensaje de error y no se enviará el mensaje.</param>
+        <param name="Subject">Objeto <b>opcional</b>. Cadena para el asunto del mensaje. Si se deja en blanco, el asunto será: Revise " <paramref name="filename" /> ".</param>
+        <param name="ShowMessage">Objeto <b>opcional</b>. Un valor <b>booleano</b> que indica si se debe mostrar el mensaje cuando se ejecuta el método. El valor predeterminado es <b>True</b>. Si se establece en <b>False</b>, el mensaje se envía automáticamente a los destinatarios sin antes mostrar el mensaje al remitente.</param>
+        <param name="IncludeAttachment">Objeto <b>opcional</b>. Un valor <b>booleano</b> que indica si el mensaje debe incluir datos adjuntos o un vínculo a una ubicación de servidor. El valor predeterminado es <b>True</b>. Si se establece en <b>False</b>, el documento debe guardarse en una ubicación compartida.</param>
         <summary>Envía un libro en un mensaje de correo electrónico para su revisión a los destinatarios especificados.</summary>
         <remarks><para>El método <b>SendForReview</b> inicia un ciclo de revisión en colaboración. Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" /> método para finalizar un ciclo de revisión.</para>
           <para> </para></remarks>
@@ -5711,9 +5711,9 @@
         <Parameter Name="ReturnReceipt" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Recipients">Objeto <b>requerido</b>. Especifica el nombre del destinatario en forma de texto o bien como una matriz de cadenas de texto, si hay varios destinatarios. Debe especificarse al menos un destinatario para que todos se agreguen como destinatarios de correo electrónico.</param>
-        <param name="Subject">Optional <b>Object</b>. Especifica el asunto del mensaje. Si este argumento se omite, se usará el nombre del documento.</param>
-        <param name="ReturnReceipt">Optional <b>Object</b>. <b>True</b> para solicitar un acuse de recibo. <b>False</b> para no solicitar un recibo de devolución. El valor predeterminado es <b>False</b>.</param>
+        <param name="Recipients">Objeto <b>obligatorio</b>. Especifica el nombre del destinatario en forma de texto o bien como una matriz de cadenas de texto, si hay varios destinatarios. Debe especificarse al menos un destinatario para que todos se agreguen como destinatarios de correo electrónico.</param>
+        <param name="Subject">Objeto <b>opcional</b>. Especifica el asunto del mensaje. Si este argumento se omite, se usará el nombre del documento.</param>
+        <param name="ReturnReceipt">Objeto <b>opcional</b>. <b>True</b> para solicitar un acuse de recibo. <b>False</b> para no solicitar un recibo de devolución. El valor predeterminado es <b>False</b>.</param>
         <summary>Envía el libro usando el sistema de correo que esté instalado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5801,9 +5801,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ServerViewableItems</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Permite a los programadores interaccionar con la lista de objetos publicados del libro que se muestran en el servidor. Solo lectura.</summary>
+        <summary>Permite a los programadores interaccionar con la lista de objetos publicados del libro que se muestran en el servidor. Es de sólo lectura.</summary>
         <value><see cref="P:Microsoft.Office.Interop.Excel._Workbook.ServerViewableItems" /></value>
-        <remarks><para>Esta propiedad devuelve una colección de los elementos que se pueden publicar en Excel Services.  Puede incluir Tablas, Tablas dinámicas, Rangos con nombre y Gráficos.  También puede contener Hojas, siempre y cuando no estén mezcladas las Hojas con los demás elementos mencionados antes.  </para>
+        <remarks><para>Esta propiedad devuelve una colección de los elementos que se pueden publicar en Excel Services.  Puede incluir Tablas, Tablas dinámicas, Rangos con nombre y Gráficos. También puede contener Hojas, siempre y cuando no estén mezcladas las Hojas con los demás elementos mencionados antes.  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5833,7 +5833,7 @@
         <Parameter Name="Procedure" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name"><b>String</b> requerida. Nombre del vínculo DDE/OLE devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> método.</param>
+        <param name="Name"><b>String</b> requerida. Nombre del vínculo DDE/OLE devuelto desde el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> método.</param>
         <param name="Procedure"><b>String</b> requerida. Nombre del procedimiento que se debe ejecutar cuando se actualiza el vínculo. Puede ser tanto una macro de Microsoft Excel 4.0 como un procedimiento de Visual Basic. Utilice una cadena de caracteres vacía ("") para este argumento, si no desea que se ejecute ningún procedimiento cuando el vínculo se actualice.</param>
         <summary>Establece el nombre de un procedimiento que se ejecutará cada vez que se actualice un vínculo DDE.</summary>
         <remarks>To be added.</remarks>
@@ -5864,10 +5864,10 @@
         <Parameter Name="PasswordEncryptionFileProperties" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PasswordEncryptionProvider">Optional <b>Object</b>. Cadena (se distingue entre mayúsculas y minúsculas) del proveedor del cifrado.</param>
-        <param name="PasswordEncryptionAlgorithm">Optional <b>Object</b>. Cadena (se distingue entre mayúsculas y minúsculas) del nombre corto del algoritmo (es decir, "RC4").</param>
-        <param name="PasswordEncryptionKeyLength">Optional <b>Object</b>. Longitud de la clave de cifrado, que debe ser múltiplo de 8 (40 o más).</param>
-        <param name="PasswordEncryptionFileProperties">Optional <b>Object</b>. <b>True</b> (valor predeterminado) para cifrar las propiedades del archivo.</param>
+        <param name="PasswordEncryptionProvider">Objeto <b>opcional</b>. Cadena (se distingue entre mayúsculas y minúsculas) del proveedor del cifrado.</param>
+        <param name="PasswordEncryptionAlgorithm">Objeto <b>opcional</b>. Cadena (se distingue entre mayúsculas y minúsculas) del nombre corto del algoritmo (es decir, "RC4").</param>
+        <param name="PasswordEncryptionKeyLength">Objeto <b>opcional</b>. Longitud de la clave de cifrado, que debe ser múltiplo de 8 (40 o más).</param>
+        <param name="PasswordEncryptionFileProperties">Objeto <b>opcional</b>. <b>True</b> (valor predeterminado) para cifrar las propiedades del archivo.</param>
         <summary>Establece las opciones para cifrar libros utilizando contraseñas.</summary>
         <remarks><para>Los <paramref name="PasswordEncryptionProvider" /> <paramref name="PasswordEncryptionAlgorithm" /> argumentos , <paramref name="PasswordEncryptionKeyLength" /> y no son independientes entre sí. La selección de un proveedor de cifrado limita el conjunto de algoritmos y las longitudes de claves que se pueden elegir.</para>
           <para>Para el <paramref name="PasswordEncryptionKeyLength" /> argumento no hay ningún límite inherente en el intervalo de la longitud de la clave. El intervalo viene determinado por el proveedor de servicios de cifrado, que también determina el algoritmo de cifrado.</para>
@@ -5897,7 +5897,7 @@
         <ReturnType>Microsoft.Office.Core.SharedWorkspace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.SharedWorkspace" /> objeto que representa el área de documentos en el que se encuentra un documento especificado. Solo lectura.</summary>
+        <summary>Devuelve un objeto que representa el área de trabajo de documento en la que se encuentra <see cref="T:Microsoft.Office.Core.SharedWorkspace" /> un documento especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5995,8 +5995,8 @@
       </ReturnValue>
       <Docs>
         <summary>Esta propiedad controla la visibilidad del Panel de filtros del gráfico dinámico. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
-        <remarks><para>Esta propiedad controla la visibilidad del Panel de filtros del gráfico dinámico (lo muestra o lo oculta).  Para que esté visible, el objeto <b>PivotChart</b> debe estar seleccionado. </para>
+        <value><b>Boolean</b></value>
+        <remarks><para>Esta propiedad controla la visibilidad del Panel de filtros del gráfico dinámico (lo muestra o lo oculta).  Para que esté visible, el objeto <b>PivotChart</b> debe estar seleccionado.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6054,7 +6054,7 @@
         <ReturnType>Microsoft.Office.Core.SignatureSet</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las firmas digitales de un libro. Solo lectura.</summary>
+        <summary>Devuelve las firmas digitales de un libro. Es de sólo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Core.SignatureSet" /></value>
         <remarks><para>Para firmar digitalmente libros de Excel2007 y comprobar otras firmas en ellos, necesitará Microsoft CryptoAPI y un certificado de firma digital único. CryptoAPI se instala con Microsoft Internet Explorer 4.01 o posterior. Puede obtener un certificado de firma digital de una entidad de certificación.
 </para>
@@ -6085,7 +6085,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto asociado al libro.</summary>
-        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> asociado al libro.</value>
+        <value>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> objeto asociado al libro.</value>
         <remarks><para>Lectura/escritura.</para>
           <para> </para></remarks>
       </Docs>
@@ -6113,7 +6113,7 @@
         <ReturnType>Microsoft.Office.Core.SmartDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.SmartDocument" /> objeto que representa la configuración de una solución de documentos inteligentes. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.SmartDocument" /> objeto que representa la configuración de una solución de documento inteligente. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6243,7 +6243,7 @@
         <ReturnType>Microsoft.Office.Core.Sync</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.Sync" /> objeto que proporciona acceso a los métodos y propiedades de los documentos que forman parte de un área de documentos.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.Sync" /> objeto que proporciona acceso a los métodos y propiedades de los documentos que forman parte de un área de trabajo de documentos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6331,7 +6331,7 @@
         <ReturnType>Microsoft.Office.Core.OfficeTheme</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el tema aplicado al libro actual. Solo lectura.</summary>
+        <summary>Devuelve el tema aplicado al libro actual. Es de sólo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Core.OfficeTheme" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6430,7 +6430,7 @@
         <Parameter Name="Password" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Password">Optional <b>Object</b>. Cadena que representa la contraseña que se utiliza para desproteger la hoja o el libro (se distingue entre mayúsculas y minúsculas). El argumento se pasa por alto si la hoja o el libro no están protegidos mediante contraseña. Si no se especifica este argumento en una hoja que está protegida, se le pedirá que escriba la contraseña. Si no se especifica este argumento en un libro que está protegido mediante contraseña, se produce un error.</param>
+        <param name="Password">Objeto <b>opcional</b>. Cadena que representa la contraseña que se utiliza para desproteger la hoja o el libro (se distingue entre mayúsculas y minúsculas). El argumento se pasa por alto si la hoja o el libro no están protegidos mediante contraseña. Si no se especifica este argumento en una hoja que está protegida, se le pedirá que escriba la contraseña. Si no se especifica este argumento en un libro que está protegido mediante contraseña, se produce un error.</param>
         <summary>Elimina la protección de una hoja o de un libro. Este método no tiene efecto si la hoja o el libro no están protegidos.</summary>
         <remarks><para>Si olvida la contraseña, no se podrá desproteger la hoja de cálculo ni el libro. Es conveniente guardar en un lugar seguro una lista de las contraseñas y nombres de los documentos correspondientes.</para>
           <para> </para></remarks>
@@ -6458,7 +6458,7 @@
         <Parameter Name="SharingPassword" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SharingPassword">Optional <b>Object</b>. Contraseña del libro.</param>
+        <param name="SharingPassword">Objeto <b>opcional</b>. Contraseña del libro.</param>
         <summary>Desactiva la protección de libro compartido y lo guarda.</summary>
         <remarks><para>[!NOTA] Use contraseñas seguras que combinen letras mayúsculas y minúsculas, números y símbolos. Las contraseñas que no son seguras no contienen una combinación de estos elementos. Contraseña segura: Y6dh!et5. Contraseña no segura: House27. Use una contraseña segura que pueda recordar para no tener que anotarla.</para>
           <para> </para></remarks>
@@ -6489,7 +6489,7 @@
       <Parameters />
       <Docs>
         <summary>Actualiza un libro de sólo lectura con la versión del archivo del libro guardada en el disco, si dicha versión es más reciente que la copia actual del libro en la memoria. Si la copia del disco no ha cambiado desde que se cargó el libro, no volverá a cargarse la copia del libro en la memoria.</summary>
-        <remarks><para>Este método es útil cuando el usuario A abre un libro como de solo lectura y el usuario B lo abre como lectura y escritura. Si el usuario B guarda una versión más reciente del libro en el disco mientras el usuario A aún tiene el libro abierto, el usuario A no puede obtener la copia actualizada sin cerrar y volver a abrir el libro y perder la configuración de la vista. El <b>método UpdateFromFile</b> actualiza la copia en memoria del libro desde el archivo de disco.</para>
+        <remarks><para>Este método es útil si un usuario A abre un libro como de sólo lectura y otro usuario B lo abre como de lectura y escritura. Si el usuario B guarda en el disco una versión más reciente del libro mientras el usuario A tiene abierto el libro, el usuario A no podrá obtener una copia actualizada sin antes cerrar y volver a abrir el libro, por lo que perderá las configuraciones de presentación en pantalla. El método <b>UpdateFromFile</b> actualiza la copia del libro en la memoria a partir del archivo en el disco.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6519,7 +6519,7 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">Optional <b>Object</b>. Nombre del vínculo de Microsoft Excel o DDE/OLE que se va a actualizar, tal como se devuelve desde el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> método.</param>
+        <param name="Name">Objeto <b>opcional</b>. Nombre del vínculo Microsoft Excel O DDE/OLE que se va a actualizar, tal como se devuelve desde el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.LinkSources(System.Object)" /> método.</param>
         <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlLinkType" /> .</param>
         <summary>Actualiza un vínculo (o vínculos) de OLE, DDE o Microsoft Excel.</summary>
         <remarks><para>Cuando el método <b>UpdateLink</b> se invoca sin parámetros, Excel vuelve a actualizar todos los vínculos de las hojas de cálculo de manera predetermianda.</para>
@@ -6589,7 +6589,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si Microsoft Excel actualiza las referencias remotas en el libro. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si Microsoft Excel actualiza las referencias remotas en el libro. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6686,7 +6686,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el libro usa patrones de búsqueda que coinciden con todo el contenido de una celda. Boolean de solo <b>lectura</b> (<b>bool</b> en C#).</summary>
+        <summary><b>True</b> si el libro usa patrones de búsqueda que coinciden con todo el contenido de una celda. Boolean de <b>solo</b> lectura (<b>bool</b> en C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6714,7 +6714,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el libro habilita caracteres comodín para comparaciones de cadenas de caracteres y búsquedas. Boolean de solo <b>lectura</b> (<b>bool</b> en C#).</summary>
+        <summary><b>True</b> si el libro habilita caracteres comodín para las comparaciones y búsquedas de cadenas de caracteres. Boolean de <b>solo</b> lectura (<b>bool</b> en C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6742,7 +6742,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el proyecto de Visual Basic para Aplicaciones del libro especificado se ha firmado digitalmente. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si el proyecto de Visual Basic para Aplicaciones del libro especificado se ha firmado digitalmente. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6770,7 +6770,7 @@
         <ReturnType>Microsoft.Vbe.Interop.VBProject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto <b>VBProject</b> que representa el proyecto Visual Basic del libro especificado. Solo lectura.</summary>
+        <summary>Devuelve un objeto <b>VBProject</b> que representa el proyecto Visual Basic del libro especificado. Sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6798,7 +6798,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WebOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la colección, que contiene atributos de nivel de libro usados por Microsoft Excel cuando se guarda un documento como página <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> web o se abre una página web. Solo lectura.</summary>
+        <summary>Devuelve la colección, que contiene atributos de nivel de libro usados por Microsoft Excel al guardar un documento como una página <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> web o abrir una página web. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6883,7 +6883,7 @@
         <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección que representa todas las hojas de cálculo del libro especificado. Objeto <b>Sheets</b> de sola lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Si esta propiedad se usa sin un calificador de objeto, devuelve todas las hojas de cálculo del libro activo.</para>
-          <para>Esta propiedad no devuelve hojas de macros; use la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> propiedad o la propiedad para devolver esas <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> hojas.</para>
+          <para>Esta propiedad no devuelve hojas de macros; utilice la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" /> propiedad o la propiedad para devolver esas <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" /> hojas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6913,7 +6913,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor de tipo <b>String</b> para la contraseña de escritura de un libro. Lectura/escritura.</summary>
+        <summary>Devuelve o establece un valor de tipo <b>String</b> para la contraseña de escritura de un libro. Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6944,9 +6944,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si el libro está protegido contra escritura. <b>Booleano</b> de solo lectura.</summary>
+        <summary><b>True</b> si el libro está protegido contra escritura. <b>Boolean</b> de sólo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para establecer esta propiedad.</para>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para establecer esta propiedad.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6976,7 +6976,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el nombre del usuario que actualmente tiene permiso de escritura en el libro. <b>String</b> de solo lectura.</summary>
+        <summary>Devuelve el nombre del usuario que actualmente tiene permiso de escritura en el libro. <b>String</b> de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7006,14 +7006,14 @@
         <Parameter Name="Destination" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Url"><b>String</b> requerida. Una dirección URL o una ruta de acceso de convención de nomenclatura uniforme (UNC) a un archivo de datos XML.</param>
+        <param name="Url"><b>String</b> requerida. Un localizador uniforme de recursos (URL) o una ruta de acceso de convención de nomenclatura uniforme (UNC) a un archivo de datos XML.</param>
         <param name="ImportMap">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> . Asignación de esquema que se debe aplicar al importar el archivo.</param>
-        <param name="Overwrite"><b>Boolean</b> opcional. Si no se especifica un valor para el parámetro, este parámetro especifica si se sobrescribirán o no los datos que se han asignado a la asignación de esquema especificada en <paramref name="Destination" /> el <paramref name="ImportMap" /> parámetro. Se establece en <b>True</b> para sobrescribir los datos o en <b>False</b> para anexar los datos nuevos a los datos existentes. El valor predeterminado es <b>True</b>. Si se especifica un valor para el parámetro, este parámetro especifica si se sobrescribirán o <paramref name="Destination" /> no los datos existentes. Se establece en <b>True</b> para sobrescribir datos existentes o en <b>False</b> para cancelar la importación si se sobrescribirán datos. El valor predeterminado es <b>True</b>.</param>
-        <param name="Destination">Opcional <see cref="T:Microsoft.Office.Interop.Excel.Range" /> . Los datos se importarán en una nueva lista XML en el rango especificado.</param>
+        <param name="Overwrite"><b>Boolean</b> opcional. Si no se especifica un valor para el parámetro, este parámetro especifica si se sobrescribirán o no los datos asignados a la asignación de esquema especificada <paramref name="Destination" /> en el <paramref name="ImportMap" /> parámetro. Se establece en <b>True</b> para sobrescribir los datos o en <b>False</b> para anexar los datos nuevos a los datos existentes. El valor predeterminado es <b>True</b>. Si se especifica un valor para el parámetro, este parámetro especifica si se sobrescribirán <paramref name="Destination" /> o no los datos existentes. Se establece en <b>True</b> para sobrescribir datos existentes o en <b>False</b> para cancelar la importación si se sobrescribirán datos. El valor predeterminado es <b>True</b>.</param>
+        <param name="Destination">Opcional <see cref="T:Microsoft.Office.Interop.Excel.Range" /> . Los datos se importarán en una nueva lista XML en el intervalo especificado.</param>
         <summary>Importa un archivo de datos XML al libro actual. Devuelve <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> .</summary>
         <returns>To be added.</returns>
         <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para>No especifique un valor para el parámetro si desea importar datos <paramref name="Destination" /> a una asignación existente.</para>
+          <para>No especifique un valor para el <paramref name="Destination" /> parámetro si desea importar datos a una asignación existente.</para>
           <para>Las siguientes condiciones provocarán que el <b>método XMLImport</b> genere errores en tiempo de ejecución:</para>
           <list type="bullet">
             <item>
@@ -7023,7 +7023,7 @@
               <description>El proceso de importación se canceló debido a que los datos especificados no cabían en la hoja de cálculo.</description>
             </item>
           </list>
-          <para>Utilice el método del objeto para importar datos XML cargados <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> anteriormente en la memoria.</para>
+          <para>Use el método del objeto para importar datos XML que <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> se han cargado previamente en la memoria.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -7054,12 +7054,12 @@
       <Docs>
         <param name="Data"><b>String</b> requerida. Datos que se van a importar.</param>
         <param name="ImportMap">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> . Asignación de esquema que se debe aplicar al importar el archivo.</param>
-        <param name="Overwrite"><b>Boolean</b> opcional. Si no se especifica un valor para el parámetro, este parámetro especifica si se sobrescribirán o no los datos que se han asignado a la asignación de esquema especificada en <paramref name="Destination" /> el <paramref name="ImportMap" /> parámetro. Se establece en <b>True</b> para sobrescribir los datos o en <b>False</b> para anexar los datos nuevos a los datos existentes. El valor predeterminado es <b>True</b>. Si se especifica un valor para el parámetro, este parámetro especifica si se sobrescribirán o <paramref name="Destination" /> no los datos existentes. Se establece en <b>True</b> para sobrescribir datos existentes o en <b>False</b> para cancelar la importación si se sobrescribirán datos. El valor predeterminado es <b>True</b>.</param>
-        <param name="Destination">Opcional <see cref="T:Microsoft.Office.Interop.Excel.Range" /> . Los datos se importarán en una nueva lista XML en el rango especificado.</param>
+        <param name="Overwrite"><b>Boolean</b> opcional. Si no se especifica un valor para el parámetro, este parámetro especifica si se sobrescribirán o no los datos asignados a la asignación de esquema especificada <paramref name="Destination" /> en el <paramref name="ImportMap" /> parámetro. Se establece en <b>True</b> para sobrescribir los datos o en <b>False</b> para anexar los datos nuevos a los datos existentes. El valor predeterminado es <b>True</b>. Si se especifica un valor para el parámetro, este parámetro especifica si se sobrescribirán <paramref name="Destination" /> o no los datos existentes. Se establece en <b>True</b> para sobrescribir datos existentes o en <b>False</b> para cancelar la importación si se sobrescribirán datos. El valor predeterminado es <b>True</b>.</param>
+        <param name="Destination">Opcional <see cref="T:Microsoft.Office.Interop.Excel.Range" /> . Los datos se importarán en una nueva lista XML en el intervalo especificado.</param>
         <summary>Importa una secuencia de datos XML que se ha cargado previamente en memoria. Devuelve <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> .</summary>
         <returns>To be added.</returns>
         <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
-          <para>No especifique un valor para el parámetro si desea importar datos <paramref name="Destination" /> a una asignación existente.</para>
+          <para>No especifique un valor para el <paramref name="Destination" /> parámetro si desea importar datos a una asignación existente.</para>
           <para>Las siguientes condiciones provocarán que el <b>método XMLImport</b> genere errores en tiempo de ejecución:</para>
           <list type="bullet">
             <item>
@@ -7069,7 +7069,7 @@
               <description>El proceso de importación se canceló debido a que los datos especificados no cabían en la hoja de cálculo.</description>
             </item>
           </list>
-          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> método del objeto para importar un archivo de datos XML en el libro <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> actual.</para>
+          <para>Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" /> método del objeto para importar un archivo de datos XML al libro <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> actual.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -7125,7 +7125,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlNamespaces</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespaces" /> colección que representa los espacios de nombres XML incluidos en el libro especificado. Solo lectura.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespaces" /> colección que representa los espacios de nombres XML contenidos en el libro especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks><para>Las características XML, excepto para guardar archivos en formato de hoja de cálculo XML, solo están disponibles en Microsoft Office Professional Edition 2003 y Microsoft Office Excel 2003.</para>
           <para> </para></remarks>
