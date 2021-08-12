@@ -1,5 +1,5 @@
 <Type Name="_Application" FullName="Microsoft.Office.Interop.Excel._Application">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7e1779c82659528041c775925bebd417907f8643" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999633" /></Metadata><TypeSignature Language="C#" Value="public interface _Application" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4d128d80c169cdac7c5089849d12bd3a7beea2b82241316cc21264ff243e5207" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54513543" /></Metadata><TypeSignature Language="C#" Value="public interface _Application" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Application" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._Application" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Application" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Es una interfaz principal en una coclase COM que el código administrado necesita para la interoperabilidad con el objeto COM correspondiente. Use esta interfaz principal únicamente cuando el método que desee usar comparta el mismo nombre que un evento del objeto COM; en este caso, realice la conversión a esta interfaz para llamar al método y realice la conversión a la última versión de la interfaz de eventos para conectarse al evento. En caso contrario, use la interfaz .NET derivada de la coclase COM para obtener acceso a los métodos, propiedades y eventos del objeto COM. Para obtener más información acerca del objeto COM, vea <see cref="T:Microsoft.Office.Interop.Excel.Application" /> .</summary>
+    <summary>Es una interfaz principal en una coclase COM que el código administrado necesita para la interoperabilidad con el objeto COM correspondiente. Use esta interfaz principal únicamente cuando el método que desee usar comparta el mismo nombre que un evento del objeto COM; en este caso, realice la conversión a esta interfaz para llamar al método y realice la conversión a la última versión de la interfaz de eventos para conectarse al evento. En caso contrario, use la interfaz .NET derivada de la coclase COM para obtener acceso a los métodos, propiedades y eventos del objeto COM. Para obtener más información sobre el objeto COM, vea <see cref="T:Microsoft.Office.Interop.Excel.Application" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -365,7 +365,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Excel.XlMSApplication" />
       </Parameters>
       <Docs>
-        <param name="Index">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlMSApplication" /> . Especifica la aplicación microsoft que se debe activar. <b>XlMSApplication</b> puede ser una de estas constantes <b>XlMSApplication:</b> <b>xlMicrosoftWord</b><b>xlMicrosoftPowerPoint</b><b>xlMicrosoftMail</b><b>xlMicrosoftAccess</b><b>xlMicrosoftFoxPro</b><b>xlMicrosoftProject</b><b>xlMicrosoftSchedulePlus</b></param>
+        <param name="Index">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlMSApplication" /> . Especifica la aplicación microsoft que se debe activar. <b>XlMSApplication</b> puede ser una de estas constantes <b>XlMSApplication:</b> <b>xlMicrosoftWord</b><b>xlMicrosoftPowerPoint</b><b>xlMicrosoftMail xlMicrosoftAccess</b><b>xlMicrosoftFoxPro</b><b></b><b>xlMicrosoftProject</b><b>xlMicrosoftSchedulePlus</b></param>
         <summary>Activa una aplicación de Microsoft. Si la aplicación ya se está ejecutando, este método activará la aplicación. De lo contrario, el método iniciará una nueva instancia de la aplicación.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,7 +393,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa la celda activa de la ventana activa (la ventana superior) o de la ventana especificada. Si la ventana no contiene una hoja de cálculo, esta propiedad produce un error.</summary>
+        <summary>Devuelve un objeto que representa la celda activa en la ventana activa (la ventana superior) o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> en la ventana especificada. Si la ventana no contiene una hoja de cálculo, esta propiedad produce un error.</summary>
         <value>To be added.</value>
         <remarks><para>Celda activa no es lo mismo que selección. La celda activa es una sola celda de la selección actual. La selección puede contener más de una celda, pero sólo una es la celda activa.</para>
           <para> </para></remarks>
@@ -578,8 +578,8 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto que representa la ventana vista protegida activa (la ventana superior).</summary>
-        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> que representa la ventana vista protegida activa (la ventana superior).</value>
-        <remarks><para>Devuelve una referencia nula (Nothing en Visual Basic) si no hay ninguna ventana vista protegida abierta. Solo lectura.</para>
+        <value>Un <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> objeto que representa la ventana vista protegida activa (la ventana en la parte superior).</value>
+        <remarks><para>Devuelve una referencia nula (Nothing en Visual Basic) si no hay ventanas de vista protegida abiertas. Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -635,7 +635,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objeto que representa la ventana activa (la ventana superior). Devuelve <b>Nothing</b> si no hay ventanas abiertas.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Window" /> objeto que representa la ventana activa (la ventana en la parte superior). Devuelve <b>Nothing</b> si no hay ventanas abiertas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -663,7 +663,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Workbook</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto que representa el libro de la ventana activa (la ventana superior). Devuelve <b>Nada</b> si no hay ninguna ventana abierta o si la ventana activa es la de información o la del Portapapeles.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto que representa el libro en la ventana activa (la ventana en la parte superior). Devuelve <b>Nada</b> si no hay ninguna ventana abierta o si la ventana activa es la de información o la del Portapapeles.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -698,9 +698,9 @@
         <Parameter Name="Description" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Chart">Objeto <b>requerido</b>. Gráfico que contiene el formato que se aplicará cuando se aplique el nuevo formato automático del gráfico.</param>
-        <param name="Name"><b>String</b> requerida. Nombre del formato automático.</param>
-        <param name="Description">Optional <b>Object</b>. Descripción del formato automático personalizado.</param>
+        <param name="Chart">Objeto <b>obligatorio</b>. Gráfico que contiene el formato que se aplicará cuando se aplique el nuevo formato automático del gráfico.</param>
+        <param name="Name"><b>String</b> requerida. Nombre del autoformato.</param>
+        <param name="Description">Objeto <b>opcional</b>. Una descripción del autoformato personalizado.</param>
         <summary>Agrega un formato automático de gráfico personalizado a la lista de formatos automáticos de gráfico disponibles.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -731,8 +731,8 @@
         <Parameter Name="ByRow" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ListArray">Objeto <b>requerido</b>. Especifica los datos de origen, como una matriz de cadenas o un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</param>
-        <param name="ByRow">Optional <b>Object</b>. Solo se usa <paramref name="ListArray" /> si es un objeto <b>Range.</b> <b>True</b> para crear una lista personalizada a partir de cada fila del rango. <b>False</b> para crear una lista personalizada a partir de cada columna del rango. Si este argumento se omite y el rango contiene más filas que columnas (o el mismo número de ambas), Microsoft Excel creará una lista personalizada a partir de cada columna del rango. Si este argumento se omite y el número de columnas es mayor que el de filas, Microsoft Excel creará una lista personalizada a partir de cada fila del rango.</param>
+        <param name="ListArray">Objeto <b>obligatorio</b>. Especifica los datos de origen, como una matriz de cadenas o un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</param>
+        <param name="ByRow">Objeto <b>opcional</b>. Solo se usa <paramref name="ListArray" /> si es un objeto <b>Range.</b> <b>True</b> para crear una lista personalizada a partir de cada fila del rango. <b>False</b> para crear una lista personalizada a partir de cada columna del rango. Si este argumento se omite y el rango contiene más filas que columnas (o el mismo número de ambas), Microsoft Excel creará una lista personalizada a partir de cada columna del rango. Si este argumento se omite y el número de columnas es mayor que el de filas, Microsoft Excel creará una lista personalizada a partir de cada fila del rango.</param>
         <summary>Agrega una lista personalizada para Autorrelleno y para ordenación personalizados.</summary>
         <remarks><para>Si la lista que se intenta agregar ya existe, este método no surtirá ningún efecto.</para>
           <para> </para></remarks>
@@ -764,7 +764,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AddIns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que representa todos los complementos enumerados en el cuadro de diálogo Add-Ins de diálogo <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> (menú Herramientas).</summary>
+        <summary>Devuelve una colección que representa todos los complementos enumerados en el cuadro de diálogo <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> Add-Ins (menú Herramientas).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -792,8 +792,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AddIns2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene una colección de objetos que representan todos los complementos que están actualmente disponibles o abiertos en Excel, independientemente de si <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> están instalados.</summary>
-        <value>Una colección de objetos que representan todos los complementos que están actualmente disponibles o <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> abiertos en Excel.</value>
+        <summary>Obtiene una colección de objetos que representan todos los complementos que están disponibles o abiertos actualmente en Excel, independientemente de si <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> están instalados.</summary>
+        <value>Colección de objetos que representan todos los complementos que están actualmente disponibles o <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /> abiertos en Excel.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -898,8 +898,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que indica si se va a usar ClearType para mostrar fuentes en el menú, la cinta de opciones y el texto del cuadro de diálogo. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Devuelve o establece un <b>valor booleano</b> que indica si se va a usar ClearType para mostrar fuentes en el menú, la cinta de opciones y el texto del cuadro de diálogo. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks><para>Aun cuando la opción ClearType de Microsoft Windows esté deshabilitada, si esta propiedad se establece en <b>True</b>, se invalidará el valor de Windows y se usará ClearType en todas las aplicaciones de Microsoft Office.</para>
           <para> </para></remarks>
       </Docs>
@@ -930,7 +930,7 @@
         <ReturnType>Microsoft.Office.Core.AnswerWizard</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Core.AnswerWizard" /> objeto de Microsoft Excel.</summary>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Core.AnswerWizard" /> objeto para Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -958,7 +958,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que representa al creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> aplicación de ese objeto).</summary>
+        <summary>Devuelve un objeto que representa al creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la <see cref="T:Microsoft.Office.Interop.Excel.Application" /> aplicación de ese objeto).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1112,7 +1112,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AutoCorrect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.AutoCorrect" /> objeto que representa los atributos de Autocorrección de Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.AutoCorrect" /> objeto que representa los Microsoft Excel autocorrección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1174,9 +1174,9 @@
         <ReturnType>Microsoft.Office.Core.MsoAutomationSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Core.MsoAutomationSecurity" /> constante que representa el modo de seguridad que Microsoft Excel usa al abrir archivos mediante programación.</summary>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Core.MsoAutomationSecurity" /> constante que representa el modo de seguridad Microsoft Excel usa al abrir archivos mediante programación.</summary>
         <value>To be added.</value>
-        <remarks><para>Esta propiedad se establece automáticamente en <b>msoAutomationSecurityLow</b> cuando se inicia la aplicación. Por tanto, para evitar la interrupción de las soluciones que se basan en la configuración predeterminada, debe tener cuidado restablecer esta propiedad como <b>msoAutomationSecurityLow</b> después de abrir un archivo mediante programación. Asimismo, esta propiedad debe establecerse inmediatamente antes y después de abrir un archivo mediante programación para evitar que se realicen modificaciones malintencionadas.</para>
+        <remarks><para>Esta propiedad se establece automáticamente en <b>msoAutomationSecurityLow</b> al iniciarse la aplicación. Por tanto, para evitar la interrupción de las soluciones que utilizan la configuración predeterminada, debe asegurarse de restablecer esta propiedad como <b>msoAutomationSecurityLow</b> después de abrir un archivo mediante programación. Asimismo, esta propiedad debe establecerse inmediatamente antes y después de abrir un archivo mediante programación para evitar que se realicen modificaciones malintencionadas.</para>
           <para>
             <b>MsoAutomationSecurity</b> puede ser una de estas constantes <b>MsoAutomationSecurity</b>:</para>
           <list type="bullet">
@@ -1193,7 +1193,7 @@
                 <b>msoAutomationSecurityLow</b>    Habilita todas las macros. Valor predeterminado al iniciar la aplicación.</description>
             </item>
           </list>
-          <para>Establecer <see cref="P:Microsoft.Office.Interop.Excel._Application.ScreenUpdating" /> el valor <b>False</b> no afecta a las alertas y no afectará a las advertencias de seguridad. La <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> configuración no se aplicará a las advertencias de seguridad. Por ejemplo, si el usuario establece <b>DisplayAlerts</b> igual a <b>False</b> y <b>AutomationSecurity</b> en <b>msoAutomationSecurityByUI</b>, mientras el usuario se encuentra en el nivel de seguridad medio, habrá advertencias de seguridad mientras se ejecuta la macro. Esto permite que la macro interceptar los errores de archivo abierto mientras sigue mostrándose el aviso de seguridad si el archivo se abre correctamente.</para>
+          <para>Establecer <see cref="P:Microsoft.Office.Interop.Excel._Application.ScreenUpdating" /> en <b>False</b> no afecta a las alertas y no afectará a las advertencias de seguridad. La <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> configuración no se aplicará a las advertencias de seguridad. Por ejemplo, si el usuario establece <b>DisplayAlerts</b> igual a <b>False</b> y <b>AutomationSecurity</b> en <b>msoAutomationSecurityByUI</b>, mientras el usuario está en nivel de seguridad medio, habrá advertencias de seguridad mientras se ejecuta la macro. Esto permite que la macro interceptar los errores de archivo abierto mientras sigue mostrándose el aviso de seguridad si el archivo se abre correctamente.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1285,7 +1285,7 @@
       <Docs>
         <summary>Devuelve el número de versión de Microsoft Excel.</summary>
         <value>To be added.</value>
-        <remarks><para>Normalmente es más seguro probar la propiedad, a menos que estés <see cref="P:Microsoft.Office.Interop.Excel._Application.Version" /> seguro de que necesitas saber el número de compilación.</para>
+        <remarks><para>Por lo general, es más seguro probar la propiedad, a menos que estés seguro <see cref="P:Microsoft.Office.Interop.Excel._Application.Version" /> de que necesitas conocer el número de compilación.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1349,7 +1349,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si los libros se calculan antes de que se guarden en el disco (si la propiedad <see cref="P:Microsoft.Office.Interop.Excel._Application.Calculation" /> está establecida en <b>xlManual</b>). Esta propiedad se conserva incluso si se cambia la <see cref="P:Microsoft.Office.Interop.Excel._Application.Calculation" /> propiedad.</summary>
+        <summary><b>True</b> si los libros se calculan antes de guardarse en el disco (si la propiedad <see cref="P:Microsoft.Office.Interop.Excel._Application.Calculation" /> está establecida en <b>xlManual</b>). Esta propiedad se conserva incluso si cambia la <see cref="P:Microsoft.Office.Interop.Excel._Application.Calculation" /> propiedad.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1505,7 +1505,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCalculationInterruptKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve una constante que especifica la clave que puede interrumpir <see cref="T:Microsoft.Office.Interop.Excel.XlCalculationInterruptKey" /> Microsoft Excel al realizar cálculos.</summary>
+        <summary>Establece o devuelve una constante que especifica la clave que puede interrumpir Microsoft Excel <see cref="T:Microsoft.Office.Interop.Excel.XlCalculationInterruptKey" /> al realizar cálculos.</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>XlCalculationInterruptKey</b> puede ser una de estas <b>constantes XlCalculationInterruptKey:</b></para>
@@ -1544,7 +1544,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCalculationState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una constante que indica el estado de cálculo de la aplicación para los cálculos que se están <see cref="T:Microsoft.Office.Interop.Excel.XlCalculationState" /> realizando en Microsoft Excel.</summary>
+        <summary>Devuelve una constante que indica el estado de cálculo de la aplicación para los cálculos que se están realizando <see cref="T:Microsoft.Office.Interop.Excel.XlCalculationState" /> en Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>XlCalculationState</b> puede ser una de estas <b>constantes XlCalculationState:</b></para>
@@ -1585,7 +1585,7 @@
       <Docs>
         <summary>Devuelve un número cuyos últimos cuatro dígitos son el número de la versión auxiliar del motor de cálculo, y los demás dígitos (a la izquierda) son el número de la versión principal de Microsoft Excel.</summary>
         <value>To be added.</value>
-        <remarks><para>Si el libro se guardó en una versión anterior de Excel y no se ha actualizado completamente, esta propiedad devuelve 0.</para>
+        <remarks><para>Si el libro se guardó en una versión anterior de Excel y si el libro no se ha recalculado completamente, esta propiedad devuelve 0.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1618,7 +1618,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optional <b>Object</b>. Índice a la matriz. Este argumento solo se usa si la propiedad devuelve una matriz (para obtener más información, consulte la sección Notas).</param>
+        <param name="Index">Objeto <b>opcional</b>. Índice a la matriz. Este argumento solo se usa si la propiedad devuelve una matriz (para obtener más información, consulte la sección Notas).</param>
         <summary>Devuelve información sobre el modo en que se ha llamado a Visual Basic (para obtener más información, consulte la sección Notas).</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad devuelve información sobre el modo en que se ha llamado a Visual Basic, como se muestra en la tabla siguiente.</para>
@@ -1641,7 +1641,7 @@
             </item>
             <item>
               <term>El cuadro de diálogo Macro (menú Herramientas) o cualquier autor de la llamada no descrito anteriormente</term>
-              <description>El #REF! valor de error</description>
+              <description>El valor de error #REF!</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -1735,7 +1735,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Nombre que aparece en la barra de título de la ventana principal de Microsoft Excel. Si no se establece un nombre o si se establece el valor <b>Empty</b> para el nombre, esta propiedad devuelve "Microsoft Excel".</summary>
+        <summary>Nombre que aparece en la barra de título de la ventana Microsoft Excel principal. Si no se establece un nombre o si se establece el valor <b>Empty</b> para el nombre, esta propiedad devuelve "Microsoft Excel".</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1802,7 +1802,7 @@
       <Docs>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa todas las celdas de la hoja de cálculo activa. Si el documento activo no es una hoja de cálculo, se produce un error en esta propiedad.</summary>
         <value>To be added.</value>
-        <remarks><para>Dado que la propiedad es la propiedad predeterminada del objeto Range, puede especificar el índice de fila y columna inmediatamente después <see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" /> de la palabra clave <b>Cells.</b> <b></b> Para obtener más información, vea la <see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" /> propiedad.</para>
+        <remarks><para>Dado que <see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" /> la propiedad es la propiedad predeterminada del objeto <b>Range,</b> puede especificar el índice de fila y columna inmediatamente después de la palabra clave <b>Cells.</b> Para obtener más información, vea la <see cref="P:Microsoft.Office.Interop.Excel.Range.Item(System.Object,System.Object)" /> propiedad.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1832,7 +1832,7 @@
         <Parameter Name="Centimeters" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Centimeters">Required <b>Double</b>. Especifica el valor en centímetros que se convertirá a puntos.</param>
+        <param name="Centimeters">Double <b>obligatorio</b>. Especifica el valor en centímetros que se convertirá a puntos.</param>
         <summary>Convierte una medida de centímetros a puntos (un punto equivale a 0,035 centímetros).</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1864,7 +1864,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> hará que todos los gráficos de los documentos recién creados usen el comportamiento de seguimiento de referencia de celda. <b>Booleano</b> (bool en C#).</summary>
+        <summary><b>True</b> hará que todos los gráficos de los documentos recién creados usen el comportamiento de seguimiento de referencia de celda. <b>Boolean</b> (bool en C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1919,7 +1919,7 @@
         <Parameter Name="KeepAbort" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="KeepAbort">Optional <b>Object</b>. Permite que se realice la actualización de un <b>intervalo</b>.</param>
+        <param name="KeepAbort">Objeto <b>opcional</b>. Permite realizar el recálculo para un <b>range</b>.</param>
         <summary>Detiene el proceso de actualización en una aplicación de Microsoft Excel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1952,8 +1952,8 @@
       </Parameters>
       <Docs>
         <param name="Word"><b>String</b> requerida. Palabra que se desea comprobar.</param>
-        <param name="CustomDictionary">Optional <b>Object</b>. Cadena que indica el nombre de archivo del diccionario personalizado que se examinará si la palabra no se encuentra en el diccionario principal. Si no se establece este argumento, se usa el diccionario especificado en ese momento.</param>
-        <param name="IgnoreUppercase">Optional <b>Object</b>. <b>True</b> para que Microsoft Excel pase por alto las palabras que estén escritas con todas las letras en mayúsculas. <b>False</b> para que Microsoft Excel compruebe las palabras que estén escritas con todas las letras en mayúsculas. Si no se especifica este argumento, se usa la configuración actual.</param>
+        <param name="CustomDictionary">Objeto <b>opcional</b>. Cadena que indica el nombre de archivo del diccionario personalizado que se examinará si la palabra no se encuentra en el diccionario principal. Si no se establece este argumento, se usa el diccionario especificado en ese momento.</param>
+        <param name="IgnoreUppercase">Objeto <b>opcional</b>. <b>True</b> para que Microsoft Excel pase por alto las palabras que estén escritas con todas las letras en mayúsculas. <b>False</b> para que Microsoft Excel compruebe las palabras que estén escritas con todas las letras en mayúsculas. Si no se especifica este argumento, se usa la configuración actual.</param>
         <summary>Comprueba la ortografía de un sola palabra. Devuelve <b>True</b> si la palabra se encuentra en uno de los diccionarios; devuelve <b>False</b> si no se encuentra la palabra.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1988,7 +1988,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optional <b>Object</b>. Elemento de matriz que se devuelve. Si este argumento se omite, la propiedad devuelve la matriz completa de los formatos que están en el Portapapeles. Si desea más información, vea la sección Comentarios.</param>
+        <param name="Index">Objeto <b>opcional</b>. Elemento de matriz que se devuelve. Si este argumento se omite, la propiedad devuelve la matriz completa de los formatos que están en el Portapapeles. Si desea más información, vea la sección Comentarios.</param>
         <summary>Devuelve los formatos que están actualmente en el Portapapeles como una matriz de valores numéricos. Para saber si un formato concreto está en el Portapapeles, compare cada elemento de la matriz con la constante apropiada que se enumera en la sección Comentarios.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad devuelve una matriz de valores numéricos. Para determinar si un formato determinado está en el Portapapeles, compare cada elemento de la matriz con una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlClipboardFormat" /> constantes:</para>
@@ -2121,12 +2121,12 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el nombre del conector de clúster de informática de alto rendimiento (HPC) que se usa para ejecutar funciones definidas por el usuario en complementos XLL.</summary>
-        <value>Nombre del conector de clúster de informática de alto rendimiento (HPC) que se usa para ejecutar funciones definidas por el usuario en complementos XLL.</value>
+        <value>El nombre del conector de clúster de informática de alto rendimiento (HPC) que se usa para ejecutar funciones definidas por el usuario en complementos XLL.</value>
         <remarks><para>Lectura/escritura.</para>
-          <para>El valor de la propiedad corresponde al cuadro desplegable Tipo de clúster en Fórmulas de la categoría Avanzadas del cuadro de diálogo <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> Opciones de Excel.</para>
+          <para>El valor de la propiedad corresponde al cuadro desplegable Tipo de clúster en Fórmulas de la categoría Avanzadas del cuadro de diálogo <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> Excel opciones.</para>
           <para>
-            <b>Nota:</b>Para especificar la propiedad, debe instalar un conector de clúster de informática de alto rendimiento <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> (HPC). El conector de clúster permite ejecutar funciones XLL seguras para clústeres de forma remota en un clúster HPC para aumentar el rendimiento.</para>
-          <para>Antes de especificar la propiedad, debe usar la propiedad para permitir que <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> Microsoft Excel 2010 ejecute funciones definidas por el usuario en complementos <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> XLL.</para>
+            <b>Nota:</b>Para especificar la propiedad, debe instalar un conector de clúster de informática de alto <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> rendimiento (HPC). El conector de clúster permite ejecutar funciones XLL seguras para clústeres de forma remota en un clúster HPC para aumentar el rendimiento.</para>
+          <para>Antes de especificar la propiedad, debe usar la propiedad para permitir Microsoft Excel 2010 ejecutar funciones definidas por el usuario en <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> complementos XLL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2221,7 +2221,7 @@
         <ReturnType>Microsoft.Office.Core.COMAddIns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la colección de Microsoft Excel, que representa los complementos <see cref="T:Microsoft.Office.Core.COMAddIns" /> COM instalados actualmente.</summary>
+        <summary>Devuelve la colección para Microsoft Excel, que representa los complementos <see cref="T:Microsoft.Office.Core.COMAddIns" /> COM instalados actualmente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2249,7 +2249,7 @@
         <ReturnType>Microsoft.Office.Core.CommandBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.CommandBars" /> objeto que representa las barras de comandos de Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.CommandBars" /> objeto que representa las barras Excel comandos.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad devuelve el conjunto de barras de comandos integradas y personalizadas disponibles para la aplicación.</para>
           <para> </para></remarks>
@@ -2409,11 +2409,11 @@
         <Parameter Name="RelativeTo" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Formula">Objeto <b>requerido</b>. Cadena <b>que</b> contiene la fórmula que desea convertir. Debe ser una fórmula válida y empezar con un signo igual.</param>
+        <param name="Formula">Objeto <b>obligatorio</b>. Cadena <b>que</b> contiene la fórmula que desea convertir. Debe ser una fórmula válida y empezar con un signo igual.</param>
         <param name="FromReferenceStyle">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlReferenceStyle" /> . Estilo de referencia de la fórmula. <b>XlReferenceStyle</b> puede ser una de estas <b>constantes XlReferenceStyle:</b> <b>xlA1</b><b>xlR1C1</b></param>
-        <param name="ToReferenceStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlReferenceStyle" /> . Estilo de referencia que desea devolver. Si se omite este argumento, no se cambia el estilo de referencia; la fórmula permanece en el estilo especificado por <paramref name="FromReferenceStyle" /> . XlReferenceStyle puede ser una de estas constantes XlReferenceStyle. <b>xlA1 </b> <b>xlR1C1</b></param>
-        <param name="ToAbsolute">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlReferenceStyle" /> . Especifica el tipo de referencia convertido. Si se omite este argumento, el tipo de referencia no cambia. <b>XlReferenceStyle</b> puede ser una de estas <b>constantes XlReferenceStyle:</b> <b>xlAbsolute</b><b>xlAbsRowRelColumn</b><b>xlRelRowAbsColumn</b><b>xlRelative</b></param>
-        <param name="RelativeTo">Optional <b>Object</b>. opcional. Objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> que contiene una celda. Las referencias relativas hacen referencia a esta celda.</param>
+        <param name="ToReferenceStyle">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlReferenceStyle" /> . El estilo de referencia que desea que se devuelva. Si se omite este argumento, no se cambia el estilo de referencia; la fórmula permanece en el estilo especificado por <paramref name="FromReferenceStyle" /> . XlReferenceStyle puede ser una de estas constantes XlReferenceStyle. <b>xlA1 </b> <b>xlR1C1</b></param>
+        <param name="ToAbsolute">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlReferenceStyle" /> . Especifica el tipo de referencia convertida. Si se omite este argumento, no se cambia el tipo de referencia. <b>XlReferenceStyle</b> puede ser una de estas <b>constantes XlReferenceStyle:</b> <b>xlAbsolute</b><b>xlAbsRowRelColumn</b><b>xlRelRowAbsColumn</b><b>xlRelative</b></param>
+        <param name="RelativeTo">Objeto <b>opcional</b>. opcional. Objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> que contiene una celda. Las referencias relativas hacen referencia a esta celda.</param>
         <summary>Convierte las referencias a celdas de una fórmula entre los estilos de referencia A1 y F1C1, entre referencias absolutas y relativas o ambas.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -2522,14 +2522,14 @@
         <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlMousePointer" />puede ser una de estas <b>constantes XlMousePointer:</b></para>
           <para>
-            <b>xlDefault</b> Puntero predeterminado.</para>
+            <b>xlDefault</b> El puntero predeterminado.</para>
           <para>
-            <b>xlIBeam</b> Puntero de puntero de I.</para>
+            <b>xlIBeam</b> Puntero de I-beam.</para>
           <para>
-            <b>xlNorthwestArrow</b> Puntero de flecha del noroccidental.</para>
+            <b>xlNorthwestArrow</b> Puntero de flecha del noroeste.</para>
           <para>
             <b>xlWait</b> Puntero de reloj de arena.</para>
-          <para>La <b>propiedad Cursor</b> no se restablece automáticamente cuando la macro deja de ejecutarse. Debe restablecer el puntero a <b>xlDefault</b> antes de que la macro deje de ejecutarse.</para>
+          <para>La <b>propiedad Cursor</b> no se restablece automáticamente cuando la macro deja de ejecutarse. Debe restablecer el puntero a <b>xlDefault antes</b> de que la macro deje de ejecutarse.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2643,7 +2643,7 @@
               <term>
                 <b>False</b>
               </term>
-              <description>No en modo cortar o copiar</description>
+              <description>No en modo Cortar o Copiar</description>
             </item>
             <item>
               <term>
@@ -2726,7 +2726,7 @@
               <term>
                 <b>xlStrict</b>
               </term>
-              <description>El modo de entrada de datos está activado y presionar ESC no lo desactivará.</description>
+              <description>El modo entrada de datos está activado y al presionar ESC no se desactivará.</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -2758,7 +2758,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el código de devolución DDE específico de la aplicación que se encontraba en el último mensaje de confirmación DDE recibido por Excel.</summary>
+        <summary>Devuelve el código de devolución DDE específico de la aplicación contenido en el último mensaje de confirmación de DDE recibido por Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2789,10 +2789,10 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">Required <b>Integer</b>. Número de canal devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Application.DDEInitiate(System.String,System.String)" /> método.</param>
+        <param name="Channel">Required <b>Integer</b>. El número de canal devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Application.DDEInitiate(System.String,System.String)" /> método.</param>
         <param name="String"><b>String</b> requerida. El mensaje definido en la aplicación receptora.</param>
         <summary>Ejecuta un comando o realiza otra acción o acciones en otra aplicación por medio del canal de DDE especificado.</summary>
-        <remarks><para>El método <b>DDEExecute</b> envía comandos a otra aplicación. También puede usarlo para enviar pulsaciones de teclas a otra aplicación, aunque el método es la forma preferida de enviar <see cref="M:Microsoft.Office.Interop.Excel._Application.SendKeys(System.Object,System.Object)" /> pulsaciones de teclas. El <paramref name="String" /> argumento puede especificar cualquier tecla única combinada con ALT, CTRL o MAYÚS, o cualquier combinación de dichas teclas. Cada tecla se representa mediante uno o varios caracteres, como "a" para el carácter a, o "{ENTER}" para la tecla ENTRAR.</para>
+        <remarks><para>El método <b>DDEExecute</b> envía comandos a otra aplicación. También puede usarlo para enviar pulsaciones de teclas a otra aplicación, aunque el método es la forma <see cref="M:Microsoft.Office.Interop.Excel._Application.SendKeys(System.Object,System.Object)" /> preferida de enviar pulsaciones de teclas. El <paramref name="String" /> argumento puede especificar cualquier tecla única combinada con ALT, CTRL o MAYÚS, o cualquier combinación de esas teclas. Cada tecla se representa mediante uno o varios caracteres, como "a" para el carácter a, o "{ENTER}" para la tecla ENTRAR.</para>
           <para>Para especificar caracteres que no se muestran al pulsar la tecla correspondiente (por ejemplo, ENTRAR o TAB), use los códigos que se muestran en la tabla siguiente. Cada código de la tabla representa una tecla del teclado.</para>
           <list type="table">
             <item>
@@ -2845,7 +2845,7 @@
             </item>
             <item>
               <term>INICIO</term>
-              <description>{INICIO}</description>
+              <description>{HOME}</description>
             </item>
             <item>
               <term>INS</term>
@@ -2937,7 +2937,7 @@
         <param name="Topic"><b>String</b> requerida. Describe un elemento de la aplicación a la que se va a abrir un canal, generalmente un documento de esa aplicación.</param>
         <summary>Abre un canal de DDE a una aplicación.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Si tiene éxito, el método <b>DDEInitiate</b> devolverá el número del canal abierto. Todas las funciones DDE subsiguientes utilizan este número para especificar el canal.</para>
+        <remarks><para>Si tiene éxito, el método <b>DDEInitiate</b> devolverá el número del canal abierto. Todas las funciones de DDE posteriores usarán este número para especificar el canal.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2969,9 +2969,9 @@
         <Parameter Name="Data" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Channel">Required <b>Integer</b>. Número de canal devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Application.DDEInitiate(System.String,System.String)" /> método.</param>
-        <param name="Item">Objeto <b>requerido</b>. Elemento al que se enviarán los datos.</param>
-        <param name="Data">Objeto <b>requerido</b>. Datos que se enviarán a la aplicación.</param>
+        <param name="Channel">Required <b>Integer</b>. El número de canal devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Application.DDEInitiate(System.String,System.String)" /> método.</param>
+        <param name="Item">Objeto <b>obligatorio</b>. Elemento al que se enviarán los datos.</param>
+        <param name="Data">Objeto <b>obligatorio</b>. Datos que se enviarán a la aplicación.</param>
         <summary>Envía datos a una aplicación.</summary>
         <remarks><para>Si la llamada al método no se realiza correctamente, se producirá un error.</para>
           <para> </para></remarks>
@@ -3004,7 +3004,7 @@
         <Parameter Name="Item" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">Required <b>Integer</b>. Número de canal devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Application.DDEInitiate(System.String,System.String)" /> método.</param>
+        <param name="Channel">Required <b>Integer</b>. El número de canal devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Application.DDEInitiate(System.String,System.String)" /> método.</param>
         <param name="Item"><b>String</b> requerida. El elemento que se solicita.</param>
         <summary>Solicita información de la aplicación especificada. Este método siempre devuelve una matriz.</summary>
         <returns>To be added.</returns>
@@ -3037,7 +3037,7 @@
         <Parameter Name="Channel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Channel">Required <b>Integer</b>. Número de canal devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Application.DDEInitiate(System.String,System.String)" /> método.</param>
+        <param name="Channel">Required <b>Integer</b>. El número de canal devuelto por el <see cref="M:Microsoft.Office.Interop.Excel._Application.DDEInitiate(System.String,System.String)" /> método.</param>
         <summary>Cierra un canal a otra aplicación.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3202,7 +3202,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DefaultWebOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto que contiene atributos globales de nivel de aplicación usados por Microsoft Excel cada vez que guarda un documento como página web o <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> abre una página web.</summary>
+        <summary>Devuelve el objeto que contiene atributos globales de nivel de aplicación usados por Microsoft Excel cuando se guarda un documento como página web o <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> se abre una página web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3234,7 +3234,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece si se ejecutan las consultas asincrónicas a orígenes de datos OLAP cuando se actualiza una hoja de cálculo mediante código de VBA. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks><para>Si se <b>establece la propiedad DeferAsyncQueries</b> en <b>True,</b> se impide que se ejecute cualquier formulario de consultas asincrónicas hasta que <see cref="M:Microsoft.Office.Interop.Excel._Application.CalculateUntilAsyncQueriesDone" /> se llame al método.</para>
           <para> </para></remarks>
       </Docs>
@@ -3268,7 +3268,7 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name"><b>String</b> requerida. Nombre del formato automático personalizado que se va a quitar.</param>
+        <param name="Name"><b>String</b> requerida. Nombre del autoformato personalizado que se va a quitar.</param>
         <summary>Elimina un formato automático de gráfico personalizado de la lista de formatos automáticos de gráfico disponibles.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3398,9 +3398,9 @@
       <Docs>
         <summary><b>True</b> si Microsoft Excel muestra alertas y mensajes determinados mientras se ejecuta una macro.</summary>
         <value>To be added.</value>
-        <remarks><para>El valor predeterminado es <b>True</b>. Establezca esta propiedad en <b>False</b> si no desea que los mensajes de aviso y los mensajes de alerta se desfilarán mientras se ejecuta un programa; cada vez que un mensaje requiere una respuesta, Microsoft Excel elige la respuesta predeterminada.</para>
-          <para>Si establece esta propiedad en <b>False</b>, Microsoft Excel establece esta propiedad en <b>True</b> cuando finaliza el código, a menos que ejecute código entre procesos.</para>
-          <para>Al usar el método para que los libros sobrescriban un archivo existente, la alerta "Sobrescribir" tiene el valor predeterminado "No", mientras que Excel selecciona la respuesta "Sí" cuando la propiedad <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <b>DisplayAlerts</b> está establecida en <b>False</b>.</para>
+        <remarks><para>El valor predeterminado es <b>True</b>. Establezca esta propiedad en <b>False</b> si no desea que los mensajes de aviso y de alerta le inquietan mientras se ejecuta un programa; cada vez que un mensaje requiere una respuesta, Microsoft Excel elige la respuesta predeterminada.</para>
+          <para>Si establece esta propiedad en <b>False</b>, Microsoft Excel esta propiedad en <b>True</b> cuando finalice el código, a menos que ejecute código entre procesos.</para>
+          <para>Al usar el método para que los libros sobrescriban un archivo existente, la alerta "Sobrescribir" tiene un valor predeterminado de "No", mientras que la respuesta "Sí" está seleccionada por Excel cuando la propiedad <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <b>DisplayAlerts</b> se establece en <b>False</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3498,7 +3498,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establecer en <b>True para</b> mostrar el panel de tareas Acciones de documento; se establece en <b>False</b> para ocultar el panel de tareas Acciones del documento.</summary>
+        <summary>Se establece <b>en True</b> para mostrar el panel de tareas Acciones del documento; se establece en <b>False</b> para ocultar el panel de tareas Acciones del documento.</summary>
         <value>To be added.</value>
         <remarks><para>Si establece esta propiedad en <b>True</b>, se generará un error en tiempo de ejecución si el libro activo no es un documento inteligente.</para>
           <para> </para></remarks>
@@ -3531,7 +3531,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se muestra el panel de propiedades de documento. Lectura y escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3599,7 +3599,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece si se debe mostrar una lista de las funciones y nombres definidos relevantes al generar fórmulas de celdas. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4840,7 +4840,7 @@
           <list type="bullet">
             <item>
               <description>
-                <b>xlDisabled</b>    La captura de teclas de cancelación está completamente deshabilitada.</description>
+                <b>xlDisabled</b>    Cancelar captura de teclas está completamente deshabilitado.</description>
             </item>
             <item>
               <description>
@@ -4851,7 +4851,7 @@
                 <b>xlInterrupt</b>    El procedimiento actual se interrumpe y el usuario puede depurar o finalizar el procedimiento.</description>
             </item>
           </list>
-          <para>Utilice esta propiedad con mucho cuidado. Si <b>usas xlDisabled,</b>no hay forma de interrumpir un bucle desprotegido u otro código que no termine por sí mismo. Del mismo modo, si utiliza <b>xlErrorHandler</b> pero las devoluciones del controlador de errores siempre tienen lugar mediante la instrucción <b>Resume</b>, no podrá detener código en continua ejecución de ninguna manera.</para>
+          <para>Utilice esta propiedad con mucho cuidado. Si <b>usas xlDisabled,</b>no hay forma de interrumpir un bucle de ejecución u otro código que no sea auto-terminado. Del mismo modo, si utiliza <b>xlErrorHandler</b> pero las devoluciones del controlador de errores siempre tienen lugar mediante la instrucción <b>Resume</b>, no podrá detener código en continua ejecución de ninguna manera.</para>
           <para>La propiedad <b>EnableCancelKey</b> siempre se restablece en <b>xlInterrupt</b> cuando Microsoft Excel vuelve al estado inactivo y no se está ejecutando ningún código. Para interceptar o deshabilitar la cancelación de un procedimiento, se debe cambiar explícitamente la propiedad <b>EnableCancelKey</b> cada vez que se llame al procedimiento.</para>
           <para> </para></remarks>
       </Docs>
@@ -4882,7 +4882,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True para habilitar el cuadro de diálogo Información si Microsoft Excel no es el programa predeterminado para ver y editar hojas de cálculo.</summary>
+        <summary>True para habilitar el cuadro de diálogo Microsoft Excel no es el programa predeterminado para ver y editar hojas de cálculo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4945,7 +4945,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un valor <b>Boolean</b> que representa si se debe mostrar un mensaje de aviso cuando un usuario intenta realizar una operación que afecta a un número de celdas mayor que el especificado en la interfaz de usuario central de Office. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks><para>El valor predeterminado de esta propiedad es <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
@@ -4977,7 +4977,7 @@
       </ReturnValue>
       <Docs>
         <summary>Establece o devuelve un <b>valor Boolean</b> que representa si se va a mostrar u ocultar vistas previas de la galería que aparecen al utilizar galerías que permiten obtener vistas previas. Al establecer esta propiedad en <b>True</b> se muestra una vista previa de su libro antes de aplicar el comando. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks><para>Esta propiedad corresponde a la casilla de verificación Habilitar vistas previas activas del cuadro de diálogo Opciones de Excel.</para>
           <para> </para></remarks>
       </Docs>
@@ -5008,7 +5008,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Controla si las animaciones de macro están habilitadas. <b>True</b> si las animaciones de interfaz de usuario o las animaciones de gráfico están habilitadas. Se establece en <b>False</b> (sin animación) de forma predeterminada. Si se establece en <b>True</b> durante la ejecución de una macro, habilitará la animación y, a continuación, se restablecerá a <b>False</b> después de que se ejecute la macro. Boolean de <b>lectura y escritura</b> (<b>bool</b> en C#).</summary>
+        <summary>Controla si las animaciones de macro están habilitadas. <b>True</b> si las animaciones de interfaz de usuario o las animaciones de gráfico están habilitadas. Está establecido en <b>False</b> (sin animación) de forma predeterminada. Si se establece en <b>True</b> durante la ejecución de una macro, habilitará la animación y, a continuación, se restablecerá a <b>False</b> después de que se ejecute la macro. Boolean de <b>lectura</b> y escritura (<b>bool</b> en C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5141,7 +5141,7 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">Objeto <b>requerido</b>. Nombre del objeto, en el que se usan las convenciones de nomenclatura de Microsoft Excel.</param>
+        <param name="Name">Objeto <b>obligatorio</b>. Nombre del objeto, en el que se usan las convenciones de nomenclatura de Microsoft Excel.</param>
         <summary>Convierte un nombre de Microsoft Excel en un objeto o un valor.</summary>
         <returns>To be added.</returns>
         <remarks><para>Los siguientes tipos de nombres de Microsoft Excel se pueden usar con este método:</para>
@@ -5156,7 +5156,7 @@
               <description>Nombres definidos. Puede especificar cualquier nombre en el lenguaje de la macro.</description>
             </item>
             <item>
-              <description>Referencias externas. Puede usar ! para hacer referencia a una celda o un nombre definido en otro libro; por ejemplo, Evaluate("[BOOK1.XLS]Sheet1!A1").</description>
+              <description>Referencias externas. Puede usar el operador ! para hacer referencia a una celda o un nombre definido en otro libro; por ejemplo, Evaluate("[BOOK1.XLS]Sheet1!A1").</description>
             </item>
           </list>
           <para>
@@ -5187,7 +5187,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que representa todas las hojas <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> de macros internacionales de Microsoft Excel 4.0 del libro especificado.</summary>
+        <summary>Devuelve una colección que representa todas las <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Microsoft Excel 4.0 hojas de macros internacionales del libro especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5215,7 +5215,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que representa todas las hojas de macros de <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> Microsoft Excel 4.0 del libro especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección que representa todas las Microsoft Excel de macros 4,0 del libro especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5245,10 +5245,10 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String"><b>String</b> requerida. Función de lenguaje macro de Microsoft Excel 4.0 sin el signo igual. Todas las referencias deberán darse como cadenas R1C1. Si <paramref name="String" /> contiene comillas dobles incrustadas, debe duplicarlas. Por ejemplo, para ejecutar la función de macro =MID("sometext",1,4), tendría que ser <paramref name="String" /> "MID(""sometext"",1,4)".</param>
-        <summary>Ejecuta una función de macro de Microsoft Excel 4.0 y, a continuación, devuelve el resultado de la función. El tipo devuelto depende de la función.</summary>
+        <param name="String"><b>String</b> requerida. Función de lenguaje macro de Microsoft Excel 4.0 sin el signo igual. Todas las referencias deberán darse como cadenas R1C1. Si <paramref name="String" /> contiene comillas dobles incrustadas, debe duplicarlas. Por ejemplo, para ejecutar la función de macro =MID("sometext",1,4), tendría que <paramref name="String" /> ser "MID(""sometext"",1,4)".</param>
+        <summary>Ejecuta una Microsoft Excel macro 4.0 y, a continuación, devuelve el resultado de la función. El tipo devuelto depende de la función.</summary>
         <returns>To be added.</returns>
-        <remarks><para>La macro de Microsoft Excel 4.0 no se evalúa en el contexto del libro o de la hoja actuales. Es decir, que cualquier referencia deberá ser externa y deberá especificar un nombre de libro explícito. Por ejemplo, para ejecutar la macro de Microsoft Excel 4.0 "My_Macro" en Book1, debe usar "Book1! My_Macro()". Si no especifica el nombre del libro, este método fallará.</para>
+        <remarks><para>La macro de Microsoft Excel 4.0 no se evalúa en el contexto del libro o de la hoja actuales. Es decir, que cualquier referencia deberá ser externa y deberá especificar un nombre de libro explícito. Por ejemplo, para ejecutar la macro Microsoft Excel 4.0 "My_Macro" en Book1, debe usar "Book1! My_Macro()". Si no especifica el nombre del libro, este método fallará.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5317,7 +5317,7 @@
           <list type="bullet">
             <item>
               <description>
-                <b>msoFeatureInstallNone</b>    Genera un error genérico de automatización en tiempo de ejecución cuando se llama a las características desinstaladas. Ésta es la constante predeterminada.</description>
+                <b>msoFeatureInstallNone</b>    Genera un error genérico de automatización en tiempo de ejecución cuando se llama a características desinstaladas. Ésta es la constante predeterminada.</description>
             </item>
             <item>
               <description>
@@ -5328,8 +5328,8 @@
                 <b>msoFeatureInstallOnDemandWithUI</b>    Muestra un indicador de progreso durante la instalación; no solicita al usuario que instale nuevas características.</description>
             </item>
           </list>
-          <para>Puede utilizar la constante <b>msoFeatureInstallOnDemandWithUI</b> para evitar que los usuarios piensen que la aplicación no responde mientras se instala una característica. Utilice la constante <b>msoFeatureInstallNone</b> si desea que el programador sea la única persona que pueda instalar las características.</para>
-          <para>Si tiene la propiedad establecida en False , no se pedirá a los usuarios que instalen nuevas características incluso si la propiedad FeatureInstall está establecida en <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> <b>msoFeatureInstallOnDemand</b>. <b></b> <b></b> Si la propiedad se establece en True , aparecerá un indicador de progreso de la instalación si la propiedad FeatureInstall está establecida en <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> <b>msoFeatureInstallOnDemand</b>. <b></b> <b></b></para>
+          <para>Puede utilizar la constante <b>msoFeatureInstallOnDemandWithUI</b> para evitar que los usuarios piensen que la aplicación no responde mientras se instala una característica. Utilice la constante <b>msoFeatureInstallNone</b> si desea que el programador sea el único que pueda instalar las características.</para>
+          <para>Si tiene la propiedad establecida en False, no se pedirá a los usuarios que instalen nuevas características incluso si la propiedad FeatureInstall está establecida en <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> <b>msoFeatureInstallOnDemand</b>. <b></b> <b></b> Si la propiedad está establecida en True , aparecerá un indicador de progreso de instalación si la propiedad FeatureInstall está establecida en <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> <b>msoFeatureInstallOnDemand</b>. <b></b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5363,18 +5363,18 @@
         <Parameter Name="Index2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index1">Optional <b>Object</b>. El nombre largo del convertidor, incluida la cadena de búsqueda de tipo de archivo en Windows, por ejemplo, "Lotus 1-2-3 Files (*.wk*)".</param>
-        <param name="Index2">Optional <b>Object</b>. Ruta de acceso de la biblioteca DLL del convertidor o del recurso de código.</param>
-        <summary>Devuelve información sobre los convertidores de archivos instalados. Devuelve <b>Null</b> si no hay ningún convertidor instalado.</summary>
+        <param name="Index1">Objeto <b>opcional</b>. El nombre largo del convertidor, incluida la cadena de búsqueda de tipo de archivo en Windows, por ejemplo, "Archivos de Lotus 1-2-3 (*.wk*)".</param>
+        <param name="Index2">Objeto <b>opcional</b>. Ruta de acceso de la biblioteca DLL del convertidor o del recurso de código.</param>
+        <summary>Devuelve información sobre los convertidores de archivos instalados. Devuelve <b>Null</b> si no hay convertidores instalados.</summary>
         <value>To be added.</value>
         <remarks><para>Si no especifica argumentos, esta propiedad devuelve una matriz que contiene información sobre todos los convertidores de archivos instalados. Cada fila de la matriz contiene información acerca de un solo convertidor, como se muestra en la siguiente tabla.</para>
           <list type="table">
             <item>
-              <term>1 </term>
+              <term>1</term>
               <description>Nombre largo del convertidor.</description>
             </item>
             <item>
-              <term>2 </term>
+              <term>2</term>
               <description>Ruta de acceso de la biblioteca DLL del convertidor o del recurso de código.</description>
             </item>
             <item>
@@ -5411,7 +5411,7 @@
         <Parameter Name="fileDialogType" Type="Microsoft.Office.Core.MsoFileDialogType" />
       </Parameters>
       <Docs>
-        <param name="fileDialogType">Obligatorio <see cref="T:Microsoft.Office.Core.MsoFileDialogType" /> . El tipo de cuadro de diálogo de archivo. <b>MsoFileDialogType</b> puede ser una de estas constantes <b>MsoFileDialogType:</b> <b>msoFileDialogFilePicker</b> Permite al usuario seleccionar un archivo. <b>msoFileDialogFolderPicker</b> Permite al usuario seleccionar una carpeta. <b>msoFileDialogOpen</b> Permite al usuario abrir un archivo. <b>msoFileDialogSaveAs</b> Permite al usuario guardar un archivo.</param>
+        <param name="fileDialogType">Obligatorio <see cref="T:Microsoft.Office.Core.MsoFileDialogType" /> . Tipo de cuadro de diálogo de archivo. <b>MsoFileDialogType</b> puede ser una de estas constantes <b>MsoFileDialogType:</b> <b>msoFileDialogFilePicker</b> Permite al usuario seleccionar un archivo. <b>msoFileDialogFolderPicker</b> Permite al usuario seleccionar una carpeta. <b>msoFileDialogOpen</b> Permite al usuario abrir un archivo. <b>msoFileDialogSaveAs</b> Permite al usuario guardar un archivo.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Core.FileDialog" /> objeto que representa una instancia del cuadro de diálogo de archivo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -5440,7 +5440,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FileExportConverters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> colección que representa todos los convertidores de archivos para guardar archivos disponibles para Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve una colección que representa todos los convertidores de archivos para <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> guardar archivos disponibles para Microsoft Excel. Solo lectura.</summary>
         <value>Devuelve <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5533,10 +5533,10 @@
         <ReturnType>Microsoft.Office.Core.MsoFileValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece cómo validará Microsoft Excel los archivos antes de abrirlos.</summary>
+        <summary>Obtiene o establece cómo Microsoft Excel validará los archivos antes de abrirlos.</summary>
         <value>Un <see cref="T:Microsoft.Office.Core.MsoFileValidationMode" /> objeto.</value>
         <remarks><para>Lectura/escritura.</para>
-          <para>Archivos que no pasan la validación se abrirá en una ventana Vista protegida. Si establece la propiedad, esa configuración permanecerá en vigor durante toda la sesión en la <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidation" /> que la aplicación esté abierta.</para>
+          <para>Archivos que no pasan la validación se abrirá en una ventana Vista protegida. Si establece la propiedad, esa configuración permanecerá en vigor durante toda la sesión que <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidation" /> la aplicación esté abierta.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5566,10 +5566,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece cómo validará Microsoft Excel el contenido de las memorias caché de datos para los informes de tabla dinámica.</summary>
+        <summary>Obtiene o establece cómo Microsoft Excel validará el contenido de las memorias caché de datos para los informes de tabla dinámica.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" /> objeto.</value>
         <remarks><para>Lectura/escritura.</para>
-          <para>Los archivos que contienen memorias caché de datos que no se validan se abrirán en una ventana Vista protegida. Si establece la propiedad, esa configuración permanecerá en vigor durante toda la sesión en la <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> que la aplicación esté abierta.</para>
+          <para>Los archivos que contienen memorias caché de datos que no se validan se abrirán en una ventana Vista protegida. Si establece la propiedad, esa configuración permanecerá en vigor durante toda la sesión que <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> la aplicación esté abierta.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5666,7 +5666,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Todos los datos especificados después de establecer esta propiedad en <b>True</b> tendrán el formato de número de posiciones decimales fijas establecidas por la <see cref="P:Microsoft.Office.Interop.Excel._Application.FixedDecimalPlaces" /> propiedad.</summary>
+        <summary>Todos los datos especificados después de establecer esta propiedad en <b>True</b> tendrán el formato de número de decimales fijos establecido por la <see cref="P:Microsoft.Office.Interop.Excel._Application.FixedDecimalPlaces" /> propiedad.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5703,7 +5703,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número de posiciones decimales fijas utilizadas cuando <see cref="P:Microsoft.Office.Interop.Excel._Application.FixedDecimal" /> la propiedad se establece en <b>True</b>.</summary>
+        <summary>Devuelve o establece el número de decimales fijos usados cuando la <see cref="P:Microsoft.Office.Interop.Excel._Application.FixedDecimal" /> propiedad se establece en <b>True</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5734,9 +5734,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>TRUE</b> indica que la característica Relleno de Flash de Excel se ha habilitado y activo. <b>Booleano</b> (<b>bool</b> en C#) Lectura y escritura</summary>
+        <summary><b>TRUE</b> indica que la característica Excel de relleno flash se ha habilitado y activo. <b>Boolean</b> (<b>bool</b> in C#) Lectura y escritura</summary>
         <value>To be added.</value>
-        <remarks><para>Relleno rápido detecta cuándo se modifican los datos que se ajusta a un patrón que se puede rellenar y aplicar a datos adicionales en el libro y, a continuación, rellena automáticamente la columna con los resultados.</para>
+        <remarks><para>Flash Fill detecta al modificar datos que se ajusten a un patrón que se puede rellenar y aplicar a datos adicionales en el libro y, a continuación, rellena automáticamente la columna con los resultados.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5766,7 +5766,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si la característica Destello está habilitada. <b>Booleano</b> (<b>bool</b> en C#) Lectura y escritura</summary>
+        <summary><b>True</b> si la característica De relleno flash está habilitada. <b>Boolean</b> (<b>bool</b> in C#) Lectura y escritura</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5799,7 +5799,7 @@
       <Docs>
         <summary>Permite al usuario especificar en líneas el alto de la barra de fórmulas. Lectura/escritura.</summary>
         <value><b>Integer</b></value>
-        <remarks><para>Si el valor especificado de <b>FormulaBarHeight</b> es mayor que el espacio de la ventana que se puede ver, se cambia el tamaño de la barra de fórmulas para que sea igual al alto de la ventana.</para>
+        <remarks><para>Si el valor especificado de <b>FormulaBarHeight</b> es mayor que el espacio de ventana que se puede ver, la barra de fórmulas cambia de tamaño para que sea igual al alto de la ventana.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5866,7 +5866,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlGenerateTableRefs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La propiedad determina si se usa el método de notación tradicional o el nuevo método de notación de referencia estructurado para hacer referencia a <see cref="P:Microsoft.Office.Interop.Excel._Application.GenerateTableRefs" /> tablas en fórmulas. Lectura/escritura.</summary>
+        <summary>La propiedad determina si el método de notación tradicional o el nuevo método de notación de referencia estructurado se usa para hacer referencia a <see cref="P:Microsoft.Office.Interop.Excel._Application.GenerateTableRefs" /> tablas en fórmulas. Lectura/escritura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlGenerateTableRefs" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5929,7 +5929,7 @@
         <Parameter Name="ListArray" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ListArray">Objeto <b>requerido</b>. Matriz de cadenas de caracteres.</param>
+        <param name="ListArray">Objeto <b>obligatorio</b>. Matriz de cadenas de caracteres.</param>
         <summary>Devuelve el número de la lista personalizada correspondiente a una matriz de cadenas. Puede usar este método para buscar listas integradas y listas definidas por el usuario.</summary>
         <returns>To be added.</returns>
         <remarks><para>Este método produce un error si no existe una lista correspondiente.</para>
@@ -5965,14 +5965,14 @@
         <Parameter Name="MultiSelect" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="FileFilter">Optional <b>Object</b>. Cadena que especifica criterios de filtrado de archivos. Esta cadena consta de pares de cadenas de filtro de archivos seguidas por la especificación de filtro de archivos comodín MS-DOS, con cada parte y cada par separados por comas. Cada par individual se muestra en el cuadro de la lista desplegable Tipos de archivo. Por ejemplo, la siguiente cadena especifica dos filtros de archivo: texto y complemento: "Archivos de texto (*.txt),*.txt,Archivos de complemento (*.xla),*.xla". Para usar varias expresiones comodín de MS-DOS para un único tipo de filtro de archivo, separe las expresiones comodín con punto y coma, por ejemplo, "Visual Basic Files (*.bas; *.txt),*.bas;*. txt". Si se omite, el valor predeterminado de este argumento es "Todos los archivos (*.*),*".*</param>
-        <param name="FilterIndex">Optional <b>Object</b>. Especifica los números de índice de los criterios de filtrado de archivos predeterminados, de 1 al número de filtros especificado en <paramref name="FileFilter" /> . Si este argumento se omite o es mayor que el número de filtros presentes, se utiliza el primer filtro de archivo.</param>
-        <param name="Title">Optional <b>Object</b>. Especifica el título del cuadro de diálogo. Si este argumento se omite, el título es "Abrir".</param>
-        <param name="ButtonText">Optional <b>Object</b>. Solo Macintosh.</param>
-        <param name="MultiSelect">Optional <b>Object</b>. <b>True</b> para permitir la selección de varios nombres de archivo. <b>False</b> para permitir la selección de un solo archivo. El valor predeterminado es <b>False</b>.</param>
+        <param name="FileFilter">Objeto <b>opcional</b>. Cadena que especifica criterios de filtrado de archivos. Esta cadena consta de pares de cadenas de filtro de archivos seguidas de la especificación de filtro de archivos comodín MS-DOS, con cada parte y cada par separados por comas. Cada par individual se muestra en el cuadro de la lista desplegable Tipos de archivo. Por ejemplo, la siguiente cadena especifica dos filtros de archivo: texto y addin: "Archivos de texto (*.txt),*.txt,Archivos de complementos (*.xla),*.xla". Para usar varias expresiones comodín MS-DOS para un único tipo de filtro de archivos, separe las expresiones comodín con punto y coma, por ejemplo, "Visual Basic Files (*.bas; *.txt),*.bas;*.txt". Si se omite, este argumento tiene el valor predeterminado "Todos los archivos (*.*),*.*".</param>
+        <param name="FilterIndex">Objeto <b>opcional</b>. Especifica los números de índice de los criterios de filtrado de archivos predeterminados, de 1 al número de filtros especificados en <paramref name="FileFilter" /> . Si este argumento se omite o es mayor que el número de filtros presentes, se utiliza el primer filtro de archivo.</param>
+        <param name="Title">Objeto <b>opcional</b>. Especifica el título del cuadro de diálogo. Si este argumento se omite, el título es "Abrir".</param>
+        <param name="ButtonText">Objeto <b>opcional</b>. Solo Macintosh.</param>
+        <param name="MultiSelect">Objeto <b>opcional</b>. <b>True</b> para permitir la selección de varios nombres de archivo. <b>False</b> para permitir la selección de un solo archivo. El valor predeterminado es <b>False</b>.</param>
         <summary>Muestra el cuadro de diálogo Abrir estándar y obtiene un nombre de archivo del usuario sin abrir los archivos.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Este método devuelve el nombre de archivo seleccionado o el nombre que ha especificado el usuario. El nombre devuelto puede incluir una especificación de ruta de acceso. Si es True , el valor devuelto es una matriz de los nombres de archivo seleccionados (incluso si solo se selecciona un <paramref name="MultiSelect" /> nombre de archivo). <b></b> Devuelve <b>False</b> si el usuario cancela el cuadro de diálogo.</para>
+        <remarks><para>Este método devuelve el nombre de archivo seleccionado o el nombre que ha especificado el usuario. El nombre devuelto puede incluir una especificación de ruta de acceso. Si <paramref name="MultiSelect" /> es <b>True,</b>el valor devuelto es una matriz de los nombres de archivo seleccionados (incluso si solo se selecciona un nombre de archivo). Devuelve <b>False</b> si el usuario cancela el cuadro de diálogo.</para>
           <para>Este método puede cambiar la unidad o la carpeta actual.</para>
           <para> </para></remarks>
       </Docs>
@@ -5999,7 +5999,7 @@
         <Parameter Name="Text" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">Optional <b>Object</b>. Especifica el texto que se convertirá en texto fonético. Si omite este argumento, se devuelve la siguiente cadena de texto fonético posible (si existe) de la especificada <paramref name="Text" /> anteriormente. Si no hay más cadenas posibles de texto fonético, se devolverá una cadena vacía.</param>
+        <param name="Text">Objeto <b>opcional</b>. Especifica el texto que se convertirá en texto fonético. Si omite este argumento, se devuelve la siguiente cadena de texto fonética posible (si existe) de la especificada <paramref name="Text" /> anteriormente. Si no hay más cadenas posibles de texto fonético, se devolverá una cadena vacía.</param>
         <summary>Devuelve el texto fonético en japonés de la cadena de texto especificada. Este método sólo está disponible si se ha seleccionado o instalado la versión de idioma japonés de Microsoft Office.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -6034,11 +6034,11 @@
         <Parameter Name="ButtonText" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="InitialFilename">Optional <b>Object</b>. Especifica el nombre de archivo sugerido. Si se omite este argumento, Microsoft Excel usa el nombre del libro activo.</param>
-        <param name="FileFilter">Optional <b>Object</b>. Cadena que especifica criterios de filtrado de archivos. Esta cadena consta de pares de cadenas de filtro de archivos seguidas por la especificación de filtro de archivos comodín MS-DOS, con cada parte y cada par separados por comas. Cada par individual se muestra en el cuadro de la lista desplegable Tipos de archivo. Por ejemplo, la siguiente cadena especifica dos filtros de archivo, texto y complemento: "Archivos de texto (*.txt), *.txt, Add-In Files (*.xla), *.xla". Para usar* varias expresiones comodín de MS-DOS para un único tipo de filtro de archivo, separe las expresiones comodín con punto y coma, por ejemplo, "Visual Basic Files ( .bas; *.txt),*.bas;*. txt". Si se omite, el valor predeterminado de este argumento es "Todos los archivos (*.*),*".*</param>
-        <param name="FilterIndex">Optional <b>Object</b>. Especifica el número de índice de los criterios de filtrado de archivos predeterminados, de 1 al número de filtros especificado en <paramref name="FileFilter" /> . Si este argumento se omite o es mayor que el número de filtros presentes, se utiliza el primer filtro de archivo.</param>
-        <param name="Title">Optional <b>Object</b>. Especifica el título del cuadro de diálogo. Si se omite este argumento, se usa el título predeterminado.</param>
-        <param name="ButtonText">Optional <b>Object</b>. Solo Macintosh.</param>
+        <param name="InitialFilename">Objeto <b>opcional</b>. Especifica el nombre de archivo sugerido. Si se omite este argumento, Microsoft Excel usa el nombre del libro activo.</param>
+        <param name="FileFilter">Objeto <b>opcional</b>. Cadena que especifica criterios de filtrado de archivos. Esta cadena consta de pares de cadenas de filtro de archivos seguidas de la especificación de filtro de archivos comodín MS-DOS, con cada parte y cada par separados por comas. Cada par individual se muestra en el cuadro de la lista desplegable Tipos de archivo. Por ejemplo, la siguiente cadena especifica dos filtros de archivo, texto y addin: "Archivos de texto (*.txt), *.txt, Add-In Files (*.xla), *.xla". Para usar varias expresiones comodín MS-DOS* para un único tipo de filtro de archivos, separe las expresiones comodín con punto y coma, por ejemplo, "Visual Basic Files ( .bas; *.txt),*.bas;*.txt". Si se omite, este argumento tiene el valor predeterminado "Todos los archivos (*.*),*.*".</param>
+        <param name="FilterIndex">Objeto <b>opcional</b>. Especifica el número de índice de los criterios de filtrado de archivos predeterminados, de 1 al número de filtros especificado en <paramref name="FileFilter" /> . Si este argumento se omite o es mayor que el número de filtros presentes, se utiliza el primer filtro de archivo.</param>
+        <param name="Title">Objeto <b>opcional</b>. Especifica el título del cuadro de diálogo. Si se omite este argumento, se usa el título predeterminado.</param>
+        <param name="ButtonText">Objeto <b>opcional</b>. Solo Macintosh.</param>
         <summary>Muestra el cuadro de diálogo estándar Guardar como y solicita al usuario un nombre de archivo sin guardar realmente ningún archivo.</summary>
         <returns>To be added.</returns>
         <remarks><para>Este método devuelve el nombre de archivo seleccionado o el nombre especificado por el usuario. El nombre devuelto podría incluir una especificación de ruta. Devuelve <b>False</b> si el usuario cancela el cuadro de diálogo.</para>
@@ -6072,19 +6072,19 @@
         <Parameter Name="Scroll" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Reference">Optional <b>Object</b>. El destino. Puede ser un objeto, una cadena que contiene una referencia de celda en notación de estilo R1C1 o una cadena que contiene un nombre Visual Basic <see cref="T:Microsoft.Office.Interop.Excel.Range" /> procedimiento. Si se omite este argumento, el destino es el último rango que usó el método <b>Goto</b> para seleccionar.</param>
-        <param name="Scroll">Optional <b>Object</b>. <b>True</b> para desplazarse por la ventana de modo que el vértice superior izquierdo del rango aparezca en el vértice superior izquierdo de la ventana. <b>False</b> para no desplazarse por la ventana. El valor predeterminado es <b>False</b>.</param>
-        <summary>Selecciona cualquier intervalo o procedimiento Visual Basic en cualquier libro y activa dicho libro si aún no está activo.</summary>
-        <remarks><para>Este método difiere del método <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Select(System.Object)" /> de las siguientes maneras:</para>
+        <param name="Reference">Objeto <b>opcional</b>. El destino. Puede ser un objeto, una cadena que contiene una referencia de celda en notación de estilo R1C1 o una cadena que contiene un nombre Visual Basic <see cref="T:Microsoft.Office.Interop.Excel.Range" /> procedimiento. Si se omite este argumento, el destino es el último rango que usó el método <b>Goto</b> para seleccionar.</param>
+        <param name="Scroll">Objeto <b>opcional</b>. <b>True</b> para desplazarse por la ventana de modo que el vértice superior izquierdo del rango aparezca en el vértice superior izquierdo de la ventana. <b>False</b> para no desplazarse por la ventana. El valor predeterminado es <b>False</b>.</param>
+        <summary>Selecciona cualquier intervalo o Visual Basic procedimiento en cualquier libro y activa ese libro si aún no está activo.</summary>
+        <remarks><para>Este método difiere del <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Select(System.Object)" /> método de las siguientes maneras:</para>
           <list type="bullet">
             <item>
               <description>Si se especifica un rango en una hoja que no esté en la parte superior, Microsoft Excel cambiará a dicha hoja antes de seleccionar. (Si usa <b>Select</b> con un rango en una hoja que no esté en la parte superior, el rango se seleccionará, pero la hoja no se activará).</description>
             </item>
             <item>
-              <description>Este método tiene un <paramref name="Scroll" /> argumento que permite desplazarse por la ventana de destino.</description>
+              <description>Este método tiene un <paramref name="Scroll" /> argumento que le permite desplazarse por la ventana de destino.</description>
             </item>
             <item>
-              <description>Cuando se usa el <b>método Goto,</b> la selección anterior (antes de que se ejecute el método <b>Goto)</b> se agrega a la matriz de selecciones anteriores (para obtener más información, vea la <see cref="P:Microsoft.Office.Interop.Excel._Application.PreviousSelections(System.Object)" /> propiedad). Puede usar esta característica para saltar rápidamente hasta por cuatro selecciones.</description>
+              <description>Cuando se usa el <b>método Goto,</b> la selección anterior (antes de que se ejecute el <b>método Goto)</b> se agrega a la matriz de selecciones anteriores (para obtener más información, vea la <see cref="P:Microsoft.Office.Interop.Excel._Application.PreviousSelections(System.Object)" /> propiedad). Puede usar esta característica para saltar rápidamente hasta por cuatro selecciones.</description>
             </item>
             <item>
               <description>El <b>método Select</b> tiene un <paramref name="Replace" /> argumento; el método <b>Goto</b> no.</description>
@@ -6156,8 +6156,8 @@
         <Parameter Name="HelpContextID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="HelpFile">Optional <b>Object</b>. Nombre del archivo de Ayuda en pantalla que desee mostrar. Si este argumento no se especifica, se usará el archivo de la Ayuda de Microsoft Excel.</param>
-        <param name="HelpContextID">Optional <b>Object</b>. Especifica el número de identificación de contexto para el tema de Ayuda. Si este argumento no se especifica, se mostrará el cuadro de diálogo de Temas de la ayuda.</param>
+        <param name="HelpFile">Objeto <b>opcional</b>. Nombre del archivo de Ayuda en pantalla que desee mostrar. Si este argumento no se especifica, se usará el archivo de la Ayuda de Microsoft Excel.</param>
+        <param name="HelpContextID">Objeto <b>opcional</b>. Especifica el número de identificación de contexto para el tema de Ayuda. Si este argumento no se especifica, se mostrará el cuadro de diálogo de Temas de la ayuda.</param>
         <summary>Muestra un tema de Ayuda.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6188,8 +6188,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si Excel usa el modo de alta calidad para imprimir gráficos.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Obtiene o establece si Excel modo de alta calidad para imprimir gráficos.</summary>
+        <value><b>Boolean</b></value>
         <remarks><para>Esta propiedad se corresponde con el valor de la casilla de verificación Modo de alta calidad para gráficos en la sección Imprimir de la categoría Avanzadas del cuadro de diálogo Opciones de Excel.</para>
           <para> </para></remarks>
       </Docs>
@@ -6245,14 +6245,14 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un identificador para la instancia de Microsoft Excel 2010 representada por el objeto <see cref="T:Microsoft.Office.Interop.Excel._Application" /> especificado.</summary>
+        <summary>Obtiene un identificador a la instancia de Microsoft Excel 2010 representada por el objeto <see cref="T:Microsoft.Office.Interop.Excel._Application" /> especificado.</summary>
         <value>Identificador de la instancia de Microsoft Excel 2010 representada por el objeto <see cref="T:Microsoft.Office.Interop.Excel._Application" /> especificado.</value>
         <remarks><para><b>Variant</b> de solo lectura.</para>
           <para>Esta propiedad devuelve un controlador correcto en versiones de Excel de 32 y 64 bits. Amplía la funcionalidad de la propiedad del objeto, que solo funciona correctamente en la versión de <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 32 bits de Excel.</para>
           <para>El tipo ideal de datos para usar con esta propiedad es el tipo de datos <b>LongPtr</b>. Asignar el valor devuelto por esta propiedad a una variable <b>LongPtr</b> funcionará según lo esperado en versiones de Excel de 32 y 64 bits. La propiedad se define como <b>Variant</b> por motivos de implementación interna. Sin embargo, siempre devuelve un valor de 32 bits en sistemas de 32 bits y un valor de 64 bits en sistemas de 64 bits.</para>
-          <para>Esta propiedad solo funciona a partir de Excel 2010 y solo es necesaria con la versión de 64 bits de Excel. Si debe escribir código que también funcione con versiones anteriores de Excel, para evitar errores de compilación, lea esta propiedad en una directiva de compilación condicional de #if Win64 y use la propiedad en la directiva <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> #else.</para>
+          <para>Esta propiedad solo funciona a partir de Excel 2010 y solo es necesaria con la versión de 64 bits de Excel. Si debe escribir código que también funcione con versiones anteriores de Excel, para evitar errores de compilación, lea esta propiedad en una directiva de compilación condicional de Win64 de #if y use la propiedad en la directiva <see cref="P:Microsoft.Office.Interop.Excel._Application.Hinstance" /> #else.</para>
           <para>
-            <b>Nota:</b>Esta propiedad funciona bien en entornos de 32 y 64 bits a partir de Excel 2010. Por lo tanto, si el código está pensado para usarse solo con Excel 2010 o versiones posteriores, ya sea de 32 o 64 bits, puede leer esta propiedad sin compilación condicional.</para>
+            <b>Nota:</b>Esta propiedad funciona bien en entornos de 32 y 64 bits a partir Excel 2010. Por lo tanto, si el código está pensado para usarse solo con Excel 2010 o posterior, ya sea de 32 o 64 bits, puede leer esta propiedad sin compilación condicional.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6279,7 +6279,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que indica el controlador de ventana de nivel superior de la ventana de Microsoft Excel.</summary>
+        <summary>Devuelve un <b>valor Integer</b> que indica el identificador de ventana de nivel superior de la Microsoft Excel ventana.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6347,7 +6347,7 @@
         <Parameter Name="Inches" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Inches">Required <b>Double</b>. Especifica el valor en pulgadas que se convertirá a puntos.</param>
+        <param name="Inches">Double <b>obligatorio</b>. Especifica el valor en pulgadas que se convertirá a puntos.</param>
         <summary>Convierte una medida de pulgadas a puntos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -6385,21 +6385,21 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Prompt">Objeto <b>requerido</b>. Mensaje que se mostrará en el cuadro de diálogo. Puede ser una cadena, un número, una fecha o un <b>valor booleano.</b></param>
-        <param name="Title">Optional <b>Object</b>. Título para el cuadro de entrada. Si este argumento se omite, el título predeterminado será "Entrada".</param>
-        <param name="Default">Optional <b>Object</b>. Especifica un valor que aparecerá en el cuadro de texto cuando se muestre inicialmente el cuadro de diálogo. Si este argumento se omite, el cuadro de texto permanecerá vacío. Este valor puede ser un objeto <b>Range</b>.</param>
-        <param name="Left">Optional <b>Object</b>. Especifica una posición x para el cuadro de diálogo en relación con la esquina superior izquierda de la pantalla en puntos.</param>
-        <param name="Top">Optional <b>Object</b>. Especifica una posición y para el cuadro de diálogo en relación con la esquina superior izquierda de la pantalla en puntos.</param>
-        <param name="HelpFile">Optional <b>Object</b>. Nombre del archivo de Ayuda para este cuadro de entrada. Si los <paramref name="HelpFile" /> argumentos y están presentes, aparecerá un botón <paramref name="HelpContextID" /> Ayuda en el cuadro de diálogo.</param>
-        <param name="HelpContextID">Optional <b>Object</b>. El número de identificador de contexto del tema de ayuda en <paramref name="HelpFile" /> .</param>
-        <param name="Type">Optional <b>Object</b>. Especifica el tipo de datos que se devuelve. Si se omite este argumento, el cuadro de diálogo devolverá texto. Puede ser uno o una suma de los siguientes valores. Puede usar la suma de los valores permitidos para <paramref name="Type" /> . Por ejemplo, para un cuadro de entrada que puede aceptar texto y números, establezca <paramref name="Type" /> en 1 + 2.</param>
-        <summary>Muestra un cuadro de diálogo para la entrada del usuario. Devuelve la información introducida en el cuadro de diálogo.</summary>
+        <param name="Prompt">Objeto <b>obligatorio</b>. Mensaje que se mostrará en el cuadro de diálogo. Puede ser una cadena, un número, una fecha o un <b>valor booleano.</b></param>
+        <param name="Title">Objeto <b>opcional</b>. Título para el cuadro de entrada. Si este argumento se omite, el título predeterminado será "Entrada".</param>
+        <param name="Default">Objeto <b>opcional</b>. Especifica un valor que aparecerá en el cuadro de texto cuando se muestre inicialmente el cuadro de diálogo. Si este argumento se omite, el cuadro de texto permanecerá vacío. Este valor puede ser un objeto <b>Range</b>.</param>
+        <param name="Left">Objeto <b>opcional</b>. Especifica una posición x para el cuadro de diálogo en relación con la esquina superior izquierda de la pantalla en puntos.</param>
+        <param name="Top">Objeto <b>opcional</b>. Especifica una posición y para el cuadro de diálogo en relación con la esquina superior izquierda de la pantalla en puntos.</param>
+        <param name="HelpFile">Objeto <b>opcional</b>. Nombre del archivo de Ayuda para este cuadro de entrada. Si los <paramref name="HelpFile" /> argumentos y están presentes, aparecerá un botón <paramref name="HelpContextID" /> ayuda en el cuadro de diálogo.</param>
+        <param name="HelpContextID">Objeto <b>opcional</b>. Número de identificador de contexto del tema de ayuda en <paramref name="HelpFile" /> .</param>
+        <param name="Type">Objeto <b>opcional</b>. Especifica el tipo de datos que se devuelve. Si se omite este argumento, el cuadro de diálogo devolverá texto. Puede ser uno o una suma de los siguientes valores. Puede usar la suma de los valores permitidos para <paramref name="Type" /> . Por ejemplo, para un cuadro de entrada que puede aceptar texto y números, establezca <paramref name="Type" /> en 1 + 2.</param>
+        <summary>Muestra un cuadro de diálogo para que el usuario escriba información. Devuelve la información escrita en el cuadro de diálogo.</summary>
         <returns>To be added.</returns>
         <remarks><para>Use <b>InputBox</b> para mostrar un cuadro de diálogo sencillo que permite escribir información para usarla en una macro. El cuadro de diálogo tiene un botón Aceptar y un botón Cancelar. Si elige el botón Aceptar, <b>InputBox</b> devolverá el valor escrito en el cuadro de diálogo. Si elige el botón Cancelar, <b>InputBox</b> devolverá <b>False</b>.</para>
           <para>Si es 0, InputBox devuelve la fórmula en forma de texto, por <paramref name="Type" /> ejemplo, "=2*PI()/360". <b></b> Si existen referencias en la fórmula, estas se devuelven como referencias de estilo A1. (Se <see cref="M:Microsoft.Office.Interop.Excel._Application.ConvertFormula(System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object,System.Object)" /> usa para convertir entre estilos de referencia).</para>
-          <para>Si <paramref name="Type" /> es 8, <b>InputBox devuelve</b> un objeto <b>Range</b> .</para>
-          <para>Si usa el <b>método InputBox</b> para solicitar al usuario una fórmula, debe usar la propiedad para asignar la fórmula <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaLocal" /> a un objeto <b>Range.</b> La fórmula de entrada estará en el idioma del usuario.</para>
-          <para>El <b>método InputBox</b> difiere de la función <b>InputBox</b> en que permite la validación selectiva de la entrada del usuario y se puede usar con objetos, valores de error y fórmulas de Microsoft Excel. InputBox sin calificador de objeto llama a <b>la función InputBox.</b></para>
+          <para>Si <paramref name="Type" /> es 8, <b>InputBox</b> devuelve un <b>objeto Range.</b></para>
+          <para>Si usa el método <b>InputBox</b> para solicitar al usuario una fórmula, debe usar la propiedad para asignar la fórmula <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaLocal" /> a un objeto <b>Range.</b> La fórmula de entrada estará en el idioma del usuario.</para>
+          <para>El <b>método InputBox</b> difiere de la función <b>InputBox,</b> ya que permite la validación selectiva de la entrada del usuario y se puede usar con objetos Microsoft Excel, valores de error y fórmulas. InputBox sin calificador de objeto llama a la <b>función InputBox.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6435,10 +6435,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si Microsoft Excel está en modo interactivo; esta propiedad suele ser <b>True</b>. Si establece esta propiedad en <b>False,</b>Microsoft Excel bloqueará todas las entradas del teclado y el mouse (excepto la entrada a los cuadros de diálogo que se muestran en el código). El bloqueo de la entrada del usuario impedirá que el usuario interfiera con el código a medida que mueve o activa objetos de Microsoft Excel.</summary>
+        <summary><b>True</b> si Microsoft Excel está en modo interactivo; esta propiedad suele ser <b>True</b>. Si establece esta propiedad en <b>False</b>, Microsoft Excel bloqueará todas las entradas del teclado y el mouse (excepto la entrada a los cuadros de diálogo que se muestran en el código). El bloqueo de la entrada del usuario impedirá que el usuario interfiera con el código a medida que se mueve o se Microsoft Excel objetos.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad es útil si está escribiendo código para comunicarse con Microsoft Excel desde otra aplicación.</para>
-          <para>Si establece la propiedad como <b>False</b>, no olvide volver a darle el valor <b>True</b>. Microsoft Excel no volverá a establecer automáticamente esta propiedad en <b>True</b> cuando el código deje de ejecutarse.</para>
+          <para>Si establece la propiedad como <b>False</b>, no olvide volver a darle el valor <b>True</b>. Microsoft Excel establecerá automáticamente esta propiedad en <b>True</b> cuando el código deje de ejecutarse.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6471,7 +6471,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Configuración que se debe devolver. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlApplicationInternational" /> constantes enumeradas en las tablas siguientes.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Configuración que se debe devolver. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlApplicationInternational" /> constantes enumeradas en las tablas siguientes.</param>
         <summary>Devuelve información sobre la configuración internacional y el país o región actual.</summary>
         <value>To be added.</value>
         <remarks><para>Corchetes y llaves</para>
@@ -6586,7 +6586,7 @@
                 <b>xlCurrencyBefore</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si el símbolo de moneda precede a los valores monetarios; <b>False</b> si los sitúa a continuación.</description>
@@ -6614,7 +6614,7 @@
                 <b>xlCurrencyLeadingZeros</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si se muestran los ceros a la izquierda en los valores monetarios cero.</description>
@@ -6624,7 +6624,7 @@
                 <b>xlCurrencyMinusSign</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si se usa un signo menos para los números negativos; <b>False</b> si se utilizan paréntesis.</description>
@@ -6643,7 +6643,7 @@
                 <b>xlCurrencySpaceBefore</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si se agrega un espacio antes del símbolo de moneda.</description>
@@ -6653,7 +6653,7 @@
                 <b>xlCurrencyTrailingZeros</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si se muestran los ceros a la derecha en los valores monetarios cero.</description>
@@ -6675,7 +6675,7 @@
                 <b>xl24HourClock</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si el formato de hora que se utiliza es de 24 horas y <b>False</b> si es de 12 horas.</description>
@@ -6685,7 +6685,7 @@
                 <b>xl4DigitYears</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si los años se expresan con cuatro dígitos, <b>False</b> si tienen dos.</description>
@@ -6722,7 +6722,7 @@
                 <b>xlDayLeadingZero</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>True si se muestra un cero a la izquierda de los días.</description>
             </item>
@@ -6740,7 +6740,7 @@
                 <b>xlMDY</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si el orden de las fechas que tienen formato largo es mes-día-año, <b>False</b> si el orden es día-mes-año.</description>
@@ -6768,7 +6768,7 @@
                 <b>xlMonthLeadingZero</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si se muestra un cero a la izquierda de los meses (cuando éstos se muestran como números).</description>
@@ -6805,7 +6805,7 @@
                 <b>xlTimeLeadingZero</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si se muestra un cero a la izquierda de las horas.</description>
@@ -6836,7 +6836,7 @@
                 <b>xlMetric</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si se usa el sistema métrico y <b>False</b> si se usa el sistema de medidas inglés.</description>
@@ -6846,7 +6846,7 @@
                 <b>xlNonEnglishFunctions</b>
               </term>
               <description>
-                <b>Booleano</b>
+                <b>Boolean</b>
               </description>
               <description>
                 <b>True</b> si las funciones no se van a mostrar en inglés.</description>
@@ -6967,36 +6967,36 @@
         <Parameter Name="Arg30" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Arg1">Intervalo <b>requerido.</b> Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg2">Intervalo <b>requerido.</b> Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg3">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg4">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg5">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg6">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg7">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg8">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg9">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg10">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg11">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg12">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg13">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg14">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg15">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg16">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg17">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg18">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg19">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg20">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg21">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg22">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg23">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg24">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg25">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg26">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg27">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg28">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg29">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg30">Objeto <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg1">Intervalo <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg2">Intervalo <b>requerido</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg3">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg4">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg5">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg6">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg7">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg8">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg9">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg10">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg11">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg12">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg13">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg14">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg15">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg16">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg17">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg18">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg19">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg20">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg21">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg22">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg23">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg24">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg25">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg26">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg27">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg28">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg29">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg30">Objeto <b>obligatorio</b>. Rangos de intersección. Se deben especificar al menos dos objetos <b>Range</b>.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa la intersección rectangular de dos o más intervalos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -7028,7 +7028,7 @@
         <summary>Obtiene si el libro especificado está abierto en una ventana vista protegida.</summary>
         <value><b>true</b> si el libro especificado está abierto en una ventana vista protegida; de lo contrario, <b>false</b>.</value>
         <remarks><para>Solo lectura</para>
-          <para>Use la <see cref="P:Microsoft.Office.Interop.Excel._Application.IsSandboxed" /> propiedad para determinar si un libro está abierto en una ventana Vista protegida.</para>
+          <para>Use la <see cref="P:Microsoft.Office.Interop.Excel._Application.IsSandboxed" /> propiedad para determinar si un libro está abierto en una ventana vista protegida.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -7092,7 +7092,7 @@
         <ReturnType>Microsoft.Office.Core.LanguageSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Core.LanguageSettings" /> objeto, que contiene información sobre la configuración de idioma en Microsoft Excel.</summary>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Core.LanguageSettings" /> objeto, que contiene información sobre la configuración de idioma de Microsoft Excel.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7197,9 +7197,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distancia, en puntos, desde el borde izquierdo de la pantalla hasta el borde izquierdo de la ventana principal de Microsoft Excel.</summary>
+        <summary>Distancia, en puntos, desde el borde izquierdo de la pantalla hasta el borde izquierdo de la ventana Microsoft Excel principal.</summary>
         <value>To be added.</value>
-        <remarks><para>Si la ventana está maximizada, esta propiedad devuelve un número negativo que varía según el ancho del borde de la ventana. Si se establece esta propiedad en 0 (cero), la ventana será un poco más pequeña de lo que sería si se maximizara la ventana de la aplicación. En otras palabras, si esta propiedad es 0 (cero), el borde izquierdo de la ventana principal de Microsoft Excel apenas estará visible en la pantalla.</para>
+        <remarks><para>Si la ventana está maximizada, esta propiedad devuelve un número negativo que varía en función del ancho del borde de la ventana. Si se establece esta propiedad en 0 (cero), la ventana será un poco más pequeña de lo que sería si se maximizara la ventana de la aplicación. En otras palabras, si esta propiedad es 0 (cero), el borde izquierdo de la ventana principal Microsoft Excel apenas será visible en la pantalla.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -7229,7 +7229,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la ruta de acceso a la carpeta Library pero sin el separador final.</summary>
+        <summary>Devuelve la ruta de acceso a la carpeta Biblioteca pero sin el separador final.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -7271,27 +7271,27 @@
         <Parameter Name="HelpFile" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Macro">Optional <b>Object</b>. Nombre de la macro o nombre de una función definida por el usuario.</param>
-        <param name="Description">Optional <b>Object</b>. Descripción de la macro.</param>
-        <param name="HasMenu">Optional <b>Object</b>. Este argumento se omite.</param>
-        <param name="MenuText">Optional <b>Object</b>. Este argumento se omite.</param>
-        <param name="HasShortcutKey">Optional <b>Object</b>. <b>True</b> para asignar una tecla de método abreviado a la macro ( <paramref name="ShortcutKey" /> también debe especificarse). Si el argumento es  <b>False</b>, no se asignará ninguna tecla de método abreviado a la macro. Si la macro ya tiene tecla de método abreviado, esta se eliminará al establecer el valor del argumento en <b>False</b>. El valor predeterminado es <b>False</b>.</param>
-        <param name="ShortcutKey">Optional <b>Object</b>. Obligatorio si <paramref name="HasShortcutKey" /> es <b>True;</b>de lo contrario, se omite. La tecla de método abreviado</param>
-        <param name="Category">Optional <b>Object</b>. An integer that specifies an existing macro function category (Financial, Date &amp; Time, or User Defined, for example). Vea la sección de comentarios para determinar los enteros asignados a las categorías integradas. También puede especificar una cadena para una categoría personalizada. Si proporciona una cadena, se tratará como el nombre de categoría que se muestra en el cuadro de diálogo Insertar función. Si el nombre de categoría nunca se ha usado, se define una nueva categoría con ese nombre. Si usa un nombre de categoría que sea el mismo que un nombre integrado, Excel asignará la función definida por el usuario a esa categoría integrada.</param>
-        <param name="StatusBar">Optional <b>Object</b>. Texto de la barra de estado para la macro.</param>
-        <param name="HelpContextID">Optional <b>Object</b>. Entero que especifica el número de Id. de contexto del tema de la Ayuda asignado a la macro.</param>
-        <param name="HelpFile">Optional <b>Object</b>. El nombre del archivo de Ayuda que contiene el tema de Ayuda definido por <paramref name="HelpContextId" /> .</param>
+        <param name="Macro">Objeto <b>opcional</b>. Nombre de la macro o nombre de una función definida por el usuario.</param>
+        <param name="Description">Objeto <b>opcional</b>. Descripción de la macro.</param>
+        <param name="HasMenu">Objeto <b>opcional</b>. Este argumento se omite.</param>
+        <param name="MenuText">Objeto <b>opcional</b>. Este argumento se omite.</param>
+        <param name="HasShortcutKey">Objeto <b>opcional</b>. <b>True</b> para asignar una tecla de método abreviado a la macro ( <paramref name="ShortcutKey" /> también debe especificarse). Si el argumento es  <b>False</b>, no se asignará ninguna tecla de método abreviado a la macro. Si la macro ya tiene tecla de método abreviado, esta se eliminará al establecer el valor del argumento en <b>False</b>. El valor predeterminado es <b>False</b>.</param>
+        <param name="ShortcutKey">Objeto <b>opcional</b>. Obligatorio si <paramref name="HasShortcutKey" /> es <b>True;</b>se omite de lo contrario. La tecla de método abreviado</param>
+        <param name="Category">Objeto <b>opcional</b>. An integer that specifies an existing macro function category (Financial, Date &amp; Time, or User Defined, for example). Vea la sección de comentarios para determinar los enteros asignados a las categorías integradas. También puede especificar una cadena para una categoría personalizada. Si proporciona una cadena, se tratará como el nombre de categoría que se muestra en el cuadro de diálogo Insertar función. Si el nombre de categoría nunca se ha usado, se define una nueva categoría con ese nombre. Si usa un nombre de categoría que sea el mismo que un nombre integrado, Excel asignará la función definida por el usuario a esa categoría integrada.</param>
+        <param name="StatusBar">Objeto <b>opcional</b>. Texto de la barra de estado para la macro.</param>
+        <param name="HelpContextID">Objeto <b>opcional</b>. Entero que especifica el número de Id. de contexto del tema de la Ayuda asignado a la macro.</param>
+        <param name="HelpFile">Objeto <b>opcional</b>. Nombre del archivo de ayuda que contiene el tema de ayuda definido por <paramref name="HelpContextId" /> .</param>
         <summary>Corresponde a las opciones del cuadro de diálogo Opciones de macro. También puede utilizar este método para mostrar una función definida por el usuario (UDF) en una categoría integrada o nueva dentro del cuadro de diálogo Insertar función.</summary>
         <remarks><para>En la tabla siguiente se indican los enteros asignados a las categorías integradas que se pueden utilizar en el parámetro Category.</para>
           <list type="table">
             <item>
-              <term>1 </term>
+              <term>1</term>
               <description>
-                <b>Financiero</b>
+                <b>Finanzas</b>
               </description>
             </item>
             <item>
-              <term>2 </term>
+              <term>2</term>
               <description>
                 <b>Fecha &amp; y hora</b>
               </description>
@@ -7299,7 +7299,7 @@
             <item>
               <term>3</term>
               <description>
-                <b>Trig &amp; de matemáticas</b>
+                <b>Math &amp; Trig</b>
               </description>
             </item>
             <item>
@@ -7345,7 +7345,7 @@
               </description>
             </item>
             <item>
-              <term>11 </term>
+              <term>11</term>
               <description>
                 <b>Personalización</b>
               </description>
@@ -7357,7 +7357,7 @@
               </description>
             </item>
             <item>
-              <term>13 </term>
+              <term>13</term>
               <description>
                 <b>DDE/External</b>
               </description>
@@ -7369,7 +7369,7 @@
               </description>
             </item>
             <item>
-              <term>15 </term>
+              <term>15</term>
               <description>Primera categoría personalizada</description>
             </item>
             <item>
@@ -7549,9 +7549,9 @@
         <Parameter Name="DownloadNewMail" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">Optional <b>Object</b>. Nombre de la cuenta de correo o del perfil de Microsoft Exchange. Si este argumento se omite, se usará el nombre de la cuenta de correo predeterminada.</param>
-        <param name="Password">Optional <b>Object</b>. Contraseña de la cuenta de correo. Este argumento se omite en Microsoft Exchange.</param>
-        <param name="DownloadNewMail">Optional <b>Object</b>. <b>True</b> para descargar inmediatamente el correo nuevo.</param>
+        <param name="Name">Objeto <b>opcional</b>. Nombre de la cuenta de correo o del perfil de Microsoft Exchange. Si este argumento se omite, se usará el nombre de la cuenta de correo predeterminada.</param>
+        <param name="Password">Objeto <b>opcional</b>. Contraseña de la cuenta de correo. Este argumento se omite en Microsoft Exchange.</param>
+        <param name="DownloadNewMail">Objeto <b>opcional</b>. <b>True</b> para descargar inmediatamente el correo nuevo.</param>
         <summary>Inicia MAPI Mail o Microsoft Exchange y establece una sesión de correo. Si todavía no se está ejecutando Microsoft Mail, deberá emplear este método para establecer una sesión de correo que le permita usar las funciones de correo o de distribución de documentos.</summary>
         <remarks><para>Microsoft Excel abandonará las sesiones de correo que previamente estableció antes de intentar establecer la nueva sesión.</para>
           <para>Para entrar en la sesión de correo predeterminada del sistema, omita los parámetros de nombre y contraseña.</para>
@@ -7729,7 +7729,7 @@
       <Docs>
         <summary>Devuelve o establece el cambio máximo entre cada iteración cuando Microsoft Excel resuelve referencias circulares.</summary>
         <value>To be added.</value>
-        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel._Application.MaxIterations" /> propiedad establece el número máximo de iteraciones que Microsoft Excel puede usar al resolver referencias circulares.</para>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel._Application.MaxIterations" /> propiedad establece el número máximo de iteraciones que Microsoft Excel pueden usar al resolver referencias circulares.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -7767,7 +7767,7 @@
       <Docs>
         <summary>Devuelve o establece el número máximo de iteraciones que puede usar Microsoft Excel para resolver una referencia circular.</summary>
         <value>To be added.</value>
-        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Excel._Application.MaxChange" /> propiedad establece la cantidad máxima de cambio entre cada iteración cuando Microsoft Excel está resolviendo referencias circulares.</para>
+        <remarks><para>La propiedad establece la cantidad máxima de cambio entre cada <see cref="P:Microsoft.Office.Interop.Excel._Application.MaxChange" /> iteración cuando Microsoft Excel está resolviendo referencias circulares.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -7831,7 +7831,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la cantidad de memoria que sigue disponible para que Microsoft Excel la use, en bytes.</summary>
+        <summary>Devuelve la cantidad de memoria que aún está disponible para Microsoft Excel usar, en bytes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8062,7 +8062,7 @@
       <Docs>
         <summary><b>True</b> si la celda activa se desplaza después de presionar la tecla ENTRAR (RETORNO).</summary>
         <value>To be added.</value>
-        <remarks><para>Utilice la propiedad para especificar la dirección a la que se va a mover la <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturnDirection" /> celda activa.</para>
+        <remarks><para>Use la propiedad para especificar la dirección en la que se va a mover la <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturnDirection" /> celda activa.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -8114,7 +8114,7 @@
           <para>
             <b>xlUp</b>
           </para>
-          <para>Si la propiedad es False , la selección no se mueve en absoluto, independientemente de cómo se establezca la <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturn" /> propiedad <b></b> <b>MoveAfterReturnDirection</b> .</para>
+          <para>Si la propiedad es False , la selección no se mueve en absoluto, independientemente de cómo se establezca la propiedad <see cref="P:Microsoft.Office.Interop.Excel._Application.MoveAfterReturn" /> <b>MoveAfterReturnDirection.</b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -8141,7 +8141,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.MultiThreadedCalculation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> objeto que controla la configuración de actualización multiproceso que es nueva en Excel 2007. Solo lectura.</summary>
+        <summary>Devuelve un objeto que controla la configuración de recálculo multiproceso que es nueva <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> en Excel 2007. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8256,7 +8256,7 @@
         <ReturnType>Microsoft.Office.Core.NewFile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>objeto NewFile</b> .</summary>
+        <summary>Devuelve un <b>objeto NewFile.</b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -8315,7 +8315,7 @@
       <Docs>
         <summary>Devuelve una colección que contiene todos los errores ODBC generados por la operación de informe de tabla dinámica o tabla de consulta <see cref="T:Microsoft.Office.Interop.Excel.ODBCErrors" /> más reciente.</summary>
         <value>To be added.</value>
-        <remarks><para>Si hay más de una consulta ejecutándose al mismo tiempo, la colección contiene los errores ODBC de la consulta que <see cref="T:Microsoft.Office.Interop.Excel.ODBCErrors" /> finalizó en último lugar.</para>
+        <remarks><para>Si hay más de una consulta ejecutándose al mismo tiempo, la colección contiene los errores ODBC de la consulta que <see cref="T:Microsoft.Office.Interop.Excel.ODBCErrors" /> ha terminado en último lugar.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -8578,7 +8578,7 @@
       </Parameters>
       <Docs>
         <param name="Key"><b>String</b> requerida. Cadena que indica la tecla que se va a presionar.</param>
-        <param name="Procedure">Optional <b>Object</b>. Cadena que indica el nombre del procedimiento que se va a ejecutar. Si <paramref name="Procedure" /> es "" (texto vacío), no sucede nada cuando <paramref name="Key" /> se presiona. Esta forma de <b>OnKey</b> cambia el resultado normal de las pulsaciones de tecla en Microsoft Excel. Si se omite, vuelve a su resultado normal en Microsoft Excel y se borran todas las asignaciones de teclas especiales realizadas con <paramref name="Procedure" /> <paramref name="Key" /> métodos <b>OnKey</b> anteriores.</param>
+        <param name="Procedure">Objeto <b>opcional</b>. Cadena que indica el nombre del procedimiento que se va a ejecutar. Si <paramref name="Procedure" /> es "" (texto vacío), no ocurre nada cuando <paramref name="Key" /> se presiona. Esta forma de <b>OnKey</b> cambia el resultado normal de las pulsaciones de tecla en Microsoft Excel. Si se omite, vuelve a su resultado normal en Microsoft Excel y se borran las asignaciones de clave especiales realizadas con <paramref name="Procedure" /> <paramref name="Key" /> métodos <b>OnKey</b> anteriores.</param>
         <summary>Ejecuta un procedimiento especificado cuando se presiona una tecla o combinación de teclas concreta.</summary>
         <remarks><para>El <paramref name="Key" /> argumento puede especificar cualquier tecla única combinada con ALT, CTRL o MAYÚS, o cualquier combinación de estas teclas. Cada tecla se representa mediante uno o más caracteres, tal como "a" para el carácter "a" o "{ENTER}" para la tecla ENTRAR.</para>
           <para>Para especificar caracteres que no se muestran al presionar la tecla correspondiente (por ejemplo ENTRAR o TAB), use los códigos que se indican en la tabla siguiente. Cada código de la tabla representa una tecla del teclado.</para>
@@ -8617,7 +8617,7 @@
             </item>
             <item>
               <term>ENTRAR (teclado numérico)</term>
-              <description>{ENTRAR}</description>
+              <description>{ENTER}</description>
             </item>
             <item>
               <term>ESC</term>
@@ -8725,8 +8725,8 @@
         <param name="Text"><b>String</b> requerida. Especifica el texto que aparece con el comando Repetir del menú Edición.</param>
         <param name="Procedure"><b>String</b> requerida. Nombre del procedimiento que se ejecutará cuando se elija Repetir en el menú Edición.</param>
         <summary>Establece el elemento de menú Repetir y el nombre del procedimiento que se ejecutará si se elige Repetir en el menú Edición después de ejecutar el procedimiento que establece esta propiedad.</summary>
-        <remarks><para>Si un procedimiento no usa el <b>método OnRepeat,</b> el comando Repetir repite el procedimiento que se ha ejecutado más recientemente.</para>
-          <para>El procedimiento debe usar <b>onrepeat</b> y los métodos en último lugar, para evitar que los procedimientos de repetición y deshacer se sobrescriban mediante acciones posteriores <see cref="M:Microsoft.Office.Interop.Excel._Application.OnUndo(System.String,System.String)" /> en el procedimiento.</para>
+        <remarks><para>Si un procedimiento no usa el método <b>OnRepeat,</b> el comando Repeat repite el procedimiento que se ha ejecutado más recientemente.</para>
+          <para>El procedimiento debe usar <b>los métodos OnRepeat</b> y last, para evitar que las acciones posteriores del procedimiento sobrescriban los procedimientos de repetición <see cref="M:Microsoft.Office.Interop.Excel._Application.OnUndo(System.String,System.String)" /> y deshacer.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -8844,12 +8844,12 @@
         <Parameter Name="Schedule" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EarliestTime">Objeto <b>requerido</b>. Hora a la que se desea ejecutar este procedimiento.</param>
+        <param name="EarliestTime">Objeto <b>obligatorio</b>. Hora a la que se desea ejecutar este procedimiento.</param>
         <param name="Procedure"><b>String</b> requerida. Nombre del procedimiento que se ejecutará.</param>
-        <param name="LatestTime">Optional <b>Object</b>. La última hora a la que se puede ejecutar el procedimiento. Por ejemplo, si se establece en + 30 y Microsoft Excel no está en modo Listo, Copiar, Cortar o Buscar porque se está ejecutando otro procedimiento, Microsoft Excel esperará 30 segundos para que se complete el primer <paramref name="LatestTime" /> <paramref name="EarliestTime" /> <paramref name="EarliestTime" /> procedimiento. Si Microsoft Excel no está en modo Listo en un plazo de 30 segundos, no se ejecutará el procedimiento. Si omite este argumento, Microsoft Excel esperará hasta que se pueda ejecutar el procedimiento.</param>
-        <param name="Schedule">Optional <b>Object</b>. <b>True</b> para programar un nuevo <b>procedimiento OnTime.</b> <b>False</b> para borrar un procedimiento establecido previamente. El valor predeterminado es <b>True</b>.</param>
+        <param name="LatestTime">Objeto <b>opcional</b>. La última hora a la que se puede ejecutar el procedimiento. Por ejemplo, si se establece en + 30 y Microsoft Excel no está en modo Listo, Copiar, Cortar o Buscar en porque se está ejecutando otro procedimiento, Microsoft Excel esperará 30 segundos para que se complete el primer <paramref name="LatestTime" /> <paramref name="EarliestTime" /> <paramref name="EarliestTime" /> procedimiento. Si Microsoft Excel no está en modo Listo en 30 segundos, el procedimiento no se ejecutará. Si omite este argumento, Microsoft Excel esperará hasta que se pueda ejecutar el procedimiento.</param>
+        <param name="Schedule">Objeto <b>opcional</b>. <b>True</b> para programar un nuevo <b>procedimiento OnTime.</b> <b>False</b> para borrar un procedimiento establecido previamente. El valor predeterminado es <b>True</b>.</param>
         <summary>Programa la ejecución de un procedimiento a una hora especificada, ya sea a una hora específica o después del transcurso de un período de tiempo específico.</summary>
-        <remarks><para>Usa Now+TimeValue(time) para programar algo que se ejecutará cuando haya transcurrido un período de tiempo específico (contando a partir de ahora). Utilice TimeValue(hora) para planear la ejecución de un procedimiento a una hora específica.</para>
+        <remarks><para>Use Now+TimeValue(time) para programar algo que se va a ejecutar cuando haya transcurrido una cantidad específica de tiempo (contando a partir de ahora). Utilice TimeValue(hora) para planear la ejecución de un procedimiento a una hora específica.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -8883,8 +8883,8 @@
         <param name="Text"><b>String</b> requerida. El texto que aparece con el comando Deshacer del menú Edición.</param>
         <param name="Procedure"><b>String</b> requerida. Nombre del procedimiento que se ejecutará cuando se elija Deshacer en el menú Edición.</param>
         <summary>Establece el texto del elemento de menú Deshacer y el nombre del procedimiento que se ejecutará si se elige Deshacer en el menú Edición después de ejecutar el procedimiento que establece esta propiedad.</summary>
-        <remarks><para>Si un procedimiento no usa el <b>método OnUndo,</b> se deshabilita el comando Deshacer.</para>
-          <para>El procedimiento debe usar los métodos <see cref="M:Microsoft.Office.Interop.Excel._Application.OnRepeat(System.String,System.String)" /> <b>OnUndo y onundo</b> en último lugar, para evitar que los procedimientos de repetición y deshacer se sobrescriban mediante acciones posteriores en el procedimiento.</para>
+        <remarks><para>Si un procedimiento no usa el <b>método OnUndo,</b> el comando Deshacer está deshabilitado.</para>
+          <para>El procedimiento debe usar los métodos <see cref="M:Microsoft.Office.Interop.Excel._Application.OnRepeat(System.String,System.String)" /> <b>y OnUndo</b> en último lugar, para evitar que los procedimientos de repetición y deshacer se sobrescriban mediante acciones posteriores del procedimiento.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -8953,7 +8953,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el nombre y el número de versión del sistema operativo actual, por ejemplo, "Windows (32 bits) 4.00" o "Macintosh 7.00".</summary>
+        <summary>Devuelve el nombre y el número de versión del sistema operativo actual, por ejemplo, "Windows (32 bits) 4,00" o "Macintosh 7.00".</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9074,7 +9074,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el carácter separador de ruta de acceso (" \" ).</summary>
+        <summary>Devuelve el carácter separador de ruta (" \" ).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9139,10 +9139,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Optional <b>Object</b>. El número de índice (de 1 a 4) del rango o el nombre anterior.</param>
+        <param name="Index">Objeto <b>opcional</b>. El número de índice (de 1 a 4) del rango o el nombre anterior.</param>
         <summary>Devuelve una matriz con los cuatro últimos rangos o nombres seleccionados. Cada elemento de la matriz es un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</summary>
         <value>To be added.</value>
-        <remarks><para>Cada vez que se va a un rango o celda mediante el cuadro Nombre o el comando Ir a (menú Edición), o cada vez que una macro llama al método, el rango anterior se agrega a esta matriz como el elemento número 1 y los demás elementos de la matriz se mueven hacia <see cref="M:Microsoft.Office.Interop.Excel._Application.Goto(System.Object,System.Object)" /> abajo.</para>
+        <remarks><para>Cada vez que vaya a un rango o celda mediante el cuadro Nombre o el comando Ir a (menú Editar), o cada vez que una macro llama al método, el intervalo anterior se agrega a esta matriz como elemento número 1 y los demás elementos de la matriz se mueven hacia <see cref="M:Microsoft.Office.Interop.Excel._Application.Goto(System.Object,System.Object)" /> abajo.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -9176,7 +9176,7 @@
         <value><b>true</b> si la comunicación con la impresora está activada; de lo contrario, <b>false</b>.</value>
         <remarks><para>
             <b>boolean</b> Lectura y escritura.</para>
-          <para>Establezca la propiedad en false para acelerar la ejecución <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> del código que establece las propiedades pageSetup. <b></b> Establezca la <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> propiedad en true <b>después</b> de establecer las propiedades para confirmar todos los comandos PageSetup almacenados en caché.</para>
+          <para>Establezca la propiedad en false para acelerar la ejecución <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> del código que establece las propiedades PageSetup. <b></b> Establezca la <see cref="P:Microsoft.Office.Interop.Excel._Application.PrintCommunication" /> propiedad en <b>true</b> después de establecer las propiedades para confirmar todos los comandos PageSetup almacenados en caché.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -9268,8 +9268,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ProtectedViewWindows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene una <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> colección que representa todas las ventanas vista protegida que están abiertas en la aplicación.</summary>
-        <value>Colección <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> que representa todas las ventanas vista protegida que están abiertas en la aplicación.</value>
+        <summary>Obtiene una <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> colección que representa todas las ventanas de vista protegida que están abiertas en la aplicación.</summary>
+        <value>Colección <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> que representa todas las ventanas de vista protegida que están abiertas en la aplicación.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -9324,8 +9324,8 @@
       <Parameters />
       <Docs>
         <summary>Sale de Microsoft Excel.</summary>
-        <remarks><para>Si los libros no guardados están abiertos cuando se usa este método, Microsoft Excel muestra un cuadro de diálogo que le pregunta si desea guardar los cambios. Puede evitar esto guardando todos los libros antes de usar el método <b>Quit</b> o estableciendo la <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> propiedad en <b>False</b>. Si la propiedad tiene el valor <b>False</b>, Microsoft Excel no mostrará el cuadro de diálogo antes de cerrar los libros no guardados, sino que los cerrará sin guardarlos.</para>
-          <para>Si establece la propiedad de un libro en True sin guardar el libro en el disco, Microsoft Excel se cerrará sin pedirle que <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> guarde el libro. <b></b></para>
+        <remarks><para>Si los libros no guardados están abiertos cuando se usa este método, Microsoft Excel muestra un cuadro de diálogo que le pregunta si desea guardar los cambios. Puede evitar esto guardando todos los libros antes de usar el <b>método Quit</b> o estableciendo la propiedad <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> en <b>False</b>. Si la propiedad tiene el valor <b>False</b>, Microsoft Excel no mostrará el cuadro de diálogo antes de cerrar los libros no guardados, sino que los cerrará sin guardarlos.</para>
+          <para>Si establece la propiedad de un libro en True sin guardar el libro en el disco, Microsoft Excel cerrará sin pedirle que <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" /> guarde el libro. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -9387,11 +9387,11 @@
         <Parameter Name="Cell2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Cell1">Objeto <b>requerido</b>. El nombre del intervalo. Debe ser una referencia de estilo A1 en el lenguaje de la macro. Puede incluir el operador de rangos (un punto y coma), el operador de intersección (un espacio) o el operador de unión (una coma). También puede incluir signos dólar, pero se pasan por alto. Se puede usar un nombre definido local en cualquier parte del rango. Si se usa un nombre, se da por supuesto que está en el lenguaje de la macro.</param>
-        <param name="Cell2">Optional <b>Object</b>. La celda del vértice superior izquierdo e inferior derecho del rango. Puede ser un objeto a <b>Range</b> que contenga una sola celda, una columna completa o una fila completa, o bien ser una cadena que asigna nombre a una sola celda en el lenguaje de la  macro.</param>
+        <param name="Cell1">Objeto <b>obligatorio</b>. El nombre del intervalo. Debe ser una referencia de estilo A1 en el lenguaje de la macro. Puede incluir el operador de rangos (un punto y coma), el operador de intersección (un espacio) o el operador de unión (una coma). También puede incluir signos dólar, pero se pasan por alto. Se puede usar un nombre definido local en cualquier parte del rango. Si se usa un nombre, se da por supuesto que está en el lenguaje de la macro.</param>
+        <param name="Cell2">Objeto <b>opcional</b>. La celda del vértice superior izquierdo e inferior derecho del rango. Puede ser un objeto a <b>Range</b> que contenga una sola celda, una columna completa o una fila completa, o bien ser una cadena que asigna nombre a una sola celda en el lenguaje de la  macro.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa una celda o un rango de celdas.</summary>
         <value>To be added.</value>
-        <remarks><para>La propiedad es relativa al <b>objeto Range</b> . Por ejemplo, si la selección es la celda C3, Selection.Range("B1") devuelve la celda D3 porque es relativa al objeto <b>Range</b> devuelto por la <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> propiedad. Por otro lado, el código ActiveSheet.Range("B1") siempre devuelve la celda B1.</para>
+        <remarks><para>La propiedad es relativa al <b>objeto Range.</b> Por ejemplo, si la selección es la celda C3, Selection.Range("B1") devuelve la celda D3 porque es relativa al <b>objeto Range</b> devuelto por la <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> propiedad. Por otro lado, el código ActiveSheet.Range("B1") siempre devuelve la celda B1.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -9477,8 +9477,8 @@
         <Parameter Name="XlmCode" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="BasicCode">Optional <b>Object</b>. Cadena que especifica el código de Visual Basic que se grabará si la grabadora de macros está grabando en un módulo de Visual Basic. La cadena se grabará en una sola línea. Si la cadena contiene un retorno de carro (carácter ASCII 10 o Chr$(10) en código), se grabará en varias líneas.</param>
-        <param name="XlmCode">Optional <b>Object</b>. Este argumento se omite.</param>
+        <param name="BasicCode">Objeto <b>opcional</b>. Cadena que especifica el código de Visual Basic que se grabará si la grabadora de macros está grabando en un módulo de Visual Basic. La cadena se grabará en una sola línea. Si la cadena contiene un retorno de carro (carácter ASCII 10 o Chr$(10) en código), se grabará en varias líneas.</param>
+        <param name="XlmCode">Objeto <b>opcional</b>. Este argumento se omite.</param>
         <summary>Graba código si está activada la grabadora de macros.</summary>
         <remarks><para>El método <b>RecordMacro</b> no puede grabar en el módulo activo (el módulo en el que reside el método <b>RecordMacro</b>).</para>
           <para>Para impedir la grabación (por ejemplo, si el usuario cancela el cuadro de diálogo), use dos cadenas vacías cuando llame a esta función.</para>
@@ -9591,18 +9591,18 @@
         <Parameter Name="Index2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index1">Optional <b>Object</b>. El nombre de la DLL o del recurso de código.</param>
-        <param name="Index2">Optional <b>Object</b>. Nombre de la función.</param>
+        <param name="Index1">Objeto <b>opcional</b>. El nombre de la DLL o del recurso de código.</param>
+        <param name="Index2">Objeto <b>opcional</b>. Nombre de la función.</param>
         <summary>Devuelve información acerca de las funciones de las bibliotecas de vínculos dinámicos (DLL) o los recursos de código registrados mediante las funciones de macro REGISTER o REGISTER.ID.</summary>
         <value>To be added.</value>
         <remarks><para>Si no especifica estos argumentos, esta propiedad devuelve una matriz que contiene una lista de todas las funciones registradas. Cada fila de la matriz contiene información acerca de una sola función, como se muestra en la siguiente tabla.</para>
           <list type="table">
             <item>
-              <term>1 </term>
+              <term>1</term>
               <description>El nombre de la DLL o del recurso de código.</description>
             </item>
             <item>
-              <term>2 </term>
+              <term>2</term>
               <description>El nombre del procedimiento de la DLL o el recurso de código.</description>
             </item>
             <item>
@@ -9672,7 +9672,7 @@
       <Parameters />
       <Docs>
         <summary>Repite la última acción de la interfaz de usuario.</summary>
-        <remarks><para>Este método repite solo la última acción realizada por el usuario antes de ejecutar el procedimiento. Debe ser la primera línea del procedimiento.</para>
+        <remarks><para>Este método solo repite la última acción realizada por el usuario antes de ejecutar el procedimiento. Debe ser la primera línea del procedimiento.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -9702,7 +9702,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CellFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece los criterios de reemplazo que se emplean para sustituir formatos de celda. A continuación, los criterios de reemplazo se usan en una llamada posterior al <see cref="M:Microsoft.Office.Interop.Excel.Range.Replace(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método del <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</summary>
+        <summary>Establece los criterios de reemplazo que se emplean para sustituir formatos de celda. A continuación, se usan los criterios de reemplazo en una llamada posterior al <see cref="M:Microsoft.Office.Interop.Excel.Range.Replace(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método del <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9809,7 +9809,7 @@
       <Docs>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa todas las filas de la hoja de cálculo activa. Si el documento activo no es una hoja de cálculo, la propiedad <b>Rows</b> devuelve un error.</summary>
         <value>To be added.</value>
-        <remarks><para>Si se aplica a un objeto <b>Range</b> que es una selección de varias áreas, la propiedad únicamente devuelve las filas de la primera área del rango. Por ejemplo, si el objeto <b>Range</b> tiene dos áreas, A1:B2 y C3:D4, Selection.Rows.Count devuelve 2, no 4. Si quiere usar esta propiedad en un rango que puede contener una selección múltiple, compruebe <b>Areas.Count</b> para determinar si el rango es una selección múltiple. Si es así, recorre cada área del rango.</para>
+        <remarks><para>Si se aplica a un objeto <b>Range</b> que es una selección de varias áreas, la propiedad únicamente devuelve las filas de la primera área del rango. Por ejemplo, si el objeto <b>Range</b> tiene dos áreas, A1:B2 y C3:D4, Selection.Rows.Count devuelve 2, no 4. Si quiere usar esta propiedad en un rango que puede contener una selección múltiple, compruebe <b>Areas.Count</b> para determinar si el rango es una selección múltiple. Si es así, recorre cada área del intervalo.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -9893,41 +9893,41 @@
         <Parameter Name="Arg30" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Macro">Optional <b>Object</b>. Macro que se va a ejecutar. Puede ser una cadena con el nombre de macro, un objeto que indica dónde se encuentra la función o un identificador de registro para una función <see cref="T:Microsoft.Office.Interop.Excel.Range" /> dll registrada (XLL). Si se emplea una cadena, se evaluará en el contexto de la hoja activa.</param>
-        <param name="Arg1">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg2">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg3">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg4">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg5">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg6">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg7">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg8">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg9">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg10">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg11">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg12">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg13">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg14">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg15">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg16">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg17">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg18">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg19">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg20">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg21">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg22">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg23">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg24">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg25">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg26">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg27">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg28">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg29">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
-        <param name="Arg30">Optional <b>Object</b>. Argumentos que se pasan a la función.</param>
+        <param name="Macro">Objeto <b>opcional</b>. Macro que se va a ejecutar. Puede ser una cadena con el nombre de la macro, un objeto que indica dónde está la función o un identificador de registro para una función <see cref="T:Microsoft.Office.Interop.Excel.Range" /> dll registrada (XLL). Si se emplea una cadena, se evaluará en el contexto de la hoja activa.</param>
+        <param name="Arg1">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg2">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg3">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg4">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg5">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg6">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg7">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg8">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg9">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg10">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg11">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg12">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg13">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg14">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg15">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg16">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg17">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg18">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg19">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg20">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg21">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg22">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg23">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg24">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg25">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg26">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg27">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg28">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg29">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
+        <param name="Arg30">Objeto <b>opcional</b>. Argumentos que se pasan a la función.</param>
         <summary>Ejecuta una macro o llama a una función.</summary>
         <returns>To be added.</returns>
         <remarks><para>No pueden usarse argumentos con nombre en este método. Los argumentos deben pasarse por posición.</para>
-          <para>El método <b>Run</b> devuelve el resultado de la macro a la que se haya llamado.  Los objetos pasados como argumentos a la macro se convierten en valores (aplicando la <see cref="P:Microsoft.Office.Interop.Excel._Application.Value" /> propiedad al objeto). Es decir, no es posible pasar objetos a macros mediante el método <b>Run</b>.</para>
+          <para>El método <b>Run</b> devuelve el resultado de la macro a la que se haya llamado. Los objetos que se pasan como argumentos a la macro se convierten en valores (aplicando la <see cref="P:Microsoft.Office.Interop.Excel._Application.Value" /> propiedad al objeto). Es decir, no es posible pasar objetos a macros mediante el método <b>Run</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -9965,7 +9965,7 @@
           <para> </para>
           <para>Para marcar un libro como guardado sin escribirlo en un disco, establezca su <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.SaveData" /> propiedad en <b>True</b>.</para>
           <para> </para>
-          <para>La primera vez que guarde un libro, use <see cref="&quot;M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object" /> el método para especificar un nombre para el archivo.</para>
+          <para>La primera vez que guarde un libro, use el <see cref="&quot;M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object" /> método para especificar un nombre para el archivo.</para>
           <para> </para></remarks>
         <example><para>En este ejemplo se guarda el libro activo.</para>
           <code>&lt;span class="label"&gt;ActiveWorkbook.&lt;/span&gt;
@@ -10094,7 +10094,7 @@
       <Docs>
         <summary><b>True</b> si la actualización de pantallas está activada.</summary>
         <value>To be added.</value>
-        <remarks><para>Desactiva la actualización de pantalla para acelerar el código. No podrá ver lo que hace el código, pero se ejecutará más rápido.</para>
+        <remarks><para>Desactiva la actualización de pantalla para acelerar el código. No podrá ver lo que está haciendo el código, pero se ejecutará más rápido.</para>
           <para>Recuerda volver a establecer <b>la propiedad ScreenUpdating</b> en <b>True</b> cuando finalice el código.</para>
           <para> </para></remarks>
       </Docs>
@@ -10157,11 +10157,11 @@
         <Parameter Name="Wait" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Keys">Objeto <b>requerido</b>. La tecla o combinación de teclas que desea enviar a la aplicación como texto.</param>
-        <param name="Wait">Optional <b>Object</b>. <b>True</b> para que Microsoft Excel espere a que se procesen las teclas antes devolver el control a la macro. <b>False</b> (u omitido) para continuar ejecutando la macro sin esperar a que se procesen las teclas.</param>
+        <param name="Keys">Objeto <b>obligatorio</b>. La clave o combinación de teclas que desea enviar a la aplicación como texto.</param>
+        <param name="Wait">Objeto <b>opcional</b>. <b>True</b> para que Microsoft Excel espere a que se procesen las teclas antes devolver el control a la macro. <b>False</b> (u omitido) para continuar ejecutando la macro sin esperar a que se procesen las teclas.</param>
         <summary>Envía pulsaciones de teclas a la aplicación activa.</summary>
         <remarks><para>Este método coloca pulsaciones de teclas en un búfer de teclas. En ciertos casos, deberá llamar a este método antes de llamar al método que vaya a usar las pulsaciones de teclas. Por ejemplo, para enviar una contraseña a un cuadro de diálogo, deberá llamar al método <b>SendKeys</b> antes de mostrar el cuadro de diálogo.</para>
-          <para>El argumento puede especificar cualquier tecla única o cualquier tecla combinada con <paramref name="Keys" /> ALT, CTRL o MAYÚS (o cualquier combinación de dichas teclas). Cada tecla se representa mediante uno o varios caracteres, como "a" para el carácter a, o "{ENTER}" para la tecla ENTRAR.</para>
+          <para>El <paramref name="Keys" /> argumento puede especificar cualquier tecla única o cualquier tecla combinada con ALT, CTRL o MAYÚS (o cualquier combinación de esas teclas). Cada tecla se representa mediante uno o varios caracteres, como "a" para el carácter a, o "{ENTER}" para la tecla ENTRAR.</para>
           <para>Para especificar caracteres que no se muestran al pulsar la tecla correspondiente (por ejemplo, ENTRAR o TAB), use los códigos que se muestran en la tabla siguiente. Cada código de la tabla representa una tecla del teclado.</para>
           <list type="table">
             <item>
@@ -10214,7 +10214,7 @@
             </item>
             <item>
               <term>INICIO</term>
-              <description>{INICIO}</description>
+              <description>{HOME}</description>
             </item>
             <item>
               <term>INS</term>
@@ -10301,7 +10301,7 @@
         <Parameter Name="Gallery" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="FormatName">Optional <b>Object</b>. Especifica el nombre de un formato automático personalizado. Este nombre puede ser una cadena que asigna nombre a un formato automático personalizado o puede ser la constante especial <b>xlBuiltIn</b> para especificar la plantilla de gráfico integrada.</param>
+        <param name="FormatName">Objeto <b>opcional</b>. Especifica el nombre de un autoformato personalizado. Este nombre puede ser una cadena que asigna un nombre a un autoformato personalizado o puede ser la constante <b>especial xlBuiltIn</b> para especificar la plantilla de gráfico integrada.</param>
         <param name="Gallery">Objeto opcional. Especifica el nombre de una galería.</param>
         <summary>Especifica el nombre de la plantilla de gráfico que Microsoft Excel usará al crear nuevos gráficos.</summary>
         <remarks>To be added.</remarks>
@@ -10524,8 +10524,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se muestra la ficha Programador en la cinta de opciones. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Devuelve o establece un <b>valor booleano</b> que indica si la pestaña Programador se muestra en la cinta de opciones. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks><para>Esta propiedad corresponde a la casilla de verificación Mostrar ficha Programador en la cinta de opciones del cuadro de diálogo Opciones de Excel.</para>
           <para> </para></remarks>
       </Docs>
@@ -10556,8 +10556,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se muestran las barras de herramientas Mini cuando el usuario hace clic con el botón secundario en la ventana del libro. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Devuelve o establece un <b>valor booleano</b> que indica si se muestran las barras de herramientas Mini cuando el usuario hace clic con el botón secundario en la ventana del libro. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -10587,7 +10587,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Controla si la interfaz de usuario contextual de análisis rápido se muestra en la selección. <b>TRUE</b> significa que se mostrará el botón Análisis rápido. Corresponde a la casilla Mostrar opciones de análisis rápido en la selección que se encuentra en el menú <b>Archivo, Opciones, Opciones</b>de Excel y, a continuación, ficha General. Lectura y escritura. <b>Booleano</b> (<b>bool</b> en C#).</summary>
+        <summary>Controla si la interfaz de usuario contextual de Análisis rápido se muestra en la selección. <b>TRUE</b> significa que se mostrará el botón Análisis rápido. Corresponde a la casilla Mostrar opciones de análisis rápido en la selección ubicada en el menú <b>Archivo, Opciones, Excel Opciones</b>y, a continuación, ficha General. Lectura y escritura. <b>Boolean</b> (<b>bool</b> in C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -10618,8 +10618,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se muestran las barras de herramientas Mini cuando un usuario selecciona texto. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>Devuelve o establece un <b>valor booleano</b> que indica si las barras de herramientas Mini se muestran cuando un usuario selecciona texto. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks><para>Corresponde a la casilla de verificación Mostrar minibarra de herramientas al seleccionar del cuadro de diálogo Opciones de Excel.</para>
           <para> </para></remarks>
       </Docs>
@@ -10650,7 +10650,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve <b>True</b> (valor predeterminado) cuando aparece el panel de tareas Nuevo libro para una aplicación de Microsoft Excel.</summary>
+        <summary>Devuelve <b>True</b> (valor predeterminado) cuando aparece el panel de tareas Nuevo libro para una Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -10746,8 +10746,8 @@
         <ReturnType>Microsoft.Office.Core.SmartArtColors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el conjunto de estilos de color que están cargados actualmente en la aplicación.</summary>
-        <value>Conjunto de estilos de color que se cargan actualmente en la aplicación.</value>
+        <summary>Obtiene el conjunto de estilos de color que se cargan actualmente en la aplicación.</summary>
+        <value>El conjunto de estilos de color que se cargan actualmente en la aplicación.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -10775,8 +10775,8 @@
         <ReturnType>Microsoft.Office.Core.SmartArtLayouts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el conjunto de diseños SmartArt que están cargados actualmente en la aplicación.</summary>
-        <value>Conjunto de diseños SmartArt cargados actualmente en la aplicación.</value>
+        <summary>Obtiene el conjunto de diseños de SmartArt que se cargan actualmente en la aplicación.</summary>
+        <value>El conjunto de diseños smartart que se cargan actualmente en la aplicación.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -10804,7 +10804,7 @@
         <ReturnType>Microsoft.Office.Core.SmartArtQuickStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el conjunto de estilos rápidos de SmartArt que están cargados actualmente en la aplicación.</summary>
+        <summary>Obtiene el conjunto de estilos rápidos de SmartArt que se cargan actualmente en la aplicación.</summary>
         <value>El conjunto de estilos rápidos de SmartArt que se cargan actualmente en la aplicación.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
@@ -10999,7 +10999,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la ruta de acceso completa de la carpeta de inicio sin incluir el separador final.</summary>
+        <summary>Devuelve la ruta de acceso completa de la carpeta de inicio excluyendo el separador final.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -11164,8 +11164,8 @@
       <Docs>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> objeto que representa el libro donde se ejecuta el código de macro actual.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilice esta propiedad para hacer referencia al libro que contiene el código de macro. <b>ThisWorkbook</b> es la única forma para hacer referencia a un libro de complemento desde el propio complemento. La propiedad <b>ActiveWorkbook</b> no devolverá el libro de complemento; devuelve el libro que está llamando al complemento. Puede producirse un error en la propiedad, ya que el nombre del libro probablemente cambió <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> al crear el complemento. <b>ThisWorkbook</b> siempre devuelve el libro en el que se ejecuta el código.</para>
-          <para>Esta propiedad solo se puede usar desde Excel. No puede utilizarla para obtener acceso a un libro desde cualquier otra aplicación.</para>
+        <remarks><para>Utilice esta propiedad para hacer referencia al libro que contiene el código de macro. <b>ThisWorkbook</b> es la única forma para hacer referencia a un libro de complemento desde el propio complemento. La propiedad <b>ActiveWorkbook</b> no devolverá el libro de complemento; devuelve el libro que está llamando al complemento. La propiedad puede producir un error, ya que el nombre del libro probablemente cambió <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> al crear el complemento. <b>ThisWorkbook</b> siempre devuelve el libro en el que se ejecuta el código.</para>
+          <para>Esta propiedad solo se puede usar desde dentro Excel. No puede utilizarla para obtener acceso a un libro desde cualquier otra aplicación.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -11263,7 +11263,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Distancia, en puntos, desde el borde superior de la pantalla hasta el borde superior de la ventana principal de Microsoft Excel. Si la ventana de la aplicación está minimizada, esta propiedad controla la posición del icono de la ventana (en cualquier parte de la pantalla).</summary>
+        <summary>Distancia, en puntos, desde el borde superior de la pantalla hasta el borde superior de la ventana Microsoft Excel principal. Si la ventana de la aplicación está minimizada, esta propiedad controla la posición del icono de la ventana (en cualquier parte de la pantalla).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -11505,36 +11505,36 @@
         <Parameter Name="Arg30" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Arg1">Intervalo <b>requerido.</b> Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg2">Intervalo <b>requerido.</b> Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg3">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg4">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg5">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg6">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg7">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg8">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg9">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg10">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg11">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg12">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg13">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg14">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg15">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg16">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg17">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg18">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg19">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg20">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg21">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg22">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg23">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg24">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg25">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg26">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg27">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg28">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg29">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
-        <param name="Arg30">Objeto <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg1">Intervalo <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg2">Intervalo <b>requerido</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg3">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg4">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg5">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg6">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg7">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg8">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg9">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg10">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg11">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg12">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg13">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg14">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg15">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg16">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg17">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg18">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg19">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg20">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg21">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg22">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg23">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg24">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg25">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg26">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg27">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg28">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg29">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
+        <param name="Arg30">Objeto <b>obligatorio</b>. Se deben especificar al menos dos objetos <b>Range</b>.</param>
         <summary>Devuelve la unión de dos o más rangos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -11628,14 +11628,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si Microsoft Excel permite que las funciones definidas por el usuario en los complementos XLL se ejecuten en un clúster de cálculo.</summary>
-        <value><b>true</b> si Excel permite que las funciones definidas por el usuario en los complementos XLL se ejecuten en un clúster de cálculo; de lo contrario, <b>false</b>.</value>
+        <summary>Obtiene o establece si Microsoft Excel funciones definidas por el usuario en complementos XLL para ejecutarse en un clúster de proceso.</summary>
+        <value><b>true</b> si Excel funciones definidas por el usuario en complementos XLL para ejecutarse en un clúster de proceso; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si Excel permite que las funciones definidas por el usuario en los complementos XLL se ejecuten en un clúster de cálculo; de lo <b>contrario, false</b>. El valor de la propiedad corresponde a la casilla Permitir que las funciones XLL definidas por el usuario se ejecuten en un clúster de cálculo en Fórmulas de la categoría Avanzadas del cuadro de diálogo Opciones <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> de Excel.</para>
+            <b>true</b> si Excel funciones definidas por el usuario en complementos XLL para ejecutarse en un clúster de proceso; de lo <b>contrario es false</b>. El valor de la propiedad corresponde a la casilla Permitir que las funciones XLL definidas por el usuario se ejecuten en un clúster de cálculo en Fórmulas en la categoría Avanzadas del cuadro de diálogo Opciones de <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> Excel.</para>
           <para>
-            <b>Nota:</b>Para habilitar la propiedad, debe instalar un conector de clúster de informática de alto rendimiento <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> (HPC). El conector de clúster permite ejecutar funciones XLL seguras para clústeres de forma remota en un clúster HPC para aumentar el rendimiento.</para>
-          <para>Después de establecer la <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> propiedad, use la propiedad para especificar el conector de clúster <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> HPC que se usará.</para>
+            <b>Nota:</b>Para habilitar la propiedad, debe instalar un conector de clúster de informática de alto <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> rendimiento (HPC). El conector de clúster permite ejecutar funciones XLL seguras para clústeres de forma remota en un clúster HPC para aumentar el rendimiento.</para>
+          <para>Después de establecer la propiedad, use la propiedad para especificar el conector de <see cref="P:Microsoft.Office.Interop.Excel._Application.UseClusterConnector" /> <see cref="P:Microsoft.Office.Interop.Excel._Application.ClusterConnector" /> clúster de HPC que se usará.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -11662,7 +11662,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.UsedObjects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.UsedObjects" /> objeto que representa los objetos asignados en un libro.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.UsedObjects" /> objeto que representa objetos asignados en un libro.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -11877,7 +11877,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de versión de Microsoft Excel.</summary>
+        <summary>Devuelve el Microsoft Excel de versión.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -11944,7 +11944,7 @@
         <Parameter Name="Volatile" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Volatile">Optional <b>Object</b>. <b>True</b> para marcar la función como volátil. <b>False</b> para marcar la función como no volátil. El valor predeterminado es <b>True</b>.</param>
+        <param name="Volatile">Objeto <b>opcional</b>. <b>True</b> para marcar la función como volátil. <b>False</b> para marcar la función como no volátil. El valor predeterminado es <b>True</b>.</param>
         <summary>Marca como volátil una función definida por el usuario. Las funciones volátiles deben recalcularse cuando tenga lugar un cálculo en cualquier celda de la hoja de cálculo. Las funciones no volátiles solo se recalculan si cambian las variables de entrada. Este método no ejerce ningún efecto si no se encuentra dentro de una función definida por el usuario usada para calcular una celda de una hoja de cálculo.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -11975,11 +11975,11 @@
         <Parameter Name="Time" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Time">Objeto <b>requerido</b>. La hora a la que desea que la macro se reanude en formato de fecha de Microsoft Excel.</param>
-        <summary>Pausa una macro en ejecución hasta un momento especificado. Devuelve <b>True</b> si ha llegado la hora especificada.</summary>
+        <param name="Time">Objeto <b>obligatorio</b>. Hora en la que desea que la macro se reanude en Microsoft Excel de fecha.</param>
+        <summary>Hace una pausa de una macro en ejecución hasta la hora especificada. Devuelve <b>True</b> si ha llegado la hora especificada.</summary>
         <returns>To be added.</returns>
         <remarks><para>
-            <b>Importante:</b>El <b>método Wait</b> suspende toda la actividad de Microsoft Excel y puede impedir que realice otras operaciones en el equipo mientras está en vigor <b>Wait.</b> No obstante, los procesos en segundo plano, tales como la impresión y el recálculo continúan.</para>
+            <b>Importante:</b>El <b>método Wait</b> suspende toda Microsoft Excel actividad y puede impedir que realice otras operaciones en el equipo mientras <b>wait</b> está en vigor. No obstante, los procesos en segundo plano, tales como la impresión y el recálculo continúan.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -12009,8 +12009,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La propiedad, cuando se establece en True , genera una alerta si un programador intenta crear una nueva función <see cref="P:Microsoft.Office.Interop.Excel._Application.WarnOnFunctionNameConflict" /> con un nombre de función existente. <b></b> <b>Boolean</b> de lectura y escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <summary>La propiedad, cuando se establece en True , genera una alerta si un programador intenta crear una <see cref="P:Microsoft.Office.Interop.Excel._Application.WarnOnFunctionNameConflict" /> nueva función con un nombre de función existente. <b></b> <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -12037,7 +12037,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Watches</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que representa un rango del que se realiza un seguimiento cuando se vuelve a calcular <see cref="T:Microsoft.Office.Interop.Excel.Watches" /> la hoja de cálculo.</summary>
+        <summary>Devuelve un objeto que representa un rango al que se realiza un seguimiento cuando se vuelve a <see cref="T:Microsoft.Office.Interop.Excel.Watches" /> calcular la hoja de cálculo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -12269,7 +12269,7 @@
       <Docs>
         <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección que representa todas las hojas de cálculo del libro activo.</summary>
         <value>To be added.</value>
-        <remarks><para>Esta propiedad no devuelve hojas de macros; use la <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4MacroSheets" /> propiedad o la propiedad para devolver esas <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4IntlMacroSheets" /> hojas.</para>
+        <remarks><para>Esta propiedad no devuelve hojas de macros; utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4MacroSheets" /> propiedad o la propiedad para devolver esas <see cref="P:Microsoft.Office.Interop.Excel._Application.Excel4IntlMacroSheets" /> hojas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

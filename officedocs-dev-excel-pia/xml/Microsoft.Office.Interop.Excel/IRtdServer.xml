@@ -1,5 +1,5 @@
 <Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997659" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5913a9fd46bfb7d5f88e17acdfa800f3c9bcbcb95acd68db9963071ca4d3270b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514376" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRtdServer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRtdServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRtdServer" />
@@ -49,9 +49,9 @@
       </Parameters>
       <Docs>
         <param name="TopicID">Required <b>Integer</b>. Un valor único, asignado por Microsoft Excel, que identifica el tema.</param>
-        <param name="Strings">Objeto <b>requerido</b>. Matriz de cadenas de una dimensión que identifica el tema.</param>
+        <param name="Strings">Objeto <b>obligatorio</b>. Matriz de cadenas de una dimensión que identifica el tema.</param>
         <param name="GetNewValues"><b>Boolean</b> obligatorio. <b>True</b> para determinar si se deben obtener nuevos valores.</param>
-        <summary>Agrega nuevos temas desde un servidor de datos en tiempo real. Se <b>llama al método ConnectData</b> cuando se abre un archivo que contiene funciones de datos en tiempo real o cuando un usuario especifica una nueva fórmula que contiene la función <b>RTD.</b></summary>
+        <summary>Agrega nuevos temas desde un servidor de datos en tiempo real. Se llama al <b>método ConnectData</b> cuando se abre un archivo que contiene funciones de datos en tiempo real o cuando un usuario especifica una nueva fórmula que contiene la <b>función RTD.</b></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
       <Docs>
         <summary>Determina si el servidor de datos en tiempo real está todavía activo. Cero o un número negativo indican un error; un número positivo indica éxito.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Microsoft Excel llama al método Heartbeat si la propiedad ha transcurrido desde la última vez que se <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> llamó a Excel con el <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> método.</para>
+        <remarks><para>Se llama al método Heartbeat Microsoft Excel si la propiedad ha transcurrido desde la última vez que Excel se <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> llamó con el <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> método.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -134,10 +134,10 @@
         <Parameter Name="TopicCount" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicCount">Required <b>Integer</b>. El servidor RTD debe cambiar el valor del número de elementos de la <paramref name="TopicCount" /> matriz devuelta.</param>
+        <param name="TopicCount">Required <b>Integer</b>. El servidor RTD debe cambiar el valor de la a <paramref name="TopicCount" /> la cantidad de elementos de la matriz devuelta.</param>
         <summary>Microsoft Excel realiza una llamada a este método para obtener nuevos datos.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Los datos devueltos a Excel son <b>un objeto que</b> contiene una matriz bidimensional. La primera dimensión representa la lista de identificadores de temas. La segunda dimensión representa los valores asociados a los identificadores de temas.</para>
+        <remarks><para>Los datos devueltos a Excel es <b>un objeto Object</b> que contiene una matriz bidimensional. La primera dimensión representa la lista de identificadores de temas. La segunda dimensión representa los valores asociados a los identificadores de temas.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
       </Parameters>
       <Docs>
         <param name="CallbackObject">Objeto <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> obligatorio. Objeto callback.</param>
-        <summary>Se <b>llama al método ServerStart</b> inmediatamente después de crear una instancia de un servidor de datos en tiempo real. El valor negativo o cero indica un error al iniciar el servidor; el valor positivo indica éxito.</summary>
+        <summary>Se <b>llama al método ServerStart</b> inmediatamente después de crear una instancia de un servidor de datos en tiempo real. El valor negativo o cero indica un error al iniciar el servidor; el valor positivo indica el éxito.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
