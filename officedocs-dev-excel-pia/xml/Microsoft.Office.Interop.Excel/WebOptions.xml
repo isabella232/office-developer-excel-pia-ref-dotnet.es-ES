@@ -1,5 +1,5 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="daab179c046c8ae3d7a70032ace37b8eb5d45e81" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009271" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4931b180d1a90c7fc24a9cf3ce958feee9c52b65b4f90806444ef2b8410dbdda" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512423" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
@@ -19,8 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Contiene los atributos de libro que Microsoft Excel utiliza cuando se guarda un documento como página web o se abre una página web.</summary>
-    <remarks><para>Puede devolver o establecer atributos de aplicación (globales) o de libro. (Tenga en cuenta que los valores de atributo pueden ser diferentes de un libro a otro, según el valor de atributo en el momento en que se guardó el libro). La configuración de atributos en el nivel de libro invalida la configuración de atributos de nivel de aplicación. Los atributos de nivel de aplicación se incluyen en el <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto.</para>
-      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> propiedad para devolver el objeto <b>WebOptions</b> .</para>
+    <remarks><para>Puede devolver o establecer atributos de aplicación (globales) o de libro. (Tenga en cuenta que los valores de atributo pueden ser diferentes de un libro a otro, según el valor de atributo en el momento en que se guardó el libro). La configuración de atributo de nivel de libro invalida la configuración de atributos de nivel de aplicación. Los atributos de nivel de aplicación se encuentran en el <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> propiedad para devolver el objeto <b>WebOptions.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +142,7 @@
       <Docs>
         <summary>Es <b>True</b> si se descargan los componentes web de Microsoft Office necesarios al ver el documento guardado en un explorador web, pero sólo cuando dichos componentes aún no están instalados. Es <b>False</b> si no se descargan los componentes. El valor predeterminado es <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Puede establecer la propiedad en una dirección URL central (en la intranet o web) o una ruta de acceso (local o de red) a una ubicación desde la que los usuarios autorizados pueden descargar componentes al ver el <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> documento guardado. La ruta de acceso debe ser válida y debe apuntar a una ubicación que contenga los componentes necesarios, y el usuario debe tener una licencia de Microsoft Office válida.</para>
+        <remarks><para>Puede establecer la propiedad en una dirección URL central (en la intranet o web) o una ruta de acceso (local o de red) a una ubicación desde la que los usuarios autorizados puedan descargar componentes al ver el <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> documento guardado. La ruta de acceso debe ser válida y debe apuntar a una ubicación que contenga los componentes necesarios y el usuario debe tener una licencia Microsoft Office válida.</para>
           <para>Los componentes Web de Office agregan interactividad a los documentos guardados como páginas Web. Si se explora una página Web con el explorador de un equipo que no tiene estos componentes instalados, las partes interactivas de la página aparecen estáticas.</para>
           <para> </para></remarks>
       </Docs>
@@ -202,11 +202,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el sufijo de carpeta que Microsoft Excel usa al guardar un documento como página Web, usar nombres de archivo largos y elegir guardar los archivos de apoyo en una carpeta independiente (es decir, si las propiedades y están establecidas en <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</summary>
+        <summary>Devuelve el sufijo de carpeta que Microsoft Excel usa al guardar un documento como una página web, usar nombres de archivo largos y elegir guardar archivos compatibles en una carpeta independiente (es decir, si las propiedades y están establecidas en <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</summary>
         <value>To be added.</value>
-        <remarks><para>Los documentos recién creados usan el sufijo devuelto por <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> la propiedad del <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto. El valor de la <b>propiedad FolderSuffix</b> del objeto puede ser diferente del del objeto <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> <b>DefaultWebOptions</b> si el documento se editó anteriormente en una versión de idioma diferente de Microsoft Excel. Puede usar el método <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> para cambiar el sufijo al idioma que está usando actualmente en Microsoft Office.</para>
+        <remarks><para>Los documentos recién creados usan el sufijo devuelto por la <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> objeto. El valor de la <b>propiedad FolderSuffix</b> del objeto puede ser diferente del del objeto <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> <b>DefaultWebOptions</b> si el documento se editó anteriormente en una versión de idioma diferente de Microsoft Excel. Puede usar el método <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> para cambiar el sufijo al idioma que está usando actualmente en Microsoft Office.</para>
           <para>De forma predeterminada, el nombre de la carpeta auxiliar es el nombre de la página Web más un carácter de subrayado (_), un punto (.) o un guión (-) y la palabra "archivos" en el idioma de la versión de Excel en que se guardó el archivo como página Web. Por ejemplo, suponga que usa la versión de Excel en neerlandés para guardar un archivo denominado "Page1" como página Web. El nombre predeterminado de la carpeta auxiliar es Page1_bestanden.</para>
-          <para>En la tabla siguiente se enumeran todas las versiones de idioma de Office y se proporciona su valor <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> de propiedad correspondiente y sufijo de carpeta. En los idiomas no incluidos en la tabla, se usa el sufijo ".files".</para>
+          <para>En la tabla siguiente se enumeran cada versión de idioma Office y se proporciona su valor <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> de propiedad correspondiente y sufijo de carpeta. En los idiomas no incluidos en la tabla, se usa el sufijo ".files".</para>
           <list type="table">
             <item>
               <term>Árabe</term>
@@ -214,7 +214,7 @@
               <description>.files</description>
             </item>
             <item>
-              <term>Euskera</term>
+              <term>Basque</term>
               <description>1069</description>
               <description>_fitxategiak</description>
             </item>
@@ -435,7 +435,7 @@
       <Docs>
         <summary>Devuelve o establece la dirección URL (de intranet o de Internet) o la ruta de acceso (local o de red) centrales en la ubicación desde la que los usuarios autorizados pueden descargar componentes web de Microsoft Office al ver el documento guardado. El valor predeterminado es la ruta de acceso de instalación local o de red para Microsoft Office.</summary>
         <value>To be added.</value>
-        <remarks><para>Los componentes web de Office se descargan automáticamente con la página web especificada si la propiedad está establecida en True , los componentes aún no están instalados, la ruta de acceso es válida y apunta a una ubicación que contiene los componentes necesarios y el usuario tiene una licencia <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> de Microsoft Office válida. <b></b></para>
+        <remarks><para>Office Los componentes web se descargan automáticamente con la página web especificada si la propiedad está establecida en True, los componentes no están instalados, la ruta de acceso es válida y apunta a una ubicación que contiene los componentes necesarios y el usuario tiene una licencia de <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> Microsoft Office válida. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -467,9 +467,9 @@
       <Docs>
         <summary><b>True</b> si todos los archivos auxiliares, como texturas de fondo y gráficos, se organizan en una carpeta independiente cuando se guarda el documento especificado como página Web. <b>False</b> si los archivos auxiliares se guardan en la misma carpeta que la página Web. El valor predeterminado es <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>La nueva carpeta se crea en la carpeta donde guardó la página Web y se le asigna el nombre del documento. Si se usan nombres largos de archivo, se agrega un sufijo al nombre de carpeta. La propiedad devuelve el sufijo de carpeta para la compatibilidad con el idioma seleccionado o instalado, o <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> el sufijo de carpeta predeterminado.</para>
+        <remarks><para>La nueva carpeta se crea en la carpeta donde guardó la página Web y se le asigna el nombre del documento. Si se usan nombres largos de archivo, se agrega un sufijo al nombre de carpeta. La propiedad devuelve el sufijo de carpeta para la compatibilidad de idioma que ha seleccionado o instalado, o el <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> sufijo de carpeta predeterminado.</para>
           <para>Si se guarda un documento guardado anteriormente con la propiedad <b>OrganizeInFolder</b> establecida con un valor diferente, Microsoft Excel mueve automáticamente los archivos auxiliares fuera de la carpeta o a ella, según corresponda.</para>
-          <para>Si no usa nombres de archivo largos (es decir, si la propiedad está establecida en False), Microsoft Excel guarda automáticamente los archivos compatibles en <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> una carpeta independiente. <b></b> No se pueden guardar los archivos en la misma carpeta que la página Web.</para>
+          <para>Si no usa nombres de archivo largos (es decir, si la propiedad está establecida en False), Microsoft Excel guardará automáticamente los archivos compatibles en <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> una carpeta independiente. <b></b> No se pueden guardar los archivos en la misma carpeta que la página Web.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -530,7 +530,7 @@
         <summary>Devuelve o establece la densidad (en píxeles por pulgada) de imágenes y celdas de tablas de una página web. El rango de valores suele estar entre 19 y 480, y los valores habituales de los tamaños más utilizados de pantalla son 72, 96 y 120. El valor predeterminado es 96.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad determina el tamaño de las imágenes y celdas de la página Web especificada, con relación al tamaño del texto, cuando se ve el documento guardado en un explorador Web. Las dimensiones físicas de la imagen o la celda obtenida son el resultado de multiplicar las dimensiones originales (en pulgadas) por el número de píxeles por pulgada.</para>
-          <para>La propiedad se <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> usa para establecer el tamaño de pantalla óptimo para los exploradores web de destino.</para>
+          <para>La propiedad se usa para establecer el tamaño de pantalla <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> óptimo para los exploradores web de destino.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -562,7 +562,7 @@
       <Docs>
         <summary><b>True</b> si se usan hojas de estilos en cascada (CSS) al ver un documento guardado en un explorador Web el formato de fuente. <b>False</b> si se usan etiquetas FONT HTML y hojas de estilos &lt; &gt; en cascada. El valor predeterminado es <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Microsoft Excel crea un archivo de hoja de estilos en cascada y lo guarda en la carpeta especificada o en la misma carpeta que la página Web, según el valor de la <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> propiedad.</para>
+        <remarks><para>Microsoft Excel crea un archivo de hoja de estilos en cascada y lo guarda en la carpeta especificada o en la misma carpeta que la página web, según el valor de la <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> propiedad.</para>
           <para>Conviene establecer esta propiedad en <b>True</b> si el explorador Web es compatible con las hojas de estilo en cascada, ya que de esta forma se tiene un control más preciso sobre el diseño y el formato de la página Web y su aspecto será más parecido al documento (como aparece en Microsoft Excel).</para>
           <para> </para></remarks>
       </Docs>
@@ -595,7 +595,7 @@
       <Docs>
         <summary><b>True</b> si no se generan archivos de imagen a partir de dibujos cuando se guarda un documento como una página Web. <b>False</b> si se generan imágenes. El valor predeterminado es <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Puede reducir el tamaño de los archivos si no genera imágenes para objetos de dibujo si el explorador web admite el lenguaje de marcado de vectores (VML). Debe establecer la propiedad <b>RelyOnVML</b> en <b>True</b> si está destinado a un explorador compatible con VML. Para exploradores no compatibles con VML, la imagen no se muestra al ver una página Web guardada con esta propiedad activada.</para>
+        <remarks><para>Puede reducir el tamaño de los archivos al no generar imágenes para objetos de dibujo si el explorador web admite el lenguaje de marcado de vectores (VML). Debe establecer la <b>propiedad RelyOnVML</b> en <b>True</b> si está destinado a un explorador compatible con VML. Para exploradores no compatibles con VML, la imagen no se muestra al ver una página Web guardada con esta propiedad activada.</para>
           <para>Por ejemplo, no debe generar imágenes si su página Web usa archivos de imagen generados anteriormente o si la ubicación en la que guarda el documento es distinta de la ubicación de la página en el servidor Web.</para>
           <para> </para></remarks>
       </Docs>
@@ -626,7 +626,7 @@
         <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece una constante que especifica el tamaño de pantalla mínimo ideal (ancho por alto, en píxeles) que se debe usar al ver el documento guardado en un <see cref="T:Microsoft.Office.Core.MsoScreenSize" /> explorador web. La constante predeterminada es <b>msoScreenSize800x600</b>.</summary>
+        <summary>Devuelve o establece una constante que especifica el tamaño mínimo de pantalla ideal (ancho por alto, en píxeles) que debe usar al ver el documento guardado <see cref="T:Microsoft.Office.Core.MsoScreenSize" /> en un explorador web. La constante predeterminada es <b>msoScreenSize800x600</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -684,8 +684,8 @@
       <Parameters />
       <Docs>
         <summary>Establece el sufijo de carpeta para el documento especificado, asignando el sufijo predeterminado del idioma que haya seleccionado o instalado.</summary>
-        <remarks><para>Microsoft Excel usa el sufijo de carpeta cuando se guarda un documento como página web, se usan nombres de archivo largos y se elige guardar los archivos de apoyo en una carpeta independiente (es decir, si las propiedades y están establecidas en <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</para>
-          <para>El sufijo aparece en el nombre de carpeta después del nombre del documento. Por ejemplo, si el documento tiene el nombre "Libro1" y el idioma seleccionado es español, el nombre de la carpeta será Libro1_archivos. Los sufijos de carpeta disponibles se enumeran en el <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> tema de propiedades.</para>
+        <remarks><para>Microsoft Excel usa el sufijo de carpeta al guardar un documento como una página web, usar nombres de archivo largos y elegir guardar archivos compatibles en una carpeta independiente (es decir, si las propiedades y están establecidas en <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b>True</b>).</para>
+          <para>El sufijo aparece en el nombre de carpeta después del nombre del documento. Por ejemplo, si el documento tiene el nombre "Libro1" y el idioma seleccionado es español, el nombre de la carpeta será Libro1_archivos. Los sufijos de carpeta disponibles se enumeran en el <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> tema de la propiedad.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -717,7 +717,7 @@
       <Docs>
         <summary><b>True</b> si se usan nombres largos de archivo al guardar el documento como página Web. Se utiliza <b>false</b> si no se usan nombres largos de archivo y el formato de nombre de archivo DOS (8.3). El valor predeterminado es <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks><para>Si no se usan nombres largos de archivo y el documento tiene archivos auxiliares, Microsoft Excel organiza automáticamente estos archivos en una carpeta independiente. De lo contrario, use <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> la propiedad para determinar si los archivos compatibles están organizados en una carpeta independiente.</para>
+        <remarks><para>Si no se usan nombres largos de archivo y el documento tiene archivos auxiliares, Microsoft Excel organiza automáticamente estos archivos en una carpeta independiente. De lo contrario, use la propiedad para determinar si los archivos <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> compatibles están organizados en una carpeta independiente.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

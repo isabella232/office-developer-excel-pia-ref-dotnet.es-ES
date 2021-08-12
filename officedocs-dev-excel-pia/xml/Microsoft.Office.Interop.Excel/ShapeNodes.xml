@@ -1,5 +1,5 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Excel.ShapeNodes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fcefaa651f73c2e96e8b51711d14e2e3ee8df786" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010328" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b12eb0ce8ec68bd7c509f6c01d4343b578193c98db1ac57da53fadb47638a938" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507789" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNodes implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShapeNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNodes&#xA;Implements _IMsoDispObj, IEnumerable" />
@@ -27,9 +27,9 @@
   <Docs>
     <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.ShapeNode" /> objetos de la forma libre especificada.</summary>
     <remarks><para>Cada objeto <b>ShapeNode</b> representa un nodo entre los segmentos de una forma libre o un punto de control de un segmento curvo de una forma libre. Puede crear una forma libre manualmente o mediante los <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> métodos and.</para>
-      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> propiedad para devolver la colección <b>ShapeNodes</b> .</para>
-      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para crear un nuevo nodo y agregarlo a la colección <b>ShapeNodes</b> .</para>
-      <para>Utilice <b>Nodes</b>( <paramref name="index" /> ), donde es el número de índice del <paramref name="index" /> nodo, para devolver un solo <b>objeto ShapeNode</b> .</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> propiedad para devolver la colección <b>ShapeNodes.</b></para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para crear un nuevo nodo y agregarlo a la colección <b>ShapeNodes.</b></para>
+      <para>Use <b>Nodes</b>( <paramref name="index" /> ), donde es el número de índice de <paramref name="index" /> nodo, para devolver un solo <b>objeto ShapeNode.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -59,7 +59,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,12 +217,12 @@
         <param name="Index">Required <b>Integer</b>. Número del nodo de forma detrás del cual va a insertarse un nuevo nodo.</param>
         <param name="SegmentType">Obligatorio <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> . Tipo de segmento.</param>
         <param name="EditingType">Obligatorio <see cref="T:Microsoft.Office.Core.MsoEditingType" /> . El tipo de modificación.</param>
-        <param name="X1">Obligatorio <b>único</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingAuto</b>, este argumento especifica la distancia horizontal, medida en puntos, desde la esquina superior izquierda del documento hasta el punto final del nuevo segmento. Si el nodo nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia horizontal medida en puntos desde la esquina superior izquierda del documento hasta el primer punto de control para el nuevo segmento.</param>
-        <param name="Y1">Obligatorio <b>único</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingAuto</b>, este argumento especifica la distancia vertical medida en puntos desde la esquina superior izquierda del documento hasta el punto final del nuevo segmento. Si el nodo nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia vertical medida en puntos desde la esquina superior izquierda del documento hasta el primer punto de control para el nuevo segmento.</param>
-        <param name="X2">Opcional <b>único</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia horizontal medida en puntos desde la esquina superior izquierda del documento hasta el segundo punto de control para el nuevo segmento. Si el <paramref name="EditingType" /> segmento nuevo es <b>msoEditingAuto,</b>no especifique un valor para este argumento.</param>
-        <param name="Y2">Opcional <b>único</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia vertical medida en puntos desde la esquina superior izquierda del documento hasta el segundo punto de control para el nuevo segmento. Si el <paramref name="EditingType" /> segmento nuevo es <b>msoEditingAuto,</b>no especifique un valor para este argumento.</param>
-        <param name="X3">Opcional <b>único</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia horizontal medida en puntos desde la esquina superior izquierda del documento hasta el punto final del nuevo segmento. Si el <paramref name="EditingType" /> segmento nuevo es <b>msoEditingAuto,</b>no especifique un valor para este argumento.</param>
-        <param name="Y3">Opcional <b>único</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia vertical medida en puntos desde la esquina superior izquierda del documento hasta el punto final del nuevo segmento. Si el <paramref name="EditingType" /> segmento nuevo es <b>msoEditingAuto,</b>no especifique un valor para este argumento.</param>
+        <param name="X1">Single <b>obligatorio</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingAuto</b>, este argumento especifica la distancia horizontal, medida en puntos, desde la esquina superior izquierda del documento hasta el punto final del nuevo segmento. Si el nodo nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia horizontal medida en puntos desde la esquina superior izquierda del documento hasta el primer punto de control del nuevo segmento.</param>
+        <param name="Y1">Single <b>obligatorio</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingAuto</b>, este argumento especifica la distancia vertical medida en puntos desde la esquina superior izquierda del documento hasta el punto final del nuevo segmento. Si el nodo nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia vertical medida en puntos desde la esquina superior izquierda del documento hasta el primer punto de control del nuevo segmento.</param>
+        <param name="X2">Single <b>opcional</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia horizontal medida en puntos desde la esquina superior izquierda del documento hasta el segundo punto de control del nuevo segmento. Si el <paramref name="EditingType" /> segmento nuevo es <b>msoEditingAuto</b>, no especifique un valor para este argumento.</param>
+        <param name="Y2">Single <b>opcional</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia vertical medida en puntos desde la esquina superior izquierda del documento hasta el segundo punto de control del nuevo segmento. Si el <paramref name="EditingType" /> segmento nuevo es <b>msoEditingAuto</b>, no especifique un valor para este argumento.</param>
+        <param name="X3">Single <b>opcional</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia horizontal medida en puntos desde la esquina superior izquierda del documento hasta el punto final del nuevo segmento. Si el <paramref name="EditingType" /> segmento nuevo es <b>msoEditingAuto</b>, no especifique un valor para este argumento.</param>
+        <param name="Y3">Single <b>opcional</b>. Si el segmento nuevo es <paramref name="EditingType" /> <b>msoEditingCorner</b>, este argumento especifica la distancia vertical medida en puntos desde la esquina superior izquierda del documento hasta el punto final del nuevo segmento. Si el <paramref name="EditingType" /> segmento nuevo es <b>msoEditingAuto</b>, no especifique un valor para este argumento.</param>
         <summary>Inserta un nodo en una forma libre.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +250,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Número de índice o nombre del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -279,7 +279,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <summary>Devuelve el objeto primario para el objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,8 +341,8 @@
       </Parameters>
       <Docs>
         <param name="Index">Required <b>Integer</b>. Nodo cuya posición va a establecerse.</param>
-        <param name="X1">Obligatorio <b>único</b>. La posición (en puntos) del nuevo nodo con respecto a la esquina superior izquierda del documento.</param>
-        <param name="Y1">Obligatorio <b>único</b>. La posición (en puntos) del nuevo nodo con respecto a la esquina superior izquierda del documento.</param>
+        <param name="X1">Single <b>obligatorio</b>. La posición (en puntos) del nuevo nodo con respecto a la esquina superior izquierda del documento.</param>
+        <param name="Y1">Single <b>obligatorio</b>. La posición (en puntos) del nuevo nodo con respecto a la esquina superior izquierda del documento.</param>
         <summary>Establece la ubicación del nodo especificado.</summary>
         <remarks><para>Tenga en cuenta que, según el tipo de modificación del nodo, este método puede afectar a la posición de los nodos adyacentes.</para>
           <para> </para></remarks>

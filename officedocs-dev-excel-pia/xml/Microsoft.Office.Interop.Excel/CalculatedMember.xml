@@ -1,5 +1,5 @@
 <Type Name="CalculatedMember" FullName="Microsoft.Office.Interop.Excel.CalculatedMember">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7dbe58948b0a319d6163ef1a376e3134b0cce7cd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006058" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMember" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1c86f7dc26610f37d139c110969b898dc8368015b8738a8147643578eabe1ba9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508132" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMember" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedMember" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedMember" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedMember" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa los campos calculados y los elementos calculados de las tablas dinámicas con orígenes de datos OLAP (Online Analytical Processing).</summary>
-    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> método o la propiedad de la colección para devolver un objeto <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> <b>CalculatedMember</b> .</para>
-      <para>Con un <b>objeto CalculatedMember</b> puede comprobar la validez de un campo calculado o elemento de una tabla dinámica mediante la <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" /> propiedad.</para>
+    <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> método o la propiedad de la colección para devolver un objeto <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> <b>CalculatedMember.</b></para>
+      <para>Con un <b>objeto CalculatedMember</b> puede comprobar la validez de un campo calculado o elemento en una tabla dinámica mediante la <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" /> propiedad.</para>
       <para>
-        <b>Nota</b>  La <b>propiedad IsValid</b> devolverá <b>True</b> si la tabla dinámica no está conectada actualmente al origen de datos. Utilice el <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" /> método antes de probar la propiedad <b>IsValid.</b></para>
+        <b>Nota</b>  La <b>propiedad IsValid</b> devolverá <b>True</b> si la tabla dinámica no está conectada actualmente al origen de datos. Use el <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" /> método antes de probar la propiedad <b>IsValid.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -83,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación de Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación con la que se creó el objeto.</summary>
         <value>To be added.</value>
-        <remarks><para>Si el objeto se creó en Excel, esta propiedad devuelve la cadena XCEL, que es equivalente al número hexadecimal 5843454C.</para>
+        <remarks><para>Si el objeto se creó en Excel, esta propiedad devuelve la cadena XCEL, que equivale al número hexadecimal 5843454C.</para>
           <para>La <b>propiedad Creator</b> está diseñada para usarse en Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Excel tiene el código de creador XCEL.</para>
           <para> </para></remarks>
       </Docs>
@@ -140,7 +140,7 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <remarks><para>Solo puede eliminar campos de cubo si ha creado los campos de cubo usted mismo mediante el método <b>CalculatedMember.Add</b> con el <paramref name="xlCalculatedSet" /> argumento.</para>
+        <remarks><para>Solo puede eliminar campos de cubo si ha creado los campos de cubo usted mismo mediante el <b>método CalculatedMember.Add</b> con el <paramref name="xlCalculatedSet" /> argumento.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -167,11 +167,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el nombre de la carpeta para mostrar de un conjunto con nombre.</summary>
-        <value>Nombre de la carpeta para mostrar de un conjunto con nombre.</value>
+        <summary>Obtiene el nombre de carpeta para mostrar de un conjunto con nombre.</summary>
+        <value>Nombre de carpeta para mostrar de un conjunto con nombre.</value>
         <remarks><para>Solo lectura.</para>
-          <para>El valor de esta propiedad corresponde al valor opcional que se puede especificar en el cuadro de texto De la carpeta Mostrar del cuadro de diálogo Nuevo/Modificar conjunto cuando se crea o edita un conjunto con nombre. Para crear un nuevo conjunto con nombre a partir de datos en una tabla dinámica basada en un origen de datos OLAP, haga clic en la tabla dinámica, haga clic en Campo, Elementos, Conjuntos en la ficha Opciones de herramientas de tabla dinámica de la cinta de opciones, haga clic en Administrar conjuntos, haga clic en Nuevo en el cuadro de diálogo Administrador de conjuntos y, a continuación, haga clic en Crear conjunto mediante &amp; MDX. Esto muestra el cuadro de diálogo Nuevo conjunto, que contiene el cuadro de texto Carpeta de visualización. De forma similar, si selecciona un conjunto con nombre existente en el cuadro de diálogo Administrador de conjunto y, a continuación, hace clic en Editar, aparecerá el cuadro de diálogo Modificar conjunto.</para>
-          <para>Esta propiedad junto con las propiedades and solo se pueden leer para conjuntos con nombre (que están representados por objetos <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ). Estas propiedades no se pueden leer para miembros o medidas calculados (que se representan mediante <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedMember" /> ). Si intenta leer estas propiedades para miembros o medidas calculados, se generará un error en tiempo de ejecución.</para>
+          <para>El valor de esta propiedad corresponde al valor opcional que se puede especificar en el cuadro de texto Carpeta de presentación del cuadro de diálogo Nuevo/Modificar conjunto cuando se crea o edita un conjunto con nombre. Para crear un nuevo conjunto con nombre a partir de datos en una tabla dinámica basada en un origen de datos OLAP, haga clic en la tabla dinámica, haga clic en Campo, Elementos, Conjuntos en la ficha Opciones de herramientas de tabla dinámica de la cinta de opciones, haga clic en Administrar conjuntos, haga clic en Nuevo en el cuadro de diálogo Administrador de conjuntos y, a continuación, haga clic en Crear conjunto con &amp; MDX. Esto muestra el cuadro de diálogo Nuevo conjunto, que contiene el cuadro de texto Carpeta de visualización. De forma similar, si selecciona un conjunto con nombre existente en el cuadro de diálogo Administrador de conjunto y, a continuación, hace clic en Editar, aparecerá el cuadro de diálogo Modificar conjunto.</para>
+          <para>Esta propiedad junto con las propiedades and solo se pueden leer para conjuntos con nombre (que se representan mediante <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ). Estas propiedades para no se pueden leer para miembros calculados o medidas (que se representan mediante <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedMember" /> ). Si intenta leer estas propiedades para miembros o medidas calculados, se generará un error en tiempo de ejecución.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -202,9 +202,9 @@
         <value><b>true</b> si el conjunto con nombre especificado se actualiza con cada actualización; de lo contrario, <b>false</b>.</value>
         <remarks><para>Solo lectura.</para>
           <para>
-            <b>true</b> si el conjunto con nombre se actualiza con cada actualización; de lo <b>contrario, false</b>.</para>
-          <para>El valor de esta propiedad corresponde a la configuración del conjunto Recalcular con cada casilla de actualización del cuadro de diálogo Nuevo/Modificar conjunto que está disponible cuando se crea o edita un conjunto con nombre. Para crear un nuevo conjunto con nombre a partir de datos en una tabla dinámica basada en un origen de datos OLAP, haga clic en la tabla dinámica, haga clic en Campo, Elementos, Conjuntos en la ficha Opciones de herramientas de tabla dinámica de la cinta de opciones, haga clic en Administrar conjuntos, haga clic en Nuevo en el cuadro de diálogo Administrador de conjuntos y, a continuación, haga clic en Crear conjunto mediante &amp; MDX. Esto muestra el cuadro de diálogo Nuevo conjunto, que contiene la casilla de verificación Volver a calcular el conjunto con cada actualización. De forma similar, si selecciona un conjunto con nombre existente en el cuadro de diálogo Administrador de conjunto y, a continuación, hace clic en Editar, aparecerá el cuadro de diálogo Modificar conjunto.</para>
-          <para>Esta propiedad junto con las propiedades and solo se pueden leer para conjuntos con nombre (que están representados por objetos <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ). Estas propiedades no se pueden leer para miembros o medidas calculados (que se representan mediante <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedMember" /> ). Si intenta leer estas propiedades para miembros o medidas calculados, se generará un error en tiempo de ejecución.</para>
+            <b>true</b> si el conjunto con nombre se actualiza con cada actualización; de lo <b>contrario es false</b>.</para>
+          <para>El valor de esta propiedad corresponde a la configuración de la casilla Recalcular conjunto con cada actualización del cuadro de diálogo Nuevo/Modificar conjunto que está disponible cuando se crea o edita un conjunto con nombre. Para crear un nuevo conjunto con nombre a partir de datos en una tabla dinámica basada en un origen de datos OLAP, haga clic en la tabla dinámica, haga clic en Campo, Elementos, Conjuntos en la ficha Opciones de herramientas de tabla dinámica de la cinta de opciones, haga clic en Administrar conjuntos, haga clic en Nuevo en el cuadro de diálogo Administrador de conjuntos y, a continuación, haga clic en Crear conjunto con &amp; MDX. Esto muestra el cuadro de diálogo Nuevo conjunto, que contiene la casilla de verificación Volver a calcular el conjunto con cada actualización. De forma similar, si selecciona un conjunto con nombre existente en el cuadro de diálogo Administrador de conjunto y, a continuación, hace clic en Editar, aparecerá el cuadro de diálogo Modificar conjunto.</para>
+          <para>Esta propiedad junto con las propiedades and solo se pueden leer para conjuntos con nombre (que se representan mediante <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ). Estas propiedades para no se pueden leer para miembros calculados o medidas (que se representan mediante <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedMember" /> ). Si intenta leer estas propiedades para miembros o medidas calculados, se generará un error en tiempo de ejecución.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -238,8 +238,8 @@
         <value><b>true</b> si los elementos de todos los niveles de la jerarquía del conjunto con nombre especificado se muestran en el mismo campo de un informe de tabla dinámica basado en un cubo OLAP; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si los elementos de todos los niveles de la jerarquía del conjunto con nombre se muestran en el mismo campo; de lo <b>contrario, false</b>.</para>
-          <para>El valor de esta propiedad se corresponde con el valor de la casilla de verificación Mostrar elementos de distintos niveles en campos separados del cuadro de diálogo Nuevo/Modificar conjunto cuando se crea o edita un conjunto con nombre. Para crear un nuevo conjunto con nombre a partir de datos en una tabla dinámica basada en un origen de datos OLAP, haga clic en la tabla dinámica, haga clic en Campo, Elementos, Conjuntos en la ficha Opciones de herramientas de tabla dinámica de la cinta de opciones, haga clic en Administrar conjuntos, haga clic en Nuevo en el cuadro de diálogo Administrador de conjuntos y, a continuación, haga clic en Crear conjunto mediante &amp; MDX. Esto muestra el cuadro de diálogo Nuevo conjunto, que contiene la casilla de verificación Mostrar elementos de distintos niveles en campos separados. De forma similar, si selecciona un conjunto con nombre existente en el cuadro de diálogo Administrador de conjunto y, a continuación, hace clic en Editar, aparecerá el cuadro de diálogo Modificar conjunto.</para>
+            <b>true</b> si los elementos de todos los niveles de la jerarquía del conjunto con nombre se muestran en el mismo campo; de lo <b>contrario es false</b>.</para>
+          <para>El valor de esta propiedad se corresponde con el valor de la casilla de verificación Mostrar elementos de distintos niveles en campos separados del cuadro de diálogo Nuevo/Modificar conjunto cuando se crea o edita un conjunto con nombre. Para crear un nuevo conjunto con nombre a partir de datos en una tabla dinámica basada en un origen de datos OLAP, haga clic en la tabla dinámica, haga clic en Campo, Elementos, Conjuntos en la ficha Opciones de herramientas de tabla dinámica de la cinta de opciones, haga clic en Administrar conjuntos, haga clic en Nuevo en el cuadro de diálogo Administrador de conjuntos y, a continuación, haga clic en Crear conjunto con &amp; MDX. Esto muestra el cuadro de diálogo Nuevo conjunto, que contiene la casilla de verificación Mostrar elementos de distintos niveles en campos separados. De forma similar, si selecciona un conjunto con nombre existente en el cuadro de diálogo Administrador de conjunto y, a continuación, hace clic en Editar, aparecerá el cuadro de diálogo Modificar conjunto.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -266,12 +266,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la fórmula del miembro en sintaxis de expresiones multidimensionales (MDX).</summary>
+        <summary>Devuelve la fórmula del miembro en la sintaxis de expresiones multidimensionales (MDX).</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad no está disponible para orígenes de datos OLAP.</para>
           <para>Si la celda contiene una constante, esta propiedad devolverá dicha constante. Si la celda está vacía, la <b>propiedad Formula</b> devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad <b>Formula</b> devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual).</para>
           <para>Si se define el valor o la fórmula de una celda como una fecha, Microsoft Excel comprueba si dicha celda ya tiene uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corta predeterminado.</para>
-          <para>Si el rango es de una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. De forma similar, puede colocar la fórmula en una matriz.</para>
+          <para>Si el intervalo es de una o dos dimensiones, puede establecer la fórmula en una matriz de las mismas dimensiones. Del mismo modo, puede colocar la fórmula en una matriz.</para>
           <para>Si se define la fórmula para un rango de varias celdas, se rellenan todas las celdas del rango con la fórmula.</para>
           <para> </para></remarks>
       </Docs>
@@ -303,12 +303,12 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece si se deben ordenar y quitar duplicados al mostrar la jerarquía del conjunto con nombre especificado en un informe de tabla dinámica basado en un cubo OLAP.</summary>
-        <value><b>true</b> si los duplicados deben ordenarse y quitarse al mostrar la jerarquía del conjunto con nombre especificado en un informe de tabla dinámica basado en un cubo OLAP; de lo contrario, <b>false</b>.</value>
+        <value><b>true</b> si se deben ordenar y quitar duplicados al mostrar la jerarquía del conjunto con nombre especificado en un informe de tabla dinámica basado en un cubo OLAP; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si la jerarquía del conjunto con nombre se muestra ordenada con duplicados quitados; de lo <b>contrario, false</b>.</para>
-          <para>El valor de esta propiedad se corresponde con la casilla de verificación Ordenar y quitar duplicados del conjunto automáticamente del cuadro de diálogo Nuevo/Modificar conjunto cuando se crea o edita un conjunto con nombre. Para crear un nuevo conjunto con nombre a partir de datos en una tabla dinámica basada en un origen de datos OLAP, haga clic en la tabla dinámica, haga clic en Campo, Elementos, Conjuntos en la ficha Opciones de herramientas de tabla dinámica de la cinta de opciones, haga clic en Administrar conjuntos, haga clic en Nuevo en el cuadro de diálogo Administrador de conjuntos y, a continuación, haga clic en Crear conjunto mediante &amp; MDX. Esto muestra el cuadro de diálogo Nuevo conjunto, que contiene la casilla de verificación Ordenar y quitar duplicados del conjunto automáticamente. De forma similar, si selecciona un conjunto con nombre existente en el cuadro de diálogo Administrador de conjunto y, a continuación, hace clic en Editar, aparecerá el cuadro de diálogo Modificar conjunto.</para>
-          <para>Esta propiedad junto con las propiedades and solo se pueden leer para conjuntos con nombre (que están representados por objetos <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ). Estas propiedades no se pueden leer para miembros o medidas calculados (que se representan mediante <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedMember" /> ). Si intenta leer estas propiedades para miembros o medidas calculados, se generará un error en tiempo de ejecución.</para>
+            <b>true</b> si la jerarquía del conjunto con nombre se muestra como ordenada con duplicados quitados; de lo <b>contrario es false</b>.</para>
+          <para>El valor de esta propiedad se corresponde con la casilla de verificación Ordenar y quitar duplicados del conjunto automáticamente del cuadro de diálogo Nuevo/Modificar conjunto cuando se crea o edita un conjunto con nombre. Para crear un nuevo conjunto con nombre a partir de datos en una tabla dinámica basada en un origen de datos OLAP, haga clic en la tabla dinámica, haga clic en Campo, Elementos, Conjuntos en la ficha Opciones de herramientas de tabla dinámica de la cinta de opciones, haga clic en Administrar conjuntos, haga clic en Nuevo en el cuadro de diálogo Administrador de conjuntos y, a continuación, haga clic en Crear conjunto con &amp; MDX. Esto muestra el cuadro de diálogo Nuevo conjunto, que contiene la casilla de verificación Ordenar y quitar duplicados del conjunto automáticamente. De forma similar, si selecciona un conjunto con nombre existente en el cuadro de diálogo Administrador de conjunto y, a continuación, hace clic en Editar, aparecerá el cuadro de diálogo Modificar conjunto.</para>
+          <para>Esta propiedad junto con las propiedades and solo se pueden leer para conjuntos con nombre (que se representan mediante <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedSet" /> ). Estas propiedades para no se pueden leer para miembros calculados o medidas (que se representan mediante <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> objetos donde la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> <paramref name="xlCalculatedMember" /> ). Si intenta leer estas propiedades para miembros o medidas calculados, se generará un error en tiempo de ejecución.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -506,7 +506,7 @@
       <Docs>
         <summary>Devuelve el nombre del miembro primario de la jerarquía primaria. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks><para>El miembro primario predeterminado está determinado por lo que haya definido el diseñador de cubos o Analysis Services como miembro predeterminado de la jerarquía seleccionada. Por ejemplo, si existe un miembro "All" para la jerarquía seleccionada, suele ser el miembro primario predeterminado en el cubo.</para>
+        <remarks><para>El miembro primario predeterminado está determinado por lo que haya definido el diseñador de cubos o Analysis Services como miembro predeterminado de la jerarquía seleccionada. Por ejemplo, si existe un miembro "All" para la jerarquía seleccionada, este suele ser el miembro primario predeterminado del cubo.</para>
           <para>Si la jerarquía primaria seleccionada no tiene un miembro primario "All", se define otro miembro primario predeterminado, ya sea por el diseñador de cubos o mediante programación por Analysis Services. (Si el diseñador de cubos no especifica un miembro predeterminado, el motor de Analysis Services define automáticamente uno).</para>
           <para> </para></remarks>
       </Docs>
@@ -534,7 +534,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que especifica el valor del argumento MDX (expresión multidimensional) de orden de resolución del miembro calculado. El valor predeterminado es cero.</summary>
+        <summary>Devuelve un <b>valor Integer</b> que especifica el valor del argumento MDX (expresión multidimensional) del orden de resolución del miembro calculado. El valor predeterminado es cero.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -569,7 +569,7 @@
           <list type="table">
             <item>
               <term>
-                <b>Caption</b>
+                <b>Título</b>
               </term>
               <description>París</description>
               <description>París</description>
@@ -596,14 +596,14 @@
               <description>París</description>
             </item>
           </list>
-          <para>Al especificar un índice en la colección, puede usar la sintaxis <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> que se muestra en la tabla siguiente.</para>
+          <para>Al especificar un índice en la <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> colección, puede usar la sintaxis que se muestra en la tabla siguiente.</para>
           <list type="table">
             <item>
-              <term>expresión. PivotItems("[Europe].[ Francia]. [París]")</term>
+              <term>expresión. PivotItems("[Europe].[ Francia]. [Paris]")</term>
               <description>expresión. PivotItems("Paris")</description>
             </item>
           </list>
-          <para>Al usar la propiedad para hacer referencia a un miembro específico de una colección, puede usar los nombres de índice de texto, como se muestra <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> en la tabla siguiente.</para>
+          <para>Al usar la propiedad para hacer referencia a un miembro específico de una colección, puede usar los nombres de índice de texto, como <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> se muestra en la tabla siguiente.</para>
           <list type="table">
             <item>
               <term>[Europa]. [Francia]. [París]</term>

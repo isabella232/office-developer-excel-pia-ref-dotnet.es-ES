@@ -1,5 +1,5 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006149" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="40bc9efc8b01d37573c0b0c93ad2d175a6008a340dd3d9a2aaa04718cb214da5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507740" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Border" />
   <TypeSignature Language="VB.NET" Value="Public Interface Border" />
@@ -22,10 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Representa el borde de un objeto.</summary>
-    <remarks><para>La mayoría de los objetos con borde (todos excepto los objetos and) tienen un borde que se trata como una sola entidad, independientemente de cuántos lados <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> tenga. El borde completo debe devolverse como una unidad. Utilice la <b>propiedad Border</b> para devolver el <b>objeto Border</b> de este tipo de objeto.</para>
+    <remarks><para>La mayoría de los objetos bordeados (todos excepto los objetos and) tienen un borde que se trata como una única entidad, independientemente de la cantidad de lados <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <see cref="T:Microsoft.Office.Interop.Excel.Style" /> que tenga. El borde completo debe devolverse como una unidad. Utilice la <b>propiedad Border</b> para devolver el <b>objeto Border</b> para este tipo de objeto.</para>
       <para>
-        <b>Los</b> objetos <b>Range y Style</b> tienen cuatro bordes discretos (izquierdo, derecho, superior e inferior) que se pueden devolver individualmente o como un grupo. Utilice la <b>propiedad Borders</b> de un objeto <b>Range</b> o <b>Style</b> para devolver la colección <b>Borders,</b> que contiene los cuatro bordes y trata los bordes como una unidad.</para>
-      <para>Use <b>Borders</b>( <paramref name="index" /> ), donde identifica el <paramref name="index" /> borde, para devolver un solo <b>objeto Border</b> .</para>
+        <b>Los</b> objetos Range y <b>Style</b> tienen cuatro bordes discretos (izquierda, derecha, superior e inferior) que se pueden devolver individualmente o como grupo. Utilice la <b>propiedad Borders</b> de un <b>objeto Range</b> o <b>Style</b> para devolver la colección <b>Borders,</b> que contiene los cuatro bordes y trata los bordes como una unidad.</para>
+      <para>Utilice <b>Borders</b>( <paramref name="index" /> ), donde identifica el <paramref name="index" /> borde, para devolver un único <b>objeto Border.</b></para>
       <para>
         <paramref name="Index" /> puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> constantes: <b>xlDiagonalDown</b>, <b>xlDiagonalUp</b>, <b>xlEdgeBottom</b>, <b>xlEdgeLeft</b>, <b>xlEdgeRight</b>, <b>xlEdgeTop</b>, <b>xlInsideHorizontal</b>o <b>xlInsideVertical</b>.</para>
       <para> </para></remarks>
@@ -54,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,7 +304,7 @@
       <Docs>
         <summary>Devuelve o establece un valor <b>Single</b> que aclara u oscurece un color.</summary>
         <value><b>Single</b></value>
-        <remarks><para>Puede escribir un número entre -1 (más oscuro) y 1 (más claro) para la <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> propiedad. Cero (0) es neutro.</para>
+        <remarks><para>Puede escribir un número de -1 (más oscuro) a 1 (más claro) para la <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> propiedad. Cero (0) es neutro.</para>
           <para>Al intentar establecer esta propiedad en un valor inferior a -1 o mayor que 1 se produce un error en tiempo de ejecución: "El valor especificado se encuentra fuera de los límites". Esta propiedad funciona tanto para los colores de temas como para los no incluidos en temas.</para>
           <para> </para></remarks>
       </Docs>

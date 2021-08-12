@@ -1,5 +1,5 @@
 <Type Name="TimelineState" FullName="Microsoft.Office.Interop.Excel.TimelineState">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0335f3e0e135a9ce6c845d79bd25325307729e66" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009593" /></Metadata><TypeSignature Language="C#" Value="public interface TimelineState" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b825d933b1d2dd84079f81dc0010a2eb35ccf69c48013858026ca985544f99c1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507495" /></Metadata><TypeSignature Language="C#" Value="public interface TimelineState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TimelineState" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TimelineState" />
   <TypeSignature Language="VB.NET" Value="Public Interface TimelineState" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>El estado específico de la escala de tiempo de un <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
+    <summary>El estado específico de escala de tiempo de un <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación de Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Excel aplicación. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Integer de solo <b>lectura</b> (<b>int</b> en C#).</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Integer <b>de</b> solo lectura (<b>int</b> en C#).</summary>
         <value>To be added.</value>
         <remarks><para>Dado que el objeto se creó en Excel, esta propiedad devuelve el valor hexadecimal, 5843454C, que representa la cadena "XCEL".</para>
           <para> </para></remarks>
@@ -105,7 +105,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el final del intervalo de fechas de filtrado (es igual <see cref="P:Microsoft.Office.Interop.Excel.TimelineState.StartDate" /> a si el intervalo es un solo día). <b>Objeto</b> (<b>objeto</b> en C#) Solo lectura</summary>
+        <summary>Devuelve el final del intervalo de fechas de filtrado (es igual <see cref="P:Microsoft.Office.Interop.Excel.TimelineState.StartDate" /> a si el intervalo es un solo día). <b>Object</b> (<b>object</b> in C#) Read-only</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,7 +161,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el primer valor asociado con el filtro de fecha (la semántica varía según el tipo de filtro). <b>Objeto</b> (<b>objeto</b> en C#) Solo lectura.</summary>
+        <summary>Devuelve el primer valor asociado con el filtro de fecha (la semántica varía según el tipo de filtro). <b>Object</b> (<b>object</b> in C#) Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,7 +189,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el segundo valor asociado con el filtro de fecha (la semántica varía según el tipo de filtro). <b>Objeto</b> (<b>objeto</b> en C#) Solo lectura.</summary>
+        <summary>Devuelve el segundo valor asociado al filtro de fecha (la semántica varía según el tipo de filtro). <b>Object</b> (<b>object</b> in C#) Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,7 +217,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>objeto Object</b> (<b>objeto</b> en C#) que representa el objeto primario del objeto <b>TimelineState</b> especificado. Solo lectura.</summary>
+        <summary>Devuelve un <b>objeto Object</b> (<b>en</b> C#) que representa el objeto primario del objeto <b>TimelineState</b> especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,7 +247,7 @@
       </Parameters>
       <Docs>
         <param name="StartDate">Inicio del intervalo de fechas de filtrado.</param>
-        <param name="EndDate">Final del intervalo de fechas de filtrado.</param>
+        <param name="EndDate">El final del intervalo de fechas de filtrado.</param>
         <summary>Establece el filtro de la escala de tiempo.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -276,7 +276,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> cuando el estado de filtrado es un intervalo de fechas contiguo; <b>De lo contrario, es False.</b> <b>Boolean</b> (<b>bool</b> in C#) Read-only.</summary>
+        <summary><b>True</b> cuando el estado de filtrado es un intervalo de fechas contiguo; <b>False</b> de lo contrario. <b>Boolean</b> (<b>bool</b> in C#) Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,7 +304,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el inicio del intervalo de fechas de filtrado. <b>Objeto</b> (<b>objeto</b> en C#) Solo lectura.</summary>
+        <summary>Devuelve el inicio del intervalo de fechas de filtrado. <b>Object</b> (<b>object</b> in C#) Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

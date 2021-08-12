@@ -1,5 +1,5 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Excel.ShadowFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5eeac5f0fb754a2bafeb2c032994726f97c18d68" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010363" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a2510607e7229c53c796d8f1556dbec52265f3afbe64d5d9cb0708d4e02ac967" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512339" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShadowFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShadowFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShadowFormat&#xA;Implements _IMsoDispObj" />
@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa el formato de sombra de un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto .</summary>
+    <summary>Representa el formato de sombra de <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> un .</summary>
     <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.Shadow" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" /> objeto.</para>
       <para> </para></remarks>
   </Docs>
@@ -53,7 +53,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> objeto que representa el relleno de primer plano o el color sólido especificados.</summary>
+        <summary>Devuelve un objeto que representa el relleno de primer plano o <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> el color sólido especificados.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,9 +176,9 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">Obligatorio <b>único</b>. Especifica cuánto se va a mover horizontalmente el desplazamiento de la sombra en puntos. Un valor positivo mueve la sombra hacia la derecha; un valor negativo la mueve hacia la izquierda.</param>
+        <param name="Increment">Single <b>obligatorio</b>. Especifica hasta qué punto se debe mover horizontalmente el desplazamiento de la sombra en puntos. Un valor positivo mueve la sombra hacia la derecha; un valor negativo la mueve hacia la izquierda.</param>
         <summary>Cambia el desplazamiento horizontal de la sombra el número de puntos especificado.</summary>
-        <remarks><para>Utilice la propiedad para establecer el desplazamiento horizontal absoluto <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetX" /> de la sombra.</para>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetX" /> propiedad para establecer el desplazamiento de sombra horizontal absoluto.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -205,7 +205,7 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">Obligatorio <b>único</b>. Especifica cuánto se va a mover verticalmente en puntos el desplazamiento de la sombra. Un valor positivo mueve la sombra hacia abajo y uno negativo, hacia arriba.</param>
+        <param name="Increment">Single <b>obligatorio</b>. Especifica hasta qué punto se debe mover verticalmente el desplazamiento de la sombra en puntos. Un valor positivo mueve la sombra hacia abajo y uno negativo, hacia arriba.</param>
         <summary>Cambia el desplazamiento vertical de la sombra según el número de puntos especificados.</summary>
         <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetY" /> propiedad para establecer el desplazamiento de sombra vertical absoluto.</para>
           <para> </para></remarks>
@@ -271,7 +271,7 @@
         <summary>Devuelve o establece el desplazamiento horizontal de la sombra de la forma especificada en puntos.</summary>
         <value>To be added.</value>
         <remarks><para>Un valor positivo desplaza la sombra a la derecha de la forma; un valor negativo, desplaza hacia la izquierda.</para>
-          <para>Si desea empujar una sombra horizontal o verticalmente desde su posición actual sin tener que especificar una posición absoluta, utilice el método <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> o el <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> método.</para>
+          <para>Si desea empujar una sombra horizontal o verticalmente desde su posición actual sin tener que especificar una posición absoluta, use el método <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> o el <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> método.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -304,7 +304,7 @@
         <summary>Devuelve o establece el desplazamiento vertical de la sombra de la forma especificada en puntos.</summary>
         <value>To be added.</value>
         <remarks><para>Un valor positivo desplaza la sombra a la derecha de la forma; un valor negativo, desplaza hacia la izquierda.</para>
-          <para>Si desea empujar una sombra horizontal o verticalmente desde su posición actual sin tener que especificar una posición absoluta, utilice el método <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> o el <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> método.</para>
+          <para>Si desea empujar una sombra horizontal o verticalmente desde su posición actual sin tener que especificar una posición absoluta, use el método <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" /> o el <see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" /> método.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -362,7 +362,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoTriState" /> valor que indica si se va a girar la sombra al girar el objeto <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> . Lectura/escritura.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoTriState" /> valor que indica si se va a girar la sombra al girar el archivo <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> . Lectura/escritura.</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
