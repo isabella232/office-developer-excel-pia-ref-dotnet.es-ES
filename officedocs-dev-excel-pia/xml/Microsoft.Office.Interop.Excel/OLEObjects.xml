@@ -1,5 +1,5 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011210" /></Metadata><TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="04b47ec414e769c5bdc42b2e3d4aa24b967c992cd3df9ba188a3d4aed54c75db" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510722" /></Metadata><TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEObjects&#xA;Implements IEnumerable" />
@@ -26,10 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objetos de la hoja de cálculo especificada. Cada objeto <b>OLEObject</b> representa un control ActiveX o un objeto OLE vinculado o insertado.</summary>
-    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> método para devolver la colección <b>OLEObjects</b> .</para>
-      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para crear un nuevo objeto OLE y agregarlo a la colección <b>OLEObjects</b> .</para>
-      <para>Un control ActiveX de una hoja tiene dos nombres: el nombre de la forma que contiene el control, visible en el cuadro Nombre al ver la hoja, y el nombre en código del control, presente en la celda situada a la derecha de (Name) en la ventana Propiedades. La primera vez que se agrega un control a una hoja, el nombre de la forma y el nombre de código son iguales. Sin embargo, si modifica uno de los nombres, el otro no cambiará automáticamente para coincidir con el que se modificó.</para>
-      <para>El nombre de código de un control se utiliza en los nombres de sus procedimientos de eventos. Sin embargo, cuando se devuelve un control de la colección <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> <b>o OLEObjects</b> de una hoja, debe usar el nombre de la forma, no el nombre de código, para hacer referencia al control por su nombre. Por ejemplo, suponga que agrega una casilla a una hoja y que tanto el nombre predeterminado de la forma como el de código son CheckBox1. Si, a continuación, cambia el nombre del código de control escribiendo chkFinished junto a (Name) en la ventana Propiedades, debe usar chkFinished en los nombres de procedimientos de eventos, pero todavía tiene que usar CheckBox1 para devolver el control de la <b>colección Shapes</b> o <b>OLEObjects</b> .</para>
+    <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> método para devolver la colección <b>OLEObjects.</b></para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para crear un nuevo objeto OLE y agregarlo a la colección <b>OLEObjects.</b></para>
+      <para>Un control ActiveX de una hoja tiene dos nombres: el nombre de la forma que contiene el control, visible en el cuadro Nombre al ver la hoja, y el nombre en código del control, presente en la celda situada a la derecha de (Name) en la ventana Propiedades. La primera vez que se agrega un control a una hoja, el nombre de la forma y el nombre de código son iguales. Sin embargo, si se modifica uno de los nombres, el otro no cambia automáticamente para coincidir con el que se modificó.</para>
+      <para>El nombre de código de un control se usa en los nombres de sus procedimientos de eventos. Sin embargo, cuando se devuelve un control de la colección OLEObjects o de una hoja, debe usar el nombre de la forma, no el nombre de código, para hacer referencia al <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> control por su nombre. <b></b> Por ejemplo, suponga que agrega una casilla a una hoja y que tanto el nombre predeterminado de la forma como el de código son CheckBox1. Si luego cambia el nombre del código de control escribiendo chkFinished junto a (Name) en la ventana Propiedades, debe usar chkFinished en nombres de procedimientos de eventos, pero aún tiene que usar CheckBox1 para devolver el control de la colección <b>Shapes</b> o <b>OLEObjects.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -457,17 +457,17 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">Optional <b>Object</b>. (Debe especificar uno <paramref name="ClassType" /> o <paramref name="FileName" /> .) Cadena que contiene el identificador de programación del objeto que se va a crear. Si <paramref name="ClassType" /> se especifica y se <paramref name="FileName" /> <paramref name="Link" /> omite.</param>
-        <param name="Filename">Optional <b>Object</b>. (Debe especificar uno <paramref name="ClassType" /> o <paramref name="FileName" /> .) Cadena que especifica el archivo que se va a usar para crear el objeto OLE.</param>
-        <param name="Link">Optional <b>Object</b>. <b>True</b> para que el nuevo objeto OLE basado en <paramref name="FileName" /> esté vinculado a ese archivo. Si el objeto no está vinculado, se crea como copia del archivo. El valor predeterminado es <b>False</b>.</param>
-        <param name="DisplayAsIcon">Optional <b>Object</b>. <b>True</b> para mostrar el nuevo objeto OLE como un icono o como su imagen normal. Si este argumento es <b>True</b>y <paramref name="IconFileName" /> se puede usar para especificar un <paramref name="IconIndex" /> icono.</param>
-        <param name="IconFileName">Optional <b>Object</b>. Una cadena que especifica el archivo que contiene el icono que se debe mostrar. Este argumento sólo se usa si <paramref name="DisplayAsIcon" /> es <b>True</b>. Si no se especifica este argumento o el archivo no contiene iconos, se usa el icono predeterminado para la clase OLE.</param>
-        <param name="IconIndex">Optional <b>Object</b>. El número del icono del archivo del icono. Esto solo se usa si es True y hace referencia <paramref name="DisplayAsIcon" /> a un archivo válido que contiene <b></b> <paramref name="IconFileName" /> iconos. Si no existe un icono con el número de índice especificado en el archivo especificado por , se usa el primer icono <paramref name="IconFileName" /> del archivo.</param>
-        <param name="IconLabel">Optional <b>Object</b>. Una cadena que especifica una etiqueta para mostrar debajo del icono. Esto solo se usa si <paramref name="DisplayAsIcon" /> es <b>True</b>. Si este argumento se omite o es una cadena vacía (""), no se muestra ningún título.</param>
-        <param name="Left">Optional <b>Object</b>. Las coordenadas iniciales, en puntos, del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo o a la esquina superior izquierda de un gráfico.</param>
-        <param name="Top">Optional <b>Object</b>. Las coordenadas iniciales, en puntos, del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo o a la esquina superior izquierda de un gráfico.</param>
-        <param name="Width">Optional <b>Object</b>. Tamaño inicial del nuevo objeto en puntos.</param>
-        <param name="Height">Optional <b>Object</b>. Tamaño inicial, en puntos, del nuevo objeto.</param>
+        <param name="ClassType">Objeto <b>opcional</b>. (Debe especificar una <paramref name="ClassType" /> o <paramref name="FileName" /> .) Cadena que contiene el identificador de programación del objeto que se va a crear. Si <paramref name="ClassType" /> se especifica y se <paramref name="FileName" /> <paramref name="Link" /> omite.</param>
+        <param name="Filename">Objeto <b>opcional</b>. (Debe especificar una <paramref name="ClassType" /> o <paramref name="FileName" /> .) Cadena que especifica el archivo que se va a usar para crear el objeto OLE.</param>
+        <param name="Link">Objeto <b>opcional</b>. <b>True</b> para que el nuevo objeto OLE basado en <paramref name="FileName" /> esté vinculado a ese archivo. Si el objeto no está vinculado, se crea como copia del archivo. El valor predeterminado es <b>False</b>.</param>
+        <param name="DisplayAsIcon">Objeto <b>opcional</b>. <b>True</b> para mostrar el nuevo objeto OLE como un icono o como su imagen normal. Si este argumento es <b>True</b> <paramref name="IconFileName" /> y se puede usar para especificar un <paramref name="IconIndex" /> icono.</param>
+        <param name="IconFileName">Objeto <b>opcional</b>. Una cadena que especifica el archivo que contiene el icono que se debe mostrar. Este argumento solo se usa si <paramref name="DisplayAsIcon" /> es <b>True</b>. Si no se especifica este argumento o el archivo no contiene iconos, se usa el icono predeterminado para la clase OLE</param>
+        <param name="IconIndex">Objeto <b>opcional</b>. El número del icono del archivo del icono. Solo se usa si <paramref name="DisplayAsIcon" /> es <b>True</b> y hace referencia a un archivo válido que <paramref name="IconFileName" /> contiene iconos. Si no existe un icono con el número de índice especificado en el archivo especificado por , se usa el primer <paramref name="IconFileName" /> icono del archivo.</param>
+        <param name="IconLabel">Objeto <b>opcional</b>. Una cadena que especifica una etiqueta para mostrar debajo del icono. Solo se usa si <paramref name="DisplayAsIcon" /> es <b>True</b>. Si este argumento se omite o es una cadena vacía (""), no se muestra ningún título.</param>
+        <param name="Left">Objeto <b>opcional</b>. Las coordenadas iniciales, en puntos, del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo o a la esquina superior izquierda de un gráfico.</param>
+        <param name="Top">Objeto <b>opcional</b>. Las coordenadas iniciales, en puntos, del nuevo objeto con relación a la esquina superior izquierda de la celda A1 de la hoja de cálculo o a la esquina superior izquierda de un gráfico.</param>
+        <param name="Width">Objeto <b>opcional</b>. Tamaño inicial del nuevo objeto en puntos.</param>
+        <param name="Height">Objeto <b>opcional</b>. Tamaño inicial, en puntos, del nuevo objeto.</param>
         <summary>Agrega un objeto OLE nuevo a una hoja. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -496,7 +496,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,7 +530,7 @@
         <summary>Es <b>True</b> si el objeto OLE se carga automáticamente cuando se abre el libro que lo contiene.</summary>
         <value>To be added.</value>
         <remarks><para>Los controles ActiveX no tienen en cuenta esta propiedad. Los controles ActiveX siempre se cargan cuando se abre un libro.</para>
-          <para>Para la mayoría de los tipos de objetos OLE, esta propiedad no debe establecerse en <b>True</b>. De forma predeterminada, <b>la propiedad AutoLoad</b> está establecida en <b>False</b> para nuevos objetos OLE; esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar automáticamente objetos OLE es que, para los objetos que representan datos volátiles, los vínculos a los datos de origen se pueden restablecer inmediatamente y los objetos se pueden volver a representar, si es necesario.</para>
+          <para>Para la mayoría de los tipos de objetos OLE, esta propiedad no debe establecerse como <b>True</b>. La opción predeterminada para la propiedad <b>AutoLoad</b> es <b>False</b> para objetos OLE nuevos. Esto ahorra tiempo y memoria cuando Microsoft Excel carga libros. La ventaja de cargar objetos OLE automáticamente es que, para objetos que representan datos volátiles, los vínculos con los datos de origen pueden restablecerse inmediatamente y los objetos pueden volver a mostrarse si es necesario.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -638,7 +638,7 @@
       </Parameters>
       <Docs>
         <param name="Appearance">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> . Especifica cómo se debe copiar la imagen.</param>
-        <param name="Format">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> . Formato de la imagen.</param>
+        <param name="Format">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> . El formato de la imagen.</param>
         <summary>Copia el objeto seleccionado en el Portapapeles como una imagen.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -956,7 +956,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Número de índice o nombre del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1183,7 +1183,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Optional <b>Object</b>. <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
+        <param name="Replace">Objeto <b>opcional</b>. <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
         <summary>Selecciona el objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1423,7 +1423,7 @@
       <Docs>
         <summary>Devuelve la posición del objeto en el orden z.</summary>
         <value>To be added.</value>
-        <remarks><para>En cualquier colección de objetos, el objeto situado en la parte posterior del orden z es (1) y el objeto situado delante del orden <paramref name="collection" /> z <paramref name="collection" /> es ( <paramref name="collection" /> .<b> Count</b>).</para>
+        <remarks><para>En cualquier colección de objetos, el objeto situado en la parte posterior del orden z es (1) y el objeto situado en la parte frontal del <paramref name="collection" /> orden z es ( <paramref name="collection" /> <paramref name="collection" /> .<b> Count</b>).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
