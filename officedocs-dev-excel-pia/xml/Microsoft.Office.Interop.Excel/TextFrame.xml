@@ -1,5 +1,5 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Excel.TextFrame">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2d1bfd568b124e87a7cc39c702d6b945df65ab68" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009649" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5b4356dc4dd2d3b658f3600cb0230834afce20795d1430632fc3d0d156c66e64" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518037" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa el marco de texto en un objeto <b>Shape</b>. Contiene el texto del marco así como las propiedades y métodos que controlan la alineación y fijación del marco de texto.</summary>
+    <summary>Representa el marco de texto de un objeto <b>Shape</b>. Contiene el texto del marco así como las propiedades y métodos que controlan la alineación y fijación del marco de texto.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,9 +79,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si Microsoft Excel calcula automáticamente los márgenes del marco de texto.</summary>
+        <summary><b>True</b> si Microsoft Excel automáticamente calcula los márgenes de marco de texto.</summary>
         <value>To be added.</value>
-        <remarks><para>Cuando esta propiedad es <b>True</b>, <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" /> las propiedades , , y se <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" /> omiten.</para>
+        <remarks><para>Cuando esta propiedad es <b>True</b>, <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" /> se <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" /> omiten las propiedades , , y <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" /> <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Start">Optional <b>Object</b>. Primer carácter que se devolverá. Si este argumento se establece en 1 o se omite, el método <b>Characters</b> devuelve un rango de caracteres que empieza por el primero.</param>
-        <param name="Length">Optional <b>Object</b>. Número de caracteres que se devolverá. Si se omite este argumento, el <b>método Characters</b> devuelve el resto de la cadena (todo después del carácter que se estableció como <paramref name="Start" /> argumento).</param>
+        <param name="Start">Objeto <b>opcional</b>. Primer carácter que se devolverá. Si este argumento se establece en 1 o se omite, el método <b>Characters</b> devuelve un rango de caracteres que empieza por el primero.</param>
+        <param name="Length">Objeto <b>opcional</b>. Número de caracteres que se devolverá. Si se omite este argumento, el <b>método Characters</b> devuelve el resto de la cadena (todo después del carácter que se estableció como <paramref name="Start" /> argumento).</param>
         <summary>Devuelve un objeto que representa un intervalo de caracteres dentro del <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> marco de texto de una forma.</summary>
         <returns>To be added.</returns>
         <remarks><para>Se puede usar el objeto <b>Characters</b> para agregar y dar formato a caracteres en el cuadro de texto.</para>
@@ -237,10 +237,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlOartHorizontalOverflow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el valor de desbordamiento horizontal del objeto especificado.</summary>
+        <summary>Obtiene o establece la configuración de desbordamiento horizontal del objeto especificado.</summary>
         <value>La configuración de desbordamiento horizontal del objeto especificado.</value>
         <remarks><para>Lectura/escritura.</para>
-          <para>Esta propiedad solo tiene efecto cuando la <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" /> propiedad <b>es msoFalse</b> (0).</para>
+          <para>Esta propiedad solo tiene un efecto cuando la <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" /> propiedad es <b>msoFalse</b> (0).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -396,7 +396,7 @@
       <Docs>
         <summary>Orientación del marco de texto.</summary>
         <value>To be added.</value>
-        <remarks><para>La <b>propiedad Orientation</b> puede ser un valor entero entre -90 y 90 grados o una de las constantes <b>MsoTextOrientation.</b></para>
+        <remarks><para>La <b>propiedad Orientation</b> puede ser un valor entero de –90 a 90 grados o una de las constantes <b>MsoTextOrientation.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -520,10 +520,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlOartVerticalOverflow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el valor de desbordamiento vertical del objeto especificado.</summary>
+        <summary>Obtiene o establece la configuración de desbordamiento vertical del objeto especificado.</summary>
         <value>La configuración de desbordamiento vertical del objeto especificado.</value>
         <remarks><para>Lectura/escritura.</para>
-          <para>Esta propiedad sólo tiene efecto cuando la <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" /> propiedad es <b>false</b>.</para>
+          <para>Esta propiedad solo tiene un efecto cuando la <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" /> propiedad es <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

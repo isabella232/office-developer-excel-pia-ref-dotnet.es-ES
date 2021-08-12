@@ -1,5 +1,5 @@
 <Type Name="SpellingOptions" FullName="Microsoft.Office.Interop.Excel.SpellingOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b664c52434f8d93eb47ce0675a7bb457e2c7098f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009859" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="39b78b9722c9047438cf4182aa5dfa6e2c2088c1cb35b384d87aa5a69848950c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516959" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SpellingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingOptions" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa las distintas opciones de revisión ortográfica de una hoja de cálculo.</summary>
-    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.SpellingOptions" /> propiedad del objeto para devolver un objeto <see cref="T:Microsoft.Office.Interop.Excel._Application" /> <b>SpellingOptions</b> .</para>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel._Application.SpellingOptions" /> propiedad del objeto para devolver un objeto <see cref="T:Microsoft.Office.Interop.Excel._Application" /> <b>SpellingOptions.</b></para>
       <para>Una vez que se devuelve un objeto <b>SpellingOptions,</b> puede usar sus siguientes propiedades para establecer o devolver varias opciones de revisión ortográfica:</para>
       <list type="bullet">
         <item>
@@ -146,11 +146,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si el corrector ortográfico usa reglas relativas a las palabras en árabe que comienzan por alef hamza.</summary>
-        <value><b>true</b> si el corrector ortográfico usa reglas relativas a las palabras en árabe que comienzan por alef hamza; de lo contrario, <b>false</b>.</value>
+        <summary>Obtiene o establece si el corrector ortográfico usa reglas relativas a las palabras en árabe que comienzan con un alef hamza.</summary>
+        <value><b>true</b> si el corrector ortográfico usa reglas relativas a las palabras en árabe que comienzan por un alef hamza; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si el corrector ortográfico utiliza reglas ortográficas relacionadas con palabras en árabe que comienzan por alef hamza; de lo <b>contrario, false</b>.</para>
+            <b>true</b> si el corrector ortográfico usa reglas ortográficas con respecto a las palabras en árabe que comienzan por un alef hamza; de lo <b>contrario es false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -180,11 +180,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si el corrector ortográfico usa reglas relacionadas con las palabras en árabe que terminan con la letra yaa.</summary>
-        <value><b>true</b> si el corrector ortográfico usa reglas relacionadas con las palabras en árabe que terminan con la letra yaa; de lo contrario, <b>false</b>.</value>
+        <summary>Obtiene o establece si el corrector ortográfico usa reglas relativas a las palabras en árabe que terminan con la letra yaa.</summary>
+        <value><b>true</b> si el corrector ortográfico usa reglas relativas a las palabras en árabe que terminan con la letra yaa; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si el corrector ortográfico usa reglas relacionadas con las palabras en árabe que terminan con la letra yaa; de lo <b>contrario, false</b>.</para>
+            <b>true</b> si el corrector ortográfico usa reglas relativas a las palabras en árabe que terminan con la letra yaa; de lo <b>contrario es false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -214,11 +214,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si el corrector ortográfico usa reglas para marcar las palabras en árabe que terminan con haa en lugar de taa marboota.</summary>
-        <value><b>true</b> si el corrector ortográfico usa reglas para marcar las palabras en árabe que terminan con haa en lugar de taa marboota; de lo contrario, <b>false</b>.</value>
+        <summary>Obtiene o establece si el corrector ortográfico usa reglas para marcar palabras en árabe que terminan con haa en lugar de taa marboota.</summary>
+        <value><b>true</b> si el corrector ortográfico usa reglas para marcar palabras en árabe que terminan con haa en lugar de taa marboota; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si el corrector ortográfico usa reglas para marcar las palabras en árabe que terminan con haa en lugar de taa marboota; de lo <b>contrario, false</b>.</para>
+            <b>true</b> si el corrector ortográfico usa reglas para marcar palabras en árabe que terminan con haa en lugar de taa marboota; de lo <b>contrario es false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -376,7 +376,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>False</b> indica a Microsoft Excel que compruebe si hay palabras en mayúsculas; <b>True</b> indica a Excel que ignore las palabras en mayúsculas al usar el corrector ortográfico.</summary>
+        <summary><b>False</b> indica a Microsoft Excel que compruebe las palabras en mayúsculas; <b>True</b> indica Excel las palabras en mayúsculas al usar el corrector ortográfico.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -407,7 +407,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>False</b> indica a Microsoft Excel que compruebe si hay direcciones de Internet y archivos; <b>True</b> indica a Excel que ignore las direcciones de Internet y de archivo al usar el corrector ort xml.</summary>
+        <summary><b>False</b> indica a Microsoft Excel que compruebe si hay direcciones de internet y archivos; <b>True</b> indica a Excel omitir las direcciones de Internet y de archivos al usar el corrector ortógrafo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,7 +438,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>False</b> indica a Microsoft Excel que compruebe si hay dígitos mixtos; <b>True</b> indica a Excel que ignore los dígitos mixtos al revisar la ortografía.</summary>
+        <summary><b>False</b> indica a Microsoft Excel que compruebe si hay dígitos mixtos; <b>True</b> indica Excel omitir dígitos mixtos al comprobar la ortografía.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,11 +596,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si el corrector ortográfico usa reglas relacionadas con las palabras en ruso que contienen el carácter ë.</summary>
-        <value><b>true</b> si el corrector ortográfico usa reglas relacionadas con las palabras en ruso que contienen el carácter ë; de lo contrario, <b>false</b>.</value>
+        <summary>Obtiene o establece si el corrector ortográfico usa reglas relativas a las palabras en ruso que contienen el carácter ë.</summary>
+        <value><b>true</b> si el corrector ortográfico usa reglas relativas a las palabras en ruso que contienen el carácter ë; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si el corrector ortográfico usa reglas relacionadas con las palabras en ruso que contienen el carácter ë; de lo <b>contrario, false</b>.</para>
+            <b>true</b> si el corrector ortográfico usa reglas relativas a las palabras en ruso que contienen el carácter ë; de lo <b>contrario es false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -662,7 +662,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se establece en <b>True</b>, indica a Microsoft Excel que sugiera palabras solo del diccionario principal al usar el corrector ortográfico. <b>False</b> quita los límites de sugerir palabras solo del diccionario principal al usar el corrector ortográfico.</summary>
+        <summary>Cuando se establece en <b>True</b>, indica Microsoft Excel que sugiera palabras solo del diccionario principal al usar el corrector ortográfico. <b>False</b> quita los límites de sugerir palabras solo del diccionario principal al usar el corrector ortográfico.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -693,7 +693,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indica a Microsoft Excel que cree un diccionario personalizado al que se pueden agregar palabras nuevas al realizar comprobaciones ortográficas en una hoja de cálculo.</summary>
+        <summary>Indica Microsoft Excel crear un diccionario personalizado al que se pueden agregar nuevas palabras al realizar comprobaciones ortográficas en una hoja de cálculo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
