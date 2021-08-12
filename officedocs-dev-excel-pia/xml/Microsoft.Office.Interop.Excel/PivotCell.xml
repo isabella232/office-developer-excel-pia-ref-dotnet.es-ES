@@ -1,5 +1,5 @@
 <Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d2f870880113d0a92987ae33be86341048714031" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010937" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fbbdae64cf7a054bab0c86aad763673fe235fd17db6bf4e764080c5fc2243be9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518744" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCell" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCell" />
@@ -22,9 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Representa una celda de un informe de tabla dinámica.</summary>
-    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> propiedad de la colección para devolver un objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <b>PivotCell</b> .</para>
-      <para>Una vez que se devuelve un objeto <b>PivotCell,</b> puede usar la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> propiedad para determinar el tipo de celda de un rango determinado.</para>
-      <para>Puede usar la propiedad or para determinar la colección que corresponde a los elementos de la columna o del eje de filas <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> que representa el número <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> seleccionado.</para>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> propiedad de la colección para devolver un objeto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <b>PivotCell.</b></para>
+      <para>Una vez que se devuelve un objeto <b>PivotCell,</b> puede usar la propiedad para determinar qué tipo de <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> celda es un intervalo determinado.</para>
+      <para>Puede usar la propiedad or para determinar la colección que corresponde a los elementos del eje de columna o fila <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> que representa el número <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> seleccionado.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
       <Docs>
         <summary>Realiza una operación de escritura diferida en la celda especificada en un informe de tabla dinámica basado en un origen de datos OLAP.</summary>
         <remarks><para>Este método ejecuta una instrucción UPDATE CUBE para agregar solo el cambio realizado en esta celda específica, pero también incluye los cambios aplicados anteriores. Después de ejecutar la instrucción UPDATE CUBE, se ejecuta una actualización de tabla dinámica y, a continuación, se ejecuta una instrucción ROLLBACK TRANSACTION.</para>
-          <para>La ejecución del método para una celda en un informe de tabla dinámica basado en un origen de datos que no es <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> OLAP genera un error en tiempo de ejecución.</para>
+          <para>La ejecución del método para una celda en un informe de tabla dinámica basada en un origen de datos que no es <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> OLAP genera un error en tiempo de ejecución.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,11 +106,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCellChangedState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene si se ha editado o actualizado una celda de valor de tabla dinámica desde que se creó el informe de tabla dinámica o se realizó la última operación de confirmación.</summary>
+        <summary>Obtiene si se ha editado o recalculado una celda de valor de tabla dinámica desde que se creó el informe de tabla dinámica o se realizó la última operación de confirmación.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.XlCellChangedState" /> objeto.</value>
         <remarks><para>El valor de la <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> propiedad es de forma <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> predeterminada.</para>
-          <para>Para los informes de tabla dinámica con orígenes de datos que no son OLAP, el valor de esta propiedad puede ser sólo uno <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> o <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> . Es para <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> las celdas que no se han editado y es para las <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> celdas que se han editado. Si se descartan los cambios, su valor se establece en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> .</para>
-          <para>Aplicar y guardar los cambios solo se aplica a informes de tabla dinámica con orígenes de datos OLAP. Las siguientes descripciones de los posibles estados de la propiedad se aplican solo a las tablas <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> dinámicas con orígenes de datos OLAP.</para>
+          <para>Para los informes de tabla dinámica con orígenes de datos que no son OLAP, el valor de esta propiedad solo puede ser <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> o <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> . Está para <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> las celdas que no se han editado y es para las <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> celdas que se han editado. Descartar cambios establece su valor en <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> .</para>
+          <para>Aplicar y guardar los cambios solo se aplica a informes de tabla dinámica con orígenes de datos OLAP. Las siguientes descripciones de los posibles estados de la propiedad solo se aplican <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> a tablas dinámicas con orígenes de datos OLAP.</para>
           <list type="bullet">
             <item>
               <description>
@@ -118,11 +118,11 @@
             </item>
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> - La celda se ha editado o actualizado desde que se creó la tabla dinámica, o desde que se realizó la última operación de aplicar cambios o guardar cambios, pero ese cambio aún no se ha aplicado (la instrucción UPDATE CUBE no se ha ejecutado para ella).</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> - La celda se ha editado o recalculado desde que se creó la tabla dinámica, o desde que se realizó la última operación de aplicar cambios o guardar cambios, pero ese cambio aún no se ha aplicado (la instrucción UPDATE CUBE no se ha ejecutado para ella).</description>
             </item>
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- La celda se ha editado o actualizado desde que se creó la tabla dinámica, o desde que se realizó la última operación de aplicar, guardar cambios o descartar cambios, y ese cambio se ha aplicado (se ha ejecutado la instrucción UPDATE CUBE para ella).</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- La celda se ha editado o recalculado desde que se creó la tabla dinámica, o desde que se realizaron los últimos cambios de aplicación, guardar cambios o descartar cambios, y ese cambio se ha aplicado (se ha ejecutado la instrucción UPDATE CUBE para ella).</description>
             </item>
           </list>
           <para>En la tabla siguiente se describe cómo afectan las distintas acciones del usuario a la configuración de la propiedad en una tabla dinámica <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> con un origen de datos OLAP.</para>
@@ -139,13 +139,13 @@
             </item>
             <item>
               <term>Guarda (confirma) los cambios.</term>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en todas las celdas editadas sin una fórmula.</description>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> en todas las celdas editadas con una fórmula.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en para todas las celdas editadas sin una fórmula.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> en para todas las celdas editadas con una fórmula.</description>
             </item>
             <item>
               <term>Descarta todos los cambios.</term>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en todas las celdas editadas sin una fórmula.</description>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en todas las celdas editadas con una fórmula.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en para todas las celdas editadas sin una fórmula.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en para todas las celdas editadas con una fórmula.</description>
             </item>
             <item>
               <term>Descarta el cambio en una sola celda.</term>
@@ -154,8 +154,8 @@
             </item>
             <item>
               <term>Borra varias celdas en una sola operación.</term>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en todas esas celdas.</description>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en todas esas celdas.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en para todas esas celdas.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> en para todas esas celdas.</description>
             </item>
             <item>
               <term>Borra una celda.</term>
@@ -164,13 +164,13 @@
             </item>
             <item>
               <term>Realiza una operación de deshacer que cambia el valor de nuevo a un valor anteriormente modificado antes de aplicar ese valor.</term>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> en todas las celdas editadas sin una fórmula.</description>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> en todas las celdas editadas con una fórmula.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> en para todas las celdas editadas sin una fórmula.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> en para todas las celdas editadas con una fórmula.</description>
             </item>
             <item>
               <term>Realiza una operación de deshacer que cambia el valor a un valor anteriormente modificado después de aplicar ese valor.</term>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> en todas las celdas editadas sin una fórmula.</description>
-              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> en todas las celdas editadas con una fórmula.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> en para todas las celdas editadas sin una fórmula.</description>
+              <description>Se establece <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> en para todas las celdas editadas con una fórmula.</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -199,7 +199,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que corresponde a los elementos del <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> eje de columnas que representan el rango seleccionado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> colección que corresponde a los elementos del eje de columnas que representan el intervalo seleccionado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,7 +257,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConsolidationFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la configuración del campo de función de subtotal personalizado de un <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> objeto.</summary>
+        <summary>Devuelve la configuración del campo de función subtotal personalizada de un <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> objeto.</summary>
         <value>To be added.</value>
         <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />puede ser una de las siguientes <b>constantes XlConsolidationFunction:</b></para>
@@ -353,11 +353,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el valor recuperado por última vez del origen de datos para las celdas editadas en un informe de tabla dinámica.</summary>
-        <value>Valor recuperado por última vez del origen de datos para celdas editadas en un informe de tabla dinámica.</value>
+        <summary>Obtiene el valor recuperado por última vez del origen de datos de las celdas editadas en un informe de tabla dinámica.</summary>
+        <value>El valor recuperado por última vez del origen de datos de las celdas editadas en un informe de tabla dinámica.</value>
         <remarks><para>Solo lectura.</para>
-          <para>Cada vez que se edita una celda del área de valores de un informe de tabla dinámica, la propiedad contendrán el valor que se recuperó por última vez del origen de datos antes de que se realizara <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> la edición. Para las celdas de valor del informe de tabla dinámica que no se han editado o para las que no se ha recuperado explícitamente el valor del origen de datos, esta propiedad devolverá una referencia nula (Nothing en Visual Basic). Para los informes de tabla dinámica con orígenes de datos OLAP, el valor de la propiedad se recupera de una conexión independiente para asegurarse de que no contiene el valor de ninguna operación de escritura direcupada que el usuario haya <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> realizado.</para>
-          <para>Leer la propiedad de las celdas que están fuera del área de valores de un informe de tabla dinámica <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> genera un error en tiempo de ejecución.</para>
+          <para>Siempre que se edite una celda en el área de valores de un informe de tabla dinámica, la propiedad mantendrá el valor que se recuperó por última vez del origen de datos antes de que se realizara <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> la edición. Para las celdas de valor de informe de tabla dinámica que no se han editado o para las que no se ha recuperado explícitamente el valor del origen de datos, esta propiedad devolverá una referencia nula (Nothing en Visual Basic). Para los informes de tabla dinámica con orígenes de datos OLAP, el valor de la propiedad se recupera de una conexión independiente para asegurarse de que no contiene el valor de las operaciones de reescribición que el usuario podría haber <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> realizado.</para>
+          <para>La lectura de la propiedad de las celdas que están fuera del área de valores de un informe de tabla <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> dinámica genera un error en tiempo de ejecución.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -383,7 +383,7 @@
       <Parameters />
       <Docs>
         <summary>Descarta los cambios realizados en la celda especificada en un informe de tabla dinámica.</summary>
-        <remarks><para>Para una celda de una tabla dinámica basada en un origen de datos OLAP, el método quita el valor o la fórmula especificados en la celda especificada y, a continuación, ejecuta una actualización de tabla dinámica para recuperar el valor más reciente del origen de <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> datos. Este método establecerá el valor del origen de datos en una referencia nula (Nothing en Visual Basic) para la celda especificada. El método también quita todos los cambios realizados en esta celda de la lista de cambios de Excel para que ya no se incluyan en la instrucción UPDATE CUBE para el origen de datos. Este método también vuelve a crear el estado de la sesión para los demás cambios realizados en la transacción. Esto incluye la ejecución de una instrucción ROLLBACK TRANSACTION y, a continuación, la ejecución de una instrucción UPDATE CUBE con todos los cambios excepto para la celda especificada. Para una celda de una tabla dinámica basada en un origen de datos que no es OLAP, este método simplemente borra la celda editada.</para>
+        <remarks><para>Para una celda de una tabla dinámica basada en un origen de datos OLAP, el método quita el valor o la fórmula especificados en la celda especificada y, a continuación, ejecuta una actualización de tabla dinámica para recuperar el valor más reciente del origen de <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> datos. Este método establecerá el valor de origen de datos en una referencia nula (Nothing en Visual Basic) para la celda especificada. El método también quita todos los cambios realizados en esta celda de la lista de cambios de Excel para que ya no se incluya en la instrucción UPDATE CUBE del origen de datos. Este método también vuelve a crear el estado de la sesión para los demás cambios realizados en la transacción. Esto incluye ejecutar una instrucción ROLLBACK TRANSACTION y, a continuación, ejecutar una instrucción UPDATE CUBE con todos los cambios excepto para la celda especificada. Para una celda de una tabla dinámica basada en un origen de datos que no es OLAP, este método simplemente borra la celda editada.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -442,9 +442,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene una tupla que proporciona las coordenadas MDX completa de la celda de valor especificada en la tabla dinámica con un origen de datos OLAP.</summary>
-        <value>Tupla que proporciona las coordenadas MDX completa de la celda de valor especificada en la tabla dinámica con un origen de datos OLAP.</value>
+        <value>Una tupla que proporciona las coordenadas MDX completa de la celda de valor especificada en la tabla dinámica con un origen de datos OLAP.</value>
         <remarks><para>Solo lectura.</para>
-          <para>Las dimensiones devueltas en la tupla por la propiedad incluyen coordenadas de fila y columna, así como coordenadas <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> de filtro de informe. Para las celdas fuera del área de valores de la tabla dinámica, y fuera de una tabla dinámica, el acceso a esta propiedad generará un error en tiempo de ejecución. Para tablas dinámicas con varios elementos seleccionados en un campo de filtro de informe, el acceso a esta propiedad también generará un error en tiempo de ejecución.</para>
+          <para>Las dimensiones devueltas en la tupla por la propiedad incluyen coordenadas de fila y columna, así como <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> coordenadas de filtro de informe. Para las celdas fuera del área de valores de la tabla dinámica, y fuera de una tabla dinámica, el acceso a esta propiedad generará un error en tiempo de ejecución. Para tablas dinámicas con varios elementos seleccionados en un campo de filtro de informe, el acceso a esta propiedad también generará un error en tiempo de ejecución.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -499,24 +499,24 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotCellType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una constante que identifica la entidad de tabla dinámica a la que corresponde la celda.</summary>
+        <summary>Devuelve una constante que identifica la entidad PivotTable a la que corresponde la celda.</summary>
         <value>To be added.</value>
         <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" />puede ser una de las siguientes <b>constantes XlPivotCellType:</b></para>
           <para>
-            <b>xlPivotCellBlankCell</b> Celda vacía estructural de la tabla dinámica.</para>
+            <b>xlPivotCellBlankCell</b> Celda en blanco estructural en la tabla dinámica.</para>
           <para>
             <b>xlPivotCellCustomSubtotal</b> Celda del área de fila o columna que es un subtotal personalizado.</para>
           <para>
             <b>xlPivotCellDataField</b> Una etiqueta de campo de datos (no el <b>botón</b> Datos).</para>
           <para>
-            <b>xlPivotCellDataPivotField</b> Botón <b></b> Datos.</para>
+            <b>xlPivotCellDataPivotField</b> Botón <b>Datos.</b></para>
           <para>
             <b>xlPivotCellGrandTotal</b> Celda de un área de fila o columna que es un total general.</para>
           <para>
-            <b>xlPivotCellPageFieldItem</b> Celda que muestra el elemento seleccionado de un campo Página.</para>
+            <b>xlPivotCellPageFieldItem</b> Celda que muestra el elemento seleccionado de un campo Page.</para>
           <para>
-            <b>xlPivotCellPivotField</b> Botón de un campo (no el <b>botón</b> Datos).</para>
+            <b>xlPivotCellPivotField</b> El botón de un campo (no el <b>botón</b> Datos).</para>
           <para>
             <b>xlPivotCellPivotItem</b> Celda del área de fila o columna que no es un subtotal, un total general, un subtotal personalizado o una línea en blanco.</para>
           <para>
@@ -549,11 +549,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> columna de un objeto  <b>PivotCell</b> específico. Solo lectura.</summary>
+        <summary>Devuelve la <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> de una columna para un objeto  <b>PivotCell</b> específico. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /></value>
-        <remarks><para>Si la <b>celda dinámica está</b> en filas, la propiedad <b>PivotColumnLine</b> devuelve un error en tiempo de ejecución.</para>
-          <para>Si la <b>celda dinámica está</b> en columnas, la propiedad <b>PivotColumnLine</b> devuelve el objeto <b>PivotLine de</b> columna.</para>
-          <para>Si la <b>celda dinámica está</b> en el área de datos, la propiedad <b>PivotColumnLine</b> devuelve el objeto <b>PivotLine de</b> columna correspondiente.</para>
+        <remarks><para>Si <b>pivotcell</b> está en filas, la <b>propiedad PivotColumnLine</b> devuelve un error en tiempo de ejecución.</para>
+          <para>Si <b>pivotcell</b> está en columnas, la <b>propiedad PivotColumnLine</b> devuelve el <b>objeto PivotLine de</b> columna.</para>
+          <para>Si <b>pivotcell</b> está en el área de datos, la <b>propiedad PivotColumnLine</b> devuelve la columna correspondiente <b>pivotline objeto.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -580,7 +580,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que representa el campo de tabla dinámica que <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> contiene la esquina superior izquierda del intervalo especificado.</summary>
+        <summary>Devuelve un objeto que representa el campo Tabla dinámica que <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> contiene la esquina superior izquierda del intervalo especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -608,7 +608,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que representa el elemento de tabla dinámica que contiene la esquina superior <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> izquierda del intervalo especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> objeto que representa el elemento de tabla dinámica que contiene la esquina superior izquierda del intervalo especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -636,11 +636,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> fila de un objeto  <b>PivotCell</b> específico. <b>PivotLine</b> de sólo lectura.</summary>
+        <summary>Devuelve la <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> on de una fila para un objeto  <b>PivotCell</b> específico. <b>PivotLine</b> de sólo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /></value>
-        <remarks><para>Si la <b>celda dinámica</b> está en filas, <b>PivotRowLine</b> devuelve el objeto <b>PivotLine de la</b> fila.</para>
-          <para>Si la <b>celda dinámica</b> está en columnas, <b>PivotRowLine</b>  devuelve un error en tiempo de ejecución.</para>
-          <para>Si la <b>celda dinámica está</b> en el área de datos, <b>PivotRowLine</b> devuelve el objeto <b>PivotLine</b> de la fila correspondiente.</para>
+        <remarks><para>Si <b>pivotcell</b> está en filas, <b>PivotRowLine</b> devuelve el <b>objeto PivotLine de</b> la fila.</para>
+          <para>Si <b>pivotcell</b> está en columnas, <b>PivotRowLine</b>  devuelve un error en tiempo de ejecución.</para>
+          <para>Si <b>pivotcell</b> está en el área de datos, <b>PivotRowLine</b> devuelve el objeto <b>PivotLine</b> de la fila correspondiente.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -667,7 +667,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que representa el informe de tabla dinámica que contiene la esquina superior izquierda del intervalo especificado o el informe de tabla dinámica asociado con el informe <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> de gráfico dinámico.</summary>
+        <summary>Devuelve un objeto que representa el informe de tabla dinámica que contiene la esquina superior izquierda del intervalo especificado o el informe de tabla dinámica asociado al informe <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> Gráfico dinámico tabla dinámica.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -695,7 +695,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa el intervalo al que se aplica la celda dinámica especificada.</summary>
+        <summary>Devuelve un objeto que representa el intervalo al que se aplica <see cref="T:Microsoft.Office.Interop.Excel.Range" /> la celda dinámica especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,7 +723,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que corresponde a los elementos del <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> eje de categorías que representan la celda seleccionada.</summary>
+        <summary>Devuelve una colección que corresponde a los elementos del eje de categorías <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> que representan la celda seleccionada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -751,9 +751,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Representa una colección de acciones formadas por acciones definidas por OLAP que se pueden ejecutar. Las acciones son específicas de las tablas dinámicas existentes en el nivel de una hoja de cálculo. Solo lectura</summary>
+        <summary>Representa una colección de acciones formadas por acciones definidas por OLAP que se pueden ejecutar. Las acciones son específicas de las tablas dinámicas existentes en un nivel de hoja de cálculo. Solo lectura</summary>
         <value>To be added.</value>
-        <remarks><para>Una acción de servidor es una característica opcional que un administrador de cubo OLAP puede definir en un servidor que usa un miembro del cubo o medida como parámetro en una consulta para obtener detalles en el cubo.</para>
+        <remarks><para>Una acción de servidor es una característica opcional que un administrador de cubo OLAP puede definir en un servidor que usa un miembro de cubo o una medida como parámetro en una consulta para obtener detalles en el cubo.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

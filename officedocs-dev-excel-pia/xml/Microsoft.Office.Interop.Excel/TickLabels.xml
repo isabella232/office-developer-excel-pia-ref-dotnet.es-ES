@@ -1,5 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Excel.TickLabels">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009621" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="feff087dd9c876bc2c86572cfeb029f84fdbe2c75880cfcc6d9cfcc574bfeb82" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518219" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -21,9 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa los rótulos de marcas de graduación asociados con las marcas de graduación de un eje de gráficos.</summary>
-    <remarks><para>Este objeto no es una colección. No hay ningún objeto que represente una sola etiqueta de marca de graduación; debe devolver todas las etiquetas de marcas de graduación como una unidad. El texto de la etiqueta de marcas de graduación del eje de categorías proviene del nombre de la categoría asociada en el gráfico. El texto de la etiqueta de marca de graduación predeterminado para el eje de categorías es el número que indica la posición de la categoría en relación con el extremo izquierdo de este eje. Para cambiar el número de marcas de graduación sin etiquetar entre las etiquetas de marcas de graduación, debe cambiar la propiedad <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> del eje de categorías. El texto del rótulo de marcas de graduación del eje de valores se calcula basándose en <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> el eje de valores y en las propiedades del eje de <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> valores. Para cambiar el texto del rótulo de marcas de graduación del eje de valores, debe cambiar los valores de estas propiedades.</para>
-      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> propiedad para devolver el objeto <b>TickLabels</b> .</para>
+    <summary>Representa las etiquetas de marcas de graduación asociadas con las marcas de graduación en un eje de gráfico.</summary>
+    <remarks><para>Este objeto no es una colección. No hay ningún objeto que represente una sola etiqueta de marca de graduación; debe devolver todas las etiquetas de marca de graduación como una unidad. El texto de la etiqueta de marca de graduación del eje de categorías proviene del nombre de la categoría asociada en el gráfico. El texto de etiqueta de marca de graduación predeterminado para el eje de categorías es el número que indica la posición de la categoría con respecto al extremo izquierdo de este eje. Para cambiar el número de marcas de graduación sin etiquetar entre las etiquetas de marcas de graduación, debe cambiar la propiedad <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> del eje de categorías. El texto de la etiqueta de marca de graduación para el eje de valores se calcula en función de <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> las propiedades , y del eje de <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> valores. Para cambiar el texto de la etiqueta de marca de graduación del eje de valores, debe cambiar los valores de estas propiedades.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" /> propiedad para devolver el objeto <b>TickLabels.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +268,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el formato del elemento de gráfico. Solo lectura.</summary>
+        <summary>Devuelve el formato del elemento chart. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,7 +300,7 @@
       </ReturnValue>
       <Docs>
         <summary>Establece si un eje es multinivel o no.  Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks><para>El valor predeterminado de esta propiedad es <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
@@ -485,7 +485,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTickLabelOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Orientación del texto. Puede ser un valor entero entre -90 y 90 grados o una de las <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> constantes.</summary>
+        <summary>Orientación del texto. Puede ser un valor entero de –90 a 90 grados o una de las <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelOrientation" /> constantes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

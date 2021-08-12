@@ -1,5 +1,5 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Excel.Trendlines">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="16729ecd05466f30367a2ad9f0440647d5e8ade1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009474" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="937148e91d997051158c5c969e16f37b457051fc64d68f38bcccce1d8733556e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519150" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
@@ -26,9 +26,9 @@
   </Attributes>
   <Docs>
     <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> objetos de la serie especificada. Cada objeto <b>Trendline</b> representa una línea de tendencia en un gráfico. Una línea de tendencia muestra la tendencia, o dirección de los datos de una serie.</summary>
-    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> método para devolver la colección <b>Trendlines</b> .</para>
-      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para crear una nueva línea de tendencia y agregarla a la serie.</para>
-      <para>Utilice <b>trendlines</b>( ), donde es el número de índice de la línea de <paramref name="index" /> <paramref name="index" /> tendencia, para devolver un solo <b>objeto TrendLine</b> .</para>
+    <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> método para devolver la colección <b>Trendlines.</b></para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método para crear una nueva línea de tendencia y agregarla a la serie.</para>
+      <para>Use <b>Trendlines</b>( ), donde es el número de índice de línea de <paramref name="index" /> <paramref name="index" /> tendencia, para devolver un único <b>objeto TrendLine.</b></para>
       <para>El número de índice indica el orden en el que se agregaron las líneas de tendencia a la serie. Trendlines(1) es la primera línea de tendencia que se agregó a la serie y Trendlines(Trendlines.Count) es la última.</para>
       <para> </para></remarks>
   </Docs>
@@ -95,14 +95,14 @@
       </Parameters>
       <Docs>
         <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Excel.XlTrendlineType" /> . Tipo de la línea de tendencia.</param>
-        <param name="Order">Optional <b>Object</b>. Obligatorio si <paramref name="Type" /> es <b>xlPolynomial</b>. El orden de la línea de tendencia. Debe ser un número entero entre 2 y 6, ambos inclusive.</param>
-        <param name="Period">Optional <b>Object</b>. Obligatorio si <paramref name="Type" /> es <b>xlMovingAvg</b>. El período de la línea de tendencia. Debe ser un número entero mayor que 1 y menor que el número de puntos de datos de la serie a la que está agregando una línea de tendencia.</param>
-        <param name="Forward">Optional <b>Object</b>. El número de períodos (o unidades en un gráfico de dispersión) que la línea de tendencia se extiende hacia delante.</param>
-        <param name="Backward">Optional <b>Object</b>. El número de períodos (o unidades en un gráfico de dispersión) que la línea de tendencia se extiende hacia atrás.</param>
-        <param name="Intercept">Optional <b>Object</b>. Intersección de la línea de tendencia. Si no se especifica este argumento, la regresión establece automáticamente la intersección.</param>
-        <param name="DisplayEquation">Optional <b>Object</b>. <b>True</b> para mostrar la ecuación de la línea de tendencia en el gráfico (en el mismo rótulo de datos que el valor de R cuadrado). El valor predeterminado es <b>False</b>.</param>
-        <param name="DisplayRSquared">Optional <b>Object</b>. <b>True</b> para mostrar el valor R cuadrado de la línea de tendencia en el gráfico (en el mismo rótulo de datos que la ecuación). El valor predeterminado es <b>False</b>.</param>
-        <param name="Name">Optional <b>Object</b>. Nombre de la línea de tendencia en forma de texto. Si no se especifica este argumento, Microsoft Excel genera un nombre.</param>
+        <param name="Order">Objeto <b>opcional</b>. Obligatorio si <paramref name="Type" /> es <b>xlPolynomial</b>. El orden de la línea de tendencia. Debe ser un número entero de 2 a 6, ambos incluidos.</param>
+        <param name="Period">Objeto <b>opcional</b>. Obligatorio si <paramref name="Type" /> es <b>xlMovingAvg</b>. El período de la línea de tendencia. Debe ser un número entero mayor que 1 y menor que el número de puntos de datos de la serie a la que se va a agregar una línea de tendencia.</param>
+        <param name="Forward">Objeto <b>opcional</b>. El número de períodos (o unidades en un gráfico de dispersión) que la línea de tendencia se extiende hacia delante.</param>
+        <param name="Backward">Objeto <b>opcional</b>. El número de períodos (o unidades en un gráfico de dispersión) que la línea de tendencia se extiende hacia atrás.</param>
+        <param name="Intercept">Objeto <b>opcional</b>. Intersección de la línea de tendencia. Si no se especifica este argumento, la regresión establece automáticamente la intersección.</param>
+        <param name="DisplayEquation">Objeto <b>opcional</b>. <b>True</b> para mostrar la ecuación de la línea de tendencia en el gráfico (en el mismo rótulo de datos que el valor de R cuadrado). El valor predeterminado es <b>False</b>.</param>
+        <param name="DisplayRSquared">Objeto <b>opcional</b>. <b>True</b> para mostrar el valor R cuadrado de la línea de tendencia en el gráfico (en el mismo rótulo de datos que la ecuación). El valor predeterminado es <b>False</b>.</param>
+        <param name="Name">Objeto <b>opcional</b>. Nombre de la línea de tendencia en forma de texto. Si no se especifica este argumento, Microsoft Excel genera un nombre.</param>
         <summary>Crea una nueva línea de tendencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -131,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -248,7 +248,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Número de índice o nombre del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

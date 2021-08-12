@@ -1,5 +1,5 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009264" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6d6ba8f19188d4685621e7b8eed25d1911d6d3118b218c2b5a4e0be4b045ca71" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518352" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Window" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window" />
@@ -23,7 +23,7 @@
   <Docs>
     <summary>Representa una ventana. Muchas de las características de las hojas de cálculo, como las barras de desplazamiento y las líneas de división, en realidad son propiedades de la ventana.</summary>
     <remarks><para>El <b>objeto Window</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> colección. La <b>colección Windows</b> devuelta por la propiedad del objeto contiene todas las ventanas de la aplicación, mientras que la colección Windows devuelta por la propiedad del objeto contiene solo las ventanas del libro <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> especificado.</para>
-      <para>Utilice <b>Windows</b>( ), donde se encuentra el nombre o número de índice de la <paramref name="index" /> <paramref name="index" /> ventana, para devolver un único objeto <b>Window.</b></para>
+      <para>Use <b>Windows</b>( ), donde está el nombre de la ventana o el número de <paramref name="index" /> <paramref name="index" /> índice, para devolver un único objeto <b>Window.</b></para>
       <para>Tenga en cuenta que la ventana activa siempre es Windows(1).</para>
       <para>El título de la ventana es el texto que se muestra en la barra de título de la parte superior de la ventana cuando no está maximizada. El título también se muestra en la lista de archivos abiertos en la parte inferior del menú Ventanas. Use la <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> propiedad para establecer o devolver el título de la ventana. Al cambiar el título de la ventana no cambia el nombre del libro.</para>
       <para> </para></remarks>
@@ -159,7 +159,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Activa la ventana especificada y, a continuación, la envía al fondo del orden Z de la ventana.</summary>
+        <summary>Activa la ventana especificada y, a continuación, la envía a la parte posterior del orden z de la ventana.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa la celda activa de la ventana activa (la ventana superior) o de la ventana especificada. Si la ventana no contiene una hoja de cálculo, esta propiedad produce un error.</summary>
+        <summary>Devuelve un objeto que representa la celda activa en la ventana activa (la ventana superior) o <see cref="T:Microsoft.Office.Interop.Excel.Range" /> en la ventana especificada. Si la ventana no contiene una hoja de cálculo, esta propiedad produce un error.</summary>
         <value>To be added.</value>
         <remarks><para>Si no se especifica un calificador de objeto, esta propiedad devuelve la celda activa de la ventana activa.</para>
           <para>Celda activa no es lo mismo que selección. La celda activa es una sola celda de la selección actual. La selección puede contener más de una celda, pero sólo una es la celda activa.</para>
@@ -332,7 +332,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto que representa la vista de la hoja activa en la ventana especificada. Solo lectura.</summary>
+        <summary>Devuelve un objeto que representa la vista de la hoja activa en la ventana especificada. Es de sólo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -360,7 +360,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,7 +392,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b> si el autofiltro de la agrupación de fechas se está presentando en ese momento en la ventana especificada. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,12 +451,12 @@
         <Parameter Name="RouteWorkbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">Optional <b>Object</b>. Si no hay cambios en el libro, este argumento se omite. Si hay cambios en el libro y este parece en otras ventanas abiertas, este argumento se omite. Si hay cambios en el libro pero el libro no aparece en ninguna otra ventana abierta, este argumento especifica si se deben guardar los cambios, como se muestra en la tabla siguiente. ValueAction<b>True</b>Guarda los cambios realizados en el libro. Si aún no hay un nombre de archivo asociado al libro, se <paramref name="FileName" /> usa. Si <paramref name="FileName" /> se omite, se pide al usuario que proporcione un nombre de archivo.<b> False</b>No guarda los cambios en este archivo. Se omite Muestra un cuadro de diálogo que pregunta al usuario si desea guardar los cambios.</param>
-        <param name="Filename">Optional <b>Object</b>. Guarda los cambios bajo este nombre de archivo.</param>
-        <param name="RouteWorkbook">Optional <b>Object</b>. Si el libro no debe enrutarse al destinatario siguiente (si no tiene albarán de enrutamiento o ya se ha enrutado), este argumento se omite. De lo contrario, Microsoft Excel enruta el libro como se muestra en la tabla siguiente. ValueMeaning<b>True</b>Envía el libro al siguiente destinatario. <b>False</b> No envía el libro. Se omite Muestra un cuadro de diálogo que pregunta al usuario si se debe enviar el libro.</param>
+        <param name="SaveChanges">Objeto <b>opcional</b>. Si no hay cambios en el libro, este argumento se omite. Si hay cambios en el libro y este parece en otras ventanas abiertas, este argumento se omite. Si hay cambios en el libro pero el libro no aparece en ninguna otra ventana abierta, este argumento especifica si los cambios deben guardarse, como se muestra en la tabla siguiente. ValueAction<b>True</b>Guarda los cambios en el libro. Si aún no hay un nombre de archivo asociado al libro, se <paramref name="FileName" /> usa. Si <paramref name="FileName" /> se omite, se pide al usuario que proporcione un nombre de archivo.<b> False</b>No guarda los cambios en este archivo. Omitido Muestra un cuadro de diálogo que pregunta al usuario si desea guardar los cambios o no.</param>
+        <param name="Filename">Objeto <b>opcional</b>. Guarda los cambios bajo este nombre de archivo.</param>
+        <param name="RouteWorkbook">Objeto <b>opcional</b>. Si el libro no debe enrutarse al destinatario siguiente (si no tiene albarán de enrutamiento o ya se ha enrutado), este argumento se omite. De lo contrario, Microsoft Excel enruta el libro como se muestra en la tabla siguiente. ValueMeaning<b>True</b>Envía el libro al siguiente destinatario. <b>False</b> No envía el libro. Omitido Muestra un cuadro de diálogo que pregunta al usuario si se debe enviar el libro.</param>
         <summary>Cierra el objeto.</summary>
         <returns>To be added.</returns>
-        <remarks><para>El <b>método Close</b> no ejecuta ninguna Auto_Close macros del libro. Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para ejecutar las macros de cierre automático.</para>
+        <remarks><para>El <b>método Close</b> no ejecuta ninguna Auto_Close macros en el libro. Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para ejecutar las macros de cierre automático.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -551,7 +551,7 @@
         <summary><b>True</b> si se muestran las líneas de división.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
-          <para>Afecta únicamente a las líneas de división visibles. Utilice la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> propiedad para controlar la impresión de las líneas de cuadrícula.</para>
+          <para>Afecta únicamente a las líneas de división visibles. Use la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> propiedad para controlar la impresión de líneas de cuadrícula.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -581,10 +581,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si se muestran los encabezados de fila y columna; <b>False</b> si no se muestran encabezados.</summary>
+        <summary><b>True</b> si se muestran los encabezados de fila y columna; <b>False</b> si no se muestran títulos.</summary>
         <value>To be added.</value>
         <remarks><para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
-          <para>Esta propiedad afecta únicamente a los encabezados visibles. Utilice la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> propiedad para controlar la impresión de encabezados.</para>
+          <para>Esta propiedad afecta únicamente a los encabezados visibles. Use la <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> propiedad para controlar la impresión de títulos.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -709,7 +709,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b> si se muestra una regla para la ventana especificada. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,7 +771,7 @@
       </ReturnValue>
       <Docs>
         <summary><b>True</b> si se muestran los espacios en blanco. Lectura/escritura.</summary>
-        <value><b>Valor booleano</b></value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,7 +897,7 @@
       <Docs>
         <summary><b>True</b> si las divisiones de secciones están inmovilizadas.</summary>
         <value>To be added.</value>
-        <remarks><para>Es posible que <b>FreezePanes </b>sea <b>True</b> y <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> <b>False,</b>o viceversa.</para>
+        <remarks><para>Es posible que <b>FreezePanes </b>sea <b>True</b> y <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> sea <b>False</b>o viceversa.</para>
           <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
           <para> </para></remarks>
       </Docs>
@@ -993,7 +993,7 @@
       <Docs>
         <summary>Alto de la ventana en puntos.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> propiedad para determinar el tamaño máximo de la ventana. No puede establecer esta propiedad si la ventana está maximizada o minimizada. Use la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propiedad para determinar el estado de la ventana.</para>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> propiedad para determinar el tamaño máximo de la ventana. No puede establecer esta propiedad si la ventana está maximizada o minimizada. Use la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propiedad para determinar el estado de la ventana.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1020,7 +1020,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el controlador de ventana de la ventana especificada.</summary>
+        <summary>Devuelve el identificador de ventana de la ventana especificada.</summary>
         <value>Integer (int en C#)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1078,14 +1078,14 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Optional <b>Object</b>. Número de páginas hacia abajo que se desplazará el contenido.</param>
-        <param name="Up">Optional <b>Object</b>. Número de páginas hacia arriba que se desplazará el contenido.</param>
-        <param name="ToRight">Optional <b>Object</b>. Número de páginas hacia la derecha que se desplazará el contenido.</param>
-        <param name="ToLeft">Optional <b>Object</b>. Número de páginas hacia la izquierda que se desplazará el contenido.</param>
+        <param name="Down">Objeto <b>opcional</b>. Número de páginas hacia abajo que se desplazará el contenido.</param>
+        <param name="Up">Objeto <b>opcional</b>. Número de páginas hacia arriba que se desplazará el contenido.</param>
+        <param name="ToRight">Objeto <b>opcional</b>. Número de páginas hacia la derecha que se desplazará el contenido.</param>
+        <param name="ToLeft">Objeto <b>opcional</b>. Número de páginas hacia la izquierda que se desplazará el contenido.</param>
         <summary>Desplaza el contenido de la ventana por páginas.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Si se especifican ambos, el contenido de la ventana se desplaza según <paramref name="Down" /> la diferencia de los <paramref name="Up" /> argumentos. Por ejemplo, si <paramref name="Down" /> es 3 y es 6, el contenido se desplaza <paramref name="Up" /> tres páginas hacia arriba.</para>
-          <para>Si se especifican ambos, el contenido de la ventana se desplaza según <paramref name="ToLeft" /> la diferencia de los <paramref name="ToRight" /> argumentos. Por ejemplo, si <paramref name="ToLeft" /> es 3 y es 6, el contenido se desplaza a <paramref name="ToRight" /> las tres páginas derecha.</para>
+        <remarks><para>Si se especifican y se especifican ambos, el contenido de la ventana se desplaza por <paramref name="Down" /> la diferencia de los <paramref name="Up" /> argumentos. Por ejemplo, si <paramref name="Down" /> es 3 y es 6, el contenido se desplaza <paramref name="Up" /> hacia arriba tres páginas.</para>
+          <para>Si se especifican y se especifican ambos, el contenido de la ventana se desplaza por <paramref name="ToLeft" /> la diferencia de los <paramref name="ToRight" /> argumentos. Por ejemplo, si es 3 y es 6, el contenido se desplaza <paramref name="ToLeft" /> a las tres páginas <paramref name="ToRight" /> derechas.</para>
           <para>Cualquiera de los argumentos puede ser un número negativo.</para>
           <para> </para></remarks>
       </Docs>
@@ -1324,17 +1324,17 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">Optional <b>Object</b>. Número de la página en la que comienza la impresión. Si no se especifica este argumento, la impresión empieza por el principio.</param>
-        <param name="To">Optional <b>Object</b>. Número de la última página que se va a imprimir. Si no se especifica este argumento, la impresión finaliza en la última página.</param>
-        <param name="Copies">Optional <b>Object</b>. Número de copias que se imprimirán. Si no se especifica este argumento, se imprime una sola copia.</param>
-        <param name="Preview">Optional <b>Object</b>. <b>True</b> para que Microsoft Excel invoque la vista preliminar antes de imprimir el objeto. <b>False</b> (u omitido) para imprimir el objeto inmediatamente.</param>
-        <param name="ActivePrinter">Optional <b>Object</b>. Establece el nombre de la impresora activa.</param>
-        <param name="PrintToFile">Optional <b>Object</b>. <b>True</b> para imprimir a un archivo. Si no se especifica, Microsoft Excel solicita al usuario que <paramref name="PrToFileName" /> escriba el nombre del archivo de salida.</param>
-        <param name="Collate">Optional <b>Object</b>. <b>True</b> para intercalar varias copias.</param>
-        <param name="PrToFileName">Optional <b>Object</b>. Si se establece en True , este argumento especifica el nombre del archivo <paramref name="PrintToFile" /> en el que desea imprimir. <b></b></param>
+        <param name="From">Objeto <b>opcional</b>. Número de la página en la que comienza la impresión. Si no se especifica este argumento, la impresión empieza por el principio.</param>
+        <param name="To">Objeto <b>opcional</b>. Número de la última página que se va a imprimir. Si no se especifica este argumento, la impresión finaliza en la última página.</param>
+        <param name="Copies">Objeto <b>opcional</b>. Número de copias que se imprimirán. Si no se especifica este argumento, se imprime una sola copia.</param>
+        <param name="Preview">Objeto <b>opcional</b>. <b>True</b> para que Microsoft Excel invoque la vista preliminar antes de imprimir el objeto. <b>False</b> (u omitido) para imprimir el objeto inmediatamente.</param>
+        <param name="ActivePrinter">Objeto <b>opcional</b>. Establece el nombre de la impresora activa.</param>
+        <param name="PrintToFile">Objeto <b>opcional</b>. <b>True</b> para imprimir a un archivo. Si no se especifica, Microsoft Excel solicita al usuario que <paramref name="PrToFileName" /> escriba el nombre del archivo de salida.</param>
+        <param name="Collate">Objeto <b>opcional</b>. <b>True</b> para intercalar varias copias.</param>
+        <param name="PrToFileName">Objeto <b>opcional</b>. Si se establece en True , este argumento especifica el nombre del archivo en el <paramref name="PrintToFile" /> que desea imprimir. <b></b></param>
         <summary>Imprime el objeto.</summary>
         <returns>To be added.</returns>
-        <remarks><para>"Páginas" en las descripciones de las páginas impresas y hace referencia a las páginas impresas, no a las páginas generales <paramref name="From" /> de la hoja o <paramref name="To" /> libro.</para>
+        <remarks><para>"Páginas" en las descripciones de y hace referencia a páginas impresas, no páginas generales <paramref name="From" /> en la hoja o <paramref name="To" /> libro.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1392,7 +1392,7 @@
       <Docs>
         <param name="x">Required <b>Integer</b>. Valor (en píxeles) que representa la distancia horizontal desde el borde izquierdo de la pantalla, empezando por la parte superior.</param>
         <param name="y">Required <b>Integer</b>. Valor (en píxeles) que representa la distancia vertical desde la parte superior de la pantalla, empezando por la izquierda.</param>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto or situado en el par de coordenadas de pantalla <see cref="T:Microsoft.Office.Interop.Excel.Range" /> especificado. Si no hay ninguna forma en dichas coordenadas, este método devuelve <b>Nothing</b>.</summary>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto or que se coloca en el par de coordenadas de pantalla <see cref="T:Microsoft.Office.Interop.Excel.Range" /> especificado. Si no hay ninguna forma en dichas coordenadas, este método devuelve <b>Nothing</b>.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1491,8 +1491,8 @@
         <param name="Width">Required <b>Integer</b>. Ancho del rectángulo, en puntos.</param>
         <param name="Height">Required <b>Integer</b>. Alto del rectángulo, en puntos.</param>
         <param name="Start"><b>Integer</b> opcional. Si es <b>True</b>, la esquina superior izquierda del rectángulo se muestra en la esquina superior izquierda de la ventana o panel del documento. Si es <b>False</b>, la esquina inferior derecha del rectángulo aparece en la esquina inferior derecha de la ventana o panel del documento. El valor predeterminado es <b>True</b>.</param>
-        <summary>Desplaza la ventana de documento para que el contenido de un área rectangular especificada se muestre en la esquina superior izquierda o inferior derecha de la ventana o panel del documento.</summary>
-        <remarks><para>El argumento es útil para orientar la pantalla cuando el rectángulo es mayor que la ventana o el <paramref name="Start" /> panel del documento.</para>
+        <summary>Desplaza la ventana del documento para que el contenido de un área rectangular especificada se muestre en la esquina superior izquierda o inferior derecha de la ventana o panel del documento.</summary>
+        <remarks><para>El argumento es útil para orientar la pantalla cuando el rectángulo es mayor que la <paramref name="Start" /> ventana o panel del documento.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1551,8 +1551,8 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Sheets">Optional <b>Object</b>. Número de hojas de cálculo en que se desplazará las etiquetas. Usa un número positivo para desplazarte hacia delante, un número negativo para desplazarte hacia atrás o 0 (cero) para no desplazarte en absoluto. Debe especificar <paramref name="Sheets" /> si no especifica <paramref name="Position" /> .</param>
-        <param name="Position">Optional <b>Object</b>. Utilice <b>xlFirst</b> para desplazarse a la primera hoja, o use <b>xlLast</b> para desplazarse a la última. Debe especificar <paramref name="Position" /> si no especifica <paramref name="Sheets" /> .</param>
+        <param name="Sheets">Objeto <b>opcional</b>. Número de hojas de cálculo en que se desplazará las etiquetas. Use un número positivo para desplazarse hacia delante, un número negativo para desplazarse hacia atrás o 0 (cero) para no desplazarse en absoluto. Debe especificar <paramref name="Sheets" /> si no especifica <paramref name="Position" /> .</param>
+        <param name="Position">Objeto <b>opcional</b>. Utilice <b>xlFirst</b> para desplazarse a la primera hoja, o use <b>xlLast</b> para desplazarse a la última. Debe especificar <paramref name="Position" /> si no especifica <paramref name="Sheets" /> .</param>
         <summary>Se desplaza por las fichas del libro que están en el borde inferior de la ventana.</summary>
         <returns>To be added.</returns>
         <remarks><para>El <b>método ScrollWorkbookTabs</b> no afecta a la hoja activa del libro.</para>
@@ -1613,7 +1613,7 @@
         <summary>Devuelve el objeto seleccionado en la ventana especificada.</summary>
         <value>To be added.</value>
         <remarks><para>El tipo de objeto devuelto depende de la selección actual (por ejemplo, si se selecciona una celda, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto). Si no hay nada seleccionado, la propiedad <b>Selection</b> devuelve <b>Nothing</b>.</para>
-          <para>El uso de esta propiedad sin calificador de objeto equivale a usar la <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para>
+          <para>Usar esta propiedad sin calificador de objeto equivale a usar la <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1670,14 +1670,14 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">Optional <b>Object</b>. Número de filas hacia abajo que se desplazará el contenido.</param>
-        <param name="Up">Optional <b>Object</b>. Número de filas hacia arriba que se desplazará el contenido.</param>
-        <param name="ToRight">Optional <b>Object</b>. Número de columnas hacia la derecha que se desplazará el contenido.</param>
-        <param name="ToLeft">Optional <b>Object</b>. Número de columnas para desplazar el contenido hacia la izquierda.</param>
+        <param name="Down">Objeto <b>opcional</b>. Número de filas hacia abajo que se desplazará el contenido.</param>
+        <param name="Up">Objeto <b>opcional</b>. Número de filas hacia arriba que se desplazará el contenido.</param>
+        <param name="ToRight">Objeto <b>opcional</b>. Número de columnas hacia la derecha que se desplazará el contenido.</param>
+        <param name="ToLeft">Objeto <b>opcional</b>. Número de columnas para desplazar el contenido hacia la izquierda.</param>
         <summary>Desplaza el contenido de la ventana por filas o columnas.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Si se especifican ambos, el contenido de la ventana se desplaza según <paramref name="Down" /> la diferencia de los <paramref name="Up" /> argumentos. Por ejemplo, si <paramref name="Down" /> es 3 y es 6, el contenido se desplaza <paramref name="Up" /> tres filas hacia arriba.</para>
-          <para>Si se especifican ambos, el contenido de la ventana se desplaza según <paramref name="ToLeft" /> la diferencia de los <paramref name="ToRight" /> argumentos. Por ejemplo, si es 3 y es 6, el contenido se desplaza a <paramref name="ToLeft" /> <paramref name="ToRight" /> las tres columnas derechas.</para>
+        <remarks><para>Si se especifican y se especifican ambos, el contenido de la ventana se desplaza por <paramref name="Down" /> la diferencia de los <paramref name="Up" /> argumentos. Por ejemplo, si <paramref name="Down" /> es 3 y es 6, el contenido se desplaza <paramref name="Up" /> hacia arriba tres filas.</para>
+          <para>Si se especifican y se especifican ambos, el contenido de la ventana se desplaza por <paramref name="ToLeft" /> la diferencia de los <paramref name="ToRight" /> argumentos. Por ejemplo, si es 3 y es 6, el contenido se desplaza <paramref name="ToLeft" /> a las tres columnas <paramref name="ToRight" /> derechas.</para>
           <para>Cualquiera de estos argumentos puede ser un número negativo.</para>
           <para> </para></remarks>
       </Docs>
@@ -1710,7 +1710,7 @@
       <Docs>
         <summary>Es <b>True</b> si la ventana está dividida.</summary>
         <value>To be added.</value>
-        <remarks><para>Es posible que True <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> y <b>Split</b> sean <b>False</b>o viceversa. <b></b></para>
+        <remarks><para>Es posible que True y Split sean <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> <b>False</b>o viceversa. <b></b> <b></b></para>
           <para>Esta propiedad sólo se aplica a hojas de cálculo y de macros.</para>
           <para> </para></remarks>
       </Docs>
@@ -1867,7 +1867,7 @@
       <Docs>
         <summary>Devuelve o establece la proporción del ancho del área de las fichas del libro con respecto al ancho de la barra de desplazamiento horizontal de la ventana (como un número comprendido entre 0 y 1; el valor predeterminado es 0,6).</summary>
         <value>To be added.</value>
-        <remarks><para>Esta propiedad no tiene ningún efecto cuando se establece en False (su valor se conserva, pero no tiene <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> ningún efecto en la presentación). <b></b></para>
+        <remarks><para>Esta propiedad no tiene ningún efecto cuando se establece en False (su valor se conserva, pero no tiene <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> ningún efecto en la pantalla). <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1899,7 +1899,7 @@
       <Docs>
         <summary>Distancia en puntos desde el borde superior de la ventana hasta el borde superior del área utilizable (debajo de los menús, las barras de herramientas acopladas en la parte superior y la barra de fórmulas).</summary>
         <value>To be added.</value>
-        <remarks><para>Esta propiedad no se puede establecer para una ventana maximizada. Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propiedad para devolver o establecer el estado de la ventana.</para>
+        <remarks><para>Esta propiedad no se puede establecer para una ventana maximizada. Use la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propiedad para devolver o establecer el estado de la ventana.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1954,7 +1954,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el alto máximo en puntos del espacio que puede ocupar una ventana en el área de la ventana de la aplicación.</summary>
+        <summary>Devuelve el alto máximo en puntos del espacio que una ventana puede ocupar en el área de ventana de la aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1982,7 +1982,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el ancho máximo en puntos del espacio que puede ocupar una ventana en el área de la ventana de la aplicación.</summary>
+        <summary>Devuelve el ancho máximo en puntos del espacio que una ventana puede ocupar en el área de la ventana de la aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2072,7 +2072,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa el rango de celdas que están visibles en la ventana o el panel. Si una columna o una fila está visible parcialmente, se incluye en el rango.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto que representa el rango de celdas que están visibles en la ventana o panel. Si una columna o una fila está visible parcialmente, se incluye en el rango.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2105,7 +2105,7 @@
       <Docs>
         <summary>Ancho en puntos de la ventana.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> propiedad para determinar el tamaño máximo de la ventana. No puede establecer esta propiedad si la ventana está maximizada o minimizada. Use la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propiedad para determinar el estado de la ventana.</para>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> propiedad para determinar el tamaño máximo de la ventana. No puede establecer esta propiedad si la ventana está maximizada o minimizada. Use la <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> propiedad para determinar el estado de la ventana.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2134,7 +2134,7 @@
       <Docs>
         <summary>Devuelve el número de la ventana. Por ejemplo, una ventana denominada "Libro1.xls:2" tiene 2 como número de ventana. La mayoría de las ventanas tienen el número 1.</summary>
         <value>To be added.</value>
-        <remarks><para>El número de ventana no es el mismo que el índice de la ventana (el valor devuelto de la propiedad), que es la posición de la ventana <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> dentro de la <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> colección.</para>
+        <remarks><para>El número de ventana no es el mismo que el índice de la ventana (el valor devuelto de la propiedad), que es la posición de la <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> ventana dentro de la <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> colección.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2195,7 +2195,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tamaño de presentación de la ventana como un porcentaje (100 es igual a tamaño normal, 200 es igual a doble tamaño, y así sucesivamente).</summary>
+        <summary>Devuelve o establece el tamaño de presentación de la ventana como un porcentaje (100 es igual al tamaño normal, 200 es igual a tamaño doble, y así sucesivamente).</summary>
         <value>To be added.</value>
         <remarks><para>También se puede configurar la propiedad como <b>True</b> para ajustar el tamaño de la ventana al tamaño de la selección actual.</para>
           <para>Esta función sólo afecta a la hoja que esté activa en la ventana. Para usar esta propiedad en otras hojas, primero debe activarlas.</para>

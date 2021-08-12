@@ -1,5 +1,5 @@
 <Type Name="Worksheets" FullName="Microsoft.Office.Interop.Excel.Worksheets">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008508" /></Metadata><TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="568a7170d5682c9a3e761b870e9ced7af6fba23888301567a84f883402cb0c5a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518457" /></Metadata><TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Worksheets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Worksheets" />
   <TypeSignature Language="VB.NET" Value="Public Interface Worksheets&#xA;Implements IEnumerable" />
@@ -27,8 +27,8 @@
   <Docs>
     <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objetos del libro especificado o activo. Cada objeto <b>Worksheet </b>representa una hoja de cálculo.</summary>
     <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> propiedad para devolver la colección <b>Worksheets.</b></para>
-      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> método para crear una hoja de cálculo nueva y agregarla a la colección.</para>
-      <para>Use <b>Worksheets</b>( ), donde se encuentra el nombre o número de índice de la hoja de <paramref name="index" /> <paramref name="index" /> cálculo, para devolver un solo objeto <b>Worksheet.</b></para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> método para crear una nueva hoja de cálculo y agregarla a la colección.</para>
+      <para>Use <b>Worksheets</b>( ), donde está el número o el nombre del índice de la hoja de <paramref name="index" /> <paramref name="index" /> cálculo, para devolver un único <b>objeto Worksheet.</b></para>
       <para>El <b>objeto Worksheet</b> también es un miembro de la <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> colección. La colección <b>Sheets</b> contiene todas las hojas del libro (hojas de gráficos y hojas de cálculo).</para>
       <para> </para></remarks>
   </Docs>
@@ -135,13 +135,13 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Optional <b>Object</b>. Un objeto que especifica la hoja antes de la cual se agregará la nueva hoja.</param>
-        <param name="After">Optional <b>Object</b>. Un objeto que especifica la hoja tras la cual se agregará la nueva hoja.</param>
-        <param name="Count">Optional <b>Object</b>. El número de hojas que se agregan. El valor predeterminado es uno.</param>
-        <param name="Type">Optional <b>Object</b>. Especifica el tipo de hoja. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> constantes: <b>xlWorksheet</b>, <b>xlChart</b>, <b>xlExcel4MacroSheet</b>o <b>xlExcel4IntlMacroSheet</b>. Si inserta una hoja basada en una plantilla actual, especifique la ruta de acceso a la plantilla. El valor predeterminado es <b>xlWorksheet</b>.</param>
+        <param name="Before">Objeto <b>opcional</b>. Un objeto que especifica la hoja antes de la cual se agregará la nueva hoja.</param>
+        <param name="After">Objeto <b>opcional</b>. Un objeto que especifica la hoja tras la cual se agregará la nueva hoja.</param>
+        <param name="Count">Objeto <b>opcional</b>. El número de hojas que se agregan. El valor predeterminado es uno.</param>
+        <param name="Type">Objeto <b>opcional</b>. Especifica el tipo de hoja. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> constantes: <b>xlWorksheet</b>, <b>xlChart</b>, <b>xlExcel4MacroSheet</b>o <b>xlExcel4IntlMacroSheet</b>. Si inserta una hoja basada en una plantilla actual, especifique la ruta de acceso a la plantilla. El valor predeterminado es <b>xlWorksheet</b>.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Si <paramref name="Before" /> se <paramref name="After" /> omiten ambos, la nueva hoja se inserta delante de la hoja activa.</para>
+        <remarks><para>Si <paramref name="Before" /> se <paramref name="After" /> omiten y se omiten, la nueva hoja se inserta antes de la hoja activa.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -170,13 +170,13 @@
         <Parameter Name="NewLayout" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Optional <b>Object</b>. Un objeto que especifica la hoja antes de la cual se agregará la nueva hoja.</param>
-        <param name="After">Optional <b>Object</b>. Un objeto que especifica la hoja tras la cual se agregará la nueva hoja.</param>
-        <param name="Count">Optional <b>Object</b>. El número de hojas que se agregan. El valor predeterminado es uno</param>
-        <param name="NewLayout">Optional <b>Object</b>. Objeto que especifica el diseño que se usará para la nueva hoja de cálculo.</param>
-        <summary>Este método solo se implementa para el objeto de colección <b>Charts</b> y producirá un error en tiempo de ejecución si se usa en los objetos <b>Sheets</b> y <b>Worksheets.</b></summary>
+        <param name="Before">Objeto <b>opcional</b>. Un objeto que especifica la hoja antes de la cual se agregará la nueva hoja.</param>
+        <param name="After">Objeto <b>opcional</b>. Un objeto que especifica la hoja tras la cual se agregará la nueva hoja.</param>
+        <param name="Count">Objeto <b>opcional</b>. El número de hojas que se agregan. El valor predeterminado es uno</param>
+        <param name="NewLayout">Objeto <b>opcional</b>. Objeto que especifica el diseño que se usará para la nueva hoja de cálculo.</param>
+        <summary>Este método solo se implementa para el objeto de colección <b>Charts</b> y producirá un error de tiempo de ejecución si se usa en los <b>objetos Sheets</b> y <b>Worksheets.</b></summary>
         <returns>To be added.</returns>
-        <remarks><para>Si <paramref name="Before" /> se <paramref name="After" /> omiten ambos, la nueva hoja se inserta delante de la hoja activa.</para>
+        <remarks><para>Si <paramref name="Before" /> se <paramref name="After" /> omiten y se omiten, la nueva hoja se inserta antes de la hoja activa.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -203,7 +203,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,10 +231,10 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Optional <b>Object</b>. La hoja delante de la cual se colocará la hoja copiada. No se puede <paramref name="Before" /> especificar si se especifica <paramref name="After" /> .</param>
-        <param name="After">Optional <b>Object</b>. La hoja detrás de la cual se colocará la hoja copiada. No se puede <paramref name="After" /> especificar si se especifica <paramref name="Before" /> .</param>
+        <param name="Before">Objeto <b>opcional</b>. La hoja delante de la cual se colocará la hoja copiada. No puede especificar <paramref name="Before" /> si especifica <paramref name="After" /> .</param>
+        <param name="After">Objeto <b>opcional</b>. La hoja detrás de la cual se colocará la hoja copiada. No puede especificar <paramref name="After" /> si especifica <paramref name="Before" /> .</param>
         <summary>Copia la hoja a otra ubicación del libro.</summary>
-        <remarks><para>Si no especifica ninguno de los dos o <paramref name="Before" /> , Microsoft Excel crea un libro nuevo que contiene la hoja <paramref name="After" /> copiada.</para>
+        <remarks><para>Si no especifica ni , Microsoft Excel crea un nuevo libro <paramref name="Before" /> que contiene la hoja <paramref name="After" /> copiada.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -317,7 +317,7 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <remarks><para>Cuando se elimina un o , este método muestra un cuadro de diálogo que solicita al <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> usuario que confirme la <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> eliminación. Este cuadro de diálogo se muestra de manera predeterminada. El <b>método Delete</b> devuelve un valor <b>booleano</b> que es <b>False</b> si el usuario hizo clic en Cancelar en el cuadro de diálogo o <b>True</b> si el usuario hizo clic en Eliminar.</para>
+        <remarks><para>Al eliminar un o , este método muestra un cuadro de diálogo que solicita al <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> usuario que confirme la <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> eliminación. Este cuadro de diálogo se muestra de manera predeterminada. El <b>método Delete</b> devuelve un valor <b>booleano</b> que es <b>False</b> si el usuario hizo clic en Cancelar en el cuadro de diálogo o <b>True</b> si el usuario hizo clic en Eliminar.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -436,7 +436,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Nombre o número de índice del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Nombre o número de índice del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -465,10 +465,10 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Optional <b>Object</b>. Hoja antes de la cual se copiará la hoja. No se puede <paramref name="Before" /> especificar si se especifica <paramref name="After" /> .</param>
-        <param name="After">Optional <b>Object</b>. Hoja después de la cual se copiará la hoja. No puede especificar <paramref name="After" /> si especifica <b>Before</b>.</param>
+        <param name="Before">Objeto <b>opcional</b>. Hoja antes de la cual se copiará la hoja. No puede especificar <paramref name="Before" /> si especifica <paramref name="After" /> .</param>
+        <param name="After">Objeto <b>opcional</b>. Hoja después de la cual se copiará la hoja. No se puede <paramref name="After" /> especificar si especifica <b>Before</b>.</param>
         <summary>Desplaza la hoja a otro lugar del libro.</summary>
-        <remarks><para>Si no especifica ninguno de los dos o <paramref name="Before" /> , Microsoft Excel crea un libro nuevo que contiene la hoja que se ha <paramref name="After" /> movido.</para>
+        <remarks><para>Si no especifica ni , Microsoft Excel crea un nuevo libro <paramref name="Before" /> que contiene la hoja <paramref name="After" /> movida.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -495,7 +495,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <summary>Devuelve el objeto primario para el objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -532,16 +532,16 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">Optional <b>Object</b>. Número de la página en la que comienza la impresión. Si no se especifica este argumento, la impresión empieza por el principio.</param>
-        <param name="To">Optional <b>Object</b>. Número de la última página que se va a imprimir. Si no se especifica este argumento, la impresión finaliza en la última página.</param>
-        <param name="Copies">Optional <b>Object</b>. Número de copias que se imprimirán. Si no se especifica este argumento, se imprime una sola copia.</param>
-        <param name="Preview">Optional <b>Object</b>. <b>True</b> para que Microsoft Excel invoque la vista preliminar antes de imprimir el objeto. <b>False</b> (u omitido) para imprimir el objeto inmediatamente.</param>
-        <param name="ActivePrinter">Optional <b>Object</b>. Establece el nombre de la impresora activa.</param>
-        <param name="PrintToFile">Optional <b>Object</b>. <b>True</b> para imprimir a un archivo. Si no se especifica, Microsoft Excel solicita al usuario que <paramref name="PrToFileName" /> escriba el nombre del archivo de salida.</param>
-        <param name="Collate">Optional <b>Object</b>. <b>True</b> para intercalar varias copias.</param>
-        <param name="PrToFileName">Optional <b>Object</b>. Si se establece en True , este argumento especifica el nombre del archivo en el <paramref name="PrintToFile" /> que desea imprimir. <b></b></param>
+        <param name="From">Objeto <b>opcional</b>. Número de la página en la que comienza la impresión. Si no se especifica este argumento, la impresión empieza por el principio.</param>
+        <param name="To">Objeto <b>opcional</b>. Número de la última página que se va a imprimir. Si no se especifica este argumento, la impresión finaliza en la última página.</param>
+        <param name="Copies">Objeto <b>opcional</b>. Número de copias que se imprimirán. Si no se especifica este argumento, se imprime una sola copia.</param>
+        <param name="Preview">Objeto <b>opcional</b>. <b>True</b> para que Microsoft Excel invoque la vista preliminar antes de imprimir el objeto. <b>False</b> (u omitido) para imprimir el objeto inmediatamente.</param>
+        <param name="ActivePrinter">Objeto <b>opcional</b>. Establece el nombre de la impresora activa.</param>
+        <param name="PrintToFile">Objeto <b>opcional</b>. <b>True</b> para imprimir a un archivo. Si no se especifica, Microsoft Excel solicita al usuario que <paramref name="PrToFileName" /> escriba el nombre del archivo de salida.</param>
+        <param name="Collate">Objeto <b>opcional</b>. <b>True</b> para intercalar varias copias.</param>
+        <param name="PrToFileName">Objeto <b>opcional</b>. Si se establece en True , este argumento especifica el nombre del archivo en el <paramref name="PrintToFile" /> que desea imprimir. <b></b></param>
         <summary>Imprime el objeto.</summary>
-        <remarks><para>"Páginas" en las descripciones de las páginas impresas y hace referencia a las páginas impresas, no a las páginas generales <paramref name="From" /> de la hoja o <paramref name="To" /> libro.</para>
+        <remarks><para>"Páginas" en las descripciones de y hace referencia a páginas impresas, no páginas generales <paramref name="From" /> en la hoja o <paramref name="To" /> libro.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -637,9 +637,9 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">Objeto <b>opcional</b> (usado solo con hojas). <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
+        <param name="Replace">Objeto <b>opcional</b> (solo se usa con hojas). <b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
         <summary>Selecciona el objeto.</summary>
-        <remarks><para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b>. Para convertir una sola celda en la celda activa, utilice el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> método.</para>
+        <remarks><para>Para seleccionar una celda o un rango de celdas, use el método <b>Select</b>. Para convertir una sola celda en la celda activa, use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> método.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

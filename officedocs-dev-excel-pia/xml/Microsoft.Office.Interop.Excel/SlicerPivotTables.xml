@@ -1,5 +1,5 @@
 <Type Name="SlicerPivotTables" FullName="Microsoft.Office.Interop.Excel.SlicerPivotTables">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e7cf06ad9737671167d43d23e4d02fbaa27f0834" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010160" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="260d005d4499b513b0b807510b94cec12b50c5076ebbd291d676fe8a95f9f6ff" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518891" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerPivotTables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerPivotTables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerPivotTables&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa información acerca de la colección de tablas dinámicas asociadas con el objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> especificado.</summary>
-    <remarks><para>La <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección contiene información sobre las tablas dinámicas que la memoria caché de segmentación de datos está filtrando actualmente. Proporciona propiedades para determinar el número de tablas dinámicas a las que está asociada la segmentación de datos y para recuperar objetos que representan las tablas dinámicas que se <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> filtran. También proporciona métodos para agregar y quitar tablas dinámicas de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección. La colección estará vacía si la segmentación de datos asociada a la especificada no está <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conectada a ninguna tabla <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> dinámica.</para>
-      <para>Utilice la propiedad del objeto para devolver la colección asociada a un , que a su vez puede asociarse con <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> una o más <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> segmentaciones de datos.</para>
+    <summary>Representa información sobre la colección de tablas dinámicas asociadas al objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> especificado.</summary>
+    <remarks><para>La colección contiene información sobre las tablas dinámicas que la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> memoria caché de segmentación de datos está filtrando actualmente. Proporciona propiedades para determinar el número de tablas dinámicas a las que está asociada la segmentación de datos y para recuperar objetos que representan las tablas dinámicas que se <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> filtran. También proporciona métodos para agregar y quitar tablas dinámicas de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección. La colección estará vacía si la segmentación de datos asociada con el especificado no está <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> conectada a ninguna tabla <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> dinámica.</para>
+      <para>Utilice la propiedad del objeto para devolver la colección asociada a un , que a su vez puede asociarse <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" /> con una o más <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> segmentaciones de datos.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -90,7 +90,7 @@
       <Docs>
         <param name="PivotTable">Objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> que representa la tabla dinámica que se debe agregar.</param>
         <summary>Agrega una referencia a una tabla dinámica a la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</summary>
-        <remarks><para>Cuando se agrega una tabla dinámica a la colección, su elemento primario y las segmentaciones de datos asociadas a ella pueden <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> filtrarla.</para>
+        <remarks><para>Cuando se agrega una tabla dinámica a la colección, su elemento primario y las segmentaciones de datos asociadas pueden <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> filtrarla.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Cuando se usa con un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
@@ -176,7 +176,7 @@
       <Docs>
         <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
         <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La <see cref="P:Microsoft.Office.Interop.Excel.SlicerPivotTables.Creator" /> propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -267,8 +267,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto primario de la colección <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> especificada.</summary>
-        <value>Objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> que es el elemento principal de la colección <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> especificada.</value>
+        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que es el elemento primario de la colección <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> especificada.</summary>
+        <value>El <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> objeto que es el elemento primario de la colección <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> especificada.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -296,9 +296,9 @@
         <Parameter Name="PivotTable" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PivotTable">Objeto que representa la tabla dinámica que se debe quitar o el nombre o <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> índice de la tabla dinámica de la colección.</param>
+        <param name="PivotTable">Objeto que representa la tabla dinámica que se quitará o el nombre o <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> índice de la tabla dinámica de la colección.</param>
         <summary>Quita una referencia a una tabla dinámica de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> colección.</summary>
-        <remarks><para>Cuando se quita una tabla dinámica de la colección, su elemento primario y las segmentaciones de datos asociadas ya <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> no <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> filtran.</para>
+        <remarks><para>Cuando se quita una tabla dinámica de la colección, su elemento primario ya no filtra ni las segmentaciones de datos <see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> asociadas a ella.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

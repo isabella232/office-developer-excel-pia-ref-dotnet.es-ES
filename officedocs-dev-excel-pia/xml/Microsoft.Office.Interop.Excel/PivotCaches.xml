@@ -1,5 +1,5 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010930" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79b074c418dba72dfdf57d294663784a4c1be8876368a70bb4d9c8d800a3dca5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518688" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCaches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCaches" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCaches&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Representa la colección de memorias caché de los informes de tabla dinámica en un libro.</summary>
-    <remarks><para>Cada memoria caché está representada por un <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto.</para>
-      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> método para devolver la colección <b>PivotCaches</b> .</para>
+    <remarks><para>Cada memoria caché se representa mediante un <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> objeto.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /> método para devolver la colección <b>PivotCaches.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -92,11 +92,11 @@
         <Parameter Name="SourceData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> . Origen de los datos de caché de la tabla dinámica. Puede ser una de las siguientes constantes <b>XlPivotTableSourceType:</b> <b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></param>
-        <param name="SourceData">Optional <b>Object</b>. Los datos de la nueva memoria caché de tabla dinámica. Este argumento es obligatorio si <paramref name="SourceType" /> no es <b>xlExternal</b>. Puede ser un objeto, una matriz de rangos o una constante de texto que representa <see cref="T:Microsoft.Office.Interop.Excel.Range" /> el nombre de un informe de tabla dinámica existente. Para una base de datos externa, se trata de una matriz de dos elementos. El primer elemento es la cadena de conexión que especifica el proveedor de los datos. El segundo es la cadena de la consulta SQL empleada para obtener los datos. Si especifica este argumento, también debe especificar <paramref name="SourceType" /> .</param>
+        <param name="SourceType">Obligatorio <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> . Origen de los datos de caché de tabla dinámica. Puede ser una de las siguientes <b>constantes XlPivotTableSourceType:</b> <b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></param>
+        <param name="SourceData">Objeto <b>opcional</b>. Los datos de la nueva memoria caché de tabla dinámica. Este argumento es necesario si <paramref name="SourceType" /> no es <b>xlExternal</b>. Puede ser un objeto, una matriz de intervalos o una constante de texto <see cref="T:Microsoft.Office.Interop.Excel.Range" /> que representa el nombre de un informe de tabla dinámica existente. Para una base de datos externa, se trata de una matriz de dos elementos. El primer elemento es la cadena de conexión que especifica el proveedor de los datos. El segundo es la cadena de la consulta SQL empleada para obtener los datos. Si especifica este argumento, también debe especificar <paramref name="SourceType" /> .</param>
         <summary>Agrega una nueva memoria caché de tabla dinámica a una <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> colección.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Si un objeto no hace referencia a la memoria caché de la tabla dinámica, la memoria caché de la tabla dinámica se elimina automáticamente antes de <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> guardar el libro.</para>
+        <remarks><para>Si un objeto no hace referencia a la memoria caché de tabla dinámica, la memoria caché de tabla dinámica se elimina automáticamente antes de guardar <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> el libro.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,14 +180,14 @@
         <Parameter Name="Version" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">Obligatorio <paramref name="SourceType" /> puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constantes: <b>xlConsolidation</b>, <b>xlDatabase</b>o <b>xlExternal</b>.</param>
+        <param name="SourceType">Required <paramref name="SourceType" /> puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> constantes: <b>xlConsolidation</b>, <b>xlDatabase</b>o <b>xlExternal</b>.</param>
         <param name="SourceData">Objeto <b>opcional</b> Los datos de la nueva <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> memoria caché.</param>
-        <param name="Version">Optional <b>Object</b> Version of the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> .  La versión puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> constantes.</param>
-        <summary>Crea un nuevo <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> archivo .</summary>
+        <param name="Version">Versión <b>opcional</b> del objeto <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> .  La versión puede ser una de las <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> constantes.</param>
+        <summary>Crea un <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> nuevo .</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /></returns>
-        <remarks><para>No se admiten las dos constantes siguientes al usar este <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> método: <b>xlPivotTable</b> y <b>xlScenario</b>. Se devuelve un error en tiempo de ejecución si se especifica alguna de estas dos constantes.</para>
-          <para>El <paramref name="SourceData" /> argumento es obligatorio si no es <paramref name="SourceType" /> xlExternal. Puede ser un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto (cuando es xlConsolidation o xlDatabase) o un objeto de Excel <paramref name="SourceType" /> <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> (cuando es <paramref name="SourceType" /> xlExternal).</para>
-          <para>Cuando no se proporciona, la versión del <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> objeto será xlPivotTableVersion12.  No se permite utilizar la constante <b>xlPivotTableVersionCurrent</b> y, en caso de especificarse, se devuelve un error en tiempo de ejecución.</para>
+        <remarks><para>No se admiten las dos constantes siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> al usar este método: <b>xlPivotTable</b> y <b>xlScenario</b>. Se devuelve un error en tiempo de ejecución si se especifica alguna de estas dos constantes.</para>
+          <para>El <paramref name="SourceData" /> argumento es necesario si no es <paramref name="SourceType" /> xlExternal. Puede ser un <see cref="T:Microsoft.Office.Interop.Excel.Range" /> objeto (cuando es xlConsolidation o xlDatabase) o un objeto <paramref name="SourceType" /> Excel <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> (cuando es <paramref name="SourceType" /> xlExternal).</para>
+          <para>Cuando no se proporciona, la versión de <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> la será xlPivotTableVersion12.  No se permite utilizar la constante <b>xlPivotTableVersionCurrent</b> y, en caso de especificarse, se devuelve un error en tiempo de ejecución.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Número de índice del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Número de índice del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
