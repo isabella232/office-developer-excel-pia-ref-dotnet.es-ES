@@ -1,5 +1,5 @@
 <Type Name="LinearGradient" FullName="Microsoft.Office.Interop.Excel.LinearGradient">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="82c4b43f65abfbbe4c1e37be6fcbcaa9b08edec1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000074" /></Metadata><TypeSignature Language="C#" Value="public interface LinearGradient" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2444bf2f770b1829db95d3ff2fca292fb5bd064e9f8a113db7b8f213e1dd6cdb" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516770" /></Metadata><TypeSignature Language="C#" Value="public interface LinearGradient" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LinearGradient" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.LinearGradient" />
   <TypeSignature Language="VB.NET" Value="Public Interface LinearGradient" />
@@ -23,13 +23,13 @@
   <Docs>
     <summary>El <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto pasa a través de una serie de colores de forma lineal a lo largo de un ángulo específico.</summary>
     <remarks><para>
-        <b>Nota:</b>Algunos aspectos que se deben tener en cuenta al trabajar con <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objetos</para>
+        <b>Nota:</b>Algunas cosas que se deben tener en cuenta al trabajar con <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objetos</para>
       <list type="bullet">
         <item>
-          <description>Si se intenta obtener acceso a una propiedad de un objeto que no tiene un relleno degradado existente, se producirá <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> un error en tiempo de <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> ejecución.  Tenga en cuenta la propiedad <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> antes de tener acceso a la propiedad Gradient.</description>
+          <description>Si se intenta obtener acceso a una propiedad de un objeto que no tiene un relleno degradado existente, se producirá <see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" /> un error de tiempo de <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> ejecución.  Tenga en cuenta la <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> propiedad antes de obtener acceso a la propiedad Gradient.</description>
         </item>
         <item>
-          <description>Si se cambia de un tipo de degradado a un tipo no degradado, el objeto <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />  <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> se rellenará con los valores predeterminados.</description>
+          <description>Si <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> se cambia de un tipo de degradado a un tipo no degradado, el  <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto se rellenará con valores predeterminados.</description>
         </item>
       </list>
       <para> </para></remarks>
@@ -58,7 +58,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa el Microsoft Office de Excel. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel._Application" /> objeto que representa la Microsoft Office Excel aplicación. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa al creador del objeto especificado. Es de sólo lectura.</summary>
         <value><b>Aplicación</b> (vea más arriba)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.ColorStops" /> <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto. Solo lectura</summary>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Excel.ColorStops" /> para el <see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" /> objeto. Solo lectura</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ColorStops" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +114,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits equivalente a un valor en el que indica la aplicación en la <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> que se creó este objeto. Solo lectura.</summary>
+        <summary>Devuelve un entero de 32 bits equivalente a un valor en el que indica la aplicación en la que <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> se creó este objeto. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad Creator está diseñada para su uso en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL. </para>
           <para> </para></remarks>
@@ -146,8 +146,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Ángulo del relleno degradado lineal en una selección. Lectura/escritura</summary>
-        <value><b>Double</b></value>
+        <summary>Ángulo del relleno degradado lineal en una selección. Es de lectura y escritura.</summary>
+        <value><b>Doble</b></value>
         <remarks><para>Utiliza valores comprendidos entre 0 y 360.</para>
           <para> </para></remarks>
       </Docs>
@@ -175,8 +175,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura</summary>
-        <value><b>Object</b></value>
+        <summary>Devuelve el objeto primario del objeto especificado. Es de solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

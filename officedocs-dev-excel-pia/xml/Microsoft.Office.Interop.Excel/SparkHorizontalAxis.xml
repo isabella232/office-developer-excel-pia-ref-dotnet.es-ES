@@ -1,5 +1,5 @@
 <Type Name="SparkHorizontalAxis" FullName="Microsoft.Office.Interop.Excel.SparkHorizontalAxis">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d17f400b5b6b710e5d3be00feaaaf13db697ccb6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009950" /></Metadata><TypeSignature Language="C#" Value="public interface SparkHorizontalAxis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c9dc47e50c04fbdb0e028c54a82ea1279e54d41a030f1662731aa1bcff2c4d31" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516728" /></Metadata><TypeSignature Language="C#" Value="public interface SparkHorizontalAxis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparkHorizontalAxis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" />
   <TypeSignature Language="VB.NET" Value="Public Interface SparkHorizontalAxis" />
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Cuando se usa con un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
@@ -109,8 +109,8 @@
       <Docs>
         <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
         <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks><para>De sólo <b>lectura de longitud</b>.</para>
-          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.Creator" /> caracteres. Por ejemplo, excelnv1 tiene el código de creador XCEL.</para>
+        <remarks><para>Long de solo <b>lectura.</b></para>
+          <para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.Creator" /> propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, excelnv1 tiene el código de creador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -137,11 +137,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene si el eje horizontal del minigráfico se basa en los valores de fecha.</summary>
+        <summary>Obtiene si el eje horizontal del minigráfico se basa en valores de fecha.</summary>
         <value><b>true</b> si el eje horizontal del minigráfico se basa en valores de fecha; de lo contrario, <b>false</b>.</value>
         <remarks><para>Solo lectura.</para>
           <para>
-            <b>true</b> si el eje horizontal se basa en valores de fecha; de lo <b>contrario, false</b>.</para>
+            <b>true</b> si el eje horizontal se basa en valores de fecha; de lo <b>contrario es false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -169,7 +169,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el objeto <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> primario del objeto especificado.</summary>
-        <value>Objeto primario <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> del objeto especificado.</value>
+        <value>El objeto <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> primario del objeto especificado.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -200,10 +200,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si los puntos del eje horizontal se trazan de derecha a izquierda.</summary>
-        <value><b>true</b> si los puntos del eje horizontal se trazan de derecha a izquierda; de lo contrario, <b>false</b>.</value>
+        <summary>Obtiene o establece si los puntos del eje horizontal se trazan en orden de derecha a izquierda.</summary>
+        <value><b>true</b> si los puntos del eje horizontal se trazan en orden de derecha a izquierda; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
-          <para>Establezca la propiedad en true para trazar los valores del eje <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.RightToLeftPlotOrder" /> horizontal en orden de derecha a izquierda. <b></b></para>
+          <para>Establezca la propiedad en true para trazar los valores del eje horizontal en <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.RightToLeftPlotOrder" /> orden de derecha a izquierda. <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>

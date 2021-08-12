@@ -1,5 +1,5 @@
 <Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005750" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4300478031386a6108bff5ce1de31ebaedde5c92e202b2aa273a0c5a4efce780" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509651" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriterion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriterion" />
@@ -25,7 +25,7 @@
     <remarks><para>Cada <b>ColorScaleCriterion</b> forma parte de la <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> colección. Use <b>ColorScaleCriteria</b>( <paramref name="index" /> ), para devolver un criterio individual.</para>
       <para>Puede establecer el <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> , y de cada umbral para la escala de <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" /> <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" /> colores.</para>
       <para> </para></remarks>
-    <example><para>El ejemplo de código siguiente crea un rango de números y después le aplica a dicho rango una regla de formato condicional de escala de dos colores. A continuación, el color del umbral mínimo se asigna al rojo y el umbral máximo al azul mediante la indización en la colección <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> para establecer criterios individuales.</para></example>
+    <example><para>El ejemplo de código siguiente crea un rango de números y después le aplica a dicho rango una regla de formato condicional de escala de dos colores. A continuación, el color del umbral mínimo se asigna al rojo y el umbral máximo al azul al indizar en la colección para <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> establecer criterios individuales.</para></example>
   </Docs>
   <Members>
     <Member MemberName="FormatColor">
@@ -51,9 +51,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FormatColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto, que especifica el color asignado al umbral de un formato condicional de escala <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> de colores. Solo lectura.</summary>
+        <summary>Devuelve un objeto, que especifica el color asignado al <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> umbral de un formato condicional de escala de colores. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /></value>
-        <remarks><para>Puede establecer el color de los umbrales mínimo, medio o máximo en cualquier color personalizado mediante la propiedad; o <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> usar la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> propiedad.</para>
+        <remarks><para>Puede establecer el color de los umbrales mínimo, medio o máximo en cualquier color personalizado mediante la propiedad <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> o usar la <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> propiedad.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -80,7 +80,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>valor de</b> tipo Integer que indica el umbral que representan los criterios. Solo lectura.</summary>
+        <summary>Devuelve un <b>valor Integer</b> que indica el umbral que representan los criterios. Solo lectura.</summary>
         <value><b>Integer</b></value>
         <remarks><para>En el caso de una regla de formato condicional de escala de dos colores, esta propiedad devolverá un valor de "1" para el umbral mínimo y "2" para el umbral máximo. Al utilizar una regla de escala de tres colores, los valores serán "1" para el mínimo, "2" para el umbral de punto medio y "3" para el umbral máximo.</para>
           <para> </para></remarks>
@@ -112,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConditionValueTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una de las constantes de la enumeración, que especifica cómo se determinan los valores de umbral de una barra de datos o formato condicional de escala <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> de colores. Solo lectura.</summary>
+        <summary>Devuelve una de las constantes de la enumeración, que especifica cómo se determinan los valores de umbral de una barra de datos o formato <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /> condicional de escala de colores. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" /></value>
         <remarks><para>El tipo de valor de umbral de una barra de datos o escala de colores puede ser un número, un porcentaje, una fórmula o un percentil. Si el tipo se establece en percentil, se utilizará la función Percentile para determinar el valor de umbral.</para>
           <para> </para></remarks>
@@ -146,7 +146,7 @@
       <Docs>
         <summary>Devuelve o establece los valores de umbral de punto mínimo, medio y máximo para un formato condicional de escala de colores. Lectura/escritura.</summary>
         <value><b>Objeto</b></value>
-        <remarks><para>Sólo puede establecer el valor si la propiedad del formato condicional está establecida en una de las siguientes <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" /> , , o <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" /> .</para>
+        <remarks><para>Solo puede establecer el valor si la propiedad del formato condicional está establecida en una de las siguientes <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" /> constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" /> , , o <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" /> <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" /> .</para>
           <para>Si el tipo de umbral es una fórmula, puede establecer la fórmula como un valor de tipo <b>String</b>. La fórmula debe devolver un solo número.</para>
           <para> </para></remarks>
       </Docs>

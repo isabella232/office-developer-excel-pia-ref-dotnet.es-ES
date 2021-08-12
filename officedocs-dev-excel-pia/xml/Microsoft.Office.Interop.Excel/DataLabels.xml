@@ -1,5 +1,5 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Excel.DataLabels">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="59a0db665b8a81c22e071c0c60a0f23b4492e55a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005666" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="183e6b823810ac922719b95c0064876783c60436ac2127a42ae2c66471cf1cc1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509532" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabels&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> objetos de la serie especificada. Cada objeto <b>DataLabel</b> representa un rótulo de datos para una línea de tendencia o un punto. Para una serie sin puntos definibles (como una serie de área), el conjunto <b>DataLabels</b> contiene un único rótulo de datos.</summary>
-    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> método para devolver la colección <b>DataLabels</b> .</para>
-      <para>Utilice <b>DataLabels</b>( ), donde es el número de índice de la etiqueta de <paramref name="index" /> <paramref name="index" /> datos, para devolver un solo <b>objeto DataLabel</b> .</para>
+    <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> método para devolver la colección <b>DataLabels.</b></para>
+      <para>Use <b>DataLabels</b>( ), donde es el número de índice de etiqueta de <paramref name="index" /> <paramref name="index" /> datos, para devolver un solo <b>objeto DataLabel.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -226,7 +226,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Solo lectura.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,7 +439,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto para una forma especificada o un objeto para un gráfico especificado que contiene propiedades de formato de relleno <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> para la forma o <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> gráfico. Solo lectura.</summary>
+        <summary>Devuelve un objeto para una forma especificada o un objeto para un gráfico especificado que contiene propiedades de formato de relleno <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> para la forma o el <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> gráfico. Solo lectura.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -636,7 +636,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Número de índice o nombre del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de la colección.</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /></returns>
         <remarks>To be added.</remarks>
@@ -698,7 +698,7 @@
       <Docs>
         <summary>Devuelve o establece el código de formato para el objeto. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks><para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas. La <b>función Format</b> usa cadenas de código de formato diferentes que <b>numberFormat</b> y <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> propiedades.</para>
+        <remarks><para>El código de formato es la misma cadena que la opción Códigos de formato en el cuadro de diálogo Formato de celdas. La <b>función Format</b> usa cadenas de código de formato diferentes a las propiedades y <b>NumberFormat.</b> <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -791,7 +791,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Orientación del texto. Puede ser un valor entero entre -90 y 90 grados.</summary>
+        <summary>Orientación del texto. Puede ser un valor entero de –90 a 90 grados.</summary>
         <value>To be added.</value>
         <remarks><para>Se pueden usar las siguientes constantes:</para>
           <para>
@@ -832,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del objeto especificado. Solo lectura.</summary>
+        <summary>Devuelve el objeto primario para el objeto especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -893,9 +893,9 @@
       <Docs>
         <param name="Index">Número de índice de la etiqueta de datos que se propagará.</param>
         <summary>Permite tomar el contenido y el formato de una sola etiqueta de datos y aplicarlo a todas las demás etiquetas de datos de la serie.</summary>
-        <remarks><para>Si la etiqueta de datos de origen admite campos incompatibles con la etiqueta de datos de destino, dichos campos se insertarán como su [NOMBRE DE CAMPO]. Por ejemplo, si un rótulo de datos de una serie circular con un campo de porcentaje se propaga a un rótulo de datos en un gráfico de columnas, ese campo de porcentaje se convertirá en un campo no resuelto que muestra [PERCENTAGE].</para>
+        <remarks><para>Si la etiqueta de datos de origen admite campos incompatibles con la etiqueta de datos de destino, dichos campos se insertarán como su [NOMBRE DE CAMPO]. Por ejemplo, si una etiqueta de datos de una serie circular con un campo de porcentaje se propaga a una etiqueta de datos en un gráfico de columnas, ese campo de porcentaje se convertirá en un campo sin resolver que muestra [PERCENTAGE].</para>
           <para>
-            <b>Nota:</b>pasar un argumento de cero (0) restablece las etiquetas de datos al prototipo actual.</para>
+            <b>Nota:</b>Al pasar un argumento de cero (0) se restablecen las etiquetas de datos al prototipo actual.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -983,7 +983,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve un <b>objeto Object</b> que representa el separador usado para los rótulos de datos de un gráfico. Lectura/escritura.</summary>
+        <summary>Establece o devuelve un <b>objeto Object</b> que representa el separador usado para las etiquetas de datos de un gráfico. Lectura/escritura.</summary>
         <value>To be added.</value>
         <remarks><para>El gráfico debe estar activo antes de que puede tener acceso a los rótulos de datos mediante programación; de lo contrario, se produce un error en tiempo de ejecución.</para>
           <para> </para></remarks>
@@ -1046,7 +1046,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> para mostrar el tamaño de burbuja de los rótulos de datos en un gráfico. Si es <b>False</b> se oculta. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Si es <b>True</b> se muestra el tamaño de la burbuja de los rótulos de datos de un gráfico. Si es <b>False</b> se oculta. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks><para>El gráfico debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para> </para></remarks>
@@ -1078,7 +1078,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> para mostrar el nombre de categoría de los rótulos de datos en un gráfico. Si es <b>False</b> se oculta. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Si es <b>True</b> se muestra el nombre de categoría de los rótulos de datos de un gráfico. Si es <b>False</b> se oculta. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks><para>El gráfico debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para> </para></remarks>
@@ -1141,7 +1141,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> para mostrar el valor porcentual de los rótulos de datos en un gráfico. Si es <b>False</b> se oculta. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary>Si es <b>True</b> se muestra el valor de porcentaje de los rótulos de datos de un gráfico. Si es <b>False</b> se oculta. Valor <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks><para>El gráfico debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para> </para></remarks>
@@ -1173,9 +1173,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se usa para alternar el <b>campo</b> Intervalo si existe en el intervalo de etiquetas de datos. <b>Booleano</b> (<b>bool</b> en C#) Lectura y escritura</summary>
+        <summary>Se usa para alternar el <b>campo Intervalo</b> si existe en el intervalo de etiquetas de datos. <b>Boolean</b> (<b>bool</b> in C#) Lectura y escritura</summary>
         <value>To be added.</value>
-        <remarks><para>El <b>objeto Range</b> asigna un rango arbitrario de celdas a un rango de rótulos de datos, de modo que cada rótulo de datos corresponde a una de las celdas del rango.</para>
+        <remarks><para>El <b>objeto Range</b> asigna un rango arbitrario de celdas a un rango de etiquetas de datos, de modo que cada etiqueta de datos corresponde a una de las celdas del rango.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1205,7 +1205,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor de tipo <b>Boolean</b> para indicar el comportamiento de presentación de nombres de series correspondientes a los rótulos de datos de un gráfico. Si es <b>True</b> se muestra el nombre de serie. Si es <b>False</b> se oculta. Lectura/escritura.</summary>
+        <summary>Devuelve o establece un valor de tipo <b>Boolean</b> para indicar el comportamiento de presentación de nombres de series correspondientes a los rótulos de datos de un gráfico. Si es <b>True</b> se muestra el nombre de serie. Si es <b>False</b> se oculta. Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks><para>El gráfico debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para> </para></remarks>
@@ -1237,7 +1237,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor de tipo <b>Boolean</b> correspondiente al comportamiento de presentación de valores de rótulos de los datos de un gráfico. Si es <b>True</b> se muestran los valores. Si es <b>False</b> se oculta. Lectura/escritura.</summary>
+        <summary>Devuelve o establece un valor de tipo <b>Boolean</b> correspondiente al comportamiento de presentación de valores de rótulos de los datos de un gráfico. Si es <b>True</b> se muestran los valores. Si es <b>False</b> se ocultan. Lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks><para>El gráfico especificado debe estar activo para poder tener acceso a los rótulos de datos mediante programación, de lo contrario se produce un error en tiempo de ejecución.</para>
           <para> </para></remarks>

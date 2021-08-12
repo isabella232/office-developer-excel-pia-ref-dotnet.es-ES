@@ -1,5 +1,5 @@
 <Type Name="SlicerItem" FullName="Microsoft.Office.Interop.Excel.SlicerItem">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3c1b11b181cf76e60a0a1ab7e6eab3bce566f124" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010195" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f7a55f46b762d5e367d09fbd04c745237b4a451b7c02bc1cce187b58e0094484" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516595" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerItem" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>Representa un elemento de una segmentación de datos.</summary>
-    <remarks><para>Para obtener acceso al objeto que representa el botón seleccionado actualmente en la segmentación <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> de datos, utilice la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Para obtener acceso a la colección que representa todos los elementos de una segmentación de datos que filtra una tabla dinámica, utilice la propiedad del objeto asociado <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> al <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Para tener acceso a la colección que representa los elementos de una segmentación de datos filtrando un nivel de una jerarquía OLAP, utilice la propiedad del objeto que representa ese <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> nivel de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> jerarquía.</para>
+    <remarks><para>Para obtener acceso al objeto que representa el botón seleccionado actualmente en la segmentación <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> de datos, utilice la <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> propiedad del <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Para obtener acceso a la colección que representa todos los elementos de una segmentación de datos que filtra una tabla dinámica, utilice la propiedad del objeto asociado <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> al <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> objeto. Para obtener acceso a la colección que representa los elementos de una segmentación de datos que filtra un nivel de una jerarquía OLAP, use la propiedad del objeto que representa ese nivel <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> de la <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> jerarquía.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto que representa <see cref="T:Microsoft.Office.Interop.Excel.Application" /> al creador del objeto especificado.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación. Cuando se usa con un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa al creador del objeto especificado.</summary>
         <value>Un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
@@ -79,7 +79,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el texto de la etiqueta del elemento de segmentación de datos.</summary>
-        <value>Texto de la etiqueta del elemento de segmentación de datos.</value>
+        <value>Texto de etiqueta del elemento de segmentación de datos.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -109,7 +109,7 @@
       <Docs>
         <summary>Obtiene un entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</summary>
         <value>Entero de 32 <b>bits</b> que indica la aplicación en la que se creó este objeto.</value>
-        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" /> caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
+        <remarks><para>Si el objeto se creó en Microsoft Excel, la propiedad devuelve la cadena XCEL, que es el equivalente del número hexadecimal 5843454C. La <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" /> propiedad está diseñada para usarse en Microsoft Excel para Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Excel tiene el código de creador XCEL.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
         <value><b>true</b> si el elemento de segmentación de datos contiene datos que coinciden con el estado de filtro manual actual; de lo contrario, <b>false</b>.</value>
         <remarks><para>Solo lectura.</para>
           <para>
-            <b>true</b> si el elemento de segmentación de datos contiene datos que coinciden con el estado de filtro manual actual; de lo <b>contrario, false</b>.</para>
+            <b>true</b> si el elemento de segmentación de datos contiene datos que coinciden con el estado de filtro manual actual; de lo <b>contrario es false</b>.</para>
           <para>Esta propiedad solo se admite cuando está activado el filtrado cruzado; se generará un error en tiempo de ejecución en caso contrario. Para determinar si el filtrado cruzado está activado para una segmentación de datos asociada a un informe de tabla dinámica, compruebe el valor de la propiedad del objeto <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> primario del objeto <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> especificado. Para determinar si el filtrado cruzado está activado para una segmentación de datos asociada a un origen de datos OLAP, compruebe el valor de la propiedad del objeto que corresponde a la jerarquía OLAP que se está <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> filtrando.</para>
           <para> </para></remarks>
       </Docs>
@@ -233,7 +233,7 @@
         <value><b>true</b> si el elemento de segmentación de datos está seleccionado; de lo contrario, <b>false</b>.</value>
         <remarks><para>Lectura/escritura.</para>
           <para>
-            <b>true</b> si el elemento de segmentación de datos está seleccionado; de lo <b>contrario, false</b>.</para>
+            <b>true</b> si el elemento de segmentación de datos está seleccionado; de lo <b>contrario es false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -261,7 +261,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el nombre de origen del elemento de segmentación de datos.</summary>
-        <value>El nombre de origen del elemento de segmentación de datos.</value>
+        <value>Nombre de origen del elemento de segmentación de datos.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -289,10 +289,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el nombre de origen del elemento de segmentación de datos en la configuración de formato estándar en inglés (Estados Unidos).</summary>
-        <value>El nombre de origen del elemento de segmentación de datos en la configuración de formato estándar en inglés (Estados Unidos).</value>
+        <summary>Obtiene el nombre de origen del elemento de segmentación de datos en la configuración estándar del formato inglés (Estados Unidos).</summary>
+        <value>El nombre de origen del elemento de segmentación de datos en la configuración estándar del formato inglés (Estados Unidos).</value>
         <remarks><para>Solo lectura.</para>
-          <para>Esta propiedad se usa cuando un elemento de segmentación de datos tiene una versión localizada y su valor de propiedad difiere del valor de la propiedad, como con <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> el formato de fecha.</para>
+          <para>Esta propiedad se usa cuando un elemento de segmentación de datos tiene una versión localizada y su valor de propiedad difiere del valor de la propiedad, como con el <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> formato de fecha.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -320,7 +320,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el valor del elemento de segmentación de datos.</summary>
-        <value>El valor del elemento de segmentación de datos.</value>
+        <value>Valor del elemento de segmentación de datos.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Excel.GroupShapes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ebe63e575d737f035f42220903f1e7f1ac5fd0cc" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003475" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f7fe960f3ef274dc5a3cc6fc0e7f41dbca7b99c48323744be0aa7a9f0c7cb70" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508349" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract GroupShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.GroupShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface GroupShapes&#xA;Implements IEnumerable" />
@@ -26,8 +26,8 @@
   </Attributes>
   <Docs>
     <summary>Representa las formas individuales de una forma agrupada.</summary>
-    <remarks><para>Cada forma está representada por un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto. Utilizando el método con este objeto, puede trabajar con formas individuales dentro de un grupo sin <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> tener que desagruparlas.</para>
-      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> propiedad para devolver la colección <b>GroupShapes</b> . Utilice <b>GroupItems</b>( ), donde es el número de la forma individual dentro de la forma agrupada, para devolver una sola forma <paramref name="index" /> de la colección <paramref name="index" /> <b>GroupShapes</b> .</para>
+    <remarks><para>Cada forma está representada por un <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objeto. Con el <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> método con este objeto, puede trabajar con formas únicas dentro de un grupo sin tener que desagruparlos.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> propiedad para devolver la colección <b>GroupShapes.</b> Utilice <b>GroupItems</b>( ), donde es el número de la forma individual dentro de la forma agrupada, para devolver una sola forma <paramref name="index" /> de la colección <paramref name="index" /> <b>GroupShapes.</b></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -86,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la aplicación Microsoft Excel.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.Application" /> objeto que representa la Microsoft Excel aplicación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Número de índice o nombre del objeto.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de una colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -264,7 +264,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Objeto <b>requerido</b>. Formas individuales que se incluirán en el rango. Puede ser un número entero que especifique el número de índice de la forma, una cadena que especifique el nombre de la forma o una matriz que contenga tanto números enteros como cadenas.</param>
+        <param name="Index">Objeto <b>obligatorio</b>. Formas individuales que se incluirán en el rango. Puede ser un número entero que especifique el número de índice de la forma, una cadena que especifique el nombre de la forma o una matriz que contenga tanto números enteros como cadenas.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> objeto que representa un subconjunto de las formas de una <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> colección.</summary>
         <value>To be added.</value>
         <remarks><para>Aunque puede usar la propiedad para devolver cualquier número de formas, es más sencillo usar el método si solo desea devolver un solo miembro <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> de la colección.</para>
